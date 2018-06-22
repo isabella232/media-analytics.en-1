@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4A6D824092EA4D76B206CFD01DB33ACD">
+  <title> Track Quality of Experience</title>
+  <shortdesc>The following instructions provide guidance for implementation
+	 across all 2.x SDKs. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Heartbeat Video</keyword>
+        <keyword>Video Analytics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note type="important">The following instructions provide guidance for
+		implementation across all 2.x SDKs. If you are implementing a 1.x version of
+		the SDK, you can download the Developers Guide further down the page. 
+	 </note>
+    <p>This topic contains the following information: </p>
+    <p>
+      <ul id="ul_D84E802822744388A8135045E40CF93F">
+        <li id="li_1C403126321B4E2AA2F404ED04622C1B"><xref
+            href="c_vhl_track-quality-exp.xml#concept_4A6D824092EA4D76B206CFD01DB33ACD/section_DDB8DFA47C5744AB9A04392AD5959BF7"
+            format="dita" scope="local"><?xm-replace_text Overview?></xref></li>
+        <li id="li_3AF179BBA7B7437799AFC1FD54C9B639"><xref
+            href="c_vhl_track-quality-exp.xml#concept_4A6D824092EA4D76B206CFD01DB33ACD/section_3B8EBEB167624D0481E8AF4761F83047"
+            format="dita" scope="local"><?xm-replace_text Implement?></xref></li>
+        <li id="li_498411BCBA4D4411A185F652CA85A2E1"><xref
+            href="c_vhl_track-quality-exp.xml#concept_4A6D824092EA4D76B206CFD01DB33ACD/section_B58A8CD1650443F4B82483E6CB0EE894"
+            format="dita" scope="local"><?xm-replace_text Code?></xref></li>
+        <li id="li_95DA47755F4B4E0884132CAA50839334"><xref
+            href="c_vhl_track-quality-exp.xml#concept_4A6D824092EA4D76B206CFD01DB33ACD/section_F3174831408947A893F7E8C15659E5AA"
+            format="dita" scope="local"><?xm-replace_text Validate?></xref></li>
+      </ul>
+    </p>
+    <section id="section_DDB8DFA47C5744AB9A04392AD5959BF7">
+      <title>Overview</title>
+      <p>Quality of experience tracking includes quality of service (QoS) and
+		  error tracking, both are optional elements and are 
+		  <b>not</b> required for core video heartbeat implementations. You can
+		  use the video player API to identify the variables related to QoS and error
+		  tracking. Here are the key elements of tracking quality of experience: 
+		</p>
+      <note type="tip">Additional details for each section is available in the 
+		  <xref href="c_vhl_track-quality-exp.xml#concept_4A6D824092EA4D76B206CFD01DB33ACD/section_3B8EBEB167624D0481E8AF4761F83047" format="dita" scope="local">Implement</xref> section. 
+		</note>
+      <p>
+        <b>On all bitrate change events</b>: </p>
+      <p>
+        <ul id="ul_A8812E2348714B2F839D49B1A724E254">
+          <li id="li_C5B9D82B80864EE1A4FE1E76379ED29A">Create/update the QoS object instance for the
+            playback, <codeph>qosObject</codeph></li>
+          <li id="li_D2742984C0604F13832F807132274EE7">Call
+              <codeph>trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);</codeph></li>
+        </ul>
+      </p>
+      <p>
+        <b>On player errors</b>: </p>
+      <p>
+        <ul id="ul_2F01D2465FDF440889F556EE8C7CB9D7">
+          <li id="li_EF76BDBCDA584C6F993B01F918BDAE39">Call <codeph>trackError(“video error
+              id”);</codeph></li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_3B8EBEB167624D0481E8AF4761F83047">
+      <title>Implement</title>
+      <p>To implement quality of experience and error tracking: </p>
+      <p>
+        <ol id="ol_735F0AA4F6EA442D9C3D1A043F5D6F24">
+          <li id="li_57792A76A0D0495EAEA8D87345FB9996">Identify when the bitrate changes during
+            video playback and create the <codeph>MediaObject</codeph> instance using the QoS
+            information. <p> Here is the QoSObject reference: <table
+                id="table_36BA07D7614C409F8AA3D68DA04A2231">
+                <tgroup cols="3">
+                  <colspec colnum="1" colname="col1" colwidth="*"/>
+                  <colspec colnum="2" colname="col2" colwidth="*"/>
+                  <colspec colnum="3" colname="col3" colwidth="*" align="center"/>
+                  <thead>
+                    <row>
+                      <entry colname="col1">Variable </entry>
+                      <entry colname="col2">Description </entry>
+                      <entry colname="col3">Required </entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry colname="col1">
+                        <p><codeph>bitrate</codeph>
+                        </p>
+                      </entry>
+                      <entry colname="col2">
+                        <p>Current bitrate </p>
+                      </entry>
+                      <entry colname="col3">
+                        <p>Yes </p>
+                      </entry>
+                    </row>
+                    <row>
+                      <entry colname="col1">
+                        <p><codeph>startupTime</codeph></p>
+                      </entry>
+                      <entry colname="col2">
+                        <p>Startup time </p>
+                      </entry>
+                      <entry colname="col3">
+                        <p>Yes </p>
+                      </entry>
+                    </row>
+                    <row>
+                      <entry colname="col1">
+                        <p><codeph>fps</codeph></p>
+                      </entry>
+                      <entry colname="col2">
+                        <p>FPS value </p>
+                      </entry>
+                      <entry colname="col3">
+                        <p>Yes </p>
+                      </entry>
+                    </row>
+                    <row>
+                      <entry colname="col1">
+                        <p><codeph>droppedFrames</codeph></p>
+                      </entry>
+                      <entry colname="col2">
+                        <p>Number of dropped frames </p>
+                      </entry>
+                      <entry colname="col3">
+                        <p>Yes </p>
+                      </entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table><note type="tip">These variables are only required if you are planning to
+                track QoS. </note></p><p>The general format of the QoS object is:
+              <codeblock outputclass="syntax javascript">var qosObject = 
+  MediaHeartbeat.createQoSObject(&lt;bitrate&gt;, &lt;startupTime&gt;, &lt;fps&gt;, &lt;droppedFrames&gt;);</codeblock></p></li>
+          <li id="li_8D13FDADDFBC4D23A50EC0C7743FC347">When playback switches bitrates, call the
+              <codeph>BitrateChange</codeph> event in the <codeph>MediaHeartbeat</codeph> instance. <p>
+              <codeblock outputclass="syntax javascript">mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);</codeblock>
+              <note type="important">Update the QoS object and call the bitrate change event on
+                every bitrate change. This provides the most accurate QoS data. </note>
+            </p></li>
+          <li id="li_02A81059C97842A5888EF67B0DA8D030">Make sure the
+              <codeph>MediaHeartbeatDelegate.getQoSObject()</codeph> method returns the most updated
+            QoS information. </li>
+          <li id="li_DA7A53A5337C40618E76369CD6D19610">When the video player encounters an error,
+            and the error event is available to the player API, use the
+              <codeph>trackError()</codeph> MediaHeartbeat event to capture the error information. <p>
+              <codeblock outputclass="syntax javascript">mediaHeartbeat.trackError("videoErrorId");</codeblock>
+            </p><note type="tip">Tracking video player errors will not stop the video tracking
+              session. If the video player error prevents the playback from continuing, make sure
+              that the video tracking session is closed by calling
+                <codeph>trackSessionEnd()</codeph> after calling <codeph>trackError()</codeph>.
+            </note></li>
+        </ol>
+      </p>
+      <p>The following sample code uses the JavaScript 2.x SDK for an HTML5 video player. You should
+        use this code with the core video playback code.
+        <codeblock outputclass="syntax javascript">/* Call on bitrate change */
+if (e.type == "bitrate change") {
+    var qosObject = MediaHeartbeat.createQoSObjectt(24,5,29,2);
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
+};
+
+/*Call on player error*/
+if (e.type == "error") {
+    this.mediaHeartbeat.trackError("video error 10345");
+};
+</codeblock></p>
+    </section>
+    <section id="section_B58A8CD1650443F4B82483E6CB0EE894">
+      <title>Code</title>
+      <table id="table_1FC1BC9FE48C4B8699B84EE4138315D5">
+        <tgroup cols="3" rowsep="1">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="1.62*" />
+          <colspec colname="col3" colnum="3" colwidth="4.78*" />
+          <thead>
+            <row>
+              <entry namest="col1" nameend="col2">Video Analytics 2.x SDKs 
+				  </entry>
+              <entry colname="col3">Developer Guides 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry namest="col1" nameend="col2">Android/FireTV 
+				  </entry>
+              <entry colname="col3">
+                <xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-bitrate-changes_android.html" format="html" scope="external">Track Quality for Android</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">iOS/AppleTV 
+				  </entry>
+              <entry colname="col3">
+                <xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-bitrate-changes_ios.html" format="html" scope="external">Track Quality for iOS</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">JavaScript 
+				  </entry>
+              <entry colname="col3">
+                <xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_track-bitrate-changes_js.html" format="html" scope="external">Track Quality for JavaScript</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Roku 
+				  </entry>
+              <entry colname="col3">
+                <xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/c_vhl_conf-med-hrbts.html" format="html" scope="external">Track Quality for Roku</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Chromecast</entry>
+              <entry colname="col3"><xref
+                  href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/chromecast/c_vhl_conf-med-hrbts-chromecast.html"
+                  format="html" scope="external">Track Quality for Chromecast</xref></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table id="table_DCD074D23E704CA79BC3734D1CF59A5B">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="1.55*" />
+          <colspec colname="col3" colnum="3" colwidth="4.74*" />
+          <thead>
+            <row>
+              <entry namest="col1" nameend="col2">Video Analytics 1.x SDKs* 
+				  </entry>
+              <entry colname="col3">Developer Guides 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry namest="col1" nameend="col2">Android 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v15_android.pdf" format="pdf" scope="peer">Track Quality for Android</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">AppleTV 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v1x_appletv.pdf" format="pdf" scope="peer">Track Quality for AppleTV</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Chromecast 
+				  </entry>
+              <entry colname="col3">
+                <xref href="chromecast_1.x_sdk.pdf" format="pdf" scope="peer">Track Quality for Chromecast</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">iOS 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v15_ios.pdf" format="pdf" scope="peer">Track Quality for iOS</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">JavaScript 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v15_js.pdf" format="pdf" scope="peer">Track Quality for JavaScript</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Primetime 
+				  </entry>
+              <entry colname="col3">
+                <ul id="ul_AE4FACC564D84FAF8BF241912B5D7761">
+                  <li id="li_372AFC4170B546E9867C160DBAAC0A5E">
+                    <b>Android</b>: 
+						  <xref href="http://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_" format="html" scope="external">Configure Video Analytics</xref></li>
+                  <li id="li_224523B07B224A5099F18F06B0D14C87">
+                    <b>DHLS</b>: 
+						  <xref href="http://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ " format="html" scope="external">Configure Video Analytics</xref></li>
+                  <li id="li_C6A942B9468E45F0A9B1FA7CEF667BAF">
+                    <b>iOS</b>: 
+						  <xref href="http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_" format="html" scope="external">Configure Video Analytics</xref></li>
+                </ul>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">TVML 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl_tvml.pdf" format="pdf" scope="peer">Track Quality for TVML</xref>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>
+        <b>*</b> For all 1.x SDKs, the links are for the full PDF download of
+		  the documentation. 
+		</p>
+    </section>
+    <section id="section_F3174831408947A893F7E8C15659E5AA">
+      <title>Validate</title>
+      <p>
+        <b>Bitrate change</b>
+      </p>
+      <p>On each bitrate change, a Heartbeat 
+		  <codeph>bitrate_change</codeph> call will be sent, which includes the
+		  QoS variables. 
+		</p>
+      <p>
+        <b>Error</b>
+      </p>
+      <p>On player error, a Heartbeat error call will be sent with the error
+		  value included. 
+		</p>
+    </section>
+  </conbody>
+</concept>

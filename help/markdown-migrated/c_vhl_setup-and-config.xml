@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_425EDB4E08BA47EABBCDE3F02742EBD8">
+  <title>Set up and Configure</title>
+  <shortdesc>The following instructions provide guidance for implementation
+	 across all 2.x SDKs. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Heartbeat Video</keyword>
+        <keyword>Video Analytics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note type="important">Important: The following instructions provide
+		guidance for implementation across all 2.x SDks. If you are implementing a 1.x
+		version of the SDK, you can download the Developers Guide further down the
+		page. 
+	 </note>
+    <p>This topic contains the following information: </p>
+		<p>
+			<ul id="ul_0F29620331DA48339531BD07911F333D">
+				<li id="li_FFADB79F65E94B13AEC790A4618493BD"><xref
+						href="c_vhl_setup-and-config.xml#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_965A3B699A8248DDB9B2B3EA3CC20E41"
+						format="dita" scope="local"><?xm-replace_text Implement?></xref></li>
+				<li id="li_34C212AEB6324C998273327B28C1349F"><xref
+						href="c_vhl_setup-and-config.xml#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_B58A8CD1650443F4B82483E6CB0EE894"
+						format="dita" scope="local"><?xm-replace_text Code?></xref></li>
+				<li id="li_53F7808FC1D643338F920410E35C240F"><xref
+						href="c_vhl_setup-and-config.xml#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_D4D46F537A4E442B8AB0BB979DDAA4CC"
+						format="dita" scope="local"><?xm-replace_text Validate?></xref></li>
+			</ul>
+		</p>
+    <section id="section_965A3B699A8248DDB9B2B3EA3CC20E41">
+      <title>Implement</title>
+      <p>
+        <ol id="ol_BF68ADEE9EE74879867BD0C367ABC35A">
+          <li id="li_059D8E44BA5B46EDB9ABBF3B29EB38A2">Import the Heartbeat
+			 libraries or for JavaScript, create local references to the classes. There are
+			 three classes/libraries to reference. 
+			 <p>For links to platforms and additional details, see the 
+				<b>Code</b> section below. 
+			 </p><p><ul id="ul_3B638827AFE94C65AFF50520DE6A90CC"><li id="li_B1D8ABFC3D834A82A03546B94757FF35">Media Heartbeat
+				  Config: The config contains the basic settings for reporting. 
+				</li><li id="li_105D847031354251A046318982D90C10">Media Heartbeat
+				  Delegate: The delegate controls playback time and the QoS object. 
+				</li><li id="li_6E46AC02A0384E6496399471D3D98665">Media Heartbeat: The
+				  primary library containing members and methods. 
+				</li></ul></p></li>
+          <li id="li_EEB2C62BCEB04960B6892671DC75C82A">Create a
+							<codeph>MediaHeartbeatConfig</codeph> Instance. <p>Set the config values
+							on your <codeph>MediaHeartbeatConfig</codeph> instance for accurate
+							tracking. <table id="table_5CDFEDDE93DC4605AA300FB1ADD8E858">
+								<tgroup cols="4">
+									<colspec colnum="1" colname="col1" colwidth="2.21*"/>
+									<colspec colnum="2" colname="col2" colwidth="4.51*"/>
+									<colspec colnum="3" colname="col3" colwidth="1.00*"
+										align="center"/>
+									<colspec colnum="4" colname="col4" colwidth="1.18*"/>
+									<thead>
+										<row>
+											<entry colname="col1">Variable Name </entry>
+											<entry colname="col2">Description </entry>
+											<entry colname="col3">Required </entry>
+											<entry colname="col4">Default Value </entry>
+										</row>
+									</thead>
+									<tbody>
+										<row>
+											<entry colname="col1">
+												<p><codeph>trackingServer</codeph>
+												</p>
+											</entry>
+											<entry colname="col2">Define the server for tracking
+												media heartbeats. This is different from your
+												analytics tracking server. </entry>
+											<entry colname="col3">Yes </entry>
+											<entry colname="col4">Empty String </entry>
+										</row>
+										<row>
+											<entry colname="col1"><codeph>channel</codeph>
+											</entry>
+											<entry colname="col2">Channel name property </entry>
+											<entry colname="col3">Yes </entry>
+											<entry colname="col4">Empty String </entry>
+										</row>
+										<row>
+											<entry colname="col1"><codeph>ovp</codeph>
+											</entry>
+											<entry colname="col2">Name of the online video platform
+												through which content gets distributed. </entry>
+											<entry colname="col3">No </entry>
+											<entry colname="col4">Empty String </entry>
+										</row>
+										<row>
+											<entry colname="col1"><codeph>appVersion</codeph>
+											</entry>
+											<entry colname="col2">Version of the video player
+												app/SDK. </entry>
+											<entry colname="col3">Yes </entry>
+											<entry colname="col4">unknown </entry>
+										</row>
+										<row>
+											<entry colname="col1"><codeph>playerName</codeph>
+											</entry>
+											<entry colname="col2">
+												<p>Name of the video player in use, i.e.,
+												"AVPlayer", "HTML5 Player", "My Custom
+												VideoPlayer". </p>
+											</entry>
+											<entry colname="col3">Yes </entry>
+											<entry colname="col4">Empty String </entry>
+										</row>
+										<row>
+											<entry colname="col1"><codeph>ssl</codeph>
+											</entry>
+											<entry colname="col2">Property that indicates whether
+												the heartbeat calls should be made over HTTPS. </entry>
+											<entry colname="col3">Yes </entry>
+											<entry colname="col4">false </entry>
+										</row>
+										<row>
+											<entry colname="col1"><codeph>debugLogging</codeph>
+											</entry>
+											<entry colname="col2">Gets the preference for debug log
+												output. </entry>
+											<entry colname="col3">Yes </entry>
+											<entry colname="col4">false </entry>
+										</row>
+									</tbody>
+								</tgroup>
+							</table></p></li>
+          <li id="li_C310E0FFCF9F44C29E20BEDD7256EAF3">Implement the 
+			 <codeph>MediaHeartbeatDelegate</codeph>. 
+			 <table id="table_A815A90BFEC64EC1A26900DC077342DA"><desc>Here is the 
+				  <codeph>MediaHeartbeatDelegate</codeph> reference: 
+				</desc><tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="2.00*" /><colspec colnum="2" colname="col2" colwidth="4.86*" /><colspec colnum="3" colname="col3" colwidth="1.00*" align="center"/><thead><row><entry colname="col1">Method name 
+						</entry><entry colname="col2">Description 
+						</entry><entry colname="col3">Required 
+						</entry></row></thead><tbody><row><entry colname="col1"><codeph>getQoSObject()</codeph></entry><entry colname="col2">Returns the MediaObject instance that
+						  contains the current QoS information. This method will be called multiple times
+						  during a playback session. Player implementation must always return the most
+						  recently available QoS data. 
+						</entry><entry colname="col3">Yes 
+						</entry></row><row><entry colname="col1"><codeph>getCurrentPlaybackTime()</codeph></entry><entry colname="col2"><p>Returns the current position of the playhead. 
+						  </p><p>For VOD tracking, the value is specified in seconds from
+							 the beginning of the media item. 
+						  </p><p>For LINEAR/LIVE tracking, the value is specified in
+							 seconds from the beginning of the program. 
+						  </p></entry><entry colname="col3">Yes 
+						</entry></row></tbody></tgroup></table><p><note type="tip">The QoS Object is not required. If the QoS data is
+				  available for your player, then the following variables are required to fully
+				  track Quality of Service. 
+				</note></p><table id="table_0958BFC59D584E108615A60AECA5712E"><desc>Here is the 
+				  <codeph>MediaObject</codeph> (QoS Object) reference: 
+				</desc><tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><colspec colnum="3" colname="col3" colwidth="*" align="center"/><thead><row><entry colname="col1">Variable name 
+						</entry><entry colname="col2">Description 
+						</entry><entry colname="col3">Required 
+						</entry></row></thead><tbody><row><entry colname="col1"><codeph>bitrate</codeph>
+										</entry><entry colname="col2">The bitrate of media in bits per
+						  second. 
+						</entry><entry colname="col3">Yes 
+						</entry></row><row><entry colname="col1"><codeph>startupTime</codeph>
+										</entry><entry colname="col2">The start up time of media in milliseconds. </entry><entry colname="col3">Yes 
+						</entry></row><row><entry colname="col1"><codeph>fps</codeph>
+										</entry><entry colname="col2">The frames displayed per second. 
+						</entry><entry colname="col3">Yes 
+						</entry></row><row><entry colname="col1"><codeph>droppedFrames</codeph>
+										</entry><entry colname="col2">The number of dropped frames so far. 
+						</entry><entry colname="col3">Yes 
+						</entry></row></tbody></tgroup></table></li>
+          <li id="li_4D17A9B7B4614E928343B1722FAB80EA">Create the 
+			 <codeph>MediaHeartbeat</codeph> instance. 
+			 <p>Use the 
+				<codeph>MediaHertbeatConfig</codeph> and 
+				<codeph>MediaHertbeatDelegate</codeph> to create the 
+				<codeph>MediaHeartbeat</codeph> instance. 
+			 </p><note type="important">Make sure that your 
+				<codeph>MediaHeartbeat</codeph> instance is accessible and does not
+				get deallocated until the end of the video session. This instance will be used
+				for all the following video tracking events. 
+			 </note><note type="tip"><codeph>MediaHeartbeat</codeph> requires an instance
+				of 
+				<codeph>AppMeasurement</codeph> to send calls to Adobe Analytics. 
+			 </note></li>
+          <li id="li_5E7EF634FB8A4C029AA6333E02C754AD">Combine all of the pieces.
+			 
+			 <p>The following sample code utilizes our JavaScript 2.x SDK for an HTML5 video player:
+							<codeblock outputclass="syntax javascript">// Create local references to the heartbeat classes
+var MediaHeartbeat = ADB.va.MediaHeartbeat;
+var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
+var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
+
+//Media Heartbeat Config
+var mediaConfig = new MediaHeartbeatConfig();
+mediaConfig.trackingServer = "namespace.hb.omtrdc.net";
+mediaConfig.playerName = "HTML5 Basic";
+mediaConfig.channel = "Video Channel";
+mediaConfig.debugLogging = true;
+mediaConfig.appVersion = "2.0";
+mediaConfig.ssl = false;
+mediaConfig.ovp = "";
+
+// Media Heartbeat Delegate
+var mediaDelegate = new MediaHeartbeatDelegate();
+
+// Set mediaDelegate CurrentPlaybackTime
+mediaDelegate.getCurrentPlaybackTime = function() {
+    return video.currentTime;
+};
+
+// Set mediaDelegate QoSObject - OPTIONAL
+mediaDelegate.getQoSObject = function() {
+    return MediaHeartbeat.createQoSObject(video.bitrate, 
+                                          video.startuptime, 
+                                          video.fps, 
+                                          video.droppedframes);
+}
+// Create mediaHeartbeat instance     
+this.mediaHeartbeat = 
+  new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance); 
+</codeblock></p></li>
+        </ol>
+      </p>
+    </section>
+    <section id="section_B58A8CD1650443F4B82483E6CB0EE894">
+      <title>Code</title>
+      <table id="table_1FC1BC9FE48C4B8699B84EE4138315D5">
+				<title>VA 2.x</title>
+        <tgroup cols="3" rowsep="1">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="1.62*" />
+          <colspec colname="col3" colnum="3" colwidth="4.78*" />
+          <thead>
+            <row>
+              <entry namest="col1" nameend="col2">Video Analytics 2.x SDKs 
+				  </entry>
+              <entry colname="col3">Developer Guides 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry namest="col1" nameend="col2">Android/FireTV 
+				  </entry>
+              <entry colname="col3">
+								<xref
+									href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_set-up-vid-track-feat_android.html "
+									format="html" scope="external">Configure for Android</xref>
+							</entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">iOS/AppleTV 
+				  </entry>
+              <entry colname="col3">
+								<xref
+									href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_set-up-vid-track-feat_ios.html"
+									format="html" scope="external">Configure for iOS</xref>
+							</entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">JavaScript 
+				  </entry>
+              <entry colname="col3">
+								<xref
+									href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_set-up-vid-track-feat_js.html"
+									format="html" scope="external">Configure for JavaScript</xref>
+							</entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Roku 
+				  </entry>
+              <entry colname="col3">
+								<xref
+									href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/c_vhl_conf-med-hrbts.html"
+									format="html" scope="external">Configure for Roku</xref>
+							</entry>
+            </row>
+						<row>
+							<entry namest="col1" nameend="col2">Chromecast</entry>
+							<entry colname="col3"><xref
+									href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/chromecast/c_vhl_conf-med-hrbts-chromecast.html"
+									format="html" scope="external">Configure for
+								Chromecast</xref></entry>
+						</row>
+						<row>
+							<entry namest="col1" nameend="col2">Primetime</entry>
+							<entry colname="col3">
+								<ul id="ul_myv_ypr_1cb">
+									<li>
+										<b>Android</b>: <xref
+											href="https://help.adobe.com/en_US/primetime/psdk/android/2.5/index.html#Initialize_and_configure_video_analytics_"
+											format="html" scope="external">Configure Video
+											Analytics</xref></li>
+									<li>
+										<b>DHLS</b>: <xref
+											href="https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/index.html#Initialize_and_configure_video_analytics"
+											format="html" scope="external">Configure Video
+											Analytics</xref></li>
+									<li>
+										<b>iOS</b>: <xref
+											href="https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Initialize_and_configure_video_analytics_"
+											format="html" scope="external">Configure Video
+											Analytics</xref></li>
+								</ul>
+							</entry>
+						</row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table id="table_DCD074D23E704CA79BC3734D1CF59A5B">
+				<title>VA 1.x</title>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="1.55*" />
+          <colspec colname="col3" colnum="3" colwidth="4.74*" />
+          <thead>
+            <row>
+              <entry namest="col1" nameend="col2">Video Analytics 1.x SDKs* 
+				  </entry>
+              <entry colname="col3">Developer Guides 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry namest="col1" nameend="col2">Android 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v15_android.pdf" format="pdf" scope="peer">Configure for Android</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">AppleTV 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v1x_appletv.pdf" format="pdf" scope="peer">Configure for AppleTV</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Chromecast 
+				  </entry>
+              <entry colname="col3">
+                <xref href="chromecast_1.x_sdk.pdf" format="pdf" scope="peer">Configure for Chromecast</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">iOS 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v15_ios.pdf" format="pdf" scope="peer">Configure for iOS</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">JavaScript 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl-dev-guide-v15_js.pdf" format="pdf" scope="peer">Configure for JavaScript</xref>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">Primetime 
+				  </entry>
+              <entry colname="col3">
+                <ul id="ul_AE4FACC564D84FAF8BF241912B5D7761">
+                  <li id="li_372AFC4170B546E9867C160DBAAC0A5E">
+                    <b>Android</b>: 
+						  <xref href="http://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_" format="html" scope="external">Configure Video Analytics</xref></li>
+                  <li id="li_224523B07B224A5099F18F06B0D14C87">
+                    <b>DHLS</b>: 
+						  <xref href="http://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ " format="html" scope="external">Configure Video Analytics</xref></li>
+                  <li id="li_C6A942B9468E45F0A9B1FA7CEF667BAF">
+                    <b>iOS</b>: 
+						  <xref href="http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_" format="html" scope="external">Configure Video Analytics</xref></li>
+                </ul>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col2">TVML 
+				  </entry>
+              <entry colname="col3">
+                <xref href="vhl_tvml.pdf" format="pdf" scope="peer">Configure for TVML</xref>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>
+        <b>*</b> For all 1.x SDKs, the links are for the full PDF download of
+		  the documentation. 
+		</p>
+    </section>
+    <section id="section_D4D46F537A4E442B8AB0BB979DDAA4CC">
+      <title>Validate</title>
+      <p>Video implementations are composed of two types of tracking calls: </p>
+			<p>
+				<ul id="ul_AD201E2312684DFBACE8CA1B1BEA806D">
+					<li id="li_7B5F2EA849C94B50A80FCF0DE4D946F1">Video and Ad Start calls are sent
+						directly to the AppMeasurement server. </li>
+					<li id="li_A945010389E84BD986FAC6DF1CD598E1">Heartbeat calls are sent on start
+						and every ten seconds to the Heartbeat tracking server. </li>
+				</ul>
+			</p>
+      <p>Video tracking will behave the same across all platforms, desktop and
+		  mobile. 
+		</p>
+      <p>Across all tracking calls there are a few key universal variables to be validated: </p>
+			<p>
+				<ul id="ul_3ED53CD2153C4C5990CCF8E3BE148434">
+					<li id="li_944F28FC58804402BE27695021AE3C37"><b>AppMeasurement
+							(Analytics)</b><p>For more information about tracking server options,
+							see <xref
+								href="https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html"
+								format="html" scope="external">Correctly populate the trackingServer
+								and trackingServerSecure variable</xref>. <note type="important">An
+								RDC tracking server or CNAME resolving to an RDC server is required
+								for Marketing Cloud Visitor ID service. </note></p><p>The analytics
+							tracking server should end in <codeph>.sc.omtrdc.net</codeph> or be a
+							CNAME. </p></li>
+					<li id="li_EB5C63BAF096488A93967F15D3DD0D22"><b>Video Heartbeat</b><p>Always has
+							the format <codeph>[namespace].hb.omtrdc.net</codeph>, where
+								<codeph>[namespace]</codeph> is defined by your login company and is
+							provided by Adobe. </p></li>
+				</ul>
+			</p>
+    </section>
+  </conbody>
+</concept>

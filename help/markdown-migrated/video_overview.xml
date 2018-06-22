@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ADA4B5C612D24280955BD0B7E79B4271"> 
+  <title>Measuring Video in Adobe Analytics</title> 
+  <shortdesc>
+  </shortdesc> 
+  <conbody> 
+	 <note type="important"> The video documentation provided here is specific to clients utilizing
+			version 1.5 or higher of Adobe's Video Analytics SDK for heartbeat measurement, and does
+			not include instructions around the legacy milestone video implementation. We encourage
+			all customers to move towards adopting the latest Video Analytics SDK to capitalize on
+			the improvements and expanded measurement. You can view the <xref
+				href="video_overview.xml#concept_ADA4B5C612D24280955BD0B7E79B4271/section_cnj_5st_p1b"
+				format="dita" scope="local">benefits of transitioning to the SDK</xref> below. While
+			Adobe will continue to support the Milestone method of tracking videos, there will not
+			be any planned updates, fixes or feature improvements. Please reach out to your Adobe
+			Account Manager if you have any further questions. </note> 
+	 <section id="section_8BFE4F8DA64B4A5F826A4940B11AA466"> 
+		<title>Overview</title> 
+		<p>Adobe Analytics for Video (Video Analytics) is an add-on to the base Analytics offering that
+				provides clients with robust video measurement for content, audio and
+				advertisements. Video Analytics provides many benefits to customers to allow for
+				real-time monitoring, detailed analysis, actionable insights and monetization
+				opportunities. Video tracking is enabled through SDK integrations with the most
+				commonly used video players. The latest SDKs have the additional capability of
+				capturing audio related metrics. </p> 
+		<p>Adobe Analytics for Video enables clients to track the full customer
+		  journey across their site, which includes video consumption, and these measures
+		  are easily integrated into Analytics reporting and other Experience Cloud
+		  products. Video measurement allows you to slice and dice your data into
+		  multiple dimensions and segments, capturing all of the metadata you need to do
+		  a full detailed analysis, and to attribute success criteria to fully viewed
+		  videos, average time spent and completed ads.
+		</p> 
+		<p> The video solution not only measures vital video delivery metrics
+		  related to QoS, such as dropped frames, time spent buffering, and average
+		  bitrate, but it can also be combined with your website or app data to visualize
+		  the flow of the customer and their interests to better be able to make
+		  recommendations and personalize their experiences through the Adobe Experience
+		  Cloud.
+		</p> 
+	 </section> 
+	 <section id="section_7712BA90EAE64C118218D1C581EF68B7"> 
+		<title>Benefits</title> 
+		<p>Some of the many benefits that Adobe's video solution provides
+		  include:
+		</p> 
+		<ul id="ul_hj1_k4t_p1b"> 
+		  <li id="li_F1990DF6A34947A2ADC50EE36F707264"><b>Timely analysis</b> -
+			 Make real-time, actionable decisions utilizing key video performance metrics
+			 (e.g., duration) across multiple channels. Video events are measured in 
+			 <b>10-second</b> intervals to capture all activity as it occurs.
+		  </li> 
+		  <li id="li_8A588D150CA948F59AD681F58B3FB1E1"><b>Drive engagement</b> -
+			 Fully engage users through fewer buffering events and by understanding where
+			 and when ads should display within video content to provide a smooth, less
+			 intrusive viewing experience that brings users back and delivers repeat visits.
+		  </li> 
+		  <li id="li_1D569128684F4005872C3B55BE9385C0"><b>Holistic picture</b> -
+			 Combine multiple data points across all of your content distributors to get a
+			 full view of all your video activity, and measure engagement and views across
+			 all possible channels through 
+			 <xref href="federated-analytics.xml" scope="local" format="dita"/>.
+		  </li> 
+		  <li id="li_1FE0FDC8A5F4401A87371BECD6545F4F"><b>Increased
+				granularity</b> - Evaluate viewing behavior at the most granular level,
+			 including individual visitor time of day, concurrent viewers by minute, and
+			 average duration the content was viewed.
+		  </li> 
+		  <li id="li_8DC065EFCE4547218C491130F18A86E7"><b>Precise measurement</b>
+			 - Measure across the multiple devices used for video consumption, including
+			 OTT, smartphone, tablet, desktop, and more, to monitor user engagement patterns
+			 and habits.
+		  </li> 
+		  <li id="li_B0C3245D5FCF4C179DE2F86BC6F47A63"><b>Segmentation</b> -
+			 Apply classifications to your players, devices, genres, chapters, and shows to
+			 see how each has an impact on your overall views and customer engagement with
+			 content, audio, ads, and combined.
+		  </li> 
+		</ul> 
+		<draft-comment author="kenny"> 
+		  <p>Here is how video and video ad data flow into Adobe: 
+		  </p> 
+		  <p> 
+			 <fig id="fig_5A574F71C807481B8E1D66335CB836F3"> 
+				<image href="graphics/how_aa_video_works.png"
+				 id="image_D3A97A67B8AF4055B6BF72F92190E18B"/> 
+			 </fig> 
+		  </p> 
+		</draft-comment> 
+	 </section> 
+	 <section id="section_cnj_5st_p1b"> 
+		<title>Heartbeat versus Milestone Benefits</title> 
+		<p>Adobe Analytics for Video is able to be measured through two means:
+		  the legacy Milestone method and the current Heartbeats method. The Heartbeats
+		  method is the preferred method of measurement and we encourage all clients to
+		  move to this version if they haven’t already, to take advantage of the benefits
+		  described below. 
+		</p> 
+		<p>The legacy Milestone method is based on individual server calls to the Analytics server, for
+				video starts, quartiles, duration, and completes. The Heartbeats method provides a
+				more robust video tracking solution that measures video in 10 second intervals to
+				provide enhanced, standardized video metrics. In addition, Adobe has derived
+				learnings from our Milestone method to provide a smoother, streamlined
+				implementation process through the Video Analytics SDK utilized by heartbeats. </p> 
+		<p>Some of the many benefits of the Heartbeats method include:
+		</p> 
+		<ul id="ul_t1g_ytt_p1b"> 
+		  <li id="li_267FB0CAD3AA44D69349D492A8220A59"><b>Streamlined
+				implementation process</b> - Map variables more easily through your player API
+			 and validate implementations through the Adobe Debug Tool to ensure all the
+			 necessary variables are tracked accurately.
+		  </li> 
+		  <li id="li_6C95299F3CAC4ABAAE785807F40E71C3"><b>Automatic Adobe
+				Experience Cloud Integration</b> - Take advantage of the automatic integration
+			 with the Adobe Experience Cloud through the Marketing Cloud ID, segment your
+			 video audiences, target them, and make video recommendations based on user
+			 preferences.
+		  </li> 
+		  <li id="li_73D452ED5D55468A91D2DD6470787409"><b>Shared video data
+				through Federated Analytics</b> - Capitalize on our industry-first video
+			 sharing capabilities, to evaluate data holistically across all of your video
+			 distribution partners—operators, programmers, and distributors. 
+		  </li> 
+		  <li id="li_CFEAB938F1F34A429528451D5222C9E6"><b>Partnerships with
+				Certified Ratings Partners</b> - Adobe partners with audience ratings partner
+			 Nielsen to provide neutral census third party measurement to allow for trusted,
+			 certified video ratings.
+		  </li> 
+		  <li id="li_CE5D00A03C144561ABFD766FA8E8BB40"><b>Standardized solution
+				across all platforms</b> - Enable consistent, standardized variables across all
+			 of your videos and platforms to allow for a more efficient cross-campaign,
+			 device and vendor comparison.
+		  </li> 
+		</ul> 
+		<p> 
+		<table id="table_mmx_f5t_p1b"> 
+		<title><b>Comparison Chart</b></title> 
+		<tgroup cols="3"> 
+		  <colspec colnum="1" colname="col1"/> 
+		  <colspec colnum="2" colname="col2"/> 
+		  <colspec colnum="3" colname="col3"/> 
+		  <thead>	
+			 <row> 
+				<entry/> 
+				<entry><b>Video Analytics - Milestone</b>
+								</entry> 
+				<entry><b>Video Analytics - Heartbeats</b>
+								</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry><b>Video Events</b>
+				</entry> 
+				<entry>High-level Standard Events
+				</entry> 
+				<entry>Detailed and Custom Events every 10s
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry><b>Metrics and Dimensions</b>
+				</entry> 
+				<entry>Variances among Vendors, Non-Standardized Metrics and
+				  Dimensions
+				</entry> 
+				<entry>Clear, Standardized Metrics, Dimensions, and Benchmarks
+				  across Vendors
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry><b>Integrations w/ Adobe Products</b>
+				</entry> 
+				<entry>Individual Sessions w/ some Mappings and Integrations
+				</entry> 
+				<entry>Stitched Marketing Cloud ID linked to full Adobe Experience
+				  Cloud for easier cross-analysis
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry><b>Pricing</b>
+				</entry> 
+				<entry>Tracked and billed against each server call
+				</entry> 
+				<entry>Transparent tracking by video stream (single)
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry><b>Implementation and Support</b>
+				</entry> 
+				<entry>Longer integrations with limited support on legacy versions
+				  &amp; no upgrades
+				</entry> 
+				<entry>Streamlined configuration with ongoing updates and
+				  improvements
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry><b>Partner Sharing</b>
+				</entry> 
+				<entry>N/A
+				</entry> 
+				<entry>Federated Analytics and Certified Metrics
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry><b>Advanced Tracking</b>
+				</entry> 
+				<entry>N/A
+				</entry> 
+				<entry>Error Recovery Tracking and Concurrent Viewers
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+		</table> 
+		</p> 
+	 </section> 
+	 <section id="section_lkm_l5t_p1b">
+			<title>Devices Supported</title>
+			<p>Adobe Analytics for Video has evolved with the industry to provide strong data
+				collection tools to ensure each video stream is collected and reported across all
+				meaningful devices. Our Video Analytics SDK is developed for all of the most
+				utilized devices, including: </p>
+			<ul id="ul_cyj_r5t_p1b">
+				<li id="li_B3480EFBC422492B991D966BFFC49AF9">iOS and Android smartphones and tablets </li>
+				<li id="li_9BB32F326F364DAD95408FD4E53779E4">OTT devices for ROKU, AppleTV, FireTV,
+					and Android TV </li>
+				<li id="li_F12CFAB58ED646BAB63D3C796776643B">JavaScript Browser for Desktop and
+					Laptop </li>
+			</ul>
+			<p> The SDK’s are routinely updated when new versions of devices are released, and you
+				can use these SDKs to integrate with most of the largest video players today,
+				including Brightcove and Ooyala. </p> The table below provides a list of the devices
+			that are currently supported through our SDK implementation or Analytics API. To
+			download the most recent version of the SDK, visit <xref href="c_vhl_download-sdks.xml"
+				scope="local" format="dita"/>. If there is a device that is not listed which you are
+			seeking measurement against, please contact customer care or your solution consultant
+			for the status of that device. <table id="table_znx_dvt_p1b">
+				<tgroup cols="3">
+					<colspec colnum="1" colname="col1" align="left" colwidth="1*"/>
+					<colspec colnum="2" colname="col2" align="center" colwidth="1.08*"/>
+					<colspec colnum="3" colname="col3" align="center" colwidth="1.19*"/>
+					<tbody>
+						<row>
+							<entry/>
+							<entry align="center"><b>Adobe Video SDK</b>
+							</entry>
+							<entry align="center"><b>Video Analytics Collection API</b>
+							</entry>
+						</row>
+						<row>
+							<entry><b>JavaScript Browser</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry align="center"/>
+						</row>
+						<row>
+							<entry><b>iOS Devices</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry align="center"/>
+						</row>
+						<row>
+							<entry><b>Android Devices</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry align="center"/>
+						</row>
+						<row>
+							<entry><b>Windows </b>
+							</entry>
+							<entry align="center"/>
+							<entry align="center"><b>✔</b>
+							</entry>
+						</row>
+						<row>
+							<entry><b>Blackberry</b>
+							</entry>
+							<entry align="center"/>
+							<entry align="center"><b>✔</b>
+							</entry>
+						</row>
+						<row>
+							<entry><b>Apple TV (new/legacy)</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry align="center"/>
+						</row>
+						<row>
+							<entry><b>ROKU</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry><b>OSX</b>
+							</entry>
+							<entry align="center"/>
+							<entry align="center"><b>✔</b>
+							</entry>
+						</row>
+						<row>
+							<entry><b>Fire TV</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry><b>Android TV</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry><b>Chromecast</b>
+							</entry>
+							<entry align="center"><b>✔</b>
+							</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry><b>Xbox 1</b>
+							</entry>
+							<entry align="center"/>
+							<entry align="center"><b>✔</b>
+							</entry>
+						</row>
+						<row>
+							<entry><b>Sony PS3/PS4</b>
+							</entry>
+							<entry align="center"/>
+							<entry align="center"><b>✔</b>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section> 
+  </conbody> 
+</concept>

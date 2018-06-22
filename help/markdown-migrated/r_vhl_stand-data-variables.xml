@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<reference id="reference_E40896531E174759A404455EB8E040F8">
+  <title>Standard Data Variables</title>
+  <shortdesc>Tables that include Labels, Descriptions, Context Data Values, and
+	 an Examples for Video, Ads, Chapters/Segments, and Quality (QoS) across both
+	 events and dimensions.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Heartbeat Video</keyword>
+        <keyword>Video Analytics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <refbody></refbody>
+</reference>

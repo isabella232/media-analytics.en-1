@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2D859A9896CE4709A7623B7A562406F1">
+  <title>Validation</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Heartbeat Video</keyword>
+        <keyword>Video Analytics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>List of heartbeat parameters that Adobe collects and processes on the heartbeats server. </p>
+    <p>
+      <table id="table_2853201180394C8CB51891ACEF525852">
+        <tgroup cols="5">
+          <colspec colname="col1" colnum="1" colwidth=".75*"/>
+          <colspec colnum="2" colname="col2" colwidth="2*"/>
+          <colspec colnum="3" colname="col3" colwidth="1*" align="center"/>
+          <colspec colnum="4" colname="col4" colwidth="1.75*"/>
+          <colspec colnum="5" colname="col5" colwidth="2.5*"/>
+          <thead>
+            <row>
+              <entry colname="col1"> </entry>
+              <entry colname="col2">Name </entry>
+              <entry colname="col3">Required / Optional </entry>
+              <entry colname="col4">Data Source </entry>
+              <entry colname="col5">Description </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1" morerows="25">All Events </entry>
+              <entry colname="col2"><codeph>s:event:type</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">The type of the event being tracked. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:event:prev_ts</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">The timestamp of the last event of the same type in this
+                session. The value is <codeph>-1</codeph> if this is the first event of this type in
+                this video session. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:event:ts</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">The timestamp of the event. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:event:duration</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">This value is set internally (in milliseconds) by the VHL
+                Library, not by the player. It is used to compute the time spent metrics on the
+                backend. For example <codeph>a.media.totalTimePlayed</codeph> is computed as a sum
+                of the duration for all the Play (<codeph>type=play</codeph>) heartbeats that are
+                generated. <note>For some of the HB that are sent This parameter is set to 0 for
+                  certain events because they are "state change events" (e.g.,
+                    <codeph>type=complete</codeph>, <codeph>type=chapter_complete</codeph>, or
+                    <codeph>type=bitrate_change</codeph>.</note></entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:event:playhead</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>VideoInfo</codeph> object </entry>
+              <entry colname="col5">The playhead was inside the currently active asset (main or ad),
+                when the event was recorded. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:event:sid</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">
+                <p>The session ID (a randomly generated string). All events in a certain session
+                  (video + ads) should be the same. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2">
+                <p><codeph>l:asset:duration / l:asset:length</codeph></p>
+                <p>(Renamed from <codeph>length</codeph> to <codeph>duration</codeph> in version
+                  1.5)</p>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>VideoInfo</codeph> object </entry>
+              <entry colname="col5">The video asset length of the main asset. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:publisher</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object </entry>
+              <entry colname="col5">
+                <p>The publisher of the asset.</p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:video_id</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>VideoInfo</codeph> object </entry>
+              <entry colname="col5">An ID uniquely identifying the video in the publisher's catalog.
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:type</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4">
+                <p>VHL SDK </p>
+              </entry>
+              <entry colname="col5">The asset type (main or ad). </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:stream:type</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4"><codeph>VideoInfo</codeph> object </entry>
+              <entry colname="col5">
+                <p>The stream type. Can be one of the following: </p>
+                <p><ul id="ul_nmj_ws5_3bb">
+                    <li><codeph>live</codeph></li>
+                    <li><codeph>vod</codeph></li>
+                    <li><codeph>linear</codeph></li>
+                  </ul>. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:user:id</codeph>
+              </entry>
+              <entry colname="col3">O</entry>
+              <entry colname="col4">Config object for mobile, app measurement VisitorID </entry>
+              <entry colname="col5">
+                <p>User's specifically set Visitor ID.</p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:user:aid</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>O</p>
+              </entry>
+              <entry colname="col4">Marketing Cloud Org </entry>
+              <entry colname="col5">The user's analytics Visitor ID value. </entry>
+            </row>
+            <row>
+              <entry colname="col2">
+                <p><codeph>s:user:mid</codeph>
+                </p>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">Marketing Cloud Org </entry>
+              <entry colname="col5">The user's marketing cloud visitor ID value. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:cuser:customer_user_ids_x</codeph>
+              </entry>
+              <entry colname="col3">O</entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object</entry>
+              <entry colname="col5">
+                <p>All customer user IDs set on Audience Manager.</p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:aam:loc_hint</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object</entry>
+              <entry colname="col5">
+                <p>AAM data sent on each payload after <codeph>aa_start</codeph>. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:aam:blob</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object</entry>
+              <entry colname="col5">AAM data sent on each payload after <codeph>aa_start</codeph>.
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sc:rsid</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">Report Suit ID (or IDs) </entry>
+              <entry colname="col5">
+                <p>SiteCatalyst RSID where reports should be sent. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sc:tracking_server</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object </entry>
+              <entry colname="col5">
+                <p>SiteCatalyst tracking server.</p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>h:sc:ssl</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object </entry>
+              <entry colname="col5">Whether the traffic is over HTTPS (if set to 1) or over HTTP (is
+                set to 0). </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sp:ovp</codeph>
+              </entry>
+              <entry colname="col3">O</entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object </entry>
+              <entry colname="col5">
+                <p>Set to "primetime" for Primetime players, or the actual OVP for other players.
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sp:sdk</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object </entry>
+              <entry colname="col5">
+                <p>The OVP version string.</p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sp:player_name</codeph>
+              </entry>
+              <entry colname="col3">R</entry>
+              <entry colname="col4"><codeph>VideoInfo</codeph> object </entry>
+              <entry colname="col5">Video player name (the actual player software, used to identify
+                the player). </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sp:channel</codeph>
+              </entry>
+              <entry colname="col3">O</entry>
+              <entry colname="col4"><codeph>MediaHeartbeatConfig</codeph> object </entry>
+              <entry colname="col5">The channel where the user is watching the content. For a mobile
+                app, the app name. For a website, the domain name. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:sp:hb_version</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">
+                <p>VHL SDK </p>
+              </entry>
+              <entry colname="col5">The version number of the VideoHeartbeat library issuing the
+                call. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:stream:bitrate</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>QoSInfo</codeph> object </entry>
+              <entry colname="col5">The current value of the stream bitrate (in bps).</entry>
+            </row>
+            <row>
+              <entry colname="col1" morerows="1">Error Events </entry>
+              <entry colname="col2"><codeph>s:event:source</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">The source of the error, either player-internal, or the
+                application-level. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:event:id</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">
+                <p>Error ID, uniquely identifies the error. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1" morerows="5">Ad Events </entry>
+              <entry colname="col2"><codeph>s:asset:ad_id</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>AdInfo</codeph> object </entry>
+              <entry colname="col5">The name of the ad.</entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:ad_sid</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">A unique identifier generated by the VHL SDK, appended to all
+                ad-related pings. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:pod_id</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">Pod ID inside the video. This value is computed automatically
+                based on the following formula:
+                <codeblock>MD5(video_id) + "_" + [pod index]</codeblock>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:pod_position</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">
+                <p><codeph>AdBreakInfo</codeph> object </p>
+              </entry>
+              <entry colname="col5">
+                <p>Index of the ad inside the pod (the first ad has index 0, the second ad has index
+                  1, etc.).</p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:asset:resolver</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">
+                <p><codeph>AdBreakInfo</codeph> object </p>
+              </entry>
+              <entry colname="col5">The ad resolver. </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:meta:custom_ad_metadata.x</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>O</p>
+              </entry>
+              <entry colname="col4"><codeph>MediaHeartbeat</codeph> object </entry>
+              <entry colname="col5">
+                <p>The custom ad metadata. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1" morerows="6">Chapter Events </entry>
+              <entry colname="col2"><codeph>s:stream:chapter_sid</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK</entry>
+              <entry colname="col5">
+                <p>The unique identifier associated to the playback instance of the chapter. <note>A
+                    chapter can be played multiple times due to seek-back operations performed by
+                    the user.</note>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:stream:chapter_name</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>O</p>
+              </entry>
+              <entry colname="col4"><codeph>ChapterInfo</codeph> object </entry>
+              <entry colname="col5">
+                <p>The chapter's friendly (i.e., human readable) name. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:stream:chapter_id</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">VHL SDK </entry>
+              <entry colname="col5">The unique ID of the chapter. This value is computed
+                automatically based on the following formula:
+                <codeblock>MD5(video_id) + "_" + chapter_pos</codeblock></entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:stream:chapter_pos</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4">
+                <p><codeph>ChapterInfo</codeph> object </p>
+              </entry>
+              <entry colname="col5">
+                <p>The chapter's index in the list of chapters (starting with 1). </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:stream:chapter_offset</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>ChapterInfo</codeph> object </entry>
+              <entry colname="col5">
+                <p>The chapter's offset (expressed in seconds) inside the main content, excluding
+                  ads. </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>l:stream:chapter_length</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>R</p>
+              </entry>
+              <entry colname="col4"><codeph>ChapterInfo</codeph> object </entry>
+              <entry colname="col5">
+                <p>The chapter's duration (expressed in seconds). </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col2"><codeph>s:meta:custom_chapter_metadata.x</codeph>
+              </entry>
+              <entry colname="col3">
+                <p>O</p>
+              </entry>
+              <entry colname="col4"><codeph>ChapterInfo</codeph> object </entry>
+              <entry colname="col5">
+                <p>Custom chapter metadata.</p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

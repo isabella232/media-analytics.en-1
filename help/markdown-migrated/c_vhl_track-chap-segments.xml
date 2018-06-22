@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8B95F957C85C4B23A1E934A094471998"> 
+  <title>Track Chapters and Segments</title> 
+  <shortdesc>The following instructions provide guidance for implementation
+	 across all 2.x SDKs. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>Heartbeat Video</keyword> 
+		  <keyword>Video Analytics</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <note type="important">The following instructions provide guidance for
+		implementation across all 2.x SDKs. If you are implementing a 1.x version of
+		the SDK, you can download the Developers Guide further down the page. 
+	 </note> 
+	 <p>This topic contains the following information: </p>
+		<p>
+			<ul id="ul_D84E802822744388A8135045E40CF93F">
+				<li id="li_1A219326C9EB4DD0BED22A84AC8C6AB9"><xref
+						href="c_vhl_track-chap-segments.xml#concept_8B95F957C85C4B23A1E934A094471998/section_42F6679178794FF5A923E5B3C71E9965"
+						format="dita" scope="local"><?xm-replace_text Overview?></xref>
+				</li>
+				<li id="li_0941BFD3B596479C97FC93FEF48B6544"><xref
+						href="c_vhl_track-chap-segments.xml#concept_8B95F957C85C4B23A1E934A094471998/section_52221B3A9BFD46B3A22DA6BCE97CCD75"
+						format="dita" scope="local"><?xm-replace_text Implement?></xref>
+				</li>
+				<li id="li_0E7273F336A74E23A41FB50B3D08C50D"><xref
+						href="c_vhl_track-chap-segments.xml#concept_8B95F957C85C4B23A1E934A094471998/section_B58A8CD1650443F4B82483E6CB0EE894"
+						format="dita" scope="local"><?xm-replace_text Code?></xref>
+				</li>
+				<li id="li_9153F9C8C2F1455C839A65504FDD77ED"><xref
+						href="c_vhl_track-chap-segments.xml#concept_8B95F957C85C4B23A1E934A094471998/section_07EC2811BE3249249494596BFE9BF869"
+						format="dita" scope="local"><?xm-replace_text Validate?></xref>
+				</li>
+			</ul>
+		</p> 
+	 <section id="section_42F6679178794FF5A923E5B3C71E9965"> 
+		<title>Overview</title> 
+		<p> Chapter and segment tracking is available for custom-defined video
+		  chapters or segments. Some common uses for chapter tracking are to define
+		  custom segments based on video content, such as baseball innings, or to define
+		  content segments between ad breaks. Chapter tracking is 
+		  <b>not</b> required for core video heartbeat implementations. 
+		</p> 
+		<p>Chapter tracking includes chapter starts, chapter completes, and
+		  chapter skips. You can use the video player API with customized segmentation
+		  logic to identify chapter events and to populate the required and optional
+		  chapter variables. Here are the key elements of tracking chapter playback: 
+		</p> 
+		<note type="tip">Additional details for each section is available in the 
+		  <xref
+			href="c_vhl_track-chap-segments.xml#concept_8B95F957C85C4B23A1E934A094471998/section_52221B3A9BFD46B3A22DA6BCE97CCD75"
+			format="dita" scope="local">Implement</xref> section. 
+		</note> 
+		<p>
+				<b>On chapter start</b>: </p>
+			<p>
+				<ul id="ul_B37209371C7D4938916B7BBAF2975D80">
+					<li id="li_7344DF73334745A98E5E2E284BFC4F03">Create the chapter object instance
+						for the chapter, <codeph>chapterObject </codeph>
+					</li>
+					<li id="li_99B1413D0C484151B162F33A8676331B">Populate the chapter metadata,
+							<codeph>chapterCustomMetadata</codeph>
+					</li>
+					<li id="li_4B298BAFD9EB47E7B49944866736D8E1">Call
+							<codeph>trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject,
+							chapterCustomMetadata);</codeph>
+					</li>
+				</ul>
+			</p> 
+		<p>
+				<b>On chapter complete</b>: </p>
+			<p>
+				<ul id="ul_8B5A5AC8ECA647BAA46C6161D41C84F6">
+					<li id="li_694E3491514A40E295AD488F7D8C36E3">Call
+							<codeph>trackEvent(MediaHeartbeat.Event.ChapterComplete); </codeph>
+					</li>
+				</ul>
+			</p> 
+		<p>
+				<b>On chapter skip</b>: </p>
+			<p>
+				<ul id="ul_CA1EDCEE881144D69462B0E8B3E3A701">
+					<li id="li_54C184018A0441E897E6B1D0B223EBEF">Call
+							<codeph>trackEvent(MediaHeartbeat.Event.ChapterSkip);</codeph>
+					</li>
+				</ul>
+			</p> 
+	 </section> 
+	 <section id="section_52221B3A9BFD46B3A22DA6BCE97CCD75"> 
+		<title>Implement</title> 
+		<p>To implement custom video chapters: </p>
+			<p>
+				<ol id="ol_09F7FE8EF6454508B284EEDBC02FE5F2">
+					<li id="li_439882A0CBFE47D48C77D5BEBF0402DF">Identify when the chapter start
+						event occurs and create the <codeph>ChapterObject</codeph> instance by using
+						the chapter information. <p>Here is the <codeph>ChapterObject</codeph>
+							chapter tracking reference: <table
+								id="table_840ABDA54A4A436996464D59D04ABB4D">
+								<tgroup cols="3">
+									<colspec colnum="1" colname="col1" colwidth="*"/>
+									<colspec colnum="2" colname="col2" colwidth="*"/>
+									<colspec colnum="3" colname="col3" colwidth="*" align="center"/>
+									<thead>
+										<row>
+											<entry colname="col1">Variable Name </entry>
+											<entry colname="col2">Description </entry>
+											<entry colname="col3">Required </entry>
+										</row>
+									</thead>
+									<tbody>
+										<row>
+											<entry colname="col1">
+												<p>name </p>
+											</entry>
+											<entry colname="col2">
+												<p>Chapter name </p>
+											</entry>
+											<entry colname="col3">
+												<p>Yes </p>
+											</entry>
+										</row>
+										<row>
+											<entry colname="col1">
+												<p>position </p>
+											</entry>
+											<entry colname="col2">
+												<p>Chapter position </p>
+											</entry>
+											<entry colname="col3">
+												<p>Yes </p>
+											</entry>
+										</row>
+										<row>
+											<entry colname="col1">
+												<p>length </p>
+											</entry>
+											<entry colname="col2">
+												<p>Chapter length </p>
+											</entry>
+											<entry colname="col3">
+												<p>Yes </p>
+											</entry>
+										</row>
+										<row>
+											<entry colname="col1">
+												<p>startTime </p>
+											</entry>
+											<entry colname="col2">
+												<p>Chapter start time </p>
+											</entry>
+											<entry colname="col3">
+												<p>Yes </p>
+											</entry>
+										</row>
+									</tbody>
+								</tgroup>
+							</table>
+							<note type="tip">These variables are only required if you are planning
+								to track chapters. </note>
+						</p>
+						<p>The general format of the chapter object is:
+							<codeblock outputclass="syntax javascript">var chapterObject = 
+  MediaHeartbeat.createChapterObject(&lt;CHAPTER_NAME&gt;, &lt;POSITION&gt;, &lt;LENGTH&gt;, &lt;START_TIME&gt;);</codeblock>
+						</p>
+					</li>
+					<li id="li_5C41C1D7C2E14240A2CF33C0B01D9338">If you include custom metadata for
+						the chapter, create the context data variables for the metadata. <p>
+							<codeblock outputclass="syntax javascript">/* Set custom context data */
+var chapterCustomMetadata = {
+    segmentType: "Sample segment type",
+    segmentName: "Sample segment name",
+    segmentInfo: "Sample segment info"
+};
+</codeblock>
+						</p>
+					</li>
+					<li id="li_FFEB98A3D40947418C751BF3C927B0FD"> To begin tracking the chapter
+						playback, call the <codeph>ChapterStart</codeph> event in the
+							<codeph>MediaHeartbeat</codeph> instance. <p>
+							<codeblock outputclass="syntax javascript">mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, 
+                                      chapterObject,
+                                      chapterCustomMetadata);</codeblock>
+						</p>
+					</li>
+					<li id="li_C98085E249A840A48C51C5FE660DFC66">When playback reaches the chapter
+						end boundary, as defined by your custom code, call the
+							<codeph>ChapterComplete</codeph> event in the MediaHeartbeat instance. <p>
+							<codeblock outputclass="syntax javascript">mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);</codeblock>
+						</p>
+					</li>
+					<li id="li_B2EEE1C7B7A941A9BE0079A13DE77728">If chapter playback did not
+						complete because the user chose to skip the chapter (for example, if the
+						user seeks out of the chapter boundary), call the
+							<codeph>ChapterSkip</codeph> event in the MediaHeartbeat instance. <p>
+							<codeblock outputclass="syntax javascript">mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);</codeblock>
+						</p>
+					</li>
+				</ol>
+			</p> 
+		<p>The following sample code uses the JavaScript 2.x SDK for an HTML5 video player. You should use
+				this code with the core video playback code.
+				<codeblock outputclass="syntax javascript">/* Call on chapter start */
+if (e.type == "chapter start") {
+    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500);
+    /* Set custom context data*/
+    var chapterCustomMetadata = {
+        segmentType:"Baseball Innings",
+        segmentName:"Inning 5",
+        segmentInfo:"Game Six"
+    }
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, 
+                                   chapterObject, 
+                                   chapterCustomMetadata);
+};
+
+/* Call on chapter complete */
+if (e.type == "chapter complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
+};
+
+/* Call on chapter skip */
+if (e.type == "chapter skip") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
+};
+</codeblock>
+			</p> 
+	 </section> 
+	 <section id="section_B58A8CD1650443F4B82483E6CB0EE894"> 
+		<title>Code</title> 
+		<table id="table_1FC1BC9FE48C4B8699B84EE4138315D5"> 
+		  <tgroup cols="3" rowsep="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.62*"/> 
+			 <colspec colname="col3" colnum="3" colwidth="4.78*"/> 
+			 <thead> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Video Analytics 2.x SDKs 
+				  </entry> 
+				  <entry colname="col3">Developer Guides 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Android/FireTV 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-chap_android.html"
+					  format="html" scope="external">Track Chapters for Android</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">iOS/AppleTV 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-chap_ios.html"
+					  format="html" scope="external">Track Chapers for iOS</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">JavaScript 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_track-chap_js.html"
+					  format="html" scope="external">Track Chapters for JavaScript</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Roku 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/c_vhl_conf-med-hrbts.html"
+					  format="html" scope="external">Track Chapters for Roku</xref> 
+				  </entry> 
+				</row>
+						<row>
+							<entry namest="col1" nameend="col2">Chromecast</entry>
+							<entry colname="col3"><xref
+									href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/chromecast/c_vhl_conf-med-hrbts-chromecast.html"
+									format="html" scope="external">Track Chapters for
+									Chromecast</xref></entry>
+						</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<table id="table_DCD074D23E704CA79BC3734D1CF59A5B"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.55*"/> 
+			 <colspec colname="col3" colnum="3" colwidth="4.74*"/> 
+			 <thead> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Video Analytics 1.x SDKs* 
+				  </entry> 
+				  <entry colname="col3">Developer Guides 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Android 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref href="vhl-dev-guide-v15_android.pdf" format="pdf"
+					  scope="peer">Track Chapters for Android</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">AppleTV 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref href="vhl-dev-guide-v1x_appletv.pdf" format="pdf"
+					  scope="peer">Track Chapters for AppleTV</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Chromecast 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref href="chromecast_1.x_sdk.pdf" format="pdf"
+					  scope="peer">Track Chapters for Chromecast</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">iOS 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref href="vhl-dev-guide-v15_ios.pdf" format="pdf"
+					  scope="peer">Track Chapters for iOS</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">JavaScript 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref href="vhl-dev-guide-v15_js.pdf" format="pdf"
+					  scope="peer">Track Chapters for JavaScript</xref> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">Primetime 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <ul id="ul_AE4FACC564D84FAF8BF241912B5D7761"> 
+						<li id="li_372AFC4170B546E9867C160DBAAC0A5E"> 
+						  <b>Android</b>: 
+						  <xref
+							href="http://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_"
+							format="html" scope="external">Configure Video Analytics</xref>
+						</li> 
+						<li id="li_224523B07B224A5099F18F06B0D14C87"> 
+						  <b>DHLS</b>: 
+						  <xref
+							href="http://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ "
+							format="html" scope="external">Configure Video Analytics</xref>
+						</li> 
+						<li id="li_C6A942B9468E45F0A9B1FA7CEF667BAF"> 
+						  <b>iOS</b>: 
+						  <xref
+							href="http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_"
+							format="html" scope="external">Configure Video Analytics</xref>
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col2">TVML 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <xref href="vhl_tvml.pdf" format="pdf" scope="peer">Track
+						Chapters for TVML</xref> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>*</b> For all 1.x SDKs, the links are for the full PDF download of
+		  the documentation. 
+		</p> 
+	 </section> 
+	 <section id="section_07EC2811BE3249249494596BFE9BF869"> 
+		<title>Validate</title> 
+		<p> 
+		  <b>Chapter Start 
+		  </b> 
+		</p> 
+		<p>On start of an individual chapter playback, one key calls are sent: </p>
+			<p>
+				<ul id="ul_E33B7EA2AC6E462CBEEC818162FDCDAA">
+					<li id="li_CCCB2BABEDD447B88AE0212655503F90">Heartbeat chapter start<b>*</b>
+					</li>
+				</ul>
+			</p> 
+		<p> 
+		  <b>*</b>This call contains additional chapter metadata variables. 
+		</p> 
+		<p> 
+		  <b>Chapter Complete</b> 
+		</p> 
+		<p>At the chapter boundary end, a Heartbeat chapter complete call will be
+		  sent. 
+		</p> 
+		<p> 
+		  <b>Chapter Skip</b> 
+		</p> 
+		<p>When a chapter is skipped, a Heartbeat chapter skip call will be sent.
+		  
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

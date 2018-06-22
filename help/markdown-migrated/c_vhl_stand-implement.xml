@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_06F2D37060A542A6B8B11AC460796360">
+  <title>Prerequisites for Standard Implementation</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Heartbeat Video</keyword>
+        <keyword>Video Analytics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_ajb_xlk_mbb"><title>Audience Manager Enablement</title><p>Adobe Audience
+        Manager (AAM), a Data Management Platform (DMP), helps you bring your audience data assets
+        together, making it easy to collect commercially relevant information about site visitors,
+        create marketable segments, and serve targeted advertising and content to the right
+        audience. </p><p>With AAM, you are not tied to a data seller, exchange, or demand-side
+        platform. Additionally, AAM is completely agnostic when it comes to your partners’ data
+        assets. With access to multiple data sources, AAM offers digital publishers the ability to
+        use a wide variety of third-party data and our private data co-op. </p><p>To learn more
+        about AAM, see <xref
+          href="https://marketing.adobe.com/resources/help/en_US/aam/c_am_overview_intro.html"
+          format="html" scope="external">Audience Manager Overview</xref>. </p><b>Video Heartbeat
+        Data in Audience Manager</b><p>For both video content and video ads, the metrics and
+        metadata that are collected by using solution (reserved) variables can be automatically sent
+        to AAM. The data transfer is available across all platforms including desktop, mobile, and
+        OTT. To enable this server-side data transfer, you need to reach out to Adobe Client Care
+        and ask for this feed to be enabled. </p><p>Federated Data fully supports data sharing to
+        AAM. Please work with your Adobe team for confirmation of Federated Data settings.</p><note
+        type="important">To ensure the smooth transfer of data to AAM, you should be on the latest
+        versions of the heartbeat libraries. </note></section>
+    <section id="section_zsh_fhk_mbb">
+      <title>Marketing Cloud Enablement</title>
+      <p>As part of the requirements to implement the Video Heartbeat SDK, you need to implement the
+        Marketing Cloud ID Service (formerly known as Visitor ID Service). </p>
+      <p>The Marketing Cloud ID service enables the common identification framework for the
+        Marketing Cloud Core Services, solutions, and customer attributes and audiences in the
+        People core service. It works by assigning a unique, persistent ID to a site visitor. When
+        your organization implements the ID service, this ID lets you identify the same site visitor
+        and their data in different Marketing Cloud solutions. </p>
+      <p>
+        <fig id="fig_E7648D1E230E4AA588C80C9092B662EA">
+          <image href="graphics/mc_id_service_graphic.png"
+            id="image_37FA5A24D7D94E1D925A60E342CA9612"/>
+        </fig>
+      </p>
+      <p>The ID service can also replace the different solution-specific IDs (for example, Analytics
+        AID). Through the <xref
+          href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html"
+          format="html" scope="external">Customer IDs and Authentication States</xref>
+        functionality, the ID service lets you pass in your own customer IDs to the Marketing Cloud.
+        Keep in mind, however, that the ID service only works with the solutions to which you have
+        already subscribed. If you are not signed up for access to other products, the ID service
+        does not provide the access. </p>
+      <p>Going forward, the ID service is an integral component of many current and future Marketing
+        Cloud features, enhancements, and services. Currently, the ID service supports <xref
+          href="http://www.adobe.com/marketing-cloud/web-analytics.html" format="html"
+          scope="external">Analytics</xref>, <xref
+          href="http://www.adobe.com/marketing-cloud/data-management-platform.html" format="html"
+          scope="external">Audience Manager</xref>, and <xref
+          href="http://www.adobe.com/marketing-cloud/testing-targeting.html" format="html"
+          scope="external">Target</xref>. </p>
+      <note type="important">To participate in the Adobe Marketing Cloud Device Co-op, the Marketing
+        Cloud ID service required. </note>
+      <p>If you have not implemented the ID service, now is the time to start considering a
+        migration strategy. For more information about the importance and role of the ID service,
+        see <xref
+          href="http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/"
+          format="html" scope="external">Why the Marketing Cloud ID Service Should be on Your
+          Radar</xref>. </p>
+      <note type="important">In the absence of any user ID information present on the video specific
+        calls the default analytics <xref
+          href="https://marketing.adobe.com/resources/help/en_US/sc/implement/visid_fallback.html"
+          format="html" scope="external">Fallback ID Methods</xref> will apply. </note>
+      <p>For more information about the Marketing Cloud ID, see <xref
+          href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html"
+          format="html" scope="external">Overview</xref>. </p>
+      <p>For more information about implementing the Marketing Cloud ID Service, see <xref
+          href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="html"
+          scope="external">Marketing Cloud ID Service</xref>. </p>
+    </section>
+    <section id="section_ibc_fhk_mbb">
+      <title>Analytics Enablement</title>
+      <p>To enable video reports in Analytics and see the video and video ad data you are
+        collecting, see <xref
+          href="c_vhl_vid-rept_enable.xml#concept_4D5798BE986342C4838DBD8E5662AAE7" format="dita"
+          scope="local"><?xm-replace_text Video Reports Enablement?></xref>. </p>
+    </section>
+  </conbody>
+</concept>

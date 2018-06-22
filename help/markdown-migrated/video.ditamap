@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_8B2FC688EE864F31824BE3124A7AFFB6">
+	<title>Video Analytics</title>
+	<topicref format="dita" href="video_overview.xml" navtitle="Measuring Video in Adobe Analytics" scope="local"/>
+	<topicref format="dita" href="video_get_started.xml" navtitle="Getting Started" scope="local" type="concept"/>
+	<topicref format="dita" href="c_vhl_stand-implement.xml" navtitle="Prerequisites for Standard Implementation" scope="local"><!--<topicref format="dita" href="c_vhl_addl_impl_tips.xml" navtitle="Additional Implementation Tips" scope="local"/> 
+</topicref>--></topicref>
+	<topicref format="dita" href="c_vhl_download-sdks.xml" navtitle="Download the Video Heartbeat Library SDKs" scope="local"/>
+	<topicref format="dita" href="c_vhl_setup-and-config.xml" navtitle="Set up and Configure" scope="local"/>
+	<topicref format="dita" href="c_vhl_track-core-vid-playback.xml" navtitle="Track Core Video Playback" scope="local"/>
+	<topicref format="dita" href="c_vhl_track-ads.xml" navtitle="Track Ads" scope="local"/>
+	<topicref format="dita" href="c_vhl_track-chap-segments.xml" navtitle="Track Chapters and Segments" scope="local"/>
+	<topicref format="dita" href="c_vhl_track-quality-exp.xml" navtitle="Track Quality of Experience" scope="local"/>
+	<topicref href="c_vhl_mig_1x_to_2x.xml" navtitle="VHL 1.x to 2.x Migration"/>
+	<topicref format="dita" href="c_vhl_metrics-and-metadata.xml" navtitle="Metrics and Metadata" scope="local"/>
+	<topicref href="c_vhl_validation.xml" navtitle="Validation"/>
+	<topicref format="dita" href="video_metrics.xml" navtitle="Video Reports" scope="local" type="concept"/>
+	<topicref format="dita" href="c_vhl_vid-rept_enable.xml" navtitle="Video Reports Enablement" scope="local"/><topicref format="dita" href="c_vhl_ratings-partner-integ.xml" navtitle="Ratings Partners Integration" scope="local"/><topicref format="dita" href="federated-analytics.xml" navtitle="Federated Analytics" scope="local">
+		<topicmeta><navtitle>Federated Analytics</navtitle>
+		</topicmeta>
+	</topicref><topicref format="dita" href="doc_updates.xml" navtitle="Documentation Updates" scope="local">
+		<topicmeta><navtitle/>
+		</topicmeta>
+	</topicref><topicref format="dita" href="contact_and_legal.xml" navtitle="Contact and Legal Information" scope="local"/></map>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4D5798BE986342C4838DBD8E5662AAE7">
+  <title>Video Reports Enablement</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Heartbeat Video</keyword>
+        <keyword>Video Analytics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_48B5830857DF4044BAF8E27DB0AB9D30">
+      <p>Each report suite that collects video metrics must be configured before video data is sent. </p>
+      <note type="tip">To take advantage of new capabilities, existing Video
+		  Analytics customers should re-enable video tracking for their RSIDs. 
+		</note>
+      <p>
+        <ol id="ol_001DE6B7316C4F06BA95C37E2ECDDDCD">
+          <li id="li_D6CFB325CCB345638CABED7C33E65D5C"> In 
+			 <xref href="https://my.omniture.com/login/" format="html" scope="external">Reports &amp; Analytics</xref>, click 
+			 <menucascade><uicontrol>Admin Tools</uicontrol><uicontrol>Report
+				  Suites</uicontrol></menucascade>. 
+		  </li>
+          <li id="li_C7F6E7201F04401D85115A4E257C1ED6"> Select the report
+			 suite(s) where you are collecting video data and click 
+			 <menucascade><uicontrol>Edit Settings</uicontrol><uicontrol>Video
+				  Management</uicontrol><uicontrol>Video Reporting</uicontrol></menucascade>. 
+			 <p><fig id="fig_091C05FE4F064B8F81CC3A93C2AC04DF"><image placement="break" align="left" href="graphics/video_reporting.png" width="400px" id="image_76B8EB9C1F3B43E89E99AA425C768196"></image></fig></p></li>
+          <li id="li_DE3C2565DCE9455E8CA54B77AFA9FE01"> On the 
+			 <uicontrol>Video Reporting</uicontrol> page, enable 
+			 <uicontrol>Video Core</uicontrol>, and optionally enable 
+			 <uicontrol>Video Ads</uicontrol>, 
+			 <uicontrol>Video Chapters</uicontrol>, and 
+			 <uicontrol>Video Quality</uicontrol>. 
+			 <p>Video measurement includes the following modules: 
+			 </p><ul id="ul_985ED519239D4767A4D2DAE6F70E990A"><li id="li_E975D09DC8A04836A5C39D138F401282"><b>Video Core:</b> Core video measurement is used for
+								video content. This will use Solution (or Custom) eVars to keep
+								track of Content, Content Type, Content Player Name, and Content
+								Channel. Solution (or Custom) events will be used for Video
+								Initiates, Content Starts, Content Completes, and Content Time
+								Spent. </li><li id="li_6A33D1117BBD46C79DC9D99E6812AFC2"><b>Video Ads:</b> Video ad measurement is used for the
+								measurement of ads within the video content. This will use Solution
+								eVvars to measure Ad, Ad Player Name, Ad Pod, and Ad in Pod
+								Position. Solution events will be used for Ad Starts, Ad Completes,
+								Ad Time Spent, and Video Time Spent. </li><li id="li_0AE8A2A10BBA4531B41E96F9E480BF56"><b>Video Chapters:</b> Video chapters measurement is
+								used for the measurement of chapters. A chapter is a sub-division of
+								content within a single video. This will use a Solution eVar to
+								store the Chapter ID. Solution events will be used for Chapter
+								Starts, Chapter Completes, and Chapter Time Spent. Additional
+								chapter metadata of Chapter Name and Chapter Position will be
+								provided as classifications of Chapter ID. </li><li id="li_9939AA2A423743A988BDE4D186789C60"><b>Video Quality:</b> Video quality measurement is used
+								for measuring the quality of the content playback. This will use
+								Solution eVars to store Time to Start, Buffer Events, Total Buffer
+								Duration, Bitrate Switches, Average Bitrate, Errors, and Dropped
+								Frames. Solution events will be used for Time to Start, Drops before
+								Start, Buffer Impacted Streams, Buffer Events, Total Buffer
+								Duration, Bitrate Change Impacted Streams, Bitrate Changes, Avg
+								Bitrate, Error Impacted Streams, Error Events, Dropped Frame
+								Impacted Streams, and Dropped Frames. </li></ul><p>Enabling each module reserves a set of variables and creates a new
+				set of reports. With the exception of Quality, there will be no data in reports
+				unless the corresponding implementation has been completed. Implementing the
+				Core module also implements the Quality module if you enable it. 
+			 </p><p>If you are not yet tracking ads, chapters, or playback quality,
+				you can enable additional options at any time. 
+			 </p></li>
+          <li id="li_17C6D7888BF84C14B36E7036E629A40F"> Click 
+			 <uicontrol>Save</uicontrol>. 
+			 <p>If this report suite is already configured to collect video data,
+				after you click 
+				<uicontrol>Save</uicontrol>, an additional configuration page is
+				displayed. If you see the 
+				<wintitle>Video Core Measurement</wintitle> page, continue to the
+				next step. 
+			 </p></li>
+          <li id="li_649CF37EB10F493E9A294408E861AE37"> (Conditional) On the 
+			 <wintitle>Video Core Measurement</wintitle> page, select to continue
+			 using custom variables or to use solution variables. 
+			 <table id="table_7F40EA3C30BC40AE9060E6FF0B7B96A1"><tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="1.00*" /><colspec colnum="2" colname="col2" colwidth="2.26*" /><thead><row><entry colname="col1">Option 
+						</entry><entry colname="col2">Description 
+						</entry></row></thead><tbody><row><entry colname="col1">Continue using custom variables. 
+						</entry><entry colname="col2"><p><ul id="ul_93BB179CF28647A3921A010CADD9BC24"><li id="li_312933504ED54588B9759ECD6AAE0C07"><b>Pros:</b> Video trending continues to work after
+												migration. </li><li id="li_86C63BE419DA4E159A3620C2CFAC72A0"><b>Cons:</b> Requires you to keep two custom eVars and
+												three custom events allocated to video. You regain
+												use of one custom eVar and one custom event. </li></ul></p><p> To continue using custom variables: 
+						  <ol id="ol_A1532DCC43F34F6B9D079C1BF9590B64"><li id="li_803BCBDDE7864D5891E881F6EF040B1B">Select 
+								<uicontrol>Use Custom Variables</uicontrol>, then click
+								
+								<uicontrol>Save</uicontrol>. 
+							 </li><li id="li_32802086E31649338A2B8B08BEB2D76F">When
+								prompted, map your current custom eVars and events and then click 
+								<uicontrol>Save</uicontrol>: 
+							 </li></ol></p><p><fig id="fig_A7234D33D2524621B0065399772F9DF1"><image placement="break" align="center" href="graphics/video-mapping.png" id="image_952F10D91A124288B7732B5A1B8A24E5" width="300px"></image></fig></p></entry></row><row><entry colname="col1"><p>Migrate to solution variables. 
+						  </p><note type="important">Migrating to solution variables
+							 causes you to lose 
+							 <b>all</b> historical trending and comparison for video
+							 reports. 
+						  </note></entry><entry colname="col2"><p><ul id="ul_0973C12221724A5796166D52EBFCAED6"><li id="li_8788A51AF06748DAB86D15AF4E3975FC"><b>Pros:</b> You regain use of three custom eVars and
+												four custom events. </li><li id="li_87DC22857D2046A5A3F12B48B35DD799"><b>Cons:</b> You lose <b>all</b> historical trending
+												and comparison for video reports. This means that
+												you cannot trend video views or video time played
+												for any dates before you migrated to video
+												heartbeat. </li></ul><note type="restriction">Do not migrate to solution
+							 variables unless you are certain that you do not want to preserve this
+							 trending. 
+						  </note></p><p>All customers should use solution variables and processing rules to put video data into existing
+												props and eVars, only if they need to preserve
+												historical continuity. </p><p> To migrate to solution variables: 
+						  <ol id="ol_00FCF0BA5A644C87ADEA35BE81A985A5"><li id="li_CEC859EB367845A688D857581490D493">Select 
+								<uicontrol>Use Solution Variables</uicontrol> and click
+								
+								<uicontrol>Save</uicontrol>. 
+							 </li></ol></p></entry></row></tbody></tgroup></table></li>
+        </ol>
+      </p>
+    </section>
+  </conbody>
+</concept>
