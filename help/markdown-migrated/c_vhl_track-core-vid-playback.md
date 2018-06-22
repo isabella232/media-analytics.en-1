@@ -47,13 +47,13 @@ Core video playback includes tracking video starts, video completes, pausing, an
 * Call `codeph  trackPause()`
 * Call `codeph  trackPlay()` when the video resumes
 
-**On video scrub: **
+**On video scrub:**
 
 
 * Call `codeph  trackEvent(MediaHeartbeat.Event.SeekStart)`
 * Call `codeph  trackEvent(MediaHeartbeat.Event.SeekComplete)`
 
-**On video buffer: **
+**On video buffer:**
 
 
 * Call `codeph  trackEvent(MediaHeartbeat.Event.BufferStart);`

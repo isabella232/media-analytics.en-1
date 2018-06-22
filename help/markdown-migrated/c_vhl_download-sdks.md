@@ -19,7 +19,7 @@ topic: Developer and implementation
   <colspec colname="newCol3" colnum="3" colwidth="1.19*" /> 
   <thead> 
    <tr> 
-    <th class="entry">Video Analytics 2.x SDKs </th> 
+    <th class="entry">Video Analytics 2.x SDKs</th> 
     <th class="entry">Latest VHL SDK Downloads</th> 
     <th class="entry">VHL Getting Started Guides</th> 
    </tr> 
@@ -57,8 +57,8 @@ topic: Developer and implementation
 <!-- Previously on this page...
 <ol id="ol_DAF73FF8FBDE45ED853373F00BD091CA"> 
  <li id="li_BAF06CD5052342BE9C7B80DBA9791832">Browse to <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases" format="html" scope="external">https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases</a>. </li> 
- <li id="li_60A61FE614C1415C9F60D67FA5B01874">Navigate to the tag that refers to latest library version for the platform you are implementing. </li> 
- <li id="li_26967C9B3FDF4539AB4CE464F6848DAC">Click and download the archive. </li> 
+ <li id="li_60A61FE614C1415C9F60D67FA5B01874">Navigate to the tag that refers to latest library version for the platform you are implementing.</li> 
+ <li id="li_26967C9B3FDF4539AB4CE464F6848DAC">Click and download the archive.</li> 
 </ol> -->
 
 ## Download the 1.x SDKs {#section_B91B3A02E68B4B42917E392AAE666522}
@@ -70,7 +70,7 @@ topic: Developer and implementation
   <colspec colname="newCol3" colnum="3" colwidth="1.19*" /> 
   <thead> 
    <tr> 
-    <th class="entry">Video Analytics 1.x SDKs </th> 
+    <th class="entry">Video Analytics 1.x SDKs</th> 
     <th class="entry">Latest VHL SDK Downloads</th> 
     <th class="entry">VHL Getting Started Guides</th> 
    </tr> 
@@ -113,8 +113,8 @@ topic: Developer and implementation
 <!-- Previously on this page...
 <ol id="ol_E799E97625E5455BB90C1675F5AA470E"> 
  <li id="li_7FDE14CFAC4E48E8A53A017397FAB365">Browse to <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases" format="html" scope="external">https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases</a>. </li> 
- <li id="li_4E4AE3EB5E8E4529B2D4B557BD1E33E3">Navigate to the tag that refers to latest library version for the platform you are implementing. </li> 
- <li id="li_DAD2C947478546928B8560D304594A97">Click and download the archive. </li> 
+ <li id="li_4E4AE3EB5E8E4529B2D4B557BD1E33E3">Navigate to the tag that refers to latest library version for the platform you are implementing.</li> 
+ <li id="li_DAD2C947478546928B8560D304594A97">Click and download the archive.</li> 
 </ol> -->
 
 ## Download the Adobe Nielsen 2.x SDKs {#section_ih5_vpz_p1b}
@@ -126,7 +126,7 @@ topic: Developer and implementation
   <colspec colname="newCol3" colnum="3" colwidth="1.31*" /> 
   <thead> 
    <tr> 
-    <th class="entry">Adobe Nielsen 2.x SDKs </th> 
+    <th class="entry">Adobe Nielsen 2.x SDKs</th> 
     <th class="entry">Latest VHL SDK Downloads</th> 
     <th class="entry">VHL Nielsen Implementation Guides</th> 
    </tr> 

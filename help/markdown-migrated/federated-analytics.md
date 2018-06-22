@@ -21,35 +21,35 @@ The Federated Analytics service provides a system for sharing Adobe Video Analyt
 ## Benefits {#section_804FFE8671594A6FB769CBE79EF9D627}
 
 
-* **Transparent: **Strip away the black box of data creation by using the same logic across companies
-* **Broad: **Understand the full reach and impact of video consumption across partnerships, platforms, and devices
-* **Secure: **Control server-side data sharing through rules and logic
-* **Standardized: ** Speak the same data language as your partners
-* **Actionable: ** Quantify video data to benchmark players, monitor trends, and detect anomalies through Adobe Analytics
-* **Centralized: ** Collect video measurement data in one Adobe location
-* **Contractual: ** Meet legal data sharing requirements easily
-* **Timely: **Send and receive data in near real-time
-* **Easy: **Tag players once with Adobe SDKs, share data to many partners
+* **Transparent:**Strip away the black box of data creation by using the same logic across companies
+* **Broad:**Understand the full reach and impact of video consumption across partnerships, platforms, and devices
+* **Secure:**Control server-side data sharing through rules and logic
+* **Standardized:** Speak the same data language as your partners
+* **Actionable:** Quantify video data to benchmark players, monitor trends, and detect anomalies through Adobe Analytics
+* **Centralized:** Collect video measurement data in one Adobe location
+* **Contractual:** Meet legal data sharing requirements easily
+* **Timely:**Send and receive data in near real-time
+* **Easy:**Tag players once with Adobe SDKs, share data to many partners
 
 ## Definitions {#section_ypl_mb3_vbb}
 
 
-* **Sender: **Customer generating video analytics data on owned players
-* **Receiver: **Customer receiving video analytics data from sender
+* **Sender:**Customer generating video analytics data on owned players
+* **Receiver:**Customer receiving video analytics data from sender
 
 ## Requirements {#section_4758843A8941441B9A4D0D7A61077A6E}
 
 
-* **Video Streams Contract: **Receiver and Sender must have contracted Adobe Analytics for Video Streams before gaining access to video data within Adobe Analytics. Contact your account team for more details.
-* **Federated Addendum: **Each Sender and Receiver must have a signed addendum in place with Adobe before sending or receiving data. One addendum per customer is required, not one addendum per partnership. Contact your account team for more details.
-* **Video Analytics Implementation: **The Sender must have video analytics implemented on all players that will be part of the federated data set. Only Video Analytics data is available for federation. See documentation: [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
-* **Adobe Consulting Contract: **For initial set-up of federated rules between receiver and sender it is valuable to work with consulting services to review data and create the data sharing agreement.
+* **Video Streams Contract:**Receiver and Sender must have contracted Adobe Analytics for Video Streams before gaining access to video data within Adobe Analytics. Contact your account team for more details.
+* **Federated Addendum:**Each Sender and Receiver must have a signed addendum in place with Adobe before sending or receiving data. One addendum per customer is required, not one addendum per partnership. Contact your account team for more details.
+* **Video Analytics Implementation:**The Sender must have video analytics implemented on all players that will be part of the federated data set. Only Video Analytics data is available for federation. See documentation: [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
+* **Adobe Consulting Contract:**For initial set-up of federated rules between receiver and sender it is valuable to work with consulting services to review data and create the data sharing agreement.
 
 ## Process {#section_byb_kb3_vbb}
 
 
 1. Sender and Receiver work together to complete the Federation Rules Agreement form.
-   **Download the current version of the form here: **[https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf).
+   **Download the current version of the form here:**[https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf).
    
    
 1. Consulting services provides a sample data file to Receiver with actual data from Sender players to further confirm correct data sharing rules are defined.

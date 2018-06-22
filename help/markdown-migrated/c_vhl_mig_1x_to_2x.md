@@ -68,79 +68,79 @@ All of the VHL configuration parameters and tracking APIs are now consolidated i
        <li> <span class="codeph"> AdobeAnalyticsPlugin() </span></li> 
        <li> <span class="codeph"> HeartbeatPlugin() </span></li> 
       </ul> </p> </td> 
-    <td align="left"> <p>... </p> <p><b>2.x:</b></p> <p> 
+    <td align="left"> <p>...</p> <p><b>2.x:</b></p> <p> 
       <ul id="ul_bck_dpw_2bb"> 
        <li> <span class="codeph"> MediaHeartbeat() </span></li> 
        <li> <span class="codeph"> MediaHeartbeatConfig() </span></li> 
       </ul> </p> </td> 
    </tr> 
    <tr> 
-    <td> <p><b>Set up the video player plugin: </b> 
+    <td> <p><b>Set up the video player plugin:</b> 
       <codeblock scale="80" class="syntax javascript">
         this._playerPlugin = 
-       <discoiqbr /> new VideoPlayerPlugin( 
-       <discoiqbr /> new SampleVideoPlayerPluginDelegate(this._player)); 
-       <discoiqbr />var playerPluginConfig = 
-       <discoiqbr /> new VideoPlayerPluginConfig(); 
-       <discoiqbr />playerPluginConfig.debugLogging = true; 
-       <discoiqbr /> 
-       <discoiqbr />// Set up the AppMeasurement plugin 
-       <discoiqbr />this._aaPlugin = 
-       <discoiqbr /> new AdobeAnalyticsPlugin( 
-       <discoiqbr /> appMeasurement, 
-       <discoiqbr /> new SampleAdobeAnalyticsPluginDelegate()); 
-       <discoiqbr />var aaPluginConfig = new AdobeAnalyticsPluginConfig(); 
-       <discoiqbr /> 
-       <discoiqbr />aaPluginConfig.channel = 
-       <discoiqbr /> Configuration.HEARTBEAT.CHANNEL; 
-       <discoiqbr /> 
-       <discoiqbr />aaPluginConfig.debuglogging = true; 
-       <discoiqbr />this._aaPlugin.configure(aaPluginConfig); 
-       <discoiqbr /> 
-       <discoiqbr />// Set up the AdobeHeartbeat plugin 
-       <discoiqbr />var ahPlugin = 
-       <discoiqbr /> new AdobeHeartbeatPlugin( 
-       <discoiqbr /> new SampleAdobeHeartbeatPluginDelegate()); 
-       <discoiqbr />var ahPluginConfig = new AdobeHeartbeatPluginConfig( 
-       <discoiqbr /> configuration.HEARTBEAT.TRACKING_SERVER, 
-       <discoiqbr /> configuration.HEARTBEAT.PUBLISHER); 
-       <discoiqbr />ahPluginConfig.ovp = configuration.HEARTBEAT.OVP; 
-       <discoiqbr />ahPluginConfig.sdk = configuration.HEARTBEAT.SDK; 
-       <discoiqbr />ahPluginConfig.debugLogging = true; 
-       <discoiqbr />ahPlugin.configure(ahPluginConfig); 
-       <discoiqbr /> 
-       <discoiqbr />var plugins = 
-       <discoiqbr /> [this._playerPlugin, this._aaPlugin, ahPlugin]; 
-       <discoiqbr /> 
-       <discoiqbr />// Set up and configure the heartbeat library 
-       <discoiqbr />this._heartbeat = 
-       <discoiqbr /> new Heartbeat(new SampleHeartbeatDelegate(), 
-       <discoiqbr /> plugins); 
-       <discoiqbr />var configData = new HeartbeatConfig(); 
-       <discoiqbr />configData.debugLogging = true; 
-       <discoiqbr />this._heartbeat.configure(configData); 
+        new VideoPlayerPlugin( 
+        new SampleVideoPlayerPluginDelegate(this._player)); 
+       var playerPluginConfig = 
+        new VideoPlayerPluginConfig(); 
+       playerPluginConfig.debugLogging = true; 
+        
+       // Set up the AppMeasurement plugin 
+       this._aaPlugin = 
+        new AdobeAnalyticsPlugin( 
+        appMeasurement, 
+        new SampleAdobeAnalyticsPluginDelegate()); 
+       var aaPluginConfig = new AdobeAnalyticsPluginConfig(); 
+        
+       aaPluginConfig.channel = 
+        Configuration.HEARTBEAT.CHANNEL; 
+        
+       aaPluginConfig.debuglogging = true; 
+       this._aaPlugin.configure(aaPluginConfig); 
+        
+       // Set up the AdobeHeartbeat plugin 
+       var ahPlugin = 
+        new AdobeHeartbeatPlugin( 
+        new SampleAdobeHeartbeatPluginDelegate()); 
+       var ahPluginConfig = new AdobeHeartbeatPluginConfig( 
+        configuration.HEARTBEAT.TRACKING_SERVER, 
+        configuration.HEARTBEAT.PUBLISHER); 
+       ahPluginConfig.ovp = configuration.HEARTBEAT.OVP; 
+       ahPluginConfig.sdk = configuration.HEARTBEAT.SDK; 
+       ahPluginConfig.debugLogging = true; 
+       ahPlugin.configure(ahPluginConfig); 
+        
+       var plugins = 
+        [this._playerPlugin, this._aaPlugin, ahPlugin]; 
+        
+       // Set up and configure the heartbeat library 
+       this._heartbeat = 
+        new Heartbeat(new SampleHeartbeatDelegate(), 
+        plugins); 
+       var configData = new HeartbeatConfig(); 
+       configData.debugLogging = true; 
+       this._heartbeat.configure(configData); 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58" format="html" scope="external"> 1.x Sample Player </a></p> <p>...</p> </td> 
-    <td> <p><b>Media Heartbeat initialization: </b> 
+    <td> <p><b>Media Heartbeat initialization:</b> 
       <codeblock scale="80" class="syntax javascript"> 
-       <discoiqbr />var mediaConfig = 
-       <discoiqbr /> new MediaHeartbeatConfig(); 
-       <discoiqbr />mediaConfig.trackingServer = 
-       <discoiqbr /> Configuration.HEARTBEAT.TRACKING_SERVER; 
-       <discoiqbr />mediaConfig.playerName = 
-       <discoiqbr /> Configuration.PLAYER.NAME; 
-       <discoiqbr />mediaConfig.debugLogging = true; 
-       <discoiqbr />mediaConfig.channel = 
-       <discoiqbr /> Configuration.HEARTBEAT.CHANNEL; 
-       <discoiqbr />mediaConfig.ssl = false; 
-       <discoiqbr />mediaConfig.ovp = 
-       <discoiqbr /> Configuration.HEARTBEAT.OVP; 
-       <discoiqbr />mediaConfig.appVersion = 
-       <discoiqbr /> Configuration.HEARTBEAT.SDK; 
-       <discoiqbr /> 
-       <discoiqbr />this._mediaHeartbeat = new MediaHeartbeat( 
-       <discoiqbr /> new SampleMediaHeartbeatDelegate(this._player), 
-       <discoiqbr /> mediaConfig, 
-       <discoiqbr /> appMeasurement); 
+       var mediaConfig = 
+        new MediaHeartbeatConfig(); 
+       mediaConfig.trackingServer = 
+        Configuration.HEARTBEAT.TRACKING_SERVER; 
+       mediaConfig.playerName = 
+        Configuration.PLAYER.NAME; 
+       mediaConfig.debugLogging = true; 
+       mediaConfig.channel = 
+        Configuration.HEARTBEAT.CHANNEL; 
+       mediaConfig.ssl = false; 
+       mediaConfig.ovp = 
+        Configuration.HEARTBEAT.OVP; 
+       mediaConfig.appVersion = 
+        Configuration.HEARTBEAT.SDK; 
+        
+       this._mediaHeartbeat = new MediaHeartbeat( 
+        new SampleMediaHeartbeatDelegate(this._player), 
+        mediaConfig, 
+        appMeasurement); 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47" format="html" scope="external"> 2.x Sample Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -156,7 +156,7 @@ All of the VHL configuration parameters and tracking APIs are now consolidated i
        <li> <span class="codeph"> AdobeAnalyticsPluginDelegate() </span></li> 
        <li> <span class="codeph"> AdobeHeartbeatPluginDelegate() </span></li> 
       </ul> </p> </td> 
-    <td align="left"> <p>... </p> <p><b>2.x:</b></p> <p> 
+    <td align="left"> <p>...</p> <p><b>2.x:</b></p> <p> 
       <ul id="ul_ans_cqw_2bb"> 
        <li> <span class="codeph"> MediaHeartbeatDelegate() </span></li> 
        <li> <span class="codeph"> MediaHeartbeatDelegate().getCurrentPlaybackTime </span></li> 
@@ -164,92 +164,92 @@ All of the VHL configuration parameters and tracking APIs are now consolidated i
       </ul> </p> </td> 
    </tr> 
    <tr> 
-    <td> <p><b>VideoPlayerPluginDelegate: </b> 
+    <td> <p><b>VideoPlayerPluginDelegate:</b> 
       <codeblock scale="80" class="syntax javascript"> 
-       <discoiqbr />$.extend(SampleVideoPlayerPluginDelegate.prototype, 
-       <discoiqbr /> VideoPlayerPluginDelegate.prototype); 
-       <discoiqbr /> 
-       <discoiqbr />function SampleVideoPlayerPluginDelegate(player) { 
-       <discoiqbr /> this._player = player; 
-       <discoiqbr />} 
-       <discoiqbr /> 
-       <discoiqbr />SampleVideoPlayerPluginDelegate.prototype.getVideoInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getVideoInfo(); 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr />SampleVideoPlayerPluginDelegate.prototype.getAdBreakInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getAdBreakInfo(); 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr />SampleVideoPlayerPluginDelegate.prototype.getAdInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getAdInfo(); 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr />SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getChapterInfo(); 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr />SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getQoSInfo(); 
-       <discoiqbr /> }; 
-      </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L17" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p><b>AdobeAnalyticsPluginDelegate: </b> 
+       $.extend(SampleVideoPlayerPluginDelegate.prototype, 
+        VideoPlayerPluginDelegate.prototype); 
+        
+       function SampleVideoPlayerPluginDelegate(player) { 
+        this._player = player; 
+       } 
+        
+       SampleVideoPlayerPluginDelegate.prototype.getVideoInfo = 
+        function() { 
+        return this._player.getVideoInfo(); 
+        }; 
+        
+       SampleVideoPlayerPluginDelegate.prototype.getAdBreakInfo = 
+        function() { 
+        return this._player.getAdBreakInfo(); 
+        }; 
+        
+       SampleVideoPlayerPluginDelegate.prototype.getAdInfo = 
+        function() { 
+        return this._player.getAdInfo(); 
+        }; 
+        
+       SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = 
+        function() { 
+        return this._player.getChapterInfo(); 
+        }; 
+        
+       SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = 
+        function() { 
+        return this._player.getQoSInfo(); 
+        }; 
+      </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L17" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p><b>AdobeAnalyticsPluginDelegate:</b> 
       <codeblock scale="80" class="syntax javascript"> 
-       <discoiqbr />$.extend(SampleAdobeAnalyticsPluginDelegate.prototype, 
-       <discoiqbr /> AdobeAnalyticsPluginDelegate.prototype); 
-       <discoiqbr /> 
-       <discoiqbr />function SampleAdobeAnalyticsPluginDelegate() {} 
-       <discoiqbr /> 
-       <discoiqbr />SampleAdobeAnalyticsPluginDelegate.prototype.onError = 
-       <discoiqbr /> function(errorInfo) { 
-       <discoiqbr /> console.log("AdobeAnalyticsPlugin error: " + 
-       <discoiqbr /> errorInfo.getMessage() + 
-       <discoiqbr /> " | " + 
-       <discoiqbr /> errorInfo.getDetails()); 
-       <discoiqbr /> }; 
-      </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.adobe.analytics.plugin.delegate.js#L17" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p><b>HeartbeatDelegate: </b> 
+       $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, 
+        AdobeAnalyticsPluginDelegate.prototype); 
+        
+       function SampleAdobeAnalyticsPluginDelegate() {} 
+        
+       SampleAdobeAnalyticsPluginDelegate.prototype.onError = 
+        function(errorInfo) { 
+        console.log("AdobeAnalyticsPlugin error: " + 
+        errorInfo.getMessage() + 
+        " | " + 
+        errorInfo.getDetails()); 
+        }; 
+      </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.adobe.analytics.plugin.delegate.js#L17" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p><b>HeartbeatDelegate:</b> 
       <codeblock scale="80" class="syntax javascript"> 
-       <discoiqbr />$.extend(SampleHeartbeatDelegate.prototype, 
-       <discoiqbr /> HeartbeatDelegate.prototype); 
-       <discoiqbr /> 
-       <discoiqbr />function SampleHeartbeatDelegate() {} 
-       <discoiqbr /> 
-       <discoiqbr />SampleHeartbeatDelegate.prototype.onError = 
-       <discoiqbr /> function(errorInfo) { 
-       <discoiqbr /> console.log("Heartbeat error: " + 
-       <discoiqbr /> errorInfo.getMessage() + 
-       <discoiqbr /> " | " + 
-       <discoiqbr /> errorInfo.getDetails()); 
-       <discoiqbr />}; 
+       $.extend(SampleHeartbeatDelegate.prototype, 
+        HeartbeatDelegate.prototype); 
+        
+       function SampleHeartbeatDelegate() {} 
+        
+       SampleHeartbeatDelegate.prototype.onError = 
+        function(errorInfo) { 
+        console.log("Heartbeat error: " + 
+        errorInfo.getMessage() + 
+        " | " + 
+        errorInfo.getDetails()); 
+       }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.heartbeat.delegate.js#L17" format="html" scope="external"> Sample 1.x Player </a></p> </td> 
-    <td> <p><b>MediaHeartbeatDelegate: </b> 
+    <td> <p><b>MediaHeartbeatDelegate:</b> 
       <codeblock scale="80" class="syntax javascript"> 
-       <discoiqbr />ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, 
-       <discoiqbr /> MediaHeartbeatDelegate.prototype); 
-       <discoiqbr /> 
-       <discoiqbr />function SampleMediaHeartbeatDelegate(player) { 
-       <discoiqbr /> this._player = player; 
-       <discoiqbr />} 
-       <discoiqbr /> 
-       <discoiqbr />SampleMediaHeartbeatDelegate.prototype.getCurrentPlaybackTime = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getCurrentPlaybackTime(); 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr />SampleMediaHeartbeatDelegate.prototype.getQoSObject = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getQoSInfo(); 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr />this._mediaHeartbeat = 
-       <discoiqbr /> new MediaHeartbeat(new 
-       <discoiqbr /> SampleMediaHeartbeatDelegate(this._player), 
-       <discoiqbr /> mediaConfig, 
-       <discoiqbr /> appMeasurement); 
+       ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, 
+        MediaHeartbeatDelegate.prototype); 
+        
+       function SampleMediaHeartbeatDelegate(player) { 
+        this._player = player; 
+       } 
+        
+       SampleMediaHeartbeatDelegate.prototype.getCurrentPlaybackTime = 
+        function() { 
+        return this._player.getCurrentPlaybackTime(); 
+        }; 
+        
+       SampleMediaHeartbeatDelegate.prototype.getQoSObject = 
+        function() { 
+        return this._player.getQoSInfo(); 
+        }; 
+        
+       this._mediaHeartbeat = 
+        new MediaHeartbeat(new 
+        SampleMediaHeartbeatDelegate(this._player), 
+        mediaConfig, 
+        appMeasurement); 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L57" format="js" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
   </tbody> 
@@ -276,7 +276,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoPlayerPluginDelegate.trackVideoLoad() </span></li> 
       <li> <span class="codeph"> VideoPlayerPluginDelegate.getVideoInfo() </span> </li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_kmn_nbx_2bb"> 
       <li> <span class="codeph"> MediaHeartbeat.createMediaObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackSessionStart() </span></li> 
@@ -286,37 +286,37 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock scale="80" class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> this._playerPlugin.trackVideoLoad(); 
-       <discoiqbr />}; 
-       <discoiqbr /> 
-       <discoiqbr />SampleVideoPlayerPluginDelegate.prototype.getVideoInfo 
-       <discoiqbr /> = function() { 
-       <discoiqbr /> return this._player.getVideoInfo(); 
-       <discoiqbr />}; 
-       <discoiqbr /> 
-       <discoiqbr />VideoPlayer.prototype.getVideoInfo = function() { 
-       <discoiqbr /> this._videoInfo.playhead = vTime; 
-       <discoiqbr /> return this._videoInfo; 
-       <discoiqbr />}; 
+        function() { 
+        this._playerPlugin.trackVideoLoad(); 
+       }; 
+        
+       SampleVideoPlayerPluginDelegate.prototype.getVideoInfo 
+        = function() { 
+        return this._player.getVideoInfo(); 
+       }; 
+        
+       VideoPlayer.prototype.getVideoInfo = function() { 
+        this._videoInfo.playhead = vTime; 
+        return this._videoInfo; 
+       }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L107" format="html" scope="external"> 1.x Sample Player - trackVideoLoad() </a></p> <p> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L23" format="html" scope="external"> 1.x Sample Player - getVideoInfo() </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock scale="80" class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> var contextData = {}; 
-       <discoiqbr /> var videoInfo = this._player.getVideoInfo(); 
-       <discoiqbr /> var mediaInfo = 
-       <discoiqbr /> MediaHeartbeat.createMediaObject( 
-       <discoiqbr /> videoInfo.name, 
-       <discoiqbr /> videoInfo.id, 
-       <discoiqbr /> videoInfo.length, 
-       <discoiqbr /> videoInfo.streamType); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackSessionStart( 
-       <discoiqbr /> mediaInfo, 
-       <discoiqbr /> contextData); 
-       <discoiqbr />}; 
+        function() { 
+        var contextData = {}; 
+        var videoInfo = this._player.getVideoInfo(); 
+        var mediaInfo = 
+        MediaHeartbeat.createMediaObject( 
+        videoInfo.name, 
+        videoInfo.id, 
+        videoInfo.length, 
+        videoInfo.streamType); 
+        
+        this._mediaHeartbeat.trackSessionStart( 
+        mediaInfo, 
+        contextData); 
+       }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L88" format="html" scope="external"> 2.x Sample Player - createMediaObject() </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -325,7 +325,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoMetadataKeys() </span></li> 
       <li> <span class="codeph"> AdobeAnalyticsPlugin.setVideoMetadata90 </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_pyv_cds_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createMediaObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackSessionStart() </span></li> 
@@ -335,63 +335,63 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: VIDEO_LOAD'); 
-       <discoiqbr /> 
-       <discoiqbr /> var contextData = {}; 
-       <discoiqbr /> // Setting Standard Video Metadata 
-       <discoiqbr /> contextData[VideoMetadataKeys.SEASON] = 
-       <discoiqbr /> "sample season"; 
-       <discoiqbr /> contextData[VideoMetadataKeys.SHOW] = 
-       <discoiqbr /> "sample show"; 
-       <discoiqbr /> contextData[VideoMetadataKeys.EPISODE] = 
-       <discoiqbr /> "sample episode"; 
-       <discoiqbr /> contextData[VideoMetadataKeys.ASSET_ID] = 
-       <discoiqbr /> "sample asset id"; 
-       <discoiqbr /> contextData[VideoMetadataKeys.GENRE] = 
-       <discoiqbr /> "sample genre"; 
-       <discoiqbr /> contextData[VideoMetadataKeys.FIRST_AIR_DATE] = 
-       <discoiqbr /> "sample air date"; 
-       <discoiqbr /> // Etc. 
-       <discoiqbr /> 
-       <discoiqbr /> this._aaPlugin.setVideoMetadata(contextData); 
-       <discoiqbr /> this._playerPlugin.trackVideoLoad(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: VIDEO_LOAD'); 
+        
+        var contextData = {}; 
+        // Setting Standard Video Metadata 
+        contextData[VideoMetadataKeys.SEASON] = 
+        "sample season"; 
+        contextData[VideoMetadataKeys.SHOW] = 
+        "sample show"; 
+        contextData[VideoMetadataKeys.EPISODE] = 
+        "sample episode"; 
+        contextData[VideoMetadataKeys.ASSET_ID] = 
+        "sample asset id"; 
+        contextData[VideoMetadataKeys.GENRE] = 
+        "sample genre"; 
+        contextData[VideoMetadataKeys.FIRST_AIR_DATE] = 
+        "sample air date"; 
+        // Etc. 
+        
+        this._aaPlugin.setVideoMetadata(contextData); 
+        this._playerPlugin.trackVideoLoad(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L107" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: VIDEO_LOAD'); 
-       <discoiqbr /> var contextData = {}; 
-       <discoiqbr /> 
-       <discoiqbr /> var mediaInfo = 
-       <discoiqbr /> MediaHeartbeat.createMediaObject(videoInfo.name, 
-       <discoiqbr /> videoInfo.id, 
-       <discoiqbr /> videoInfo.length, 
-       <discoiqbr /> videoInfo.streamType); 
-       <discoiqbr /> 
-       <discoiqbr /> // Set standard Video Metadata 
-       <discoiqbr /> var standardVideoMetadata = {}; 
-       <discoiqbr /> standardVideoMetadata[VideoMetadataKeys.SEASON] = 
-       <discoiqbr /> "sample season"; 
-       <discoiqbr /> standardVideoMetadata[VideoMetadataKeys.SHOW] = 
-       <discoiqbr /> "sample show"; 
-       <discoiqbr /> standardVideoMetadata[VideoMetadataKeys.EPISODE] = 
-       <discoiqbr /> "sample episode"; 
-       <discoiqbr /> standardVideoMetadata[VideoMetadataKeys.ASSET_ID] = 
-       <discoiqbr /> "sample asset id"; 
-       <discoiqbr /> standardVideoMetadata[VideoMetadataKeys.GENRE] = 
-       <discoiqbr /> "sample genre"; 
-       <discoiqbr /> standardVideoMetadata[VideoMetadataKeys.FIRST_AIR_DATE] = 
-       <discoiqbr /> "sample air date"; 
-       <discoiqbr /> // Etc. 
-       <discoiqbr /> 
-       <discoiqbr /> mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, 
-       <discoiqbr /> standardVideoMetadata); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackSessionStart(mediaInfo, contextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: VIDEO_LOAD'); 
+        var contextData = {}; 
+        
+        var mediaInfo = 
+        MediaHeartbeat.createMediaObject(videoInfo.name, 
+        videoInfo.id, 
+        videoInfo.length, 
+        videoInfo.streamType); 
+        
+        // Set standard Video Metadata 
+        var standardVideoMetadata = {}; 
+        standardVideoMetadata[VideoMetadataKeys.SEASON] = 
+        "sample season"; 
+        standardVideoMetadata[VideoMetadataKeys.SHOW] = 
+        "sample show"; 
+        standardVideoMetadata[VideoMetadataKeys.EPISODE] = 
+        "sample episode"; 
+        standardVideoMetadata[VideoMetadataKeys.ASSET_ID] = 
+        "sample asset id"; 
+        standardVideoMetadata[VideoMetadataKeys.GENRE] = 
+        "sample genre"; 
+        standardVideoMetadata[VideoMetadataKeys.FIRST_AIR_DATE] = 
+        "sample air date"; 
+        // Etc. 
+        
+        mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, 
+        standardVideoMetadata); 
+        
+        this._mediaHeartbeat.trackSessionStart(mediaInfo, contextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L88" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -403,7 +403,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoMetadataKeys() </span></li> 
       <li> <span class="codeph"> AdobeAnalyticsPlugin.setVideoMetadata() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_ywg_52s_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createMediaObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackSessionStart() </span></li> 
@@ -413,39 +413,39 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> var contextData = { 
-       <discoiqbr /> isUserLoggedIn: "false", 
-       <discoiqbr /> tvStation: "Sample TV station", 
-       <discoiqbr /> programmer: "Sample programmer" 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr /> this._aaPlugin.setVideoMetadata(contextData); 
-       <discoiqbr /> this._playerPlugin.trackVideoLoad(); 
-       <discoiqbr /> }; 
+        function() { 
+        var contextData = { 
+        isUserLoggedIn: "false", 
+        tvStation: "Sample TV station", 
+        programmer: "Sample programmer" 
+        }; 
+        
+        this._aaPlugin.setVideoMetadata(contextData); 
+        this._playerPlugin.trackVideoLoad(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L107" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> var contextData = { 
-       <discoiqbr /> isUserLoggedIn: "false", 
-       <discoiqbr /> tvStation: "Sample TV station", 
-       <discoiqbr /> programmer: "Sample programmer" 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr /> var videoInfo = this._player.getVideoInfo(); 
-       <discoiqbr /> var mediaInfo = 
-       <discoiqbr /> MediaHeartbeat.createMediaObject(videoInfo.name, 
-       <discoiqbr /> videoInfo.id, 
-       <discoiqbr /> videoInfo.length, 
-       <discoiqbr /> videoInfo.streamType); 
-       <discoiqbr /> 
-       <discoiqbr /> mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, 
-       <discoiqbr /> standardVideoMetadata); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackSessionStart(mediaInfo, contextData); 
-       <discoiqbr /> }; 
+        function() { 
+        var contextData = { 
+        isUserLoggedIn: "false", 
+        tvStation: "Sample TV station", 
+        programmer: "Sample programmer" 
+        }; 
+        
+        var videoInfo = this._player.getVideoInfo(); 
+        var mediaInfo = 
+        MediaHeartbeat.createMediaObject(videoInfo.name, 
+        videoInfo.id, 
+        videoInfo.length, 
+        videoInfo.streamType); 
+        
+        mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, 
+        standardVideoMetadata); 
+        
+        this._mediaHeartbeat.trackSessionStart(mediaInfo, contextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L88" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -456,7 +456,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_a12_4ks_fbb"> 
       <li> <span class="codeph"> VideoPlayerPlugin.trackPlay() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_b12_4ks_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.trackPlay() </span></li> 
      </ul> </td> 
@@ -465,18 +465,18 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onSeekStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: SEEK_START'); 
-       <discoiqbr /> this._playerPlugin.trackSeekStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: SEEK_START'); 
+        this._playerPlugin.trackSeekStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L149" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onSeekStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: SEEK_START'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
-       <discoiqbr />}; 
+        function() { 
+        console.log('Player event: SEEK_START'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+       }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L127" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -493,18 +493,18 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onPause = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event:X PAUSE'); 
-       <discoiqbr /> this._playerPlugin.trackPause(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event:X PAUSE'); 
+        this._playerPlugin.trackPause(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L144" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBufferComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BUFFER_COMPLETE'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BUFFER_COMPLETE'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L142" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -521,22 +521,22 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onSeekComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: SEEK_COMPLETE'); 
-       <discoiqbr /> this._playerPlugin.trackSeekComplete(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: SEEK_COMPLETE'); 
+        this._playerPlugin.trackSeekComplete(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L154" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onSeekComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: SEEK_COMPLETE'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: SEEK_COMPLETE'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L132" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
-    <td> <p><i><b>Buffer Start </b></i></p> <p><b>1.x:</b> 
+    <td> <p><i><b>Buffer Start</b></i></p> <p><b>1.x:</b> 
       <ul id="ul_vr2_wms_fbb"> 
        <li> <span class="codeph"> VideoPlayerPlugin.trackBufferStart() </span></li> 
       </ul></p> </td> 
@@ -549,22 +549,22 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBufferStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BUFFER_START'); 
-       <discoiqbr /> this._playerPlugin.trackBufferStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BUFFER_START'); 
+        this._playerPlugin.trackBufferStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L159" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBufferStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BUFFER_START'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BUFFER_START'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L137" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
-    <td> <p><i><b>Buffer Complete </b></i></p> <p><b>1.x:</b> 
+    <td> <p><i><b>Buffer Complete</b></i></p> <p><b>1.x:</b> 
       <ul id="ul_e4z_lns_fbb"> 
        <li> <span class="codeph"> VideoPlayerPlugin.trackBufferComplete() </span></li> 
       </ul></p> </td> 
@@ -577,22 +577,22 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBufferComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BUFFER_COMPLETE'); 
-       <discoiqbr /> this._playerPlugin.trackBufferComplete(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BUFFER_COMPLETE'); 
+        this._playerPlugin.trackBufferComplete(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L164" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBufferComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BUFFER_COMPLETE'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BUFFER_COMPLETE'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L142" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
-    <td> <p><i><b>Playback Complete </b></i></p> <p><b>1.x:</b> 
+    <td> <p><i><b>Playback Complete</b></i></p> <p><b>1.x:</b> 
       <ul id="ul_vd5_14s_fbb"> 
        <li> <span class="codeph"> VideoPlayerPlugin.trackComplete() </span></li> 
       </ul></p> </td> 
@@ -605,21 +605,21 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: COMPLETE'); 
-       <discoiqbr /> this._playerPlugin.trackComplete(function() { 
-       <discoiqbr /> console.log( 
-       <discoiqbr /> "The completion of the content has been tracked."); 
-       <discoiqbr /> }); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: COMPLETE'); 
+        this._playerPlugin.trackComplete(function() { 
+        console.log( 
+        "The completion of the content has been tracked."); 
+        }); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L203" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: COMPLETE'); 
-       <discoiqbr /> this._mediaHeartbeat.trackComplete(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: COMPLETE'); 
+        this._mediaHeartbeat.trackComplete(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L197" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
   </tbody> 
@@ -647,7 +647,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoPlayerPluginDelegate.getAdBreakInfo() </span></li> 
       <li> <span class="codeph"> VideoPlayerPluginDelegate.getAdInfo() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_wsr_1qs_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createAdBreakObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.createAdObject() </span></li> 
@@ -659,46 +659,46 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_START'); 
-       <discoiqbr /> this._playerPlugin.trackAdStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_START'); 
+        this._playerPlugin.trackAdStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L169" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p> 
       <codeblock class="syntax javascript">
         SampleVideoPlayerPluginDelegate.prototype.getAdInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getAdInfo(); 
-       <discoiqbr /> }; 
+        function() { 
+        return this._player.getAdInfo(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L31" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_START'); 
-       <discoiqbr /> var adContextData = {}; 
-       <discoiqbr /> 
-       <discoiqbr /> // AdBreak Info - getting the adBreakInfo from player and creating 
-       <discoiqbr /> // AdBreakInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _adBreakInfo = this._player.getAdBreakInfo(); 
-       <discoiqbr /> var adBreakInfo = 
-       <discoiqbr /> MediaHeartbeat.createAdBreakObject(_adBreakInfo.name, 
-       <discoiqbr /> _adBreakInfo.position, 
-       <discoiqbr /> _adBreakInfo.startTime); 
-       <discoiqbr /> 
-       <discoiqbr /> // Ad Info - getting the adInfo from player and creating 
-       <discoiqbr /> // AdInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _adInfo = this._player.getAdInfo(); 
-       <discoiqbr /> var adInfo = MediaHeartbeat.createAdObject(_adInfo.name, 
-       <discoiqbr /> _adInfo.id, 
-       <discoiqbr /> _adInfo.position, 
-       <discoiqbr /> _adInfo.length); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, 
-       <discoiqbr /> adBreakInfo); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, 
-       <discoiqbr /> adInfo, 
-       <discoiqbr /> adContextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_START'); 
+        var adContextData = {}; 
+        
+        // AdBreak Info - getting the adBreakInfo from player and creating 
+        // AdBreakInfo Object from MediaHeartbeat 
+        var _adBreakInfo = this._player.getAdBreakInfo(); 
+        var adBreakInfo = 
+        MediaHeartbeat.createAdBreakObject(_adBreakInfo.name, 
+        _adBreakInfo.position, 
+        _adBreakInfo.startTime); 
+        
+        // Ad Info - getting the adInfo from player and creating 
+        // AdInfo Object from MediaHeartbeat 
+        var _adInfo = this._player.getAdInfo(); 
+        var adInfo = MediaHeartbeat.createAdObject(_adInfo.name, 
+        _adInfo.id, 
+        _adInfo.position, 
+        _adInfo.length); 
+        
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, 
+        adBreakInfo); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, 
+        adInfo, 
+        adContextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L147" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -707,7 +707,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> AdMetadataKeys() </span></li> 
       <li> <span class="codeph"> AdobeAnalyticsPlugin.setAdMetadata() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_jjq_wqs_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createAdObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackAdStart() </span></li> 
@@ -717,68 +717,68 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_START'); 
-       <discoiqbr /> 
-       <discoiqbr /> var contextData = {}; 
-       <discoiqbr /> // setting Standard Ad Metadata 
-       <discoiqbr /> contextData[AdMetadataKeys.ADVERTISER] = 
-       <discoiqbr /> "sample advertiser"; 
-       <discoiqbr /> contextData[AdMetadataKeys.CAMPAIGN_ID] = 
-       <discoiqbr /> "sample campaign"; 
-       <discoiqbr /> contextData[AdMetadataKeys.CREATIVE_ID] = 
-       <discoiqbr /> "sample creative"; 
-       <discoiqbr /> contextData[AdMetadataKeys.CREATIVE_URL] = 
-       <discoiqbr /> "sample url"; 
-       <discoiqbr /> contextData[AdMetadataKeys.SITE_ID] = 
-       <discoiqbr /> "sample site"; 
-       <discoiqbr /> contextData[AdMetadataKeys.PLACEMENT_ID] = 
-       <discoiqbr /> "sample placement"; 
-       <discoiqbr /> 
-       <discoiqbr /> this._aaPlugin.setAdMetadata(contextData); 
-       <discoiqbr /> this._playerPlugin.trackAdStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_START'); 
+        
+        var contextData = {}; 
+        // setting Standard Ad Metadata 
+        contextData[AdMetadataKeys.ADVERTISER] = 
+        "sample advertiser"; 
+        contextData[AdMetadataKeys.CAMPAIGN_ID] = 
+        "sample campaign"; 
+        contextData[AdMetadataKeys.CREATIVE_ID] = 
+        "sample creative"; 
+        contextData[AdMetadataKeys.CREATIVE_URL] = 
+        "sample url"; 
+        contextData[AdMetadataKeys.SITE_ID] = 
+        "sample site"; 
+        contextData[AdMetadataKeys.PLACEMENT_ID] = 
+        "sample placement"; 
+        
+        this._aaPlugin.setAdMetadata(contextData); 
+        this._playerPlugin.trackAdStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L169" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_START'); 
-       <discoiqbr /> var adContextData = { }; 
-       <discoiqbr /> 
-       <discoiqbr /> // AdBreak Info - getting the adBreakInfo from player and creating 
-       <discoiqbr /> // AdBreakInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _adBreakInfo = this._player.getAdBreakInfo(); 
-       <discoiqbr /> var adBreakInfo = 
-       <discoiqbr /> MediaHeartbeat.createAdBreakObject(_adBreakInfo.name, 
-       <discoiqbr /> _adBreakInfo.position, 
-       <discoiqbr /> _adBreakInfo.startTime); 
-       <discoiqbr /> 
-       <discoiqbr /> // Ad Info - getting the adInfo from player and creating 
-       <discoiqbr /> // AdInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _adInfo = this._player.getAdInfo(); 
-       <discoiqbr /> var adInfo = 
-       <discoiqbr /> MediaHeartbeat.createAdObject(_adInfo.name, 
-       <discoiqbr /> _adInfo.id, 
-       <discoiqbr /> _adInfo.position, 
-       <discoiqbr /> _adInfo.length); 
-       <discoiqbr /> 
-       <discoiqbr /> // Set standard Ad Metadata 
-       <discoiqbr /> var standardAdMetadata = {}; 
-       <discoiqbr /> standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = 
-       <discoiqbr /> "Sample Advertiser"; 
-       <discoiqbr /> standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = 
-       <discoiqbr /> "Sample Campaign"; 
-       <discoiqbr /> 
-       <discoiqbr /> adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, 
-       <discoiqbr /> standardAdMetadata); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, 
-       <discoiqbr /> adBreakInfo); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, 
-       <discoiqbr /> adInfo, 
-       <discoiqbr /> adContextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_START'); 
+        var adContextData = { }; 
+        
+        // AdBreak Info - getting the adBreakInfo from player and creating 
+        // AdBreakInfo Object from MediaHeartbeat 
+        var _adBreakInfo = this._player.getAdBreakInfo(); 
+        var adBreakInfo = 
+        MediaHeartbeat.createAdBreakObject(_adBreakInfo.name, 
+        _adBreakInfo.position, 
+        _adBreakInfo.startTime); 
+        
+        // Ad Info - getting the adInfo from player and creating 
+        // AdInfo Object from MediaHeartbeat 
+        var _adInfo = this._player.getAdInfo(); 
+        var adInfo = 
+        MediaHeartbeat.createAdObject(_adInfo.name, 
+        _adInfo.id, 
+        _adInfo.position, 
+        _adInfo.length); 
+        
+        // Set standard Ad Metadata 
+        var standardAdMetadata = {}; 
+        standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = 
+        "Sample Advertiser"; 
+        standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = 
+        "Sample Campaign"; 
+        
+        adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, 
+        standardAdMetadata); 
+        
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, 
+        adBreakInfo); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, 
+        adInfo, 
+        adContextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L147" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -789,7 +789,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_g1z_qrs_fbb"> 
       <li> <span class="codeph"> AdobeAnalyticsPlugin.setAdMetadata() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_h1z_qrs_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createAdObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackAdStart() </span></li> 
@@ -799,61 +799,61 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_START'); 
-       <discoiqbr /> 
-       <discoiqbr /> var contextData = {}; 
-       <discoiqbr /> // setting Standard Ad Metadata 
-       <discoiqbr /> contextData[AdMetadataKeys.ADVERTISER] = 
-       <discoiqbr /> "sample advertiser"; 
-       <discoiqbr /> contextData[AdMetadataKeys.CAMPAIGN_ID] = 
-       <discoiqbr /> "sample campaign"; 
-       <discoiqbr /> contextData[AdMetadataKeys.CREATIVE_ID] = 
-       <discoiqbr /> "sample creative"; 
-       <discoiqbr /> contextData[AdMetadataKeys.CREATIVE_URL] = 
-       <discoiqbr /> "sample url"; 
-       <discoiqbr /> contextData[AdMetadataKeys.SITE_ID] = 
-       <discoiqbr /> "sample site"; 
-       <discoiqbr /> contextData[AdMetadataKeys.PLACEMENT_ID] = 
-       <discoiqbr /> "sample placement"; 
-       <discoiqbr /> 
-       <discoiqbr /> this._aaPlugin.setAdMetadata(contextData); 
-       <discoiqbr /> this._playerPlugin.trackAdStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_START'); 
+        
+        var contextData = {}; 
+        // setting Standard Ad Metadata 
+        contextData[AdMetadataKeys.ADVERTISER] = 
+        "sample advertiser"; 
+        contextData[AdMetadataKeys.CAMPAIGN_ID] = 
+        "sample campaign"; 
+        contextData[AdMetadataKeys.CREATIVE_ID] = 
+        "sample creative"; 
+        contextData[AdMetadataKeys.CREATIVE_URL] = 
+        "sample url"; 
+        contextData[AdMetadataKeys.SITE_ID] = 
+        "sample site"; 
+        contextData[AdMetadataKeys.PLACEMENT_ID] = 
+        "sample placement"; 
+        
+        this._aaPlugin.setAdMetadata(contextData); 
+        this._playerPlugin.trackAdStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L169" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_START'); 
-       <discoiqbr /> var adContextData = { 
-       <discoiqbr /> affiliate: "Sample affiliate", 
-       <discoiqbr /> campaign: "Sample ad campaign" 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr /> // AdBreak Info - getting the adBreakInfo from player and creating 
-       <discoiqbr /> // AdBreakInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _adBreakInfo = this._player.getAdBreakInfo(); 
-       <discoiqbr /> var adBreakInfo = 
-       <discoiqbr /> MediaHeartbeat.createAdBreakObject(_adBreakInfo.name, 
-       <discoiqbr /> _adBreakInfo.position, 
-       <discoiqbr /> _adBreakInfo.startTime); 
-       <discoiqbr /> 
-       <discoiqbr /> // Ad Info - getting the adInfo from player and creating 
-       <discoiqbr /> // AdInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _adInfo = this._player.getAdInfo(); 
-       <discoiqbr /> var adInfo = 
-       <discoiqbr /> MediaHeartbeat.createAdObject(_adInfo.name, 
-       <discoiqbr /> _adInfo.id, 
-       <discoiqbr /> _adInfo.position, 
-       <discoiqbr /> _adInfo.length); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, 
-       <discoiqbr /> adBreakInfo); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, 
-       <discoiqbr /> adInfo, 
-       <discoiqbr /> adContextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_START'); 
+        var adContextData = { 
+        affiliate: "Sample affiliate", 
+        campaign: "Sample ad campaign" 
+        }; 
+        
+        // AdBreak Info - getting the adBreakInfo from player and creating 
+        // AdBreakInfo Object from MediaHeartbeat 
+        var _adBreakInfo = this._player.getAdBreakInfo(); 
+        var adBreakInfo = 
+        MediaHeartbeat.createAdBreakObject(_adBreakInfo.name, 
+        _adBreakInfo.position, 
+        _adBreakInfo.startTime); 
+        
+        // Ad Info - getting the adInfo from player and creating 
+        // AdInfo Object from MediaHeartbeat 
+        var _adInfo = this._player.getAdInfo(); 
+        var adInfo = 
+        MediaHeartbeat.createAdObject(_adInfo.name, 
+        _adInfo.id, 
+        _adInfo.position, 
+        _adInfo.length); 
+        
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, 
+        adBreakInfo); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, 
+        adInfo, 
+        adContextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L147" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -864,7 +864,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_tpm_jss_fbb"> 
       <li> <span class="codeph"> AdobeAnalyticsPlugin.setAdMetadata() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_upm_jss_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createAdObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackAdStart() </span></li> 
@@ -874,17 +874,17 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         SampleVideoPlayerPluginDelegate.prototype.getAdInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getAdInfo(); 
-       <discoiqbr /> }; 
+        function() { 
+        return this._player.getAdInfo(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L31" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdSkip = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_SKIP'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_SKIP'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
+        }; 
       </codeblock> </p> </td> 
    </tr> 
    <tr> 
@@ -895,7 +895,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_hwz_wss_fbb"> 
       <li> <span class="codeph"> VideoPlayerPlugin.trackAdComplete() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_iwz_wss_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete) </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete) </span></li> 
@@ -905,19 +905,19 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_COMPLETE'); 
-       <discoiqbr /> this._playerPlugin.trackAdComplete(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_COMPLETE'); 
+        this._playerPlugin.trackAdComplete(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L185" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onAdComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: AD_COMPLETE'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: AD_COMPLETE'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L173" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
   </tbody> 
@@ -944,7 +944,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoPlayerPluginDelegate.getChapterInfo() </span></li> 
       <li> <span class="codeph"> VideoPlayerPlugin.trackChapterStart() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_spl_kts_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createChapterObject </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart) </span></li> 
@@ -954,37 +954,37 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: CHAPTER_START'); 
-       <discoiqbr /> this._playerPlugin.trackChapterStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: CHAPTER_START'); 
+        this._playerPlugin.trackChapterStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L190 " format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p> 
       <codeblock class="syntax javascript">
         SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getChapterInfo(); 
-       <discoiqbr /> }; 
+        function() { 
+        return this._player.getChapterInfo(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L35" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: CHAPTER_START'); 
-       <discoiqbr /> var chapterContextData = { }; 
-       <discoiqbr /> 
-       <discoiqbr /> // Chapter Info - getting the chapterInfo from player and creating 
-       <discoiqbr /> // ChapterInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _chapterInfo = this._player.getChapterInfo(); 
-       <discoiqbr /> var chapterInfo = 
-       <discoiqbr /> MediaHeartbeat.createChapterObject(_chapterInfo.name, 
-       <discoiqbr /> _chapterInfo.position, 
-       <discoiqbr /> _chapterInfo.length, 
-       <discoiqbr /> _chapterInfo.startTime); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, 
-       <discoiqbr /> chapterInfo, 
-       <discoiqbr /> chapterContextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: CHAPTER_START'); 
+        var chapterContextData = { }; 
+        
+        // Chapter Info - getting the chapterInfo from player and creating 
+        // ChapterInfo Object from MediaHeartbeat 
+        var _chapterInfo = this._player.getChapterInfo(); 
+        var chapterInfo = 
+        MediaHeartbeat.createChapterObject(_chapterInfo.name, 
+        _chapterInfo.position, 
+        _chapterInfo.length, 
+        _chapterInfo.startTime); 
+        
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, 
+        chapterInfo, 
+        chapterContextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L179" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -992,7 +992,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_bf1_c5s_fbb"> 
       <li> <span class="codeph"> VideoPlayerPluginDelegate.getChapterInfo() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_cf1_c5s_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip) </span></li> 
      </ul> </td> 
@@ -1001,16 +1001,16 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> return this._player.getChapterInfo(); 
-       <discoiqbr /> }; 
+        function() { 
+        return this._player.getChapterInfo(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L35" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterSkip = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
-       <discoiqbr /> }; 
+        function() { 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+        }; 
       </codeblock> </p> </td> 
    </tr> 
    <tr> 
@@ -1022,7 +1022,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoPlayerPlugin.trackChapterStart() </span></li> 
       <li> <span class="codeph"> AdobeAnalyticsPlugin.setChapterMetadata() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_fkn_s5s_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.createChapterObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart) </span></li> 
@@ -1032,36 +1032,36 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: CHAPTER_START'); 
-       <discoiqbr /> this._aaPlugin.setChapterMetadata({ 
-       <discoiqbr /> segmentType: "Sample segment type" 
-       <discoiqbr /> }); 
-       <discoiqbr /> this._playerPlugin.trackChapterStart(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: CHAPTER_START'); 
+        this._aaPlugin.setChapterMetadata({ 
+        segmentType: "Sample segment type" 
+        }); 
+        this._playerPlugin.trackChapterStart(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L190" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterStart = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: CHAPTER_START'); 
-       <discoiqbr /> var chapterContextData = { 
-       <discoiqbr /> segmentType: "Sample segment type" 
-       <discoiqbr /> }; 
-       <discoiqbr /> 
-       <discoiqbr /> // Chapter Info - getting the chapterInfo from player and creating 
-       <discoiqbr /> // ChapterInfo Object from MediaHeartbeat 
-       <discoiqbr /> var _chapterInfo = this._player.getChapterInfo(); 
-       <discoiqbr /> var chapterInfo = 
-       <discoiqbr /> MediaHeartbeat.createChapterObject(_chapterInfo.name, 
-       <discoiqbr /> _chapterInfo.position, 
-       <discoiqbr /> _chapterInfo.length, 
-       <discoiqbr /> _chapterInfo.startTime); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, 
-       <discoiqbr /> chapterInfo, 
-       <discoiqbr /> chapterContextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: CHAPTER_START'); 
+        var chapterContextData = { 
+        segmentType: "Sample segment type" 
+        }; 
+        
+        // Chapter Info - getting the chapterInfo from player and creating 
+        // ChapterInfo Object from MediaHeartbeat 
+        var _chapterInfo = this._player.getChapterInfo(); 
+        var chapterInfo = 
+        MediaHeartbeat.createChapterObject(_chapterInfo.name, 
+        _chapterInfo.position, 
+        _chapterInfo.length, 
+        _chapterInfo.startTime); 
+        
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, 
+        chapterInfo, 
+        chapterContextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L179" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -1072,7 +1072,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_qth_3vs_fbb"> 
       <li> <span class="codeph"> trackChapterComplete() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_rth_3vs_fbb"> 
       <li> <span class="codeph"> trackEvent(MediaHeartbeat.Event.ChapterComplete) </span></li> 
      </ul> </td> 
@@ -1081,18 +1081,18 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: CHAPTER_COMPLETE'); 
-       <discoiqbr /> this._playerPlugin.trackChapterComplete(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: CHAPTER_COMPLETE'); 
+        this._playerPlugin.trackChapterComplete(); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L198" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onChapterComplete = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: CHAPTER_COMPLETE'); 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: CHAPTER_COMPLETE'); 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L192" format="html" scope="external"> Sample Player 2.x </a></p> <p>...</p> </td> 
    </tr> 
   </tbody> 
@@ -1118,7 +1118,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
      <ul id="ul_ppb_qvs_fbb"> 
       <li> <span class="codeph"> VideoPlayerPlugin.trackBitrateChange() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_qpb_qvs_fbb"> 
       <li> <span class="codeph"> MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange) </span></li> 
      </ul> </td> 
@@ -1127,20 +1127,20 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBitrateChange = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BITRATE_CHANGE'); 
-       <discoiqbr /> // Update getQosInfo to return the updated bitrate 
-       <discoiqbr /> this._playerPlugin.trackBitrateChange(); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BITRATE_CHANGE'); 
+        // Update getQosInfo to return the updated bitrate 
+        this._playerPlugin.trackBitrateChange(); 
+        }; 
       </codeblock> </p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onBitrateChange = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: BITRATE_CHANGE'); 
-       <discoiqbr /> // Update getQosObject to return the updated bitrate 
-       <discoiqbr /> this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: BITRATE_CHANGE'); 
+        // Update getQosObject to return the updated bitrate 
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L198" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
    <tr> 
@@ -1150,7 +1150,7 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       <li> <span class="codeph"> VideoPlayerPluginDelegate.getVideoInfo() </span></li> 
       <li> <span class="codeph"> VideoPlayerPlugin.trackVideoLoad() </span></li> 
      </ul> </td> 
-    <td> <p>... </p> <p><b>2.x:</b></p> 
+    <td> <p>...</p> <p><b>2.x:</b></p> 
      <ul id="ul_w4j_dws_fbb"> 
       <li> <span class="codeph"> MediaObject() </span></li> 
       <li> <span class="codeph"> MediaHeartbeat.trackSessionStart() </span></li> 
@@ -1163,30 +1163,30 @@ The following tables provide side-by-side code comparisons between VHL 1.x and V
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/player/video.player.js#L207" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> <p> 
       <codeblock class="syntax javascript">
         VideoPlayer.prototype.getVideoInfo = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> this._videoInfo.playhead = vTime; 
-       <discoiqbr /> return this._videoInfo; 
-       <discoiqbr /> }; 
+        function() { 
+        this._videoInfo.playhead = vTime; 
+        return this._videoInfo; 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/player/video.player.js#L96" format="html" scope="external"> Sample 1.x Player </a></p> <p>...</p> </td> 
     <td> <p> 
       <codeblock class="syntax javascript">
         VideoAnalyticsProvider.prototype._onLoad = 
-       <discoiqbr /> function() { 
-       <discoiqbr /> console.log('Player event: VIDEO_LOAD'); 
-       <discoiqbr /> var contextData = {}; 
-       <discoiqbr /> 
-       <discoiqbr /> var videoInfo = this._player.getVideoInfo(); 
-       <discoiqbr /> var mediaInfo = 
-       <discoiqbr /> MediaHeartbeat.createMediaObject(videoInfo.playerName, 
-       <discoiqbr /> videoInfo.id, 
-       <discoiqbr /> videoInfo.length, 
-       <discoiqbr /> videoInfo.streamType); 
-       <discoiqbr /> mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.VideoResumed, 
-       <discoiqbr /> true); 
-       <discoiqbr /> 
-       <discoiqbr /> this._mediaHeartbeat.trackSessionStart(mediaInfo, 
-       <discoiqbr /> contextData); 
-       <discoiqbr /> }; 
+        function() { 
+        console.log('Player event: VIDEO_LOAD'); 
+        var contextData = {}; 
+        
+        var videoInfo = this._player.getVideoInfo(); 
+        var mediaInfo = 
+        MediaHeartbeat.createMediaObject(videoInfo.playerName, 
+        videoInfo.id, 
+        videoInfo.length, 
+        videoInfo.streamType); 
+        mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.VideoResumed, 
+        true); 
+        
+        this._mediaHeartbeat.trackSessionStart(mediaInfo, 
+        contextData); 
+        }; 
       </codeblock> <a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L100" format="html" scope="external"> Sample 2.x Player </a></p> <p>...</p> </td> 
    </tr> 
   </tbody> 

@@ -76,18 +76,18 @@ To implement ad playback:
   <tbody> 
    <tr> 
     <td colname="col1"> <span class="codeph"> name </span> </td> 
-    <td colname="col2"> <p>Ad break name such as pre-roll, mid-roll, and post-roll. </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Ad break name such as pre-roll, mid-roll, and post-roll.</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> position </span> </td> 
-    <td colname="col2"> <p>The number position of the ad break starting with 1. </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>The number position of the ad break starting with 1.</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> startTime </span> </td> 
-    <td colname="col2"> <p>Playhead value at the start of the ad break. </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Playhead value at the start of the ad break.</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 
@@ -124,23 +124,23 @@ To implement ad playback:
   <tbody> 
    <tr> 
     <td colname="col1"> <span class="codeph"> name </span> </td> 
-    <td colname="col2"> <p>Friendly name of the ad asset. </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Friendly name of the ad asset.</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> adId </span> </td> 
-    <td colname="col2"> <p>Unique identified for the ad asset. </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Unique identified for the ad asset.</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> position </span> </td> 
-    <td colname="col2"> <p>The number position of the asset in the ad break, starting with 1. </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>The number position of the asset in the ad break, starting with 1.</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> length </span> </td> 
-    <td colname="col2"> <p>Ad asset length </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Ad asset length</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

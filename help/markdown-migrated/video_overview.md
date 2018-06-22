@@ -28,7 +28,7 @@ Some of the many benefits that Adobe's video solution provides include:
 * **Increased granularity** - Evaluate viewing behavior at the most granular level, including individual visitor time of day, concurrent viewers by minute, and average duration the content was viewed.
 * **Precise measurement** - Measure across the multiple devices used for video consumption, including OTT, smartphone, tablet, desktop, and more, to monitor user engagement patterns and habits.
 * **Segmentation** - Apply classifications to your players, devices, genres, chapters, and shows to see how each has an impact on your overall views and customer engagement with content, audio, ads, and combined.
-<!-- <p>Here is how video and video ad data flow into Adobe: </p> 
+<!-- <p>Here is how video and video ad data flow into Adobe:</p> 
 <p> 
  <fig id="fig_5A574F71C807481B8E1D66335CB836F3"> 
   <img href="graphics/how_aa_video_works.png" id="image_D3A97A67B8AF4055B6BF72F92190E18B" /> 
@@ -62,38 +62,38 @@ Some of the many benefits of the Heartbeats method include:
   <tbody> 
    <tr> 
     <td><b>Video Events</b> </td> 
-    <td>High-level Standard Events </td> 
-    <td>Detailed and Custom Events every 10s </td> 
+    <td>High-level Standard Events</td> 
+    <td>Detailed and Custom Events every 10s</td> 
    </tr> 
    <tr> 
     <td><b>Metrics and Dimensions</b> </td> 
-    <td>Variances among Vendors, Non-Standardized Metrics and Dimensions </td> 
-    <td>Clear, Standardized Metrics, Dimensions, and Benchmarks across Vendors </td> 
+    <td>Variances among Vendors, Non-Standardized Metrics and Dimensions</td> 
+    <td>Clear, Standardized Metrics, Dimensions, and Benchmarks across Vendors</td> 
    </tr> 
    <tr> 
     <td><b>Integrations w/ Adobe Products</b> </td> 
-    <td>Individual Sessions w/ some Mappings and Integrations </td> 
-    <td>Stitched Marketing Cloud ID linked to full Adobe Experience Cloud for easier cross-analysis </td> 
+    <td>Individual Sessions w/ some Mappings and Integrations</td> 
+    <td>Stitched Marketing Cloud ID linked to full Adobe Experience Cloud for easier cross-analysis</td> 
    </tr> 
    <tr> 
     <td><b>Pricing</b> </td> 
-    <td>Tracked and billed against each server call </td> 
-    <td>Transparent tracking by video stream (single) </td> 
+    <td>Tracked and billed against each server call</td> 
+    <td>Transparent tracking by video stream (single)</td> 
    </tr> 
    <tr> 
     <td><b>Implementation and Support</b> </td> 
-    <td>Longer integrations with limited support on legacy versions &amp; no upgrades </td> 
-    <td>Streamlined configuration with ongoing updates and improvements </td> 
+    <td>Longer integrations with limited support on legacy versions &amp; no upgrades</td> 
+    <td>Streamlined configuration with ongoing updates and improvements</td> 
    </tr> 
    <tr> 
     <td><b>Partner Sharing</b> </td> 
-    <td>N/A </td> 
-    <td>Federated Analytics and Certified Metrics </td> 
+    <td>N/A</td> 
+    <td>Federated Analytics and Certified Metrics</td> 
    </tr> 
    <tr> 
     <td><b>Advanced Tracking</b> </td> 
-    <td>N/A </td> 
-    <td>Error Recovery Tracking and Concurrent Viewers </td> 
+    <td>N/A</td> 
+    <td>Error Recovery Tracking and Concurrent Viewers</td> 
    </tr> 
   </tbody> 
  </tgroup> 
@@ -137,7 +137,7 @@ The SDK’s are routinely updated when new versions of devices are released, and
     <td align="center"></td> 
    </tr> 
    <tr> 
-    <td><b>Windows </b> </td> 
+    <td><b>Windows</b> </td> 
     <td align="center"></td> 
     <td align="center"><b>✔</b> </td> 
    </tr> 

@@ -82,64 +82,64 @@ The Milestone model allows a completely custom implementation where customers ca
   <colspec colnum="3" colname="col3" colwidth="*" /> 
   <thead> 
    <tr> 
-    <th colname="col1" align="center" class="entry">Feature </th> 
-    <th colname="col2" align="center" class="entry">Milestone </th> 
-    <th colname="col3" align="center" class="entry">Heartbeat </th> 
+    <th colname="col1" align="center" class="entry">Feature</th> 
+    <th colname="col2" align="center" class="entry">Milestone</th> 
+    <th colname="col3" align="center" class="entry">Heartbeat</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1"> <p>Quartile tracking </p> </td> 
+    <td colname="col1"> <p>Quartile tracking</p> </td> 
     <td colname="col2" align="center" valign="middle"><b>✔</b> </td> 
     <td colname="col3" align="center" valign="middle"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Real-Time Reporting </p> </td> 
+    <td colname="col1"> <p>Real-Time Reporting</p> </td> 
     <td colname="col2" align="center" valign="middle"><b>✔</b> </td> 
     <td colname="col3" align="center" valign="middle"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>10 second time spent granularity </p> </td> 
+    <td colname="col1"> <p>10 second time spent granularity</p> </td> 
     <td colname="col2" align="center" valign="middle"></td> 
     <td colname="col3" align="center" valign="middle"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Standardized data and benchmarking </p> </td> 
+    <td colname="col1"> <p>Standardized data and benchmarking</p> </td> 
     <td colname="col2" align="center" valign="middle"></td> 
     <td colname="col3" align="center" valign="middle"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Chapter tracking </p> </td> 
+    <td colname="col1"> <p>Chapter tracking</p> </td> 
     <td colname="col2" align="center" valign="middle"></td> 
     <td colname="col3" align="center" valign="middle"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Pricing based on streams </p> </td> 
+    <td colname="col1"> <p>Pricing based on streams</p> </td> 
     <td colname="col2" align="center"></td> 
     <td colname="col3" valign="middle" align="center"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Player Mapping implementation model </p> </td> 
+    <td colname="col1"> <p>Player Mapping implementation model</p> </td> 
     <td colname="col2" align="center" valign="middle"><b>✔</b> </td> 
     <td colname="col3" valign="middle" align="center"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Required variables ONLY in base objects </p> </td> 
+    <td colname="col1"> <p>Required variables ONLY in base objects</p> </td> 
     <td colname="col2" align="center"></td> 
     <td colname="col3" valign="middle" align="center"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Streamlined configuration </p> </td> 
+    <td colname="col1"> <p>Streamlined configuration</p> </td> 
     <td colname="col2" align="center"></td> 
     <td colname="col3" valign="middle" align="center"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Error state recovery </p> </td> 
+    <td colname="col1"> <p>Error state recovery</p> </td> 
     <td colname="col2" align="center"></td> 
     <td colname="col3" align="center" valign="middle"><b>✔</b> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>Video ad tracking included in solution </p> </td> 
+    <td colname="col1"> <p>Video ad tracking included in solution</p> </td> 
     <td colname="col2" align="center"></td> 
     <td colname="col3" valign="middle" align="center"><b>✔</b> </td> 
    </tr> 

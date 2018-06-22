@@ -67,24 +67,24 @@ To implement custom video chapters:
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1"> <p>name </p> </td> 
-    <td colname="col2"> <p>Chapter name </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col1"> <p>name</p> </td> 
+    <td colname="col2"> <p>Chapter name</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>position </p> </td> 
-    <td colname="col2"> <p>Chapter position </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col1"> <p>position</p> </td> 
+    <td colname="col2"> <p>Chapter position</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>length </p> </td> 
-    <td colname="col2"> <p>Chapter length </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col1"> <p>length</p> </td> 
+    <td colname="col2"> <p>Chapter length</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>startTime </p> </td> 
-    <td colname="col2"> <p>Chapter start time </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col1"> <p>startTime</p> </td> 
+    <td colname="col2"> <p>Chapter start time</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 
@@ -258,7 +258,7 @@ if (e.type == "chapter skip") {
 
 ## Validate {#section_07EC2811BE3249249494596BFE9BF869}
 
-**Chapter Start **
+**Chapter Start**
 
 On start of an individual chapter playback, one key calls are sent:
 

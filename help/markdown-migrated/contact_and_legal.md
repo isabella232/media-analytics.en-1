@@ -31,8 +31,8 @@ We welcome any suggestions or feedback regarding this solution. Enhancement idea
 ## Legal {#section_A6E1844D4AC2485CADBF6D05116E3D59}
 
 <ul class="simplelist"> 
- <li>© 2017 Adobe Systems Incorporated. All Rights Reserved. </li> 
- <li>Published by Adobe Systems Incorporated. </li> 
+ <li>© 2017 Adobe Systems Incorporated. All Rights Reserved.</li> 
+ <li>Published by Adobe Systems Incorporated.</li> 
 </ul>
 
 [Terms of Use](https://marketing.adobe.com/resources/help/en_US/terms.html) | [Privacy Center](http://www.adobe.com/privacy/policy.html)

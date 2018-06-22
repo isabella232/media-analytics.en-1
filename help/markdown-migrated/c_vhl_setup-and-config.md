@@ -74,7 +74,7 @@ This topic contains the following information:
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> playerName </span> </td> 
-    <td colname="col2"> <p>Name of the video player in use, i.e., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer". </p> </td> 
+    <td colname="col2"> <p>Name of the video player in use, i.e., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer".</p> </td> 
     <td colname="col3"> Yes </td> 
     <td colname="col4"> Empty String </td> 
    </tr> 
@@ -121,7 +121,7 @@ This topic contains the following information:
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> getCurrentPlaybackTime() </span> </td> 
-    <td colname="col2"> <p>Returns the current position of the playhead. </p> <p>For VOD tracking, the value is specified in seconds from the beginning of the media item. </p> <p>For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program. </p> </td> 
+    <td colname="col2"> <p>Returns the current position of the playhead.</p> <p>For VOD tracking, the value is specified in seconds from the beginning of the media item.</p> <p>For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program.</p> </td> 
     <td colname="col3"> Yes </td> 
    </tr> 
   </tbody> 

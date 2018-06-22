@@ -45,13 +45,13 @@ Each report suite that collects video metrics must be configured before video da
   <colspec colnum="2" colname="col2" colwidth="2.26*" />
   <thead>
    <tr>
-    <th colname="col1" class="entry">Option </th>
-    <th colname="col2" class="entry">Description </th>
+    <th colname="col1" class="entry">Option</th>
+    <th colname="col2" class="entry">Description</th>
    </tr>
   </thead>
   <tbody>
    <tr>
-    <td colname="col1">Continue using custom variables. </td>
+    <td colname="col1">Continue using custom variables.</td>
     <td colname="col2"><p>
       <ul id="ul_93BB179CF28647A3921A010CADD9BC24">
        <li id="li_312933504ED54588B9759ECD6AAE0C07"><b>Pros:</b> Video trending continues to work after migration. </li>
@@ -66,12 +66,12 @@ Each report suite that collects video metrics must be configured before video da
       </fig></p></td>
    </tr>
    <tr>
-    <td colname="col1"><p>Migrate to solution variables. </p><p type="important">Note: Migrating to solution variables causes you to lose <b>all</b> historical trending and comparison for video reports. </p></td>
+    <td colname="col1"><p>Migrate to solution variables.</p><p type="important">Note: Migrating to solution variables causes you to lose <b>all</b> historical trending and comparison for video reports. </p></td>
     <td colname="col2"><p>
       <ul id="ul_0973C12221724A5796166D52EBFCAED6">
        <li id="li_8788A51AF06748DAB86D15AF4E3975FC"><b>Pros:</b> You regain use of three custom eVars and four custom events. </li>
        <li id="li_87DC22857D2046A5A3F12B48B35DD799"><b>Cons:</b> You lose <b>all</b> historical trending and comparison for video reports. This means that you cannot trend video views or video time played for any dates before you migrated to video heartbeat. </li>
-      </ul><p type="restriction">Note: Do not migrate to solution variables unless you are certain that you do not want to preserve this trending. </p></p><p>All customers should use solution variables and processing rules to put video data into existing props and eVars, only if they need to preserve historical continuity. </p><p> To migrate to solution variables: 
+      </ul><p type="restriction">Note: Do not migrate to solution variables unless you are certain that you do not want to preserve this trending.</p></p><p>All customers should use solution variables and processing rules to put video data into existing props and eVars, only if they need to preserve historical continuity.</p><p> To migrate to solution variables: 
       <ol id="ol_00FCF0BA5A644C87ADEA35BE81A985A5">
        <li id="li_CEC859EB367845A688D857581490D493">Select <span class="uicontrol">Use Solution Variables</span> and click <span class="uicontrol">Save</span>. </li>
       </ol></p></td>

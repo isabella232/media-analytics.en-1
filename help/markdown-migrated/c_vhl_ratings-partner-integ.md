@@ -16,13 +16,13 @@ topic: Developer and implementation
   <colspec colnum="2" colname="col2" colwidth="*" /> 
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Parter </th> 
-    <th colname="col2" class="entry">Documentation </th> 
+    <th colname="col1" class="entry">Parter</th> 
+    <th colname="col2" class="entry">Documentation</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">Nielsen </td> 
+    <td colname="col1">Nielsen</td> 
     <td colname="col2"> <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/nielsen/" format="html" scope="external">Digital Content Ratings powered by Adobe</a> </td> 
    </tr> 
    <!--<row>

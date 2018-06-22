@@ -60,23 +60,23 @@ To implement quality of experience and error tracking:
   <tbody> 
    <tr> 
     <td colname="col1"> <p> <span class="codeph"> bitrate </span> </p> </td> 
-    <td colname="col2"> <p>Current bitrate </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Current bitrate</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <p> <span class="codeph"> startupTime </span></p> </td> 
-    <td colname="col2"> <p>Startup time </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Startup time</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <p> <span class="codeph"> fps </span></p> </td> 
-    <td colname="col2"> <p>FPS value </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>FPS value</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <p> <span class="codeph"> droppedFrames </span></p> </td> 
-    <td colname="col2"> <p>Number of dropped frames </p> </td> 
-    <td colname="col3"> <p>Yes </p> </td> 
+    <td colname="col2"> <p>Number of dropped frames</p> </td> 
+    <td colname="col3"> <p>Yes</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 
