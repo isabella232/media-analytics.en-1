@@ -73,9 +73,7 @@ translate: y
    Content-Type: application/octet-stream 
    Content-Length: 0 
    Connection: keep-alive 
-   Location: /api/v1/sessions/ 
-<b>a39c037641f[…]</b> [  
-<b>&amp;lt;==&amp;nbsp;Session&amp;nbsp;ID</b> ] 
+   Location: /api/v1/sessions/a39c037641f[…] [&amp;lt;==&amp;nbsp;Session&amp;nbsp;ID ] 
    Access-Control-Allow-Origin: * 
    Access-Control-Allow-Methods: OPTIONS,POST,PUT 
    Access-Control-Allow-Headers: Content-Type 
@@ -83,6 +81,6 @@ translate: y
    
    ```
 
-If the [](c_vhl_col-api_ref_sessions_req.md) succeeds, you receive a ` 201 Created` response similar to the one above. The response includes a Session ID in the Location header. 
+If the [](c_vhl_col-api_ref_sessions_req.md) succeeds, you receive a `201 Created` response similar to the one above. The response includes a Session ID in the Location header.
 
 The Session ID is the crucial piece of information in the response, as it is required for all subsequent tracking calls. After a successful return of a [](c_vhl_col-api_ref_sessions_req.md), you can confidently proceed with implementing video tracking using the VA API in your video player.
