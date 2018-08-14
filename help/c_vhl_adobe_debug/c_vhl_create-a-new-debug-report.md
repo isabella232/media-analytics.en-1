@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Create a New Debug Report
 title: Create a New Debug Report
-uuid: 9c1c62bf-b45e-49e1-b7cf-34fd95aa6e18
+uuid: 242cecdd-8611-430c-8eac-20f1a1ef491a
 index: y
 internal: n
 snippet: y
@@ -15,7 +15,7 @@ translate: y
 To create a new Debug report: 
 
 
-1. In **Create a New Debug Report**, select the following: <a id="fig_DD6BC87024A2459E8DFBE76AC8AEBD21"></a> ![](../assets/create-new-debug-report.png) 
+1. In **Create a New Debug Report**, select the following: <a id="fig_DD6BC87024A2459E8DFBE76AC8AEBD21"></a> ![](assets/create-new-debug-report.png) 
 
 1. Complete the fields with the following information: 
     * **Name the Report** - Enter the player name and date so that you can easily track the player during certification and keep brands and platforms separate.

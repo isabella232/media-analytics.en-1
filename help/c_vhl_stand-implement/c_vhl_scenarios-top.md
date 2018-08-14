@@ -3,7 +3,7 @@ description: Scenarios help you understand how Video Heartbeat works.
 seo-description: Scenarios help you understand how Video Heartbeat works.
 seo-title: SDK Scenarios
 title: SDK Scenarios
-uuid: 2ad05cf8-a6b5-4cd9-9ac1-ba0e871ce0e8
+uuid: db8472b8-022e-40e3-9596-e1085bcd82c1
 index: y
 internal: n
 snippet: y

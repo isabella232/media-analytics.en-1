@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Architecture
 title: Architecture
-uuid: fe9e8dde-8e6c-41bf-a302-136753a42ce1
+uuid: 5e0efc2b-c6ce-44b1-a16e-360f920cace7
 index: y
 internal: n
 snippet: y
@@ -22,7 +22,7 @@ The connector bridge is designed to perform as follows:
 * The bridge also exposes a mechanism to listen for callbacks for APIs that return some data.
 
 
-<a id="fig_wc2_npx_1bb"></a> ![](../../../assets/SceneGraph_arch.png) 
+<a id="fig_wc2_npx_1bb"></a> ![](assets/SceneGraph_arch.png) 
 
 ## COMPONENTS {#section_jwl_wqx_1bb}
 

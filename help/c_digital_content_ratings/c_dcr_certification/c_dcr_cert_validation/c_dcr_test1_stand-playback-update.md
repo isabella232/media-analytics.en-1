@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates general playback and sequencing.
 seo-title: Test 1  Standard Playback
 title: Test 1  Standard Playback
-uuid: 1567efeb-6236-4f3c-b11c-717aa485b282
+uuid: 825967ca-547a-4460-860c-493976aae7cc
 index: y
 internal: n
 snippet: y

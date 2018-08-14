@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Implementing an Events Request
 title: Implementing an Events Request
-uuid: a73bb930-1c26-461b-8f21-aeda633488b2
+uuid: fa786266-93bf-4051-b043-76db40cbca28
 index: y
 internal: n
 snippet: y

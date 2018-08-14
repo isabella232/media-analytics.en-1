@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: One tracker for multiple sessions
 title: One tracker for multiple sessions
-uuid: 49743fea-d689-46cd-8ca7-fd8f38b0642b
+uuid: 852dccb2-b338-4335-9517-dc2e3602727e
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # One tracker for multiple sessions
 
 
-><a id="fig_65D741D8180845E3BD58C248DD5083C6"></a> ![](../../../assets/multi-sessions-one-at-a-time.png) 
+><a id="fig_65D741D8180845E3BD58C248DD5083C6"></a> ![](assets/multi-sessions-one-at-a-time.png) 
 
 >
 >* **Android - **To create two instances of ` MediaHeartbeat` for two video players, set up the following code:

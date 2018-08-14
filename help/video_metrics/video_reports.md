@@ -6,7 +6,7 @@ seo-title: Video Default Reports
 solution: Analytics
 title: Video Default Reports
 topic: Developer and implementation
-uuid: 5236bf7f-c275-4ba8-8a25-63d44c741b73
+uuid: 21b98977-a8ca-49ea-94ce-e9ecbe0c6e59
 index: y
 internal: n
 snippet: y
@@ -17,7 +17,7 @@ translate: y
 
 In addition to the metrics and dimensions available when you enable each of the modules, there are three additional dashboard-style reports that become available when you enable the Video Core module. Enabling the Ads module also changes the appearance of some of these dashboard-style reports by adding additional metrics and filters. 
 
-Video reports are listed in the ** [!UICONTROL  Reports] ** > ** [!UICONTROL  Reports &amp;amp; Analytics] ** > ** [!UICONTROL  Video] ** section. 
+Video reports are listed in the **[!UICONTROL  Reports]** > **[!UICONTROL  Reports &amp;amp; Analytics]** > **[!UICONTROL  Video]** section. 
 
 <table id="table_3B8DDC9D47034856BC4441BA8BB93208"> 
  <thead> 

@@ -6,7 +6,7 @@ seo-title: Track Core Video Playback
 solution: Analytics
 title: Track Core Video Playback
 topic: Developer and implementation
-uuid: 95059e31-f5ab-49e3-b6c6-6259fc0ac05e
+uuid: 00553f12-35b6-4084-9465-341a3d341ab7
 index: y
 internal: n
 snippet: y

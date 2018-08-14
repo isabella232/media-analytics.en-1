@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Multiple trackers in parallel
 title: Multiple trackers in parallel
-uuid: 43de9542-5618-4959-b161-6c899085f5a9
+uuid: 671e0d55-d5c6-4cf2-a4ad-efbc663e3f92
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # Multiple trackers in parallel
 
 
-><a id="fig_E333C95A544A4DCFB192F9DA9093BB04"></a> ![](../../../assets/multi-sessions-in-parallel.png) 
+><a id="fig_E333C95A544A4DCFB192F9DA9093BB04"></a> ![](assets/multi-sessions-in-parallel.png) 
 
 >
 >* **Android - **>

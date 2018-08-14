@@ -3,7 +3,7 @@ description: You can use these methods to send signals and retrieve visitor segm
 seo-description: You can use these methods to send signals and retrieve visitor segments from Audience Manager.
 seo-title: Audience Manager Methods
 title: Audience Manager Methods
-uuid: 627f7366-765a-4256-9e52-6bdff4a02b80
+uuid: ea37128a-085d-40fd-85fc-752df9ebe62f
 index: y
 internal: n
 snippet: y

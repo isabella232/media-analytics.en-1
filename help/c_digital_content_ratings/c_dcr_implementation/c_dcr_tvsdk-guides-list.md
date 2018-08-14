@@ -3,7 +3,7 @@ description: The following information helps you integrate TVSDK with the Nielse
 seo-description: The following information helps you integrate TVSDK with the Nielsen SDK.
 seo-title: Primetime TVSDK Implementation
 title: Primetime TVSDK Implementation
-uuid: b9d0647b-5e53-4c92-a3a6-da51de276def
+uuid: 8adaafa8-0282-43ec-805c-430c91bf03b8
 index: y
 internal: n
 snippet: y

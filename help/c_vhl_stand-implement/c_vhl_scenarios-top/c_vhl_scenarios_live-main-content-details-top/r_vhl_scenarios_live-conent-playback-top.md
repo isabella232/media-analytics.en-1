@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Live content playback
 title: Live content playback
-uuid: 2b754776-df3a-4e4a-a7f4-ddb78a591988
+uuid: 83c9de02-dd58-42dc-934f-873e575f0a98
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # Live content playback
 
 
-><a id="fig_65D741D8180845E3BD58C248DD5083C6"></a> ![](../../../assets/live-content-playback.png) 
+><a id="fig_65D741D8180845E3BD58C248DD5083C6"></a> ![](assets/live-content-playback.png) 
 
 >
 >* **Android - **Here is the expected API call order: >

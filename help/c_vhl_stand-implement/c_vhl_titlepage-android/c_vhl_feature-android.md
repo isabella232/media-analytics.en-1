@@ -3,7 +3,7 @@ description: This section will help you to implement various video tracking feat
 seo-description: This section will help you to implement various video tracking features using MediaHeartbeat.
 seo-title: Implementation
 title: Implementation
-uuid: 8a2e271d-a2ae-492f-817b-f76b15ad993a
+uuid: 1e99322b-774a-49cc-8257-eeee72960bfb
 index: y
 internal: n
 snippet: y

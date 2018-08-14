@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Timeline 3 - Chapters
 title: Timeline 3 - Chapters
-uuid: 4655be19-51ce-42f4-a8aa-39a850933b0e
+uuid: 76bc04c0-51f4-41d2-92fd-342d7eda9660
 index: y
 internal: n
 snippet: y
@@ -12,9 +12,9 @@ translate: y
 
 # Timeline 3 - Chapters
 
-<a id="fig_qkd_2yf_wcb"></a> ![](../../assets/va_api_content_3.png) 
+<a id="fig_qkd_2yf_wcb"></a> ![](assets/va_api_content_3.png) 
 
-<a id="fig_l1s_4yf_wcb"></a> ![](../../assets/va_api_actions_3.png) 
+<a id="fig_l1s_4yf_wcb"></a> ![](assets/va_api_actions_3.png) 
 
 
 

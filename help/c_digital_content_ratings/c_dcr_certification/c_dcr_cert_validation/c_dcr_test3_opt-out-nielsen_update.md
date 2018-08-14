@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates mobile interruption behavior.
 seo-title: Test 3  Opt-out Nielsen
 title: Test 3  Opt-out Nielsen
-uuid: 8f41d272-1e77-49e2-904e-db29650aa770
+uuid: cd746fda-a75c-474f-b1dd-630b8770026b
 index: y
 internal: n
 snippet: y
@@ -28,21 +28,21 @@ You must complete and record these tasks in the following order:
     * **VA (Heartbeats) SDK Version 2.1** 
         * **iOS Apps**Opt-out and Opt-in are set by the user in the device's *Privacy Settings*, under *Advertising*. To opt-out, set *Limit Ad Tracking* on; to opt-in, set *Limit Ad Tracking* off.
 
-          <a id="fig_rkk_skt_d2b"></a> ![](../../../assets/Opt-Out_iOS.jpg) 
+          <a id="fig_rkk_skt_d2b"></a> ![](assets/Opt-Out_iOS.jpg) 
 
         * **Android Apps** 
             * **Nielsen SDK Version 5.1.1.18 and up**
             * To opt out, use the *Ads* settings on the device: *Google Settings → Ads → Opt out of Ads Personalization:*
-          <a id="fig_vj2_lpt_d2b"></a> ![](../../../assets/andr-ads.jpg) 
+          <a id="fig_vj2_lpt_d2b"></a> ![](assets/andr-ads.jpg) 
 
 
     * **VA (Heartbeats) SDK Version 2.0 and earlier**When you click the Opt-Out/Opt-In link in the app, the application should invoke [ optOutURL ](https://engineeringportal.nielsen.com/docs/optOutURL) to get the link to the Nielsen Privacy page from the SDK. Verify that the Nielsen Opt-in/Opt-out Privacy page gets displayed properly in a window on the device.
 
       Click the opt-out link on the Privacy page to opt out of Nielsen tracking, and click OK on the ensuing dialog:
 
-      <a id="fig_jrk_bmt_d2b"></a> ![](../../../assets/privacy-policy.jpg) 
+      <a id="fig_jrk_bmt_d2b"></a> ![](assets/privacy-policy.jpg) 
 
-      <a id="fig_atl_dmt_d2b"></a> ![](../../../assets/Opt-Out_Combined.jpg) 
+      <a id="fig_atl_dmt_d2b"></a> ![](assets/Opt-Out_Combined.jpg) 
 
 
    **Browser Apps:**Find and click the opt-out link to opt out of Nielsen tracking.
@@ -57,7 +57,7 @@ You must complete and record these tasks in the following order:
 
    When the video starts an Adobe Analytics Content Start call with an Opt-out cookie.If you examine the cookies sent on a request, you will see one named omniture_optout. 
 
-   <a id="fig_0844732B5404401FB0AFAF2F8473FB4C"></a> ![](../../../assets/test3_opt-out_nielsen1.png) 
+   <a id="fig_0844732B5404401FB0AFAF2F8473FB4C"></a> ![](assets/test3_opt-out_nielsen1.png) 
 
    **Mobile App** 
 
@@ -69,7 +69,7 @@ You must complete and record these tasks in the following order:
 
 1. **View ad playback.****Browser** 
 
-   <a id="fig_3585B155FE044BD08A59D0C451F395AC"></a> ![](../../../assets/test3_opt-out_nielsen2.png) 
+   <a id="fig_3585B155FE044BD08A59D0C451F395AC"></a> ![](assets/test3_opt-out_nielsen2.png) 
 
    **Mobile App** 
 

@@ -6,7 +6,7 @@ seo-title: Video Reports Enablement
 solution: Analytics
 title: Video Reports Enablement
 topic: Developer and implementation
-uuid: 5bafcc20-144b-4b3c-b6a6-711f4770b273
+uuid: 35198935-20ef-40f3-b842-1d8e26aa51f9
 index: y
 internal: n
 snippet: y
@@ -25,10 +25,10 @@ Each report suite that collects video metrics must be configured before video da
 >To take advantage of new capabilities, existing Video Analytics customers should re-enable video tracking for their RSIDs.
 
 
-1. In [ Reports &amp;amp; Analytics ](https://my.omniture.com/login/), click  ** [!UICONTROL  Admin Tools] ** > ** [!UICONTROL  Report Suites] ** .
-1. Select the report suite(s) where you are collecting video data and click  ** [!UICONTROL  Edit Settings] ** > ** [!UICONTROL  Video Management] ** > ** [!UICONTROL  Video Reporting] ** . <a id="fig_091C05FE4F064B8F81CC3A93C2AC04DF"></a> ![](../assets/video_reporting.png)
+1. In [ Reports &amp;amp; Analytics ](https://my.omniture.com/login/), click  **[!UICONTROL  Admin Tools]** > **[!UICONTROL  Report Suites]** .
+1. Select the report suite(s) where you are collecting video data and click  **[!UICONTROL  Edit Settings]** > **[!UICONTROL  Video Management]** > **[!UICONTROL  Video Reporting]** . <a id="fig_091C05FE4F064B8F81CC3A93C2AC04DF"></a> ![](assets/video_reporting.png)
 
-1. On the ** [!UICONTROL  Video Reporting] ** page, enable ** [!UICONTROL  Video Core] **, and optionally enable ** [!UICONTROL  Video Ads] **, ** [!UICONTROL  Video Chapters] **, and ** [!UICONTROL  Video Quality] **. Video measurement includes the following modules: 
+1. On the **[!UICONTROL  Video Reporting]** page, enable **[!UICONTROL  Video Core]**, and optionally enable **[!UICONTROL  Video Ads]**, **[!UICONTROL  Video Chapters]**, and **[!UICONTROL  Video Quality]**. Video measurement includes the following modules: 
 
     * **Video Core:** Core video measurement is used for video content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. Solution (or Custom) events will be used for Video Initiates, Content Starts, Content Completes, and Content Time Spent.
     * **Video Ads:** Video ad measurement is used for the measurement of ads within the video content. This will use Solution eVvars to measure Ad, Ad Player Name, Ad Pod, and Ad in Pod Position. Solution events will be used for Ad Starts, Ad Completes, Ad Time Spent, and Video Time Spent.
@@ -38,7 +38,7 @@ Each report suite that collects video metrics must be configured before video da
 
    If you are not yet tracking ads, chapters, or playback quality, you can enable additional options at any time. 
 
-1. Click ** [!UICONTROL  Save] **. If this report suite is already configured to collect video data, after you click ** [!UICONTROL  Save] **, an additional configuration page is displayed. If you see the [!UICONTROL  Video Core Measurement] page, continue to the next step. 
+1. Click **[!UICONTROL  Save]**. If this report suite is already configured to collect video data, after you click **[!UICONTROL  Save]**, an additional configuration page is displayed. If you see the [!UICONTROL  Video Core Measurement] page, continue to the next step. 
 
 1. (Conditional) On the [!UICONTROL  Video Core Measurement] page, select to continue using custom variables or to use solution variables. 
 <table id="table_7F40EA3C30BC40AE9060E6FF0B7B96A1"> 
@@ -61,7 +61,7 @@ Each report suite that collects video metrics must be configured before video da
       <li id="li_32802086E31649338A2B8B08BEB2D76F">When prompted, map your current custom eVars and events and then click <span class="uicontrol"> Save </span>: </li> 
      </ol></p> <p> 
      <fig id="fig_A7234D33D2524621B0065399772F9DF1">  
-     </fig><img placement="break" align="center" href="../assets/video-mapping.png" id="image_952F10D91A124288B7732B5A1B8A24E5" width="300px" /></p> </td> 
+     </fig><img placement="break" align="center" href="assets/video-mapping.png" id="image_952F10D91A124288B7732B5A1B8A24E5" width="300px" /></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Migrate to solution variables. </p> <p type="important">Note:  Migrating to solution variables causes you to lose <b>all</b> historical trending and comparison for video reports. </p> </td> 

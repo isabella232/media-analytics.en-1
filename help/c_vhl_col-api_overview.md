@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Media Collection API Implementation
 title: Media Collection API Implementation
-uuid: 007aeb4e-7795-48e5-929b-b690f3b9e967
+uuid: 37cfac86-0d1c-490a-ae55-acd75b761105
 index: y
 internal: n
 snippet: y

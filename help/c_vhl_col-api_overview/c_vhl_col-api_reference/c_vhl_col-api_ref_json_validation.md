@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: JSON Validation Schemas
 title: JSON Validation Schemas
-uuid: 0d4dd3a3-730b-4d93-8fb6-9d097f6ee9a6
+uuid: 92ac0f04-fe65-434c-b5bf-783dd1aab1a0
 index: y
 internal: n
 snippet: y

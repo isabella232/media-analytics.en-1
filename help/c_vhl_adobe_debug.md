@@ -3,7 +3,7 @@ description: Learn how to implement and use Adobe Debug, which generates the req
 seo-description: Learn how to implement and use Adobe Debug, which generates the required logs that must be submitted with sites/Apps during the certification process.
 seo-title: Adobe Debug
 title: Adobe Debug
-uuid: feb9574b-aa4a-4295-87a0-63aa91791b17
+uuid: 3d4097a8-ceda-48cf-87ec-766dc586d4e4
 index: y
 internal: n
 snippet: y

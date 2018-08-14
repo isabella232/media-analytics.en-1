@@ -3,7 +3,7 @@ description: In this scenario, a portion of the VOD content is marked as a chapt
 seo-description: In this scenario, a portion of the VOD content is marked as a chapter.
 seo-title: VOD playback with one chapter - details
 title: VOD playback with one chapter - details
-uuid: 65228b1e-ddfc-42b9-ab60-3fa85a30659b
+uuid: 539ce24f-ab7e-4abf-aeed-cd841943b5ca
 index: y
 internal: n
 snippet: y
@@ -19,7 +19,7 @@ Unless specified, the network calls in this scenario are the same as the calls i
 
 |  Trigger  | Heartbeat method  | Network calls  | Notes  |
 |---|---|---|---|
-| User clicks ** [!UICONTROL  Play] ** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start | We have not yet told the measurement library that there is a pre-roll ad, so these network calls are still exactly the same as Single VoD.  |
+| User clicks **[!UICONTROL  Play]** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start | We have not yet told the measurement library that there is a pre-roll ad, so these network calls are still exactly the same as Single VoD.  |
 |  The chapter starts.  | ` trackEvent:ChapterStart`  | Heartbeat Chapter Start  |  |
 |  First frame of the chapter plays.  | ` trackPlay`  | Heartbeat Content Play  | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
 |  The chapter plays.  |  | Chapter Heartbeats  |  |

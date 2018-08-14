@@ -3,7 +3,7 @@ description: In this scenario, the VOD content is played back as a chapter.
 seo-description: In this scenario, the VOD content is played back as a chapter.
 seo-title: Playback with one chapter
 title: Playback with one chapter
-uuid: b9f3f05f-a4fe-4856-b83e-9dd6f758e3ec
+uuid: 34803891-4605-4e66-9a56-29dc876fef81
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # Playback with one chapter
 
 
-><a id="fig_553EA0F2821440EBB39353F627463913"></a> ![](../../../assets/chapter-regular-playback.png) 
+><a id="fig_553EA0F2821440EBB39353F627463913"></a> ![](assets/chapter-regular-playback.png) 
 
 >
 >* **Android - **To view this scenario in Android, set up the following code: >

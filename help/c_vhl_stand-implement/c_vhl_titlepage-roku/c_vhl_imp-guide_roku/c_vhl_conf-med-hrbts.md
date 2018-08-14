@@ -3,7 +3,7 @@ description: After the application has acquired the Adobe Mobile SDK, you need t
 seo-description: After the application has acquired the Adobe Mobile SDK, you need to configure the media heartbeats.
 seo-title: Configure MediaHeartbeats on Roku
 title: Configure MediaHeartbeats on Roku
-uuid: ee438fe5-ff04-4c47-9878-e3666c064403
+uuid: 8517ac72-5717-43bb-93bf-588b1dd8c0e5
 index: y
 internal: n
 snippet: y

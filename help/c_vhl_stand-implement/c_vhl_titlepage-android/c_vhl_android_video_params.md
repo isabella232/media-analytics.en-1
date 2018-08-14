@@ -6,7 +6,7 @@ seo-title: Video Measurement Parameters
 solution: Analytics,Developer
 title: Video Measurement Parameters
 topic: Developer and implementation
-uuid: 49cb90c3-6d41-40a9-8c39-be73de870e07
+uuid: 3e2cd106-2199-4f75-bf08-6dd97af65b9b
 index: y
 internal: n
 snippet: y

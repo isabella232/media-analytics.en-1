@@ -3,7 +3,7 @@ description: Standard video and ad metadata can be set on media and ad info obje
 seo-description: Standard video and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
 seo-title: Standard Metadata Parameters
 title: Standard Metadata Parameters
-uuid: b7b3fbf3-5a28-49bb-b09a-0ba61f5e48d9
+uuid: a2a2a0e0-efd5-4999-9acc-7880d8a4b1ef
 index: y
 internal: n
 snippet: y

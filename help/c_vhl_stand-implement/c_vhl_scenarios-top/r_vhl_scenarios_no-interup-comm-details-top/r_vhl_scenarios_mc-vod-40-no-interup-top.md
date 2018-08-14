@@ -3,7 +3,7 @@ description: In this scenario, there is content that is 40 seconds long. It is p
 seo-description: In this scenario, there is content that is 40 seconds long. It is played until the end without any interruptions.
 seo-title: Playback with no interruptions
 title: Playback with no interruptions
-uuid: 1c6196e9-5d78-4489-a1b5-5d6a1c302733
+uuid: 715234f4-1e7a-4835-ae04-4b09c8d1d767
 index: y
 internal: n
 snippet: y
@@ -12,7 +12,7 @@ translate: y
 
 # Playback with no interruptions
 
-<a id="fig_AB77956465F440B98D3990A56751F766"></a> ![](../../../assets/main-content-regular-playback.png) 
+<a id="fig_AB77956465F440B98D3990A56751F766"></a> ![](assets/main-content-regular-playback.png) 
 
 
 * **Android - **To view this scenario in Android, set up the following code: 

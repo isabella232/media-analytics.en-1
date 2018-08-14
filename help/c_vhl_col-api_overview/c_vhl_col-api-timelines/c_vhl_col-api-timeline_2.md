@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Timeline 2 - User abandons session
 title: Timeline 2 - User abandons session
-uuid: 1fef1562-1cd4-41f2-8aa5-b76dae5df74b
+uuid: cd61d653-12af-411d-ad5f-bc1b84545bff
 index: y
 internal: n
 snippet: y
@@ -12,9 +12,9 @@ translate: y
 
 # Timeline 2 - User abandons session
 
-<a id="fig_uqz_pwg_wcb"></a> ![](../../assets/va_api_content_2.png) 
+<a id="fig_uqz_pwg_wcb"></a> ![](assets/va_api_content_2.png) 
 
-<a id="fig_kk3_qwg_wcb"></a> ![](../../assets/va_api_actions_2.png) 
+<a id="fig_kk3_qwg_wcb"></a> ![](assets/va_api_actions_2.png) 
 
 
 

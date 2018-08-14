@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Implementation Examples
 title: Implementation Examples
-uuid: dbf247dd-855c-4ef0-a4ee-f24e8291d40f
+uuid: 5a6461ad-6a5c-479a-b0ea-dee9f56a04ef
 index: y
 internal: n
 snippet: y
@@ -24,7 +24,7 @@ This section contains the following information:
 
 In this scenario, playback is started for content that is 9 minutes long. 
 
-<a id="fig_E0A6EEEA442144CB9D238D07EF4E5D70"></a> ![](../../assets/nielsen-Tracking-Example-Simple-Playback.png) 
+<a id="fig_E0A6EEEA442144CB9D238D07EF4E5D70"></a> ![](assets/nielsen-Tracking-Example-Simple-Playback.png) 
 
 **Expected events** 
 * Nielsen DCR 
@@ -54,7 +54,7 @@ In this scenario, playback is started for content that is 9 minutes long.
 
 In this scenario, playback starts for content that has 1 pre-roll ad that is 30 seconds, and the content is 4 minutes long. 
 
-<a id="fig_664B9557BC344186A8332CEBF8CF1818"></a> ![](../../assets/nielsen-Tracking-Example-Pre-Roll-Ad.png) 
+<a id="fig_664B9557BC344186A8332CEBF8CF1818"></a> ![](assets/nielsen-Tracking-Example-Pre-Roll-Ad.png) 
 
 **Expected events** 
 * Nielsen DCR 
@@ -83,7 +83,7 @@ In this scenario, playback starts for content that has 1 pre-roll ad that is 30 
 
 In this scenario, playback is started for a content that is 10 minutes long. The playback is paused after 3 minutes, and pl after 40 minutes and play the content to the end. 
 
-<a id="fig_A72914F838B148BEB8E6BB9CAE127144"></a> ![](../../assets/nielsen-Tracking-Example-Long-Pause.png) 
+<a id="fig_A72914F838B148BEB8E6BB9CAE127144"></a> ![](assets/nielsen-Tracking-Example-Long-Pause.png) 
 
 **Expected events** 
 * Nielsen DCR 

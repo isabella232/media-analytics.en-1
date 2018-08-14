@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: SDK Cookbook
 title: SDK Cookbook
-uuid: d7c8cbc9-2021-4198-b6e1-35846c941047
+uuid: 429fef8d-4bac-4b8b-9db0-643ea4919577
 index: y
 internal: n
 snippet: y

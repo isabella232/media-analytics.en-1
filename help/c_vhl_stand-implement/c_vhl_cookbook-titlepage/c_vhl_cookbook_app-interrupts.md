@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Handling application interrupts during playback
 title: Handling application interrupts during playback
-uuid: 1dd0a5f6-94f2-4b66-93e9-0a538aed64b3
+uuid: 2f8514fe-0f2f-4394-9b7f-0dd1627fe356
 index: y
 internal: n
 snippet: y

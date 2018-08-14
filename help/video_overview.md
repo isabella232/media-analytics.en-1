@@ -6,7 +6,7 @@ seo-title: Measuring Video in Adobe Analytics
 solution: Analytics
 title: Measuring Video in Adobe Analytics
 topic: Developer and implementation
-uuid: a35b8840-5a38-472d-8865-283659e5e0b1
+uuid: 80e5d8c4-0eb2-46f7-9a21-fcaa5f910552
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: Adobe Launch, the follow-on product to Dynamic Tag Management, feat
 seo-description: Adobe Launch, the follow-on product to Dynamic Tag Management, features a Video Analytics Launch Extension that facilitates implementing video tracking in your players.
 seo-title: Adobe Launch
 title: Adobe Launch
-uuid: 20b432d5-27b5-487f-8fb5-f6db3a6aff30
+uuid: d8aa9c89-3ed0-419c-a6f1-431b1bf3e4d2
 index: y
 internal: n
 snippet: y

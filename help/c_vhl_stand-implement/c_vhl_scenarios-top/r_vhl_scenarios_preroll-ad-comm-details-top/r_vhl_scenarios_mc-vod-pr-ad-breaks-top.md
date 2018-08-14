@@ -3,7 +3,7 @@ description: In this scenario, the VOD content consists of a pre-roll ad, a seco
 seo-description: In this scenario, the VOD content consists of a pre-roll ad, a second pre-roll ad, and then the content is played.
 seo-title: Playback with a pre-roll ad break
 title: Playback with a pre-roll ad break
-uuid: a0f3c32c-c621-46de-9166-7ffcdd52b40b
+uuid: 76d2e916-afeb-46ee-beca-1787623389c3
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # Playback with a pre-roll ad break
 
 
-><a id="fig_49C7C3412C3B413EABE67C39260F6C40"></a> ![](../../../assets/preroll-regular-playback.png) 
+><a id="fig_49C7C3412C3B413EABE67C39260F6C40"></a> ![](assets/preroll-regular-playback.png) 
 
 >
 >* **Android - **To view this scenario in Android, set up the following code: 

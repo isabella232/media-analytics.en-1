@@ -6,7 +6,7 @@ seo-title: Validation
 solution: Analytics
 title: Validation
 topic: Developer and implementation
-uuid: ee97327f-48bb-444b-857b-c50377175889
+uuid: aa35f39f-86df-4eaf-9ea2-036ab8e1438b
 index: y
 internal: n
 snippet: y

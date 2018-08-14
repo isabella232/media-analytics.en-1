@@ -6,7 +6,7 @@ seo-title: Heartbeat Parameter Descriptions
 solution: Analytics
 title: Heartbeat Parameter Descriptions
 topic: Developer and implementation
-uuid: 2e3a0fd8-6dd1-419a-b63f-3e37e4143b25
+uuid: 1d76ac61-e50c-48af-8f59-c331f0875c4a
 index: y
 internal: n
 snippet: y

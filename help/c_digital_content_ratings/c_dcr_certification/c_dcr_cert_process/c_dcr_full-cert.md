@@ -3,7 +3,7 @@ description: Here are the use cases and circumstances for a full certification a
 seo-description: Here are the use cases and circumstances for a full certification and a self certification.
 seo-title: Certification Process Summary
 title: Certification Process Summary
-uuid: 53ba6d02-7178-4b22-9ba4-3c30edb8e517
+uuid: 3de9ce1f-2487-4c6b-9826-d603ac625267
 index: y
 internal: n
 snippet: y
@@ -37,7 +37,7 @@ Here are the criteria for self-certification:
 
 <a id="section_A8930180945D48258792DC9AC857B6E3"></a>
 
-<a id="fig_4BAC7C5333D542A4B489DF935D588972"></a> ![](../../../assets/initiate.png) 
+<a id="fig_4BAC7C5333D542A4B489DF935D588972"></a> ![](assets/initiate.png) 
 
 <table id="table_9CA49981020E4D2997424C9F6C92D6A4"> 
  <thead> 
@@ -97,7 +97,7 @@ Here are the criteria for self-certification:
 
 <a id="section_B79513DC49744CA4A1A0BECF290A3FCD"></a>
 
-<a id="fig_B265637DE2FC49D2B00B5A332A44328A"></a> ![](../../../assets/implement.png) 
+<a id="fig_B265637DE2FC49D2B00B5A332A44328A"></a> ![](assets/implement.png) 
 
 <table id="table_64B9E82D590540C1A67DEBDE14168B32"> 
  <thead> 
@@ -151,7 +151,7 @@ Here are the criteria for self-certification:
 
 <a id="section_82EDBB0744CA47178AA1722CDF297886"></a>
 
-<a id="fig_5C5B07006C2543E0BF68FE63FD4846ED"></a> ![](../../../assets/certify.png) 
+<a id="fig_5C5B07006C2543E0BF68FE63FD4846ED"></a> ![](assets/certify.png) 
 
 <table id="table_1DB78E21FD03489DA40D21E7FD646AA4"> 
  <thead> 
@@ -213,7 +213,7 @@ Here are the criteria for self-certification:
 
 <a id="section_29CD1F2185714A5C8FFF6175057D75BC"></a>
 
-<a id="fig_D00C7FDED7284913A62123D5AA3D0139"></a> ![](../../../assets/provision.png) 
+<a id="fig_D00C7FDED7284913A62123D5AA3D0139"></a> ![](assets/provision.png) 
 
 <table id="table_75780058B85B4EF991273597DE5355F2"> 
  <thead> 
@@ -268,7 +268,7 @@ Here are the criteria for self-certification:
 
 <a id="section_A281BC796A0441A09F15D368F63710D7"></a>
 
-<a id="fig_5A03D335B14B4300B18FE8DBE5DBB1FB"></a> ![](../../../assets/close.png) 
+<a id="fig_5A03D335B14B4300B18FE8DBE5DBB1FB"></a> ![](assets/close.png) 
 
 <table id="table_541A031A3A0B447E969195E6C259FB82"> 
  <thead> 

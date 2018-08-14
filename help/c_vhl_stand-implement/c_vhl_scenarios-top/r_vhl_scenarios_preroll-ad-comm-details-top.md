@@ -3,7 +3,7 @@ description: In this scenario, a pre-roll ad has been inserted before the main c
 seo-description: In this scenario, a pre-roll ad has been inserted before the main content.
 seo-title: VOD playback with pre-roll ads - details
 title: VOD playback with pre-roll ads - details
-uuid: 677b5f1f-549f-4fb2-a9eb-feacb0617098
+uuid: 36919058-a04f-4261-91d7-20ffc0093ba5
 index: y
 internal: n
 snippet: y

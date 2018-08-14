@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Inactive video sessions and resuming
 title: Inactive video sessions and resuming
-uuid: 35b2bc9b-e0c3-4b99-8709-6b3f8625997d
+uuid: eb4398cc-9e3b-406f-a5c4-c9cf4bdf5b8e
 index: y
 internal: n
 snippet: y

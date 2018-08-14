@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Playback with a skipped chapter
 title: Playback with a skipped chapter
-uuid: 9e409f06-6cad-4733-b4a9-faf7782a28db
+uuid: 4ccd2a1e-93c5-45bc-b0d8-4e0d76a5dbba
 index: y
 internal: n
 snippet: y
@@ -15,7 +15,7 @@ translate: y
 
 <a id="section_6631CA351745493DA964D198A6C37D51"></a>
 
-<a id="fig_B5B18205EFE144B5A00B268B1A541010"></a> ![](../../../assets/chapter-skip.png) 
+<a id="fig_B5B18205EFE144B5A00B268B1A541010"></a> ![](assets/chapter-skip.png) 
 
 
 * **Android - **To view this scenario in Android, set up the following code: 

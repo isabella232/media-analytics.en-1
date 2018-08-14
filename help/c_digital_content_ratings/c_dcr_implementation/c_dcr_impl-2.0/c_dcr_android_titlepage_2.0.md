@@ -3,7 +3,7 @@ description: The Android sample code helps you implement the Video Heartbeat Lib
 seo-description: The Android sample code helps you implement the Video Heartbeat Library for Nielsen and configure opt-in/opt-out for Nielsen data collection.
 seo-title: 2.0 for Android
 title: 2.0 for Android
-uuid: dbad40f7-a9fc-4c81-b92d-17c3be2cd556
+uuid: be5a1b79-55ae-40c1-ae60-42266e27a11f
 index: y
 internal: n
 snippet: y

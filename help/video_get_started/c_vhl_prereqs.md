@@ -6,7 +6,7 @@ seo-title: Prerequisites
 solution: Analytics
 title: Prerequisites
 topic: Developer and implementation
-uuid: 4ccdba7e-b820-45c2-a586-b2afa5cfe097
+uuid: 6e20c15b-550d-4627-a6de-958f46e20c52
 index: y
 internal: n
 snippet: y
@@ -22,7 +22,7 @@ Here are the tasks you must complete prior to implementing Video Analytics using
 
    The Experience Cloud ID service enables the common identification framework for the Experience Cloud Core Services, solutions, and customer attributes and audiences in the People core service. It works by assigning a unique, persistent ID to a site visitor. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different Experience Cloud solutions. 
 
-   <a id="fig_E7648D1E230E4AA588C80C9092B662EA"></a> ![](../assets/mc_id_service_graphic.png) 
+   <a id="fig_E7648D1E230E4AA588C80C9092B662EA"></a> ![](assets/mc_id_service_graphic.png) 
 
    The ID service can also replace the different solution-specific IDs (for example, Analytics AID). Through the [ Customer IDs and Authentication States](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) functionality, the ID service lets you pass in your own customer IDs to the Experience Cloud. Keep in mind, however, that the ID service only works with the solutions to which you have already subscribed. If you are not signed up for access to other products, the ID service does not provide the access. 
 

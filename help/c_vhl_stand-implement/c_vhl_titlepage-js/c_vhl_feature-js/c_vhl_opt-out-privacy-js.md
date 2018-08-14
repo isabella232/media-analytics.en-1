@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Opt-out and privacy settings
 title: Opt-out and privacy settings
-uuid: dd6bc983-f6d9-458e-a62f-1374890b1085
+uuid: b3a2f49c-d975-436d-9be2-312605f683d1
 index: y
 internal: n
 snippet: y

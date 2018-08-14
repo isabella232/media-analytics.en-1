@@ -3,7 +3,7 @@ description: After the application has acquired the Adobe Mobile SDK, you need t
 seo-description: After the application has acquired the Adobe Mobile SDK, you need to configure the media heartbeats.
 seo-title: Configure MediaHeartbeat on Chromecast
 title: Configure MediaHeartbeat on Chromecast
-uuid: ae37f53a-3b83-4d45-a782-389443b73521
+uuid: b7b09cde-d29e-4fa3-8784-842a28a70c4d
 index: y
 internal: n
 snippet: y

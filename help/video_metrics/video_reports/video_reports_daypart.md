@@ -6,7 +6,7 @@ seo-title: Video Daypart
 solution: Analytics
 title: Video Daypart
 topic: Developer and implementation
-uuid: 67b185e9-415c-4bc4-8d09-2a76e72caca3
+uuid: 122dc5f3-d1bd-4f7c-a006-a82f163be6e4
 index: y
 internal: n
 snippet: y
@@ -15,4 +15,4 @@ translate: y
 
 # Video Daypart
 
-![](../../assets/video-daypart-report.png) 
+![](assets/video-daypart-report.png) 

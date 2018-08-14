@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Timeline 1 - View to end of content
 title: Timeline 1 - View to end of content
-uuid: 2c947037-edb2-4718-af3f-90b7eeb6249c
+uuid: 81b1dd84-f5b2-45f2-a968-77230261cb02
 index: y
 internal: n
 snippet: y
@@ -12,9 +12,9 @@ translate: y
 
 # Timeline 1 - View to end of content
 
-<a id="fig_qkd_2yf_wcb"></a> ![](../../assets/va_api_content.png) 
+<a id="fig_qkd_2yf_wcb"></a> ![](assets/va_api_content.png) 
 
-<a id="fig_l1s_4yf_wcb"></a> ![](../../assets/va_api_actions.png) 
+<a id="fig_l1s_4yf_wcb"></a> ![](assets/va_api_actions.png) 
 
 
 

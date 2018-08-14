@@ -6,7 +6,7 @@ seo-title: Track Quality of Experience
 solution: Analytics
 title: Track Quality of Experience
 topic: Developer and implementation
-uuid: be8bc6c7-e1e3-4389-9c10-b50328454b47
+uuid: 4e3388f8-b1cf-492a-986b-91a9b8d02d81
 index: y
 internal: n
 snippet: y

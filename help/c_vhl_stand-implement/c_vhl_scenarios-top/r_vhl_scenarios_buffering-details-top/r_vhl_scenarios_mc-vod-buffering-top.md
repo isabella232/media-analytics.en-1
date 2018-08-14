@@ -3,7 +3,7 @@ description: In this scenario, buffering occurs when the VOD content is played b
 seo-description: In this scenario, buffering occurs when the VOD content is played back.
 seo-title: Playback with buffering in the main content
 title: Playback with buffering in the main content
-uuid: cf80aa8f-b355-47e3-a1ba-b6cdc5f4d84e
+uuid: a9ff15a2-3009-4174-9d30-8fcfd6b56b2a
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # Playback with buffering in the main content
 
 
-><a id="fig_E4644A6B9940403BA81AC82585C4C1D7"></a> ![](../../../assets/buffer-regular-content.png) 
+><a id="fig_E4644A6B9940403BA81AC82585C4C1D7"></a> ![](assets/buffer-regular-content.png) 
 
 >
 >* **Android - **To view this scenario in Android, set up the following code: 

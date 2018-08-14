@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Android Developer Guide
 title: Android Developer Guide
-uuid: 9cd5f4f4-1d14-44ae-94e9-3e33c1e3e883
+uuid: e408b14e-52c5-4518-a803-57aed95a71b9
 index: y
 internal: n
 snippet: y

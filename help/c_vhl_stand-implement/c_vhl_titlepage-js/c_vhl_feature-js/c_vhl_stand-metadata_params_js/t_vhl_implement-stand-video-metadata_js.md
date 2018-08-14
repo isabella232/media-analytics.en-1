@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Implementation for standard video metadata
 title: Implementation for standard video metadata
-uuid: 8f078153-9459-44a2-869e-c8d3be09d498
+uuid: 8a0e9379-4900-415b-8705-ebb3721c0f5f
 index: y
 internal: n
 snippet: y

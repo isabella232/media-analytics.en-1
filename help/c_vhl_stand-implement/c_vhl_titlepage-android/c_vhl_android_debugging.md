@@ -3,7 +3,7 @@ description: You can enable or disable logging for MediaHeartbeat.
 seo-description: You can enable or disable logging for MediaHeartbeat.
 seo-title: Debugging
 title: Debugging
-uuid: 783ee198-efb9-48c4-85ff-1aa5ac878a01
+uuid: 4edac579-c497-4e7c-a981-70de8c922d5d
 index: y
 internal: n
 snippet: y

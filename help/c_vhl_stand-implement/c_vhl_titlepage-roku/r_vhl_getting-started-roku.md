@@ -3,7 +3,7 @@ description: After you download the Roku SDK and add it to your project, you can
 seo-description: After you download the Roku SDK and add it to your project, you can collect video metrics, such as initiates, content starts, ad starts, ad completes, content completes and so on.
 seo-title: Getting started on Roku
 title: Getting started on Roku
-uuid: c040097d-8834-49db-9536-524ac3127d3e
+uuid: 71a5a0ff-5bc0-4baf-b024-482b1bb93a80
 index: y
 internal: n
 snippet: y

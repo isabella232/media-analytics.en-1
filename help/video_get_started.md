@@ -6,7 +6,7 @@ seo-title: Before You Begin
 solution: Analytics
 title: Before You Begin
 topic: Developer and implementation
-uuid: 0cc4e25a-1365-4704-b5a1-7b39ed16aad3
+uuid: 19ae30e9-5748-475f-b6f0-9dbf9a5e61d2
 index: y
 internal: n
 snippet: y

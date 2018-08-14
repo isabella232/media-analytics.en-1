@@ -3,7 +3,7 @@ description: You can use this information to implement MediaHeartbeat on Apple T
 seo-description: You can use this information to implement MediaHeartbeat on Apple TV with tvOS.
 seo-title: AppleTV implementation with tvOS
 title: AppleTV implementation with tvOS
-uuid: cf7bea1e-dcda-4a17-a325-34039ce95d7e
+uuid: 066ed0a5-f3e5-42de-a13e-0da72a570a9f
 index: y
 internal: n
 snippet: y

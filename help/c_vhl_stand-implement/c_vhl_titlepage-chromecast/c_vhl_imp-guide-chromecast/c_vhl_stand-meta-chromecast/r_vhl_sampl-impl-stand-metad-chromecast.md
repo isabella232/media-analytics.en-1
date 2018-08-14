@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Sample Implementations for Standard Metadata
 title: Sample Implementations for Standard Metadata
-uuid: cdc4d67f-4bfa-4694-aaa6-0904924d9528
+uuid: 7f830ba7-ca27-4cc2-834e-e000fa1811ea
 index: y
 internal: n
 snippet: y

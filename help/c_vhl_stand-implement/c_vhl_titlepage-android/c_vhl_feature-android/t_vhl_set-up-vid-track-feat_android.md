@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Set up MediaHeartbeat on Android
 title: Set up MediaHeartbeat on Android
-uuid: d8773d58-3592-4056-aa8e-f3880e73cd10
+uuid: d0048ae2-06bf-4fac-9ec2-7b25f3ec162f
 index: y
 internal: n
 snippet: y

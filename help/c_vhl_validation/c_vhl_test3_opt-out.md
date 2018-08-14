@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates mobile interruption behavior.
 seo-title: Test 3  Opt-out
 title: Test 3  Opt-out
-uuid: 55da8cb9-28ae-42c4-b663-d3c69d27daf8
+uuid: 3a17baca-a0ce-4be5-8f6f-be2e3fbd8e9d
 index: y
 internal: n
 snippet: y

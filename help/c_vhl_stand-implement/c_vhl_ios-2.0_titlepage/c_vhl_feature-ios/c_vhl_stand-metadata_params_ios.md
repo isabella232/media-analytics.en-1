@@ -6,7 +6,7 @@ seo-title: Standard Metadata Parameters
 solution: Analytics,Developer
 title: Standard Metadata Parameters
 topic: Developer and implementation
-uuid: f20b20d1-144f-4645-9af5-0f2ff72c6e83
+uuid: 7446b319-6429-41bb-ac97-f6ec840fa0f4
 index: y
 internal: n
 snippet: y

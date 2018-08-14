@@ -3,7 +3,7 @@ description: This scenario comprises VOD content playback with a skipped ad.
 seo-description: This scenario comprises VOD content playback with a skipped ad.
 seo-title: VOD playback with skipped ads - details
 title: VOD playback with skipped ads - details
-uuid: 12ecf04b-a623-45e7-9295-c00af3c8e1bb
+uuid: 95ad42f3-68a3-4444-9017-49afe775c175
 index: y
 internal: n
 snippet: y

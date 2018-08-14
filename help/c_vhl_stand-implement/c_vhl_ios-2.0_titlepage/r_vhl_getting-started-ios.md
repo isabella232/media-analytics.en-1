@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Getting started on iOS
 title: Getting started on iOS
-uuid: 11365bc7-7ad0-43f3-8a53-d32c579cc29b
+uuid: 3d3ee9a2-e07f-45db-b649-35d881ac2ecd
 index: y
 internal: n
 snippet: y
@@ -63,20 +63,20 @@ Before you start implementing Video Heartbeat for iOS in the next section, ensur
 
 1. Add the SDK to your project: 
     1. Launch the Xcode IDE and open your app.
-    1. In ** [!UICONTROL  Project Navigator] **, drag the ` libs` directory and drop it under your project.
-    1. Ensure that the ** [!UICONTROL  Copy Items if Needed] ** checkbox is selected, the ** [!UICONTROL  Create Groups] ** is selected, and none of the checkboxes in ** [!UICONTROL  Add to Target] ** are selected. <a id="fig_7D00471EC1C6429885025702767E2C10"></a> ![](../../assets/choose-options_ios.png) 
+    1. In **[!UICONTROL  Project Navigator]**, drag the ` libs` directory and drop it under your project.
+    1. Ensure that the **[!UICONTROL  Copy Items if Needed]** checkbox is selected, the **[!UICONTROL  Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL  Add to Target]** are selected. <a id="fig_7D00471EC1C6429885025702767E2C10"></a> ![](assets/choose-options_ios.png) 
 
-    1. Click ** [!UICONTROL  Finish] **.
-    1. In ** [!UICONTROL  Project Navigator] **, select your app and select your targets.
-    1. Link the required frameworks and libraries in the ** [!UICONTROL  Linked Frameworks] ** and ** [!UICONTROL  Libraries] ** section on the ** [!UICONTROL  General] ** tab:     
-        * ** [!UICONTROL  iOS App Targets] ** <a id="fig_4CBCBA481EBB4D539412D33C43BD5AEC"></a> ![](../../assets/proj_nav_ios-app.png) 
+    1. Click **[!UICONTROL  Finish]**.
+    1. In **[!UICONTROL  Project Navigator]**, select your app and select your targets.
+    1. Link the required frameworks and libraries in the **[!UICONTROL  Linked Frameworks]** and **[!UICONTROL  Libraries]** section on the **[!UICONTROL  General]** tab:     
+        * **[!UICONTROL  iOS App Targets]** <a id="fig_4CBCBA481EBB4D539412D33C43BD5AEC"></a> ![](assets/proj_nav_ios-app.png) 
 
-        * ** [!UICONTROL  Apple TV (tvOS) Target] **: <a id="fig_317077787FB24101A306482E39A80C7D"></a> ![](../../assets/proj_nav_apple-tv.png) 
+        * **[!UICONTROL  Apple TV (tvOS) Target]**: <a id="fig_317077787FB24101A306482E39A80C7D"></a> ![](assets/proj_nav_apple-tv.png) 
         
-            * ** [!UICONTROL  AdobeMobileLibrary_TV.a] **
-            * ** [!UICONTROL  VideoHeartbeat_TV.a] **
-            * ** [!UICONTROL  libsqlite3.0.tbd] **
-            * ** [!UICONTROL  SystemConfiguration.framework] **
+            * **[!UICONTROL  AdobeMobileLibrary_TV.a]**
+            * **[!UICONTROL  VideoHeartbeat_TV.a]**
+            * **[!UICONTROL  libsqlite3.0.tbd]**
+            * **[!UICONTROL  SystemConfiguration.framework]**
 
 
     1. Verify that your app builds without errors.

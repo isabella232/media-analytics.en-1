@@ -6,7 +6,7 @@ seo-title: Download SDKs
 solution: Analytics
 title: Download SDKs
 topic: Developer and implementation
-uuid: 2447189b-d771-4e4d-8fb5-c5500cd5abe5
+uuid: dca3b828-0f26-4b33-9688-2cf17ef991e9
 index: y
 internal: n
 snippet: y

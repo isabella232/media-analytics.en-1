@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Playback with skipped ads
 title: Playback with skipped ads
-uuid: 3ed2bc6b-b9bc-433c-b9b8-124ff8c52cea
+uuid: 7961b341-3d8c-40d1-9186-eb2a8a005249
 index: y
 internal: n
 snippet: y
@@ -15,7 +15,7 @@ translate: y
 
 <a id="section_2AE8066EB1F945E2B863EC0F2123E07D"></a>
 
-<a id="fig_6DDC303ED9D14FE396EB093DF6E35882"></a> ![](../../../assets/ad-skip.png) 
+<a id="fig_6DDC303ED9D14FE396EB093DF6E35882"></a> ![](assets/ad-skip.png) 
 
 
 * **Android - **To view this scenario in Android, set up the following code: 

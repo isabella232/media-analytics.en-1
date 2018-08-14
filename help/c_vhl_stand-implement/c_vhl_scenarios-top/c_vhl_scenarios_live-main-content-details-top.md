@@ -3,7 +3,7 @@ description: In this scenario, there is one live asset with no ads played for 40
 seo-description: In this scenario, there is one live asset with no ads played for 40 secs after joining the live stream.
 seo-title: Live main content - details
 title: Live main content - details
-uuid: 2b9b4eb5-b0ad-4760-a6eb-e504f1e1e42b
+uuid: 9fe48dc6-e1ec-4d67-a2fb-20cd6b745c25
 index: y
 internal: n
 snippet: y
@@ -18,7 +18,7 @@ translate: y
 
 |  Trigger  | Heartbeat method  | Network calls  | Notes  |
 |---|---|---|---|
-|  User clicks ** [!UICONTROL  Play] ** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | This can be a user clicking ** [!UICONTROL  Play] ** or an auto-play event.  |
+|  User clicks **[!UICONTROL  Play]** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | This can be a user clicking **[!UICONTROL  Play]** or an auto-play event.  |
 |  The first frame of the video plays.  | ` trackPlay`  | Heartbeat Content Play  | This method triggers the timer. Heartbeats are sent every 10 seconds as long as playback continues.  |
 |  The content plays.  |  | Content Heartbeats  |  |
 |  The session is over.  | ` trackSessionEnd`  |  | ` SessionEnd` means the end of a viewing session. This API must be called even if the user does not watch the video to completion.  |

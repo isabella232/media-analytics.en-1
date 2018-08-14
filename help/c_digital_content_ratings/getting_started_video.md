@@ -3,7 +3,7 @@ description: Before getting access to the Joint Adobe/Nielsen SDK and starting y
 seo-description: Before getting access to the Joint Adobe/Nielsen SDK and starting your implementation, you must complete some business and technical tasks. After these tasks have been completed, Adobe/Nielsen teams will schedule an initial kick-off call where you will get access to the SDK and discuss support and the next steps.
 seo-title: Getting Started
 title: Getting Started
-uuid: 1c5ca887-5a6f-4e1b-a21b-abfd56cca0b6
+uuid: 143be645-c9d6-4182-a76e-888da9dabd56
 index: y
 internal: n
 snippet: y
@@ -37,29 +37,29 @@ Before or immediately after the kick-off call, you need to configure your report
 To enable report suite configuration: 
 
 
-1. On the ** [!UICONTROL  Admin] ** tab, go to ** [!UICONTROL  Report Suites] **.
+1. On the **[!UICONTROL  Admin]** tab, go to **[!UICONTROL  Report Suites]**.
 1. Highlight the report suite you want to enable for Nielsen.
-1. Click  ** [!UICONTROL  Edit Settings] ** > ** [!UICONTROL  Video Management] ** > ** [!UICONTROL  Video Reporting] ** .
+1. Click  **[!UICONTROL  Edit Settings]** > **[!UICONTROL  Video Management]** > **[!UICONTROL  Video Reporting]** .
 1. Configure the solution variables for Video Reporting: 
     1. Ensure that at least the following check boxes are selected:     
-        * ** [!UICONTROL  Video Core] **
-        * ** [!UICONTROL  Video Ads] **
-        * ** [!UICONTROL  Video &amp;amp; Video Ad Metadata] **
+        * **[!UICONTROL  Video Core]**
+        * **[!UICONTROL  Video Ads]**
+        * **[!UICONTROL  Video &amp;amp; Video Ad Metadata]**
 
 
        >[!IMPORTANT]
        >
-       >Although selecting the ** [!UICONTROL  Video Chapters] ** and ** [!UICONTROL  Video Quality] ** check boxes is optional, do not select the check boxes if you are not collecting that data. 
+       >Although selecting the **[!UICONTROL  Video Chapters]** and **[!UICONTROL  Video Quality]** check boxes is optional, do not select the check boxes if you are not collecting that data. 
 
     1. Verify that the check boxes for some of the groups have been selected.
-    1. Ensure that the **Video &amp;amp; Video Ad Metadata** check box is checked. The ** [!UICONTROL  Video Ads] ** check box should be selected by default. If it is not, select it now. 
+    1. Ensure that the **Video &amp;amp; Video Ad Metadata** check box is checked. The **[!UICONTROL  Video Ads]** check box should be selected by default. If it is not, select it now. 
 
 
-1. Click ** [!UICONTROL  Save] **.
-1. On the ** [!UICONTROL  Video Core measurement] ** page, verify that ** [!UICONTROL  Use Solution Variables] ** is selected.
-1. Click ** [!UICONTROL  Save] **.
+1. Click **[!UICONTROL  Save]**.
+1. On the **[!UICONTROL  Video Core measurement]** page, verify that **[!UICONTROL  Use Solution Variables]** is selected.
+1. Click **[!UICONTROL  Save]**.
 
 
 You have now successfully enabled your report suite for Nielsen and should see the following confirmation: 
 
-<a id="fig_D7AE4A27F67049FCB77E99FDDCD75249"></a> ![](../assets/successful_save.png) 
+<a id="fig_D7AE4A27F67049FCB77E99FDDCD75249"></a> ![](assets/successful_save.png) 

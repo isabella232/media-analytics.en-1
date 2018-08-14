@@ -3,7 +3,7 @@ description: Metadata, network parameters, and reporting data are required for i
 seo-description: Metadata, network parameters, and reporting data are required for implementing digital tracking with Nielsen.
 seo-title: Variables and Metadata
 title: Variables and Metadata
-uuid: 3bc8734c-f552-412e-8c7b-42f0c5517ede
+uuid: 67fda96f-3e38-49bd-ae10-f0231ce9c65b
 index: y
 internal: n
 snippet: y

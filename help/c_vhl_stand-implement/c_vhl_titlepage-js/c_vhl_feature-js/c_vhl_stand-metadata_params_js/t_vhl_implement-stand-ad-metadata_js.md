@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Implementation for standard ad metadata
 title: Implementation for standard ad metadata
-uuid: 1b6b1e03-f483-409d-a3f4-539b6e92aa73
+uuid: 7fb5fea7-66b0-42f0-888c-ecb5a35324e2
 index: y
 internal: n
 snippet: y

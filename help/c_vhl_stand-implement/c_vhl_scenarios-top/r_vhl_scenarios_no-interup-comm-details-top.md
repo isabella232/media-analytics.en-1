@@ -3,7 +3,7 @@ description: This scenario comprises one VOD asset, with no ads, and is played o
 seo-description: This scenario comprises one VOD asset, with no ads, and is played once from beginning to end.
 seo-title: VOD playback with no ads - details
 title: VOD playback with no ads - details
-uuid: 843251af-0765-440c-b895-8f53245a662f
+uuid: 185a25ba-5842-4451-aed6-bcd76549821e
 index: y
 internal: n
 snippet: y
@@ -18,7 +18,7 @@ translate: y
 
 |  Trigger  | Heartbeat method  | Network calls  | Notes  |
 |---|---|---|---|
-|  User clicks ** [!UICONTROL  Play] ** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | This can be either a user clicking Play or an auto-play event.  |
+|  User clicks **[!UICONTROL  Play]** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | This can be either a user clicking Play or an auto-play event.  |
 |  First frame of the video  | ` trackPlay`  | Heartbeat Content Play  | This method triggers the timer, and from this point forward, heartbeats will be sent every 10 seconds for the duration of the playback.  |
 |  Content plays  |  | Content Heartbeats  |  |
 |  Content is complete  | ` trackComplete`  | Heartbeat Content Complete  | *Complete* means that the end of the playhead was reached.  |

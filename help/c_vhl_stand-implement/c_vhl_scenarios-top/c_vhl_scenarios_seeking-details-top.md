@@ -3,7 +3,7 @@ description: This scenario comprises seeking in the main content during playback
 seo-description: This scenario comprises seeking in the main content during playback.
 seo-title: VOD playback with seeking in the main content - details
 title: VOD playback with seeking in the main content - details
-uuid: 3d6218ef-fb29-4a90-8ae7-39c5bd42b166
+uuid: b56dbf64-b7e4-4c80-aaff-c05d4395a1bf
 index: y
 internal: n
 snippet: y

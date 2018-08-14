@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Track ads on JavaScript
 title: Track ads on JavaScript
-uuid: 39db8b01-e08a-4910-b1a1-21d51f89abd2
+uuid: 6ee9056c-2093-4533-9d29-affac827d53a
 index: y
 internal: n
 snippet: y

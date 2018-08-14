@@ -3,7 +3,7 @@ description: Information to instrument a media (video/audio) player with the med
 seo-description: Information to instrument a media (video/audio) player with the media module of Adobe Mobile SDK.
 seo-title: Video Analytics via Media Heartbeat
 title: Video Analytics via Media Heartbeat
-uuid: bbd0e88d-bd85-4727-b97e-0321b8611a9b
+uuid: d2b7d9d8-b349-4115-8d1e-5cf485184e14
 index: y
 internal: n
 snippet: y

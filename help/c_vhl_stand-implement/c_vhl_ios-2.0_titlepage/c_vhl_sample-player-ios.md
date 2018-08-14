@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Sample player
 title: Sample player
-uuid: a74db8dd-667b-48b5-9736-2ee6d446282c
+uuid: a7bd1a1b-8fe4-49bb-b4af-faab7cc6e5bd
 index: y
 internal: n
 snippet: y

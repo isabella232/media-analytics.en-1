@@ -6,7 +6,7 @@ seo-title: Set up and Configure
 solution: Analytics
 title: Set up and Configure
 topic: Developer and implementation
-uuid: ddba55d7-01db-4e27-a0c1-65cb58a5de8f
+uuid: f80ffd55-e7e8-4c7f-9200-4688e44e6e70
 index: y
 internal: n
 snippet: y

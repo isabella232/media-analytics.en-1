@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Setting the HTTP Request Type in Your Player
 title: Setting the HTTP Request Type in Your Player
-uuid: 192c36a4-9f4d-4adc-9b3c-174f930646e8
+uuid: 8e343bd2-b0b8-4b02-8cfd-57a6a311c98e
 index: y
 internal: n
 snippet: y

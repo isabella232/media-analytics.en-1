@@ -3,7 +3,7 @@ description: You can use these methods to track media.
 seo-description: You can use these methods to track media.
 seo-title: Media Heartbeat Methods
 title: Media Heartbeat Methods
-uuid: 977d8477-2ad7-4d00-9905-5a73eeed27b8
+uuid: a19ec3df-27d5-4f91-b401-9cc3cf1e2692
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: In this scenario, some buffering occurs when VOD content is played 
 seo-description: In this scenario, some buffering occurs when VOD content is played back.
 seo-title: VOD playback with buffering - details
 title: VOD playback with buffering - details
-uuid: 5837a3f2-e47f-43fd-a107-a2d224e1fd2f
+uuid: efc12595-d918-4395-9af0-88932a9b896a
 index: y
 internal: n
 snippet: y
@@ -19,7 +19,7 @@ Unless specified, the network calls in this scenario are the same as the calls i
 
 |  Trigger  | Heartbeat method  | Network calls  | Notes  |
 |---|---|---|---|
-| User clicks ** [!UICONTROL  Play] ** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  |This can be a user clicking ** [!UICONTROL  Play] ** or an auto-play event.  |
+| User clicks **[!UICONTROL  Play]** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  |This can be a user clicking **[!UICONTROL  Play]** or an auto-play event.  |
 |  The first frame of the video plays.  | ` trackPlay`  | Heartbeat Content Play  | This method triggers the timer. Heartbeats are sent every 10 seconds as long as playback continues.  |
 |  The content plays.  |  | Content Heartbeats  |  |
 |  The buffering starts.  | ` trackEvent:BufferStart`  | Heartbeat Buffer  |  |

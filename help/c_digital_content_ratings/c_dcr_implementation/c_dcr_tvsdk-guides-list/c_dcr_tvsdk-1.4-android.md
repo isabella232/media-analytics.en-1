@@ -3,7 +3,7 @@ description: This Android implementation guide helps you implement VideoAnalytic
 seo-description: This Android implementation guide helps you implement VideoAnalyticsProviderWithNielsen through TVSDK 1.4 for Android. It also exposes the APIs that you need to configure opt-in/opt-out for Nielsen data collection.
 seo-title: TVSDK 1.4 for Android
 title: TVSDK 1.4 for Android
-uuid: 71657819-7485-4652-bf69-13da6de62224
+uuid: b2806cba-5d1f-49b1-a6d3-822998b3e290
 index: y
 internal: n
 snippet: y

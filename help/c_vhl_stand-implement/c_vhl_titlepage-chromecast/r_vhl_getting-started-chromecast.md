@@ -3,7 +3,7 @@ description: You can use this information to help you get starting with the Chro
 seo-description: You can use this information to help you get starting with the Chromecast SDK for Experience Cloud Solutions. This section assumes that you have configured a report suite through Adobe Mobile Services to collect app data.
 seo-title: Getting started on Chromecast
 title: Getting started on Chromecast
-uuid: 4803ad13-61dc-47a5-a6d2-bea5dd9fff38
+uuid: e91e4728-80af-49d6-bc98-b69e0ace3db4
 index: y
 internal: n
 snippet: y

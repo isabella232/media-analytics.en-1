@@ -3,7 +3,7 @@ description: This information helps you send signals and retrieve visitor segmen
 seo-description: This information helps you send signals and retrieve visitor segments from Adobe Audience Manager.
 seo-title: Audience Manager
 title: Audience Manager
-uuid: a7806e83-8c98-402d-8dcb-2a512b951533
+uuid: ebc36f2a-88b0-4879-bc39-2d7052e699ce
 index: y
 internal: n
 snippet: y

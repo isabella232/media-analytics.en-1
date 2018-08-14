@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Privacy and General Data Protection Regulation
 title: Privacy and General Data Protection Regulation
-uuid: 4b6bff9e-e2cf-4d99-979c-65112259965f
+uuid: 5878feea-f48e-4203-824a-1c00137cd57a
 index: y
 internal: n
 snippet: y

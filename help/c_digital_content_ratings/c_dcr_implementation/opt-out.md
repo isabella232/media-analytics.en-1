@@ -3,7 +3,7 @@ description: Adobe and Nielsen give the option to end-users to opt-out of measur
 seo-description: Adobe and Nielsen give the option to end-users to opt-out of measurement. Adobe provides this functionality to their customers, but the customers can determine whether to offer it to the end user.
 seo-title: Opt-Out Implementation
 title: Opt-Out Implementation
-uuid: deee591c-cb3f-46e0-a1c7-03f30ca31bde
+uuid: d9c0616b-99a4-4bd2-9f70-b4777cddd46e
 index: y
 internal: n
 snippet: y
@@ -75,7 +75,7 @@ The opt-out data flows are different for Adobe and Nielsen and are also differen
 
 ## Opt-out Verbiage Sample {#section_D3049339CDD94E7993FF9D636ED13AE8}
 
-After you click ** [!UICONTROL  OK] ** below, your opt-out of Nielsen's measurement for this app on this device will take effect, unless you are a Nielsen TV and mobile panelist. Nielsen will, however, record your decision to opt-out of Nielsen's measurement for this app so that aggregated totals of opt-out figures can be calculated and recorded and will also include the generic delivery of content in its overall counts. If you are a Nielsen TV and mobile panelist, contact your Nielsen Representative. 
+After you click **[!UICONTROL  OK]** below, your opt-out of Nielsen's measurement for this app on this device will take effect, unless you are a Nielsen TV and mobile panelist. Nielsen will, however, record your decision to opt-out of Nielsen's measurement for this app so that aggregated totals of opt-out figures can be calculated and recorded and will also include the generic delivery of content in its overall counts. If you are a Nielsen TV and mobile panelist, contact your Nielsen Representative. 
 
 ## Align Opt-out for Mobile Devices {#section_9E9205F2A94F4053A3B816B52B289190}
 
@@ -139,7 +139,7 @@ To opt-out of Nielsen measurement, the user must have access to the *About Niels
 
 To enable the user's selection, the App SDK must be updated with the this opt-out flow: 
 
-1. The user clicks the ** [!UICONTROL  About Nielsen Measurement] ** button or link.
+1. The user clicks the **[!UICONTROL  About Nielsen Measurement]** button or link.
 1. The SDK requests the opt-out URL from the Joint Adobe/Nielsen SDK.
 1. The Joint Adobe/Nielsen SDK returns the correct URL.
 1. The application opens the URL in a web view in the app. 
@@ -148,11 +148,11 @@ To enable the user's selection, the App SDK must be updated with the this opt-ou
    >This must be a web view, and the view cannot use an external browser outside the app.
 
 
-1. User clicks ** [!UICONTROL  Opt-in] ** or ** [!UICONTROL  Opt-out] **. ![](../../assets/opt-out.png) 
+1. User clicks **[!UICONTROL  Opt-in]** or **[!UICONTROL  Opt-out]**. ![](assets/opt-out.png) 
 
-   <a id="fig_7D5D396DD991438FB8C3BDE1F8105AA6"></a> ![](../../assets/opt_in_nielsen.png) 
+   <a id="fig_7D5D396DD991438FB8C3BDE1F8105AA6"></a> ![](assets/opt_in_nielsen.png) 
 
-   <a id="fig_249D7A2E7ADC4651BB534EC57F454D69"></a> ![](../../assets/opt_out_nielsen.png) 
+   <a id="fig_249D7A2E7ADC4651BB534EC57F454D69"></a> ![](assets/opt_out_nielsen.png) 
 
 1. The application captures the user selection and passes it back to the Joint Adobe/Nielsen SDK.
 To view sample code to support this process, see one of the following topics: 

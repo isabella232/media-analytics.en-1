@@ -3,7 +3,7 @@ description: Digital Television Ratings (DTVR) and Mobile Television Ratings (MT
 seo-description: Digital Television Ratings (DTVR) and Mobile Television Ratings (MTVR) are Nielsen products that measure live TV viewing up to seven days of broadcasting without a change in national ads.
 seo-title: DTVR/MTVR Implementation
 title: DTVR/MTVR Implementation
-uuid: 4250e609-864f-49bd-8a1f-dcc117997451
+uuid: 3b8e80a0-5c82-4e6b-b206-bf6cc40afb84
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: In this scenario, there are two sessions running in parallel for tw
 seo-description: In this scenario, there are two sessions running in parallel for two separate videos and using two separate instances of MediaHeartbeat..
 seo-title: Multiple trackers in parallel - details
 title: Multiple trackers in parallel - details
-uuid: 7e219c8f-f78b-4fb2-9dce-3c065538a3bd
+uuid: 2bbab516-3fa0-4500-99fc-40712eabad35
 index: y
 internal: n
 snippet: y

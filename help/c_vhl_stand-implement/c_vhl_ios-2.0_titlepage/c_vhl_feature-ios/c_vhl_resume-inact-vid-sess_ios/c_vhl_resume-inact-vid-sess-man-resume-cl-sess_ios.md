@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Manually resume a previously closed session
 title: Manually resume a previously closed session
-uuid: 8f24750a-89d3-4acc-902a-397ecb8749dd
+uuid: 1a17068c-5ba9-425e-8ae9-51d982cbe827
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Sending QoE Data
 title: Sending QoE Data
-uuid: 60f4556d-d583-4172-8b6a-376993b2dc3d
+uuid: 21cee4b1-a583-4e6d-abe6-c9b55484d8d4
 index: y
 internal: n
 snippet: y

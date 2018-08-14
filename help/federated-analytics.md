@@ -6,7 +6,7 @@ seo-title: Federated Analytics
 solution: Analytics
 title: Federated Analytics
 topic: Developer and implementation
-uuid: 114e9e82-71a2-4dd3-b08d-204c64d1a7c4
+uuid: cf6b0aa6-e0dc-4fff-a0a2-d1d1af28261e
 index: y
 internal: n
 snippet: y

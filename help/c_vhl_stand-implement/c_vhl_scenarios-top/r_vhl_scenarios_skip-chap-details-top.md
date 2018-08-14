@@ -3,7 +3,7 @@ description: In this scenario, the user skips a chapter in the main content.
 seo-description: In this scenario, the user skips a chapter in the main content.
 seo-title: VOD playback with a skipped chapter - details
 title: VOD playback with a skipped chapter - details
-uuid: b1f5c5b9-3555-4e12-a4f7-d3595f3caa35
+uuid: 8f64b1c2-08a5-4394-9c44-485898fbb8d6
 index: y
 internal: n
 snippet: y
@@ -19,7 +19,7 @@ This is the same scenario as [](../../c_vhl_stand-implement/c_vhl_scenarios-top/
 
 |  Trigger  | Heartbeat method  | Network calls  | Notes  |
 |---|---|---|---|
-| User clicks ** [!UICONTROL  Play] ** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start |The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [ Playback with no interruptions in iOS](../../c_vhl_stand-implement/c_vhl_scenarios-top/r_vhl_scenarios_no-interup-comm-details-top/r_vhl_scenarios_mc-vod-40-no-interup-top.md#concept_DCD05D528AE642C686C07819C6C18316) scenario.  |
+| User clicks **[!UICONTROL  Play]** | ` trackSessionStart`  | Analytics Content Start, Heartbeat Content Start |The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [ Playback with no interruptions in iOS](../../c_vhl_stand-implement/c_vhl_scenarios-top/r_vhl_scenarios_no-interup-comm-details-top/r_vhl_scenarios_mc-vod-40-no-interup-top.md#concept_DCD05D528AE642C686C07819C6C18316) scenario.  |
 |  The chapter starts.  | ` trackEvent:ChapterStart`  | Heartbeat Chapter Start  |  |
 |  The first frame of the chapter is played.  | ` trackPlay`  | Heartbeat Chapter Play  | When chapter content plays before main content, we want to start the heartbeats when the chapter starts.  |
 |  The chapter plays.  |  | Chapter Heartbeats  |  |

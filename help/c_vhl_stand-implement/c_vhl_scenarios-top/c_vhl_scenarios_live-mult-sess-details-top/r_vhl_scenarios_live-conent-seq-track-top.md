@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Live main content with sequential tracking
 title: Live main content with sequential tracking
-uuid: 3671b992-26fe-4444-83a5-07ae4598b580
+uuid: cc8404fa-f69e-4026-aa92-4d5f89a3847c
 index: y
 internal: n
 snippet: y
@@ -13,7 +13,7 @@ translate: y
 # Live main content with sequential tracking
 
 
-><a id="fig_65D741D8180845E3BD58C248DD5083C6"></a> ![](../../../assets/ios-live-noads-multiplesessions.png) 
+><a id="fig_65D741D8180845E3BD58C248DD5083C6"></a> ![](assets/ios-live-noads-multiplesessions.png) 
 
 >
 >* **Android - **Here is the expected API call order: >

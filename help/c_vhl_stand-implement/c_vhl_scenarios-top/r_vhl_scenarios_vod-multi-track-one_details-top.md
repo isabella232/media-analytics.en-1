@@ -3,7 +3,7 @@ description: In this scenario, the MediaHeartbeat instance is used to create two
 seo-description: In this scenario, the MediaHeartbeat instance is used to create two separate sessions in sequence.
 seo-title: One tracker for multiple sessions - details
 title: One tracker for multiple sessions - details
-uuid: 873bcf4a-0e28-4381-ad87-738f101a96b7
+uuid: 596f796b-e3eb-45ee-8d5e-70144abe6305
 index: y
 internal: n
 snippet: y

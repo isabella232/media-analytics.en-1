@@ -6,7 +6,7 @@ seo-title: Video Concurrent Viewers
 solution: Analytics
 title: Video Concurrent Viewers
 topic: Developer and implementation
-uuid: 6d629aed-5754-49e5-8ebd-26646f8d93dc
+uuid: 64fb3b18-902b-4e04-9d4d-7871b414f129
 index: y
 internal: n
 snippet: y
@@ -20,7 +20,7 @@ translate: y
 >
 >No data will be displayed if the selected interval is not an entire day.
 
-<a id="fig_CA2026CFC8224164878573CEF4F61DE6"></a> ![](../../assets/video-concurrent-viewers.png) 
+<a id="fig_CA2026CFC8224164878573CEF4F61DE6"></a> ![](assets/video-concurrent-viewers.png) 
 
 ## Report features {#section_11F8BCB98042490DAD0EA0B7EDA80569}
 

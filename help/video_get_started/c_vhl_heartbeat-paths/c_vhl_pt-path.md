@@ -6,7 +6,7 @@ seo-title: Adobe Primetime
 solution: Analytics
 title: Adobe Primetime
 topic: Developer and implementation
-uuid: f84e9dcc-cdd5-4409-8773-1883375fb068
+uuid: 2610bdbf-8ca8-4e88-b4f9-cfa9d1a37eef
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: To validate your Media Heartbeat implementation it will be required
 seo-description: To validate your Media Heartbeat implementation it will be required to use a HTTP Proxy tool to view the HTTP / HTTPS traffic between the Application and Heartbeats/Adobe Analytics.
 seo-title: Validate implementations
 title: Validate implementations
-uuid: 0804bfe3-f7a9-4c70-8e88-dde17f8f48a1
+uuid: 785d421d-1cbf-4eef-a956-27c2dee96501
 index: y
 internal: n
 snippet: y

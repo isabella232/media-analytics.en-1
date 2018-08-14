@@ -6,7 +6,7 @@ seo-title: Client Side
 solution: Analytics
 title: Client Side
 topic: Developer and implementation
-uuid: 40070cd3-de50-4559-b06b-c7ea03c36e7a
+uuid: 09ed6082-6ff0-4c69-bb27-6828ac7573e8
 index: y
 internal: n
 snippet: y

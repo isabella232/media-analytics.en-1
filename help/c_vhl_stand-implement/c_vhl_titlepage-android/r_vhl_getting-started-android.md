@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Getting started on Android
 title: Getting started on Android
-uuid: 8bd8af08-9b8a-4d0b-b425-7022cfd6e7c6
+uuid: 42eda060-d2e1-4552-9702-e802c2b6d458
 index: y
 internal: n
 snippet: y
@@ -53,24 +53,24 @@ Before you start implementing the Android SDK, ensure that you have completed th
 1. Add the SDK to your project. **IntelliJ IDEA** - To add the SDK to your project using IntelliJ IDEA: 
 
 
-    1. Right click your project in the ** [!UICONTROL  Project navigation] ** panel.
-    1. Select ** [!UICONTROL  Open Module Settings] **.
-    1. Under ** [!UICONTROL  Project Settings] **, select ** [!UICONTROL  Libraries] **.
-    1. Click ** [!UICONTROL  +] ** to add a new library.
-    1. Select ** [!UICONTROL  Java] ** and navigate to the ` VideoHeartbeat.jar` file.
+    1. Right click your project in the **[!UICONTROL  Project navigation]** panel.
+    1. Select **[!UICONTROL  Open Module Settings]**.
+    1. Under **[!UICONTROL  Project Settings]**, select **[!UICONTROL  Libraries]**.
+    1. Click **[!UICONTROL  +]** to add a new library.
+    1. Select **[!UICONTROL  Java]** and navigate to the ` VideoHeartbeat.jar` file.
     1. Select the modules in which you plan to use the mobile library.
-    1. Click ** [!UICONTROL  Apply] ** and then ** [!UICONTROL  OK] ** to close the Module Settings window.
+    1. Click **[!UICONTROL  Apply]** and then **[!UICONTROL  OK]** to close the Module Settings window.
 
 
    **Eclipse** - To add the SDK to your project using Eclipse: 
 
 
     1. In the Eclipse IDE, right-click on the project name.
-    1. Click  ** [!UICONTROL  Build Path] ** > ** [!UICONTROL  Add External Archives] ** .
+    1. Click  **[!UICONTROL  Build Path]** > **[!UICONTROL  Add External Archives]** .
     1. Select [!DNL  VideoHeartbeat.jar].
-    1. Click ** [!UICONTROL  Open] **.
-    1. Right-click the project again, and click  ** [!UICONTROL  Build Path] ** > ** [!UICONTROL  Configure Build Path] ** .
-    1. Click the ** [!UICONTROL  Order] ** and ** [!UICONTROL  Export] ** tabs.
+    1. Click **[!UICONTROL  Open]**.
+    1. Right-click the project again, and click  **[!UICONTROL  Build Path]** > **[!UICONTROL  Configure Build Path]** .
+    1. Click the **[!UICONTROL  Order]** and **[!UICONTROL  Export]** tabs.
     1. Ensure that the [!DNL  VideoHeartbeat.jar] file is selected.
 
 
