@@ -6,7 +6,7 @@ seo-title: Track Core Video Playback
 solution: Analytics
 title: Track Core Video Playback
 topic: Developer and implementation
-uuid: 00553f12-35b6-4084-9465-341a3d341ab7
+uuid: 2bea3ea8-7297-41ae-8d92-e21cae72263f
 index: y
 internal: n
 snippet: y
@@ -120,7 +120,7 @@ To implement core video playback:
    ```
 
 
-   For standard metadata, instantiate the ` standardVideoMetdata` object and populate the desired variables. For a complete list of standard metadata variables, see [](../c_vhl_metrics-and-metadata.md). For example: 
+   For standard metadata, instantiate the ` standardVideoMetdata` object and populate the desired variables. For a complete list of standard metadata variables, see [](../c_vhl_metrics-and-metadata/c_vhl_metrics-and-metadata.md). For example: 
    ```
    js   var standardVideoMetadata = {}; 
    standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode"; 

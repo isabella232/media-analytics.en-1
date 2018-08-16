@@ -3,7 +3,7 @@ description: The following steps are to be performed in your Xcode project. This
 seo-description: The following steps are to be performed in your Xcode project. This guide is written assuming your project has a target that is an Apple TV app targeting tvOS.
 seo-title: Configure a Native App for tvOS
 title: Configure a Native App for tvOS
-uuid: cacd84f8-b431-4463-bc0c-83f3a36cd728
+uuid: 378375c4-3e63-4ee6-8390-45308c1edf0a
 index: y
 internal: n
 snippet: y

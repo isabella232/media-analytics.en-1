@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Track ads on iOS
 title: Track ads on iOS
-uuid: f5806041-7e4c-41b3-a5b6-937b02130777
+uuid: ebbc1576-e406-4a19-80f2-573f5cb1d130
 index: y
 internal: n
 snippet: y

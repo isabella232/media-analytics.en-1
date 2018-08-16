@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Event Types and Descriptions
 title: Event Types and Descriptions
-uuid: 6e70f03e-fd80-4866-8fd0-405387b771cf
+uuid: 0cefb25d-6299-43f0-8f62-93617249a957
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Set up MediaHeartbeat on JavaScript
 title: Set up MediaHeartbeat on JavaScript
-uuid: c5d90aae-c8b8-4760-9a1b-576903ff5a6a
+uuid: 3826e82a-a123-43f9-a547-b3dae460191e
 index: y
 internal: n
 snippet: y

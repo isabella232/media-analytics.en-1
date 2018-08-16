@@ -3,7 +3,7 @@ description: Integrating media analytics real-time media tracking into a media p
 seo-description: Integrating media analytics real-time media tracking into a media player requires including Adobe Mobile SDK, instantiating and configuring the media heartbeats instance, listening to media player events and using appropriate media heartbeats APIs in your project.
 seo-title: Integrating Media Heartbeat APIs
 title: Integrating Media Heartbeat APIs
-uuid: 2376a2f1-1903-4e14-8f1b-8de9accc90e4
+uuid: fdba1f1a-e00b-476d-9fca-bf0f4dd8c26c
 index: y
 internal: n
 snippet: y

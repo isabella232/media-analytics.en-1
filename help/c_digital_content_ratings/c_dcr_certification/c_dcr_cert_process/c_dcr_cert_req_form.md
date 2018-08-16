@@ -3,7 +3,7 @@ description: When making a certification request, complete the certification req
 seo-description: When making a certification request, complete the certification request form and send it to your certification consultant. You must submit one request per platform (iOS/Android/JS).
 seo-title: Certification Request Form
 title: Certification Request Form
-uuid: 9cb6be27-bfb5-4972-8f09-3e25cb73bf76
+uuid: faaa65dd-0006-49de-a974-ba76c07a1e9d
 index: y
 internal: n
 snippet: y

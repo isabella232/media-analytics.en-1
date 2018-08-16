@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: One tracker for multiple sessions
 title: One tracker for multiple sessions
-uuid: 852dccb2-b338-4335-9517-dc2e3602727e
+uuid: b46a7527-7880-4ff5-bf38-7cf0099c677c
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: After certification is complete and the player has launched in prod
 seo-description: After certification is complete and the player has launched in production, you can conduct your own data alignment review. This information outlines the key data characteristics and steps to compare Adobe and Nielsen data.
 seo-title: Data Comparison
 title: Data Comparison
-uuid: 57f5120d-e350-44b6-ab2b-2fe9ed060a02
+uuid: 5651b6dc-4a44-429d-b49b-9b0c3a583485
 index: y
 internal: n
 snippet: y

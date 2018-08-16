@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Getting started on JavaScript
 title: Getting started on JavaScript
-uuid: abc3a102-9a6b-4eac-b641-fb059faffa29
+uuid: deb8e7bc-e68c-4f6e-a64d-a39964164487
 index: y
 internal: n
 snippet: y

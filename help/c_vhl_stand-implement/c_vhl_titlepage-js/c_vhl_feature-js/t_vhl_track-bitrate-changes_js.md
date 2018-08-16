@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: QoS updates on JavaScript
 title: QoS updates on JavaScript
-uuid: 5024b3e4-4117-4282-ac5e-1edd6b8ddad8
+uuid: 948f72de-ca32-4d1e-afe3-347241cfbf49
 index: y
 internal: n
 snippet: y

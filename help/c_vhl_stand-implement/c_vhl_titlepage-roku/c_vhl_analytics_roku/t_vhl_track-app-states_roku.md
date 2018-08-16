@@ -3,7 +3,7 @@ description: States are the different screens or views in your application. Each
 seo-description: States are the different screens or views in your application. Each time a new state is displayed in your application, for example, when a user navigates from the home page to the video details screen, you should send a trackState call.
 seo-title: Track App States
 title: Track App States
-uuid: e17379cd-bf54-4f31-bf48-a604b9cac40b
+uuid: 9db35414-f431-4250-bf1c-7cf77fb983c9
 index: y
 internal: n
 snippet: y

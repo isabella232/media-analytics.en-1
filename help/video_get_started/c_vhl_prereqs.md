@@ -6,7 +6,7 @@ seo-title: Prerequisites
 solution: Analytics
 title: Prerequisites
 topic: Developer and implementation
-uuid: 6e20c15b-550d-4627-a6de-958f46e20c52
+uuid: c5141443-9568-48c0-ad92-702d26b04be0
 index: y
 internal: n
 snippet: y

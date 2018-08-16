@@ -3,7 +3,7 @@ description: Adobe Debug provides reporting, in real-time, so you can view hits 
 seo-description: Adobe Debug provides reporting, in real-time, so you can view hits and metadata that are being sent during video playback. Each of these reports can be saved within Debug.
 seo-title: Debug Dashboards and Reports
 title: Debug Dashboards and Reports
-uuid: fdf18a51-f25c-48db-9596-189ce6d3c1d9
+uuid: e25ba297-02e3-4bd0-ad9c-502be8f72f73
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Standard metadata keys
 title: Standard metadata keys
-uuid: 1efc3f94-e24b-4e46-86dc-f3809559f0f3
+uuid: 934aaee2-a392-46d7-aedb-c8a9afddea30
 index: y
 internal: n
 snippet: y

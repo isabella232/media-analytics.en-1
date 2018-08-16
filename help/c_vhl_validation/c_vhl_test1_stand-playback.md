@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form. It validates general playback and sequencing.
 seo-title: Test 1  Standard Playback
 title: Test 1  Standard Playback
-uuid: 087c8dda-3d5d-4e55-a15f-1c358825f68d
+uuid: 0be8f965-d723-4437-828e-14ab87c3fb15
 index: y
 internal: n
 snippet: y
@@ -101,7 +101,7 @@ You must complete and record the actions in the following order:
 
    *These calls contain additional metadata and variables. For call parameters and metadata, see [](../c_vhl_validation/c_vhl_test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
 
-   Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation.md) instructions for additonal information about each call. 
+   Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) instructions for additonal information about each call. 
 
 1. **View ad break if available.** 
     * **Ad Start ** 
@@ -116,7 +116,7 @@ You must complete and record the actions in the following order:
 
       *These calls contain additional metadata and variables. For call parameters and metadata, see [](../c_vhl_validation/c_vhl_test-call-details.md#section_wz3_yff_f2b) in *Test Call Details*.
 
-      Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation.md) instructions for additonal information about these Ad calls.
+      Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) instructions for additonal information about these Ad calls.
 
     * **Ad Play** 
 
@@ -147,7 +147,7 @@ You must complete and record the actions in the following order:
     * The playhead position should increment by 10 with every play call.
     * The ` l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.For call parameters and metadata, see [](../c_vhl_validation/c_vhl_test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
-      Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation.md) instructions for additonal information about these Ad calls.
+      Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) instructions for additonal information about these Ad calls.
 
 
 

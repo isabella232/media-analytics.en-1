@@ -6,7 +6,7 @@ seo-title: Track Ads
 solution: Analytics
 title: Track Ads
 topic: Developer and implementation
-uuid: f578c2f0-ed13-484c-b246-b945be3bccb0
+uuid: 1a6b470a-e3cf-4d34-bcfc-824cfb4136ce
 index: y
 internal: n
 snippet: y

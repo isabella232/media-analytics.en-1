@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Validating Event Requests
 title: Validating Event Requests
-uuid: 58efa884-6a45-4519-b793-bc6640e5e291
+uuid: 838ec271-8f1e-4ca7-80ff-aa2cfb3b18b2
 index: y
 internal: n
 snippet: y

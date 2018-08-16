@@ -6,7 +6,7 @@ seo-title: Set up and Configure
 solution: Analytics
 title: Set up and Configure
 topic: Developer and implementation
-uuid: f80ffd55-e7e8-4c7f-9200-4688e44e6e70
+uuid: 82900a7c-baee-45e6-9ce9-4b5d39f21f1b
 index: y
 internal: n
 snippet: y
@@ -31,7 +31,7 @@ This topic contains the following information:
 ## Implement {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
 
-1. Import the Heartbeat libraries or for JavaScript, create local references to the classes. There are three classes/libraries to reference. For links to platforms and additional details, see the **Code** section below. 
+1. Import the Heartbeat libraries, or for JavaScript create local references to the classes. There are three classes/libraries to reference. For links to platforms and additional details, see the **Code** section below. 
 
 
     * Media Heartbeat Config: The config contains the basic settings for reporting.

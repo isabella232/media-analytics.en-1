@@ -6,7 +6,7 @@ seo-title: Audience Manager Enablement
 solution: Analytics
 title: Audience Manager Enablement
 topic: Developer and implementation
-uuid: b931161e-e254-41e8-8db4-8fc48b0547e6
+uuid: 1c12349a-3d09-4918-b3ce-7e67304eac2c
 index: y
 internal: n
 snippet: y

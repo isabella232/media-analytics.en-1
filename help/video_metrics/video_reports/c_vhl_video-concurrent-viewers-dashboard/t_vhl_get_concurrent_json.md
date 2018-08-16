@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Get Concurrent Viewers JSON report data
 title: Get Concurrent Viewers JSON report data
-uuid: 1b27bdba-e6bd-4d25-8bc9-6a69450fa365
+uuid: 7f37224c-fdf6-412f-ab94-7f946fe66f13
 index: y
 internal: n
 snippet: y

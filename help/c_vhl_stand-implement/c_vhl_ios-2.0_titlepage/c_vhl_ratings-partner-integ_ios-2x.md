@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Ratings Partners Integration
 title: Ratings Partners Integration
-uuid: 71e7b6ec-ab50-4398-9d0f-61c6605da28a
+uuid: e68ec19f-8edb-4c51-9b99-8ab53c8f8975
 index: y
 internal: n
 snippet: y

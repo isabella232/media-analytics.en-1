@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Getting started on Android
 title: Getting started on Android
-uuid: 42eda060-d2e1-4552-9702-e802c2b6d458
+uuid: 41156853-b833-47c9-a1fa-29af3b2a47e0
 index: y
 internal: n
 snippet: y
@@ -92,4 +92,4 @@ This information helps you migrate from version 1.5 to 2.x of the Android librar
 
 In versions 2.x, all of the public methods are consolidated into the ` com.adobe.primetime.va.simple.MediaHeartbeat` class to make it easier on developers. Also, all configs are now consolidated into the ` com.adobe.primetime.va.simple.MediaHeartbeatConfig` class. 
 
-For detailed information about migrating from 1.x to 2.x, see [](../../c_vhl_stand-implement/c_vhl_mig_1x_to_2x.md). 
+For detailed information about migrating from 1.x to 2.x, see [](../../c_vhl_stand-implement/c_vhl_mig_1x_to_2x/c_vhl_mig_1x_to_2x.md). 

@@ -3,7 +3,7 @@ description: JavaScript sample code helps you implement the Video Heartbeat Libr
 seo-description: JavaScript sample code helps you implement the Video Heartbeat Library for Nielsen and configure opt-in/opt-out for Nielsen data collection.
 seo-title: 2.0 for JavaScript
 title: 2.0 for JavaScript
-uuid: f5aacb34-768a-4151-b188-432873f8ea41
+uuid: 49d96324-8f32-4b0c-90be-3a491be1d848
 index: y
 internal: n
 snippet: y

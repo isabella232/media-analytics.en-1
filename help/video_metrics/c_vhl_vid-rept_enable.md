@@ -6,7 +6,7 @@ seo-title: Video Reports Enablement
 solution: Analytics
 title: Video Reports Enablement
 topic: Developer and implementation
-uuid: 35198935-20ef-40f3-b842-1d8e26aa51f9
+uuid: 186b12fd-d303-4f2a-b627-958b4d9e21a7
 index: y
 internal: n
 snippet: y

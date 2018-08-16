@@ -6,7 +6,7 @@ seo-title: Video Parameters
 solution: Analytics
 title: Video Parameters
 topic: Developer and implementation
-uuid: 090f2e33-d31e-4efa-856d-4aeb6abe4aa0
+uuid: 16df0679-b392-4c1d-9647-d2936cf6f47a
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Sending Ping Events
 title: Sending Ping Events
-uuid: 419c8c2a-4a80-4980-a75b-2c0728309e05
+uuid: 7a0477be-afe5-4c16-9541-2a64025a1cff
 index: y
 internal: n
 snippet: y

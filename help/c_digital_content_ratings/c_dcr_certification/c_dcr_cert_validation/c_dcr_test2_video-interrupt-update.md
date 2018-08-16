@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates mobile interruption behavior.
 seo-title: Test 2  Video Interruption
 title: Test 2  Video Interruption
-uuid: 8f56dcd7-1841-47df-ba03-ab8e70e1a36f
+uuid: c226801f-2727-4e8e-ac28-66cdab2da6ef
 index: y
 internal: n
 snippet: y
@@ -28,7 +28,7 @@ You must complete and record these tasks in following order:
 
    *These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [](../../../c_digital_content_ratings/c_dcr_certification/c_dcr_cert_validation/c_dcr_test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
 
-   Also see your platform's [](../../../c_digital_content_ratings/c_dcr_implementation.md) instructions for additonal information about each call. 
+   Also see your platform's [](../../../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) instructions for additonal information about each call. 
 
 1. **Play main content video for at least 5 minutes uninterrupted.****Content Play** 
 
@@ -36,7 +36,7 @@ You must complete and record these tasks in following order:
 
    For call parameters and metadata, see [](../../../c_digital_content_ratings/c_dcr_certification/c_dcr_cert_validation/c_dcr_test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
-   Also see your platform's [](../../../c_digital_content_ratings/c_dcr_implementation.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [](../../../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) instructions for additonal information about these Ad calls.
 
 1. **Move app or browser to the background.**While the app runs in the background, only main:pause calls should be sent to the Heartbeat server, starting with VHL version 1.6.6 and later. 
 

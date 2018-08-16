@@ -3,7 +3,7 @@ description: Here are the use cases and circumstances for a full certification a
 seo-description: Here are the use cases and circumstances for a full certification and a self certification.
 seo-title: Certification Process Summary
 title: Certification Process Summary
-uuid: 3de9ce1f-2487-4c6b-9826-d603ac625267
+uuid: fcf0815f-1637-4ef4-8974-1c17e9374f88
 index: y
 internal: n
 snippet: y

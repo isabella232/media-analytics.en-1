@@ -6,7 +6,7 @@ seo-title: Track Chapters and Segments
 solution: Analytics
 title: Track Chapters and Segments
 topic: Developer and implementation
-uuid: 4f924c53-1d50-49a2-a5f0-fb40af523da3
+uuid: ec3877a1-23ec-45f0-8d3c-23564966b1ea
 index: y
 internal: n
 snippet: y

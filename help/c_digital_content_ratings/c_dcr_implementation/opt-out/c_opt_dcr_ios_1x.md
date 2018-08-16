@@ -3,7 +3,7 @@ description: This information helps users determine whether they want to opt-in 
 seo-description: This information helps users determine whether they want to opt-in to or opt-out of Nielsen ratings.
 seo-title: iOS Opt-out Settings
 title: iOS Opt-out Settings
-uuid: d72fa934-3266-4f06-8787-07012aca42b9
+uuid: 2a729f8e-737f-4827-810f-8986209f13b1
 index: y
 internal: n
 snippet: y

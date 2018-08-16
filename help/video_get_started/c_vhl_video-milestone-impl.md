@@ -6,7 +6,7 @@ seo-title: Video Milestone Implementation (Old)
 solution: Analytics
 title: Video Milestone Implementation (Old)
 topic: Developer and implementation
-uuid: 62ce47c6-6a2b-45ab-be83-46d0664698a1
+uuid: 98ae3c86-a46a-47dc-a339-9f605fedb6f0
 index: y
 internal: n
 snippet: y

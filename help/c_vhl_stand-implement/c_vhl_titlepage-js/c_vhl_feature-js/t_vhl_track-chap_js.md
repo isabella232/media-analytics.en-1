@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Track chapters on JavaScript
 title: Track chapters on JavaScript
-uuid: 3f6ed17f-8899-47b9-a6cd-058b3e57307d
+uuid: 878ec71f-ca05-482d-b369-e96fff4a38f0
 index: y
 internal: n
 snippet: y

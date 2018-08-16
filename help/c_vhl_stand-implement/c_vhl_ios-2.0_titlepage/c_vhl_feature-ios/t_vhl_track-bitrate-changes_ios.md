@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: QoS updates on iOS
 title: QoS updates on iOS
-uuid: 4ff5a6a9-7c6c-4dd9-b910-6988752369cc
+uuid: 538a7490-373d-4705-8d2d-10b3fc7d2a27
 index: y
 internal: n
 snippet: y

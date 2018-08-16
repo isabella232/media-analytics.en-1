@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Getting started on iOS
 title: Getting started on iOS
-uuid: 3d3ee9a2-e07f-45db-b649-35d881ac2ecd
+uuid: 75cf5c41-b817-44b1-8b7e-c49b5f043941
 index: y
 internal: n
 snippet: y

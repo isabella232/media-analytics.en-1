@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Set up MediaHeartbeat on iOS
 title: Set up MediaHeartbeat on iOS
-uuid: cc555eec-dbcb-4747-b5e8-d45884a81841
+uuid: 8ce8a7f4-2220-47de-83d0-a177268add8b
 index: y
 internal: n
 snippet: y

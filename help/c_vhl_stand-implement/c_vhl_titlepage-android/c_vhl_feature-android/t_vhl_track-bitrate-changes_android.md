@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: QoS updates on Android
 title: QoS updates on Android
-uuid: c1d22634-c7fe-4757-88d7-31fc1be8bfd5
+uuid: 46976cc8-263c-4e85-b30e-f9484a415482
 index: y
 internal: n
 snippet: y

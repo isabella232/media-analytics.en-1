@@ -3,7 +3,7 @@ description: This information helps you use the Roku SDK with the Adobe Experien
 seo-description: This information helps you use the Roku SDK with the Adobe Experience Cloud.
 seo-title: Experience Cloud
 title: Experience Cloud
-uuid: d9e85780-f46b-4b66-a175-142722d92985
+uuid: 43c31c8b-6ed7-4e85-b852-e5ce1b4746fe
 index: y
 internal: n
 snippet: y

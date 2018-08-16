@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Media Heartbeat Methods and Constants
 title: Media Heartbeat Methods and Constants
-uuid: d95ffb83-3068-4b71-a82d-148f1ef739a4
+uuid: 19a140d0-2acc-46c2-89c8-725e84f62269
 index: y
 internal: n
 snippet: y

@@ -6,7 +6,7 @@ seo-title: Client Side
 solution: Analytics
 title: Client Side
 topic: Developer and implementation
-uuid: 09ed6082-6ff0-4c69-bb27-6828ac7573e8
+uuid: 978b00b0-1271-418c-88d8-a0020cc9df5a
 index: y
 internal: n
 snippet: y
@@ -15,7 +15,7 @@ translate: y
 
 # Client Side
 
-If Video Analytics is your intended path, see the [ VA SDK Implementation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_stand-implement.html).and the [](../../c_vhl_col-api_overview.md). 
+If Video Analytics is your intended path, see the [ VA SDK Implementation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_stand-implement.html).and the [](../../c_vhl_col-api_overview/c_vhl_col-api_overview.md). 
 
 >[!IMPORTANT]
 >

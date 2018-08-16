@@ -6,7 +6,7 @@ seo-title: Federated Analytics
 solution: Analytics
 title: Federated Analytics
 topic: Developer and implementation
-uuid: cf6b0aa6-e0dc-4fff-a0a2-d1d1af28261e
+uuid: f764537a-b87d-454b-8b4f-ebc9a2b7d97e
 index: y
 internal: n
 snippet: y
@@ -61,7 +61,7 @@ The Federated Analytics service provides a system for sharing Adobe Video Analyt
 
    >[!NOTE]
    >
-   >This form works best when edited with Adobe Acrobat.[ Download Acrobat for free.](https://get.adobe.com/reader/)
+   >This form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat.[ Download Acrobat for free.](https://get.adobe.com/reader/)
 
 1. Consulting services provides a sample data file to Receiver with actual data from Sender players to further confirm correct data sharing rules are defined.
 1. Sender and Receiver ensures the data sharing agreement will meet all contractual requirements between the two parties.

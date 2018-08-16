@@ -3,7 +3,7 @@ description: Actions are the events that occur in your app that you want to meas
 seo-description: Actions are the events that occur in your app that you want to measure.
 seo-title: Track App Actions
 title: Track App Actions
-uuid: cb6dcb91-afb0-468c-bb1c-674a29f33d64
+uuid: 8dee6609-0fb7-430b-ba42-817bda2d222d
 index: y
 internal: n
 snippet: y

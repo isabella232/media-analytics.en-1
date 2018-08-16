@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Obtaining a Session ID
 title: Obtaining a Session ID
-uuid: b2a18bd5-f6ec-4ce0-9c6b-6f6cf376125e
+uuid: b5632aa1-d4b5-41d0-84e3-19203478bd67
 index: y
 internal: n
 snippet: y

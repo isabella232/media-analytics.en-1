@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Timeline 3 - Chapters
 title: Timeline 3 - Chapters
-uuid: 76bc04c0-51f4-41d2-92fd-342d7eda9660
+uuid: 5fabfa44-3c9f-4657-9b6a-d8517de877ec
 index: y
 internal: n
 snippet: y
@@ -63,7 +63,7 @@ translate: y
      &nbsp;&nbsp;} 
      } 
     </codeblock> </td> 
-   <td> This call signals <i>the user's intention to play</i> a video. It returns a Session ID ( <span class="codeph"> {sid} </span>) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting". <a href="../../c_vhl_col-api_overview/c_vhl_col-api_reference.md#section_tps_bqm_kcb"> Mandatory session parameters </a> must be included in the <span class="codeph"> params </span> map in the request body. <p>On the backend, this call generates an Adobe Analytics initiate call.</p> </td> 
+   <td> This call signals <i>the user's intention to play</i> a video. It returns a Session ID ( <span class="codeph"> {sid} </span>) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting". <a href="../../c_vhl_col-api_overview/c_vhl_col-api_reference/c_vhl_col-api_reference.md#section_tps_bqm_kcb"> Mandatory session parameters </a> must be included in the <span class="codeph"> params </span> map in the request body. <p>On the backend, this call generates an Adobe Analytics initiate call.</p> </td> 
   </tr> 
   <tr> 
    <td> 2 </td> 

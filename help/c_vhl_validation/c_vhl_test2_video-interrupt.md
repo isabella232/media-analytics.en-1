@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates mobile interruption behavior.
 seo-title: Test 2  Video Interruption
 title: Test 2  Video Interruption
-uuid: 152df4cf-bc06-47bf-a8a8-b5472bc1e3f9
+uuid: 919a2e12-305d-4dbf-89b1-2bfe1d3411f6
 index: y
 internal: n
 snippet: y
@@ -27,7 +27,7 @@ You must complete and record these tasks in following order:
 
    *These calls contain additional metadata and variables. For call parameters and metadata, see [](../c_vhl_validation/c_vhl_test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
 
-   Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation.md) instructions for additonal information about each call. 
+   Also see your platform's [](../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) instructions for additonal information about each call. 
 
 1. **Play main content video for at least 5 minutes uninterrupted.****Content Play** 
 
@@ -35,7 +35,7 @@ You must complete and record these tasks in following order:
 
    For call parameters and metadata, see [](../c_vhl_validation/c_vhl_test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
-   Also see your platform's [](../c_vhl_stand-implement.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [](../c_vhl_stand-implement/c_vhl_stand-implement.md) instructions for additonal information about these Ad calls.
 
 1. **Move app or browser to the background.**While the app runs in the background, only main:pause calls should be sent to the Heartbeat server, starting with VHL version 1.6.6 and later. 
 

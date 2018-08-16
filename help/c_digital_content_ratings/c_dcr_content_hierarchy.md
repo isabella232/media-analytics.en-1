@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Nielsen Hierarchy
 title: Nielsen Hierarchy
-uuid: 602c0799-e006-4a5b-8d9a-9e91275044d6
+uuid: 6339ddd9-55bd-4580-9d52-c0d4f447b40e
 index: y
 internal: n
 snippet: y

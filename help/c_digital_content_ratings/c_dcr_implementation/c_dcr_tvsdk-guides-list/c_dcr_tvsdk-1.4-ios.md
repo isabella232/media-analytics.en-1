@@ -3,7 +3,7 @@ description: This iOS implementation guide helps you implement the PTVideoAnalyt
 seo-description: This iOS implementation guide helps you implement the PTVideoAnalyticsTracker for Nielsen through the TVSDK player version 1.4 for iOS. It also exposes the APIs to configure opt-in/opt-out for Nielsen data collection.
 seo-title: TVSDK 1.4 for iOS
 title: TVSDK 1.4 for iOS
-uuid: d97d944e-2be0-487a-bc36-a2beacb9c1fe
+uuid: 7c5721d0-6fdc-4612-b22d-cfd160262a10
 index: y
 internal: n
 snippet: y

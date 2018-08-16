@@ -6,7 +6,7 @@ seo-title: Download SDKs
 solution: Analytics
 title: Download SDKs
 topic: Developer and implementation
-uuid: dca3b828-0f26-4b33-9688-2cf17ef991e9
+uuid: 89c07840-457c-4351-ad83-80d71ed2cbd3
 index: y
 internal: n
 snippet: y
@@ -59,12 +59,12 @@ translate: y
   </tr> 
   <tr> 
    <td><i><b>Roku</b></i></td> 
-   <td><a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases/tag/roku-v2.0.4" format="html" scope="external"> VHL SDK for Roku v2.0.4</a></td> 
+   <td><a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases/tag/roku-v2.1.0" format="html" scope="external"> VHL SDK for Roku v2.1.0</a></td> 
    <td><a href="../c_vhl_stand-implement/c_vhl_titlepage-roku/r_vhl_getting-started-roku.md"></a></td> 
   </tr> 
   <tr> 
    <td><i><b>Chromecast</b></i></td> 
-   <td><a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases/tag/chromecast-v2.0.2" format="html" scope="external"> VHL SDK for Chromecast v2.0.2</a></td> 
+   <td><a href="https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases/tag/chromecast-v2.1.0" format="html" scope="external"> VHL SDK for Chromecast v2.1.0</a></td> 
    <td><a href="../c_vhl_stand-implement/c_vhl_titlepage-chromecast/r_vhl_getting-started-chromecast.md"></a></td> 
   </tr> 
  </tbody> 

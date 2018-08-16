@@ -3,7 +3,7 @@ description: Metadata, network parameters, and reporting data are required for i
 seo-description: Metadata, network parameters, and reporting data are required for implementing digital tracking with Nielsen.
 seo-title: Variables and Metadata
 title: Variables and Metadata
-uuid: 67fda96f-3e38-49bd-ae10-f0231ce9c65b
+uuid: 1f22baf0-b752-454a-ae11-07b7ad332020
 index: y
 internal: n
 snippet: y
@@ -49,7 +49,7 @@ Nielsen has reserved keys to receive metadata. For example, ` program` is the Ni
 
 ## NielsenContentMetadata {#section_4135A80BC60D4B5091AF2F068F3F7D4E}
 
-The Nielsen content metadata is provided to the Nielsen SDK through the VA SDK API call ` trackSessionStart()`. For more details see the [](../c_digital_content_ratings/c_dcr_implementation.md) Guide for your platform. 
+The Nielsen content metadata is provided to the Nielsen SDK through the VA SDK API call ` trackSessionStart()`. For more details see the [](../c_digital_content_ratings/c_dcr_implementation/c_dcr_implementation.md) Guide for your platform. 
 
 >[!TIP]
 >

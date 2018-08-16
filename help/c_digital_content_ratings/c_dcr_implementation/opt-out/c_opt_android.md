@@ -3,7 +3,7 @@ description: This information helps users determine whether they want to opt-in 
 seo-description: This information helps users determine whether they want to opt-in to or opt-out of Nielsen ratings.
 seo-title: Android Opt-Out Settings
 title: Android Opt-Out Settings
-uuid: 850d2b67-fdef-435b-a861-1350ee8cfb3e
+uuid: d781b3c5-2b2d-4033-9002-9b3c6a680165
 index: y
 internal: n
 snippet: y

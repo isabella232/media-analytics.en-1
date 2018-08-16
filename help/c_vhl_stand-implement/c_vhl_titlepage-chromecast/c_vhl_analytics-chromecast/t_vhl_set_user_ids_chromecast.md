@@ -3,7 +3,7 @@ description: The user ID is a unique custom visitor identifier defined by the ap
 seo-description: The user ID is a unique custom visitor identifier defined by the application for a user.
 seo-title: User Identifier
 title: User Identifier
-uuid: f02080a3-88f5-4d7f-ad29-1a729d307e77
+uuid: b63135cd-d28e-4181-b52d-846bc2e211c5
 index: y
 internal: n
 snippet: y
