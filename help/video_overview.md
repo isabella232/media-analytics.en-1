@@ -1,12 +1,9 @@
 ---
 description: null
-keywords: heartbeat video;Heartbeat Video;Video Analytics
 seo-description: null
 seo-title: Measuring Video in Adobe Analytics
-solution: Analytics
 title: Measuring Video in Adobe Analytics
-topic: Developer and implementation
-uuid: d61caec7-004c-4a0a-8c53-11a259bb82b3
+uuid: c80c199a-c0c3-414e-9084-f0fb6fa9f646
 index: y
 internal: n
 snippet: y
@@ -24,7 +21,7 @@ This topic contains the following information:
 
 >[!IMPORTANT]
 >
->The video documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's*Video Analytics SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy milestone video implementation. We encourage all customers to move towards adopting one or both of the two latest video tracking solutions, in order to capitalize on improvements and expanded measurement. You can view the [ benefits of transitioning to the latest solutions ](video_overview.md#section_cnj_5st_p1b) below. While we will continue to support the milestone method of tracking videos, there will not be any planned updates, fixes or feature improvements. Please reach out to your Adobe Account Manager if you have any further questions. 
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's*Video Analytics SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy milestone video implementation. We encourage all customers to move towards adopting one or both of the two latest video tracking solutions, in order to capitalize on improvements and expanded measurement. You can view the [ benefits of transitioning to the latest solutions ](video_overview.md#section_cnj_5st_p1b) below. While we will continue to support the milestone method of tracking videos, there will not be any planned updates, fixes or feature improvements. Please reach out to your Adobe Account Manager if you have any further questions. 
 
 
 ## Overview {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
@@ -52,11 +49,6 @@ Some of the many benefits that Adobe's video solutions provide include:
 * **Increased granularity** - Evaluate viewing behavior at the most granular level, including individual visitor time of day, concurrent viewers by minute, and average duration the content was viewed.
 * **Precise measurement** - Measure across the multiple devices used for video consumption, including OTT, smartphone, tablet, desktop, and more, to monitor user engagement patterns and habits.
 * **Segmentation** - Apply classifications to your players, devices, genres, chapters, and shows to see how each has an impact on your overall views and customer engagement with content, audio, ads, and combined.
-
-<!-- <p>Here is how video and video ad data flow into Adobe: </p> 
-<p> 
- <fig id="fig_5A574F71C807481B8E1D66335CB836F3">  
- </fig><img href="assets/how_aa_video_works.png" id="image_D3A97A67B8AF4055B6BF72F92190E18B" /> </p> -->
 
 ## Heartbeat versus Milestone Benefits {#section_cnj_5st_p1b}
 
@@ -95,7 +87,7 @@ Adobe Analytics for Video has evolved with the industry to provide strong data c
 The SDK’s are routinely updated when new versions of devices are released, and you can use these SDKs to integrate with most of the largest video players today, including Brightcove and Ooyala. 
 
 For devices or platforms that do not currently have SDK support (or even if they do), you can implement the Media Collection API, through which you make RESTful API calls directly from the device/platform to the Video Analytics backend. 
-The table below provides a list of the devices that are currently supported through our SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see[](c_vhl_stand-implement/c_vhl_download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
+The table below provides a list of the devices that are currently supported through our SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see[](implement/download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
 |  | **Video Analytics SDK** | **Media Collection API** |
 |---|---|---|
 |  **JavaScript Browser** | **✔** | ✔  |
@@ -113,4 +105,5 @@ The table below provides a list of the devices that are currently supported thro
 |  **Xbox One/360** | | **✔** |
 |  **Sony PS3/PS4** | | **✔** |
 |  **(Other/New Connected Devices)** |  | ✔  |
+
 

@@ -7,7 +7,7 @@ solution: Analytics
 subtopic: Analysis Workspace
 title: Contact and Legal Information
 topic: Reports and analytics
-uuid: 9d3e1838-d88b-4f76-8036-27d8b41dd7d0
+uuid: 43a95906-dc71-4661-9f71-2a6dd25c2e97
 index: y
 internal: n
 snippet: y

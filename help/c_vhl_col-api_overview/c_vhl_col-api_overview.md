@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Media Collection API Implementation
 title: Media Collection API Implementation
-uuid: 0de24305-31f1-44a4-8355-390047f79b09
+uuid: 1554d57a-cac3-4fb5-81cf-196481e64523
 index: y
 internal: n
 snippet: y
@@ -22,7 +22,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 ## Video Tracking Data Flows {#section_pwq_n34_qbb}
 
 
-* A video player implementing the Media Collection API makes RESTful API tracking calls directly to the VA back end server, whereas a player implementing the VA SDK makes tracking calls to the SDK APIs inside the app. One effect of making calls over the web is that the player implementing the Media Collection API needs to handle some of the processing that the VA SDK handles automatically. (Details in [](../c_vhl_col-api_overview/c_vhl_col-api_implement/c_vhl_col-api_implement.md).)
+* A video player implementing the Media Collection API makes RESTful API tracking calls directly to the VA back end server, whereas a player implementing the VA SDK makes tracking calls to the SDK APIs inside the app. One effect of making calls over the web is that the player implementing the Media Collection API needs to handle some of the processing that the VA SDK handles automatically. (Details in [](../c_vhl_col-api_overview/mc-api-impl/mc-api-impl.md).)
 * The tracking data captured with the Media Collection API is sent and initially processed differently than the tracking data captured in a VA SDK player, but the same VA processing engine on the backend is used for both solutions.
 
 
