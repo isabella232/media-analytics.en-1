@@ -58,7 +58,7 @@ translate: y
 >   ```
 >
 >1. Create a ` ADBMediaHeartbeatConfig` instance.
->   This section helps you to understand the ` MediaHeartbeat` config parameters, and to set correct config values on your ` MediaHeartbeat` instance for accurate tracking. 
+>   This section helps you to understand the ` MediaHeartbeat` config parameters, and to set correct config values on your `MediaHeartbeat` instance for accurate tracking. 
 >   Here is a sample ` ADBMediaHeartbeatConfig` initialization: >
 >   ```
 >   // Media Heartbeat Initialization 
