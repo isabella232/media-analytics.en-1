@@ -3,7 +3,7 @@ description: You must download the VHL SDKs before you can start the implementat
 seo-description: You must download the VHL SDKs before you can start the implementation.
 seo-title: Download SDKs
 title: Download SDKs
-uuid: 37db7c19-8a7a-4662-9072-98622aa3854b
+uuid: 1f35917e-21ac-4176-a788-e98b70454bae
 index: y
 internal: n
 snippet: y

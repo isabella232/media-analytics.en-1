@@ -3,7 +3,7 @@ description: In this scenario, some buffering occurs when VOD content is played 
 seo-description: In this scenario, some buffering occurs when VOD content is played back.
 seo-title: VOD playback with buffering - details
 title: VOD playback with buffering - details
-uuid: 7040aa0e-67ee-453e-8dab-765225a16c1c
+uuid: 33ef98e8-866c-4fcb-9f01-04458532b239
 index: y
 internal: n
 snippet: y

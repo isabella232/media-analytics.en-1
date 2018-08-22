@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Track App Actions (OTT apps)
 title: Track App Actions (OTT apps)
-uuid: 9243ecdc-5d1d-440c-9e35-9d9462f2eedb
+uuid: 19baa913-5888-46b3-af37-147d42588c10
 index: y
 internal: n
 snippet: y

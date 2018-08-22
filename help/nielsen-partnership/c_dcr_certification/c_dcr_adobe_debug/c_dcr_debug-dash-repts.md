@@ -3,7 +3,7 @@ description: Adobe Debug provides reporting, in real-time, so you can view both 
 seo-description: Adobe Debug provides reporting, in real-time, so you can view both Adobe and Nielsen hits and metadata that are being sent during video playback. Each of these reports can be saved within Debug.
 seo-title: Debug Dashboards and Reports
 title: Debug Dashboards and Reports
-uuid: 7c404232-e2c1-4549-95a3-27db7ce3efb3
+uuid: 96bafe5a-53cf-46b8-a75b-319524aeb0ef
 index: y
 internal: n
 snippet: y

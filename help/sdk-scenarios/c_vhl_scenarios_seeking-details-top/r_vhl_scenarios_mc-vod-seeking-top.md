@@ -3,7 +3,7 @@ description: In this scenario, the user is seeking when the main content is bein
 seo-description: In this scenario, the user is seeking when the main content is being played.
 seo-title: Playback with seeking in the main content
 title: Playback with seeking in the main content
-uuid: 0c7a48ca-dede-4ffa-a051-ce09551c1bc8
+uuid: 199f62ef-c947-4c46-9a8a-8b5942b44ce0
 index: y
 internal: n
 snippet: y

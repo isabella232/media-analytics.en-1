@@ -6,7 +6,7 @@ seo-title: Video Default Reports
 solution: Analytics
 title: Video Default Reports
 topic: Developer and implementation
-uuid: 9fd64bb8-a6ef-47b7-a73b-3cf44a877b94
+uuid: e9a6a122-0a71-4394-bd41-0d45fc54e88c
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: VA Cookbook
 title: VA Cookbook
-uuid: 01965111-a9a8-43be-84a4-77ea34a1c183
+uuid: a97f0a6e-51f4-47b7-a17b-f4a67023edb1
 index: y
 internal: n
 snippet: y

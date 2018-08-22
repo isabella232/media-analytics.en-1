@@ -3,7 +3,7 @@ description: In this scenario, a portion of the VOD content is marked as a chapt
 seo-description: In this scenario, a portion of the VOD content is marked as a chapter.
 seo-title: VOD playback with one chapter - details
 title: VOD playback with one chapter - details
-uuid: 3caa4aaa-ecee-4a19-9ebe-cd4151282b78
+uuid: c154f061-e46f-4537-902c-24ac3bf22fda
 index: y
 internal: n
 snippet: y

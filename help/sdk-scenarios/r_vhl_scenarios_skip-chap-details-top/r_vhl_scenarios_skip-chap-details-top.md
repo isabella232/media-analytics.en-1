@@ -3,7 +3,7 @@ description: In this scenario, the user skips a chapter in the main content.
 seo-description: In this scenario, the user skips a chapter in the main content.
 seo-title: VOD playback with a skipped chapter - details
 title: VOD playback with a skipped chapter - details
-uuid: 66670f1e-772f-4444-a5f8-b811dd5c4dca
+uuid: fa549e57-fe30-4d46-97f8-a629f29e5d29
 index: y
 internal: n
 snippet: y

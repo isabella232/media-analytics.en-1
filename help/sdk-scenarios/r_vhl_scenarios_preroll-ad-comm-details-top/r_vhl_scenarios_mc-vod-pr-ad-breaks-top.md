@@ -3,7 +3,7 @@ description: In this scenario, the VOD content consists of a pre-roll ad, a seco
 seo-description: In this scenario, the VOD content consists of a pre-roll ad, a second pre-roll ad, and then the content is played.
 seo-title: Playback with a pre-roll ad break
 title: Playback with a pre-roll ad break
-uuid: 0f334ce3-dd4e-432a-8a83-7e1d7524e29b
+uuid: d6dbefb5-f888-4dc2-b194-feb4fae16c6d
 index: y
 internal: n
 snippet: y

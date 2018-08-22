@@ -1,7 +1,7 @@
 ---
 seo-title: Track Core Video Playback
 title: Track Core Video Playback
-uuid: c638a0a8-f5b5-4d02-8db0-dd8a51b44c7e
+uuid: 48763ff0-9833-427d-bb46-8c11d44af7e6
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: In this scenario, there is one live asset with no ads played for 40
 seo-description: In this scenario, there is one live asset with no ads played for 40 secs after joining the live stream.
 seo-title: Live main content with sequential tracking - details
 title: Live main content with sequential tracking - details
-uuid: b8a0c63b-f50d-43d4-9c13-9b596228d1f4
+uuid: 8ad66fa7-66af-4776-b6e0-6d912a3e8427
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: SDK Debugging
 title: SDK Debugging
-uuid: 848ad2cb-a2d3-4866-ae2a-de5d57d54c36
+uuid: 9d7c2419-4c0a-4887-9d8c-cccec0eb3dd6
 index: y
 internal: n
 snippet: y

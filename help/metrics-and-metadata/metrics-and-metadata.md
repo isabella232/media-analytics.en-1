@@ -6,7 +6,7 @@ seo-title: Metrics and Metadata
 solution: Analytics
 title: Metrics and Metadata
 topic: Developer and implementation
-uuid: 36e51238-a171-46d1-89c9-0e250cebca17
+uuid: 38b367ac-67f7-42dc-ba37-1d7e10be4a4d
 index: y
 internal: n
 snippet: y

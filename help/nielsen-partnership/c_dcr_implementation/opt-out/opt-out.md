@@ -3,7 +3,7 @@ description: Adobe and Nielsen give the option to end-users to opt-out of measur
 seo-description: Adobe and Nielsen give the option to end-users to opt-out of measurement. Adobe provides this functionality to their customers, but the customers can determine whether to offer it to the end user.
 seo-title: Opt-Out Implementation
 title: Opt-Out Implementation
-uuid: 6bc361de-a17f-4e67-923d-516141935764
+uuid: 92bd7172-6e77-4a7a-a048-c38226a519f3
 index: y
 internal: n
 snippet: y

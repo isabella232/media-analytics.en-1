@@ -3,7 +3,7 @@ description: Before getting access to the Joint Adobe/Nielsen SDK and starting y
 seo-description: Before getting access to the Joint Adobe/Nielsen SDK and starting your implementation, you must complete some business and technical tasks. After these tasks have been completed, Adobe/Nielsen teams will schedule an initial kick-off call where you will get access to the SDK and discuss support and the next steps.
 seo-title: Getting Started with Adobe/Nielsen
 title: Getting Started with Adobe/Nielsen
-uuid: a99675bf-339d-4313-838f-61d03d587e2a
+uuid: 349dc472-599a-482f-99e1-305c6792b270
 index: y
 internal: n
 snippet: y

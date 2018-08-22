@@ -6,7 +6,7 @@ seo-title: Video Detail
 solution: Analytics
 title: Video Detail
 topic: Developer and implementation
-uuid: 71cab3d5-7e31-4f0e-819d-f8d53035bace
+uuid: 6df90403-3aec-4f52-844c-49d4ab5579db
 index: y
 internal: n
 snippet: y

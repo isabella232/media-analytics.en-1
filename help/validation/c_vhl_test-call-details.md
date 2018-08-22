@@ -3,7 +3,7 @@ description: Detailed call information for the validation test topics.
 seo-description: Detailed call information for the validation test topics.
 seo-title: Test Call Details
 title: Test Call Details
-uuid: 2d40055e-8aae-42ec-b69e-3cf4e353b958
+uuid: b6f37f2e-0e18-42b4-aff7-f705d5810ef3
 index: y
 internal: n
 snippet: y

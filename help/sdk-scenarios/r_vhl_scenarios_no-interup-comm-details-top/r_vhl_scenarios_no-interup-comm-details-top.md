@@ -3,7 +3,7 @@ description: This scenario comprises one VOD asset, with no ads, and is played o
 seo-description: This scenario comprises one VOD asset, with no ads, and is played once from beginning to end.
 seo-title: VOD playback with no ads - details
 title: VOD playback with no ads - details
-uuid: 398ff270-368a-442c-9836-e4e6db1ff361
+uuid: c5e2ec80-17ef-4948-b446-94ba8b04817b
 index: y
 internal: n
 snippet: y

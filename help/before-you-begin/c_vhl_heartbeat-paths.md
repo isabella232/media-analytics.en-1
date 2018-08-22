@@ -6,7 +6,7 @@ seo-title: Video Analytics Implementation Paths
 solution: Analytics
 title: Video Analytics Implementation Paths
 topic: Developer and implementation
-uuid: 6f662293-1bad-474a-8d14-362329d576bb
+uuid: b89b20a7-3849-47ea-8685-ebc7937de1b7
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: This iOS sample code helps you implement the Video Heartbeat Librar
 seo-description: This iOS sample code helps you implement the Video Heartbeat Library for Nielsen and configure opt-in/opt-out for Nielsen data collection.
 seo-title: 2.1 for iOS
 title: 2.1 for iOS
-uuid: 823bbd71-4a0f-4541-96a5-92ceea11ef04
+uuid: 8d2c1100-8625-43ac-bfbe-d5d08688835b
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: List of video content data, including context data values, that Ado
 seo-description: List of video content data, including context data values, that Adobe collects via solution variables.
 seo-title: Video Parameters
 title: Video Parameters
-uuid: f542c6b5-bb8f-4860-92eb-3cabe490311a
+uuid: 649762cf-ef23-4830-8f06-7800a20e4b24
 index: y
 internal: n
 snippet: y

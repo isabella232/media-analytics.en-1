@@ -6,7 +6,7 @@ seo-title: Chapter Parameters
 solution: Analytics
 title: Chapter Parameters
 topic: Developer and implementation
-uuid: a9a6fdcc-227c-4c70-8399-f38d309e5e92
+uuid: f2b72328-05fc-445a-9eac-3e1121e0918b
 index: y
 internal: n
 snippet: y

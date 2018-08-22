@@ -6,7 +6,7 @@ seo-title: Quality Parameters
 solution: Analytics
 title: Quality Parameters
 topic: Developer and implementation
-uuid: f3c3e7bb-f3a3-4d16-b706-8113743cba4d
+uuid: 83c4c1e6-490d-45ad-8c4f-2a004ff128dc
 index: y
 internal: n
 snippet: y

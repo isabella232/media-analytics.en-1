@@ -6,7 +6,7 @@ seo-title: Ad Parameters
 solution: Analytics
 title: Ad Parameters
 topic: Developer and implementation
-uuid: 40b07896-b9d3-4be0-9e62-069c1f68cd22
+uuid: adf8a0ba-9cd1-46fc-9eb5-b2b70e0eea8f
 index: y
 internal: n
 snippet: y

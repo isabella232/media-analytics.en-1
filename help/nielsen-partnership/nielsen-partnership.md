@@ -3,7 +3,7 @@ description: Digital Content Ratings, powered by Adobe lets developers implement
 seo-description: Digital Content Ratings, powered by Adobe lets developers implement the measurement of video viewership, app launches, app crashes, advertisements, page views, and more.
 seo-title: Nielsen Partnership
 title: Nielsen Partnership
-uuid: e7c5ce2b-a650-4d9e-a679-8383c6590298
+uuid: c410c593-070d-4426-9eb9-888d000fd003
 index: y
 internal: n
 snippet: y

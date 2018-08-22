@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Set Up Roku
 title: Set Up Roku
-uuid: e6dc3c0f-6c10-46d3-bb62-964775cc7eae
+uuid: 49228e13-ee21-4b86-9813-dd1a10a017f0
 index: y
 internal: n
 snippet: y
@@ -24,68 +24,68 @@ Learn more at [ Adobe Mobile Services documentation](https://marketing.adobe.com
 
 Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications written in BrightScript, leverage and collect audience data through audience management, and measure video engagement through Video heartbeats. 
 
->1. Add your [ downloaded](../../implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku library to your project.
->    
->    1. The ` AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components: >    
->        * ` adbmobile.brs`: This library file will be included in your Roku app source folder. 
+1. Add your [ downloaded](../../implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku library to your project.
+    
+    1. The ` AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:     
+        * ` adbmobile.brs`: This library file will be included in your Roku app source folder. 
 
->        * ` ADBMobileConfig.json` This SDK configuration file is customized for your app. 
+        * ` ADBMobileConfig.json` This SDK configuration file is customized for your app. 
 
 
 
->    1. Add the library file and JSON config file to your project source. The JSON that is used to configure Adobe Mobile has an exclusive key for media heartbeats called ` mediaHeartbeat`. This is where the configuration parameters for the media heartbeats belong. 
+    1. Add the library file and JSON config file to your project source. The JSON that is used to configure Adobe Mobile has an exclusive key for media heartbeats called ` mediaHeartbeat`. This is where the configuration parameters for the media heartbeats belong. 
 
->       >[!TIP]
->       >
->       >A sample ` ADBMobileConfig` JSON file is provided with the package. Contact your Adobe representatives for the settings. 
->       For example: >    
->       ```
->       {
->         "version":"1.0", 
->         "analytics":{
->           "rsids":"",
->           "server":"",
->           "charset":"UTF-8", 
->           "ssl":false, 
->           "offlineEnabled":false, 
->           "lifecycleTimeout":30, 
->           "batchLimit":50, 
->           "privacyDefault":"optedin", 
->           "poi":[
->          ]
->       },
->       "marketingCloud":{
->         "org":""
->       },
->       "target":{ 
->         "clientCode":"", 
->         "timeout":5
->       },
->       "audienceManager":{ 
->         "server":""
->       },
->       "acquisition":{ 
->         "server":"example.com",
->         "appid":"sample-app-id"
->       
->       },
->       
+       >[!TIP]
+       >
+       >A sample ` ADBMobileConfig` JSON file is provided with the package. Contact your Adobe representatives for the settings. 
+       For example:     
+       ```
+       {
+         "version":"1.0", 
+         "analytics":{
+           "rsids":"",
+           "server":"",
+           "charset":"UTF-8", 
+           "ssl":false, 
+           "offlineEnabled":false, 
+           "lifecycleTimeout":30, 
+           "batchLimit":50, 
+           "privacyDefault":"optedin", 
+           "poi":[
+          ]
+       },
+       "marketingCloud":{
+         "org":""
+       },
+       "target":{ 
+         "clientCode":"", 
+         "timeout":5
+       },
+       "audienceManager":{ 
+         "server":""
+       },
+       "acquisition":{ 
+         "server":"example.com",
+         "appid":"sample-app-id"
+       
+       },
+       
 <b>"mediaHeartbeat":{ 
- >         "server":"example.com", 
- >         "publisher":"sample-publisher", 
- >         "channel":"sample-channel", 
- >         "ssl":false,
- >         "ovp":"sample-ovp", 
- >         "sdkVersion":"sample-sdk", 
- >         "playerName":"roku"
- >         }</b>
->       }
->       ```
+          "server":"example.com", 
+          "publisher":"sample-publisher", 
+          "channel":"sample-channel", 
+          "ssl":false,
+          "ovp":"sample-ovp", 
+          "sdkVersion":"sample-sdk", 
+          "playerName":"roku"
+          }</b>
+       }
+       ```
 
 
 
 
->    <table id="table_00A5AE3DE21546DC89F561BAFEC6E710"> 
+    <table id="table_00A5AE3DE21546DC89F561BAFEC6E710"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Config Parameter </th> 
@@ -125,37 +125,37 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 </table>
 
 
->       >[!IMPORTANT]
->       >
->       >If ` mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls. 
+       >[!IMPORTANT]
+       >
+       >If ` mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls. 
 
->    
->1. Configure Experience Cloud Visitor ID.
->   The Experience Cloud Visitor ID service provides a universal Visitor ID across Experience Cloud solutions. The Visitor ID service is required by Video heartbeat and other Marketing Cloud integrations. 
+    
+1. Configure Experience Cloud Visitor ID.
+   The Experience Cloud Visitor ID service provides a universal Visitor ID across Experience Cloud solutions. The Visitor ID service is required by Video heartbeat and other Marketing Cloud integrations. 
 
->   Verify that your ` ADBMobileConfig` config contains your ` marketingCloud` organization ID. >
->   ```
->   "marketingCloud": {
->       "org": YOUR-MCORG-ID"
->   }
->   ```
-
-
->   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: ` 016D5C175213CCA80A490D05@AdobeOrg`. 
-
->   >[!IMPORTANT]
->   >
->   >Ensure that you include ` @AdobeOrg`. 
->   After the configuration is complete, an Experience Cloud Visitor ID is generated and is included on all hits. Other Visitor IDs, such as ` custom` and ` automatically-generated`, continue to be sent with each hit. 
-
->   **Experience Cloud Visitor ID Service Methods**
-
->   >[!TIP]
->   >
->   >Experience Cloud Visitor ID methods are prefixed with ` visitor`. 
+   Verify that your ` ADBMobileConfig` config contains your ` marketingCloud` organization ID. 
+   ```
+   "marketingCloud": {
+       "org": YOUR-MCORG-ID"
+   }
+   ```
 
 
-><table id="table_5DE8BEEA051542B58B7060E26183E61F"> 
+   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: ` 016D5C175213CCA80A490D05@AdobeOrg`. 
+
+   >[!IMPORTANT]
+   >
+   >Ensure that you include ` @AdobeOrg`. 
+   After the configuration is complete, an Experience Cloud Visitor ID is generated and is included on all hits. Other Visitor IDs, such as ` custom` and ` automatically-generated`, continue to be sent with each hit. 
+
+   **Experience Cloud Visitor ID Service Methods**
+
+   >[!TIP]
+   >
+   >Experience Cloud Visitor ID methods are prefixed with ` visitor`. 
+
+
+<table id="table_5DE8BEEA051542B58B7060E26183E61F"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Method </th> 
@@ -182,5 +182,5 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
  </tbody> 
 </table>
 
->   **Postbacks -** For more information about configuring postbacks, see [ Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
->
+   **Postbacks -** For more information about configuring postbacks, see [ Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
+

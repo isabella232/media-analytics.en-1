@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Set up Chromecast
 title: Set up Chromecast
-uuid: 10f6e7d4-9a4c-45d9-8572-55330fc96668
+uuid: 6f0eff15-43d7-4cc5-95b8-fdb027491d39
 index: y
 internal: n
 snippet: y
@@ -28,61 +28,61 @@ Adobe Mobile services provides a new UI that brings together mobile marketing ca
 
 Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast applications written in JavaScript, leverage and collect audience data through audience management, and measure video engagement through Video heartbeats. 
 
->1. Add your [ downloaded ](../../implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast library to your project.
->    
->    1. The [!DNL  AdobeMobileLibrary-Chromecast-2.1.0 zip] file consists of the following software components: >    
->        * [!DNL  adbmobile-chromecast.min.js]: This library file will be included in your Chromecast app source folder. 
+1. Add your [ downloaded ](../../implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast library to your project.
+    
+    1. The [!DNL  AdobeMobileLibrary-Chromecast-2.1.0 zip] file consists of the following software components:     
+        * [!DNL  adbmobile-chromecast.min.js]: This library file will be included in your Chromecast app source folder. 
 
->        * [!DNL  ADBMobileConfig] config This SDK configuration file is customized for your app. A sample ` ADBMobileConfig` implementation is provided with the SDK (under [!DNL  samples/]). Obtain the proper settings from an Adobe representative. 
+        * [!DNL  ADBMobileConfig] config This SDK configuration file is customized for your app. A sample ` ADBMobileConfig` implementation is provided with the SDK (under [!DNL  samples/]). Obtain the proper settings from an Adobe representative. 
 
 
->    1. Add the library file to your [!DNL  index.html] file, and create the ` ADBMobileConfig` global variable as follows (the global variable used to configure Adobe Mobile for Heartbeats has an exclusive key named ` mediaHeartbeat`): >    
->       ```
->       <script> 
->           var ADBMobileConfig = { 
->             "marketingCloud": { 
->               "org": "972C898555E9F7BC7F000101@AdobeOrg" 
->             }, 
->             "target": { 
->               "clientCode": "", 
->               "timeout": 5 
->             }, 
->             "audienceManager": { 
->               "server": "obumobile5.demdex.net" 
->             }, 
->             "analytics": { 
->               "rsids": "mobile5vhl.sample.player", 
->               "server": "obumobile5.sc.omtrdc.net", 
->               "ssl": false, 
->               "offlineEnabled": false, 
->               "charset": "UTF-8", 
->               "lifecycleTimeout": 300, 
->               "privacyDefault": "optedin", 
->               "batchLimit": 0, 
->               "timezone": "MDT", 
->               "timezoneOffset": -360, 
->               "referrerTimeout": 0, 
->               "poi": [] 
->             }, 
->             "mediaHeartbeat": { 
->               "server": "obumobile5.hb.omtrdc.net", 
->               "publisher": "972C898555E9F7BC7F000101@AdobeOrg", 
->               "channel": "test-channel-chromecast", 
->               "ssl": false, 
->               "ovp": "chromecast-player", 
->               "sdkVersion": "chromecast-sdk", 
->               "playerName": "Chromecast" 
->             } 
->           }; 
->         </script> 
->       <script type="text/javascript" src="script/lib/adbmobile-chromecast.min.js"></script>
->       ```
+    1. Add the library file to your [!DNL  index.html] file, and create the ` ADBMobileConfig` global variable as follows (the global variable used to configure Adobe Mobile for Heartbeats has an exclusive key named ` mediaHeartbeat`):     
+       ```
+       <script> 
+           var ADBMobileConfig = { 
+             "marketingCloud": { 
+               "org": "972C898555E9F7BC7F000101@AdobeOrg" 
+             }, 
+             "target": { 
+               "clientCode": "", 
+               "timeout": 5 
+             }, 
+             "audienceManager": { 
+               "server": "obumobile5.demdex.net" 
+             }, 
+             "analytics": { 
+               "rsids": "mobile5vhl.sample.player", 
+               "server": "obumobile5.sc.omtrdc.net", 
+               "ssl": false, 
+               "offlineEnabled": false, 
+               "charset": "UTF-8", 
+               "lifecycleTimeout": 300, 
+               "privacyDefault": "optedin", 
+               "batchLimit": 0, 
+               "timezone": "MDT", 
+               "timezoneOffset": -360, 
+               "referrerTimeout": 0, 
+               "poi": [] 
+             }, 
+             "mediaHeartbeat": { 
+               "server": "obumobile5.hb.omtrdc.net", 
+               "publisher": "972C898555E9F7BC7F000101@AdobeOrg", 
+               "channel": "test-channel-chromecast", 
+               "ssl": false, 
+               "ovp": "chromecast-player", 
+               "sdkVersion": "chromecast-sdk", 
+               "playerName": "Chromecast" 
+             } 
+           }; 
+         </script> 
+       <script type="text/javascript" src="script/lib/adbmobile-chromecast.min.js"></script>
+       ```
 
->       >[!IMPORTANT]
->       >
->       >If ` mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls. 
+       >[!IMPORTANT]
+       >
+       >If ` mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls. 
 
->       <!-- <codeblock class="syntax html">
+       <!-- <codeblock class="syntax html">
   &lt;script&gt; 
  <discoiqbr />var&nbsp;ADBMobileConfig&nbsp;=&nbsp;{ 
  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"version":"1.0",&nbsp; 
@@ -129,8 +129,8 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 </codeblock> -->
 
 
->       #### ADBMobile Config Parameters for mediaHeartbeat key:
->    <table id="table_00A5AE3DE21546DC89F561BAFEC6E710">  
+       #### ADBMobile Config Parameters for mediaHeartbeat key:
+    <table id="table_00A5AE3DE21546DC89F561BAFEC6E710">  
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Config Parameter </th> 
@@ -170,33 +170,33 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 </table>
 
 
->    
->1. Configure Experience Cloud Visitor ID.
->   The Experience Cloud Visitor ID service provides a universal Visitor ID across Experience Cloud solutions. The Visitor ID service is required by Video heartbeat and other Marketing Cloud integrations. 
+    
+1. Configure Experience Cloud Visitor ID.
+   The Experience Cloud Visitor ID service provides a universal Visitor ID across Experience Cloud solutions. The Visitor ID service is required by Video heartbeat and other Marketing Cloud integrations. 
 
->   Verify that your ` ADBMobileConfig` config contains your ` marketingCloud` organization ID. >
->   ```
->   "marketingCloud": { 
->       "org": YOUR-MCORG-ID" 
->   }
->   ```
-
-
->   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: ` 016D5C175213CCA80A490D05@AdobeOrg`. 
-
->   >[!IMPORTANT]
->   >
->   >Ensure that you include ` @AdobeOrg`. 
->   After the configuration is complete, an Experience Cloud Visitor ID is generated and is included on all hits. Other Visitor IDs, such as ` custom` and ` automatically-generated`, continue to be sent with each hit. 
-
->   **Experience Cloud Visitor ID Service Methods**
-
->   >[!TIP]
->   >
->   >Experience Cloud Visitor ID methods are prefixed with ` visitor`. 
+   Verify that your ` ADBMobileConfig` config contains your ` marketingCloud` organization ID. 
+   ```
+   "marketingCloud": { 
+       "org": YOUR-MCORG-ID" 
+   }
+   ```
 
 
-><table id="table_5DE8BEEA051542B58B7060E26183E61F"> 
+   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: ` 016D5C175213CCA80A490D05@AdobeOrg`. 
+
+   >[!IMPORTANT]
+   >
+   >Ensure that you include ` @AdobeOrg`. 
+   After the configuration is complete, an Experience Cloud Visitor ID is generated and is included on all hits. Other Visitor IDs, such as ` custom` and ` automatically-generated`, continue to be sent with each hit. 
+
+   **Experience Cloud Visitor ID Service Methods**
+
+   >[!TIP]
+   >
+   >Experience Cloud Visitor ID methods are prefixed with ` visitor`. 
+
+
+<table id="table_5DE8BEEA051542B58B7060E26183E61F"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Method </th> 
@@ -223,5 +223,5 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
  </tbody> 
 </table>
 
->   **Postbacks -** For more information about configuring postbacks, see [ Configure Postbacks ](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
->
+   **Postbacks -** For more information about configuring postbacks, see [ Configure Postbacks ](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
+

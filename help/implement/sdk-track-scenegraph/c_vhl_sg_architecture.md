@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Architecture
 title: Architecture
-uuid: 7c76c876-6e60-4bf2-ad8f-b8bfd6822085
+uuid: 6ec7eed8-ee07-4b60-96eb-8f3292bf310f
 index: y
 internal: n
 snippet: y

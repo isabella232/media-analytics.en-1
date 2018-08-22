@@ -6,7 +6,7 @@ seo-title: Video Reports
 solution: Analytics
 title: Video Reports
 topic: Developer and implementation
-uuid: 50c90cd4-ffe8-45ca-8321-3e6439b771c0
+uuid: 6d7191b4-cac4-4ef5-9601-79eeaa2b128d
 index: y
 internal: n
 snippet: y

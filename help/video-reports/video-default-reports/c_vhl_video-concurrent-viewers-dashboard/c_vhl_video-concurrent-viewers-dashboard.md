@@ -6,7 +6,7 @@ seo-title: Video Concurrent Viewers
 solution: Analytics
 title: Video Concurrent Viewers
 topic: Developer and implementation
-uuid: 146a5db7-2d7f-45cc-bfc0-116d8b39185d
+uuid: 3928f923-5582-44c9-85e5-46ed4e2bf120
 index: y
 internal: n
 snippet: y

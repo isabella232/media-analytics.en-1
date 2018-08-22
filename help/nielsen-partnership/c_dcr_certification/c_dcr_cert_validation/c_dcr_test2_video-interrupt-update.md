@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates mobile interruption behavior.
 seo-title: Test 2  Video Interruption
 title: Test 2  Video Interruption
-uuid: fb5b6cd9-4439-4999-9c99-9589f4444d75
+uuid: ae4dcacb-abb8-46b3-aea2-f12e56d8e505
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Resuming Inactive Sessions
 title: Resuming Inactive Sessions
-uuid: 4c5b4bd6-0b6c-4690-9e6b-91e850b140fc
+uuid: 42e27bd9-75b4-4b94-8fb5-0fba0a17d718
 index: y
 internal: n
 snippet: y

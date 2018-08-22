@@ -3,7 +3,7 @@ description: This test case is required as part of the certification request for
 seo-description: This test case is required as part of the certification request form and validates mobile interruption behavior.
 seo-title: Test 3  Opt-out Nielsen
 title: Test 3  Opt-out Nielsen
-uuid: 87909153-18af-446f-9dfb-3274f721a412
+uuid: 25fe62d8-7dd7-480e-8db5-ef147b2051f9
 index: y
 internal: n
 snippet: y

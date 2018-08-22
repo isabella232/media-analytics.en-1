@@ -3,7 +3,7 @@ description: In this scenario, VOD content is played back with one chapter at th
 seo-description: In this scenario, VOD content is played back with one chapter at the beginning of the playback.
 seo-title: Playback with one chapter at the beginning
 title: Playback with one chapter at the beginning
-uuid: 66baf1c1-95e0-4c6a-97d6-dad60ff18f6d
+uuid: aa44c8f1-4612-447c-b64b-0c72fae8c885
 index: y
 internal: n
 snippet: y

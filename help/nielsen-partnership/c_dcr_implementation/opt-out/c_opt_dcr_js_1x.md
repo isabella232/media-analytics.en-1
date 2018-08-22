@@ -3,7 +3,7 @@ description: This information helps users determine whether they want to opt-in 
 seo-description: This information helps users determine whether they want to opt-in to or opt-out of Nielsen ratings.
 seo-title: JavaScript Opt-out Settings
 title: JavaScript Opt-out Settings
-uuid: a8daa026-f25d-4a1d-acc0-e8690d2408a3
+uuid: 2f554712-568f-43c0-9dd7-508e756de271
 index: y
 internal: n
 snippet: y

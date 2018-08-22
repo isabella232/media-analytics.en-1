@@ -3,7 +3,7 @@ description: In this scenario, VOD content is played back with a pre-roll ad, th
 seo-description: In this scenario, VOD content is played back with a pre-roll ad, the content, a mid-roll ad, the content, and a post-roll ad.
 seo-title: Playback with ad breaks
 title: Playback with ad breaks
-uuid: 1f849ca8-c55d-4569-a43c-f69cc732e865
+uuid: 8d9a289c-0b0d-451c-9e78-9b260c45601c
 index: y
 internal: n
 snippet: y

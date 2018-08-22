@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Configure Adobe Debug
 title: Configure Adobe Debug
-uuid: 871974f7-853c-41c8-b08f-75045bf966d3
+uuid: ff80aeea-80e8-43a1-8e2a-6423fc9f8bb3
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: SDK Validation
 title: SDK Validation
-uuid: 5c509f37-86a9-4efe-bee5-d1735c33c47e
+uuid: 4a585726-09ce-45a0-88c8-4d85482e1a61
 index: y
 internal: n
 snippet: y

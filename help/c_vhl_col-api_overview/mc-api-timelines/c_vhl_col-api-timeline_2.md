@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Timeline 2 - User abandons session
 title: Timeline 2 - User abandons session
-uuid: 80e5d337-ce5a-483e-ae2d-8c52400a4663
+uuid: be6a6034-13c8-42a7-be87-ec7ddaa1c82a
 index: y
 internal: n
 snippet: y

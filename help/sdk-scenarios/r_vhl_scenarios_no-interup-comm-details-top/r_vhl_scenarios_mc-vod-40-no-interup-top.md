@@ -3,7 +3,7 @@ description: In this scenario, there is content that is 40 seconds long. It is p
 seo-description: In this scenario, there is content that is 40 seconds long. It is played until the end without any interruptions.
 seo-title: Playback with no interruptions
 title: Playback with no interruptions
-uuid: 32b172ec-15ce-404f-9100-c799d93b2730
+uuid: 4ed8dcdf-f6e8-4789-a308-aa6002805bc2
 index: y
 internal: n
 snippet: y

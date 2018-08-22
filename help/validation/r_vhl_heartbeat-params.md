@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Heartbeat Parameter Descriptions
 title: Heartbeat Parameter Descriptions
-uuid: 8c40ae5b-284f-4049-a97e-cda8ef03ad8c
+uuid: e7b0607e-286b-4b7d-bca4-739c6d674600
 index: y
 internal: n
 snippet: y
