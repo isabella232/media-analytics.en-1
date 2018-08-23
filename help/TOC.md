@@ -8,7 +8,7 @@ user-guide: null
 # Table of Contents
 
 + [Measuring Video in Adobe Analytics](video_overview.md)
-+ [Before You Begin](before-you-begin/before-you-begin.md)
++ Before You Begin
     + [Prerequisites](before-you-begin/c_vhl_prereqs.md)
     + [Video Analytics Implementation Paths](before-you-begin/c_vhl_heartbeat-paths.md)
     + [Video Milestone Implementation (Old)](before-you-begin/c_vhl_video-milestone-impl.md)
