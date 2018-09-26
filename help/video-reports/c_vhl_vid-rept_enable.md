@@ -58,7 +58,7 @@ Each report suite that collects video metrics must be configured before video da
      </ul></p> <p> To continue using custom variables: 
      <ol id="ol_A1532DCC43F34F6B9D079C1BF9590B64"> 
       <li id="li_803BCBDDE7864D5891E881F6EF040B1B">Select <span class="uicontrol"> Use Custom Variables </span>, then click <span class="uicontrol"> Save </span>. </li> 
-      <li id="li_32802086E31649338A2B8B08BEB2D76F">When prompted, map your current custom eVars and events and then click <span class="uicontrol"> Save </span>: </li> 
+      <li id="li_32802086E31649338A2B8B08BEB2D76F">When prompted, map your current custom eVars and events and then click <span class="uicontrol"> Save</span>: </li> 
      </ol></p> <p> 
      <fig id="fig_A7234D33D2524621B0065399772F9DF1">  
      </fig><img placement="break" align="center" href="assets/video-mapping.png" id="image_952F10D91A124288B7732B5A1B8A24E5" width="300px" /></p> </td> 
@@ -71,7 +71,7 @@ Each report suite that collects video metrics must be configured before video da
       <li id="li_87DC22857D2046A5A3F12B48B35DD799"><b>Cons:</b> You lose <b>all</b> historical trending and comparison for video reports. This means that you cannot trend video views or video time played for any dates before you migrated to video heartbeat. </li> 
      </ul> <p type="restriction">Note:  Do not migrate to solution variables unless you are certain that you do not want to preserve this trending. </p></p> <p>All customers should use solution variables and processing rules to put video data into existing props and eVars, only if they need to preserve historical continuity. </p> <p> To migrate to solution variables: 
      <ol id="ol_00FCF0BA5A644C87ADEA35BE81A985A5"> 
-      <li id="li_CEC859EB367845A688D857581490D493">Select <span class="uicontrol"> Use Solution Variables </span> and click <span class="uicontrol"> Save </span>. </li> 
+      <li id="li_CEC859EB367845A688D857581490D493">Select <span class="uicontrol"> Use Solution Variables </span> and click <span class="uicontrol"> Save</span>. </li> 
      </ol></p> </td> 
   </tr> 
  </tbody> 
