@@ -29,12 +29,12 @@ For *Video Analytics*, here are the tasks you must complete prior to implementin
 
    The ID service can also replace the different solution-specific IDs (for example, Analytics AID). Through the [ Customer IDs and Authentication States](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) functionality, the ID service lets you pass in your own customer IDs to the Experience Cloud. Keep in mind, however, that the ID service only works with the solutions to which you have already subscribed. If you are not signed up for access to other products, the ID service does not provide the access. 
 
-   Going forward, the ID service is an integral component of many current and future Experience Cloud features, enhancements, and services. Currently, the ID service supports [ Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), [ Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html), and [ Target](http://www.adobe.com/marketing-cloud/testing-targeting.html). 
+   Going forward, the ID service is an integral component of many current and future Experience Cloud features, enhancements, and services. Currently, the ID service supports [ Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html), [ Audience Manager](https://www.adobe.com/marketing-cloud/data-management-platform.html), and [ Target](https://www.adobe.com/marketing-cloud/testing-targeting.html). 
 
    >[!IMPORTANT]
    >
    >To participate in the Adobe Experience Cloud Device Co-op, the Experience Cloud ID service is required.
-   If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [ Why the Experience Cloud ID Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/). 
+   If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [ Why the Experience Cloud ID Service Should be on Your Radar](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/). 
 
    >[!IMPORTANT]
    >
