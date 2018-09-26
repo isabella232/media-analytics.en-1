@@ -64,7 +64,7 @@ translate: y
 1. Send ` sessions` requests to the VA API endpoint. If your request payload is invalid, identify the problem and retry until you get a ` 201 Created` response. In this ` curl` example, the JSON request body is in a file named [!DNL  sample_data_session]: 
    ```
    $ curl -i -d \ 
-     @sample_data_session http://{uri}/api/v1/sessions \ 
+     @sample_data_session https://{uri}/api/v1/sessions \ 
      > curl.sessions.out 
     
    $ cat curl.sessions.out 

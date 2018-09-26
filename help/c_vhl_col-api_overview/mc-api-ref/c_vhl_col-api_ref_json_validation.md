@@ -17,7 +17,7 @@ The VA backend validates the request parameters for each event type using JSON v
 
 ```
 POST
-http://{uri}/api/v1/schemas/{event-type}
+https://{uri}/api/v1/schemas/{event-type}
 ```
 
 

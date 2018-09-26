@@ -29,7 +29,7 @@ translate: y
     1. Reference [!DNL  VideoHeartbeat.min.js] on all site pages. Include ` VideoHeartbeat` for JavaScript by adding the following line of code in the ` <head>` or ` <body>` tag on each page. For example:     
        ```
        <script type="text/javascript" 
-       src="http://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
+       src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
        ```
 
 
