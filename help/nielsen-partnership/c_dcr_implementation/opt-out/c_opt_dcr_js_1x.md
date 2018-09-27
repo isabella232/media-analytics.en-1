@@ -17,4 +17,4 @@ translate: y
 >
 >There is no API to opt out in JavaScript.
 
-After ensuring that the application is linking to [ https://www.nielsen.com/digitalprivacy](https://www.nielsen.com/digitalprivacy), users can opt out their browser. 
+After ensuring that the application is linking to [ http://www.nielsen.com/digitalprivacy](http://www.nielsen.com/digitalprivacy), users can opt out their browser. 

@@ -15,7 +15,7 @@ translate: y
 
 ```
 POST 
-https://{uri}/api/v1/sessions/{sid}/events 
+http://{uri}/api/v1/sessions/{sid}/events 
 
 ```
 

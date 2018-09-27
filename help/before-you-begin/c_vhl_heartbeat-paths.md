@@ -39,11 +39,11 @@ For each of these implementation paths, customers need to contact their Sales Re
   TVSDK is already integrated with the Video Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. Primetime also supports the partnership with Nielsen. To leverage Primetime, follow the same guidelines and prerequisites found in [ Video Analytics](c_vhl_va-path.md#concept_928146A7583A482187BB3D5FEAC205B6) along with the following docs for your platform(s): 
 
 
-    * [ Video Analytics in TVSDK 1.4 for Android](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics)
-    * [ Video Analytics in TVSDK 2.4 for Browser TVSDK](https://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html#Video_analytics)
-    * [ Video Analytics in TVDSK 1.4 for Desktop HLS](https://help.adobe.com/en_US/primetime/psdk/dhls/1.4/index.html#Video_analytics)
-    * [ Video Analytics in TVDSK 2.3 for Desktop HLS](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/index.html#Video_analytics)
-    * [ Video Analytics in TVSDK 1.4 for iOS](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics)
+    * [ Video Analytics in TVSDK 1.4 for Android](http://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics)
+    * [ Video Analytics in TVSDK 2.4 for Browser TVSDK](http://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html#Video_analytics)
+    * [ Video Analytics in TVDSK 1.4 for Desktop HLS](http://help.adobe.com/en_US/primetime/psdk/dhls/1.4/index.html#Video_analytics)
+    * [ Video Analytics in TVDSK 2.3 for Desktop HLS](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/index.html#Video_analytics)
+    * [ Video Analytics in TVSDK 1.4 for iOS](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics)
 
 
   You should also contact your Sales Representative/Account Manger to discuss what you need to do to purchase TVSDK. 

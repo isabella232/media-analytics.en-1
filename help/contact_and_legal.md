@@ -21,11 +21,11 @@ translate: y
 
 The Adobe Experience Cloud Customer Care team is here to assist you and provides a number of mechanisms by which they can be engaged: 
 
-* [ Check the Experience Cloud help pages for advice, tips, and FAQs ](https://helpx.adobe.com/marketing-cloud.html)
+* [ Check the Experience Cloud help pages for advice, tips, and FAQs ](http://helpx.adobe.com/marketing-cloud.html)
 * [ Ask us a quick question on Twitter @AdobeExpCare ](https://twitter.com/AdobeExpCare)
 * [ Log an incident in our customer portal ](https://customers.omniture.com/login.php)
-* [ Contact the Customer Care team directly ](https://helpx.adobe.com/marketing-cloud/contact-support.html)
-* [ Check availability and status of Experience Cloud Solutions ](https://status.adobe.com/)
+* [ Contact the Customer Care team directly ](http://helpx.adobe.com/marketing-cloud/contact-support.html)
+* [ Check availability and status of Experience Cloud Solutions ](http://status.adobe.com/)
 
 ## Service, Capability &amp; Billing {#section_FA4F5274FDFE4DF7BB079E575877DFC2}
 
@@ -43,8 +43,8 @@ We welcome any suggestions or feedback regarding this solution. Enhancement idea
  <li> Published by Adobe Systems Incorporated. </li> 
 </ul>
 
-[ Terms of Use ](https://marketing.adobe.com/resources/help/en_US/terms.html) | [ Privacy Center ](https://www.adobe.com/privacy/policy.html) 
+[ Terms of Use ](https://marketing.adobe.com/resources/help/en_US/terms.html) | [ Privacy Center ](http://www.adobe.com/privacy/policy.html) 
 
 Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®, ™, etc.) denotes an Adobe trademark. 
 
-All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [ https://www.adobe.com/go/thirdparty ](https://www.adobe.com/products/eula/third_party/). 
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [ http://www.adobe.com/go/thirdparty ](http://www.adobe.com/products/eula/third_party/). 
