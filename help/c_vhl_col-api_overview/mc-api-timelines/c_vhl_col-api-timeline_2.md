@@ -118,7 +118,7 @@ translate: y
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.campaignId":&nbsp;"1", 
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.creativeId":&nbsp;"42", 
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.siteId":&nbsp;"XYZ", 
-     &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.creativeURL":&nbsp;"https://xyz_creative.com", 
+     &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.creativeURL":&nbsp;"http://xyz_creative.com", 
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.placementId":&nbsp;"sample_placement2" 
      &nbsp;&nbsp;}, 
      } 
@@ -334,7 +334,7 @@ translate: y
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.campaignId":&nbsp;"7", 
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.creativeId":&nbsp;"40", 
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.siteId":&nbsp;"XYZ", 
-     &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.creativeURL":&nbsp;"https://xyz_creative.com", 
+     &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.creativeURL":&nbsp;"http://xyz_creative.com", 
      &nbsp;&nbsp;&nbsp;&nbsp;"media.ad.placementId":&nbsp;"sample_placement2" 
      &nbsp;&nbsp;}, 
      } 
