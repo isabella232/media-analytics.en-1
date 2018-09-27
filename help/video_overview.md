@@ -1,23 +1,12 @@
 ---
 description: null
-seo-description: null
+seo-description: Measuring Video in Adobe Analytics
 seo-title: Measuring Video in Adobe Analytics
 title: Measuring Video in Adobe Analytics
 uuid: 77f04d91-4793-4f8a-9560-23af8ad537ad
-index: y
-internal: n
-snippet: y
-translate: y
 ---
 
 # Measuring Video in Adobe Analytics
-
-This topic contains the following information: 
-
-* [ Overview ](video_overview.md#section_8BFE4F8DA64B4A5F826A4940B11AA466)
-* [ Benefits ](video_overview.md#section_7712BA90EAE64C118218D1C581EF68B7)
-* [ Heartbeat versus Milestone Benefits ](video_overview.md#section_cnj_5st_p1b)
-* [ Devices Supported ](video_overview.md#section_lkm_l5t_p1b)
 
 >[!IMPORTANT]
 >
