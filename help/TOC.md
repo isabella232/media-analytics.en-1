@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
-product: adobe
-archtype: end-user
+product: media analytics
+archetype: end-user
 user-guide: null
 ---
 
