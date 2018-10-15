@@ -60,7 +60,7 @@ Table data description:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1" morerows="1"> <p><b>Stream Type</b> </p> </td> 
+   <td colname="col1" rowspan="2"> <p><b>Stream Type</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_dt3_htw_41b"> 
       <li><b>SDK Key:</b> <span class="codeph">  </span> </li> 
