@@ -15,10 +15,6 @@ snippet: y
 
 This topic presents a list of audio and video content data, including context data values, that Adobe collects via solution variables.
 
-* [](#reference_0470E81636C8483DB2C79A1E0C51B5D0/section_y55_y1m_n1b)
-* [](#reference_0470E81636C8483DB2C79A1E0C51B5D0/section_pfc_hbm_n1b)
-* [](#reference_0470E81636C8483DB2C79A1E0C51B5D0/section_3D5F9C555274428AA6030D07596177E9)
-
 Table data description:
 
 * **Label:** The name of the parameter. 
@@ -36,7 +32,6 @@ Table data description:
 * **Reporting:** Information on how to view and analyze the audio and video data.
 
     * *Available* - Indicates whether the data is available in reporting by default (*Yes*), or requires custom set-up (*Custom*)
-    
     * *Reserved Variable* - Indicates whether the data is captured as an event, eVar, prop, or classification in a reserved variable. 
     * *Expiration* - Indicates whether the data expires after each hit or after each visit.
     * *Report Name* - Name of Adobe Aanlytics report for variable
