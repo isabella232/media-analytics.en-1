@@ -8,7 +8,7 @@ user-guide-title: Media Analytics Help
 
 + [Measuring Audio and Video in Adobe Analytics](media-overview.md)
 + Measurement Options {#measurement-options}
-   + [Media Module Milestone Tracking](measurement-options/mm-milestone-tracking/mm-milestone-tracking.md)
+   + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [Migrating from Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
