@@ -1,14 +1,13 @@
 ---
-cloud: experience-cloud
-product: adobe
-archtype: end-user
-user-guide: null
+product: Media Analytics
+audience: end-user
+user-guide-title: Media Analytics Help
 ---
 
-# Table of Contents {#table-of-contents}
+# Media Analytics Help {#media-analytics-help}
 
 + [Measuring Audio and Video in Adobe Analytics](media-overview.md)
-+ [Measurement Options](measurement-options/measurement-options.md)
++ Measurement Options {#measurement-options}
    + [Media Module Milestone Tracking](measurement-options/mm-milestone-tracking/mm-milestone-tracking.md)
       + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [Migrating from Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
