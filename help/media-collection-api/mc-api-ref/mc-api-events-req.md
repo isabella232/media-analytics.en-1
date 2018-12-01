@@ -40,7 +40,6 @@ http://{uri}/api/v1/sessions/{sid}/events
 * `eventType` (Mandatory)
 * `params` (Optional) 
 * `customMetadata` (Optional; send with `adStart` event type only)
-
 * `qoeData` (Optional)
 
 For a list of valid event types for this release, see [](../../media-collection-api/mc-api-ref/mc-api-event-types.md).
@@ -64,7 +63,8 @@ Access-Control-Allow-Headers Content-Type
 Access-Control-Expose-Headers Location
 ```
 
-#### HTTP Response Codes
+## HTTP Response Codes
+
 |  HTTP Response Code  | Description  | Client Action Items  |
 |---|---|---|
 |  **204** | **No Content.** Heartbeat call was successful.  | N/A  |
