@@ -124,7 +124,7 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
   >
   >Do not leverage Connected Devices or any platforms listed under the **[!UICONTROL Only (Deduplicated]**) option.
 
-* ** Date Range:** Ensure frequency aligns and that you consider that the day definition discrepancies will be especially apparent for daily data and for shows that air on week boundaries
+* **Date Range:** Ensure frequency aligns and that you consider that the day definition discrepancies will be especially apparent for daily data and for shows that air on week boundaries
 
   <a id="fig_F2DF1F4ACB24400DAD01D28A1D95BB45"></a>
 

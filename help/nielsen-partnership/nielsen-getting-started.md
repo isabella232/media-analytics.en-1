@@ -19,7 +19,7 @@ Contracts and addendums required before implementing the Joint Adobe/Nielsen SDK
 
 * **Nielsen Addendum for DCR** Although you might have a license with Nielsen to use some of their solutions, to access Digital Content Ratings (DCR), you must sign an addendum. For a copy of the addendum, contact your Nielsen account team. 
 
-* **Adobe Addendum for Nielsen data sharing: ** Your Analytics data belongs to you, so Adobe will need your permission to directly share your data with Nielsen. This addendum outlines what data will be shared and how it will be governed. For a copy of this addendum, contact your Adobe Account Manager and/or Sales Executive.
+* **Adobe Addendum for Nielsen data sharing:** Your Analytics data belongs to you, so Adobe will need your permission to directly share your data with Nielsen. This addendum outlines what data will be shared and how it will be governed. For a copy of this addendum, contact your Adobe Account Manager and/or Sales Executive.
 
 >[!IMPORTANT]
 >

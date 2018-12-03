@@ -36,13 +36,13 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 
 **API Calls:**
 
-* ** `sessions` -** Establishes a session with the server, and returns a Session ID used in subsequent `events` calls. Your app calls this once at the start of a tracking session. 
+* **`sessions` -** Establishes a session with the server, and returns a Session ID used in subsequent `events` calls. Your app calls this once at the start of a tracking session. 
 
   ```
   {uri}/api/v1/sessions
   ```
 
-* ** `events` -** Sends media tracking data. 
+* **`events` -** Sends media tracking data. 
 
   ```
   {uri}/api/v1/sessions/{session-id}/events

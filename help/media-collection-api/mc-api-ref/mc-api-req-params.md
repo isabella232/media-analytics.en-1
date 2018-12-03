@@ -404,13 +404,13 @@ Might be confusing to go from Media Collection to SDK-oriented parameters refere
 
 ## Additional Details {#section_ryt_ccy_lcb}
 
-* ** `visitor.marketingCloudUserId` ** You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
+* **`visitor.marketingCloudUserId` ** You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
 
   >[!NOTE]
   >
   >Video Analytics is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps.
 
-* ** `appInstallationId`**
+* **`appInstallationId`**
 
     * **If you *do not* pass an `appInstallationId` value -** The VA backend will no longer generate a MCID, but instead will rely on Adobe Analytics to do this. Adobe's recommendation is to either send a MCID if available, or an `appInstallationId` (along with the still mandatory `marketingCloudOrgId`) so that the Media Collection API generates the MCID and sends it on all calls.
     
@@ -429,7 +429,7 @@ Initially, there were no browser-based customers. In future this will be part of
 
  -->
 
-* ** `visitor.marketingCloudOrgId` ** In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Video Analytics performs [federation rule matching](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated-analytics.html)). 
+* **`visitor.marketingCloudOrgId`** In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Video Analytics performs [federation rule matching](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated-analytics.html)). 
 
 * **Analytics Legacy User ID (aid)** and **Declared User IDs (customerIDs)**:
 
@@ -446,7 +446,7 @@ Initially, there were no browser-based customers. In future this will be part of
     
       Note that the **visitor.customerIDs** value can have any number of objects in the presented format.
 
-* ** `visitor.aamLocationHint` ** AAM Location Hint: This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. If you don't pass this parameter, Adobe hardcodes it to 1. This is particularly important when end users tend to use their devices in geographically distant locations (e.g., US-East, US-West, Europe, Asia). Otherwise, user data will be spread across multiple AAM Edges.
+* **`visitor.aamLocationHint`** AAM Location Hint: This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. If you don't pass this parameter, Adobe hardcodes it to 1. This is particularly important when end users tend to use their devices in geographically distant locations (e.g., US-East, US-West, Europe, Asia). Otherwise, user data will be spread across multiple AAM Edges.
 
-* ** `media.resume` ** If the app determines that a session was closed and then resumed at a later time, e.g., the user left the video but eventually came back, and the player resumed the video from the playhead where it was stopped, you can send an optional boolean **media.resume** parameter inside the params bucket of the `sessionStart` call.
+* **`media.resume`** If the app determines that a session was closed and then resumed at a later time, e.g., the user left the video but eventually came back, and the player resumed the video from the playhead where it was stopped, you can send an optional boolean **media.resume** parameter inside the params bucket of the `sessionStart` call.
 

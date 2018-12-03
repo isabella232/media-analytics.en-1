@@ -15,7 +15,7 @@ snippet: y
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   ** ` [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)` **
+   **` [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)` **
 
    |  Variable Name  | Description  | Required  |
    |---|---|---|
@@ -24,7 +24,7 @@ snippet: y
    |  `length`  | Video length  | Yes  |
    |  `streamType`  | Stream type (see `constants MediaHeartbeat.StreamType.VOD`)  | Yes  |
 
-   ** `StreamType` constants:** 
+   **`StreamType` constants:** 
 
    |  Constant Name  | Description  |
    |---|---|
@@ -65,7 +65,7 @@ snippet: y
       };
       ```
 
-1. **Track the intention to start playback - ** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance: 
+1. **Track the intention to start playback -** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance: 
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -83,13 +83,13 @@ snippet: y
    >
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Track the actual start of playback - ** Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback -** Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
 
    ```js
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Track the completion of playback - ** Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback -** Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```js
    mediaHeartbeat.trackComplete();
@@ -105,7 +105,7 @@ snippet: y
    >
    >`trackSessionEnd` marks the end of a video tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Track all possible pause scenarios - ** Identify the event from the video player for video pause and call `trackPause`: 
+1. **Track all possible pause scenarios -** Identify the event from the video player for video pause and call `trackPause`: 
 
    ```js
    mediaHeartbeat.trackPause();

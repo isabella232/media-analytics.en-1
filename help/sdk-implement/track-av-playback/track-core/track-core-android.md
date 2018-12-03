@@ -15,7 +15,7 @@ snippet: y
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   ** ` [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)` **
+   **` [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)` **
 
    |  Variable Name  | Description  | Required  |
    |---|---|---|
@@ -25,7 +25,7 @@ snippet: y
    |  `streamType`  | Stream type (e.g., `MediaHeartbeat.StreamType.[VOD | LINEAR | VOD]`)  | Yes  |
    |  `mediaType`  | Media type (e.g., `MediaHeartbeat.MediaType.[Audio | Video]`  | Yes  |
 
-   ** `StreamType` constants:** 
+   **`StreamType` constants:** 
 
    |  Constant Name  | Description  |
    |---|---|
@@ -36,7 +36,7 @@ snippet: y
    |  `AUDIOBOOK`  | Stream type for Audio Book  |
    |  `PODCAST`  | Stream type for Podcast  |
 
-   ** `MediaType` constants:** The genereal format for creating the media object:
+   **`MediaType` constants:** The genereal format for creating the media object:
 
    |  Constant Name  | Description  |
    |---|---|
@@ -68,7 +68,7 @@ snippet: y
       mediaMetadata.put("programmer", "Sample programmer");
       ```
 
-1. **Track the intention to start playback - ** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. For example: 
+1. **Track the intention to start playback -** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. For example: 
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -88,7 +88,7 @@ snippet: y
    >
    >If you are not using custom media metadata, simply send an empty object for the second argument in `trackSessionStart`.
 
-1. **Track the actual start of playback - ** Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
@@ -97,7 +97,7 @@ snippet: y
    }
    ```
 
-1. **Track the completion of playback - ** Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback -** Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```java
    public void onVideoComplete(Observable observable, Object data) { 
@@ -119,7 +119,7 @@ snippet: y
    >
    >`trackSessionEnd` marks the end of a media tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
 
-1. **Track all possible pause scenarios - ** Identify the event from the media player for media pause and call `trackPause`: 
+1. **Track all possible pause scenarios -** Identify the event from the media player for media pause and call `trackPause`: 
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  

@@ -25,7 +25,7 @@ snippet: y
 
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   ** `AdBreakObject` reference:** 
+   **`AdBreakObject` reference:** 
 
 <table id="table_AC3C9A0B8F544DE9BB4A80D22457438F"> 
  <thead> 

@@ -64,7 +64,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance using the media information for content name, content ID, content length, and stream type.
 
-   ** `MediaObject` reference:** 
+   **`MediaObject` reference:** 
 
    |  Variable Name  | Description  | Required  |
    |---|---|---|
@@ -74,7 +74,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
    |  `streamType`  | Stream type  | Yes  |
    |  `mediaType`  | Media type (audio or video content)  | Yes  |
 
-   ** `StreamType` constants:** 
+   **`StreamType` constants:** 
 
    |  Constant Name  | Description  |
    |---|---|
@@ -85,7 +85,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
    |  `AUDIOBOOK`  | Stream type for audio book  |
    |  `PODCAST`  | Stream type for Podcast  |
 
-   ** `MediaType` constants:** 
+   **`MediaType` constants:** 
 
    |  Constant Name  | Description  |
    |---|---|
@@ -108,7 +108,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
     
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this content.
 
-1. **Track the intention to start playback - ** To begin tracking a session, call `trackSessionStart` on the Media Heartbeat instance. 
+1. **Track the intention to start playback -** To begin tracking a session, call `trackSessionStart` on the Media Heartbeat instance. 
 
    >[!IMPORTANT]
    >
@@ -118,17 +118,17 @@ Tracking core playback includes tracking media load, media start, media pause, a
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
 
-1. **Track the actual start of playback - ** Identify the event from the media player for the beginning of the playback, where the first frame of the content is rendered on the screen, and call `trackPlay`. 
+1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the playback, where the first frame of the content is rendered on the screen, and call `trackPlay`. 
 
-1. **Track the completion of playback - ** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`. 
+1. **Track the completion of playback -** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`. 
 
-1. **Track the end of the session - ** Identify the event from the media player for the unloading/closing of the playback, where the user closes the content and/or the content is completed and has been unloaded, and call `trackSessionEnd`. 
+1. **Track the end of the session -** Identify the event from the media player for the unloading/closing of the playback, where the user closes the content and/or the content is completed and has been unloaded, and call `trackSessionEnd`. 
 
    >[!IMPORTANT]
    >
    >`trackSessionEnd` marks the end of a tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
-1. **Track all possible pause scenarios - ** Identify the event from the media player for pause and call `trackPause`.
+1. **Track all possible pause scenarios -** Identify the event from the media player for pause and call `trackPause`.
 
    **Pause Scenarios -** Identify any scenario in which the Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
