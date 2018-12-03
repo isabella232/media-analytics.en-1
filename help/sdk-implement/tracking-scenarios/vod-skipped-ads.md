@@ -13,7 +13,8 @@ snippet: y
 
 This scenario comprises VOD content playback with a skipped ad. 
 
-#### One VOD with a skipped pre-roll ad
+### One VOD with a skipped pre-roll ad
+
 <table id="table_8308559859FA480C8263DFBBFC716ADB">  
  <desc>
    This is the same scenario as 

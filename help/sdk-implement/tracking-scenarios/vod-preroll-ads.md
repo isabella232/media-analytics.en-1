@@ -102,7 +102,8 @@ In this scenario, pre-roll ads have been inserted before the main content. Unles
 
 When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type: 
 
-#### Heartbeat Ad Start
+### Heartbeat Ad Start
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"start"`  |  |
@@ -110,7 +111,8 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning o
 
 Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call. 
 
-#### Heartbeat Ad Play Call
+### Heartbeat Ad Play Call
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
@@ -118,7 +120,8 @@ Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call i
 
 These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters: 
 
-#### Ad Heartbeats
+### Ad Heartbeats
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
@@ -128,7 +131,8 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 
 Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. This call looks like other `Heartbeat Ad` calls but contains a couple specific things:
 
-#### Heartbeat Ad Complete Call
+### Heartbeat Ad Complete Call
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"complete"`  |  |

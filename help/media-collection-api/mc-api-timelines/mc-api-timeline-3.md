@@ -17,7 +17,8 @@ snippet: y
 
 ![](assets/va_api_actions_3.png)
 
-#### VOD, pre-roll ads, pausing, buffering, viewing content to the end
+## VOD, pre-roll ads, pausing, buffering, viewing content to the end
+
 <table id="table_nq2_swp_qbb">  
  <thead> 
   <tr> 

@@ -79,7 +79,8 @@ This is the same scenario as the [](../../sdk-implement/tracking-scenarios/vod-n
 
 ## Parameters {#section_D52B325B99DA42108EF560873907E02C}
 
-#### Heartbeat Content Start
+### Heartbeat Content Start
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |

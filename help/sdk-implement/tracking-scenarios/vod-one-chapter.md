@@ -32,7 +32,8 @@ When chapter playback begins, a `Heartbeat Chapter Start` call is sent. If the b
 
 When this happens, a `Content Heartbeat` call goes out in the same interval. You can differentiate between the two by examining the event type and the asset type: 
 
-#### Heartbeat Chapter Start
+### Heartbeat Chapter Start
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"chapter_start"`  |  |

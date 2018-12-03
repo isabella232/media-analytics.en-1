@@ -15,7 +15,8 @@ snippet: y
 * [iOS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 
-#### Required Track APIs:
+## Required Track APIs:
+
 |  VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | N/A |
@@ -29,7 +30,8 @@ snippet: y
 
 All of the optional tracking APIs such as (Ads, Chapters, Bitrate change, Seeking, and Buffering) are now part of a single `trackEvent` API. The ` [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackEvent)` API receives a constant parameter that represents the type of event that it is intended to track:
 
-#### Optional trackEvent APIs:
+## Optional trackEvent APIs:
+
 |  VHL 1.x | VHL 2.x |
 |---|---|
 | Return a valid `AdBreakInfo` in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |

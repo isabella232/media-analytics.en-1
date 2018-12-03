@@ -17,7 +17,8 @@ snippet: y
 
 ![](assets/va_api_actions_2.png)
 
-#### VOD, Pre-roll ad, mid-roll ads, user abandons content early
+## VOD, Pre-roll ad, mid-roll ads, user abandons content early
+
 <table id="table_wpm_bmg_5cb">  
  <thead> 
   <tr> 

@@ -89,7 +89,8 @@ Via: 1.1 wsg.sanjose08
 >
 >The `/api/v1/` part of the Location header provides the API version. The part of the Location header after `[…]sessions/` is the Session ID.
 
-#### Response Codes
+## Response Codes
+
 |  HTTP Response Code  | Description  |
 |---|---|
 |  201  | Session created  |

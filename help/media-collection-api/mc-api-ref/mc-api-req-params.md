@@ -24,7 +24,8 @@ Might be confusing to go from Media Collection to SDK-oriented parameters refere
 
  -->
 
-#### Request Parameter Table
+## Request Parameter Table
+
 <table id="table_h44_bbl_rdb">  
  <thead> 
   <tr> 

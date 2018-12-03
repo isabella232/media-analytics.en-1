@@ -52,7 +52,8 @@ The connector bridge is designed to perform as follows:
 
 ## Public SceneGraph APIs {#section_jyd_hdz_y2b}
 
-#### ADBMobileConnector
+### ADBMobileConnector
+
 |  Category  | Method Name  | Description  |
 |---|---|---|
 |  ***Constants*** | |
@@ -97,7 +98,8 @@ The connector bridge is designed to perform as follows:
 |  | `mediaUpdatePlayhead`  | SceneGraph API to send playhead updates to MediaHeartbeat during video tracking.  |
 |  | `mediaUpdateQoS`  | SceneGraph API to send QoS updates to MediaHeartbeat during video tracking.  |
 
-#### SceneGraphConstants
+### SceneGraphConstants
+
 |  Constant Name  | Description  |
 |---|---|
 |  `API_RESPONSE`  | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field  |
@@ -110,7 +112,8 @@ The connector bridge is designed to perform as follows:
 |  `AUDIENCE_DPID`  | Used as `apiName` for `audienceDpid`  |
 |  `AUDIENCE_DPUUID`  | Used as `apiName` for `audienceDpuuid`  |
 
-#### adbmobileTask Node
+### adbmobileTask Node
+
 <table id="table_u41_krx_1bb">  
  <thead> 
   <tr> 
@@ -170,7 +173,8 @@ The connector bridge is designed to perform as follows:
  </tbody> 
 </table>
 
-#### adbmobile.brs
+### adbmobile.brs
+
 |  Name  | API Signature  | Input  | Return Type  |
 |---|---|---|---|
 |  `getADBMobileConnectorInstance`  | `ADBMobile().getADBMobileConnectorInstance()`  | `adbmobileTask`  | `ADBMobileConnector`  |
@@ -181,7 +185,8 @@ The connector bridge is designed to perform as follows:
 
 In addition to methods above, `ADBMobileConnector` also exposes all the `ADBMobile` constants for the following:
 
-#### ADBMobile Constants
+### ADBMobile Constants
+
 |  Feature  | Constant Name  | Description  |
 |---|---|---|
 |  Versioning  | `version`  | Constant for retreiving AdobeMobileLibrary verison info  |
@@ -192,7 +197,8 @@ In addition to methods above, `ADBMobileConnector` also exposes all the `ADBMobi
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnet because they do not use any components for Brightscript that are unavailable in SceneGraph nodes. For more information on these methods, refer to the table below:
 
-#### Global Methods for MediaHeartbeat
+### Global Methods for MediaHeartbeat
+
 <table id="table_etf_rrx_1bb">  
  <thead> 
   <tr> 

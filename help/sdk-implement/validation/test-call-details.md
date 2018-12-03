@@ -17,7 +17,8 @@ This topic presents detailed call information for the validation test topics.
 
 ## Start the video player {#section_qts_xff_f2b}
 
-#### Video Analytics start call
+### Video Analytics start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `pev2` | ms_s |
@@ -35,7 +36,8 @@ This topic presents detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Length for linear streams should be set to the best estimate for the current show.
 
-#### Standard metadata in Video Analytics start call
+### Standard metadata in Video Analytics start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `a.media.show` | Show Title |
@@ -53,7 +55,8 @@ This topic presents detailed call information for the validation test topics.
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-#### Heartbeat start call
+### Heartbeat start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | start |
@@ -67,7 +70,8 @@ This topic presents detailed call information for the validation test topics.
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-#### Video metadata in Video Analytics start call
+### Video metadata in Video Analytics start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `custom.metadataA` | value |
@@ -78,7 +82,8 @@ This topic presents detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Playhead position for linear streams on video start should be set to the seconds elapsed since the start of the current show, not 0.
 
-#### Heartbeat Analytics start call
+### Heartbeat Analytics start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | aa_start |
@@ -90,13 +95,15 @@ This topic presents detailed call information for the validation test topics.
 | `l:stream:type` | vod |
 | `s:asset:type` | main |
 
-#### Video metadata in Heartbeat start call
+### Video metadata in Heartbeat start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-#### Standard metadata in Heartbeat start call
+### Standard metadata in Heartbeat start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:a.media.show` | Show |
@@ -121,7 +128,8 @@ This topic presents detailed call information for the validation test topics.
 
 ## View ad playback {#section_wz3_yff_f2b}
 
-#### Video Analytics ad start call
+### Video Analytics ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `pev2` | msa_s |
@@ -140,7 +148,8 @@ This topic presents detailed call information for the validation test topics.
 
 **Note:** Additional context data variables should be present and contain metadata. See metadata details below.
 
-#### Heartbeat ad start call
+### Heartbeat ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | start |
@@ -153,13 +162,15 @@ This topic presents detailed call information for the validation test topics.
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-#### Video metadata in Video Analytics ad start call
+### Video metadata in Video Analytics ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-#### Standard metadata in Video Analytics ad start call
+### Standard metadata in Video Analytics ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `a.media.show` | Show Title |
@@ -182,7 +193,8 @@ This topic presents detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Ad length may be set to -1 if not available on ad start.
 
-#### Heartbeat Analytics ad start call
+### Heartbeat Analytics ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | aa_ad_start |
@@ -193,13 +205,15 @@ This topic presents detailed call information for the validation test topics.
 | `l:stream:type` | vod |
 | `s:asset:type` | ad |
 
-#### Video metadata in Heartbeat ad start call
+### Video metadata in Heartbeat ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-#### Standard metadata in Heartbeat ad start call
+### Standard metadata in Heartbeat ad start call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:a.media.show` | Show |
@@ -222,7 +236,8 @@ This topic presents detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Ad length may be set to -1 if not available on ad start.
 
-#### Heartbeat ad complete call
+### Heartbeat ad complete call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | complete |
@@ -233,7 +248,8 @@ This topic presents detailed call information for the validation test topics.
 | `l:stream:type` | vod |
 | `s:asset:type` | ad |
 
-#### Heartbeat ad play call
+### Heartbeat ad play call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | play |
@@ -246,7 +262,8 @@ This topic presents detailed call information for the validation test topics.
 
 ## Play main content {#section_u1l_1gf_f2b}
 
-#### Heartbeat play call
+### Heartbeat play call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | play |

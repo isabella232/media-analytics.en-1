@@ -29,7 +29,8 @@ Unless specified, the network calls in this scenario are the same as the calls i
 
 ## Parameters {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
 
-#### Heartbeat Buffer
+### Heartbeat Buffer
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"buffer"`  |  |

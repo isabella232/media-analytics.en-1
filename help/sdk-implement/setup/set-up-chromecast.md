@@ -13,7 +13,6 @@ snippet: y
 
 * The AppMeasurement and VisitorAPI libraries in the Standard JS SDK are not certified to work on OTT platforms. In the Chromecast JS SDK, the Video Heartbeats Library (VHL), Analytics, and VisitorAPI are all built-in to the single, unified, certified-for-Chromecast SDK. 
 * The Chromecast SDK is much more lightweight than the standard JS SDK. This is very crucial for the lower-end hardware used by OTT platforms.
-
 * **Obtain valid configuration parameters for Heartbeats -** These parameters can be obtained from an Adobe representative after you set up your media analytics account. 
 * **Provide the following capabilities in your media player:**
 
@@ -133,7 +132,8 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 
  -->
 
-       #### ADBMobile Config Parameters for mediaHeartbeat key:
+       ADBMobile Config Parameters for mediaHeartbeat key:
+
     <table id="table_00A5AE3DE21546DC89F561BAFEC6E710">  
  <thead> 
   <tr> 

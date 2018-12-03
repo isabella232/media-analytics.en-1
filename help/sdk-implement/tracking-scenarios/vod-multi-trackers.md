@@ -19,7 +19,8 @@ Unless specified, the network calls are the same as the [](../../sdk-implement/t
 
 ## Parameters {#section_45D7B10031524411B91E2C569F7818B0}
 
-#### Heartbeat session
+### Heartbeat session
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:sid`  | Unique session ID  | A unique session ID that exists in all of the heartbeat network calls until the `trackSessionEnd` method is called.  |

@@ -17,7 +17,8 @@ This scenario is the same as the [](../../sdk-implement/tracking-scenarios/vod-n
 
 ## Parameters {#section_D52B325B99DA42108EF560873907E02C}
 
-#### Heartbeat Session
+### Heartbeat Session
+
 <table id="table_A74CD93A863B4BD892CAA92646428F17">  
  <thead> 
   <tr> 

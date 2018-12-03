@@ -158,12 +158,14 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 
 You can use the following constants to track media events:
 
-#### Other constants
+### Other constants
+
 |  Constant  | Description  |
 |---|---|
 | `ERROR_SOURCE_PLAYER`  | Constant for Error source being Player  |
 
-#### MediaObjectkey constants (Used as keys within MediaObject instances)
+### MediaObjectkey constants (Used as keys within MediaObject instances)
+
 <table id="table_cqh_44m_ddb">  
  <thead> 
   <tr> 
@@ -204,13 +206,15 @@ ADBMobile().mediaTrackLoad(mediaInfo,&nbsp;mediaContextData)
  </tbody> 
 </table>
 
-#### Content type constants
+### Content type constants
+
 |  Constant  | Description  |
 |---|---|
 |  `MEDIA_STREAM_TYPE_LIVE`  | Constant for Stream Type LIVE  |
 |  `MEDIA_STREAM_TYPE_VOD`  | Constant for Stream Type VOD  |
 
-#### Event Type Constants (Used for the trackEvent call)
+### Event Type Constants (Used for the trackEvent call)
+
 |  Constant  | Description  |
 |---|---|
 |  `MEDIA_BUFFER_START`  | Event Type for Buffer Start  |

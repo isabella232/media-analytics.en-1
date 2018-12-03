@@ -24,7 +24,8 @@ In this scenario, there is one live asset with no ads played for 40 secs after j
 
 Many of the same values that you see on Adobe Analytics Content Start Calls you will also see on Heartbeat Content Start Calls. You will also see lots of other parameters that Adobe uses to populate the various Video reports in Adobe Analytics. We won't be covering all of them here, just the really important ones.
 
-#### Heartbeat Content Start
+### Heartbeat Content Start
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |

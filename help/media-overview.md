@@ -64,7 +64,8 @@ Some of the many benefits of the Heartbeats method include:
 * **Partnerships with Certified Ratings Partners -** Adobe partners with audience ratings partner Nielsen to provide neutral census third party measurement to allow for trusted, certified ratings. 
 * **Standardized solution across all platforms -** Enable consistent, standardized variables across all of your media and platforms to allow for a more efficient cross-campaign, device and vendor comparison.
 
-#### Comparison Chart
+### Comparison Chart
+
 |  |**Video Analytics - Milestone** |**Media Analytics - Heartbeats** |
 |---|---|---|
 | **Media Events** | High-level Standard Events  | Detailed and Custom Events every 10s for main content, every 1s for ads |

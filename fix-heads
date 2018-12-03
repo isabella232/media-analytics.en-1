@@ -1,0 +1,31 @@
+for i in  \
+./help/sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md \
+./help/sdk-implement/va-1x-to-2x/1x-2x-api-change.md \
+./help/sdk-implement/setup/setup-overview.md \
+./help/sdk-implement/setup/set-up-chromecast.md \
+./help/sdk-implement/cookbook/sdk-track-scenegraph.md \
+./help/sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md \
+./help/sdk-implement/tracking-scenarios/vod-buffering.md \
+./help/sdk-implement/tracking-scenarios/vod-preroll-ads.md \
+./help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md \
+./help/sdk-implement/tracking-scenarios/vod-multi-trackers.md \
+./help/sdk-implement/tracking-scenarios/live-main-content.md \
+./help/sdk-implement/tracking-scenarios/vod-one-chapter.md \
+./help/sdk-implement/tracking-scenarios/vod-multi-track-one-session.md \
+./help/sdk-implement/tracking-scenarios/vod-skipped-ads.md \
+./help/sdk-implement/tracking-scenarios/live-sequential.md \
+./help/sdk-implement/validation/test1-standard-playback.md \
+./help/sdk-implement/validation/test-call-details.md \
+./help/media-collection-api/mc-api-ref/mc-api-req-params.md \
+./help/media-collection-api/mc-api-ref/mc-api-sessions-req.md \
+./help/media-collection-api/mc-api-timelines/mc-api-timeline-3.md \
+./help/media-collection-api/mc-api-timelines/mc-api-timeline-2.md \
+./help/media-collection-api/mc-api-timelines/mc-api-timeline-1.md \
+./help/media-overview.md \
+./help/nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md \
+./help/nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-test1.md 
+do
+echo $i
+grep "^#" $i
+read ans
+done

@@ -23,7 +23,8 @@ There are three main SDK components involved in media tracking:
 
 1. Create a `MediaHeartbeatConfig` instance and set your config values. 
 
-   #### Config parameters:
+   **Config parameters:**
+
    |  Variable Name  | Description  | Required  | Default Value  |
    |---|---|---|---|
    |  `trackingServer`  | Tracking server for media analytics. This is different from your analytics tracking server.  | Yes  | Empty String  |
@@ -192,8 +193,5 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 ## Primetime Media SDK Documentation {#section_tzh_llk_t2b}
 
 * **Android**: [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/2.5/index.html#Initialize_and_configure_video_analytics_)
-
 * **DHLS**: [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/index.html#Initialize_and_configure_video_analytics)
-
 * **iOS**: [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Initialize_and_configure_video_analytics_)
-

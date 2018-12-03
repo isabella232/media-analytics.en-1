@@ -17,7 +17,8 @@ Detailed call information for the validation test topics.
 
 ## Start the Video Player {#section_qts_xff_f2b}
 
-#### Video Analytics Start Call
+### Video Analytics Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `pev2` | ms_s |
@@ -36,7 +37,8 @@ Detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Length for linear streams should be set to the best estimate for the current show.
 
-#### Nielsen Metadata in Video Analytics Start Call
+### Nielsen Metadata in Video Analytics Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `a.nielsen.appid` | abc-123 |
@@ -48,7 +50,8 @@ Detailed call information for the validation test topics.
 | `a.nielsen.accmethod` | 0 |
 | `a.nielsen.ctype` | VIDEO |
 
-#### Standard Metadata in Video Analytics Start Call
+### Standard Metadata in Video Analytics Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `a.media.show` | Show Title |
@@ -68,7 +71,8 @@ Detailed call information for the validation test topics.
 
 **Notes:** See Nielsen TCR metadata info here: [](https://marketingbeta.adobe.com/resources/help/nielsen/r_tcr_medata.html)
 
-#### Heartbeat Start Call
+### Heartbeat Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | start |
@@ -83,7 +87,8 @@ Detailed call information for the validation test topics.
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-#### Video Metadata in Video Analytics Start Call
+### Video Metadata in Video Analytics Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `custom.metadataA` | value |
@@ -94,7 +99,8 @@ Detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Playhead position for linear streams on video start should be set to the seconds elapsed since the start of the current show, not 0.
 
-#### Heartbeat Analytics Start Call
+### Heartbeat Analytics Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | aa_start |
@@ -106,13 +112,15 @@ Detailed call information for the validation test topics.
 | `l:stream:type` | vod |
 | `s:asset:type` | main |
 
-#### Video Metadata in Heartbeat Start Call
+### Video Metadata in Heartbeat Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-#### Nielsen Metadata in Heartbeat Start Call
+### Nielsen Metadata in Heartbeat Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:a.nielsen.appid` | abc-123 |
@@ -124,7 +132,8 @@ Detailed call information for the validation test topics.
 | `s:meta:a.nielsen.accmethod` | 0 |
 | `s:meta:a.nielsen.ctype` | VIDEO |
 
-#### Standard Metadata in Heartbeat Start Call
+### Standard Metadata in Heartbeat Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:a.media.show` | Show |
@@ -147,7 +156,8 @@ Detailed call information for the validation test topics.
 * This call indicates that the heartbeat library has requested that an analytics pev2=ms_s call be sent to the analytics server.
 * This call does not contain custom metadata.
 
-#### Nielsen Start Call
+### Nielsen Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `st` | dcr |
@@ -167,7 +177,8 @@ Detailed call information for the validation test topics.
 
 ## View Ad Playback {#section_wz3_yff_f2b}
 
-#### Video Analytics Ad Start Call
+### Video Analytics Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `pev2` | msa_s |
@@ -187,7 +198,8 @@ Detailed call information for the validation test topics.
 
 **Note:** Additional context data variables should be present and contain metadata. See metadata details below.
 
-#### Heartbeat Ad Start Call
+### Heartbeat Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | start |
@@ -201,13 +213,15 @@ Detailed call information for the validation test topics.
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-#### Video Metadata in Video Analytics Ad Start Call
+### Video Metadata in Video Analytics Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-#### Nielsen Metadata in Video Analytics Ad Start Call
+### Nielsen Metadata in Video Analytics Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `a.nielsen.appid` | abc-123 |
@@ -219,7 +233,8 @@ Detailed call information for the validation test topics.
 | `a.nielsen.accmethod` | 0 |
 | `a.nielsen.ctype` | VIDEO |
 
-#### Standard Metadata in Video Analytics Ad Start Call
+### Standard Metadata in Video Analytics Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `a.media.show` | Show Title |
@@ -242,7 +257,8 @@ Detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Ad length may be set to -1 if not available on ad start.
 
-#### Heartbeat Analytics Ad Start Call
+### Heartbeat Analytics Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | aa_ad_start |
@@ -253,13 +269,15 @@ Detailed call information for the validation test topics.
 | `l:stream:type` | vod |
 | `s:asset:type` | ad |
 
-#### Video Metadata in Heartbeat Ad Start Call
+### Video Metadata in Heartbeat Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-#### Nielsen Metadata in Heartbeat Ad Start Call
+### Nielsen Metadata in Heartbeat Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:a.nielsen.appid` | abc-123 |
@@ -271,7 +289,8 @@ Detailed call information for the validation test topics.
 | `s:meta:a.nielsen.accmethod` | 0 |
 | `s:meta:a.nielsen.ctype` | VIDEO |
 
-#### Standard Metadata in Heartbeat Ad Start Call
+### Standard Metadata in Heartbeat Ad Start Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:meta:a.media.show` | Show |
@@ -294,7 +313,8 @@ Detailed call information for the validation test topics.
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Ad length may be set to -1 if not available on ad start.
 
-#### Heartbeat Ad Complete Call
+### Heartbeat Ad Complete Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | complete |
@@ -305,7 +325,8 @@ Detailed call information for the validation test topics.
 | `l:stream:type` | vod |
 | `s:asset:type` | ad |
 
-#### Heartbeat Ad Play Call
+### Heartbeat Ad Play Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | play |
@@ -318,7 +339,8 @@ Detailed call information for the validation test topics.
 
 ## Play Main Content {#section_u1l_1gf_f2b}
 
-#### Heartbeat Play Call
+### Heartbeat Play Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `s:event:type` | play |
@@ -335,7 +357,8 @@ Detailed call information for the validation test topics.
 * The playhead position should increment by 10 with every play call.
 * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
 
-#### Nielsen Play Call
+### Nielsen Play Call
+
 |  Parameter | Value (sample) |
 |---|---|
 | `st` | dcr |

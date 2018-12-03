@@ -24,7 +24,8 @@ This scenario has one VOD asset, with no ads, which is played once from beginnin
 
 Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. There are many parameters that Adobe uses to populate the various video reports, but only the most important parameters are listed in the following table: 
 
-#### Heartbeat Content Start
+### Heartbeat Content Start
+
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |

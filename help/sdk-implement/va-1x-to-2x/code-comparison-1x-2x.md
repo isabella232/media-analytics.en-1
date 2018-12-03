@@ -20,13 +20,13 @@ All of the configuration parameters and tracking APIs are now consolidated into 
 **Configuration properties changes:**
 
 * `sdk` - Renamed to `appVersion`
-
 * `publisher` - Removed; Experience Cloud Org ID is used instead as a publisher
 * `quiteMode` - Removed
 
 The following tables provide side-by-side code comparisons between 1.x and 2.x, covering Initialization, Core Playback, Ad Playback, Chapter Playback, and some additional events. 
 
-#### VHL Code Comparison: INITIALIZATION
+## VHL Code Comparison: INITIALIZATION
+
 <table id="table_ay5_rnw_2bb" class="codescroll">  
  <thead> 
   <tr> 
@@ -325,7 +325,8 @@ this._mediaHeartbeat&nbsp;=&nbsp;
  </tbody> 
 </table>
 
-#### VHL Code Comparison: CORE PLAYBACK
+## VHL Code Comparison: CORE PLAYBACK
+
 <table id="table_emn_nbx_2bb" class="codescroll">  
  <thead> 
   <tr> 
@@ -823,7 +824,8 @@ VideoPlayer.prototype.getVideoInfo&nbsp;=&nbsp;function()&nbsp;{
  </tbody> 
 </table>
 
-#### VHL Code Comparison: AD PLAYBACK
+## VHL Code Comparison: AD PLAYBACK
+
 <table id="table_rsr_1qs_fbb" class="codescroll">  
  <thead> 
   <tr> 
@@ -1243,7 +1245,8 @@ VideoPlayer.prototype.getVideoInfo&nbsp;=&nbsp;function()&nbsp;{
  </tbody> 
 </table>
 
-#### VHL Code Comparison: CHAPTER PLAYBACK
+## VHL Code Comparison: CHAPTER PLAYBACK
+
 <table id="table_qpl_kts_fbb" class="codescroll">  
  <thead> 
   <tr> 
@@ -1468,7 +1471,8 @@ VideoPlayer.prototype.getVideoInfo&nbsp;=&nbsp;function()&nbsp;{
  </tbody> 
 </table>
 
-#### VHL Code Comparison: OTHER EVENTS
+## VHL Code Comparison: OTHER EVENTS
+
 <table id="table_opb_qvs_fbb" class="codescroll">  
  <thead> 
   <tr> 
