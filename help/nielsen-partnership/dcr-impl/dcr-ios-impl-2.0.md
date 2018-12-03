@@ -175,9 +175,8 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
 
    >[!NOTE]
    >
-   >**[ DEPRECATED** (and removed from `onMainVideoLoaded` example above): ]**
+   >[ DEPRECATED** (and removed from `onMainVideoLoaded` example above): ]
       
-   ```   >
    ... 
    [mediaObject setValue:@{ 
            @"tv":@"true", 

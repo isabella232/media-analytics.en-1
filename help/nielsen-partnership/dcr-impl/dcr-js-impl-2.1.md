@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-#  JavaScript 2.1{#for-javascript}
+# JavaScript 2.1{#for-javascript}
 
 This JavaScript sample code helps you implement the Video Heartbeat Library for Nielsen and configure opt-in/opt-out for Nielsen data collection.
 

@@ -142,7 +142,7 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
 * **Heartbeats (Media Analytics)**Always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
 
-## 1.x SDK Documentation {#section_acj_tkk_t2b}
+## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
 <table id="table_DCD074D23E704CA79BC3734D1CF59A5B"> 
  <thead> 
