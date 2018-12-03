@@ -41,7 +41,7 @@ The VA library will only automatically resume sessions if the application was no
       ); 
        
       // Set to true if this is a resume playback scenario 
-      mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.VideoResumed, true);</b>  
+      mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.VideoResumed, true);
        
       _heartbeat.trackSessionStart(mediaInfo, videoMetadata); 
   }

@@ -26,35 +26,26 @@ Instantiate a standard video metdata object, populate the desired variables, and
 ```
 // Sample implementation for using standard video metadata keys 
  
-NSMutableDictionary *standardVideoMetadata =  
-  [[NSMutableDictionary alloc] init]; 
+NSMutableDictionary *standardVideoMetadata = [[NSMutableDictionary alloc] init]; 
  
-[standardVideoMetadata setObject:@"Sample Show"  
-  forKey:ADBVideoMetadataKeySHOW]; 
+[standardVideoMetadata setObject:@"Sample Show" forKey:ADBVideoMetadataKeySHOW]; 
  
-[standardVideoMetadata setObject:@"Sample Season"  
-  forKey:ADBVideoMetadataKeySEASON]; 
+[standardVideoMetadata setObject:@"Sample Season" forKey:ADBVideoMetadataKeySEASON]; 
  
-[standardVideoMetadata setObject:@"Sample Episode"  
-  forKey:ADBVideoMetadataKeyEPISODE]; 
+[standardVideoMetadata setObject:@"Sample Episode" forKey:ADBVideoMetadataKeyEPISODE]; 
  
-[mediaObject setValue:standardVideoMetadata  
-  forKey:ADBMediaObjectKeyStandardMediaMetadata];
+[mediaObject setValue:standardVideoMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
 ```
 
 ```
 // Sample implementation for using standard audio metadata keys 
  
-NSMutableDictionary *standardAudioMetadata =  
-  [[NSMutableDictionary alloc] init];  
+NSMutableDictionary *standardAudioMetadata = [[NSMutableDictionary alloc] init];  
  
-[standardAudioMetadata setObject:@"Sample Album"    
-  forKey:ADBAudioMetadataKeyALBUM];  
+[standardAudioMetadata setObject:@"Sample Album"   forKey:ADBAudioMetadataKeyALBUM];  
  
-[standardAudioMetadata setObject:@"Sample Label"    
-  forKey:ADBAudioMetadataKeyLABEL]; 
+[standardAudioMetadata setObject:@"Sample Label"   forKey:ADBAudioMetadataKeyLABEL]; 
  
-[mediaObject setValue:standardAudioMetadata    
-  forKey:ADBMediaObjectKeyStandardMediaMetadata];
+[mediaObject setValue:standardAudioMetadata   forKey:ADBMediaObjectKeyStandardMediaMetadata];
 ```
 

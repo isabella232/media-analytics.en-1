@@ -41,13 +41,11 @@ You can obtain the Nielsen config key from your Adobe representative. For more i
 
 ```
 // Media Heartbeat Initialization 
-ADBMediaHeartbeatConfig *config =  
-  [[ADBMediaHeartbeatConfig alloc] init]; 
+ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
 ... 
 // other MediaHeartbeat config parameters 
 ... 
-config.nielsenConfigKey =  
-  @"SAMPLE_NIELSEN_CONFIG_KEY";
+config.nielsenConfigKey = @"SAMPLE_NIELSEN_CONFIG_KEY";
 ```
 
 ## Implement Nielsen Metadata {#section_1224320FBF524E1E8199ED73AFD63917}
@@ -70,38 +68,22 @@ The following types of metadata must be configured:
       streamType                : ADBMediaHeartbeatStreamTypeVOD]; 
    
   // Create content metadata object 
-  NSMutableDictionary *contentMetadata =  
-    [[NSMutableDictionary alloc] init]; 
-  [contentMetadata setObject:< 
-<i>sample-client-id</i>> forKey:ADBNielsenContentMetadataKeyCLIENT_ID]; 
-  [contentMetadata setObject:< 
-<i>sample-vcid</i>> forKey:ADBNielsenContentMetadataKeyVCID]; 
-  [contentMetadata setObject:< 
-<i>sample-type</i>> forKey:ADBNielsenContentMetadataKeyTYPE]; 
-  [contentMetadata setObject:< 
-<i>sample-asset-id</i>> forKey:ADBNielsenContentMetadataKeyASSET_ID]; 
-  [contentMetadata setObject:< 
-<i>sample-y-n</i>> forKey:ADBNielsenContentMetadataKeyIS_FULL_EPISODE]; 
-  [contentMetadata setObject:< 
-<i>sample-program-name</i>> forKey:ADBNielsenContentMetadataKeyPROGRAM]; 
-  [contentMetadata setObject:< 
-<i>sample-title</i>> forKey:ADBNielsenContentMetadataKeyTITLE]; 
-  [contentMetadata setObject:< 
-<i>sample-sega</i>> forKey:ADBNielsenContentMetadataKeySEG_A]; 
-  [contentMetadata setObject:< 
-<i>sample-segb</i>> forKey:ADBNielsenContentMetadataKeySEG_B]; 
-  [contentMetadata setObject:< 
-<i>sample-segc</i>> forKey:ADBNielsenContentMetadataKeySEG_C]; 
-  [contentMetadata setObject:< 
-<i>sample-cross-ref1</i>> forKey:ADBNielsenContentMetadataKeyCROSS_REFERENCE_ID_1]; 
-  [contentMetadata setObject:< 
-<i>sample-cross-ref2</i>> forKey:ADBNielsenContentMetadataKeyCROSS_REFERENCE_ID_2]; 
-  [contentMetadata setObject:< 
-<i>sample-air-date</i>> forKey:ADBNielsenContentMetadataKeyAIR_DATE]; 
-  [contentMetadata setObject:< 
-<i>sample-ad-load-type</i>> forKey:ADBNielsenContentMetadataKeyAD_LOAD_TYPE]; 
-  [contentMetadata setObject:< 
-<i>sample-ads-included</i>> forKey:ADBNielsenContentMetadataKeyADS_INCLUDED]; 
+  NSMutableDictionary *contentMetadata =  [[NSMutableDictionary alloc] init]; 
+  [contentMetadata setObject:<sample-client-id> forKey:ADBNielsenContentMetadataKeyCLIENT_ID]; 
+  [contentMetadata setObject:<sample-vcid> forKey:ADBNielsenContentMetadataKeyVCID]; 
+  [contentMetadata setObject:<sample-type> forKey:ADBNielsenContentMetadataKeyTYPE]; 
+  [contentMetadata setObject:<sample-asset-id> forKey:ADBNielsenContentMetadataKeyASSET_ID]; 
+  [contentMetadata setObject:<sample-y-n> forKey:ADBNielsenContentMetadataKeyIS_FULL_EPISODE]; 
+  [contentMetadata setObject:<sample-program-name> forKey:ADBNielsenContentMetadataKeyPROGRAM]; 
+  [contentMetadata setObject:<sample-title> forKey:ADBNielsenContentMetadataKeyTITLE]; 
+  [contentMetadata setObject:<sample-sega> forKey:ADBNielsenContentMetadataKeySEG_A]; 
+  [contentMetadata setObject:<sample-segb> forKey:ADBNielsenContentMetadataKeySEG_B]; 
+  [contentMetadata setObject:<sample-segc> forKey:ADBNielsenContentMetadataKeySEG_C]; 
+  [contentMetadata setObject:<sample-cross-ref1> forKey:ADBNielsenContentMetadataKeyCROSS_REFERENCE_ID_1]; 
+  [contentMetadata setObject:<sample-cross-ref2> forKey:ADBNielsenContentMetadataKeyCROSS_REFERENCE_ID_2]; 
+  [contentMetadata setObject:<sample-air-date> forKey:ADBNielsenContentMetadataKeyAIR_DATE]; 
+  [contentMetadata setObject:<sample-ad-load-type> forKey:ADBNielsenContentMetadataKeyAD_LOAD_TYPE]; 
+  [contentMetadata setObject:<sample-ads-included> forKey:ADBNielsenContentMetadataKeyADS_INCLUDED]; 
    
   // Set the content metadata on mediaInfo object 
   [mediaObject setValue:contentMetadata  
@@ -123,12 +105,10 @@ The following types of metadata must be configured:
    
   // Create channel info metadata object 
   NSMutableDictionary *channelInfo = [[NSMutableDictionary alloc] init]; 
-      [channelInfo setObject:< 
-<i>sample-channel-name</i>> forKey:ADBNielsenChannelMetadataKeyCHANNEL_NAME]; 
+      [channelInfo setObject:<sample-channel-name> forKey:ADBNielsenChannelMetadataKeyCHANNEL_NAME]; 
    
   // Set the channel info metadata on mediaInfo object 
-  [mediaObject setValue:channelInfo  
-    forKey:MEDIAHEARTBEAT_NIELSEN_CHANNEL_METADATA];
+  [mediaObject setValue:channelInfo forKey:MEDIAHEARTBEAT_NIELSEN_CHANNEL_METADATA];
   ```
 
 * **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for iOS, see [Track ads](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-ads_ios.html).
@@ -143,10 +123,8 @@ The following types of metadata must be configured:
    
   // Create Ad metadata object 
   NSMutableDictionary *adMetadata = [[NSMutableDictionary alloc] init]; 
-      [adMetadata setObject:< 
-<i>sample-asset-id</i>> forKey:ADBNielsenAdMetadataKeyASSET_ID]; 
-      [adMetadata setObject:< 
-<i>sample-ad-type</i>> forKey:ADBNielsenAdMetadataKeyTYPE]; 
+      [adMetadata setObject:<sample-asset-id> forKey:ADBNielsenAdMetadataKeyASSET_ID]; 
+      [adMetadata setObject:<sample-ad-type> forKey:ADBNielsenAdMetadataKeyTYPE]; 
    
   // Set the ad metadata on adObject 
   [adObject setValue:adMetadata forKey:MEDIAHEARTBEAT_NIELSEN_AD_METADATA];
@@ -230,7 +208,7 @@ To implement MTVR in iOS 2.1, make the following changes to your existing Nielse
    For example: 
 
    ```
-   \- (void)onTimedMetadata:(NSString *)id3Tag { 
+   - (void)onTimedMetadata:(NSString *)id3Tag { 
        if (id3Tag) { 
            if ([id3Tag rangeOfString:@"www.nielsen.com"].length > 0) { 
                [_playerPlugin trackTimedMetadata:id3Tag]; 

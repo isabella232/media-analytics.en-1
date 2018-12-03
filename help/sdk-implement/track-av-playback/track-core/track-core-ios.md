@@ -84,7 +84,7 @@ snippet: y
    >The second value is the custom video metadata object name that you created in step 2.
 
    ```
-   -(void)onMainVideoLoaded:(NSNotification *)notification { 
+   - (void)onMainVideoLoaded:(NSNotification *)notification { 
    //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil]; 
        [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata]; 
    }
@@ -101,7 +101,7 @@ snippet: y
 1. **Track the actual start of playback - ** Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
 
    ```
-   -(void)onVideoPlay:(NSNotification *)notification { 
+   - (void)onVideoPlay:(NSNotification *)notification { 
        [_mediaHeartbeat trackPlay]; 
    }
    ```
@@ -109,7 +109,7 @@ snippet: y
 1. **Track the completion of playback - ** Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```
-   -(void)onVideoComplete:(NSNotification *)notification { 
+   - (void)onVideoComplete:(NSNotification *)notification { 
        [_mediaHeartbeat trackComplete]; 
    }
    ```
@@ -129,7 +129,7 @@ snippet: y
 1. **Track all possible pause scenarios - ** Identify the event from the video player for video pause and call `trackPause`: 
 
    ```
-   -(void)onVideoPause:(NSNotification *)notification { 
+   - (void)onVideoPause:(NSNotification *)notification { 
        [_mediaHeartbeat trackPause]; 
    }
    ```
@@ -144,7 +144,7 @@ snippet: y
 1. Identify the event from the player for video play and/or video resume from pause and call `trackPlay`: 
 
    ```
-   -(void)onVideoPlay:(NSNotification *)notification { 
+   - (void)onVideoPlay:(NSNotification *)notification { 
        [_mediaHeartbeat trackPlay]; 
    }
    ```

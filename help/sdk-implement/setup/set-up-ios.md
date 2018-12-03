@@ -70,7 +70,6 @@ snippet: y
    ```
    #import "ADBMediaHeartbeat.h" 
    #import "ADBMediaHeartbeatConfig.h" 
-   
    ```
 
 1. Create a `ADBMediaHeartbeatConfig` instance.
@@ -82,20 +81,13 @@ snippet: y
    ```
    // Media Heartbeat Initialization 
    ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
-   config.trackingServer =  
-<i><SAMPLE_HEARTBEAT_TRACKING_SERVER></i>; 
-   config.channel        =  
-<i><SAMPLE_HEARTBEAT_CHANNEL></i>; 
-   config.appVersion     =  
-<i><SAMPLE_HEARTBEAT_SDK_VERSION></i>; 
-   config.ovp            =  
-<i><SAMPLE_HEARTBEAT_OVP_NAME></i>; 
-   config.playerName     =  
-<i><SAMPLE_PLAYER_NAME></i>; 
-   config.ssl            =  
-<i><YES/NO></i>; 
-   config.debugLogging   =  
-<i><YES/NO></i>; 
+   config.trackingServer = <SAMPLE_HEARTBEAT_TRACKING_SERVER>; 
+   config.channel        = <SAMPLE_HEARTBEAT_CHANNEL>; 
+   config.appVersion     = <SAMPLE_HEARTBEAT_SDK_VERSION>; 
+   config.ovp            = <SAMPLE_HEARTBEAT_OVP_NAME>; 
+   config.playerName     = <SAMPLE_PLAYER_NAME>; 
+   config.ssl            = <YES/NO>; 
+   config.debugLogging   = <YES/NO>; 
    
    ```
 
@@ -154,8 +146,8 @@ Perform the following steps in your Xcode project. This guide is written assumin
 
 1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
 
-    * [!DNL MediaSDK_TV.a]
-    * [!DNL AdobeMobileLibrary_TV.a] 
-    * [!DNL libsqlite3.0.tbd] 
-    * [!DNL SystemConfiguration.framework]
+   * [!DNL MediaSDK_TV.a]
+   * [!DNL AdobeMobileLibrary_TV.a] 
+   * [!DNL libsqlite3.0.tbd] 
+   * [!DNL SystemConfiguration.framework]
 

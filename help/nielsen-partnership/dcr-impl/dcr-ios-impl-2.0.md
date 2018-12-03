@@ -133,24 +133,24 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
 
 1. Update the Nielsen content metadata to include the following key/values:
 
-<table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Key </th> 
-   <th colname="col2" class="entry"> Value </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
-      <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> adloadtype </span> = 1. </li> 
-      <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> adloadtype </span> = 2. </li> 
-     </ul> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Key </th> 
+      <th colname="col2" class="entry"> Value </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
+         <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> adloadtype </span> = 1. </li> 
+         <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> adloadtype </span> = 2. </li> 
+        </ul> </p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
    For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
@@ -175,24 +175,17 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
 
    >[!NOTE]
    >
-   >**[ DEPRECATED** (and removed from `onMainVideoLoaded` example above):    >
-   >
-   >```   >
-   >... 
-   > 
-   >    [mediaObject setValue:@{ 
-   >        @" 
-<b>tv</b>":@"true", 
-   >        @" 
-<b>datasource</b>":@"id3", 
-   >        @" 
-<b>admodel</b>":@"1" 
-   >    } 
-   >    forKey:ADBMediaObjectKeyNielsenContentMetadata]; 
-   >...
-   >```   >
-   >
-   >** ]**
+   >**[ DEPRECATED** (and removed from `onMainVideoLoaded` example above):** ]**
+      
+   ```   >
+   ... 
+   [mediaObject setValue:@{ 
+           @"tv":@"true", 
+           @"datasource":@"id3", 
+           @"admodel":@"1" 
+       } 
+       forKey:ADBMediaObjectKeyNielsenContentMetadata]; 
+   ...
 
    For more information, see [](../../nielsen-partnership/dcr-vars-metadata.md). 
 
