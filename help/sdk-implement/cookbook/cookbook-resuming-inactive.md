@@ -30,20 +30,19 @@ The VA library will only automatically resume sessions if the application was no
   // Set MediaHeartbeat.MediaObjectKey.VideoResumed to true 
   public void onVideoLoad(Observable observable, Object data) { 
    
-  // Replace <VIDEO_NAME> with the video name. 
-  // Replace <VIDEO_ID> with a video unique identifier. 
-  // Replace <VIDEO_LENGTH> with the video length.  
-  MediaObject mediaInfo = MediaHeartbeat.createMediaObject(  
-      <VIDEO_NAME>,  
-      <VIDEO_ID>,  
-      <VIDEO_LENGTH>,  
-      MediaHeartbeat.StreamType.VOD 
-  ); 
-   
-<b> 
-       // Set to true if this is a resume playback scenario 
-       mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.VideoResumed, true);</b>  
-   
+      // Replace <VIDEO_NAME> with the video name. 
+      // Replace <VIDEO_ID> with a video unique identifier. 
+      // Replace <VIDEO_LENGTH> with the video length.  
+      MediaObject mediaInfo = MediaHeartbeat.createMediaObject(  
+          <VIDEO_NAME>,  
+          <VIDEO_ID>,  
+          <VIDEO_LENGTH>,  
+          MediaHeartbeat.StreamType.VOD 
+      ); 
+       
+      // Set to true if this is a resume playback scenario 
+      mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.VideoResumed, true);</b>  
+       
       _heartbeat.trackSessionStart(mediaInfo, videoMetadata); 
   }
   ```
@@ -61,9 +60,8 @@ The VA library will only automatically resume sessions if the application was no
                            length:<VIDEO_LENGTH> 
                            streamType:ADBMediaHeartbeatStreamTypeVOD]; 
    
-<b> 
-       //Set to YES if this user is resuming a previously closed media session 
-       [mediaObject setValue:@(YES) forKey:ADBMediaObjectKeyVideoResumed];</b> 
+      //Set to YES if this user is resuming a previously closed media session 
+      [mediaObject setValue:@(YES) forKey:ADBMediaObjectKeyVideoResumed];
    
       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata]; 
   } 
@@ -83,9 +81,8 @@ The VA library will only automatically resume sessions if the application was no
                                          <VIDEO_LENGTH>,  
                                          MediaHeartbeat.StreamType.VOD);
 
-<b>    // Set to true if this user is resuming a previously closed media session 
-       mediaObject.setValue(MediaObjectKey.VideoResumed, true); 
-   </b> 
+      // Set to true if this user is resuming a previously closed media session 
+      mediaObject.setValue(MediaObjectKey.VideoResumed, true); 
       this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
   };
   ```

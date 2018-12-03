@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# 1.x to 2.x API conversion{#x-to-x-api-conversion}
+# API 1.x to 2.x conversion{#x-to-x-api-conversion}
 
 **VHL 2.x API References:**
 

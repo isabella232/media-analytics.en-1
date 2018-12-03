@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# 1.x for iOS{#x-for-ios}
+# iOS 1.x{#x-for-ios}
 
 The iOS sample code helps you implement the Video Heartbeat Library for Nielsen, implement `NielsenPluginDelegate`, and configure opt-in/opt-out for Nielsen data collection.
 

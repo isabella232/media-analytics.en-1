@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# 2.1 for iOS{#for-ios}
+# iOS 2.1{#for-ios}
 
 This iOS sample code helps you implement the Video Heartbeat Library for Nielsen and configure opt-in/opt-out for Nielsen data collection.
 
@@ -158,28 +158,28 @@ To implement MTVR in iOS 2.1, make the following changes to your existing Nielse
 
 1. Update the Nielsen content metadata to include the following key/values:
 
-<table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Key </th> 
-   <th colname="col2" class="entry"> Value </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> AD_LOAD_TYPE </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
-      <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> AD_LOAD_TYPE </span> = 1. </li> 
-      <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> AD_LOAD_TYPE </span> = 2. </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> TYPE </span> </td> 
-   <td colname="col2"> <span class="codeph"> content </span> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Key </th> 
+      <th colname="col2" class="entry"> Value </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> AD_LOAD_TYPE </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
+         <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> AD_LOAD_TYPE </span> = 1. </li> 
+         <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> AD_LOAD_TYPE </span> = 2. </li> 
+        </ul> </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> TYPE </span> </td> 
+      <td colname="col2"> <span class="codeph"> content </span> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
    For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
@@ -230,7 +230,7 @@ To implement MTVR in iOS 2.1, make the following changes to your existing Nielse
    For example: 
 
    ```
-   - (void)onTimedMetadata:(NSString *)id3Tag { 
+   \- (void)onTimedMetadata:(NSString *)id3Tag { 
        if (id3Tag) { 
            if ([id3Tag rangeOfString:@"www.nielsen.com"].length > 0) { 
                [_playerPlugin trackTimedMetadata:id3Tag]; 

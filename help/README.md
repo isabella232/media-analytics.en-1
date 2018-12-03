@@ -1,2 +1,3 @@
-# Video Analytics Docs
-Technical documentation for Adobe Video Analytics
+# Media Analytics Docs
+
+Technical documentation for Adobe Media Analytics

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# 1.x for Android{#x-for-android}
+# Android 1.x{#x-for-android}
 
 The Android sample code helps you implement the Video Heartbeat Library for Nielsen, implement `NielsenPluginDelegate`, and configure opt-in/opt-out for Nielsen data collection.
 
