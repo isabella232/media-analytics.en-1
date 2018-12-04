@@ -11,7 +11,7 @@ snippet: y
 
 ```
 POST 
-http://{uri}/api/v1/sessions/{sid}/events 
+https:////{uri}/api/v1/sessions/{sid}/events 
 
 ```
 

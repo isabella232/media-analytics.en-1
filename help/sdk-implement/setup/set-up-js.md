@@ -32,7 +32,7 @@ snippet: y
     
        ```    
        <script type="text/javascript" 
-       src="http://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
+       src="https:////INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
        ```
 
     1. To quickly verify that the Heartbeat library was successfully imported, instantiate the `ADB.va.MediaHeartbeatConfig` class.

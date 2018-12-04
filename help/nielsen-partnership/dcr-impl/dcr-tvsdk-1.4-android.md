@@ -21,7 +21,7 @@ This topic contains the following information:
 
 You can configure and initialize video analytics for Digital Content Ratings (Nielsen).
 
-For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](http://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics). If you plan to enable Nielsen tracking, ensure that you create an instance of `VideoAnalytocsProviderWithNielsen` instead of `VideoAnalyticsProvider`.
+For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https:////help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics). If you plan to enable Nielsen tracking, ensure that you create an instance of `VideoAnalytocsProviderWithNielsen` instead of `VideoAnalyticsProvider`.
 
 1. Configure the Nielsen API in Android.
 
@@ -70,7 +70,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
                contentMetadata.put("program", "my-vod"); 
                contentMetadata.put("title", "sample-title"); 
                contentMetadata.put("length", "1800"); 
-   // Deprecated v2.1    contentMetadata.put("mediaURL", "http://mysampleurl.com/sample.m3u8"); 
+   // Deprecated v2.1    contentMetadata.put("mediaURL", "https:////mysampleurl.com/sample.m3u8"); 
                contentMetadata.put("segB", "valueSegB"); 
                contentMetadata.put("segC", "valueSegC"); 
                contentMetadata.put("airdate", "2015100100:00:00"); 

@@ -59,7 +59,7 @@ snippet: y
 
    ```
    $ curl -i -d \ 
-     @sample_data_session http://{uri}/api/v1/sessions \ 
+     @sample_data_session https:////{uri}/api/v1/sessions \ 
      > curl.sessions.out 
     
    $ cat curl.sessions.out 

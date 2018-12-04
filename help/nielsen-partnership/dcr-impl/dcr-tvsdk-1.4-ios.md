@@ -21,7 +21,7 @@ This topic contains the following information:
 
 You can configure and initialize video analytics for Digital Content Ratings (Nielsen).
 
-For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics).
+For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https:////help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics).
 
 1. Configure the Nielsen API in iOS.
 
@@ -67,7 +67,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
                     @"program": @"my-vod", 
                     @"title": @"sample-title", 
                     @"length":@"18000", 
-           /* Deprecated v2.1     @"mediaURL": @"http://mysampleurl.com/sample.m3u8", */ 
+           /* Deprecated v2.1     @"mediaURL": @"https:////mysampleurl.com/sample.m3u8", */ 
                     @"segB":@"valueSegB", 
                     @"segC":@"valueSegC", 
                     @"airdate": @"2015100100:00:00", 
