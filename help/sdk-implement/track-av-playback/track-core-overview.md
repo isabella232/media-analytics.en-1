@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [](../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md)
 
 <a id="section_904E0524877241939A0E0557E7395C4A"></a>
 
@@ -58,7 +58,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 >[!TIP]
 >
->The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see *Set up and configure:* [](../../sdk-implement/setup/setup-overview.md).
+>The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see *Set up and configure:* [Overview](../../sdk-implement/setup/setup-overview.md).
 
 ## Implement {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -104,7 +104,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
       Instantiate a standard metdata object, populate the desired variables, and set the metadata object on the Media Heartbeat object.
 
-      See the comprehensive list of metadata here: [](../../metrics-and-metadata/audio-video-parameters.md)
+      See the comprehensive list of metadata here: [Audio and video parameters](../../metrics-and-metadata/audio-video-parameters.md)
     
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this content.
 

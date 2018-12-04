@@ -11,7 +11,7 @@ snippet: y
 
 ## Overview {#section_ihl_nbz_cfb}
 
-The core concepts of video measurement are the same for Milestone and Media Analytics, which is taking video player events and mapping them to analytics methods, while also grabbing player metadata and values and mapping them to analytics variables. The Media Analytics solution grew out of Milestone, so many of the methods and metrics are the same, however, the configuration approach and code has changed significantly. It should be possible to update the player event code to point to the new Media Analytics methods. See [](../../sdk-implement/setup/setup.md) and [](../../sdk-implement/track-av-playback/track-core/track-core.md) for more details on implementing Media Analytics.
+The core concepts of video measurement are the same for Milestone and Media Analytics, which is taking video player events and mapping them to analytics methods, while also grabbing player metadata and values and mapping them to analytics variables. The Media Analytics solution grew out of Milestone, so many of the methods and metrics are the same, however, the configuration approach and code has changed significantly. It should be possible to update the player event code to point to the new Media Analytics methods. See [Overview](../../sdk-implement/setup/setup-overview.md) and [Overview](../../sdk-implement/track-av-playback/track-core/track-core-overview.md) for more details on implementing Media Analytics.
 
 The following tables provide translations between the Milestone solution and the Media Analytics solution.
 

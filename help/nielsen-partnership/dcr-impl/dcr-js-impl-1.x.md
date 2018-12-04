@@ -43,7 +43,7 @@ heartbeat.configure(heartbeatConfig);
 >
 >You need to get the `nielsenPluginConfig.configKey` key from your Adobe representative.
 
-For more information about AppInfo, see *NielsenAppInfo* in [](../../nielsen-partnership/dcr-vars-metadata.md).
+For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md).
 
 ## Implement the NielsenPluginDelegate {#section_A9610928B87E49B3831B8C1A0BA9FEE6}
 
@@ -105,42 +105,42 @@ To implement DTVR in Javascript 1.x, make the following changes to your existing
 
 1. Update the Nielsen content metadata to include the following key/values:
 
-<table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Key </th> 
-   <th colname="col2" class="entry"> Value </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> tv </span> </p> </td> 
-   <td colname="col2"> <p>true </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> datasource </span> </p> </td> 
-   <td colname="col2"> <p>ID3 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
-      <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> adloadtype </span> = 1. </li> 
-      <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> adloadtype </span> = 2. </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> admodel </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_1F101460C4794194B8663A51125ACD38"> 
-      <li id="li_9C9779B2823C44BD81072092AE2556D0">When linear ads are present (DTVR), the <span class="codeph"> admodel </span> = 1. </li> 
-      <li id="li_E17948EB7BDD45A489F124EA1AE84C29">When DAI ads are present (DCR), the <span class="codeph"> admodel </span> = 2. </li> 
-     </ul> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Key </th> 
+      <th colname="col2" class="entry"> Value </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> tv </span> </p> </td> 
+      <td colname="col2"> <p>true </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> datasource </span> </p> </td> 
+      <td colname="col2"> <p>ID3 </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
+         <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> adloadtype </span> = 1. </li> 
+         <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> adloadtype </span> = 2. </li> 
+        </ul> </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> admodel </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_1F101460C4794194B8663A51125ACD38"> 
+         <li id="li_9C9779B2823C44BD81072092AE2556D0">When linear ads are present (DTVR), the <span class="codeph"> admodel </span> = 1. </li> 
+         <li id="li_E17948EB7BDD45A489F124EA1AE84C29">When DAI ads are present (DCR), the <span class="codeph"> admodel </span> = 2. </li> 
+        </ul> </p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
    For example: 
 
@@ -155,7 +155,7 @@ To implement DTVR in Javascript 1.x, make the following changes to your existing
    };
    ```
 
-   For more information, see [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

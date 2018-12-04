@@ -11,17 +11,11 @@ snippet: y
 
 This Android implementation guide helps you implement `VideoAnalyticsProviderWithNielsen` through TVSDK 1.4 for Android. It also exposes the APIs that you need to configure opt-in/opt-out for Nielsen data collection.
 
-This topic contains the following information:
-
-* [Initialize and Configure VideoAnalyticsTracker for Nielsen](../../nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-android.md#section_F75699969BE84BB1B7AF0C9DB67AA236) 
-* [MTVR Implementation Guide](../../nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-android.md#section_5435E9606C124DF5A5A984FC1BAD022E) 
-* [Opt-in/Opt-out APIs on VideoAnalyticsTracker for Nielsen](../../nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-android.md#section_5842D194C7114CEC8ED91FF02546C752)
-
 ## Initialize and Configure VideoAnalyticsTracker for Nielsen {#section_F75699969BE84BB1B7AF0C9DB67AA236}
 
 You can configure and initialize video analytics for Digital Content Ratings (Nielsen).
 
-For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https:////help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics). If you plan to enable Nielsen tracking, ensure that you create an instance of `VideoAnalytocsProviderWithNielsen` instead of `VideoAnalyticsProvider`.
+For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics). If you plan to enable Nielsen tracking, ensure that you create an instance of `VideoAnalytocsProviderWithNielsen` instead of `VideoAnalyticsProvider`.
 
 1. Configure the Nielsen API in Android.
 
@@ -45,9 +39,9 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
 
    The following types of metadata blocks must be configured:
 
-    * Content Metadata ( `NielsenContentMetadata`) 
-    * Channel Metadata ( `NielsenChannelMetadata`) 
-    * Ad Metadata ( `NielsenAdMetadata`)
+   * Content Metadata ( `NielsenContentMetadata`) 
+   * Channel Metadata ( `NielsenChannelMetadata`) 
+   * Ad Metadata ( `NielsenAdMetadata`)
 
    For more information on required parameters for Nielsen metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
@@ -70,7 +64,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
                contentMetadata.put("program", "my-vod"); 
                contentMetadata.put("title", "sample-title"); 
                contentMetadata.put("length", "1800"); 
-   // Deprecated v2.1    contentMetadata.put("mediaURL", "https:////mysampleurl.com/sample.m3u8"); 
+               // Deprecated v2.1    contentMetadata.put("mediaURL", "https://mysampleurl.com/sample.m3u8"); 
                contentMetadata.put("segB", "valueSegB"); 
                contentMetadata.put("segC", "valueSegC"); 
                contentMetadata.put("airdate", "2015100100:00:00"); 
@@ -137,40 +131,40 @@ To implement MTVR in TVSDK for Android, make the following changes to your exist
 
 1. Update the Nielsen video metadata in `VideoAnalyticsNielsenMetadata` to include the following key/values:
 
-<table id="table_F26B72603E3346DDB8893E6157972173"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Key </th> 
-   <th colname="col2" class="entry"> Value </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> tv </span> </p> </td> 
-   <td colname="col2"> <p>"true" </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> datasource </span> </p> </td> 
-   <td colname="col2"> <p>"id3" </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_F77434CF41564AB1AF132BC943B1459B"> 
-      <li id="li_82B2F3C3F0094D11A2E1090F38767206">When linear ads are present (DTVR), the adloadtype= "1". </li> 
-      <li id="li_E7BFBDFA3DA84B748C1230A03CE43928">When DAI ads are present (DCR), the adloadtype= "2". </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> admodel </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_45C2A12F0EBF4E9CBE92227AF2C0F7A4"> 
-      <li id="li_F8F15B3DF1A54BBA8497C91F0A17EE90">When linear ads are present (DTVR), the admodel= "1". </li> 
-      <li id="li_0D9DA5B6261441E5B8A2849C7ED43074">When DAI ads are present (DCR), the admodel= "2". </li> 
-     </ul> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_F26B72603E3346DDB8893E6157972173"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Key </th> 
+      <th colname="col2" class="entry"> Value </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> tv </span> </p> </td> 
+      <td colname="col2"> <p>"true" </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> datasource </span> </p> </td> 
+      <td colname="col2"> <p>"id3" </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_F77434CF41564AB1AF132BC943B1459B"> 
+         <li id="li_82B2F3C3F0094D11A2E1090F38767206">When linear ads are present (DTVR), the adloadtype= "1". </li> 
+         <li id="li_E7BFBDFA3DA84B748C1230A03CE43928">When DAI ads are present (DCR), the adloadtype= "2". </li> 
+        </ul> </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> admodel </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_45C2A12F0EBF4E9CBE92227AF2C0F7A4"> 
+         <li id="li_F8F15B3DF1A54BBA8497C91F0A17EE90">When linear ads are present (DTVR), the admodel= "1". </li> 
+         <li id="li_0D9DA5B6261441E5B8A2849C7ED43074">When DAI ads are present (DCR), the admodel= "2". </li> 
+        </ul> </p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
    For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
@@ -237,5 +231,5 @@ To implement MTVR in TVSDK for Android, make the following changes to your exist
 
 >[!TIP]
 >
->For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [](c_opt_android.md).
+>For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md).
 

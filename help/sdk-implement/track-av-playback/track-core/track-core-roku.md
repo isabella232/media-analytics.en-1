@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [](../../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -52,7 +52,7 @@ snippet: y
       >
       >Attaching the standard video metadata object to the media object is optional.
 
-      [](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Implement standard metadata on Roku](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
     
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this video. For example:     
     
@@ -125,6 +125,6 @@ snippet: y
    >
    >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the video playback resumes.
 
-* Tracking scenarios: [](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the Roku SDK for a complete tracking example.
 

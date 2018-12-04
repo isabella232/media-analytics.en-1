@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [](../../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
 ## Implement {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -64,10 +64,10 @@ snippet: y
       >
       >Attaching the standard video metadata object to the media object is optional.
 
-        * [](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-        * **Video metadata keys -** [](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+        * [Implement standard metadata on iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+        * **Video metadata keys -** [iOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
         
-        * See the comprehensive list of video metadata here: [](../../../metrics-and-metadata/audio-video-parameters.md)
+        * See the comprehensive list of video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this video. For example:
 
@@ -155,6 +155,6 @@ snippet: y
 
 See the following for additional information on tracking core playback:
 
-* Tracking scenarios: [](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the iOS SDK for a complete tracking example.
 

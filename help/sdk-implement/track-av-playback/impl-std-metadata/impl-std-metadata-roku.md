@@ -22,4 +22,4 @@ standardMetadata[ADBMobile().MEDIA_VideoMetadataKeyEPISODE] = "sample episode"
 mediaInfo[ADBMobile().MEDIA_STANDARD_VIDEO_METADATA] = standardMetadata 
 ```
 
-See the comprehensive list of video metadata here: [](../../../metrics-and-metadata/audio-video-parameters.md)
+See the comprehensive list of video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)

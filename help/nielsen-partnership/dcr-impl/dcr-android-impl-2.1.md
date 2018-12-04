@@ -38,8 +38,7 @@ You can configure each of the video heartbeat library components individually fo
 1. Get the Android application context. 
 
    ```java
-   Context context =  
-     getActivity().getApplicationContext();
+   Context context = getActivity().getApplicationContext();
    ```
 
 1. Call `nielsenConfigure` on the `MediaHeartbeat` instance.
@@ -85,40 +84,24 @@ The following types of metadata must be configured:
    
   // Create content metadata object 
   HashMap<String, Object> contentMetadata = new HashMap<String, Object>(); 
-  contentMetadata.put(NielsenContentMetadataKeys.AD_LOAD_TYPE, < 
-<i>sample-ad-load-type</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.ASSET_ID, < 
-<i>sample-asset-id</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.PROGRAM, < 
-<i>sample-program-name</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.TYPE, < 
-<i>sample-asset-type</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.CLIENT_ID, < 
-<i>sample-client-id</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.VCID, < 
-<i>sample-vcid</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.IS_FULL_EPISODE, < 
-<i>sample-y-n</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.TITLE, < 
-<i>sample-title</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.SEG_A, < 
-<i>sample-sega</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.SEG_B, < 
-<i>sample-segb</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.SEG_C, < 
-<i>sample-segc</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.CROSS_REFERENCE_ID_1, < 
-<i>sample-crossref-a</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.CROSS_REFERENCE_ID_2, < 
-<i>sample-crossref-b</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.AIR_DATE, < 
-<i>sample-air-date</i>>); 
-  contentMetadata.put(NielsenContentMetadataKeys.ADS_INCLUDED, < 
-<i>sample-ads-included</i>>); 
+  contentMetadata.put(NielsenContentMetadataKeys.AD_LOAD_TYPE, <sample-ad-load-type>); 
+  contentMetadata.put(NielsenContentMetadataKeys.ASSET_ID, <sample-asset-id>); 
+  contentMetadata.put(NielsenContentMetadataKeys.PROGRAM, <sample-program-name>); 
+  contentMetadata.put(NielsenContentMetadataKeys.TYPE, <sample-asset-type>); 
+  contentMetadata.put(NielsenContentMetadataKeys.CLIENT_ID, <sample-client-id>); 
+  contentMetadata.put(NielsenContentMetadataKeys.VCID, <sample-vcid>); 
+  contentMetadata.put(NielsenContentMetadataKeys.IS_FULL_EPISODE, <sample-y-n>); 
+  contentMetadata.put(NielsenContentMetadataKeys.TITLE, <sample-title>); 
+  contentMetadata.put(NielsenContentMetadataKeys.SEG_A, <sample-sega>); 
+  contentMetadata.put(NielsenContentMetadataKeys.SEG_B, <sample-segb>); 
+  contentMetadata.put(NielsenContentMetadataKeys.SEG_C, <sample-segc>); 
+  contentMetadata.put(NielsenContentMetadataKeys.CROSS_REFERENCE_ID_1, <sample-crossref-a>); 
+  contentMetadata.put(NielsenContentMetadataKeys.CROSS_REFERENCE_ID_2, <sample-crossref-b>); 
+  contentMetadata.put(NielsenContentMetadataKeys.AIR_DATE, <sample-air-date>); 
+  contentMetadata.put(NielsenContentMetadataKeys.ADS_INCLUDED, <sample-ads-included>); 
    
   // Set the content metadata on mediaInfo object 
-  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata,  
-                     contentMetadata);
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
 
 * **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-core-playback_android.html).
@@ -136,12 +119,10 @@ The following types of metadata must be configured:
    
   // Create channel info metadata object 
   HashMap<String, Object> channelInfo = new HashMap<String, Object>(); 
-  channelInfo.put(NielsenChannelMetadataKeys.CHANNEL_NAME, < 
-<i>sample-channel-name</i>>); 
+  channelInfo.put(NielsenChannelMetadataKeys.CHANNEL_NAME, <sample-channel-name>); 
    
   // Set the channel info metadata on mediaInfo object 
-  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata,  
-                     channelInfo);
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
 * **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for Android, see [Track ads](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-ads_android.html).
@@ -158,10 +139,8 @@ The following types of metadata must be configured:
    
   // Create Ad metadata object 
   HashMap<String, Object> adMetadata = new HashMap<String, Object>(); 
-  adMetadata.put(NielsenAdMetadataKeys.ASSET_ID, < 
-<i>sample-asset-id</i>>); 
-  adMetadata.put(NielsenAdMetadataKeys.TYPE, < 
-<i>sample-ad-type</i>>); 
+  adMetadata.put(NielsenAdMetadataKeys.ASSET_ID, <sample-asset-id>); 
+  adMetadata.put(NielsenAdMetadataKeys.TYPE, <sample-ad-type>); 
    
   // Set the Ad metadata on adInfo object 
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenAdMetadata,  
@@ -174,28 +153,28 @@ To implement MTVR in Android 2.1, make the following changes to your existing Ni
 
 1. Update the Nielsen content metadata to include the following key/values:
 
-<table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Key </th> 
-   <th colname="col2" class="entry"> Value </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> AD_LOAD_TYPE </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
-      <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> AD_LOAD_TYPE </span> = 1. </li> 
-      <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> AD_LOAD_TYPE </span> = 2. </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> TYPE </span> </td> 
-   <td colname="col2"> <span class="codeph"> content </span> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Key </th> 
+      <th colname="col2" class="entry"> Value </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> AD_LOAD_TYPE </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
+         <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> AD_LOAD_TYPE </span> = 1. </li> 
+         <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> AD_LOAD_TYPE </span> = 2. </li> 
+        </ul> </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> TYPE </span> </td> 
+      <td colname="col2"> <span class="codeph"> content </span> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
    For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
@@ -251,4 +230,3 @@ To implement MTVR in Android 2.1, make the following changes to your existing Ni
    ```
 
    All other implementation guidelines remain the same between DCR and DTVR.
-

@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [](../../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md).
 
 **Seek tracking constants:**
 
@@ -36,4 +36,4 @@ snippet: y
    
    ```
 
-See the tracking scenario [](../../../sdk-implement/tracking-scenarios/vod-seeking.md) for more information.
+See the tracking scenario [VOD playback with seeking in the main content](../../../sdk-implement/tracking-scenarios/vod-seeking.md) for more information.

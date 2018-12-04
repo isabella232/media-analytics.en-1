@@ -26,4 +26,4 @@ NSMutableDictionary *standardAdMetadata = [[NSMutableDictionary alloc] init];
 [adObject setValue:standardAdMetadata forKey:ADBMediaObjectKeyStandardAdMetadata];
 ```
 
-[](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+[iOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)

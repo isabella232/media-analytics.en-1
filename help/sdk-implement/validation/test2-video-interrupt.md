@@ -21,9 +21,7 @@ You must complete and record these tasks in following order:
     1. Heartbeat start&#42; 
     1. Heartbeat analytics start
 
-   &#42;These calls contain additional metadata and variables. For call parameters and metadata, see [](../../sdk-implement/validation/test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
-
-   Also see your platform's [](../../nielsen-partnership/dcr-impl/dcr-impl.md) instructions for additonal information about each call. 
+   &#42;These calls contain additional metadata and variables. For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
 
 1. **Play main content video for at least 5 minutes uninterrupted.****Content Play**
 

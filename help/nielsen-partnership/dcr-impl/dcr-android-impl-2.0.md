@@ -21,7 +21,7 @@ You can configure each of the video heartbeat library components individually fo
 
 1. Create an instance of `AppInfo` with all the required application info needed to initialize Nielsen Measurement.
 
-   For more information about AppInfo, see *NielsenAppInfo* in [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
 
    ```java
    // Creation of AppInfo Object 
@@ -56,13 +56,10 @@ You can obtain the Nielsen config key from your Adobe representative. For more i
 
 ```java
 // Media Heartbeat initialization 
-MediaHeartbeatConfig config =  
-  new MediaHeartbeatConfig(); 
-...  
+MediaHeartbeatConfig config = new MediaHeartbeatConfig(); 
+
 // other MediaHeartbeat config parameters 
-... 
-config.nielsenConfigKey =  
-  "SAMPLE_NIELSEN_CONFIG_KEY";
+config.nielsenConfigKey = "SAMPLE_NIELSEN_CONFIG_KEY";
 ```
 
 ## Implement Nielsen Metadata {#section_50AA5EA449AD4E3FAE179E3618D227C1}
@@ -94,8 +91,7 @@ The following types of metadata must be configured:
   contentMetadata.put("type", CONTENT_TYPE); 
    
   // Set the content metadata on mediaInfo object 
-  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata,  
-                     contentMetadata);
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
 
 * **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-core-playback_android.html).
@@ -116,8 +112,7 @@ The following types of metadata must be configured:
   channelInfo.put("channelName", SAMPLE_CHANNEL_NAME); 
    
   // Set the channel info metadata on mediaInfo object 
-  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata,  
-                     channelInfo);
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
 * **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for Android, see [Track ads](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-ads_android.html).
@@ -139,8 +134,7 @@ The following types of metadata must be configured:
   adMetadata.put("duration", SAMPLE_DURATION); 
    
   // Set the Ad metadata on adInfo object 
-  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenAdMetadata,  
-                     adMetadata);
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenAdMetadata, adMetadata);
   ```
 
 ## MTVR Implementation Guide {#section_8BD19D017AB1491C884483B0A8DF0FA0}
@@ -149,65 +143,54 @@ To implement MTVR in Android 2.x, make the following changes to your existing Ni
 
 1. Update the Nielsen content metadata to include the following key/values:
 
-<table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Key </th> 
-   <th colname="col2" class="entry"> Value </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
-      <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> adloadtype </span> = 1. </li> 
-      <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> adloadtype </span> = 2. </li> 
-     </ul> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_FDBC2B510B534102B77DEFE2859F79B5"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Key </th> 
+      <th colname="col2" class="entry"> Value </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
+      <td colname="col2"> <p> 
+        <ul id="ul_E88C044C921B416DBCBB34DF29FC103D"> 
+         <li id="li_C97E7E25532E40D48B109E61B09F1C67">When linear ads are present (DTVR), the <span class="codeph"> adloadtype </span> = 1. </li> 
+         <li id="li_DC9FC0FC4F0B402884D2944886E3CF38">When DAI ads are present (DCR), the <span class="codeph"> adloadtype </span> = 2. </li> 
+        </ul> </p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
    For example: 
 
    ```java
    public void onVideoStart() { 
-       HashMap<String, Object> nielsenContentMetadata =  
-         NielsenMetadata.metadata; 
-       HashMap<String, Object> nielsenChannelMetadata =  
-         NielsenMetadata.channelInfo; 
+       HashMap<String, Object> nielsenContentMetadata = NielsenMetadata.metadata; 
+       HashMap<String, Object> nielsenChannelMetadata = NielsenMetadata.channelInfo; 
         
-       mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata,  
-                          nielsenContentMetadata); 
-       mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata,  
-                          nielsenChannelMetadata); 
+       mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, nielsenContentMetadata); 
+       mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, nielsenChannelMetadata); 
        _heartbeat.trackSessionStart(mediaInfo, null); 
    }
    ```
 
    >[!NOTE]
    >
-   >**[ DEPRECATED** (and removed from `onVideoStart()` example above):    >
-   >
-   >```   >
-   >... 
-   >    // nielsen content metadata and channel info 
-   >    if (isDTVRContent) { 
-   >        nielsenContentMetadata.put(" 
-<b>tv</b>", true); 
-   >        nielsenContentMetadata.put(" 
-<b>datasource</b>", "id3"); 
-   >        nielsenContentMetadata.put(" 
-<b>admodel</b>", 1); 
-   >    } 
-   >...
-   >```   >
-   >
-   >** ]**
+   >[ DEPRECATED (and removed from `onVideoStart()` example above): ]
 
-   For more information, see [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   ... 
+   // nielsen content metadata and channel info 
+   if (isDTVRContent) { 
+       nielsenContentMetadata.put("<btv", true); 
+       nielsenContentMetadata.put("<bdatasource", "id3"); 
+       nielsenContentMetadata.put("<badmodel", 1); 
+   } 
+   ...
+
+   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

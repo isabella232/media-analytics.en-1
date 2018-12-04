@@ -21,4 +21,4 @@ standardVideoMetadata[VideoMetadataKeys.SEASON] = "Sample season";
 mediaObject[ADBMobile.media.MediaObjectKey.StandardVideoMetadata] = standardVideoMetadata;
 ```
 
-See the comprehensive list of video metadata here: [](../../../metrics-and-metadata/audio-video-parameters.md)
+See the comprehensive list of video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)

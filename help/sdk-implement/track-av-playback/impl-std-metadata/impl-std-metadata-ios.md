@@ -15,7 +15,7 @@ snippet: y
 |---|---|
 |  `ADBMediaObjectKeyStandardMediaMetadata`  | Constant for attaching standard video metadata on `MediaInfo ADBMediaObject`  |
 
-1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys` ( [](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)). 
+1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys` ( [IOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)). 
 
 1. Set the standard metadata dictionary on `MediaInfo` `ADBMediaObject` instance using the Standard Metadata constant for metadata. 
 

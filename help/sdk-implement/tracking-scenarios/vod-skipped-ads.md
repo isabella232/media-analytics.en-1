@@ -86,7 +86,7 @@ This scenario comprises VOD content playback with a skipped ad.
 
 ## Parameters {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-The parameters are identical to the parameters in the [](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
+The parameters are identical to the parameters in the [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
 
 ## Sample Code {#section_lxt_qz3_x2b}
 

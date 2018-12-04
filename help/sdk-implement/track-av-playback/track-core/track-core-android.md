@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guide for Android here: [](../../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guide for Android here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -50,13 +50,13 @@ snippet: y
 
 1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard metadata -** [](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
+    * **Standard metadata -** [Implement standard metadata on Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
     
       >[!NOTE]
       >
       >Attaching the standard metadata object to the media object is optional.
 
-        * Media metadata keys API Reference - [Standard metadata keys - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)See the comprehensive set of available video metadata here: [](../../../metrics-and-metadata/audio-video-parameters.md)
+        * Media metadata keys API Reference - [Standard metadata keys - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)See the comprehensive set of available video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
     * **Custom metadata -** Create a dictionary for the custom variables and populate with the data for this media. For example:     
     
@@ -149,6 +149,6 @@ snippet: y
 
 See the following for additional information on tracking core playback:
 
-* Tracking scenarios: [](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the Android SDK for a complete tracking example.
 

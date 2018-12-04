@@ -13,7 +13,7 @@ snippet: y
 
 ```
 POST 
-https:////{uri}/api/v1/sessions
+https://{uri}/api/v1/sessions
 ```
 
 **URI Parameters -** None

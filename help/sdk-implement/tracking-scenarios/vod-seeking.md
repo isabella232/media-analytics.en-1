@@ -13,7 +13,7 @@ snippet: y
 
 This scenario comprises seeking in the main content during playback.
 
-This is the same scenario as the [](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point.
+This is the same scenario as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point.
 
 <table id="table_650DCE0B482249FFB01CCE36F2DCF259"> 
  <thead> 

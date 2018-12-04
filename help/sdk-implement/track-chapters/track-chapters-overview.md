@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [](../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs](../../sdk-implement/download-sdks.md).
 
 <a id="section_42F6679178794FF5A923E5B3C71E9965"></a>
 

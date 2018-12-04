@@ -58,9 +58,9 @@ snippet: y
 
 |  Adobe Nielsen 2.x SDKs  | Latest Media SDK Downloads | Nielsen Implementation Guides |
 |---|---|---|
-| ***Android*** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [](../nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
-| ***iOS*** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [](../nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |
-| ***JavaScript*** | [VHL for JavaScript v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [](../nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md) |
+| ***Android*** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [Android 2.1](../nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
+| ***iOS*** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [iOS 2.1](../nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |
+| ***JavaScript*** | [VHL for JavaScript v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [JavaScript 2.1](../nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md) |
 
 ## Media Analytics Launch Extension {#section_o54_gsd_12b}
 

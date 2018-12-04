@@ -9,12 +9,6 @@ snippet: y
 
 # Test call details{#test-call-details}
 
-This topic presents detailed call information for the validation test topics.
-
-* [](#concept_A219E29D36F94B3A8D5A232367665DB1/section_qts_xff_f2b)
-* [](#concept_A219E29D36F94B3A8D5A232367665DB1/section_wz3_yff_f2b)
-* [](#concept_A219E29D36F94B3A8D5A232367665DB1/section_u1l_1gf_f2b)
-
 ## Start the video player {#section_qts_xff_f2b}
 
 ### Video Analytics start call
