@@ -179,7 +179,7 @@ To implement MTVR in Android 2.x, make the following changes to your existing Ni
 
    >[!NOTE]
    >
-   >[ DEPRECATED (and removed from `onVideoStart()` example above): ]
+   >DEPRECATED (and removed from `onVideoStart()` example above): 
 
    ... 
    // nielsen content metadata and channel info 

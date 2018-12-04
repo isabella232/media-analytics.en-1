@@ -17,7 +17,5 @@ For certification, these reports can be shared with Nielsen and Adobe by simply 
 >
 >Only one session can be active at a time. The active session can be opened from the Dashboard.
 
-<a id="fig_D0F3FFCBDEB04D03A2B522BBFA8B1B4B"></a>
-
 ![](assets/debug-dashboard.png)
 

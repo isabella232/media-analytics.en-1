@@ -37,27 +37,27 @@ There are three main SDK components involved in media tracking:
 
 1. Implement the `MediaHeartbeatDelegate`. 
 
-<table id="table_A815A90BFEC64EC1A26900DC077342DA"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Method name </th> 
-   <th colname="col2" class="entry"> Description </th> 
-   <th colname="col3" class="entry"> Required </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> getQoSObject() </span> </td> 
-   <td colname="col2"> Returns the <span class="codeph"> MediaObject </span> instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. </td> 
-   <td colname="col3"> Yes </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> getCurrentPlaybackTime() </span> </td> 
-   <td colname="col2"> <p>Returns the current position of the playhead. </p> <p>For VOD tracking, the value is specified in seconds from the beginning of the media item. </p> <p>For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program. </p> </td> 
-   <td colname="col3"> Yes </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_A815A90BFEC64EC1A26900DC077342DA"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Method name </th> 
+      <th colname="col2" class="entry"> Description </th> 
+      <th colname="col3" class="entry"> Required </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> getQoSObject() </span> </td> 
+      <td colname="col2"> Returns the <span class="codeph"> MediaObject </span> instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. </td> 
+      <td colname="col3"> Yes </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> getCurrentPlaybackTime() </span> </td> 
+      <td colname="col2"> <p>Returns the current position of the playhead. </p> <p>For VOD tracking, the value is specified in seconds from the beginning of the media item. </p> <p>For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program. </p> </td> 
+      <td colname="col3"> Yes </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
    >[!TIP]
    >

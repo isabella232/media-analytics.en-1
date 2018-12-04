@@ -17,9 +17,3 @@ Every event can be decorated with an extra JSON key called `qoeData`, which is p
 >
 >You should check the [JSON validation schemas](#concept_rlq_nqp_qbb/section_cpy_3xc_mcb) to verify parameter types and whether they are mandatory or optional.
 
-<!-- 
-
-Add example here, either provided by the dev team, or the reference player, or from the sample Yahoo player
-
- -->
-

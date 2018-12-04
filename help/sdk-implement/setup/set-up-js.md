@@ -19,27 +19,27 @@ snippet: y
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) library to your project. Create local references to the classes for convenience.
 
-    1. Expand the `VideoHeartbeatLibrary-js-v2.*.zip` file that you downloaded. 
-    1. Verify that the `VideoHeartbeat.min.js` file exists in the `libs` directory: 
-    
-    1. Host the [!DNL VideoHeartbeat.min.js] file.
+   1. Expand the `VideoHeartbeatLibrary-js-v2.*.zip` file that you downloaded. 
+   1. Verify that the `VideoHeartbeat.min.js` file exists in the `libs` directory: 
+   
+   1. Host the [!DNL VideoHeartbeat.min.js] file.
 
-       This core JavaScript file must be hosted on a web server that is accessible to all pages on your site. You need the path to these files for the next step. 
-    
-    1. Reference [!DNL VideoHeartbeat.min.js] on all site pages.
+      This core JavaScript file must be hosted on a web server that is accessible to all pages on your site. You need the path to these files for the next step. 
+   
+   1. Reference [!DNL VideoHeartbeat.min.js] on all site pages.
 
-       Include `VideoHeartbeat` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. For example:     
-    
-       ```    
-       <script type="text/javascript" 
-       src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
-       ```
+      Include `VideoHeartbeat` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. For example:     
+   
+      ```    
+      <script type="text/javascript" 
+      src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
+      ```
 
-    1. To quickly verify that the Heartbeat library was successfully imported, instantiate the `ADB.va.MediaHeartbeatConfig` class.
+   1. To quickly verify that the Heartbeat library was successfully imported, instantiate the `ADB.va.MediaHeartbeatConfig` class.
 
-       >[!NOTE]
-       >
-       >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and [!DNL VideoHeartbeat.min.js] can also be used with compatible module loaders.
+      >[!NOTE]
+      >
+      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and [!DNL VideoHeartbeat.min.js] can also be used with compatible module loaders.
 
 1. For easy access to the APIs, create local references to the `MediaHeartbeat` classes.
 
@@ -103,20 +103,16 @@ snippet: y
    >
    >
    >Here is an example of an `AppMeasurement` instance: 
-   >
-   >
-   >
-   >
-   >```js   >
-   >// AppMeasurement instance example 
-   >var appMeasurement = new AppMeasurement(); 
-   >appMeasurement.visitor = visitor; 
-   >appMeasurement.trackingServer = "<visitor_namespace>.sc.omtrdc.net"; 
-   >appMeasurement.account = <rsid>; 
-   >appMeasurement.pageName = <page_name>; 
-   >appMeasurement.charSet = "UTF­8";
-   >```   >
-   >
+   
+   ```js   
+   // AppMeasurement instance example 
+   var appMeasurement = new AppMeasurement(); 
+   appMeasurement.visitor = visitor; 
+   appMeasurement.trackingServer = "<visitor_namespace>.sc.omtrdc.net"; 
+   appMeasurement.account = <rsid>; 
+   appMeasurement.pageName = <page_name>; 
+   appMeasurement.charSet = "UTF­8";
+   ```   
 
 **Migrate from version 1.x to 2.x in JavaScript**
 

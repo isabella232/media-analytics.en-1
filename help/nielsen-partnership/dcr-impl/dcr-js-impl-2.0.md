@@ -181,7 +181,7 @@ To implement DTVR in Javascript 2.0, make the following changes to your existing
 
    >[!NOTE]
    >
-   >[ DEPRECATED** (and removed from `_onLoad` example above):    ]
+   >DEPRECATED (and removed from `_onLoad` example above):  
 
    ... 
    if(isDTVRContent){ 

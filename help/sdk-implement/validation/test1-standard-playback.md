@@ -41,24 +41,28 @@ You must complete and record the actions in the following order:
 
       **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set-up properly. It is found in both AppMeasurement and Video Analytics (VA) calls.
 
-      #### Heartbeat Play Call
+      **Heartbeat Play Call**
+
       |  Parameter | Value (sample) |
       |---|---|
       | `s:event:type` | play |
       | `s:user:mid` | 30250035503789876473484580554595324209 |
 
-      #### Video Analytics Start Call
+      **Video Analytics Start Call**
+
       |  Parameter | Value (sample) |
       |---|---|
       | `pev2` | ms_s |
       | `mid` | 30250035503789876473484580554595324209 |
 
-      #### Website Page Call
+      **Website Page Call**
+
       |  Parameter | Value (sample) |
       |---|---|
       | `mid` | 30250035503789876473484580554595324209 |
 
-      #### Lifecycle Call
+      **Lifecycle Call**
+
       |  Parameter | Value (sample) |
       |---|---|
       | `pev2` | ADBINTERNAL:Lifecycle |
@@ -68,12 +72,14 @@ You must complete and record the actions in the following order:
       >
       >On VA Start Calls ( `s:event:type=start`) the `mid` values may not be present. This is OK. They may not appear until the VA Play Calls ( `s:event:type=play`).
 
-      #### Heartbeat Start Call
+      **Heartbeat Start Call**
+
       |  Parameter | Value (sample) |
       |---|---|
       | `s:event:type` | start |
 
-      #### VA Start Call
+      **VA Start Call**
+
       |  Parameter | Value (sample) |
       |---|---|
       | `pev2` | ms_s |

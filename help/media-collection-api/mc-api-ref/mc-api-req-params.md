@@ -9,21 +9,6 @@ snippet: y
 
 # Request parameters{#request-parameters}
 
-* [Request Parameter Table](#concept_tqz_tqp_qbb/section_zyf_bbl_rdb)
-* [Additional Details](#concept_tqz_tqp_qbb/section_ryt_ccy_lcb)
-
-<a id="section_zyf_bbl_rdb"></a>
-
-<!-- 
-
-Might be confusing to go from Media Collection to SDK-oriented parameters reference... 
-<note>
-  For additional information on VA parameters, keys, and associated product and reporting variables, see 
- <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/r_vhl_video-params.html" format="html" scope="external"> Video Analytics Video Parameters </a>. 
-</note>
-
- -->
-
 ## Request Parameter Table
 
 <table id="table_h44_bbl_rdb">  
@@ -437,11 +422,10 @@ Initially, there were no browser-based customers. In future this will be part of
     * **visitor.customerIDs**: The value of this key must be an object of the following format:     
     
       ```js    
-      <b>“<<insert your ID name here>>”: {  
-           “id”: “</b> 
-<b><<insert your id here>>”,  
-           “authState”: <<insert one of 0, 1, 2>> 
-       }</b>
+      "<<insert your ID name here>>": {  
+          "id": " <<insert your id here>>",  
+           "authState": <<insert one of 0, 1, 2>> 
+       }
       ```    
     
       Note that the **visitor.customerIDs** value can have any number of objects in the presented format.

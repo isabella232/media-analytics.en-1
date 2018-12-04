@@ -23,37 +23,37 @@ snippet: y
    >
    >These variables are only required if you are planning to track chapters.
 
-<table id="table_840ABDA54A4A436996464D59D04ABB4D"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Variable Name </th> 
-   <th colname="col2" class="entry"> Description </th> 
-   <th colname="col3" class="entry"> Required </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> name </span> </td> 
-   <td colname="col2"> <p>Chapter name </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> position </span> </td> 
-   <td colname="col2"> <p>Chapter position </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> length </span> </td> 
-   <td colname="col2"> <p>Chapter length </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> startTime </span> </td> 
-   <td colname="col2"> <p>Chapter start time </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_840ABDA54A4A436996464D59D04ABB4D"> 
+    <thead> 
+     <tr> 
+      <th colname="col1" class="entry"> Variable Name </th> 
+      <th colname="col2" class="entry"> Description </th> 
+      <th colname="col3" class="entry"> Required </th> 
+     </tr> 
+    </thead>
+    <tbody> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> name </span> </td> 
+      <td colname="col2"> <p>Chapter name </p> </td> 
+      <td colname="col3"> <p>Yes </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> position </span> </td> 
+      <td colname="col2"> <p>Chapter position </p> </td> 
+      <td colname="col3"> <p>Yes </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> length </span> </td> 
+      <td colname="col2"> <p>Chapter length </p> </td> 
+      <td colname="col3"> <p>Yes </p> </td> 
+     </tr> 
+     <tr> 
+      <td colname="col1"> <span class="codeph"> startTime </span> </td> 
+      <td colname="col2"> <p>Chapter start time </p> </td> 
+      <td colname="col3"> <p>Yes </p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
    **Chapter object:** 
 
