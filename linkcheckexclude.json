@@ -1,0 +1,19 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^.*corp.adobe.com"
+        },
+        {
+            "pattern": "^.*digitalu.adobe.com"
+        },
+        {
+            "pattern": "^.*apache.org"
+        },
+        {
+            "pattern": "https://www.ehow.com"
+        },
+        {
+            "pattern": "https://api.demdex.com/v1/partner-sites/"
+        }
+    ]
+}
