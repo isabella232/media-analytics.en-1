@@ -40,5 +40,5 @@ snippet: y
 
 >[!IMPORTANT]
 >
->You should refer to the [](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+>You should refer to the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
 

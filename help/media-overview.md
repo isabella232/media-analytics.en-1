@@ -9,16 +9,9 @@ snippet: y
 
 # Measuring audio and video in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
-This topic contains the following information:
-
-* [Overview](media-overview.md#section_8BFE4F8DA64B4A5F826A4940B11AA466) 
-* [Benefits](media-overview.md#section_7712BA90EAE64C118218D1C581EF68B7) 
-* [Heartbeat versus Milestone Benefits](media-overview.md#section_cnj_5st_p1b) 
-* [Devices Supported](media-overview.md#section_lkm_l5t_p1b)
-
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy milestone video implementation. We encourage all customers to move towards adopting one or both of the two latest media tracking solutions, in order to capitalize on improvements and expanded measurement. You can view the [benefits of transitioning to the latest solutions](media-overview.md#section_cnj_5st_p1b) below. While we will continue to support the milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Please reach out to your Adobe Account Manager if you have any further questions.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. We encourage all customers to move towards adopting one or both of the two latest media tracking solutions, in order to capitalize on improvements and expanded measurement. You can view the [benefits of transitioning to the latest solutions](media-overview.md#section_cnj_5st_p1b) below. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Please reach out to your Adobe Account Manager if you have any further questions.
 
 ## Overview {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -42,17 +35,15 @@ The media solutions not only measure vital delivery metrics related to QoS, such
 Some of the many benefits that Adobe's media measurement solutions provide include:
 
 * **Timely analysis -** Make real-time, actionable decisions utilizing key performance metrics (e.g., duration) across multiple channels. Main content events are measured in **10-second** intervals to capture all activity as it occurs. Ad tracking events occur at **1-second** intervals.
-
 * **Drive engagement -** Fully engage users through fewer buffering events and by understanding where and when ads should play within content to provide a smooth, less intrusive experience that brings users back and delivers repeat visits. 
-* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through [](federated-analytics.md). 
-
+* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through [Federated Analytics](federated-analytics.md). 
 * **Increased granularity -** Evaluate viewing behavior at the most granular level, including individual visitor time of day, concurrent viewers/listeners by minute, and average duration the content was consumed. 
 * **Precise measurement -** Measure across the multiple devices used for media consumption, including OTT, smartphone, tablet, desktop, and more, to monitor user engagement patterns and habits. 
 * **Segmentation -** Apply classifications to your players, devices, genres, chapters, and shows to see how each has an impact on your overall views/listens and customer engagement with content, audio, ads, and combined.
 
 ## Heartbeat versus Milestone benefits {#section_cnj_5st_p1b}
 
-Adobe Analytics for Media is able to be measured through two means: the legacy Milestone method (video only) and the current Heartbeats method (including both the Media SDK and the Media Collection API). The Heartbeats method is the preferred method of measurement and we encourage all clients to move to this version if they haven’t already, to take advantage of the benefits described below.
+Adobe Analytics for Media is able to be measured through two means: the legacy Milestone method (video only) and the current Heartbeats method (audio and video, featured in both the Media SDK and the Media Collection API). The Heartbeats method is the preferred method of measurement and we encourage all clients to move to this version if they haven’t already, to take advantage of the benefits described below.
 
 The legacy Milestone method is based on individual server calls to the Analytics server, for video starts, quartiles, duration, and completes. The Heartbeats method provides a more robust media tracking solution that measures main content in 10-second intervals to provide enhanced, standardized metrics. In addition, Adobe has derived learnings from our Milestone method to provide a smoother, streamlined implementation process through either the Media SDK or Media Collection API utilized by Heartbeats.
 
@@ -87,7 +78,7 @@ Adobe Analytics for Media has evolved with the industry to provide strong data c
 The SDKs are routinely updated when new versions of devices are released, and you can use these SDKs to integrate with most of the largest media players today, including Brightcove and Ooyala.
 
 For devices or platforms that do not currently have SDK support (or even if they do), you can implement the Media Collection API, through which you make RESTful API calls directly from the device/platform to the Media Analytics backend. 
-The table below provides a list of the devices that are currently supported through our Media SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see [](sdk-implement/download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
+The table below provides a list of the devices that are currently supported through our Media SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see [Download SDKs](sdk-implement/download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
 
 |  |**Media SDK** |**Media Collection API** |
 |---|---|---|

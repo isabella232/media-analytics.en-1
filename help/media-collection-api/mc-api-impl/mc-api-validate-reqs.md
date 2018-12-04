@@ -25,8 +25,8 @@ Content-Type: application/json
 Content-Length: 2716
 Connection: keep-alive
 
-{"$schema":"http://json-schema.org/draft-04/schema#",
-"id":"http://alpha.hb-api.omtrdc.net/api/v1/schemas/sessionStart",
+{"$schema":"https://json-schema.org/draft-04/schema#",
+"id":"https://alpha.hb-api.omtrdc.net/api/v1/schemas/sessionStart",
 "definitions":{"playerTime":{"type":"object","properties":
 {"playhead":{"type":"number"},"ts":{"type":"integer"}},
 "required":["playhead","ts"],"additionalProperties":false},

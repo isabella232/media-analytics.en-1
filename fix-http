@@ -1,0 +1,21 @@
+vi \
+./help/intro-to-ava/implementation-paths/primetime-path.md \
+./help/intro-to-ava/implementation-paths/implementation-paths.md \
+./help/intro-to-ava/prereqs.md \
+./help/CODE-OF-CONDUCT.md \
+./help/sdk-implement/setup/setup-overview.md \
+./help/sdk-implement/setup/set-up-js.md \
+./help/sdk-implement/validation/debugging/config-adobe-debug.md \
+./help/media-collection-api/mc-api-ref/mc-api-sessions-req.md \
+./help/media-collection-api/mc-api-ref/mc-api-events-req.md \
+./help/media-collection-api/mc-api-ref/mc-api-json-validation.md \
+./help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md \
+./help/media-collection-api/mc-api-impl/mc-api-quick-start.md \
+./help/media-collection-api/mc-api-timelines/mc-api-timeline-3.md \
+./help/media-collection-api/mc-api-timelines/mc-api-timeline-2.md \
+./help/media-collection-api/mc-api-timelines/mc-api-timeline-1.md \
+./help/nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-android.md \
+./help/nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-ios.md \
+./help/nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md \
+./help/nielsen-partnership/dcr-impl/dcr-dtvr.md \
+./help/nielsen-partnership/dcr-certification/dcr-cert-debug/dcr-cert-debug-config.md 

@@ -9,9 +9,9 @@ snippet: y
 
 # Queueing events when sessions response is slow{#queueing-events-when-sessions-response-is-slow}
 
-<a id="section_nk1_mnv_gcb"></a>
+The Media Collection API is RESTful: i.e, you make an HTTP request and wait for the response. This is only important when you make a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Your player may fire events before the Sessions response returns (with the Session ID parameter) from the backend. In this case your app must queue any tracking events that arrive between the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued events, then you can start processing live events with the Events calls. The [Events request](../../media-collection-api/mc-api-ref/mc-api-events-req.md) does not return data back to the client beyond an HTTP response code. 
 
-The Media Collection API is RESTful: i.e, you make an HTTP request and wait for the response. This is only important when you make a [](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Your player may fire events before the `sessions` response returns (with the Session ID parameter) from the backend. In this case your app must queue any tracking events that arrive between the [](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the `sessions` response arrives, you should first process any queued events, then you can start processing live events with the `events` API. The [](../../media-collection-api/mc-api-ref/mc-api-events-req.md)does not return data back to the client beyond an HTTP response code. Check the Reference Player in your distribution for one way to process events prior to receiving a Session ID. For example:
+Check the Reference Player in your distribution for one way to process events prior to receiving a Session ID. For example:
 
 ```js
 var eventData = {};            // JSON payload 

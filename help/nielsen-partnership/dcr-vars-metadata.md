@@ -9,14 +9,6 @@ snippet: y
 
 # Variables and metadata{#variables-and-metadata}
 
-This topic presents metadata, network parameters, and reporting data that are required for implementing digital tracking with Nielsen.
-
-* [NielsenContentMetadata](../nielsen-partnership/dcr-vars-metadata.md#section_4135A80BC60D4B5091AF2F068F3F7D4E) 
-* [NielsenAdMetadata](../nielsen-partnership/dcr-vars-metadata.md#section_23B64C89E1BC4EF5AD3E7A93853DB769) 
-* [NielsenChannelMetadata](../nielsen-partnership/dcr-vars-metadata.md#section_9D528F8F8234468FB79E7F9D8AE6C593) 
-* [NielsenAppInfo](../nielsen-partnership/dcr-vars-metadata.md#section_CBF1414ED5AF4344A757C9F26DE047EA) 
-* [](#concept_35FD633B1FD6436CA8CECE66E190CE49/section_C1473A54BF264FB0986221A0130C9D9C)
-
 Table data description:
 
 * **Label:** The name of the parameter. 
@@ -49,7 +41,7 @@ Nielsen has reserved keys to receive metadata. For example, `program` is the Nie
 
 ## NielsenContentMetadata {#section_4135A80BC60D4B5091AF2F068F3F7D4E}
 
-The Nielsen content metadata is provided to the Nielsen SDK through the Media SDK API call `trackSessionStart()`. For more details see the [](../nielsen-partnership/dcr-impl/dcr-impl.md) Guide for your platform.
+The Nielsen content metadata is provided to the Nielsen SDK through the Media SDK API call `trackSessionStart()`. 
 
 >[!TIP]
 >

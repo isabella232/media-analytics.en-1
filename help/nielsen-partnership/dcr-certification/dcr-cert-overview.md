@@ -16,6 +16,6 @@ There are two types of certification:
 * Full certification 
 * Self certification
 
-To determine which type of certification to use, see [](../../nielsen-partnership/dcr-certification/dcr-cert-process.md).
+To determine which type of certification to use, see [Certification process](../../nielsen-partnership/dcr-certification/dcr-cert-process.md).
 
 A key component of both certification types is Adobe Debug. It lets you generate logs for defined use cases and then submit those logs for review. Subsequent sections explain the certification process, along with what you should test and what results to expect, and how you can leverage Adobe Debug. 

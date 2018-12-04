@@ -11,17 +11,11 @@ snippet: y
 
 This iOS implementation guide helps you implement the `PTVideoAnalyticsTracker` for Nielsen through the TVSDK player version 1.4 for iOS. It also exposes the APIs to configure opt-in/opt-out for Nielsen data collection.
 
-This topic contains the following information:
-
-* [Initialize and Configure VideoAnalyticsTracker for Nielsen](../../nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-ios.md#section_F75699969BE84BB1B7AF0C9DB67AA236) 
-* [MTVR Implementation Guide](../../nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-ios.md#section_5435E9606C124DF5A5A984FC1BAD022E) 
-* [Opt-in/Opt-out APIs on VideoAnalyticsTracker for Nielsen](../../nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-ios.md#section_5842D194C7114CEC8ED91FF02546C752)
-
 ## Initialize and Configure VideoAnalyticsTracker for Nielsen {#section_F75699969BE84BB1B7AF0C9DB67AA236}
 
 You can configure and initialize video analytics for Digital Content Ratings (Nielsen).
 
-For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics).
+For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics).
 
 1. Configure the Nielsen API in iOS.
 
@@ -67,7 +61,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
                     @"program": @"my-vod", 
                     @"title": @"sample-title", 
                     @"length":@"18000", 
-           /* Deprecated v2.1     @"mediaURL": @"http://mysampleurl.com/sample.m3u8", */ 
+           /* Deprecated v2.1     @"mediaURL": @"https://mysampleurl.com/sample.m3u8", */ 
                     @"segB":@"valueSegB", 
                     @"segC":@"valueSegC", 
                     @"airdate": @"2015100100:00:00", 
@@ -241,5 +235,5 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 
 >[!TIP]
 >
->For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [](c_opt_dcr_ios_1x.md).
+>For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md).
 

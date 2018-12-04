@@ -9,7 +9,7 @@ snippet: y
 
 # VOD playback with pre-roll ads{#vod-playback-with-pre-roll-ads}
 
-In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [](vod-no-intrs-code.md) scenario. The network calls happen at the same time, but the payload is different. 
+In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different. 
 
 <table id="table_B43EB1CB26724B47908BF6F477ECF6DC"> 
  <thead> 

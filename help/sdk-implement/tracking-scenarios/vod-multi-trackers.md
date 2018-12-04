@@ -13,9 +13,9 @@ snippet: y
 
 In this scenario, there are two sessions running in parallel for two separate videos and using two separate instances of `MediaHeartbeat.`.
 
-This scenario is identical to the [](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate videos. Each of these sessions uses a separate instance of `MediaHeartbeat`.
+This scenario is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate videos. Each of these sessions uses a separate instance of `MediaHeartbeat`.
 
-Unless specified, the network calls are the same as the [](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Unless specified, the network calls are the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#section_45D7B10031524411B91E2C569F7818B0}
 

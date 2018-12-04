@@ -11,6 +11,6 @@ snippet: y
 
 For details on integrating OTT apps with Experience Cloud, see the "Set Up" topics for Chromecast and Roku:
 
-* [](../../sdk-implement/setup/set-up-chromecast.md)
-* [](../../sdk-implement/setup/set-up-roku.md)
+* [Set up Chromecast](../../sdk-implement/setup/set-up-chromecast.md)
+* [Set up Roku](../../sdk-implement/setup/set-up-roku.md)
 

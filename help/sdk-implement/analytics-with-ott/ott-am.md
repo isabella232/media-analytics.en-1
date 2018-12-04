@@ -9,4 +9,4 @@ snippet: y
 
 # OTT and Audience Manager{#ott-and-audience-manager}
 
-For details on integrating OTT apps and Audience Manager, see [](../../intro-to-ava/am-enablement.md).
+For details on integrating OTT apps and Audience Manager, see [Audience Manager enablement](../../intro-to-ava/am-enablement.md).

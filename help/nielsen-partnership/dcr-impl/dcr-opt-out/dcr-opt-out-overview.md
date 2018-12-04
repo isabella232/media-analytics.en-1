@@ -153,7 +153,7 @@ To enable the user's selection, the App SDK must be updated with the this opt-ou
 
 1. The application captures the user selection and passes it back to the Joint Adobe/Nielsen SDK.
 
-To view sample code to support this process, see the following: [](../../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md)
+To view sample code to support this process, see the following: [Opt-out settings](../../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md)
 
 ## Opt-out implementation checks for Nielsen {#section_168762ADC87440FDBA9FDD4F7D1E5DE0}
 

@@ -17,7 +17,7 @@ Contrast the realtime approach of the Media Collection API with the batch proces
 
 ## Implementation {#section_jhp_jpk_cfb}
 
-**Event schemas:** The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [](../media-collection-api/mc-api-overview.md); and: [](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md).
+**Event schemas:** The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview](../media-collection-api/mc-api-overview.md); and: [Validating event requests](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md).
 
 **Order of events:**
 

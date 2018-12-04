@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [](../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
 
 <a id="section_3B8EBEB167624D0481E8AF4761F83047"></a>
 
@@ -78,7 +78,7 @@ snippet: y
    >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
 
 1. Make sure that `getQoSObject()` method returns the most updated QoS information. 
-1. When the video player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [](../../sdk-implement/track-errors/track-errors.md).)
+1. When the video player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](../../sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >

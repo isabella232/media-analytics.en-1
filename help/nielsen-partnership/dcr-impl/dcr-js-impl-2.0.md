@@ -21,7 +21,7 @@ To configure the Nielsen API:
 
 1. Create an instance of AppInfo with all the required application information needed to initialize Nielsen Measurement and provide it to MediaHeartbeatConfig.
 
-   For more information about AppInfo, see *NielsenAppInfo* in [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
 1. Provide the Nielsen config key to `MediaHeartbeatConfig`.
 
    You can obtain the Nielsen config key through your Adobe representative.
@@ -155,7 +155,7 @@ To implement DTVR in Javascript 2.0, make the following changes to your existing
  </tbody> 
 </table>
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
    For example: 
 
@@ -181,24 +181,17 @@ To implement DTVR in Javascript 2.0, make the following changes to your existing
 
    >[!NOTE]
    >
-   >**[ DEPRECATED** (and removed from `_onLoad` example above):    >
-   >
-   >```   >
-   >... 
-   >    if(isDTVRContent){ 
-   >    nielsenContentMetadata[" 
-<b>tv</b>"] = true; 
-   >    nielsenContentMetadata[" 
-<b>datasource</b>"] = "id3"; 
-   >    nielsenContentMetadata[" 
-<b>admodel</b>"] = 1;        
-   >    } 
-   >...
-   >```   >
-   >
-   >** ]**
+   >[ DEPRECATED** (and removed from `_onLoad` example above):    ]
 
-   For more information, see [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   ... 
+   if(isDTVRContent){ 
+       nielsenContentMetadata["tv"] = true; 
+       nielsenContentMetadata["datasource"] = "id3"; 
+       nielsenContentMetadata["admodel"] = 1;        
+   } 
+   ...
+
+   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

@@ -11,7 +11,7 @@ snippet: y
 
 This test case is required as part of the certification request form. It validates general playback and sequencing.
 
-Download the certification request form here: [](../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md).
+Download the certification request form here: [Certification request form](../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md).
 
 Video implementations are composed of the following types of tracking calls:
 
@@ -84,9 +84,7 @@ You must complete and record the actions in the following order:
     1. Heartbeat start&#42; 
     1. Heartbeat analytics start
 
-   &#42;These calls contain additional metadata and variables. For call parameters and metadata, see [](../../sdk-implement/validation/test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
-
-   Also see your platform's [](../../nielsen-partnership/dcr-impl/dcr-impl.md) instructions for additonal information about each call. 
+   &#42;These calls contain additional metadata and variables. For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_qts_xff_f2b) in *Test Call Details*.
 
 1. **View ad break if available.**
 
@@ -98,10 +96,8 @@ You must complete and record the actions in the following order:
         1. Heartbeat ad start&#42; 
         1. Heartbeat ad analytics start
 
-      &#42;These calls contain additional metadata and variables. For call parameters and metadata, see [](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b) in *Test Call Details*.
+      &#42;These calls contain additional metadata and variables. For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b) in *Test Call Details*.
 
-      Also see your platform's [](../../nielsen-partnership/dcr-impl/dcr-impl.md) instructions for additonal information about these Ad calls.
-    
     * **Ad Play**
 
       During ad playback, Heartbeat calls are sent to the Heartbeat server every second. 
@@ -127,9 +123,7 @@ You must complete and record the actions in the following order:
     * The playhead position should increment by 10 with every play call.
     * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
 
-      For call parameters and metadata, see [](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
-
-      Also see your platform's [](../../nielsen-partnership/dcr-impl/dcr-impl.md) instructions for additonal information about these Ad calls.
+      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **Pause during playback for at least 30 seconds.**On pause of the video player, pause event calls will be sent every 10 seconds. After pause ends the play events should resume. 
 
