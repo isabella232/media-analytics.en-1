@@ -98,7 +98,7 @@ snippet: y
    >[!TIP]
    >
    >`MediaHeartbeat` requires an instance of `AppMeasurement` to send calls to Adobe Analytics. Here is an example of an `AppMeasurement` instance: 
-   
+
    ```js
    var appMeasurement = new AppMeasurement(); 
    appMeasurement.visitor = visitor; 
