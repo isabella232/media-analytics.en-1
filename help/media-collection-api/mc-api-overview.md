@@ -83,7 +83,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 * `qoeData` - Optional for all requests.
 * `customMetadata` - Optional for all requests, but only sent with `sessionStart`, `adStart`, and `chapterStart` event types.
 
-For each `eventType`, there is a publicly available [JSON validation schema](mc-ap-ref/mc-api-json-validation.md) that you should use to verify parameter types and whether a parameter is optional or required for a particular event.
+For each `eventType`, there is a publicly available [JSON validation schema](mc-api-ref/mc-api-json-validation.md) that you should use to verify parameter types and whether a parameter is optional or required for a particular event.
 
 **Event Types:**
 
