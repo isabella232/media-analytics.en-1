@@ -17,7 +17,7 @@ The Media Collection API is Adobe's RESTful alternative to the client-side Media
 
 * **Downloaded Content Tracking -** This provides you with the ability to track media while a user is offline, through local storing of event data until the user's device returns online. (See [Track downloaded content](../media-collection-api/track-downloaded-content.md) for details.)
 
-The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation (e.g., [Media SDK 2.x](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/c_vhl_feature-js.html), [Metrics and Metadata](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_metrics-and-metadata.html)) are also relevant to the Media Collection API.
+The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation (e.g., [Media SDK 2.x](../sdk-implement/download-sdks.md), [Metrics and Metadata](../metrics-and-metadata/audio-video-parameters.md)) are also relevant to the Media Collection API.
 
 ## Media Tracking Data Flows {#section_pwq_n34_qbb}
 
@@ -78,12 +78,12 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 
 * `playerTime` - Mandatory for all requests.
 * `eventType` - Mandatory for all requests. 
-* `params` - Mandatory for certain `eventTypes`; check the [JSON validation schema](mc-ap-ref/mc-api-json-validation.md) to determine which eventTypes are mandatory, and which are optional. 
+* `params` - Mandatory for certain `eventTypes`; check the [JSON validation schema](mc-api-ref/mc-api-json-validation.md) to determine which eventTypes are mandatory, and which are optional. 
 
 * `qoeData` - Optional for all requests.
 * `customMetadata` - Optional for all requests, but only sent with `sessionStart`, `adStart`, and `chapterStart` event types.
 
-For each `eventType`, there is a publicly available [JSON validation schema](#concept_rlq_nqp_qbb/section_cpy_3xc_mcb) that you should use to verify parameter types and whether a parameter is optional or required for a particular event.
+For each `eventType`, there is a publicly available [JSON validation schema](mc-ap-ref/mc-api-json-validation.md) that you should use to verify parameter types and whether a parameter is optional or required for a particular event.
 
 **Event Types:**
 
