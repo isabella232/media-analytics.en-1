@@ -11,12 +11,6 @@ snippet: y
 
 This topic presents a list of video ad data, including context data values, that Adobe collects via solution variables.
 
-This section contains the following information:
-
-* [Ad Video Data](#reference_AFEA30FF18DB4CB8AE2DD0BDFD422BE5/section_hq3_nbv_51b)
-* [Standard Ad Metadata](../metrics-and-metadata/ad-parameters.md#section_EFB805867916411E84DE1BA5A183D86A) 
-* [Ad Metrics](../metrics-and-metadata/ad-parameters.md#section_22AA1565F11C4F3990E2AB51CD3213F7)
-
 Table data description:
 
 * **Label:** The name of the parameter. 

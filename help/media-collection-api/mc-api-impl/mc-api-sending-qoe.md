@@ -15,5 +15,5 @@ Every event can be decorated with an extra JSON key called `qoeData`, which is p
 
 >[!NOTE]
 >
->You should check the [JSON validation schemas](#concept_rlq_nqp_qbb/section_cpy_3xc_mcb) to verify parameter types and whether they are mandatory or optional.
+>You should check the [JSON validation schemas](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md) to verify parameter types and whether they are mandatory or optional.
 

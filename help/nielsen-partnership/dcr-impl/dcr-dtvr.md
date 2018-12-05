@@ -47,7 +47,7 @@ Here is some information to remember for Adobe validations:
 
 **Nielsen validation**
 
-* Validating Nielsen calls includes using an [ID3 variable](#concept_CE553265019A45C58B234EF6F37DB12B/section_555F58E071C6409BBBB4EFF74290D714) (a long string of encoded text).
+* Validating Nielsen calls includes using an ID3 variable (see below) (a long string of encoded text).
 
   This string does not include the typical DCR Nielsen variables. 
 

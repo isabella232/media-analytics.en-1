@@ -11,7 +11,7 @@ snippet: y
 
 >[!IMPORTANT]
 >
->The following instructions are for the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation](#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_acj_tkk_t2b). For Primetime integrators, see [Primetime Media SDK Documentation](#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_tzh_llk_t2b).
+>The following instructions are for the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation](../../sdk-implement/download-sdks.md). For Primetime integrators, see [Primetime Media SDK Documentation](#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_tzh_llk_t2b).
 
 ## General Implementation Guidelines {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
