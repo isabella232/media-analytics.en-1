@@ -47,7 +47,6 @@ snippet: y
    var MediaHeartbeat = ADB.va.MediaHeartbeat; 
    var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig; 
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
-   
    ```
 
 1. Create a `MediaHeartbeatConfig` instance.
@@ -66,7 +65,6 @@ snippet: y
    mediaConfig.appVersion = Configuration.HEARTBEAT.SDK; 
    mediaConfig.ssl = false; 
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
-   
    ```
 
 1. Implement the `MediaHeartbeatDelegate` protocol.
@@ -99,13 +97,9 @@ snippet: y
 
    >[!TIP]
    >
-   >`MediaHeartbeat` requires an instance of `AppMeasurement` to send calls to Adobe Analytics. 
-   >
-   >
-   >Here is an example of an `AppMeasurement` instance: 
+   >`MediaHeartbeat` requires an instance of `AppMeasurement` to send calls to Adobe Analytics. Here is an example of an `AppMeasurement` instance: 
    
-   ```js   
-   // AppMeasurement instance example 
+   ```js
    var appMeasurement = new AppMeasurement(); 
    appMeasurement.visitor = visitor; 
    appMeasurement.trackingServer = "<visitor_namespace>.sc.omtrdc.net"; 
