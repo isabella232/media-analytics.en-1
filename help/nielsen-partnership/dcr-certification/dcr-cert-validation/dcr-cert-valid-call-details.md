@@ -65,7 +65,7 @@ Detailed call information for the validation test topics.
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-**Notes:** See Nielsen TCR metadata info here: [](https://marketingbeta.adobe.com/resources/help/nielsen/r_tcr_medata.html)
+<!-- **Notes:** See Nielsen TCR metadata info here: [](https://marketingbeta.adobe.com/resources/help/nielsen/r_tcr_medata.html) -->
 
 ### Heartbeat Start Call
 

@@ -11,7 +11,7 @@ snippet: y
 
 This test case is required as part of the certification request form and validates mobile interruption behavior.
 
-To download the certification request form, click [Certification Request Form](cert_req_form_nielsen.docx).
+To download the certification request form, click [Certification Request Form](../cert_req_form_nielsen.docx).
 
 You must complete and record these tasks in following order:
 

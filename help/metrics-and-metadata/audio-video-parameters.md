@@ -80,7 +80,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Identifies the stream type. Valid values are "audio", "video", and "".</p> <p><b> <a href="../metrics-and-metadata/segments.md"></a>:</b></p> <p> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Identifies the stream type. Valid values are "audio", "video", and "".</p> <p><b> <a href="../metrics-and-metadata/segments.md"></a>:</b></p> <p> 
      <ul id="ul_xzh_mff_ffb"> 
       <li>StreamType "All" - Segment all media stream data. <b>Rule:</b> Content (ID) exists</li> 
       <li>StreamType "Audio" - Segment all audio stream data. <b>Rule:</b> Content (ID) exists AND Stream Type = audio</li> 
@@ -1053,7 +1053,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Name of the artist.</p> </td> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Name of the artist.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>Album</b> </p> </td> 
@@ -1084,7 +1084,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Name of the album.</p> </td> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Name of the album.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>Label</b> </p> </td> 
@@ -1115,7 +1115,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Name of the record label.</p> </td> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Name of the record label.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>Author</b> </p> </td> 
@@ -1146,7 +1146,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Name of the author (of an audiobook).</p> </td> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Name of the author (of an audiobook).</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>Station</b> </p> </td> 
@@ -1177,7 +1177,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Name / ID of the radio station.</p> </td> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Name / ID of the radio station.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>Publisher</b> </p> </td> 
@@ -1208,7 +1208,7 @@ Table data description:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/media-collection-api.md"></a> or <a href="../sdk-implement/sdk-implement.md"></a> 2.2. </p> <p>Name of the audio content publisher.</p> </td> 
+   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>Note:  Available in <a href="../media-collection-api/mc-api-overview.md"></a> or <a href="../sdk-implement/download-sdks.md"></a> 2.2. </p> <p>Name of the audio content publisher.</p> </td> 
   </tr> 
  </tbody> 
 </table>

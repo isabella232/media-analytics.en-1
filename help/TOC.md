@@ -62,7 +62,7 @@ user-guide-title: Adobe Analytics for Audio and Video
             + [Standard Metadata Parameters - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md) 
     + Track Ads {#track-ads}
         + [Overview](sdk-implement/track-ads/track-ads-overview.md)
-        + [Track Ads on Android](sdk-implementtrack-ads/track-ads-android.md)
+        + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
         + [Track Ads on iOS](sdk-implement/track-ads/track-ads-ios.md)
         + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
         + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)

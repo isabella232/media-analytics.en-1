@@ -19,7 +19,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 >[!TIP]
 >
->Additional details for each section is available in the [Implement](../../sdk-implement/track-qos/track-qos.md#section_3B8EBEB167624D0481E8AF4761F83047) section.
+>Additional details for each section is available in the [Implement](../../sdk-implement/track-qos/track-qos-overview.md) section.
 
 **On all bitrate change events**:
 

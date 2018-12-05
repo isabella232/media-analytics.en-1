@@ -25,7 +25,7 @@ In this scenario, pre-roll ads have been inserted before the main content. Unles
    <td colname="col1"> The user clicks <span class="uicontrol"> Play </span> </td> 
    <td colname="col2"> <span class="codeph"> trackSessionStart </span> </td> 
    <td colname="col3"> Analytics Content Start, Heartbeat Content Start </td> 
-   <td colname="col4"> The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the <a href="vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316" format="dita" scope="local"></a> scenario. </td> 
+   <td colname="col4"> The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the <a href="vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> The ad starts. </td> 
@@ -81,13 +81,13 @@ In this scenario, pre-roll ads have been inserted before the main content. Unles
    <td colname="col1"> The content plays. </td> 
    <td colname="col2"> </td> 
    <td colname="col3"> Content Heartbeats </td> 
-   <td colname="col4"> This network call is identical to the <a href="vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316" format="dita" scope="local"></a> scenario. </td> 
+   <td colname="col4"> This network call is identical to the <a href="vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> The content is complete. </td> 
    <td colname="col2"> <span class="codeph"> trackComplete </span> </td> 
    <td colname="col3"> Heartbeat Content Complete </td> 
-   <td colname="col4"> This network call is identical to the <a href="vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316" format="dita" scope="local"></a> scenario. </td> 
+   <td colname="col4"> This network call is identical to the <a href="vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> The session is over </td> 

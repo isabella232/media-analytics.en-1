@@ -13,7 +13,7 @@ snippet: y
 
 To access Adobe Debug:
 
-1. Go to [www.marketing.adobe.com](www.marketing.adobe.com) and create a new Adobe Experience Cloud user.
+1. Go to [www.marketing.adobe.com](https://www.marketing.adobe.com) and create a new Adobe Experience Cloud user.
 
    >[!TIP]
    >

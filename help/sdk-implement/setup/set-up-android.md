@@ -135,4 +135,4 @@ To add these permissions, add the following lines to your [!DNL AndroidManifest.
 
 In versions 2.x, all of the public methods are consolidated into the `com.adobe.primetime.va.simple.MediaHeartbeat` class to make it easier on developers. Also, all configs are now consolidated into the `com.adobe.primetime.va.simple.MediaHeartbeatConfig` class.
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md](../../sdk-implement/va-1x-to-2x/va-1x-to-2x.md). 
+For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md). 

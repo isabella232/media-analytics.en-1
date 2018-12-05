@@ -33,7 +33,7 @@ This scenario comprises VOD content playback with a skipped ad.
    <td colname="col1"> User clicks <span class="uicontrol"> Play </span> </td> 
    <td colname="col2"> <span class="codeph"> trackSessionStart() </span> </td> 
    <td colname="col3"> Analytics Content Start, Heartbeat Content Start </td> 
-   <td colname="col4"> The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as <a href="vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
+   <td colname="col4"> The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as <a href="vod-no-intrs-details.md" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> The ad starts. </td> 
@@ -67,13 +67,13 @@ This scenario comprises VOD content playback with a skipped ad.
    <td colname="col1"> The content plays. </td> 
    <td colname="col2"> </td> 
    <td colname="col3"> Content Heartbeats </td> 
-   <td colname="col4"> These network calls are exactly the same as the <a href="vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
+   <td colname="col4"> These network calls are exactly the same as the <a href="vod-no-intrs-details.md" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> The content completes playing. </td> 
    <td colname="col2"> <span class="codeph"> trackComplete() </span> </td> 
    <td colname="col3"> Heartbeat Content Complete </td> 
-   <td colname="col4"> This network call is exactly the same as the <a href="vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
+   <td colname="col4"> This network call is exactly the same as the <a href="vod-no-intrs-details.md" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> The session is over. </td> 

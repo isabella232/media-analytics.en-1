@@ -15,7 +15,7 @@ The iOS sample code helps you implement the Video Heartbeat Library for Nielsen,
 
 You can configure each of the video heartbeat library components individually for Digital Content Ratings (Nielsen).
 
-For detailed instructions, see [Configure the Video Heartbeat Library](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_ios_configure.html).
+For detailed instructions, see [Configure the Video Heartbeat Library](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_ios.pdf).
 
 ## Create the AdobeNielsenAPI {#section_129D10D357DE4320AF8277DA387CA411}
 

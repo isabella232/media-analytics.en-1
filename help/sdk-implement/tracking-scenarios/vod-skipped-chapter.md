@@ -17,7 +17,7 @@ This is the same scenario as [VOD playback with one chapter](../../sdk-implement
 
 |  Trigger  | Heartbeat method  | Network calls  | Notes  |
 |---|---|---|---|
-|  User clicks **[!UICONTROL Play]** | `trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [Playback with no interruptions in iOS](vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316) scenario.  |
+|  User clicks **[!UICONTROL Play]** | `trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario.  |
 |  The chapter starts.  | `trackEvent:ChapterStart`  | Heartbeat Chapter Start  |  |
 |  The first frame of the chapter is played.  | `trackPlay`  | Heartbeat Chapter Play  | When chapter content plays before main content, we want to start the heartbeats when the chapter starts.  |
 |  The chapter plays.  |  | Chapter Heartbeats  |  |
@@ -25,7 +25,7 @@ This is the same scenario as [VOD playback with one chapter](../../sdk-implement
 |  The seek is complete.  | `trackEvent:trackSeekComplete`  |  | Heartbeats would resume post this.  |
 |  The application realizes that the user has seeked out of the regular chapter boundary.  | `trackEvent:trackChapterSkip`  |  |  |
 |  The content plays.  |  | Content Heartbeats  |  |
-|  The content completes playing.  | `trackComplete`  | Heartbeat Content Complete  | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-code.md#concept_DCD05D528AE642C686C07819C6C18316) scenario.  |
+|  The content completes playing.  | `trackComplete`  | Heartbeat Content Complete  | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario.  |
 |  The session is over.  | `trackSessionEnd`  |  | `SessionEnd` means the end of a viewing session. This API must be called even if the user does not watch the video to completion.  |
 
 ## Parameters {#section_1874F6B7880B43C5856BD11FF85B382E}
