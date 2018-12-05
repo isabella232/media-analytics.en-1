@@ -78,7 +78,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 
 * `playerTime` - Mandatory for all requests.
 * `eventType` - Mandatory for all requests. 
-* `params` - Mandatory for certain `eventTypes`; check the [JSON validation schema]() to determine which eventTypes are mandatory, and which are optional. 
+* `params` - Mandatory for certain `eventTypes`; check the [JSON validation schema](mc-ap-ref/mc-api-json-validation.md) to determine which eventTypes are mandatory, and which are optional. 
 
 * `qoeData` - Optional for all requests.
 * `customMetadata` - Optional for all requests, but only sent with `sessionStart`, `adStart`, and `chapterStart` event types.
