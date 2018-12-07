@@ -138,8 +138,6 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
 **&#42;** For all 1.x SDKs, the links are for the full PDF download of the documentation.
 
-## Primetime Media SDK Documentation {#section_tzh_llk_t2b}
+## Latest Primetime Media SDK Documentation {#section_tzh_llk_t2b}
 
-* **Android**: [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/2.5/index.html#Initialize_and_configure_video_analytics_)
-* **DHLS**: [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/index.html#Initialize_and_configure_video_analytics)
-* **iOS**: [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Initialize_and_configure_video_analytics_)
+*  [Primetime User Guides](https://helpx.adobe.com/primetime/user-guide.html)
