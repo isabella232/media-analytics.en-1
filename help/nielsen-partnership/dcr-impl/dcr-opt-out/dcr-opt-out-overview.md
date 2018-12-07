@@ -39,27 +39,10 @@ Consider the following benefits and drawbacks when making the decision:
 
 The opt-out data flows are different for Adobe and Nielsen and are also different for browser and mobile. 
 
-<table id="table_97A2A34351AC4992A54638D81551971F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> </th> 
-   <th colname="col2" align="center" class="entry"> Mobile </th> 
-   <th colname="col3" align="center" class="entry"> Browser </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <b>Adobe</b> </td> 
-   <td colname="col2"> <p>The Mobile Services SDK has a setting that contain the opt-out status. After the user has expressed this preference, the app developer can set mobile content to be opted-out. Now, no additional data is transmitted from the device. </p> <p>App developers can determine whether they want to offer an opt-out to the end user and to set the appropriate settings in the SDK. </p> </td> 
-   <td colname="col3"> <p>Opt-out can be offered as a link. When the end user clicks this link, an opt-out cookie is set on the data collection domain. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>Nielsen</b> </td> 
-   <td colname="col2"> <p>To opt out of Nielsen, you need to load a specific Nielsen URL in a web view in your app. </p> <p>Users read this page, and if they decide to opt out, this decision needs to be conveyed to the app. The app developer takes the necessary action. For more information, see <i>Opt out of Nielsen Measurement on Mobile</i> below. </p> </td> 
-   <td colname="col3"> <p>Opt-out must be offered to the end user as a link. When users click the link, they are taken to a Nielsen page with more information about Nielsen data collection, and where the users can opt out. </p> <p>If the user decides to opt out, an opt-out cookie is set for Nielsen data collection and is global for all web properties that are measured with Nielsen in that web browser. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| | Mobile | Browser |
+| --- | --- | --- |
+| **Adobe** | The Mobile Services SDK has a setting that contain the opt-out status. After the user has expressed this preference, the app developer can set mobile content to be opted-out. Now, no additional data is transmitted from the device.  App developers can determine whether they want to offer an opt-out to the end user and to set the appropriate settings in the SDK.  | Opt-out can be offered as a link. When the end user clicks this link, an opt-out cookie is set on the data collection domain.  |
+| **Nielsen** | To opt out of Nielsen, you need to load a specific Nielsen URL in a web view in your app.  Users read this page, and if they decide to opt out, this decision needs to be conveyed to the app. The app developer takes the necessary action. For more information, see _Opt out of Nielsen Measurement on Mobile_ below.  | Opt-out must be offered to the end user as a link. When users click the link, they are taken to a Nielsen page with more information about Nielsen data collection, and where the users can opt out.  If the user decides to opt out, an opt-out cookie is set for Nielsen data collection and is global for all web properties that are measured with Nielsen in that web browser.  | 
 
 ## Opt-out verbiage sample {#section_D3049339CDD94E7993FF9D636ED13AE8}
 

@@ -131,40 +131,12 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 
 1. Update the Nielsen video metadata in `PTVideoAnalyticsNielsenMetadata` to include the following key/values:
 
-   <table id="table_F26B72603E3346DDB8893E6157972173"> 
-    <thead> 
-     <tr> 
-      <th colname="col1" class="entry"> Key </th> 
-      <th colname="col2" class="entry"> Value </th> 
-     </tr> 
-    </thead>
-    <tbody> 
-     <tr> 
-      <td colname="col1"> <p> <span class="codeph"> tv </span> </p> </td> 
-      <td colname="col2"> <p>"true" </p> </td> 
-     </tr> 
-     <tr> 
-      <td colname="col1"> <p> <span class="codeph"> datasource </span> </p> </td> 
-      <td colname="col2"> <p>"id3" </p> </td> 
-     </tr> 
-     <tr> 
-      <td colname="col1"> <p> <span class="codeph"> adloadtype </span> </p> </td> 
-      <td colname="col2"> <p> 
-        <ul id="ul_F77434CF41564AB1AF132BC943B1459B"> 
-         <li id="li_82B2F3C3F0094D11A2E1090F38767206">When linear ads are present (MTVR), the adloadtype= "1". </li> 
-         <li id="li_E7BFBDFA3DA84B748C1230A03CE43928">When DAI ads are present (DCR), the adloadtype= "2". </li> 
-        </ul> </p> </td> 
-     </tr> 
-     <tr> 
-      <td colname="col1"> <p> <span class="codeph"> admodel </span> </p> </td> 
-      <td colname="col2"> <p> 
-        <ul id="ul_45C2A12F0EBF4E9CBE92227AF2C0F7A4"> 
-         <li id="li_F8F15B3DF1A54BBA8497C91F0A17EE90">When linear ads are present (MTVR), the admodel= "1". </li> 
-         <li id="li_0D9DA5B6261441E5B8A2849C7ED43074">When DAI ads are present (DCR), the admodel= "2". </li> 
-        </ul> </p> </td> 
-     </tr> 
-    </tbody> 
-   </table>
+   | Key | Value |
+   | --- | --- |
+   | `tv` | "true" |
+   | `datasource` | "id3" |
+   | `adloadtype` | <ul> <l>When linear ads are present (MTVR), the adloadtype = "1".  </li> <l>When DAI ads are present (DCR), the adloadtype = "2".  </li> </ul> |
+   | `admodel` | <ul> <l>When linear ads are present (MTVR), the admodel = "1".  </li> <l>When DAI ads are present (DCR), the admodel = "2".  </li> </ul> |
 
    For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
