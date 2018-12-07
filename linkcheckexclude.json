@@ -10,10 +10,16 @@
             "pattern": "^.*apache.org"
         },
         {
-            "pattern": "https://www.ehow.com"
+            "pattern": "^.*ehow.com"
         },
         {
-            "pattern": "https://api.demdex.com/v1/partner-sites/"
-        }
+            "pattern": "^.*api.demdex.com"
+        },
+        {
+            "pattern": "^.*get.adobe.com/reader"
+        },
+        {
+            "pattern": "^.*proxy.debug.adobe.com"
+        }            
     ]
 }
