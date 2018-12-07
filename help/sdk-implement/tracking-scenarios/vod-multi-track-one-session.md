@@ -19,22 +19,9 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
 
 ### Heartbeat Session
 
-<table id="table_A74CD93A863B4BD892CAA92646428F17">  
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Parameter </th> 
-   <th colname="col2" class="entry"> Value </th> 
-   <th colname="col3" class="entry"> Notes </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> s:event:sid </span> </td> 
-   <td colname="col2"> Unique session ID </td> 
-   <td colname="col3"> <p>A unique session ID that exists in all the heartbeat network calls until <span class="codeph"> trackSessionEnd </span> is called. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Parameter | Value | Notes |
+| --- | --- | --- |
+| `s:event:sid` | Unique session ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
 ## Sample Code {#section_ndg_wdj_x2b}
 

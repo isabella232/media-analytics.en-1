@@ -15,67 +15,16 @@ In this scenario, there is one live asset with no ads played for 40 secs after j
 
 This is the same scenario as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point. 
 
-<table id="table_650DCE0B482249FFB01CCE36F2DCF259"> 
- <desc /> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Trigger </th> 
-   <th colname="col2" class="entry"> Heartbeat method </th> 
-   <th colname="col3" class="entry"> Network calls </th> 
-   <th colname="col4" class="entry"> Notes </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> User clicks <span class="uicontrol"> Play </span> </td> 
-   <td colname="col2"> <span class="codeph"> trackSessionStart </span> </td> 
-   <td colname="col3"> Analytics Content Start, Heartbeat Content Start </td> 
-   <td colname="col4"> The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the <a href="../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> First frame of the content plays. </td> 
-   <td colname="col2"> <span class="codeph"> trackPlay </span> </td> 
-   <td colname="col3"> Heartbeat Content Play </td> 
-   <td colname="col4"> When chapter content plays before main content, the Heartbeats start when the chapter starts. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Content plays </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Content Heartbeats </td> 
-   <td colname="col4"> This network call is exactly the same as the <a href="../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Session1 Over </p> <p>(Episode1 ended) </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> trackComplete </span></p> <p> <span class="codeph"> trackSessionEnd </span></p> </td> 
-   <td colname="col3"> Heartbeat Content Complete </td> 
-   <td colname="col4"> Complete means session1 for 1st episode was reached and watched completely. Before starting session for next episode this session must be ended. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Episode2 started </p> <p>(Session2 start) </p> </td> 
-   <td colname="col2"> <span class="codeph"> trackSessionStart </span> </td> 
-   <td colname="col3"> <p>Analytics Content Start </p> <p>Heartbeat Content Start </p> </td> 
-   <td colname="col4"> This is because user watched first episode and continued watching into another episode </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 1st Frame of Video </td> 
-   <td colname="col2"> <span class="codeph"> trackPlay </span> </td> 
-   <td colname="col3"> Heartbeat Content Play </td> 
-   <td colname="col4"> This method triggers the timer and from this point forward, heartbeats will be sent every 10 seconds as long as playback continues. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Content Plays </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Content Heartbeats </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Session Over (Episode2 ended) </td> 
-   <td colname="col2"> <p> <span class="codeph"> trackComplete </span></p> <p> <span class="codeph"> trackSessionEnd </span></p> </td> 
-   <td colname="col3"> Heartbeat Content Complete </td> 
-   <td colname="col4"> Complete means session2 for 2nd episode was reached and watched completely. Before starting session for next episode this session must be ended. </td> 
-  </tr> 
- </tbody> 
-</table>
+| Trigger | Heartbeat method | Network calls | Notes |
+| --- | --- | --- | --- |
+| User clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| First frame of the content plays.  | `trackPlay` | Heartbeat Content Play | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
+| Content plays | | Content Heartbeats | This network call is exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| Session1 Over (Episode1 ended) | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | Complete means session1 for 1st episode was reached and watched completely. Before starting session for next episode this session must be ended.  |
+| Episode2 started (Session2 start) | `trackSessionStart` | Analytics Content Start Heartbeat Content Start | This is because user watched first episode and continued watching into another episode |
+| 1st Frame of Video | `trackPlay` | Heartbeat Content Play | This method triggers the timer and from this point forward, heartbeats will be sent every 10 seconds as long as playback continues.  |
+| Content Plays | | Content Heartbeats | |
+| Session Over (Episode2 ended) | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | Complete means session2 for 2nd episode was reached and watched completely. Before starting session for next episode this session must be ended.  |
 
 ## Parameters {#section_D52B325B99DA42108EF560873907E02C}
 

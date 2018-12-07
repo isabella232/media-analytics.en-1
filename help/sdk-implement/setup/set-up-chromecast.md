@@ -82,96 +82,18 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
        >
        >If `mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls.
 
-       <!-- 
-
-<codeblock class="syntax html">
-  <script> 
- <discoiqbr />var&nbsp;ADBMobileConfig&nbsp;=&nbsp;{ 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"version":"1.0",&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"analytics":&nbsp;{ 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"rsids":"", 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"server":"", 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"charset":"UTF-8",&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ssl":false,&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"offlineEnabled":false,&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"lifecycleTimeout":30,&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"batchLimit":50,&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"privacyDefault":"optedin",&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"poi":[ 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;}, 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"marketingCloud":{ 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"org":"" 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;}, 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"target":{&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"clientCode":"",&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"timeout":5 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;}, 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"audienceManager":{&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"server":"" 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;}, 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;"acquisition":{&nbsp; 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"server":"example.com", 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"appid":"sample-app-id" 
- <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;}, 
- <discoiqbr /> 
- <b>&nbsp;&nbsp;&nbsp;&nbsp;"mediaHeartbeat":{&nbsp; 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"server":"example.com",&nbsp; 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"publisher":"sample-publisher",&nbsp; 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"channel":"sample-channel",&nbsp; 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ssl":false, 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ovp":"sample-ovp",&nbsp; 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sdkVersion":"sample-sdk",&nbsp; 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"playerName":"chromecast" 
-  <discoiqbr />&nbsp;&nbsp;&nbsp;&nbsp;} 
-  <discoiqbr /></b>}; 
- <discoiqbr /></script> 
- <discoiqbr /><script&nbsp;type="text/javascript"&nbsp;src="script/lib/adbmobile-chromecast.min.js"></script> 
- <discoiqbr /> 
-</codeblock>
-
- -->
-
        ADBMobile Config Parameters for mediaHeartbeat key:
 
-    <table id="table_00A5AE3DE21546DC89F561BAFEC6E710">  
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Config Parameter </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> server </span> </td> 
-   <td colname="col2"> <p>String that represents the URL of the tracking endpoint on the backend. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> publisher </span> </td> 
-   <td colname="col2"> <p>String that represents the content publisher unique identifier. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> channel </span> </td> 
-   <td colname="col2"> <p>String that represents the name of the content distribution channel. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> ssl </span> </td> 
-   <td colname="col2"> <p>Boolean that represents whether SSL should be used for tracking calls. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> ovp </span> </td> 
-   <td colname="col2"> <p>String that represents the name of the video player provider. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> sdkversion </span> </td> 
-   <td colname="col2"> <p>String that represents the current version of the app/SDK. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> playerName </span> </td> 
-   <td colname="col2"> <p>String that represents the name of the player. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   | Config Parameter | Description |
+   | --- | --- |
+   | `server` | String that represents the URL of the tracking endpoint on the backend.  |
+   | `publisher` | String that represents the content publisher unique identifier.  |
+   | `channel` | String that represents the name of the content distribution channel.  |
+   | `ssl` | Boolean that represents whether SSL should be used for tracking calls.  |
+   | `ovp` | String that represents the name of the video player provider.  |
+   | `sdkversion` | String that represents the current version of the app/SDK.  |
+   | `playerName` | String that represents the name of the player.  |
+
 
 1. Configure Experience Cloud Visitor ID.
 
@@ -199,34 +121,11 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
    >
    >Experience Cloud Visitor ID methods are prefixed with `visitor`.
 
-<table id="table_5DE8BEEA051542B58B7060E26183E61F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Method </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> getMarketingCloudID() </span> </td> 
-   <td colname="col2"> <p>Retrieves the Experience Cloud Visitor ID from the Visitor ID service. </p> <p> 
-     <codeblock class="syntax javascript">
-       ADBMobile.visitor.getMarketingCloudID(); 
-     </codeblock> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> syncIdentifiers() </span> </td> 
-   <td colname="col2"> <p>With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to <span class="codeph"> setCustomerIDs() </span> in the JavaScript library. </p> <p>For example: 
-     <codeblock class="syntax javascript">
-       var&nbsp;identifiers&nbsp;=&nbsp;{}; 
-      
-identifiers["idType"]&nbsp;=&nbsp;"idValue"; 
-      
-ADBMobile.visitor.syncIdentifiers(identifiers); 
-     </codeblock> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   | Method | Description |
+   | --- | --- |
+   | `getMarketingCloudID()` | Retrieves the Experience Cloud Visitor ID from the Visitor ID service.  `ADBMobile.visitor.getMarketingCloudID();` |
+   | `syncIdentifiers()` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs()` in the JavaScript library.  For example: `var identifiers = {}; identifiers["idType"] = "idValue"; ADBMobile.visitor.syncIdentifiers(identifiers);` |
+
 
    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
 

@@ -15,74 +15,18 @@ This scenario comprises VOD content playback with a skipped ad.
 
 ### One VOD with a skipped pre-roll ad
 
-<table id="table_8308559859FA480C8263DFBBFC716ADB">  
- <desc>
-   This is the same scenario as 
-  <a href="../../sdk-implement/tracking-scenarios/vod-preroll-ads.md"></a>, except the application has a provision to let the user skip the ad, on the click of a skip button perhaps. 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Trigger </th> 
-   <th colname="col2" class="entry"> Heartbeat method </th> 
-   <th colname="col3" class="entry"> Network calls </th> 
-   <th colname="col4" class="entry"> Notes </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> User clicks <span class="uicontrol"> Play </span> </td> 
-   <td colname="col2"> <span class="codeph"> trackSessionStart() </span> </td> 
-   <td colname="col3"> Analytics Content Start, Heartbeat Content Start </td> 
-   <td colname="col4"> The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as <a href="vod-no-intrs-details.md" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The ad starts. </td> 
-   <td colname="col2"> 
-    <ul id="ul_6CFE71C5EBC34B7483B1D4E1A73F47E7"> 
-     <li id="li_398694BCFA154E30B5986FE3B8694B0C"> <span class="codeph"> trackEvent:AdBreakStart </span> </li> 
-     <li id="li_D3CE6F0159A44CA9A547CEBB61F06FB5"> <span class="codeph"> trackEvent:AdStart </span> </li> 
-    </ul> </td> 
-   <td colname="col3"> Analytics Ad Start, Heartbeat Ad Start </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The first frame of the ad is played. </td> 
-   <td colname="col2"> <span class="codeph"> trackPlay() </span> </td> 
-   <td colname="col3"> Heartbeat Ad Play </td> 
-   <td colname="col4"> When ad content plays before main content, the heartbeats will start when the ad starts to play. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The ad plays. </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Ad Heartbeats </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The ad is skipped. </td> 
-   <td colname="col2"> <span class="codeph"> trackEvent:trackAdSkip </span> </td> 
-   <td colname="col3"> </td> 
-   <td colname="col4"> There is no ad complete network call. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The content plays. </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Content Heartbeats </td> 
-   <td colname="col4"> These network calls are exactly the same as the <a href="vod-no-intrs-details.md" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The content completes playing. </td> 
-   <td colname="col2"> <span class="codeph"> trackComplete() </span> </td> 
-   <td colname="col3"> Heartbeat Content Complete </td> 
-   <td colname="col4"> This network call is exactly the same as the <a href="vod-no-intrs-details.md" format="dita" scope="local"><?oxy-placeholder content="Playback with no interruptions in iOS"?> </a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The session is over. </td> 
-   <td colname="col2"> <span class="codeph"> trackSessionEnd() </span> </td> 
-   <td colname="col3"> </td> 
-   <td colname="col4"> <span class="codeph"> SessionEnd </span> means the end of a viewing session. This API must be called even if the user does not watch the video to completion. </td> 
-  </tr> 
- </tbody> 
-</table>
+This is the same scenario as [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.  
+
+| Trigger | Heartbeat method | Network calls | Notes |
+| --- | --- | --- | --- |
+| User clicks [!UICONTROL Play] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The ad starts.  | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
+| The first frame of the ad is played.  | `trackPlay()` | Heartbeat Ad Play | When ad content plays before main content, the heartbeats will start when the ad starts to play.  |
+| The ad plays.  | | Ad Heartbeats | |
+| The ad is skipped.  | `trackEvent:trackAdSkip` | | There is no ad complete network call.  |
+| The content plays.  | | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The content completes playing.  | `trackComplete()` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The session is over.  | `trackSessionEnd()` | | `SessionEnd` |
 
 ## Parameters {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 

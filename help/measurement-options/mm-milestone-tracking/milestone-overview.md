@@ -53,209 +53,51 @@ On the final screen, select the two eVars and three events to be used with your 
 
 The following table contains additional details on the commerce variables and custom events for video:
 
-<table id="table_qpb_twq_cfb"> 
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Video Metric</b> </th> 
-   <th class="entry"> <b>Variable Type</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <i>Content</i> </td> 
-   <td> <p>eVar</p> <p>Default expiration: Visit</p> </td> 
-   <td> (Required) Collects the name of the video, as specified in the implementation. </td> 
-  </tr> 
-  <tr> 
-   <td> <i>Content Type</i> </td> 
-   <td> <p>eVar</p> <p>Default expiration: Page view</p> </td> 
-   <td> <p>Collects data about the type of content viewed by a visitor. Hits sent by video measurement are assigned a content type of <span class="codeph"> video </span>.</p> <p>This variable does not need to be reserved exclusively for video tracking. Having other content report content type using this same variable lets you analyze the distribution of visitors across the different types of content. For example, you could tag other content types using values such as <span class="codeph"> article </span> or <span class="codeph"> product page </span> using this variable.</p> <p>From a video measurement perspective, <i>Content Type</i> lets you identify video visitors and thereby calculate video conversion rates.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <i>Content Time Spent</i> </td> 
-   <td> <p>Event</p> <p>Type: Counter</p> </td> 
-   <td> Counts the time, in seconds, spent watching a video since the last data collection process (image request). </td> 
-  </tr> 
-  <tr> 
-   <td> <i>Video Initiates</i> </td> 
-   <td> <p>Event</p> <p>Type: Counter</p> </td> 
-   <td> Indicates that a visitor has viewed some portion of a video. However, it does not provide any information about how much, or what part, of a video the visitor viewed. </td> 
-  </tr> 
-  <tr> 
-   <td> <i>Video Completes</i> </td> 
-   <td> <p>Event</p> <p>Type: Counter</p> </td> 
-   <td> <p>Indicates that a user has viewed a complete video. By default, the complete event is measured 1 second before the end of the video.</p> <p>During implementation, you can specify how many seconds from the end of the video you would like to consider a view complete. For live video and other streams that don't have a defined end, you can specify a custom point to measure completes. For example, after a specific time viewed.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Video Metric | Variable Type | Description |
+| --- | --- | --- |
+| Content | eVar Default expiration: Visit | (Required) Collects the name of the video, as specified in the implementation.  |
+| Content Type | eVar Default expiration: Page view | Collects data about the type of content viewed by a visitor. Hits sent by video measurement are assigned a content type of `video` This variable does not need to be reserved exclusively for video tracking. Having other content report content type using this same variable lets you analyze the distribution of visitors across the different types of content. For example, you could tag other content types using values such as `article` `product page` From a video measurement perspective, Content Type lets you identify video visitors and thereby calculate video conversion rates.  |
+| Content Time Spent | Event Type: Counter | Counts the time, in seconds, spent watching a video since the last data collection process (image request).  |
+| Video Initiates | Event Type: Counter | Indicates that a visitor has viewed some portion of a video. However, it does not provide any information about how much, or what part, of a video the visitor viewed.  |
+| Video Completes | Event Type: Counter | Indicates that a user has viewed a complete video. By default, the complete event is measured 1 second before the end of the video.  During implementation, you can specify how many seconds from the end of the video you would like to consider a view complete. For live video and other streams that don't have a defined end, you can specify a custom point to measure completes. For example, after a specific time viewed.  |
 
 ## Media Module variables {#section_ts5_11z_cfb}
 
 The following variables let you configure video measurement. You must define values for the variables in the Required Variables table. Additionally, to track events in your video player, you must enable autoTrack (for supported players) or implement custom player event tracking using the open, play, stop, and close methods.
 
-<table id="table_rpb_twq_cfb"> 
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Variable</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> Media.trackUsingContextData </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.trackUsingContextData = true; </span></p> <p>This option enables integrated video tracking. When set to true, the media module generates context data for media tracking, instead of the legacy <span class="codeph"> pev3 </span> value used in previous versions of video measurement.</p> <p>Use <span class="codeph"> Media.contextDataMapping </span> to map the context data to the selected eVars and Events.</p> <p>Default value: <span class="codeph"> false </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.contextDataMapping </span> </td> 
-   <td> <p><b>Syntax:</b></p> 
-    <codeblock class="javascript">
-      s.Media.contextDataMapping&nbsp;=&nbsp;{ 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.name":"eVar2,prop2", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.segment":"eVar3", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.contentType":"eVar1", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.timePlayed":"event3", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.view":"event1", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.segmentView":"event2", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.complete":"event7", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"a.media.milestones":{ 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25:"event4", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50:"event5", 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75:"event6" 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
-     
-}; 
-    </codeblock> <p>An object that defines variable mapping to eVars and Events that you want to use for video measurement. The object must map the following fields:</p> <p><b>a.media.name:</b> (Required) Populates variables with the video name. Provide the eVar that you selected to store the video name, and the <i>Custom Insight Video</i> variable ( <span class="codeph"> s.prop </span>) you want to use for video pathing. Provide the values in a comma-separated list.</p> <p><b>a.media.segment:</b> (Optional) The eVar that you want to store the media segment name.</p> <p><b>a.contentType:</b> (Optional) The eVar that you want to store the video value, which contains visit and visitor tracking enabled to generate video visit and visitor reporting. The variable you select is likely already used to store data such as article slide show or product page</p> <p><b>a.media.view:</b> (Required) The Event that you want to count media views.</p> <p><b>a.media.segmentView:</b> (Optional) The Event that you want to count segment views.</p> <p><b>a.media.complete:</b> (Optional) The Event that you want to count complete views.</p> <p><b>a.media.timePlayed:</b> (Optional, highly recommended) The numeric Event that you want to store the number of video seconds played.</p> <p><b>a.media.milestones:</b> (Optional) An object that maps s.Media.trackMilestones milestones to counter Events. Media.segmentByMilestones should be set to true if you define milestones.</p> <p><b>Ad tracking</b></p> <p>To track ads, the following context data variables are available:</p> <p><b>a.media.ad.name:</b> (Required) Populates variables with the ad name. Provide the eVar that you selected to store the ad name, and the <i>Custom Insight Video</i> variable ( <span class="codeph"> s.prop </span>) you want to use for pathing. Provide the values in a comma-separated list.</p> <p><b>a.media.ad.pod:</b> The position in the primary content the ad was played.</p> <p><b>a.media.ad.podPosition:</b> The position within the pod where the ad is played.</p> <p><b>a.media.ad.CPM:</b> The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.</p> <p><b>a.media.ad.view:</b> Works the same as <span class="codeph"> a.media.view </span>.</p> <p><b>a.media.ad.clicked:</b> Count the number of clicks for the ad ( <span class="codeph"> Media.click </span> calls).</p> <p><b>a.media.ad.timePlayed:</b> Works the same as <span class="codeph"> a.media.timePlayed </span>.</p> <p><b>a.media.ad.complete:</b> Works the same as <span class="codeph"> a.media.complete </span>.</p> <p><b>a.media.ad.segment:</b> Works the same as <span class="codeph"> a.media.segment </span>.</p> <p><b>a.media.ad.segmentView:</b> Works the same as <span class="codeph"> a.media.segmentView </span>.</p> <p><b>a.media.ad.milestones:</b> Works the same as <span class="codeph"> a.media.milestones </span>.</p> <p><b>a.media.ad.offsetMilestones:</b> Works the same as <span class="codeph"> a.media.offsetMilestones </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.trackVars </span> </td> 
-   <td> <p><b>Syntax:</b> </p> <p> 
-     <codeblock class="javascript">
-       s.Media.trackVars&nbsp;= 
-      
-&nbsp;&nbsp;"events,prop2,eVar1,eVar2,eVar3"; 
-     </codeblock> </p> <p>A comma-separated list of all variables that are set in your video tracking code.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.trackEvents </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> 
-     <codeblock class="javascript">
-       s.Media.trackEvents&nbsp;= 
-      
-&nbsp;&nbsp;"event1,event2,event3,event4,event5,event6,event7" 
-     </codeblock> </p> <p>A comma-separated list of all events that are set in your video tracking code.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Variable | Description |
+| --- | --- |
+| `Media.trackUsingContextData` | **Syntax:** `s.Media.trackUsingContextData = true;` This option enables integrated video tracking. When set to true, the media module generates context data for media tracking, instead of the legacy `pev3` Use `Media.contextDataMapping` Default value: `false` |
+| `Media.contextDataMapping` | **Syntax:** `s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" } };` An object that defines variable mapping to eVars and Events that you want to use for video measurement. The object must map the following fields: **a.media.name:** (Required) Populates variables with the video name. Provide the eVar that you selected to store the video name, and the Custom Insight Video variable ( `s.prop` **a.media.segment:** (Optional) The eVar that you want to store the media segment name.  a.contentType: (Optional) The eVar that you want to store the video value, which contains visit and visitor tracking enabled to generate video visit and visitor reporting. The variable you select is likely already used to store data such as article slide show or product page **a.media.view:** (Required) The Event that you want to count media views.  **a.media.segmentView:** (Optional) The Event that you want to count segment views.  **a.media.complete:** (Optional) The Event that you want to count complete views.  **a.media.timePlayed:** (Optional, highly recommended) The numeric Event that you want to store the number of video seconds played.  **a.media.milestones:** (Optional) An object that maps s.Media.trackMilestones milestones to counter Events. Media.segmentByMilestones should be set to true if you define milestones. **Ad tracking** To track ads, the following context data variables are available: **a.media.ad.name:** (Required) Populates variables with the ad name. Provide the eVar that you selected to store the ad name, and the Custom Insight Video variable ( `s.prop` a.media.ad.pod: The position in the primary content the ad was played.  a.media.ad.podPosition: The position within the pod where the ad is played.  a.media.ad.CPM: The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.  a.media.ad.view: Works the same as `a.media.view` a.media.ad.clicked: Count the number of clicks for the ad ( `Media.click` a.media.ad.timePlayed: Works the same as `a.media.timePlayed` a.media.ad.complete: Works the same as `a.media.complete` a.media.ad.segment: Works the same as `a.media.segment` a.media.ad.segmentView: Works the same as `a.media.segmentView` a.media.ad.milestones: Works the same as `a.media.milestones` a.media.ad.offsetMilestones: Works the same as `a.media.offsetMilestones` |
+| `Media.trackVars` | **Syntax:** `s.Media.trackVars = "events,prop2,eVar1,eVar2,eVar3";` A comma-separated list of all variables that are set in your video tracking code.  |
+| `Media.trackEvents` | **Syntax:** `s.Media.trackEvents = "event1,event2,event3,event4,event5,event6,event7"` A comma-separated list of all events that are set in your video tracking code.  | 
 
 ## Optional variables {#section_ufg_zzy_cfb}
 
-<table id="table_spb_twq_cfb"> 
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Variable</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> Media.autoTrack </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.autoTrack = true </span></p> <p>Enables automatic tracking for supported players. Supported players are as follows:</p> 
-    <ul id="ul_xm4_2qy_cfb"> 
-     <li> <p>Open Source Media Framework (OSMF)</p> </li> 
-     <li> <p>FLVPlayback (Video players created by the import video wizard in Flash Professional)</p> </li> 
-     <li> <p>Silverlight</p> </li> 
-     <li> <p>MediaDisplay</p> </li> 
-     <li> <p>MediaPlayback</p> </li> 
-     <li> <p>Brightcove API versions 2 &amp; 3 (see <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_other_players.html#concept_3CE6B48FDA4B40B4B6399789C818C10B__section_6E4E508717C14D13BEF688BD1144BDAD" format="html" scope="external"> Brightcove </a>)</p> </li> 
-     <li> <p>Windows Media Player, Quicktime, or Real Player using JavaScript</p> </li> 
-    </ul> <p>If you are not using one of the above players you can use <span class="codeph"> Media.open </span>, <span class="codeph"> Media.play </span>, <span class="codeph"> Media.stop </span>, and <span class="codeph"> Media.close </span> to track player events.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.autoTrackNetStreams </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.autoTrackNetStreams = true </span></p> <p>Flash 10.3 introduced new functionality to the NetStream component that enables enhanced video tracking. If you are using a custom Flash NetStream player you can enable this variable to enable functionality similar to autoTrack. This method requires that videos are viewed in Flash 10.3 or later.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.completeByCloseOffset </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.completeByCloseOffset = true </span></p> <p>This setting lets you count a complete video view a few seconds before the actual end of the video.</p> <p>The event is sent based on the number of seconds specified in <span class="codeph"> completeCloseOffsetThreshold </span>. This lets you measure completes in video players that never report an offset equal to the length of the video.</p> <p>By default, this value is set to true and the threshold is set to 1 second. With these defaults the complete event is sent 1 second before the end of the video.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.completeCloseOffsetThreshold </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.completeCloseOffsetThreshold = 1 </span></p> <p>This threshold lets you count a complete video view a few seconds before the actual end of the video. <span class="codeph"> Media.completeByCloseOffset </span> must be set to true to use this threshold.</p> <p>The integer value you supply determines how far off in seconds the offset can be from the length of the video at close and still count as a complete. This lets you measure completes in video players that never report an offset equal to the length of the video.</p> <p>The default threshold is 1 second.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.playerName </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.playerName = "Custom Player Name" </span></p> <p>Specifies a custom video player name.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.trackSeconds </span> </td> 
-   <td> <p> <span class="codeph"> s.Media.trackSeconds = 15 </span></p> <p>Defines the interval, in seconds, for sending video tracking data to Adobe data collection servers while the video is playing. The value must be set in increments of 5 seconds.</p> <p>Enabling <span class="codeph"> Media.trackSeconds </span> triggers only the events that are defined in <span class="codeph"> Media.contextDataMapping </span>. To send additional variables outside of those specified for video measurement, you must use Media.Monitor</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.trackMilestones </span> </td> 
-   <td> <p>Tracks milestones as percentage of the video length.</p> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.trackMilestones = "25,50,75"; </span></p> <p>Defines the interval, as a percentage of the video length, for sending video tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 10 = 10%, 23 = 23%.</p> <p>Because these milestones are fixed points in the video, if a visitor views past the 10% milestone, then rewinds and passes the 10% milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.</p> <p>Enabling <span class="codeph"> Media.trackMilestones </span> triggers only the events that are defined in <span class="codeph"> Media.contextDataMapping </span>. To send additional variables outside of those specified for video measurement, you must use <span class="codeph"> Media.monitor </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.trackOffsetMilestones </span> </td> 
-   <td> <p>Tracks milestones as seconds elapsed from the beginning of the video.</p> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.trackOffsetMilestones = "20,40,60"; </span></p> <p>Defines the interval, as seconds elapsed from the beginning of the video, for sending video tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 20 = 20 seconds, 40 = 40 seconds).</p> <p>Because these milestones are fixed points in the video, if a visitor views past the 20 seconds milestone, then rewinds and passes the 20 seconds milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.</p> <p>Enabling <span class="codeph"> Media.trackOffsetMilestones </span> triggers only the events that are defined in <span class="codeph"> Media.contextDataMapping </span>. To send additional variables outside of those specified for video measurement, you must use <span class="codeph"> Media.monitor </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.segmentByMilestones </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.segmentByMilestones = true; </span></p> <p>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in <span class="codeph"> Media.trackMilestones </span>.</p> <p>Segmenting by milestones is the only way to define segments when using <span class="codeph"> autoTrack </span>.</p> <p>Default value: <span class="codeph"> false </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.segmentByOffsetMilestones </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.segmentByOffsetMilestones = true; </span></p> <p>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in <span class="codeph"> Media.trackOffsetMilestones </span>.</p> <p>Segmenting by milestones is the only way to define segments when using autoTrack.</p> <p>Default value: <span class="codeph"> false </span>.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Variable | Description |
+| --- | --- |
+| `Media.autoTrack` | **Syntax:** `s.Media.autoTrack = true` Enables automatic tracking for supported players. Supported players are as follows: <ul> <li> Open Source Media Framework (OSMF) </li> <li> FLVPlayback (Video players created by the import video wizard in Flash Professional) </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API versions 2 &amp; 3 (see <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_other_players.html#concept_3CE6B48FDA4B40B4B6399789C818C10B__section_6E4E508717C14D13BEF688BD1144BDAD" format="html" scope="external"> Brightcove </a>) </li> <li> Windows Media Player, Quicktime, or Real Player using JavaScript </li> </ul> If you are not using one of the above players you can use `Media.open` `Media.play` `Media.stop` `Media.close` |
+| `Media.autoTrackNetStreams` | **Syntax:** `s.Media.autoTrackNetStreams = true` Flash 10.3 introduced new functionality to the NetStream component that enables enhanced video tracking. If you are using a custom Flash NetStream player you can enable this variable to enable functionality similar to autoTrack. This method requires that videos are viewed in Flash 10.3 or later.  |
+| `Media.completeByCloseOffset` | **Syntax:** `s.Media.completeByCloseOffset = true` This setting lets you count a complete video view a few seconds before the actual end of the video.  The event is sent based on the number of seconds specified in `completeCloseOffsetThreshold` By default, this value is set to true and the threshold is set to 1 second. With these defaults the complete event is sent 1 second before the end of the video.  |
+| `Media.completeCloseOffsetThreshold` | **Syntax:** `s.Media.completeCloseOffsetThreshold = 1` This threshold lets you count a complete video view a few seconds before the actual end of the video.  `Media.completeByCloseOffset` The integer value you supply determines how far off in seconds the offset can be from the length of the video at close and still count as a complete. This lets you measure completes in video players that never report an offset equal to the length of the video.  The default threshold is 1 second.  |
+| `Media.playerName` | **Syntax:** `s.Media.playerName = "Custom Player Name"` Specifies a custom video player name.  |
+| `Media.trackSeconds` | `s.Media.trackSeconds = 15` Defines the interval, in seconds, for sending video tracking data to Adobe data collection servers while the video is playing. The value must be set in increments of 5 seconds.  Enabling `Media.trackSeconds` `Media.contextDataMapping` |
+| `Media.trackMilestones` | Tracks milestones as percentage of the video length.  **Syntax:** `s.Media.trackMilestones = "25,50,75";` Defines the interval, as a percentage of the video length, for sending video tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 10 = 10%, 23 = 23%.  Because these milestones are fixed points in the video, if a visitor views past the 10% milestone, then rewinds and passes the 10% milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.  Enabling `Media.trackMilestones` `Media.contextDataMapping` `Media.monitor` |
+| `Media.trackOffsetMilestones` | Tracks milestones as seconds elapsed from the beginning of the video.  **Syntax:** `s.Media.trackOffsetMilestones = "20,40,60";` Defines the interval, as seconds elapsed from the beginning of the video, for sending video tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 20 = 20 seconds, 40 = 40 seconds).  Because these milestones are fixed points in the video, if a visitor views past the 20 seconds milestone, then rewinds and passes the 20 seconds milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.  Enabling `Media.trackOffsetMilestones` `Media.contextDataMapping` `Media.monitor` |
+| `Media.segmentByMilestones` | **Syntax:** `s.Media.segmentByMilestones = true;` Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.trackMilestones` Segmenting by milestones is the only way to define segments when using `autoTrack` Default value: `false` |
+| `Media.segmentByOffsetMilestones` | **Syntax:** `s.Media.segmentByOffsetMilestones = true;` Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.trackOffsetMilestones` Segmenting by milestones is the only way to define segments when using autoTrack.  Default value: `false` |
 
 ## Ad Tracking variables {#section_bhv_xzy_cfb}
 
 These variables are used to send ad information in conjunction with the openAd method. See [VAST Video Ad Tracking](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_ads.html#concept_045DCEBBB82144309DF95CF3C4A6B6A8).
 
-<table id="table_tpb_twq_cfb"> 
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Variable</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> Media.adTrackSeconds </span> </td> 
-   <td> <p> <span class="codeph"> s.Media.adTrackSeconds = 15 </span></p> <p>Defines the interval, in seconds, for sending video ad tracking data to Adobe data collection servers while the video is playing. The value must be set in increments of 5 seconds.</p> <p>Enabling <span class="codeph"> Media.adTrackSeconds </span> triggers only the events that are defined in <span class="codeph"> Media.contextDataMapping </span>. To send additional variables outside of those specified for video measurement, you must use <span class="codeph"> Media.monitor </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.adTrackMilestones </span> </td> 
-   <td> <p>Tracks ad milestones as percentage of the ad length.</p> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.adTrackMilestones = "25,50,75"; </span></p> <p>Defines the interval, as a percentage of the ad length, for sending ad tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 10 = 10%, 23 = 23%).</p> <p>Because these milestones are fixed points in the ad, if a visitor views past the 10% milestone, then rewinds and passes the 10% milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.</p> <p>Enabling <span class="codeph"> Media.adTrackMilestones </span> triggers only the events that are defined in <span class="codeph"> Media.contextDataMapping </span>. To send additional variables outside of those specified for video measurement, you must use <span class="codeph"> Media.monitor </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.adTrackOffsetMilestones </span> </td> 
-   <td> <p>Tracks ad milestones as seconds elapsed from the beginning of the ad.</p> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.adTrackOffsetMilestones = "20,40,60"; </span></p> <p>Defines the interval, as seconds elapsed from the beginning of the ad, for sending ad tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 20 = 20 seconds, 40 = 40 seconds).</p> <p>Because these milestones are fixed points in the ad, if a visitor views past the 20 seconds milestone, then rewinds and passes the 20 seconds milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.</p> <p>Enabling <span class="codeph"> Media.adTrackOffsetMilestones </span> triggers only the events that are defined in <span class="codeph"> Media.contextDataMapping </span>. To send additional variables outside of those specified for video measurement, you must use <span class="codeph"> Media.monitor </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.adSegmentByMilestones </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.adSegmentByMilestones = true; </span></p> <p>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in <span class="codeph"> Media.adTrackMilestones </span>.</p> <p>Segmenting by milestones is the only way to define segments when using autoTrack.</p> <p>Default value: <span class="codeph"> false </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> <span class="codeph"> Media.adSegmentByOffsetMilestones </span> </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.adSegmentByOffsetMilestones = true; </span></p> <p>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in <span class="codeph"> Media.adTrackOffsetMilestones </span>.</p> <p>Segmenting by milestones is the only way to define segments when using <span class="codeph"> autoTrack </span>.</p> <p>Default value: <span class="codeph"> false </span>.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Variable | Description |
+| --- | --- |
+| `Media.adTrackSeconds` | `s.Media.adTrackSeconds = 15` Defines the interval, in seconds, for sending video ad tracking data to Adobe data collection servers while the video is playing. The value must be set in increments of 5 seconds.  Enabling `Media.adTrackSeconds` `Media.contextDataMapping` `Media.monitor` |
+| `Media.adTrackMilestones` | Tracks ad milestones as percentage of the ad length.  **Syntax:** `s.Media.adTrackMilestones = "25,50,75";` Defines the interval, as a percentage of the ad length, for sending ad tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 10 = 10%, 23 = 23%).  Because these milestones are fixed points in the ad, if a visitor views past the 10% milestone, then rewinds and passes the 10% milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.  Enabling `Media.adTrackMilestones` `Media.contextDataMapping` `Media.monitor` |
+| `Media.adTrackOffsetMilestones` | Tracks ad milestones as seconds elapsed from the beginning of the ad.  **Syntax:** `s.Media.adTrackOffsetMilestones = "20,40,60";` Defines the interval, as seconds elapsed from the beginning of the ad, for sending ad tracking data to Adobe data collection servers. Specify the milestones as a comma-separated list of whole numbers. For example: 20 = 20 seconds, 40 = 40 seconds).  Because these milestones are fixed points in the ad, if a visitor views past the 20 seconds milestone, then rewinds and passes the 20 seconds milestone again, the media module sends the tracking data multiple times. Similarly, if a visitor fast forwards past a milestone, the media module does not send the tracking data for that milestone.  Enabling `Media.adTrackOffsetMilestones` `Media.contextDataMapping` `Media.monitor` |
+| `Media.adSegmentByMilestones` | **Syntax:** `s.Media.adSegmentByMilestones = true;` Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.adTrackMilestones` Segmenting by milestones is the only way to define segments when using autoTrack.  Default value: `false` |
+| `Media.adSegmentByOffsetMilestones` | **Syntax:** `s.Media.adSegmentByOffsetMilestones = true;` Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.adTrackOffsetMilestones` Segmenting by milestones is the only way to define segments when using `autoTrack` Default value: `false` | 
 
 ## Media Module methods {#section_xp1_wzy_cfb}
 
@@ -263,105 +105,18 @@ The media module methods are used to manually tracking player events and to trac
 
 If you are using `Media.autoTrack` and are not tracking additional metrics, you do not need to call any of these methods directly. All arguments are required unless specified as optional.
 
-<table id="table_upb_twq_cfb"> 
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Method</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> Media.open </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.open(mediaName,mediaLength,mediaPlayerName) </span></p> <p>Prepares the media module to collect video tracking data. This method takes the following parameters:</p> <p><b>mediaName:</b> (Required) The name of the video as you want it to appear in video reports.</p> <p><b>mediaLength:</b> (Required) The length of the video in seconds.</p> <p><b>mediaPlayerName:</b> (Required) The name of the media player used to view the video, as you want it to appear in video reports.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.openAd </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM) </span></p> <p>Prepares the media module to collect ad tracking data. This method takes the following parameters:</p> 
-    <ul id="ul_s2d_jsy_cfb"> 
-     <li> <p><b>name:</b> (Required) The name or ID of the ad.</p> </li> 
-     <li> <p><b>length:</b> (Required) The length of the ad.</p> </li> 
-     <li> <p><b>playerName:</b> (Required) The name of the media player used to view the ad.</p> </li> 
-     <li> <p><b>parentName:</b> The name or ID of the primary content where the ad is embedded.</p> </li> 
-     <li> <p><b>parentPod:</b> The position in the primary content the ad was played.</p> </li> 
-     <li> <p><b>parentPodPosition:</b> The position within the pod where the ad is played.</p> </li> 
-     <li> <p><b>CPM:</b> The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.click </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.click(name,offset) </span></p> <p>Track when an ad is clicked in a video. This method takes the following parameters:</p> 
-    <ul id="ul_ff3_rsy_cfb"> 
-     <li> <p><b>name:</b> The name of the ad. This must match the name used in Media.openAd.</p> </li> 
-     <li> <p><b>offset:</b> The offset into the ad when the click occurred.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.close </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.close(mediaName) </span></p> <p>Ends video data collection and sends information to Adobe data collection servers. Call this method at the end of the video. This method takes the following parameter:</p> <p><b>mediaName:</b> The name of the video. This must match the name used in <span class="codeph"> Media.open </span>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.complete </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.complete(name,offset) </span></p> <p>This method manually tracks a complete event. This method is used when you need to trigger events using special logic that can't be handled using <span class="codeph"> Media.completeByCloseOffset </span>.</p> <p>For example, if you are measuring a live stream that has no defined end, you might trigger a complete after a user views a live stream for X seconds. You might measure a complete using a percentage calculation based on the length and type of content. This method takes the following parameters:</p> 
-    <ul id="ul_at3_zsy_cfb"> 
-     <li> <p><b>mediaName:</b> The name of the video. This must match the name used in Media.open.</p> </li> 
-     <li> <p><b>mediaOffset:</b> The number of seconds into the video when the complete event should be sent. Specify the offset based on the video starting at second zero. If your media player tracks using milliseconds, make sure the value is converted to seconds before you call Media.complete.</p> </li> 
-    </ul> <p>If you plan to call complete manually, set <span class="codeph"> s.Media.completeByCloseOffset = false </span> to disable automatic triggering of the complete event.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.play </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.play(name,offset,segmentNum,segment, segmentLength) </span></p> <p>Call this method anytime a video starts playing. When using manual video measurement, you can provide the current segment data when sending video measurement data.</p> <p>If your player changes from one segment to another, for whatever reason, you should call <span class="codeph"> Media.stop </span> before calling <span class="codeph"> Media.play </span> again for the new segment.</p> <p>This method takes the following parameters:</p> <p><b>mediaName:</b> The name of the video. This must match the name used in Media.open.</p> <p><b>mediaOffset:</b> The number of seconds into the video that play begins. Specify the offset based on the video starting at second zero. If your media player tracks using milliseconds, make sure the value is converted to seconds before you call Media.play.</p> <p><b>segmentNum:</b> (Optional) The current segment number, which marketing reports use to order the display of segments in reports. The segmentNum parameter must be greater than zero.</p> <p><b>segment:</b> (Optional) The current segment name.</p> <p><b>segmentLength:</b> (Optional) The current segment length, in seconds.</p> <p>For example:</p> <p> <span class="codeph"> s.Media.play("My Video",1800,2,"Second Quarter",1800) </span></p> <p> <span class="codeph"> s.Media.play("My Video",0,1,"Preroll",30) </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.stop </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.stop(mediaName,mediaOffset) </span></p> <p>Tracks a stop event (stop, pause, etc.) for the specified video. This method takes the following parameters:</p> 
-    <ul id="ul_df1_gty_cfb"> 
-     <li> <p><b>mediaName:</b> The name of the video. This must match the name used in Media.open.</p> </li> 
-     <li> <p><b>mediaOffset:</b> The number of seconds into the video that the stop or pause event occurs. Specify the offset based on the video starting at second zero.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.monitor </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.monitor(s, media) </span></p> <p><b>Silverlight Syntax:</b></p> <p> 
-     <codeblock class="javascript">
-       s.Media.monitor&nbsp;=&nbsp; 
-      
-&nbsp;&nbsp;new&nbsp;AppMeasurement_Media_Monitor(myMediaMonitor); 
-     </codeblock> </p> <p>The Silverlight app media monitor implements the Objective-C delegate design pattern. <span class="codeph"> myMediaMonitor </span> is a class method that takes the <span class="codeph"> s </span> and <span class="codeph"> media </span> parameters.</p> <p>Use this method to send additional video metrics. You can setup additional variables (Props, eVars, Events) and send them using <span class="codeph"> Media.track </span> based on the current state of the video as it is playing.</p> <p>See <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html#concept_6B10C4127F844D84A1FD0F59D818054F" format="html" scope="external"> Measuring Additional Metrics using Media.monitor </a>.</p> <p>This method takes the following parameters:</p> 
-    <ul id="ul_nlg_nty_cfb"> 
-     <li> <p><b>s:</b> : The <span class="codeph"> AppMeasurement </span> instance (or JavaScript <span class="codeph"> s </span> object).</p> </li> 
-     <li> <p><b>media:</b> : An object with members providing the state of the video. These members include: </p> 
-      <ul id="ul_vyq_xty_cfb"> 
-       <li> <p><b>media.name:</b> The name of the video. This must match the name used in <span class="codeph"> Media.open </span>.</p> </li> 
-       <li> <p><b>media.length:</b> The length of the video in seconds given in the call to <span class="codeph"> Media.open </span>.</p> </li> 
-       <li> <p><b>media.playerName:</b> The name of the media player given in the call to <span class="codeph"> Media.open </span>.</p> </li> 
-       <li> <p><b>media.mediaEvent:</b> A string containing the event name that caused the monitor call. These events are:</p> 
-        <ul id="ul_j3l_c5y_cfb"> 
-         <li> <p><b>OPEN:</b> When playback is first observed through <span class="codeph"> Media.autoTrack </span> or a call to <span class="codeph"> Media.play </span>.</p> </li> 
-         <li> <p><b>CLOSE:</b> When playback ends at the completion of the video through <span class="codeph"> Media.autoTrack </span> or at a call to <span class="codeph"> Media.close </span>.</p> </li> 
-         <li> <p><b>PLAY:</b> When playback resumes after being paused or scrubbing through <span class="codeph"> Media.autoTrack </span> or a second call to <span class="codeph"> Media.play </span>.</p> </li> 
-         <li> <p><b>STOP:</b> When playback stops due to a pause of the beginning of scrubbing through <span class="codeph"> Media.autoTrack </span> or a call to <span class="codeph"> Media.stop </span>.</p> </li> 
-         <li> <p><b>MONITOR:</b> When our automatic monitoring checks the state of the video while it's playing (every second).</p> </li> 
-         <li> <p><b>SECONDS:</b> At the second interval defined by the <span class="codeph"> Media.trackSeconds </span> variable.</p> </li> 
-         <li> <p><b>MILESTONE:</b> At the milestones defined by the <span class="codeph"> Media.trackMilestones </span> variable.</p> </li> 
-        </ul> </li> 
-       <li> <p><b>media.openTime:</b> An NSDate object containing data about when <span class="codeph"> Media.open </span> was called.</p> </li> 
-       <li> <p><b>media.offset:</b> The current offset, in seconds, (actual point in the video) into the video. The offset starts at zero (the first second of the video is second 0).</p> </li> 
-       <li> <p><b>media.percent:</b> The current percentage of the video that has played, based on the video length and the current offset.</p> </li> 
-       <li> <p><b>media.timePlayed:</b> The total number of seconds played so far.</p> </li> 
-       <li> <p><b>media.eventFirstTime:</b> Indicates if this was the first time this media event was called for this video.</p> </li> 
-      </ul> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> Media.track </span> </td> 
-   <td> <p><b>Syntax:</b></p> <p> <span class="codeph"> s.Media.track(mediaName) </span></p> <p>Immediately sends the current video state, along with any <span class="codeph"> Media.trackVars </span> and <span class="codeph"> Media.trackEvents </span> you've defined. This method is used within <span class="codeph"> Media.monitor </span>.</p> <p>See <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html#concept_6B10C4127F844D84A1FD0F59D818054F" format="html" scope="external"> Measuring Additional Metrics using Media.monitor </a>.</p> <p>Call <span class="codeph"> Media.open </span> and <span class="codeph"> Media.play </span> on the video before calling this method. This method takes the following parameter:</p> 
-    <ul id="ul_pky_gzy_cfb"> 
-     <li> <p><b>mediaName</b>: The name of the video. This must match the name used in <span class="codeph"> Media.open </span>.</p> </li> 
-    </ul> <p>This method is the only way to send additional variables while the video is playing. It resets the seconds interval and percent milestone counters to zero to prevent multiple tracking hits.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Method | Description |
+| --- | --- |
+| `Media.open` | **Syntax:** `s.Media.open(mediaName,mediaLength,mediaPlayerName)` Prepares the media module to collect video tracking data. This method takes the following parameters: **mediaName:** (Required) The name of the video as you want it to appear in video reports.  **mediaLength:** (Required) The length of the video in seconds.  **mediaPlayerName:** (Required) The name of the media player used to view the video, as you want it to appear in video reports.  |
+| `Media.openAd` | **Syntax:** `s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)` Prepares the media module to collect ad tracking data. This method takes the following parameters: <ul> <li> **name:** (Required) The name or ID of the ad.  </li> <li> **length:** (Required) The length of the ad.  </li> <li> **playerName:** (Required) The name of the media player used to view the ad.  </li> <li> **parentName:** The name or ID of the primary content where the ad is embedded.  </li> <li> **parentPod:** The position in the primary content the ad was played.  </li> <li> **parentPodPosition:** The position within the pod where the ad is played.  </li> <li> **CPM:** The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.  </li> </ul> |
+| `Media.click` | **Syntax:** `s.Media.click(name,offset)` Track when an ad is clicked in a video. This method takes the following parameters: <ul> <li> **name:** The name of the ad. This must match the name used in Media.openAd.  </li> <li> **offset:** The offset into the ad when the click occurred.  </li> </ul> |
+| `Media.close` | **Syntax:** `s.Media.close(mediaName)` Ends video data collection and sends information to Adobe data collection servers. Call this method at the end of the video. This method takes the following parameter: **mediaName:** The name of the video. This must match the name used in `Media.open` |
+| `Media.complete` | **Syntax:** `s.Media.complete(name,offset)` This method manually tracks a complete event. This method is used when you need to trigger events using special logic that can't be handled using `Media.completeByCloseOffset` For example, if you are measuring a live stream that has no defined end, you might trigger a complete after a user views a live stream for X seconds. You might measure a complete using a percentage calculation based on the length and type of content. This method takes the following parameters: <ul> <li> **mediaName:** The name of the video. This must match the name used in Media.open.  </li> <li> **mediaOffset:** The number of seconds into the video when the complete event should be sent. Specify the offset based on the video starting at second zero. If your media player tracks using milliseconds, make sure the value is converted to seconds before you call Media.complete.  </li> </ul> If you plan to call complete manually, set `s.Media.completeByCloseOffset = false` |
+| `Media.play` | **Syntax:** `s.Media.play(name,offset,segmentNum,segment, segmentLength)` Call this method anytime a video starts playing. When using manual video measurement, you can provide the current segment data when sending video measurement data.  If your player changes from one segment to another, for whatever reason, you should call `Media.stop` `Media.play` This method takes the following parameters: **mediaName:** The name of the video. This must match the name used in Media.open.  **mediaOffset:** The number of seconds into the video that play begins. Specify the offset based on the video starting at second zero. If your media player tracks using milliseconds, make sure the value is converted to seconds before you call Media.play.  **segmentNum:** (Optional) The current segment number, which marketing reports use to order the display of segments in reports. The segmentNum parameter must be greater than zero.  **segment:** (Optional) The current segment name.  **segmentLength:** (Optional) The current segment length, in seconds.  For example: `s.Media.play("My Video",1800,2,"Second Quarter",1800)` `s.Media.play("My Video",0,1,"Preroll",30)` |
+| `Media.stop` | **Syntax:** `s.Media.stop(mediaName,mediaOffset)` Tracks a stop event (stop, pause, etc.) for the specified video. This method takes the following parameters: <ul> <li> **mediaName:** The name of the video. This must match the name used in Media.open.  </li> <li> **mediaOffset:** The number of seconds into the video that the stop or pause event occurs. Specify the offset based on the video starting at second zero.  </li> </ul> |
+| `Media.monitor` | **Syntax:** `s.Media.monitor(s, media)` **Silverlight Syntax:** `s.Media.monitor&nbsp;=&nbsp; &nbsp;&nbsp;new&nbsp;AppMeasurement_Media_Monitor(myMediaMonitor);` The Silverlight app media monitor implements the Objective-C delegate design pattern.  `myMediaMonitor` `s` `media` Use this method to send additional video metrics. You can setup additional variables (Props, eVars, Events) and send them using `Media.track` See [Measuring Additional Metrics using Media.monitor](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html#concept_6B10C4127F844D84A1FD0F59D818054F).  This method takes the following parameters: <ul> <li> **s:** : The `AppMeasurement` `s` </li> <li> **media:** : An object with members providing the state of the video. These members include: <ul> <li> **media.name:** The name of the video. This must match the name used in `Media.open` </li> <li> **media.length:** The length of the video in seconds given in the call to `Media.open` </li> <li> **media.playerName:** The name of the media player given in the call to `Media.open` </li> <li> **media.mediaEvent:** A string containing the event name that caused the monitor call. These events are: <ul> <li> **OPEN:** When playback is first observed through `Media.autoTrack` `Media.play` </li> <li> **CLOSE:** When playback ends at the completion of the video through `Media.autoTrack` `Media.close` </li> <li> **PLAY:** When playback resumes after being paused or scrubbing through `Media.autoTrack` `Media.play` </li> <li> **STOP:** When playback stops due to a pause of the beginning of scrubbing through `Media.autoTrack` `Media.stop` </li> <li> **MONITOR:** When our automatic monitoring checks the state of the video while it's playing (every second).  </li> <li> **SECONDS:** At the second interval defined by the `Media.trackSeconds` </li> <li> **MILESTONE:** At the milestones defined by the `Media.trackMilestones` </li> </ul> </li> <li> **media.openTime:** An NSDate object containing data about when `Media.open` </li> <li> **media.offset:** The current offset, in seconds, (actual point in the video) into the video. The offset starts at zero (the first second of the video is second 0).  </li> <li> **media.percent:** The current percentage of the video that has played, based on the video length and the current offset.  </li> <li> **media.timePlayed:** The total number of seconds played so far.  </li> <li> **media.eventFirstTime:** Indicates if this was the first time this media event was called for this video.  </li> </ul> </li> </ul> |
+| `Media.track` | **Syntax:** `s.Media.track(mediaName)` Immediately sends the current video state, along with any `Media.trackVars` `Media.trackEvents` `Media.monitor` See [Measuring Additional Metrics using Media.monitor](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html#concept_6B10C4127F844D84A1FD0F59D818054F).  Call `Media.open` `Media.play` <ul> <li> **mediaName**: The name of the video. This must match the name used in `Media.open` </li> </ul> This method is the only way to send additional variables while the video is playing. It resets the seconds interval and percent milestone counters to zero to prevent multiple tracking hits.  | 
+
 
 ## Track video player events {#section_dsg_rzy_cfb}
 

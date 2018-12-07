@@ -13,146 +13,36 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 
 ## Video metadata constants {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
-<table id="table_CE88520886C74050978BDA218E5D2E7D"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Metadata Name </th> 
-   <th colname="col2" class="entry"> Context Data Key </th> 
-   <th colname="col3" class="entry"> Constant Name </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Show </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.show</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeySHOW</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Season </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.season</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeySEASON</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Episode </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.episode</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyEPISODE</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Asset </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.asset</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyASSET_ID</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Genre </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.genre</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyGENRE</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>First Air Date </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.airDate</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyFIRST_AIR_DATE</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>First Digital Air Date </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.digitalDate</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Rating </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.rating</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyRATING</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Originator </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.originator</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyORIGINATOR</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Network </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.network</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyNETWORK</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Show Type </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.type</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeySHOW_TYPE</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Ad Load </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.adLoad</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyAD_LOAD</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>MVPD </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.pass.mvpd</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyMVPD</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Authorized </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.pass.auth</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyAUTHORIZED</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Day Part </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.dayPart</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyDAY_PART</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Feed </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.feed</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeyFEED</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Stream Format </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.format</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_VideoMetadataKeySTREAM_FORMAT</span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Metadata Name | Context Data Key | Constant Name |
+| --- | --- | --- |
+| Show | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
+| Season | `a.media.season` | `MEDIA_VideoMetadataKeySEASON` |
+| Episode | `a.media.episode` | `MEDIA_VideoMetadataKeyEPISODE` |
+| Asset | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
+| Genre | `a.media.genre` | `MEDIA_VideoMetadataKeyGENRE` |
+| First Air Date | `a.media.airDate` | `MEDIA_VideoMetadataKeyFIRST_AIR_DATE` |
+| First Digital Air Date | `a.media.digitalDate` | `MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE` |
+| Rating | `a.media.rating` | `MEDIA_VideoMetadataKeyRATING` |
+| Originator | `a.media.originator` | `MEDIA_VideoMetadataKeyORIGINATOR` |
+| Network | `a.media.network` | `MEDIA_VideoMetadataKeyNETWORK` |
+| Show Type | `a.media.type` | `MEDIA_VideoMetadataKeySHOW_TYPE` |
+| Ad Load | `a.media.adLoad` | `MEDIA_VideoMetadataKeyAD_LOAD` |
+| MVPD | `a.media.pass.mvpd` | `MEDIA_VideoMetadataKeyMVPD` |
+| Authorized | `a.media.pass.auth` | `MEDIA_VideoMetadataKeyAUTHORIZED` |
+| Day Part | `a.media.dayPart` | `MEDIA_VideoMetadataKeyDAY_PART` |
+| Feed | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
+| Stream Format | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` | 
 
 ## Ad metadata constants {#section_5290E1BA54A24D30875F4F55C6CF9458}
 
-<table id="table_5E6F5DA489E4454AB6D94BB7CEEFAA65"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Metadata Name </th> 
-   <th colname="col2" class="entry"> Context Data Key </th> 
-   <th colname="col3" class="entry"> Constant Name </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Advertiser </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.ad.advertiser</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_AdMetadataKeyADVERTISER</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Campaign ID </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.ad.campaign</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_AdMetadataKeyCAMPAIGN_ID</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Creative ID </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.ad.creative</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_AdMetadataKeyCREATIVE_ID</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Placement ID </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.ad.placement</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_AdMetadataKeyPLACEMENT_ID</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Site ID </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.ad.site</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_AdMetadataKeyPLACEMENT_ID</span> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Creative URL </p> </td> 
-   <td colname="col2"> <p><span class="codeph"> a.media.ad.creativeURL</span> </p> </td> 
-   <td colname="col3"> <p><span class="codeph"> MEDIA_AdMetadataKeyCREATIVE_URL</span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Metadata Name | Context Data Key | Constant Name |
+| --- | --- | --- |
+| Advertiser | `a.media.ad.advertiser` | `MEDIA_AdMetadataKeyADVERTISER` |
+| Campaign ID | `a.media.ad.campaign` | `MEDIA_AdMetadataKeyCAMPAIGN_ID` |
+| Creative ID | `a.media.ad.creative` | `MEDIA_AdMetadataKeyCREATIVE_ID` |
+| Placement ID | `a.media.ad.placement` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
+| Site ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
+| Creative URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` | 
 
 ## Constants {#section_F55145DBE77F45B988849C42C044C7DA}
 
@@ -166,45 +56,11 @@ You can use the following constants to track media events:
 
 ### MediaObjectkey constants (Used as keys within MediaObject instances)
 
-<table id="table_cqh_44m_ddb">  
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Constant </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> MEDIA_STANDARD_VIDEO_METADATA</span> </td> 
-   <td colname="col2">Constant to set video metadata on the <span class="codeph"> MediaInfo</span> object in the <span class="codeph"> trackLoad</span> API. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> MEDIA_STANDARD_AD_METADATA</span> </td> 
-   <td colname="col2">Constant to set the ad metadata on the <span class="codeph"> EventData</span> object in the <span class="codeph"> trackEvent</span> API for Ad start. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> VIDEO_RESUMED</span> </td> 
-   <td colname="col2"> <p>Constant for sending a video-resumed heartbeat. To resume video tracking of previously stopped content, you need to set the <span class="codeph"> VIDEO_RESUMED</span> <i>property</i> on the <span class="codeph"> mediaInfo</span> object when you call <b><span class="codeph"> mediaTrackLoad</span></b>. (<span class="codeph"> VIDEO_RESUMED</span> is not an event that you can track using the <b><span class="codeph"> mediaTrackEvent</span></b> API.) <span class="codeph"> VIDEO_RESUMED</span> should be set to <span class="codeph"> true</span> when an application wants to continue to track content that a user stopped watching but now intends to resume watching. </p> <p>For example, say a user watches 30% of the content, then closes the app. This will lead to the session being ended. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they previously left off, then the application should set <span class="codeph"> VIDEO_RESUMED</span> to "true" while calling the <span class="codeph"> mediaTrackLoad</span> API. The result is that these two different media sessions for the same video content can be linked together. Following is the implementation example: 
-     <codeblock>
-      mediaInfo&nbsp;=&nbsp;
-      
-&nbsp;&nbsp;adb_media_init_mediainfo("test_media_name",&nbsp;
-      
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"test_media_id",&nbsp;
-      
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10,&nbsp;
-      
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"vod")
-      
-mediaInfo[ADBMobile().VIDEO_RESUMED]&nbsp;=&nbsp;true
-      
-mediaContextData&nbsp;=&nbsp;{}
-      
-ADBMobile().mediaTrackLoad(mediaInfo,&nbsp;mediaContextData)
-     </codeblock> This will create a new session for the video, but it also causes the SDK to send a heartbeat request with the event type "resume", which can be used in reporting to tie two different media sessions together.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Constant | Description |
+| --- | --- |
+| `MEDIA_STANDARD_VIDEO_METADATA` |Constant to set video metadata on the `MediaInfo` `trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` |Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `VIDEO_RESUMED` | Constant for sending a video-resumed heartbeat. To resume video tracking of previously stopped content, you need to set the `VIDEO_RESUMED` _property_ on the `mediaInfo` **`mediaTrackLoad`**. ( `VIDEO_RESUMED` **`mediaTrackEvent`** API.) `VIDEO_RESUMED` `true` For example, say a user watches 30% of the content, then closes the app. This will lead to the session being ended. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they previously left off, then the application should set `VIDEO_RESUMED` `mediaTrackLoad` ` mediaInfo = adb_media_init_mediainfo("test_media_name", "test_media_id", 10, "vod") mediaInfo[ADBMobile().VIDEO_RESUMED] = true mediaContextData = {} ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` This will create a new session for the video, but it also causes the SDK to send a heartbeat request with the event type "resume", which can be used in reporting to tie two different media sessions together.  | 
 
 ### Content type constants
 

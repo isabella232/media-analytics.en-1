@@ -27,32 +27,11 @@ snippet: y
 
    **`AdBreakObject` reference:** 
 
-<table id="table_AC3C9A0B8F544DE9BB4A80D22457438F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" align="center" class="entry"> Variable Name </th> 
-   <th colname="col2" align="center" class="entry"> Description </th> 
-   <th colname="col3" align="center" class="entry"> Required </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> name </span> </td> 
-   <td colname="col2"> <p>Ad break name such as pre-roll, mid-roll, and post-roll. </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> position </span> </td> 
-   <td colname="col2"> <p>The number position of the ad break starting with 1. </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="codeph"> startTime </span> </td> 
-   <td colname="col2"> <p>Playhead value at the start of the ad break. </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   | Variable Name | Description | Required |
+   | --- | --- | --- |
+   | `name` | Ad break name such as pre-roll, mid-roll, and post-roll.  | Yes |
+   | `position` | The number position of the ad break starting with 1.  | Yes |
+   | `startTime` | Playhead value at the start of the ad break.  | Yes | 
 
    ```
    ‘ Create an adbreak info object 

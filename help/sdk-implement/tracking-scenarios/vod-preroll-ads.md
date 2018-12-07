@@ -11,92 +11,19 @@ snippet: y
 
 In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different. 
 
-<table id="table_B43EB1CB26724B47908BF6F477ECF6DC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Trigger </th> 
-   <th colname="col2" class="entry"> Heartbeat method </th> 
-   <th colname="col3" class="entry"> Network calls </th> 
-   <th colname="col4" class="entry"> Notes </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> The user clicks <span class="uicontrol"> Play </span> </td> 
-   <td colname="col2"> <span class="codeph"> trackSessionStart </span> </td> 
-   <td colname="col3"> Analytics Content Start, Heartbeat Content Start </td> 
-   <td colname="col4"> The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the <a href="vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The ad starts. </td> 
-   <td colname="col2"> 
-    <ul id="ul_04C4C84E175A46B7AB915D35CDF9833A"> 
-     <li id="li_7C667476B5FF468AA038EB0FA26E9690"> <span class="codeph"> trackEvent:AdBreakStart </span> </li> 
-     <li id="li_6FCCC06135034BA7BC040CD016AF4A90"> <span class="codeph"> trackEvent:AdStart </span> </li> 
-    </ul> </td> 
-   <td colname="col3"> Analytics Ad Start, Heartbeat Ad Start </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The frame of ad #1 is played. </td> 
-   <td colname="col2"> <span class="codeph"> trackPlay </span> </td> 
-   <td colname="col3"> Heartbeat Ad Play </td> 
-   <td colname="col4"> The ad content plays before main content, and the heartbeats start when the ad starts. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The ad is played. </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Ad Heartbeats </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Ad #2 completes playing. </td> 
-   <td colname="col2"> <span class="codeph"> trackEvent:trackAdComplete </span> </td> 
-   <td colname="col3"> Heartbeat Ad Complete </td> 
-   <td colname="col4"> The end of the ad is reached. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The first frame of ad #2 is played. </td> 
-   <td colname="col2"> <span class="codeph"> trackEvent:AdStart </span> </td> 
-   <td colname="col3"> Analytics Ad Start, Heartbeat Ad Start </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The ad plays. </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Ad Heartbeats </td> 
-   <td colname="col4"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Ad #2 completes playing. </td> 
-   <td colname="col2"> 
-    <ul id="ul_0C58B23344274EB1BA6AFE10E45CCC4D"> 
-     <li id="li_C75E28C07FB843F9A960DD4124EC5FFE"> <span class="codeph"> trackEvent:trackAdComplete </span> </li> 
-     <li id="li_BAD11981B7F74EDF9FC0FF7EA838D19C"> <span class="codeph"> trackEvent:AdBreakComplete </span> </li> 
-    </ul> </td> 
-   <td colname="col3"> Heartbeat Ad Complete </td> 
-   <td colname="col4"> The end of the ad and the pod is reached. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The content plays. </td> 
-   <td colname="col2"> </td> 
-   <td colname="col3"> Content Heartbeats </td> 
-   <td colname="col4"> This network call is identical to the <a href="vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The content is complete. </td> 
-   <td colname="col2"> <span class="codeph"> trackComplete </span> </td> 
-   <td colname="col3"> Heartbeat Content Complete </td> 
-   <td colname="col4"> This network call is identical to the <a href="vod-no-intrs-details.md" format="dita" scope="local"></a> scenario. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> The session is over </td> 
-   <td colname="col2"> <span class="codeph"> trackSessionEnd </span> </td> 
-   <td colname="col3"> </td> 
-   <td colname="col4"> <span class="codeph"> SessionEnd </span> means the end of a viewing session. This API must be called even if the user does not watch the video to completion. </td> 
-  </tr> 
- </tbody> 
-</table>
+| Trigger | Heartbeat method | Network calls | Notes |
+| --- | --- | --- | --- |
+| The user clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The ad starts.  | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
+| The frame of ad #1 is played.  | `trackPlay` | Heartbeat Ad Play | The ad content plays before main content, and the heartbeats start when the ad starts.  |
+| The ad is played.  | | Ad Heartbeats | |
+| Ad #2 completes playing.  | `trackEvent:trackAdComplete` | Heartbeat Ad Complete | The end of the ad is reached.  |
+| The first frame of ad #2 is played.  | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start | |
+| The ad plays.  | | Ad Heartbeats | |
+| Ad #2 completes playing.  | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | The end of the ad and the pod is reached.  |
+| The content plays.  | | Content Heartbeats | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The content is complete.  | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The session is over | `trackSessionEnd` | | `SessionEnd` |
 
 ## Parameters {#section_33CDFB6CB230437480B67A3D149EC44E}
 
@@ -455,8 +382,6 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
 ## Sample code for multiple ad breaks {#section_ojy_zy3_x2b}
 
 In this scenario, VOD content is played back with a pre-roll ad, the content, a mid-roll ad, the content, and a post-roll ad.
-
-<a id="fig_50DBB9988C2E42268B1ABFA2467E78FB"></a>
 
 ![](assets/ad-content-regular-playback.png)
 

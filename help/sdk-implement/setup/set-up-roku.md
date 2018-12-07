@@ -84,44 +84,15 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
       }
       ```
 
-   <table id="table_00A5AE3DE21546DC89F561BAFEC6E710"> 
-   <thead> 
-    <tr> 
-     <th colname="col1" class="entry"> Config Parameter </th> 
-     <th colname="col2" class="entry"> Description </th> 
-    </tr> 
-   </thead>
-   <tbody> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> server</span> </p> </td> 
-     <td colname="col2"> <p>String that represents the URL of the tracking endpoint on the backend. </p> </td> 
-    </tr> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> publisher</span> </p> </td> 
-     <td colname="col2"> <p>String that represents the content publisher unique identifier. </p> </td> 
-    </tr> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> channel</span> </p> </td> 
-     <td colname="col2"> <p>String that represents the name of the content distribution channel. </p> </td> 
-    </tr> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> ssl</span> </p> </td> 
-     <td colname="col2"> <p>Boolean that represents whether SSL should be used for tracking calls. </p> </td> 
-    </tr> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> ovp</span> </p> </td> 
-     <td colname="col2"> <p>String that represents the name of the video player provider. </p> </td> 
-    </tr> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> sdkversion</span> </p> </td> 
-     <td colname="col2"> <p>String that represents the current version of the app/SDK. </p> </td> 
-    </tr> 
-    <tr> 
-     <td colname="col1"> <p><span class="codeph"> playerName</span> </p> </td> 
-     <td colname="col2"> <p>String that represents the name of the player. </p> </td> 
-    </tr> 
-   </tbody> 
-   </table>
+   | Config Parameter | Description |
+   | --- | --- |
+   | `server` | String that represents the URL of the tracking endpoint on the backend.  |
+   | `publisher` | String that represents the content publisher unique identifier.  |
+   | `channel` | String that represents the name of the content distribution channel.  |
+   | `ssl` | Boolean that represents whether SSL should be used for tracking calls.  |
+   | `ovp` | String that represents the name of the video player provider.  |
+   | `sdkversion` | String that represents the current version of the app/SDK.  |
+   | `playerName` | String that represents the name of the player.  | 
 
       >[!IMPORTANT]
       >
@@ -153,34 +124,10 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
    >
    >Experience Cloud Visitor ID methods are prefixed with `visitor`.
 
-<table id="table_5DE8BEEA051542B58B7060E26183E61F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Method </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><span class="codeph"> visitorMarketingCloudID</span> </p> </td> 
-   <td colname="col2"> <p>Retrieves the Experience Cloud visitor ID from the visitor ID service. </p> <p> 
-     <codeblock>
-       ADBMobile().visitorMarketingCloudID()
-     </codeblock> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><span class="codeph"> visitorSyncIdentifiers</span> </p> </td> 
-   <td colname="col2"> <p>With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to <span class="codeph"> setCustomerIDs</span> in the JavaScript library. </p> <p>For example: 
-     <codeblock>
-      identifiers&nbsp;=&nbsp;{}
-      
-identifiers["idType"]&nbsp;=&nbsp;"idValue"
-      
-ADBMobile().visitorSyncIdentifiers(identifiers)
-     </codeblock> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   | Method | Description |
+   | --- | --- |
+   | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  `ADBMobile().visitorMarketingCloudID()` |
+   | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs` For example: `identifiers&nbsp;=&nbsp;{} identifiers["idType"]&nbsp;=&nbsp;"idValue" ADBMobile().visitorSyncIdentifiers(identifiers)` |
 
    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
 

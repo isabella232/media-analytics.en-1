@@ -21,37 +21,12 @@ snippet: y
    >
    >These variables are only required if you are planning to track QoS.
 
-<table id="table_36BA07D7614C409F8AA3D68DA04A2231"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Variable </th> 
-   <th colname="col2" class="entry"> Description </th> 
-   <th colname="col3" class="entry"> Required </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> bitrate </span> </p> </td> 
-   <td colname="col2"> <p>Current bitrate </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> startupTime </span></p> </td> 
-   <td colname="col2"> <p>Startup time </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> fps </span></p> </td> 
-   <td colname="col2"> <p>FPS value </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <span class="codeph"> droppedFrames </span></p> </td> 
-   <td colname="col2"> <p>Number of dropped frames </p> </td> 
-   <td colname="col3"> <p>Yes </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   | Variable | Description | Required |
+   | --- | --- | --- |
+   | `bitrate` | Current bitrate | Yes |
+   | `startupTime` | Startup time | Yes |
+   | `fps` | FPS value | Yes |
+   | `droppedFrames` | Number of dropped frames | Yes |
 
    **QoS object creation:** 
 

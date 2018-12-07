@@ -11,381 +11,67 @@ snippet: y
 
 ## Request Parameter Table
 
-<table id="table_h44_bbl_rdb">  
- <thead> 
-  <tr> 
-   <th class="entry"> </th> 
-   <th class="entry"> Request Key </th> 
-   <th class="entry"> Required </th> 
-   <th align="center" class="entry"> Set On... </th> 
-   <th class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td morerows="3"> <b>Analytics Data</b> </td> 
-   <td> <span class="codeph"> analytics.trackingServer </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The URL of your Adobe Analytics server </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> analytics.reportSuite </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The ID that identifies your Analytics reporting data </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> analytics.enableSSL </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> True or false for enabling SSL </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> analytics.visitorId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Your Adobe Visitor ID, used across several Adobe applications </td> 
-  </tr> 
-  <tr> 
-   <td morerows="3"> <b>Visitor Data</b> </td> 
-   <td> <span class="codeph"> visitor.marketingCloudOrgId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> visitor.marketingCloudUserId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The Experience Cloud User ID, for accessing the Experience Cloud family of apps </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> visitor.aamLocationHint </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Provides Adobe Audience Manager Edge data </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> appInstallationId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The appInstallationId uniquely identifies the app and the device </td> 
-  </tr> 
-  <tr> 
-   <td morerows="8"> <b>Content Data</b> </td> 
-   <td> <span class="codeph"> media.id </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Unique identifer for the content </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.name </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Human readible name for the content </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.length </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Content length (seconds) </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.contentType </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Format of the stream (can be any string, a few recommanded values are "Live", "VOD", or "Linear") </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.playerName </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The name of the player responsible for rendering the content </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.channel </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The channel of distribution of the content. This could be an mobile application name or a web site name, property name </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.resume </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Indicates whether or not to resume a closed session </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.sdkVersion </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The SDK verison used by the player </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.uniqueTimePlayed </span> </td> 
-   <td> N </td> 
-   <td> Close </td> 
-   <td> The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times. </td> 
-  </tr> 
-  <tr> 
-   <td morerows="15"> <b>Content Standard Metadata</b> </td> 
-   <td> <span class="codeph"> media.show </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The program or series name </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.season </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The season number the show or series belongs to </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.episode </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The number of the episode </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.assetId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems. </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.genre </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The type of content as defined by the content producer </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.firstAirDate </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The date when the content first aired on television </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.firstDigitalDate </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The date when the content first aired on any digital platform </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.rating </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The rating as defined by TV Parental Guidelines </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.originator </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The creator of the content </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.network </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The network / channel name </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.showType </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The type of content, expressed as an integer between 0 and 3: 
-    <ul id="ul_ttg_zql_rdb"> 
-     <li>0 - Full episode</li> 
-     <li>1 - Preview</li> 
-     <li>2 - Clip</li> 
-     <li>3 - Other</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.adLoad </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The type of ad loaded </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.pass.mvpd </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The MVPD provided by Adobe authentication </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.pass.auth </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> Indicates the user has been authorized by Adobe authentication (can only be true if set) </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.dayPart </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The time of day when the content was broadcast </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.feed </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> sessionStart </span> </td> 
-   <td> The type of feed, e.g., "West-HD" </td> 
-  </tr> 
-  <tr> 
-   <td morerows="7"> <b>Ad Data</b> </td> 
-   <td> <span class="codeph"> media.ad.podFriendlyName </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adBreakStart </span> </td> 
-   <td> Friendly name of the ad break </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.podIndex </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> adBreakStart </span> </td> 
-   <td> The index of the ad pod in the video </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.podSecond </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> adBreakStart </span> </td> 
-   <td> The second at which the pod started </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.podPosition </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The index of the ad inside the ad break starting at 1 </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.name </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> Friendly name of the ad </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.id </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> Name of the ad </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.length </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> Length of the video ad in seconds </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.playerName </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The name of the player responsible for rendering the ad </td> 
-  </tr> 
-  <tr> 
-   <td morerows="5"> <b>Ad Standard Metadata</b> </td> 
-   <td> <span class="codeph"> media.ad.advertiser </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The company or brand whose product is featured in the ad </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.campaignId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The ID of the ad campaign </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.creativeId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The ID of the ad creative </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.siteId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The ID of the ad site </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.creativeURL </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The URL of the ad creative </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.ad.placementId </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> adStart </span> </td> 
-   <td> The placement ID of the ad </td> 
-  </tr> 
-  <tr> 
-   <td morerows="3"> <b>Chapter Data</b> </td> 
-   <td> <span class="codeph"> media.chapter.index </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> chapterStart </span> </td> 
-   <td> Identifies the chapter's position in the content </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.chapter.offset </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> chapterStart </span> </td> 
-   <td> The second in the playback where the chapter starts </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.chapter.length </span> </td> 
-   <td> Y </td> 
-   <td> <span class="codeph"> chapterStart </span> </td> 
-   <td> The length of the chapter in seconds </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.chapter.friendlyName </span> </td> 
-   <td> N </td> 
-   <td> <span class="codeph"> chapterStart </span> </td> 
-   <td> The human-friendly name of the chapter </td> 
-  </tr> 
-  <tr> 
-   <td morerows="6"> <b>Quality Data</b> </td> 
-   <td> <span class="codeph"> media.qoe.bitrate </span> </td> 
-   <td> N </td> 
-   <td> Any </td> 
-   <td> The bitrate of the stream </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.qoe.bitrateChange </span> </td> 
-   <td> N </td> 
-   <td> Any </td> 
-   <td> The change of the stream bitrate </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.qoe.droppedFrames </span> </td> 
-   <td> N </td> 
-   <td> Any </td> 
-   <td> The number of dropped frames in the stream </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.qoe.framesPerSecond </span> </td> 
-   <td> N </td> 
-   <td> Any </td> 
-   <td> The number of frames per second </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.qoe.timeToStart </span> </td> 
-   <td> N </td> 
-   <td> Any </td> 
-   <td> The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.qoe.errorID </span> </td> 
-   <td> Y </td> 
-   <td> Error </td> 
-   <td> Supports the error event; signals that an error occurred during the session </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> media.qoe.errorSource </span> </td> 
-   <td> Y </td> 
-   <td> Error </td> 
-   <td> The value should be either "player" or "external", depending upon the error type </td> 
-  </tr> 
- </tbody> 
-</table>
+| | Request Key | Required | Set On... | Description |
+| --- | --- | --- | --- | --- |
+| **Analytics Data** | `analytics.trackingServer` | Y | `sessionStart` | The URL of your Adobe Analytics server |
+| | `analytics.reportSuite` | Y | `sessionStart` | The ID that identifies your Analytics reporting data |
+| | `analytics.enableSSL` | N | `sessionStart` | True or false for enabling SSL |
+| | `analytics.visitorId` | N | `sessionStart` | Your Adobe Visitor ID, used across several Adobe applications |
+| **Visitor Data** | `visitor.marketingCloudOrgId` | N | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
+| | `visitor.marketingCloudUserId` | N | `sessionStart` | The Experience Cloud User ID, for accessing the Experience Cloud family of apps |
+| | `visitor.aamLocationHint` | N | `sessionStart` | Provides Adobe Audience Manager Edge data |
+| | `appInstallationId` | N | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
+| **Content Data** | `media.id` | Y | `sessionStart` | Unique identifer for the content |
+| | `media.name` | N | `sessionStart` | Human readible name for the content |
+| | `media.length` | Y | `sessionStart` | Content length (seconds) |
+| | `media.contentType` | Y | `sessionStart` | Format of the stream (can be any string, a few recommanded values are "Live", "VOD", or "Linear") |
+| | `media.playerName` | Y | `sessionStart` | The name of the player responsible for rendering the content |
+| | `media.channel` | Y | `sessionStart` | The channel of distribution of the content. This could be an mobile application name or a web site name, property name |
+| | `media.resume` | N | `sessionStart` | Indicates whether or not to resume a closed session |
+| | `media.sdkVersion` | N | `sessionStart` | The SDK verison used by the player |
+| | `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |
+| **Content Standard Metadata** | `media.show` | N | `sessionStart` | The program or series name |
+| | `media.season` | N | `sessionStart` | The season number the show or series belongs to |
+| | `media.episode` | N | `sessionStart` | The number of the episode |
+| | `media.assetId` | N | `sessionStart` | The unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.  |
+| | `media.genre` | N | `sessionStart` | The type of content as defined by the content producer |
+| | `media.firstAirDate` | N | `sessionStart` | The date when the content first aired on television |
+| | `media.firstDigitalDate` | N | `sessionStart` | The date when the content first aired on any digital platform |
+| | `media.rating` | N | `sessionStart` | The rating as defined by TV Parental Guidelines |
+| | `media.originator` | N | `sessionStart` | The creator of the content |
+| | `media.network` | N | `sessionStart` | The network / channel name |
+| | `media.showType` | N | `sessionStart` | The type of content, expressed as an integer between 0 and 3: <ul> <li>0 - Full episode </li> <li>1 - Preview </li> <li>2 - Clip </li> <li>3 - Other </li> </ul> |
+| | `media.adLoad` | N | `sessionStart` | The type of ad loaded |
+| | `media.pass.mvpd` | N | `sessionStart` | The MVPD provided by Adobe authentication |
+| | `media.pass.auth` | N | `sessionStart` | Indicates the user has been authorized by Adobe authentication (can only be true if set) |
+| | `media.dayPart` | N | `sessionStart` | The time of day when the content was broadcast |
+| | `media.feed` | N | `sessionStart` | The type of feed, e.g., "West-HD" |
+| **Ad Data** | `media.ad.podFriendlyName` | N | `adBreakStart` | Friendly name of the ad break |
+| | `media.ad.podIndex` | Y | `adBreakStart` | The index of the ad pod in the video |
+| | `media.ad.podSecond` | Y | `adBreakStart` | The second at which the pod started |
+| | `media.ad.podPosition` | Y | `adStart` | The index of the ad inside the ad break starting at 1 |
+| | `media.ad.name` | N | `adStart` | Friendly name of the ad |
+| | `media.ad.id` | Y | `adStart` | Name of the ad |
+| | `media.ad.length` | Y | `adStart` | Length of the video ad in seconds |
+| | `media.ad.playerName` | Y | `adStart` | The name of the player responsible for rendering the ad |
+| **Ad Standard Metadata** | `media.ad.advertiser` | N | `adStart` | The company or brand whose product is featured in the ad |
+| | `media.ad.campaignId` | N | `adStart` | The ID of the ad campaign |
+| | `media.ad.creativeId` | N | `adStart` | The ID of the ad creative |
+| | `media.ad.siteId` | N | `adStart` | The ID of the ad site |
+| | `media.ad.creativeURL` | N | `adStart` | The URL of the ad creative |
+| | `media.ad.placementId` | N | `adStart` | The placement ID of the ad |
+| **Chapter Data** | `media.chapter.index` | Y | `chapterStart` | Identifies the chapter's position in the content |
+| | `media.chapter.offset` | Y | `chapterStart` | The second in the playback where the chapter starts |
+| | `media.chapter.length` | Y | `chapterStart` | The length of the chapter in seconds |
+| | `media.chapter.friendlyName` | N | `chapterStart` | The human-friendly name of the chapter |
+| **Quality Data** | `media.qoe.bitrate` | N | Any | The bitrate of the stream |
+| | `media.qoe.bitrateChange` | N | Any | The change of the stream bitrate |
+| | `media.qoe.droppedFrames` | N | Any | The number of dropped frames in the stream |
+| | `media.qoe.framesPerSecond` | N | Any | The number of frames per second |
+| | `media.qoe.timeToStart` | N | Any | The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing |
+| | `media.qoe.errorID` | Y | Error | Supports the error event; signals that an error occurred during the session |
+| | `media.qoe.errorSource` | Y | Error | The value should be either "player" or "external", depending upon the error type |
+
 
 ## Additional Details {#section_ryt_ccy_lcb}
 

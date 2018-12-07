@@ -1,0 +1,18 @@
+- After you complete the Table Cleanup Sweep Operation, go back and fix resulting formatting issues, which include:
+    * Codeblocks in table cells, turned in to code format ( '`'...'`' )
+    * Notes / other text that were in column spans, now crammed into one cell.
+      These could be pulled out of the table and referred to with callouts?
+
+-Put PDFs into their appropriate assets folders, and adjust links to them. 
+
+Table macro: 
+
+:s/</</g:%s/<table.*>//:%s/<\/ÄkbÄkb\/table>//:%s/<.*thead>//:%s/<.*tbody>//:%s/<t[dh].*>/|:%s/<\/tr>/|:%s/<\/t[dh]>//:%s/<tr>//:%s/<.*p>//
+
+Span for codefont macro:
+
+/<span:s/<span class="codeph"> /`JC`
+
+Standard link macro:
+
+/<a href:s/<a href="\(.*\)"> \(.*$\)/\[\2\](\1)

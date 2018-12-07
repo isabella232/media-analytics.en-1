@@ -28,8 +28,6 @@ The connector bridge is designed to perform as follows:
 * You use the AdobeMobile SDK APIs in SceneGraph in a very similar way to how you used the legacy APIs. 
 * The bridge also exposes a mechanism to listen for callbacks for APIs that return some data.
 
-<a id="fig_wc2_npx_1bb"></a>
-
 ![](assets/SceneGraph_arch.png)
 
 ## Components {#section_jwl_wqx_1bb}
@@ -56,18 +54,18 @@ The connector bridge is designed to perform as follows:
 
 |  Category  | Method Name  | Description  |
 |---|---|---|
-|  ***Constants*** | |
+|  ***Constants*** | ||
 |  | `sceneGraphConstants`  | Returns an object containing `SceneGraphConstants`. Refer to the table above for details.  |
 |  | | |
-|  ***Debug Logging*** | ***For more information refer to the Debug Logging section of the legacy SDK.*** |
+|  ***Debug Logging*** | ***For more information refer to the Debug Logging section of the legacy SDK.*** ||
 |  | `setDebugLogging`  | SceneGraph API to set debug logging on the ADBMobile SDK.  |
 |  | `getDebugLogging`  | SceneGraph API to get debug logging from the ADBMobile SDK.  |
 |  | | |
-|  ***Privacy Status / Opt-Out*** | ***For more information, refer to the Opt-Out/Privacy Status section of the legacy SDK.*** |
+|  ***Privacy Status / Opt-Out*** | ***For more information, refer to the Opt-Out/Privacy Status section of the legacy SDK.*** ||
 |  | `setPrivacyStatus`  | SceneGraph API to set privacy status on the ADBMobile SDK.  |
 |  | `getPrivacyStatus`  | SceneGraph API to get privacy status from the ADBMobile SDK.  |
 |  | | |
-|  ***Analytics*** | ***For more information refer to the Analytics section of the legacy SDK.*** |
+|  ***Analytics*** | ***For more information refer to the Analytics section of the legacy SDK.*** ||
 |  | `trackState`  | SceneGraph API to track state on the ADBMobile SDK.  |
 |  | `trackAction`  | SceneGraph API to track action on the ADBMobile SDK.  |
 |  | `trackingIdentifier`  | SceneGraph API to get a tracking identifier from the ADBMobile SDK.  |
@@ -75,18 +73,18 @@ The connector bridge is designed to perform as follows:
 |  | `setUserIdentifier`  | SceneGraph API to set the user identifier on the ADBMobile SDK.  |
 |  | `getAllIdentifiers`  | SceneGraph API retrieves all user identities known and persisted by the Roku SDK.  |
 |  | | |
-|  ***Experience Cloud*** | ***For more information refer to the Experience Cloud section of the legacy SDK.*** |
+|  ***Experience Cloud*** | ***For more information refer to the Experience Cloud section of the legacy SDK.*** ||
 |  | `visitorSyncIdentifiers`  | SceneGraph API to sync Experience Cloud identifiers on the ADBMobile SDK.  |
 |  | `visitorMarketingCloudID`  | SceneGraph API to get Visitor Experience Cloud ID from the ADBMobile SDK.  |
 |  | | |
-|  ***Audience Manager*** | ***For more information refer to the Audience Manager section of the legacy SDK.*** |
+|  ***Audience Manager*** | ***For more information refer to the Audience Manager section of the legacy SDK.*** ||
 |  | `audienceSubmitSignal`  | SceneGraph API to send an audience management signal with trait.  |
 |  | `audienceVisitorProfile`  | SceneGraph API to get an audience manager visitor profile from the ADBMobile SDK.  |
 |  | `audienceDpid`  | SceneGraph API to get an audience Dpid from the ADBMobile SDK.  |
 |  | `audienceDpuuid`  | SceneGraph API to get an audience Dpuuid from the ADBMobile SDK.  |
 |  | `audienceSetDpidAndDpuuid`  | SceneGraph API to set audience Dpid and Dpuuid on the ADBMobile SDK.  |
 |  | | |
-|  ***MediaHeartbeat*** | ***For more information refer to the MediaHeartbeat section of the legacy SDK.*** |
+|  ***MediaHeartbeat*** | ***For more information refer to the MediaHeartbeat section of the legacy SDK.*** ||
 |  | `mediaTrackLoad`  | SceneGraph API to load video content for MediaHeartbeat tracking.  |
 |  | mediaTrackStart  | SceneGraph API to start video tracking session using MediaHeartbeat.  |
 |  | `mediaTrackUnload`  | SceneGraph API to unload video content from MediaHeartbeat tracking.  |
@@ -114,74 +112,20 @@ The connector bridge is designed to perform as follows:
 
 ### adbmobileTask Node
 
-<table id="table_u41_krx_1bb">  
- <thead> 
-  <tr> 
-   <th align="center" class="entry"> Field </th> 
-   <th align="center" class="entry"> Type </th> 
-   <th class="entry"> Default </th> 
-   <th align="center" class="entry"> Usage </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> adbmobileApiCall </span> </td> 
-   <td> <span class="codeph"> assocarray </span> </td> 
-   <td> <i>Invalid</i> </td> 
-   <td> <p><b><i>Do NOT</i></b> modify this field or let is be used by the Application. This field is used by the ADBMobile SceneGraphConnector to route API calls via SceneGraph nodes and to fetch responses. Therefore, this key/field is reserved for AdobeMobileSDK for SceneGraph compatibility.</p> <p> <p>Important:  Any modifications to this field may result in AdobeMobileSDK functioning incorrectly. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> adbmobileApiResponse </span> </td> 
-   <td> <span class="codeph"> assocarray </span> </td> 
-   <td> <i>Invalid</i> </td> 
-   <td> <p><b>Read-Only</b> </p> <p>All of the APIs executed on AdobeMobileSDK will return responses on this field. Register for a callback to listen for updates to this field in order to receive response objects. Following is the format for the response object:</p> <p> 
-     <codeblock>
-       response&nbsp;=&nbsp;{ 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;"apiName"&nbsp;:&nbsp;&lt;SceneGraphConstants.API_NAME&gt; 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;"returnValue&nbsp;:&nbsp;&lt;API_RESPONSE&gt; 
-      
-}
-
-     </codeblock> </p> <p>An instance of this response object will be sent for any API call on AdobeMobileSDK that is expected to return a value as per the API reference guide. For example, an API call for <b>visitorMarketingCloudID()</b> will return following response object:</p> 
-    <codeblock>
-      response&nbsp;=&nbsp;{ 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"apiName"&nbsp;:&nbsp;m.adbmobileConstants. 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VISITOR_MARKETING_CLOUD_ID 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"returnValue&nbsp;:&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"07050xxxx25671xxxx33760xxxx72644xxxx14" 
-     
-} 
-    </codeblock> <p>OR, response data can be invalid as well:</p> 
-    <codeblock>
-      response&nbsp;=&nbsp;{ 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"apiName"&nbsp;:&nbsp;m.adbmobileConstants. 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VISITOR_MARKETING_CLOUD_ID 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;"returnValue&nbsp;:&nbsp;invalid 
-     
-} 
-    </codeblock> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Field | Type | Default | Usage |
+| --- | --- | --- | --- |
+| `adbmobileApiCall` | `assocarray` | _Invalid_ | **_Do NOT_** modify this field or let is be used by the Application. This field is used by the ADBMobile SceneGraphConnector to route API calls via SceneGraph nodes and to fetch responses. Therefore, this key/field is reserved for AdobeMobileSDK for SceneGraph compatibility.  Important:  Any modifications to this field may result in AdobeMobileSDK functioning incorrectly.  |
+| `adbmobileApiResponse` | `assocarray` | _Invalid_ | **Read-Only** All of the APIs executed on AdobeMobileSDK will return responses on this field. Register for a callback to listen for updates to this field in order to receive response objects. Following is the format for the response object: `response = { "apiName" : <SceneGraphConstants.API_NAME> "returnValue : <API_RESPONSE> }` An instance of this response object will be sent for any API call on AdobeMobileSDK that is expected to return a value as per the API reference guide. For example, an API call for **visitorMarketingCloudID()** will return following response object: `response = { "apiName" : m.adbmobileConstants. VISITOR_MARKETING_CLOUD_ID "returnValue : "07050xxxx25671xxxx33760xxxx72644xxxx14" }` OR, response data can be invalid as well: `response = { "apiName" : m.adbmobileConstants. VISITOR_MARKETING_CLOUD_ID "returnValue : invalid }` |
 
 ### adbmobile.brs
 
 |  Name  | API Signature  | Input  | Return Type  |
 |---|---|---|---|
 |  `getADBMobileConnectorInstance`  | `ADBMobile().getADBMobileConnectorInstance()`  | `adbmobileTask`  | `ADBMobileConnector`  |
-|  *Comments:* Refer to the `ADBMobileConnector` API reference for details.  |
-|  |
+|  *Comments:* Refer to the `ADBMobileConnector` API reference for details.  ||||
+|  ||||
 |  `sgConstants`  | `ADBMobile().sgConstants()`  | None  | `SceneGraphConstants`  |
-|  *Comments:* Refer to the `SceneGraphConstants` API reference for details.  |
+|  *Comments:* Refer to the `SceneGraphConstants` API reference for details.  ||||
 
 In addition to methods above, `ADBMobileConnector` also exposes all the `ADBMobile` constants for the following:
 
@@ -199,36 +143,13 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ### Global Methods for MediaHeartbeat
 
-<table id="table_etf_rrx_1bb">  
- <thead> 
-  <tr> 
-   <th class="entry"> Method </th> 
-   <th class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> adb_media_init_mediainfo </span> </td> 
-   <td> <p>This method returns an initialized Media Information object</p> <p> <span class="codeph"> Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> adb_media_init_adinfo </span> </td> 
-   <td> <p>This method returns initialized Ad Information object</p> <p> <span class="codeph"> Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> adb_media_init_chapterinfo </span> </td> 
-   <td> <p>This method returns initialized Chapter Information object.</p> <p> <span class="codeph"> Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> adb_media_init_adbreakinfo </span> </td> 
-   <td> <p> This method returns initialized AdBreak Information object.</p> <p> <span class="codeph"> Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> adb_media_init_qosinfo </span> </td> 
-   <td> <p>This method returns an initialized QoS Information object.</p> <p> <span class="codeph"> Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object </span></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Method | Description |
+| --- | --- |
+| `adb_media_init_mediainfo` | This method returns an initialized Media Information object `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | This method returns initialized Ad Information object `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | This method returns initialized Chapter Information object.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | This method returns initialized AdBreak Information object.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | This method returns an initialized QoS Information object.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` | 
 
 ## Implementation {#section_dbz_ydz_y2b}
 

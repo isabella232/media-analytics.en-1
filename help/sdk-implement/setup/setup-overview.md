@@ -37,27 +37,10 @@ There are three main SDK components involved in media tracking:
 
 1. Implement the `MediaHeartbeatDelegate`. 
 
-   <table id="table_A815A90BFEC64EC1A26900DC077342DA"> 
-    <thead> 
-     <tr> 
-      <th colname="col1" class="entry"> Method name </th> 
-      <th colname="col2" class="entry"> Description </th> 
-      <th colname="col3" class="entry"> Required </th> 
-     </tr> 
-    </thead>
-    <tbody> 
-     <tr> 
-      <td colname="col1"> <span class="codeph"> getQoSObject() </span> </td> 
-      <td colname="col2"> Returns the <span class="codeph"> MediaObject </span> instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. </td> 
-      <td colname="col3"> Yes </td> 
-     </tr> 
-     <tr> 
-      <td colname="col1"> <span class="codeph"> getCurrentPlaybackTime() </span> </td> 
-      <td colname="col2"> <p>Returns the current position of the playhead. </p> <p>For VOD tracking, the value is specified in seconds from the beginning of the media item. </p> <p>For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program. </p> </td> 
-      <td colname="col3"> Yes </td> 
-     </tr> 
-    </tbody> 
-   </table>
+    | Method name | Description | Required |
+    | --- | --- | --- |
+    | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data.  | Yes |
+    | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program.  | Yes | 
 
    >[!TIP]
    >
@@ -144,49 +127,14 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
-<table id="table_DCD074D23E704CA79BC3734D1CF59A5B"> 
- <thead> 
-  <tr> 
-   <th class="entry" colspan="2"> Video Analytics 1.x SDKs* </th> 
-   <th colname="col3" class="entry"> Developer Guides </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colspan="2"> Android </td> 
-   <td colname="col3"> <a href="vhl-dev-guide-v15_android.pdf" format="pdf" scope="peer"> Configure for Android </a> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> AppleTV </td> 
-   <td colname="col3"> <a href="vhl-dev-guide-v1x_appletv.pdf" format="pdf" scope="peer"> Configure for AppleTV </a> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> Chromecast </td> 
-   <td colname="col3"> <a href="chromecast_1.x_sdk.pdf" format="pdf" scope="peer"> Configure for Chromecast </a> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> iOS </td> 
-   <td colname="col3"> <a href="vhl-dev-guide-v15_ios.pdf" format="pdf" scope="peer"> Configure for iOS </a> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> JavaScript </td> 
-   <td colname="col3"> <a href="vhl-dev-guide-v15_js.pdf" format="pdf" scope="peer"> Configure for JavaScript </a> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> Primetime </td> 
-   <td colname="col3"> 
-    <ul id="ul_AE4FACC564D84FAF8BF241912B5D7761"> 
-     <li id="li_372AFC4170B546E9867C160DBAAC0A5E"> <b>Android</b>: <a href="https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_" format="html" scope="external"> Configure Video Analytics </a></li> 
-     <li id="li_224523B07B224A5099F18F06B0D14C87"> <b>DHLS</b>: <a href="https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ " format="html" scope="external"> Configure Video Analytics </a></li> 
-     <li id="li_C6A942B9468E45F0A9B1FA7CEF667BAF"> <b>iOS</b>: <a href="https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_" format="html" scope="external"> Configure Video Analytics </a></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> TVML </td> 
-   <td colname="col3"> <a href="vhl_tvml.pdf" format="pdf" scope="peer"> Configure for TVML </a> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Video Analytics 1.x SDKs&#42; | Developer Guides |
+| Android | [Configure for Android ](vhl-dev-guide-v15_android.pdf) |
+| AppleTV | [Configure for AppleTV ](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | [Configure for Chromecast ](chromecast_1.x_sdk.pdf) |
+| iOS | [Configure for iOS ](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [Configure for JavaScript ](vhl-dev-guide-v15_js.pdf) |
+| Primetime | <ul> <li> **Android:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| TVML | [Configure for TVML ](vhl_tvml.pdf) | 
 
 **&#42;** For all 1.x SDKs, the links are for the full PDF download of the documentation.
 
