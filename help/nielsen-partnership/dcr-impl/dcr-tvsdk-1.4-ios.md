@@ -120,8 +120,8 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
 
    ```
 
-   PTVideoAnalyticsNielsenMetadata* nielsenMetadata =  [self createNielsenMetadata]; 
-     
+   PTVideoAnalyticsNielsenMetadata* nielsenMetadata =  [self createNielsenMetadata];
+
    //attach nielsenMetadata to your MediaPlayerItem 
    [self.item.metadata setMetadata:nielsenMetadata forKey:PTNielsenTrackingMetadataKey];
 
@@ -145,8 +145,8 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
    | --- | --- |
    | `tv` | *true* |
    | `datasource` | *id3* |
-   | `adloadtype` | <ul> <l>When linear ads are present (MTVR), the adloadtype = *1*.  </li> <l>When DAI ads are present (DCR), the adloadtype = *2*.  </li> </ul> |
-   | `admodel` | <ul> <l>When linear ads are present (MTVR), the admodel = *1*.  </li> <l>When DAI ads are present (DCR), the admodel = *2*.  </li> </ul> |
+   | `adloadtype` | When linear ads are present (MTVR), the adloadtype = *1*.  <br/>When DAI ads are present (DCR), the adloadtype = *2*. |
+   | `admodel` | When linear ads are present (MTVR), the admodel = *1*. <br/>When DAI ads are present (DCR), the admodel = *2*.  |
 
    For dynamic ads, the default value is *2*. A value of *1* is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
