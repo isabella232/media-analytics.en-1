@@ -66,13 +66,11 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
    In the Response field, you should get a `reportID`.
 1. In the form, change **Method** to "Get".
 1. Enter the value of the `reportID` you received in Step 3, and click **Get Response**.
->The concurrent viewers report data, in JSON format, is presented in the Response field.
 
->
+   The concurrent viewers report data, in JSON format, is presented in the Response field.
+   
+   For example:
+   
+   ![](assets/api_helper_2.png) 
 
->For example:
->
-><a id="fig_u4t_zmm_dbb"></a>
->![](assets/api_helper_2.png) >
-><a id="fig_x2c_snm_dbb"></a>
->![](assets/api_helper_1.png)>
+   ![](assets/api_helper_1.png)

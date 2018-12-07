@@ -13,8 +13,6 @@ snippet: y
 >
 >The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
 
-<a id="section_DDB8DFA47C5744AB9A04392AD5959BF7"></a>
-
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core video heartbeat implementations. You can use the video player API to identify the variables related to QoS and error tracking. Here are the key elements of tracking quality of experience:
 
 **On any QoS metric changes:**

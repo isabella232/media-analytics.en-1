@@ -25,8 +25,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
 
 ## Sample Code {#section_ndg_wdj_x2b}
 
-<a id="fig_65D741D8180845E3BD58C248DD5083C6"></a>
-
 ![](assets/multi-sessions-one-at-a-time.png)
 
 * **Android -** To create two instances of `MediaHeartbeat` for two video players, set up the following code:

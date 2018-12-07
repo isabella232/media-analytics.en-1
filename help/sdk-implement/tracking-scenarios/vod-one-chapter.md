@@ -45,8 +45,6 @@ When this happens, a `Content Heartbeat` call goes out in the same interval. You
 
 In this scenario, part of the VOD content is a chapter.
 
-<a id="fig_553EA0F2821440EBB39353F627463913"></a>
-
 ![](assets/chapter-regular-playback.png)
 
 * **Android -** To view this scenario in Android, set up the following code: 
@@ -255,8 +253,6 @@ In this scenario, part of the VOD content is a chapter.
 ## Sample code, chapter at the beginning {#section_flj_5bj_x2b}
 
 In this scenario, VOD content is played back with one chapter at the beginning of the playback.
-
-<a id="fig_4EB77B19F72A4AF5A1209A773E7929E8"></a>
 
 ![](assets/pre-chapter-regular.png)
 

@@ -59,7 +59,5 @@ To enable report suite configuration:
 
 You have now successfully enabled your report suite for Nielsen and should see the following confirmation:
 
-<a id="fig_D7AE4A27F67049FCB77E99FDDCD75249"></a>
-
 ![](assets/successful_save.png)
 

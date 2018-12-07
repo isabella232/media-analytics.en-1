@@ -72,8 +72,6 @@ When playback for any given episode has completed (playhead crosses episode boun
 
 ## Sample Code {#section_mpx_q2j_x2b}
 
-<a id="fig_65D741D8180845E3BD58C248DD5083C6"></a>
-
 ![](assets/ios-live-noads-multiplesessions.png)
 
 * **Android -** Here is the expected API call order: 

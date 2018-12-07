@@ -37,8 +37,6 @@ To view the corresponding Nielsen data in Adobe Analytics:
     * **[!UICONTROL Ad Loads does not equal 1]**. 
     * **[!UICONTROL Content Start is greater than or equal to 1]** or **[!UICONTROL Content Time is greater than or equal to 1]**.
 
-   <a id="fig_C048B9D47E0645EDA115D0807E0520C8"></a>
-
    ![](assets/nielsen-segment.png)
 
 1. Create Nielsen computer/mobile segments by creating the following segments:
@@ -47,8 +45,6 @@ To view the corresponding Nielsen data in Adobe Analytics:
 
       This segment should have a rule of **Mobile Device Type equals Other**.
 
-      <a id="fig_8F23F495AA0D49318ACBF8D2A89B2279"></a>    
-    
       ![](assets/nielen-mobile-device-type.png)
 
     * **[!UICONTROL Nielsen Mobile]**
@@ -77,8 +73,6 @@ To view the corresponding Nielsen data in Adobe Analytics:
 
    The custom visitor segment noted above can also be applied during the creation of the virtual report suite, which limits the data in the virtual report suite to only Nielsen data.
 
-   <a id="fig_9C6D6F033C2A480D8DFE6EDF05F45CA2"></a>
-
    ![](assets/nielsen-time-zone.png)
 
    For more information about creating a virtual report suite, see [Creating Virtual Report Suites](https://marketing.adobe.com/resources/help/en_US/reference/vrs-create.html).
@@ -99,20 +93,14 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
 
 **Pulling Data in DCR Report Builder**
 
-<a id="fig_0486087081B642319116B131D1DE68EE"></a>
-
 ![](assets/dcr-report-builder.png)
 
 * **Content Type:** Video
-
-  <a id="fig_4304CAD8980B42919429E2F6B67D1C20"></a>
 
   ![](assets/nielsen-content-type-video.png)
 
 * **Ad Supported:** Total 
 * **Platform:** Ensure that platforms are consistent across Nielsen and Adobe.
-
-  <a id="fig_B42071BBE11B469691FCBDED755EE098"></a>
 
   ![](assets/nielsen-platform.png)
 
@@ -126,13 +114,9 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
 
 * **Date Range:** Ensure frequency aligns and that you consider that the day definition discrepancies will be especially apparent for daily data and for shows that air on week boundaries
 
-  <a id="fig_F2DF1F4ACB24400DAD01D28A1D95BB45"></a>
-
   ![](assets/nielsen-date-range.png)
 
 * **Demographics:** Ensure that you select **Persons 2+** so that all impressions, including ones with unknown demographics, are accounted for.
-
-  <a id="fig_781B193808784BF1834161F400849193"></a>
 
   ![](assets/dcr-demographics.png)
 
@@ -141,8 +125,6 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
   >[!TIP]
   >
   >You can select the highest entity for example, Brand level) and pull in lower reporting levels in the **[!UICONTROL Layouts]** section.
-
-  <a id="fig_1A1C862641D64B668F3E2736FE82F107"></a>
 
   ![](assets/dcr-entities.png)
 
@@ -153,8 +135,6 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
     * Views 
     * Total time spent
 
-      <a id="fig_49AC6FFA8495496EAA0026800A67215A"></a>    
-    
       ![](assets/nielsen-metrics.png)
 
 * **Layouts **
@@ -163,8 +143,6 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
 
       Pull in the lowest level for which you would like data, Episode/Segment A, and all higher levels, will be automatically added.
 
-      <a id="fig_AAE14D5EA07F48F89A4E59EDEA083463"></a>    
-    
       ![](assets/dcr-layouts.png)
 
     * **Other Selections**
@@ -174,8 +152,6 @@ Nielsen calculates Unique Audience as unique people as defined by our data provi
         * **Device**, such as a smartphone or tablet. 
         * **Operating System**, such as iOS or Android. 
         * **Access Method**, such as a browser or an app.
-
-<a id="fig_3829B97537204C77B794A20350AA74DF"></a>
 
 ![](assets/dcr-os.png)
 

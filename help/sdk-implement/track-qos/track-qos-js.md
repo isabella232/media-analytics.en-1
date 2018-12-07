@@ -13,8 +13,6 @@ snippet: y
 >
 >The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
 
-<a id="section_3B8EBEB167624D0481E8AF4761F83047"></a>
-
 1. Identify when the bitrate changes during video playback and create the `MediaObject` instance using the QoS information.
 
    **QoSObject variables:** 

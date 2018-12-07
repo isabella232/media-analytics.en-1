@@ -9,8 +9,6 @@ snippet: y
 
 # Obtaining a session ID{#obtaining-a-session-id}
 
-<a id="section_pry_xby_lcb"></a>
-
 This code snippet from the Reference Player shows one way of coding a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md), along with extracting the Session ID (and the Collection API version) from the Location header in the response: 
 
 ```js

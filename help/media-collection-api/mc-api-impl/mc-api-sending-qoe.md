@@ -9,8 +9,6 @@ snippet: y
 
 # Sending QoE data{#sending-qoe-data}
 
-<a id="section_ggt_yvd_mcb"></a>
-
 Every event can be decorated with an extra JSON key called `qoeData`, which is positioned alongside the `params` key in the JSON request body.
 
 >[!NOTE]

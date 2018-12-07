@@ -29,8 +29,6 @@ This is the same scenario as the [VOD playback with no ads](../../sdk-implement/
 
 In this scenario, the user is seeking when the main content is being played.
 
-<a id="fig_F8759D2BD8374E99AC2A90E57961FB0C"></a>
-
 ![](assets/seek-main-to-main.png)
 
 * **Android -** To view this scenario in Android, set up the following code:

@@ -9,11 +9,7 @@ snippet: y
 
 # Timeline 3 - Chapters{#timeline-chapters}
 
-<a id="fig_qkd_2yf_wcb"></a>
-
 ![](assets/va_api_content_3.png)
-
-<a id="fig_l1s_4yf_wcb"></a>
 
 ![](assets/va_api_actions_3.png)
 

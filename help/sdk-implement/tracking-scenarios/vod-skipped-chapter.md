@@ -34,8 +34,6 @@ The parameters used during chapter playback are identical to the parameters in t
 
 ## Sample code {#section_fyl_ncj_x2b}
 
-<a id="fig_B5B18205EFE144B5A00B268B1A541010"></a>
-
 ![](assets/chapter-skip.png)
 
 * **Android -** To view this scenario in Android, set up the following code:

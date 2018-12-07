@@ -9,11 +9,7 @@ snippet: y
 
 # Timeline 1 - View to end of content{#timeline-view-to-end-of-content}
 
-<a id="fig_qkd_2yf_wcb"></a>
-
 ![](assets/va_api_content.png)
-
-<a id="fig_l1s_4yf_wcb"></a>
 
 ![](assets/va_api_actions.png)
 

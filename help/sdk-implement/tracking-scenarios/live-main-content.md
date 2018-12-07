@@ -54,8 +54,6 @@ There will not be a complete call, because the live stream was never completed.
 
 ## Sample Code {#section_vct_j2j_x2b}
 
-<a id="fig_65D741D8180845E3BD58C248DD5083C6"></a>
-
 ![](assets/live-content-playback.png)
 
 * **Android -** Here is the expected API call order: 

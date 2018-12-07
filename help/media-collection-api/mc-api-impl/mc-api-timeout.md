@@ -9,8 +9,6 @@ snippet: y
 
 # Timeout conditions{#timeout-conditions}
 
-<a id="section_kmt_qcy_lcb"></a>
-
 **Media Collection API Timeout Conditions:** The Media Collection API, being stateless, does not have the same mechanism as the Media SDK for issuing a new Session ID when timeout conditions occur. When a timeout condition occurs, the back end will close the session, and all subsequent calls made with that Session ID will be dropped. The logic that handles a Session Timeout must be handled in the client. That is, the player will have to monitor the timeout conditions, and obtain a new Session ID if a timeout occurs.
 
 * **10 Minutes: No API Events -** If the back end does not receive any API events it will close the session.

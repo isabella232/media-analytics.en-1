@@ -26,7 +26,5 @@ The top two levels of reporting, Brand and Sub-brand, are configured to your Nie
 
 * **Sub-brand:** sub-brand ID ( `vcid`) - When the SDK is initialized using your assigned App ID(s), content will be credited to the appropriate Brand and Sub-brand. Your App ID(s) will be provided to you before the implementation.
 
-<a id="fig_19F53BADFDC2475DA4CD490A7CDEA327"></a>
-
 ![](assets/video_reporting.png)
 

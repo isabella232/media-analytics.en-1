@@ -9,9 +9,7 @@ snippet: y
 
 # Sending ping events{#sending-ping-events}
 
-<a id="section_sml_4cy_lcb"></a>
-
-***For main content, you must fire ping events every 10 seconds*, beginning after 10 seconds of playback, regardless of other API events that you have sent. For Ad tracking, you must fire ping events every 1 second -** This is literally the "heartbeat" of Video Analytics. The only required parameters for a ping call are `eventType: ping` along with the `playerTime` object (playhead position and timestamp). The following code snippet shows one way to implement a timed pinging mechanism for main content (10 second interval): 
+**For main content, you must fire ping events every 10 seconds, beginning after 10 seconds of playback, regardless of other API events that you have sent. For Ad tracking, you must fire ping events every 1 second -** This is literally the "heartbeat" of Video Analytics. The only required parameters for a ping call are `eventType: ping` along with the `playerTime` object (playhead position and timestamp). The following code snippet shows one way to implement a timed pinging mechanism for main content (10 second interval): 
 
 ```js
 ... 

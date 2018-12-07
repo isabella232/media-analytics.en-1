@@ -69,8 +69,6 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and then the content is played.
 
-<a id="fig_49C7C3412C3B413EABE67C39260F6C40"></a>
-
 ![](assets/preroll-regular-playback.png)
 
 * **Android -** To view this scenario in Android, set up the following code:

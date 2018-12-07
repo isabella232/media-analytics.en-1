@@ -9,8 +9,6 @@ snippet: y
 
 # Validating event requests{#validating-event-requests}
 
-<a id="section_cpy_3xc_mcb"></a>
-
 The JSON request body for each event type is validated on the backend with JSON schemas. The HTTP response body is populated with an error message when validation fails for an API call.
 
 JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}`, e.g., `{uri}/api/v1/schemas/sessionEnd`. These JSON validation schemas are the absolute authority for determining the current and correct request body parameters and their data types for each type of event.

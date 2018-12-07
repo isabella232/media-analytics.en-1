@@ -9,13 +9,10 @@ snippet: y
 
 # Setting the HTTP request type in your player{#setting-the-http-request-type-in-your-player}
 
-<a id="section_dnm_5by_lcb"></a>
-
 The request body for all Media Collection API requests must be in JSON format, so you should set the content request type in your player. For example, in JavaScript you would set the `Content-Type` request header as follows: 
 
 ```
-httpRequest.setRequestHeader('Content-Type', 'application/ 
-<b>json'</b>); 
+httpRequest.setRequestHeader('Content-Type', 'application/json'); 
 
 ```
 

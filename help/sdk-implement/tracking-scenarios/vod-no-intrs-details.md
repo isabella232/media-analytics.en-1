@@ -69,8 +69,6 @@ When playback has completed, which means that the end of the playhead is reached
 
 In this scenario, the content is 40 seconds long. It is played until the end without any interruptions.
 
-<a id="fig_AB77956465F440B98D3990A56751F766"></a>
-
 ![](assets/main-content-regular-playback.png)
 
 * **Android -** 

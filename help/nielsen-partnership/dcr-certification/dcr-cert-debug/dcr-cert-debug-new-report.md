@@ -13,8 +13,6 @@ To create a new Debug report:
 
 1. In **Create a New Debug Report**, select the following:
 
-   <a id="fig_DD6BC87024A2459E8DFBE76AC8AEBD21"></a>
-
    ![](assets/create-new-debug-report.png)
 
 1. Complete the fields with the following information:

@@ -11,7 +11,5 @@ snippet: y
 
 The Media Detail dashboard displays detailed metrics for all content, including concurrent viewers or listeners, content starts, completion rate, time spent, and ad starts.
 
-<a id="fig_97170B07348249AAAF0E4B1BA837F1CC"></a>
-
 ![](assets/media_detail.png)
 

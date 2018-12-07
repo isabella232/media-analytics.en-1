@@ -9,8 +9,6 @@ snippet: y
 
 # Sessions request{#sessions-request}
 
-<a id="section_tps_bqm_kcb"></a>
-
 ```
 POST 
 https://{uri}/api/v1/sessions

@@ -26,8 +26,6 @@ Mini-TOCs going away in BNDS™
 
 In this scenario, playback is started for content that is 9 minutes long.
 
-<a id="fig_E0A6EEEA442144CB9D238D07EF4E5D70"></a>
-
 ![](assets/nielsen-Tracking-Example-Simple-Playback.png)
 
 **Expected events**
@@ -60,8 +58,6 @@ In this scenario, playback is started for content that is 9 minutes long.
 
 In this scenario, playback starts for content that has 1 pre-roll ad that is 30 seconds, and the content is 4 minutes long.
 
-<a id="fig_664B9557BC344186A8332CEBF8CF1818"></a>
-
 ![](assets/nielsen-Tracking-Example-Pre-Roll-Ad.png)
 
 **Expected events**
@@ -89,8 +85,6 @@ In this scenario, playback starts for content that has 1 pre-roll ad that is 30 
 ## Long Pause Tracking {#section_F89F30713B8A4BC8BEC932FCFBF061D3}
 
 In this scenario, playback is started for a content that is 10 minutes long. The playback is paused after 3 minutes, and pl after 40 minutes and play the content to the end.
-
-<a id="fig_A72914F838B148BEB8E6BB9CAE127144"></a>
 
 ![](assets/nielsen-Tracking-Example-Long-Pause.png)
 

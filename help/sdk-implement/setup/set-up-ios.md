@@ -42,8 +42,6 @@ snippet: y
         
         1. Ensure that the **[!UICONTROL Copy Items if Needed]** checkbox is selected, the **[!UICONTROL Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL Add to Target]** are selected.
 
-           <a id="fig_7D00471EC1C6429885025702767E2C10"></a>        
-        
            ![](assets/choose-options_ios.png)
 
         1. Click **[!UICONTROL Finish]**. 

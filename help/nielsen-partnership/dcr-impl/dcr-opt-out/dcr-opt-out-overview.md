@@ -126,11 +126,7 @@ To enable the user's selection, the App SDK must be updated with the this opt-ou
 
    ![](assets/opt-out.png)
 
-   <a id="fig_7D5D396DD991438FB8C3BDE1F8105AA6"></a>
-
    ![](assets/opt_in_nielsen.png)
-
-   <a id="fig_249D7A2E7ADC4651BB534EC57F454D69"></a>
 
    ![](assets/opt_out_nielsen.png)
 

@@ -34,8 +34,6 @@ The parameters are identical to the parameters in the [VOD playback with pre-rol
 
 ## Sample Code {#section_lxt_qz3_x2b}
 
-<a id="fig_6DDC303ED9D14FE396EB093DF6E35882"></a>
-
 ![](assets/ad-skip.png)
 
 * **Android -** To view this scenario in Android, set up the following code:

@@ -9,11 +9,7 @@ snippet: y
 
 # Timeline 2 - User abandons session{#timeline-user-abandons-session}
 
-<a id="fig_uqz_pwg_wcb"></a>
-
 ![](assets/va_api_content_2.png)
-
-<a id="fig_kk3_qwg_wcb"></a>
 
 ![](assets/va_api_actions_2.png)
 

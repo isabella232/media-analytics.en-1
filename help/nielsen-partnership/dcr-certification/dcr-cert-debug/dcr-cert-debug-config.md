@@ -24,8 +24,6 @@ To access Adobe Debug:
    That ticket needs to include the email addresses that were used to create the Experience Cloud accounts for the team members who need to access the tool. 
 1. After the ticket is closed and access has been granted, go to [https://debug.adobe.com](https://debug.adobe.com) and use Experience Cloud credentials to log in.
 
-   <a id="fig_A311F3DBC6CD469C9A136D9DCDCC21F0"></a>
-
    ![](assets/adobe-debug-login.png)
 
    The supported browsers for this tool are:
@@ -49,8 +47,6 @@ To download and configure the Debug Proxy:
 
     * OS X 10.7 64-bit or higher 
     * Windows 7.1 64-bit or higher
-
-   <a id="fig_C34077CF855E46128B7A008587A28F32"></a>
 
    ![](assets/debug-proxy-app.png)
 

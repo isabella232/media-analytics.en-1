@@ -27,8 +27,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
 
 ## Sample Code {#section_qpy_4dj_x2b}
 
-<a id="fig_E333C95A544A4DCFB192F9DA9093BB04"></a>
-
 ![](assets/multi-sessions-in-parallel.png)
 
 * **Android -** 

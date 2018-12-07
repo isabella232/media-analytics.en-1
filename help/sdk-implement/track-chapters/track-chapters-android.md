@@ -13,8 +13,6 @@ snippet: y
 >
 >The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs](../../sdk-implement/download-sdks.md).
 
-<a id="section_52221B3A9BFD46B3A22DA6BCE97CCD75"></a>
-
 1. Identify when the chapter start event occurs and create the `ChapterObject` instance by using the chapter information.
 
    Here is the `ChapterObject` chapter tracking reference:  

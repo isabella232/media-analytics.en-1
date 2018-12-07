@@ -39,8 +39,6 @@ Unless specified, the network calls in this scenario are the same as the calls i
 
 In this scenario, buffering occurs when the VOD content is played back.
 
-<a id="fig_E4644A6B9940403BA81AC82585C4C1D7"></a>
-
 ![](assets/buffer-regular-content.png)
 
 * **Android -** To view this scenario in Android, set up the following code:

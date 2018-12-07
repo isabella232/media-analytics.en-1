@@ -29,10 +29,7 @@ Here are the criteria for self-certification:
 * When the Adobe Media SDK is updated a self certification is required. 
 * If another Brand, within the same company, leverages the same player implementation and the player is simply "re-skinned", a self certification is required.
 
-<a id="section_A8930180945D48258792DC9AC857B6E3"></a>
-
 **Initiate**
-<a id="fig_4BAC7C5333D542A4B489DF935D588972"></a>
 
 ![](assets/initiate.png)
 
@@ -43,10 +40,7 @@ Here are the criteria for self-certification:
 | **Estimated Time** <ul> <li>1 week </li> </ul> | **Estimated Time** <ul> <li>1 day </li> </ul> |
 | **Led By** <ul> <li>Adobe </li> </ul> | **Led By** <ul> <li>Adobe </li> </ul> | 
 
-<a id="section_B79513DC49744CA4A1A0BECF290A3FCD"></a>
-
 **Implement**
-<a id="fig_B265637DE2FC49D2B00B5A332A44328A"></a>
 
 ![](assets/implement.png)
 
@@ -57,10 +51,7 @@ Here are the criteria for self-certification:
 | **Estimated Time** <ul> <li> 3 weeks </li> </ul> | **Estimated Time** <ul> <li>1 week </li> </ul> |
 | **Led By** <ul> <li>Client </li> </ul> | **Led By** <ul> <li>Client </li> </ul> | 
 
-<a id="section_82EDBB0744CA47178AA1722CDF297886"></a>
-
 **Certify**
-<a id="fig_5C5B07006C2543E0BF68FE63FD4846ED"></a>
 
 ![](assets/certify.png)
 
@@ -71,10 +62,7 @@ Here are the criteria for self-certification:
 | **Estimated Time** <ul> <li>1 week </li> </ul> Important: All failed certifications (those with blockers) are required to start the **Certify** step again, including the timelines and deliverables.  | **Estimated Time** <ul> <li>1 week </li> </ul> |
 | **Led By** <ul> <li>Adobe and Nielsen </li> </ul> | **Led By** <ul> <li>Adobe and Nielsen </li> </ul> | 
 
-<a id="section_29CD1F2185714A5C8FFF6175057D75BC"></a>
-
 **Provision**
-<a id="fig_D00C7FDED7284913A62123D5AA3D0139"></a>
 
 ![](assets/provision.png)
 
@@ -85,10 +73,7 @@ Here are the criteria for self-certification:
 | **Estimated Time** <ul> <li>1 week </li> </ul> | **Estimated Time** <ul> <li>1 week </li> </ul> |
 | **Led By** <ul> <li>Adobe </li> </ul> | **Led By** <ul> <li>Adobe </li> </ul> | 
 
-<a id="section_A281BC796A0441A09F15D368F63710D7"></a>
-
 **Close-Out**
-<a id="fig_5A03D335B14B4300B18FE8DBE5DBB1FB"></a>
 
 ![](assets/close.png)
 

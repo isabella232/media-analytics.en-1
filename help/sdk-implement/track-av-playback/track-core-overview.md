@@ -13,8 +13,6 @@ snippet: y
 >
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md)
 
-<a id="section_904E0524877241939A0E0557E7395C4A"></a>
-
 Tracking core playback includes tracking media load, media start, media pause, and media complete. Although not mandatory, tracking buffering and seeking are also core components used for tracking content playback. In your media player API, identify the player events that correspond with the Media SDK tracking calls, and code your event handlers to call tracking APIs, and to populate required and optional variables.
 
 **On media load:**

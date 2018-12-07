@@ -9,8 +9,6 @@ snippet: y
 
 # Media reports enablement{#media-reports-enablement}
 
-<a id="section_48B5830857DF4044BAF8E27DB0AB9D30"></a>
-
 Each report suite that collects video metrics must be configured before video data is sent.
 
 >[!TIP]
@@ -20,8 +18,6 @@ Each report suite that collects video metrics must be configured before video da
 1. In [Reports & Analytics](https://my.omniture.com/login/), click  **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** . 
 
 1. Select the report suite(s) where you are collecting video data and click  **[!UICONTROL Edit Settings]** > **[!UICONTROL Media Management]** > **[!UICONTROL Media Reporting]** .
-
-   <a id="fig_091C05FE4F064B8F81CC3A93C2AC04DF"></a>
 
    ![](assets/media-reporting.png){width="400px"}
 

@@ -15,8 +15,6 @@ The Media Concurrent Viewers dashboard displays concurrent viewers during one da
 >
 >No data will be displayed if the selected interval is not an entire day.
 
-<a id="fig_CA2026CFC8224164878573CEF4F61DE6"></a>
-
 ![](assets/video-concurrent-viewers.png)
 
 ## Report features {#section_11F8BCB98042490DAD0EA0B7EDA80569}

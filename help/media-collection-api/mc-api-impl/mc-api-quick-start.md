@@ -9,8 +9,6 @@ snippet: y
 
 # Quick start{#quick-start}
 
-<a id="section_m5w_dl5_gcb"></a>
-
 >[!TIP]
 >
 >Gather the request data necessary for completing a successful [Session request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Collection server. You can quickly verify your request data by sending requests manually (with `curl`, or Postman, etc.). This will give you immediate feedback on whether you have any issues with incorrect data types or incorrect information in your request. Use the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) to verify that you are supplying proper request data.
