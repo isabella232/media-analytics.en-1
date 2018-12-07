@@ -1,6 +1,8 @@
 ---
 seo-title: VOD playback with pre-roll ads
 title: VOD playback with pre-roll ads
+description: In this scenario, pre-roll ads have been inserted before the main content.
+seo-description: In this scenario in Adobe Media Analytics, pre-roll ads have been inserted before the main content.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 index: y
 internal: n
@@ -9,7 +11,7 @@ snippet: y
 
 # VOD playback with pre-roll ads{#vod-playback-with-pre-roll-ads}
 
-In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different. 
+In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different.
 
 | Trigger | Heartbeat method | Network calls | Notes |
 | --- | --- | --- | --- |
@@ -33,8 +35,8 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning o
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:event:type`  | `"start"`  |  |
-|  `s:asset:type`  | `"ad"`  |  |
+|  `s:event:type`  | `start`  |  |
+|  `s:asset:type`  | `ad`  |  |
 
 Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call. 
 
@@ -42,8 +44,8 @@ Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call i
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:event:type`  | `"play"`  |  |
-|  `s:asset:type`  | `"ad"`  |  |
+|  `s:event:type`  | `play`  |  |
+|  `s:asset:type`  | `ad`  |  |
 
 These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters: 
 
@@ -51,10 +53,10 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:event:type`  | `"play"`  |  |
-|  `s:asset:type`  | `"ad"`  |  |
-|  `s:asset:ad_id`  | <ad ID>  |  |
-|  `s:asset:pod_id`  | <ad pod ID>  |  |
+|  `s:event:type`  | `play`  |  |
+|  `s:asset:type`  | `ad`  |  |
+|  `s:asset:ad_id`  | &lt;ad ID&gt;  |  |
+|  `s:asset:pod_id`  | &lt;ad pod ID&gt;  |  |
 
 Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. This call looks like other `Heartbeat Ad` calls but contains a couple specific things:
 
@@ -62,18 +64,16 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:event:type`  | `"complete"`  |  |
-|  `s:asset:type`  | `"ad"`  |  |
+|  `s:event:type`  | `complete`  |  |
+|  `s:asset:type`  | `ad`  |  |
 
 ## Sample code for a pre-roll ad break {#section_nwf_xy3_x2b}
 
 In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and then the content is played.
 
-<a id="fig_49C7C3412C3B413EABE67C39260F6C40"></a>
-
 ![](assets/preroll-regular-playback.png)
 
-* **Android -** To view this scenario in Android, set up the following code:
+* **Android** To view this scenario in Android, set up the following code:
 
   ```java
   // Set up  mediaObject 
@@ -283,7 +283,7 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   
   ```
 
-* **JavaScript -** To view this scenario in JavaScript, enter the following text: 
+* **JavaScript** To view this scenario in JavaScript, enter the following text: 
 
   ```js
   // Set up mediaObject 
@@ -385,7 +385,7 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android -** To view this scenario in Android, set up the following code:
+* **Android** To view this scenario in Android, set up the following code:
 
   ```java
   // Set up mediaObject 
@@ -563,7 +563,7 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
   
   ```
 
-* **iOS -** To view this scenario in iOS, set up the following code: 
+* **iOS** To view this scenario in iOS, set up the following code: 
 
   ```
   //  Set up mediaObject 
@@ -751,9 +751,10 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
   
   ```
 
-* **JavaScript -** To view this scenario in JavaScript, enter the following text: 
+* **JavaScript** To view this scenario in JavaScript, enter the following text:
 
   ```js
+
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
       Configuration.VIDEO_NAME,  
@@ -1059,4 +1060,3 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
   ........ 
   
   ```
-
