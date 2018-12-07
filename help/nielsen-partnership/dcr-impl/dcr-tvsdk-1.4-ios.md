@@ -1,13 +1,15 @@
 ---
 seo-title: TVSDK 1.4 for iOS
 title: TVSDK 1.4 for iOS
+description: This iOS implementation guide helps you implement the PTVideoAnalyticsTracker for Nielsen through the TVSDK player version 1.4 for iOS.
+seo-description: This iOS implementation guide helps you implement the PTVideoAnalyticsTracker for Nielsen through the Adobe TVSDK player version 1.4 for iOS
 uuid: 529a08df-c9fd-4907-8b8b-4047058e4b8b
 index: y
 internal: n
 snippet: y
 ---
 
-# TVSDK 1.4 for iOS{#tvsdk-for-ios}
+# TVSDK 1.4 for iOS {#tvsdk-for-ios}
 
 This iOS implementation guide helps you implement the `PTVideoAnalyticsTracker` for Nielsen through the TVSDK player version 1.4 for iOS. It also exposes the APIs to configure opt-in/opt-out for Nielsen data collection.
 
@@ -22,6 +24,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
    Initialize Nielsen Measurement by providing the required AppInfo with application details. For more information about `AppInfo`, see `NielsenAppInfo` in [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
    ```
+
    // Configure Nielsen API 
    [PTVideoAnalyticsTracker nielsenConfigure: @{ 
         @"appid" : @"APP-ID-PROVIDED-BY-ADOBE-REPRESENTATIVE", 
@@ -29,6 +32,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
         @"appname" : @"Sample Player Name", 
         @"sfcode" : @"dcr" 
    }];
+
    ```
 
 1. Implement `PTVideoAnalyticsNielsenMetadata`.
@@ -37,15 +41,16 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
 
    The following types of metadata blocks must be configured:
 
-    * Video Metadata ( `NielsenContentMetadata`) 
-    * Channel Metadata ( `NielsenChannelMetadata`) 
-    * Ad Metadata ( `NielsenAdMetadata`)
+    * Video Metadata `NielsenContentMetadata`
+    * Channel Metadata `NielsenChannelMetadata`
+    * Ad Metadata `NielsenAdMetadata`
 
    For more information on required parameters for Nielsen metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
    Create an instance of the `PTVideoAnalyticsNielsenMetadata`, and this instance contains all of the configuration information that is needed to enable video heartbeat tracking. For example: 
 
    ```
+
    -(PTVideoAnalyticsNielsenMetadata*) createNielsenMetadata 
    { 
        PTVideoAnalyticsNielsenMetadata* nielsenMetadata = [[[PTVideoAnalyticsNielsenMetadata alloc] init] 
@@ -104,6 +109,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
          
        return  nielsenMetadata; 
    }
+
    ```
 
    >[!IMPORTANT]
@@ -113,16 +119,20 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
 1. Add `PTVideoAnalyticsNielsenMetadata` to `PTMediaPlayerItem` metadata.
 
    ```
+
    PTVideoAnalyticsNielsenMetadata* nielsenMetadata =  [self createNielsenMetadata]; 
      
    //attach nielsenMetadata to your MediaPlayerItem 
    [self.item.metadata setMetadata:nielsenMetadata forKey:PTNielsenTrackingMetadataKey];
+
    ```
 
 1. Create an instance of `PTVideoAnalyticsTracker` immediately after you create the `PTMediaPlayer` instance.
 
    ```
+
    PTVideoAnalyticsTracker *videoAnalyticsTracker = [[[PTVideoAnalyticsTracker alloc] initWithMediaPlayer:self.player] autorelease];
+
    ```
 
 ## MTVR Implementation Guide {#section_5435E9606C124DF5A5A984FC1BAD022E}
@@ -133,14 +143,15 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 
    | Key | Value |
    | --- | --- |
-   | `tv` | "true" |
-   | `datasource` | "id3" |
-   | `adloadtype` | <ul> <l>When linear ads are present (MTVR), the adloadtype = "1".  </li> <l>When DAI ads are present (DCR), the adloadtype = "2".  </li> </ul> |
-   | `admodel` | <ul> <l>When linear ads are present (MTVR), the admodel = "1".  </li> <l>When DAI ads are present (DCR), the admodel = "2".  </li> </ul> |
+   | `tv` | *true* |
+   | `datasource` | *id3* |
+   | `adloadtype` | <ul> <l>When linear ads are present (MTVR), the adloadtype = *1*.  </li> <l>When DAI ads are present (DCR), the adloadtype = *2*.  </li> </ul> |
+   | `admodel` | <ul> <l>When linear ads are present (MTVR), the admodel = *1*.  </li> <l>When DAI ads are present (DCR), the admodel = *2*.  </li> </ul> |
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
+   For dynamic ads, the default value is *2*. A value of *1* is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../../nielsen-partnership/dcr-vars-metadata.md#concept_35FD633B1FD6436CA8CECE66E190CE49).
 
    ```
+
    - (PTVideoAnalyticsNielsenMetadata*) createNielsenMetadata { 
        PTVideoAnalyticsNielsenMetadata* nielsenMetadata =  
          [[[PTVideoAnalyticsNielsenMetadata alloc] init] autorelease]; 
@@ -185,6 +196,7 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
      
        return  nielsenMetadata; 
    }
+
    ```
 
 1. Retrieving the Nielsen ID3 tags and passing it to `MediaHeartbeat` is internally implemented in `PTVideoAnalyticsTracker`.
@@ -202,10 +214,11 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 1. To enable or disable Nielsen tracking, use the following usage example to set the user opt-out preference:
 
    ```
+
    [PTVideoAnalyticsTracker nielsenUserOptOut:@"USER_OPT_OUT_URL_STRING"];
+
    ```
 
 >[!TIP]
 >
 >For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md).
-
