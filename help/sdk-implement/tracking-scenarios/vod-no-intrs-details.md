@@ -28,12 +28,12 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |
-|  `s:sc:tracking_server`  | <Your Analytics Tracking Server URL>  |  |
+|  `s:sc:rsid`  | [Your Adobe Report Suite ID]  |  |
+|  `s:sc:tracking_server`  | [Your Analytics Tracking Server URL]  |  |
 |  `s:user:mid`  | must be set  | Should match the mid value on the `Adobe Analytics Content Start` call.  |
 |  `s:event:type`  | `"start"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
-|  `s:asset:video_id`  | <Your Video Name>  |  |
+|  `s:asset:video_id`  | [Your Video Name]  |  |
 |  `s:meta:*`  | optional  | Custom metadata that is set on the video.  |
 
 ## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
@@ -54,7 +54,7 @@ In the content heartbeats, look for the following parameters:
 |  Parameters  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
-|  `l:event:playhead`  | <playhead position> eg.50,60,70  | This parameter reflects the current position of the playhead.  |
+|  `l:event:playhead`  | [playhead position] e.g., 50,60,70  | This parameter reflects the current position of the playhead.  |
 
 ## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
 

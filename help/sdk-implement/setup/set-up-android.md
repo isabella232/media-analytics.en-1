@@ -63,28 +63,19 @@ snippet: y
 
    ```java
    // Media Heartbeat Initialization 
-   config.trackingServer =  
-<i><SAMPLE_HEARTBEAT_TRACKING_SERVER></i>; 
-   config.channel =  
-<i><SAMPLE_HEARTBEAT_CHANNEL></i>; 
-   config.appVersion =  
-<i><SAMPLE_HEARTBEAT_SDK_VERSION></i>; 
-   config.ovp =  
-<i><SAMPLE_HEARTBEAT_OVP_NAME></i>; 
-   config.playerName =  
-<i><SAMPLE_PLAYER_NAME></i>; 
-   config.ssl =  
-<i><true/false></i>; 
-   config.debugLogging =  
-<i><true/false></i>; 
-   
+   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_; 
+   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>; 
+   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>; 
+   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>; 
+   config.playerName = <SAMPLE_PLAYER_NAME>; 
+   config.ssl = <true/false>; 
+   config.debugLogging = <true/false>; 
    ```
 
 1. Implement the `MediaHeartbeatDelegate` interface.
 
    ```java
-   public class VideoAnalyticsProvider  
-     implements Observer, MediaHeartbeatDelegate {}
+   public class VideoAnalyticsProvider implements Observer, MediaHeartbeatDelegate{}
    ```
 
    ```java

@@ -26,8 +26,7 @@ You can configure each of the video heartbeat library components individually fo
    ```java
    // Creation of AppInfo Object 
     
-   Map <String, Object> appInfo =  
-     new HashMap<String, Object>(); 
+   Map <String, Object> appInfo = new HashMap<String, Object>(); 
    appInfo.put("appid", <SAMPLE_APP_ID>); 
    appInfo.put("appname", <SAMPLE_APP_NAME>); 
    appInfo.put("appversion", <SAMPLE_APP_VER>); 

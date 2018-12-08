@@ -13,22 +13,22 @@ This code snippet from the Reference Player shows one way of coding a [Sessions 
 
 ```js
 var  
-<b>sessionData</b> = { 
+**sessionData** = { 
         ... 
         "media.contentType": "VOD", 
         "media.channel": "sample-channel", 
         ... 
     } 
 }; 
- 
 ...
+
 const SESSION_ID_EXTRACTOR = /^\/api\/(.*)\/sessions\/(.*)/; 
     ...
     apiClient.request({ 
         "baseUrl": config.apiBaseUrl,   // The endpoint 
         "path": config.apiSessionsPath, // api/v1/sessions/ 
         "method": "POST",               // (Always POST) 
-        "data": sessionData</b>         // Mandatory params 
+        "data": sessionData             // Mandatory params 
      }).then((response) => { 
         // Extract Session ID (and API version) 
         const [, apiVersion, sessionId] =  response.headers.Location.match(SESSION_ID_EXTRACTOR);  

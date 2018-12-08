@@ -63,7 +63,7 @@ When computing the Analytics start/close calls for the downloaded content scenar
     playerTime:{playhead: 0, ts: 1529997923478},  
     params:{ 
    
-<b>    "media.downloaded": true</b> 
+        <b>"media.downloaded": true</b> 
     }, 
     customMetadata:{},  
     qoeData:{} 
