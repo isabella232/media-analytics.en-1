@@ -43,7 +43,7 @@ heartbeat.configure(heartbeatConfig);
 >
 >You need to get the `nielsenPluginConfig.configKey` key from your Adobe representative.
 
-For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md).
+For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md).
 
 ## Implement the NielsenPluginDelegate {#section_A9610928B87E49B3831B8C1A0BA9FEE6}
 
@@ -127,7 +127,7 @@ To implement DTVR in Javascript 1.x, make the following changes to your existing
    };
    ```
 
-   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

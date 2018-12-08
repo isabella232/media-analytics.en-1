@@ -21,7 +21,7 @@ You can configure each of the video heartbeat library components individually fo
 
 1. Create an instance of `AppInfo` with all the required application info needed to initialize Nielsen Measurement.
 
-   For more information about AppInfo, see *NielsenAppInfo* in [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md). 
 
    ```java
    // Creation of AppInfo Object 
@@ -193,7 +193,7 @@ To implement MTVR in Android 2.1, make the following changes to your existing Ni
    }
    ```
 
-   For more information, see [](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

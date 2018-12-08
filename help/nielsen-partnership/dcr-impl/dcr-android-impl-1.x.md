@@ -37,7 +37,7 @@ Context context = <android-application-context>;
 AdobeNielsenAPI.configure(context, appInfo);
 ```
 
-For more information about `AppInfo`, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md).
+For more information about `AppInfo`, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md).
 
 ## Instantiate and Configure the Video Heartbeat Components {#section_DFDF33ACC9D347F99F4315DD11381641}
 
@@ -159,7 +159,7 @@ To implement MTVR in Android 1.6x, make the following changes to your existing N
    }
    ```
 
-   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

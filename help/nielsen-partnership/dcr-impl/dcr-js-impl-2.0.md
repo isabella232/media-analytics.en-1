@@ -21,7 +21,7 @@ To configure the Nielsen API:
 
 1. Create an instance of AppInfo with all the required application information needed to initialize Nielsen Measurement and provide it to MediaHeartbeatConfig.
 
-   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md). 
 1. Provide the Nielsen config key to `MediaHeartbeatConfig`.
 
    You can obtain the Nielsen config key through your Adobe representative.
@@ -177,7 +177,7 @@ To implement DTVR in Javascript 2.0, make the following changes to your existing
    } 
    ...
 
-   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

@@ -21,7 +21,7 @@ For detailed instructions, see [Video Heartbeat 2.x Developer Guide for iOS](htt
 
 Initialize Nielsen Measurement by providing the required AppInfo with application details.
 
-For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
+For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md). 
 
 ```
 // Configure Nielsen API 
@@ -171,7 +171,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
        forKey:ADBMediaObjectKeyNielsenContentMetadata]; 
    ...
 
-   For more information, see [Variables and metadata](../../nielsen-partnership/dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 
