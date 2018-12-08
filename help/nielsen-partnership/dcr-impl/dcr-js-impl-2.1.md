@@ -141,6 +141,7 @@ To implement DTVR in Javascript 2.1, make the following changes to your existing
 
 1. Update the Nielsen content metadata to include the following key/values:
 
+   | Key | Value |
    | --- | --- |
    | `AD_LOAD_TYPE` | <ul> <li>When linear ads are present (DTVR), the `AD_LOAD_TYPE` = 1.  </li> <li>When DAI ads are present (DCR), the `AD_LOAD_TYPE` = 2.  </li> </ul> |
    | `TYPE` | `content` | 

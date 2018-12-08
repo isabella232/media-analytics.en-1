@@ -134,6 +134,7 @@ To implement MTVR in Android 1.6x, make the following changes to your existing N
 
 1. Update the Nielsen content metadata to include the following key/values:
 
+   | Key | Value |
    | --- | --- |
    | `tv` | true |
    | `datasource` | ID3 |
