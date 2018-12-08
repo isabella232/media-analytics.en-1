@@ -37,7 +37,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
       ```    
       {
           "reportDescription": {
-              "reportSuiteID": "<Your Report Suite ID>",
+              "reportSuiteID": "[Your Report Suite ID]",
               "dateTo": "2017-09-07",
               "dateFrom": "2017-09-07"
               "metrics": [

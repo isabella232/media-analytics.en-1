@@ -32,12 +32,12 @@ This is the same scenario as the [VOD playback with no ads](../../sdk-implement/
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |
-|  `s:sc:tracking_serve`  | <Your Analytics Tracking Server URL>  |  |
+|  `s:sc:rsid`  | [Your Adobe Report Suite ID]  |  |
+|  `s:sc:tracking_serve`  | [Your Analytics Tracking Server URL]  |  |
 |  `s:user:mid`  | `s:user:mid`  | Should match the mid value on the Adobe Analytics Content Start Call  |
 |  `s:event:type`  | `"start"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
-|  `s:asset:video_id`  | <Your Video Name>  |  |
+|  `s:asset:video_id`  | [Your Video Name]  |  |
 |  `s:stream:type`  | `live`  |  |
 |  `s:meta:*`  | *optional* | Custom metadata set on the video  |
 
@@ -59,7 +59,7 @@ In the content heartbeats, look for a few specific things:
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
-|  `l:event:playhead`  | <playhead position> e.g., 50, 60, 70  | This should reflect the current position of the playhead.  |
+|  `l:event:playhead`  | [playhead position] e.g., 50, 60, 70  | This should reflect the current position of the playhead.  |
 
 ## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
 
