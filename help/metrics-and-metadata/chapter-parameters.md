@@ -11,11 +11,6 @@ snippet: y
 
 This topic presents a list of chapter and/or segment data, including context data values, that Adobe collects via solution variables.
 
-This section contains the following information:
-
-* [Chapter Metadata](../metrics-and-metadata/chapter-parameters.md#section_534D3A6BFEB24D1884F80AD6A50BF13C) 
-* [Chapter Metrics](../metrics-and-metadata/chapter-parameters.md#section_1C47D6FB1DF343C39CE7A8F724406F33)
-
 Table data description:
 
 * **Label:** The name of the parameter. 
@@ -25,7 +20,6 @@ Table data description:
     * *Required* - Indicates whether the parameter is required for basic video tracking.
     * *Type* - Specifies the type of the variable to be set, string or number.
     * *Sent With* - Indicates when the data is sent: *Initiate* is the analytics call sent on video start, *Ad Start* is the analytics call sent on ad start, *Chapter Start* is the analytics call sent on chapter start, and *Close* is the compiled analytics call sent directly from the heartbeat server to the analytics server at the end of the media session, or the end of the ad. The Close calls are not available in network packet calls.
-    
     * *Min. SDK Version* - Indicates which SDK version you would need to access the parameter.
     * *Sample Value* - Provides example of common variable usage.
 
@@ -33,7 +27,6 @@ Table data description:
 * **Reporting:** Information on how to view and analyze the video data.
 
     * *Available* - Indicates whether the data is available in reporting by default (*Yes*), or requires custom set-up (*Custom*)
-    
     * *Reserved Variable* - Indicates whether the data is captured as an event, eVar, prop, or classification in a reserved variable. 
     * *Report Name* - Name of Adobe Aanlytics report for variable
     * *Context Data* - Name of the Adobe Analytics context data passed to the reporting server and used in processing rules.
@@ -42,310 +35,75 @@ Table data description:
 
 ## Chapter Metadata {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
 
+### Chapter Name 
+
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Chapter Name** | <ul> <li> **SDK Key:** `name&#42;` </li> <li> **API Key:** `media.chapter.friendlyName` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Chapter Start, Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `"The Big Bang Chapter 2 - Dating"` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.friendlyName` </li> <li> **Heartbeat:** `s:stream:chapter_name` </li> </ul> | <ul> <li> **Available:** Created by default...  </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Name </li> <li> **Context Data:** `a.media.chapter.friendlyName` </li> <li> **Data Feed:** `N/A` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.friendlyName` </li> </ul> |
-| The name of the chapter and/or segment.  **&#42;** [createChapterObject ( name , position, length, startTime)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject) ||||
-| **Chapter Position** | <ul> <li> **SDK Key:** `position&#42;` </li> <li> **API Key:** `media.chapter.index` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `2` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.position` </li> <li> **Heartbeat:** `l:stream:chapter_pos` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Position </li> <li> **Context Data:** `a.media.chapter.position` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.position` </li> </ul> |
-| The position (index, integer) of the chapter inside the content.  **&#42;** [createChapterObject (name, position , length, startTime)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject) ||||
-| **Chapter Offset** | <ul> <li> **SDK Key:** `startTime&#42;` </li> <li> **API Key:** `media.chapter.offset` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `58` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.offset` </li> <li> **Heartbeat:** `l:stream:chapter_offset` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Offset </li> <li> **Context Data:** `a.media.chapter.offset` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.offset` </li> </ul> |
-| The offset of the chapter inside the content (in seconds) from the start.  **&#42;** [createChapterObject (name, position, length, startTime )](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject) ||||
-| **Chapter Length** | <ul> <li> **SDK Key:** </li> <li> **API Key:** `media.chapter.length` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `486` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.length` </li> <li> **Heartbeat:** `l:stream:chapter_length` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Length </li> <li> **Context Data:** `a.media.chapter.length` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.length` </li> </ul> |
-| The length of the chapter, in seconds.  **&#42;** [createChapterObject (name, position, length , startTime)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject) ||||
-| **Chapter** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.name` </li> <li> **Heartbeat:** `s:stream:chapter_id` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Chapter </li> <li> **Context Data:** `a.media.chapter.name` </li> <li> **Data Feed:** `videochapter` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.name` </li> </ul> |
-| The auto-generated ID of the chapter.  ||||
+| **Chapter Name** | <ul> <li> **SDK Key:** [name](./chapter-paramaters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.friendlyName` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Chapter Start, Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `"The Big Bang Chapter 2 - Dating"` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.friendlyName` </li> <li> **Heartbeat:** `s:stream:chapter_name` </li> </ul> | <ul> <li> **Available:** Created by default...  </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Name </li> <li> **Context Data:** `a.media.chapter.friendlyName` </li> <li> **Data Feed:** `N/A` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.friendlyName` </li> </ul> |
 
-<!--
-<table id="table_ssm_4cm_n1b"> 
- <thead> 
-  <tr> 
-   <th colname="col1" align="center" valign="middle" class="entry"> <p>Label </p> </th> 
-   <th colname="col2" align="center" valign="middle" class="entry"> <p>Implementation </p> </th> 
-   <th colname="col7" align="center" valign="middle" class="entry"> <p>Network Parameters </p> </th> 
-   <th colname="col6" align="center" valign="middle" class="entry"> <p>Reporting</p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Name</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_tsm_4cm_n1b"> 
-      <li><b>SDK Key:</b> <span class="codeph"> <i>name*</i> </span> </li> 
-      <li><b>API Key: </b> <span class="codeph"> media.chapter.friendlyName </span></li> 
-      <li> <b>Required:</b> No </li> 
-      <li> <b>Type:</b> string</li> 
-      <li> <b>Sent with:</b> Chapter Start, Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"> "The Big Bang Chapter 2 - Dating" </span></li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_usm_4cm_n1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.friendlyName </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> s:stream:chapter_name </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_vsm_4cm_n1b"> 
-     <li><b>Available:</b> <i>Created by default...</i></li> 
-     <li><b>Reserved Variable:</b> Classification</li> 
-     <li><b>Report Name:</b> <i>Chapter Name</i> </li> 
-     <li><b>Context Data:</b> <span class="codeph"> a.media.chapter.friendlyName </span></li> 
-     <li><b>Data Feed:</b> <span class="codeph"> N/A </span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.friendlyName </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The name of the chapter and/or segment. </p> <p><b>*</b> <span class="codeph"> <a href="https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject" format="html" scope="external"> createChapterObject </a>( <i>name</i>, position, length, startTime) </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Position</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_mkl_vb2_p1b"> 
-      <li><b>SDK Key:</b> <span class="codeph"> <i>position*</i> </span> </li> 
-      <li><b>API Key: </b> <span class="codeph"> media.chapter.index </span></li> 
-      <li> <b>Required:</b> 
-       <ul id="ul_dry_ntt_rdb"> 
-        <li>SDK: No</li> 
-        <li>API: Yes</li> 
-       </ul> </li> 
-      <li> <b>Type:</b> number</li> 
-      <li> <b>Sent with:</b> Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"> 2 </span></li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_nkl_vb2_p1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.position </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> l:stream:chapter_pos </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_okl_vb2_p1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> Classification</li> 
-     <li><b>Report Name:</b> <i>Chapter Position</i> </li> 
-     <li><b>Context Data:</b> <span class="codeph"> a.media.chapter.position </span></li> 
-     <li><b>Data Feed:</b> <span class="codeph"></span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.position </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The position (index, integer) of the chapter inside the content. </p> <p><b>*</b> <span class="codeph"> <a href="https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject" format="html" scope="external"> createChapterObject </a>(name, <i>position</i>, length, startTime) </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Offset</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_pkl_vb2_p1b"> 
-      <li><b>SDK Key:</b> <span class="codeph"> <i>startTime*</i> </span> </li> 
-      <li><b>API Key: </b> <span class="codeph"> media.chapter.offset </span></li> 
-      <li> <b>Required:</b> 
-       <ul id="ul_hdr_ptt_rdb"> 
-        <li>SDK: No</li> 
-        <li>API: Yes</li> 
-       </ul> </li> 
-      <li> <b>Type:</b> number</li> 
-      <li> <b>Sent with:</b> Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"> 58 </span></li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_qkl_vb2_p1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.offset </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> l:stream:chapter_offset </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_rkl_vb2_p1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> Classification</li> 
-     <li><b>Report Name:</b> <i>Chapter Offset</i> </li> 
-     <li><b>Context Data: </b> <span class="codeph"> a.media.chapter.offset </span></li> 
-     <li><b>Data Feed:</b> <span class="codeph"></span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.offset </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The offset of the chapter inside the content (in seconds) from the start. </p> <p><b>*</b> <span class="codeph"> <a href="https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject" format="html" scope="external"> createChapterObject </a>(name, position, length, <i>startTime</i>) </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Length</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_skl_vb2_p1b"> 
-      <li><b>SDK Key:</b> <span class="codeph"></span> </li> 
-      <li><b>API Key: </b> <span class="codeph"> media.chapter.length </span></li> 
-      <li> <b>Required:</b> 
-       <ul id="ul_bwm_ttt_rdb"> 
-        <li>SDK: No</li> 
-        <li>API: Yes</li> 
-       </ul></li> 
-      <li> <b>Type:</b> number</li> 
-      <li> <b>Sent with:</b> Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"> 486 </span> </li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_tkl_vb2_p1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.length </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> l:stream:chapter_length </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_ukl_vb2_p1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> Classification</li> 
-     <li><b>Report Name:</b> <i>Chapter Length</i> </li> 
-     <li><b>Context Data: </b> <span class="codeph"> a.media.chapter.length </span></li> 
-     <li><b>Data Feed:</b> <span class="codeph"></span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.length </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The length of the chapter, in seconds. </p> <p><b>*</b> <span class="codeph"> <a href="https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject" format="html" scope="external"> createChapterObject </a>(name, position, <i>length</i>, startTime) </span></p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_vkl_vb2_p1b"> 
-      <li><b>SDK Key:</b> <i>Automatically set</i> </li> 
-      <li><b>API Key:</b> N/A</li> 
-      <li> <b>Required:</b> No </li> 
-      <li> <b>Type:</b> string </li> 
-      <li> <b>Sent with:</b> Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"></span> </li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_wkl_vb2_p1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.name </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> s:stream:chapter_id </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_xkl_vb2_p1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> eVar</li> 
-     <li><b>Expiration:</b> On HIT</li> 
-     <li><b>Report Name:</b> <i>Chapter</i> </li> 
-     <li><b>Context Data: </b> <span class="codeph"> a.media.chapter.name </span></li> 
-     <li><b>Data Feed:</b> <span class="codeph"> videochapter </span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.name </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The auto-generated ID of the chapter. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
--->
+The name of the chapter and/or segment.  
+
+### Chapter Position 
+
+| Label | Implementation | Network Parameters | Reporting |
+| --- | --- | --- | --- |
+| **Chapter Position** | <ul> <li> **SDK Key:** [position](./chapter-paramaters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.index` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `2` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.position` </li> <li> **Heartbeat:** `l:stream:chapter_pos` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Position </li> <li> **Context Data:** `a.media.chapter.position` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.position` </li> </ul> |
+
+The position (index, integer) of the chapter inside the content.  
+
+### Chapter Offset 
+
+| Label | Implementation | Network Parameters | Reporting |
+| --- | --- | --- | --- |
+| **Chapter Offset** | <ul> <li> **SDK Key:** [startTime](./chapter-paramaters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.offset` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `58` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.offset` </li> <li> **Heartbeat:** `l:stream:chapter_offset` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Offset </li> <li> **Context Data:** `a.media.chapter.offset` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.offset` </li> </ul> |
+
+The offset of the chapter inside the content (in seconds) from the start.  
+
+### Chapter Length 
+
+| Label | Implementation | Network Parameters | Reporting |
+| --- | --- | --- | --- |
+| **Chapter Length** | <ul> <li> **SDK Key:** </li> <li> **API Key:** `media.chapter.length` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `486` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.length` </li> <li> **Heartbeat:** `l:stream:chapter_length` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Length </li> <li> **Context Data:** `a.media.chapter.length` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.length` </li> </ul> |
+
+The length of the chapter, in seconds.  
+
+### Chapter 
+
+| Label | Implementation | Network Parameters | Reporting |
+| --- | --- | --- | --- |
+| **Chapter** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.name` </li> <li> **Heartbeat:** `s:stream:chapter_id` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Chapter </li> <li> **Context Data:** `a.media.chapter.name` </li> <li> **Data Feed:** `videochapter` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.name` </li> </ul> |
+
+The auto-generated ID of the chapter.  
 
 ## Chapter Metrics {#section_1C47D6FB1DF343C39CE7A8F724406F33}
+
+### Chapter Start 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
 | **Chapter Start** | <ul> <li> **SDK Key:** Automatically set  </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Chapter Start </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.view` </li> <li> **Heartbeat:** `s:event:type=chapter_start` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Chapter Starts g </li> <li> **Context Data:** `a.media.chapter.view` </li> <li> **Data Feed:** `videochapterstart` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.view` </li> </ul> |
-| The number of chapter starts.  Important:  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.  ||||
-| **Chapter Complete** | <ul> <li> **SDK Key:** Automatically set  </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3</li> <li> **Sample value:** `TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.complete` </li> <li> **Heartbeat:** `s:event:type=chapter_complete` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Chapter Completes g </li> <li> **Context Data:** `a.media.chapter.complete` </li> <li> **Data Feed:** `videochaptercomplete` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.complete` </li> </ul> |
-| The number of chapter completes.  Important:  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.  ||||
-| **Chapter Time Spent** | <ul> <li> **SDK Key:** Automatically set  </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.timePlayed` </li> <li> **Heartbeat:** </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Chapter Time Spent g </li> <li> **Context Data:** `a.media.chapter.timePlayed` </li> <li> **Data Feed:** `videochaptertime` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.timePlayed` </li> </ul> |
-| **Release Date: 09/13/18** The time spent on the chapter.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  ||||
 
-<!--
-<table id="table_fnv_4cm_n1b"> 
- <thead> 
-  <tr> 
-   <th colname="col1" align="center" valign="middle" class="entry"> <p>Label </p> </th> 
-   <th colname="col2" align="center" valign="middle" class="entry"> <p>Implementation </p> </th> 
-   <th colname="col7" align="center" valign="middle" class="entry"> <p>Network Parameters </p> </th> 
-   <th colname="col6" align="center" valign="middle" class="entry"> <p>Reporting</p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Start</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_gnv_4cm_n1b"> 
-      <li><b>SDK Key:</b> <i>Automatically set</i> </li> 
-      <li><b>API Key:</b> N/A</li> 
-      <li> <b>Required:</b> Yes </li> 
-      <li> <b>Type:</b> string</li> 
-      <li> <b>Sent with:</b> Chapter Start</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"> TRUE </span></li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_hnv_4cm_n1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.view </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> s:event:type=chapter_start </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_inv_4cm_n1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> event</li> 
-     <li><b>Report Name:</b> <i>Chapter Starts</i> </li> 
-     <li><b>Context Data: </b> <span class="codeph"> a.media.chapter.view </span></li> 
-     <li><b>Data Feed: </b> <span class="codeph"> videochapterstart </span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.view </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The number of chapter starts. </p> <p>Important:  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Complete</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_kjq_5b2_p1b"> 
-      <li><b>SDK Key:</b> <i>Automatically set</i> </li> 
-      <li><b>API Key:</b> N/A</li> 
-      <li> <b>Required:</b> Yes </li> 
-      <li> <b>Type:</b> string</li> 
-      <li> <b>Sent with:</b> Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"> TRUE </span></li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_ljq_5b2_p1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.complete </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"> s:event:type=chapter_complete </span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_mjq_5b2_p1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> event</li> 
-     <li><b>Report Name:</b> <i>Chapter Completes</i> </li> 
-     <li><b>Context Data: </b> <span class="codeph"> a.media.chapter.complete </span></li> 
-     <li><b>Data Feed: </b> <span class="codeph"> videochaptercomplete </span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.complete </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p>The number of chapter completes. </p> <p>Important:  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p><b>Chapter Time Spent</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_njq_5b2_p1b"> 
-      <li><b>SDK Key:</b> <i>Automatically set</i> </li> 
-      <li><b>API Key:</b> N/A</li> 
-      <li> <b>Required:</b> Yes </li> 
-      <li> <b>Type:</b> number</li> 
-      <li> <b>Sent with:</b> Close</li> 
-      <li> <b>Min. SDK Version:</b> 1.3</li> 
-      <li><b>Sample value:</b> <span class="codeph"></span></li> 
-     </ul> </p> </td> 
-   <td colname="col7"> <p> 
-     <ul id="ul_ojq_5b2_p1b"> 
-      <li><b>Adobe Analytics:</b> <p> <span class="codeph"> a.media.chapter.timePlayed </span></p></li> 
-      <li><b>Heartbeat:</b> <p> <span class="codeph"></span></p></li> 
-     </ul> </p> </td> 
-   <td colname="col6"> 
-    <ul id="ul_pjq_5b2_p1b"> 
-     <li><b>Available:</b> Yes</li> 
-     <li><b>Reserved Variable:</b> event</li> 
-     <li><b>Report Name:</b> <i>Chapter Time Spent</i> </li> 
-     <li><b>Context Data: </b> <span class="codeph"> a.media.chapter.timePlayed </span></li> 
-     <li><b>Data Feed:</b> <span class="codeph"> videochaptertime </span></li> 
-     <li><b>Audience Manager:</b> <span class="codeph"> c_contextdata.a.media.chapter.timePlayed </span></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p><b>Release Date: 09/13/18</b></p> <p>The time spent on the chapter. </p> <p>The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
--->
+The number of chapter starts.  Important:  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.  
+
+### Chapter Complete 
+
+| Label | Implementation | Network Parameters | Reporting |
+| --- | --- | --- | --- |
+| **Chapter Complete** | <ul> <li> **SDK Key:** Automatically set  </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3</li> <li> **Sample value:** `TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.complete` </li> <li> **Heartbeat:** `s:event:type=chapter_complete` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Chapter Completes g </li> <li> **Context Data:** `a.media.chapter.complete` </li> <li> **Data Feed:** `videochaptercomplete` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.complete` </li> </ul> |
+
+The number of chapter completes.  Important:  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.  
+
+### Chapter Time Spent 
+
+| Label | Implementation | Network Parameters | Reporting |
+| --- | --- | --- | --- |
+| **Chapter Time Spent** | <ul> <li> **SDK Key:** Automatically set  </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.timePlayed` </li> <li> **Heartbeat:** </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Chapter Time Spent g </li> <li> **Context Data:** `a.media.chapter.timePlayed` </li> <li> **Data Feed:** `videochaptertime` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.timePlayed` </li> </ul> |
+
+**Release Date: 09/13/18** The time spent on the chapter.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  
+
+## Related APIs {#related_apis_section}
+
+* Android - [createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createChapterObject-java.lang.String-java.lang.Long-java.lang.Double-java.lang.Double-)
+* iOS - [createChapterObjectWithName](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createChapterObjectWithName:position:length:startTime:)
+* Javascript - [createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createChapterObject) 
 
