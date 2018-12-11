@@ -39,7 +39,7 @@ Table data description:
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Chapter Name** | <ul> <li> **SDK Key:** [name](./chapter-paramaters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.friendlyName` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Chapter Start, Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `"The Big Bang Chapter 2 - Dating"` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.friendlyName` </li> <li> **Heartbeat:** `s:stream:chapter_name` </li> </ul> | <ul> <li> **Available:** Created by default...  </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Name </li> <li> **Context Data:** `a.media.chapter.friendlyName` </li> <li> **Data Feed:** `N/A` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.friendlyName` </li> </ul> |
+| **Chapter Name** | <ul> <li> **SDK Key:** [name](./chapter-parameters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.friendlyName` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Chapter Start, Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `"The Big Bang Chapter 2 - Dating"` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.friendlyName` </li> <li> **Heartbeat:** `s:stream:chapter_name` </li> </ul> | <ul> <li> **Available:** Created by default...  </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Name </li> <li> **Context Data:** `a.media.chapter.friendlyName` </li> <li> **Data Feed:** `N/A` </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.friendlyName` </li> </ul> |
 
 The name of the chapter and/or segment.  
 
@@ -47,7 +47,7 @@ The name of the chapter and/or segment.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Chapter Position** | <ul> <li> **SDK Key:** [position](./chapter-paramaters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.index` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `2` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.position` </li> <li> **Heartbeat:** `l:stream:chapter_pos` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Position </li> <li> **Context Data:** `a.media.chapter.position` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.position` </li> </ul> |
+| **Chapter Position** | <ul> <li> **SDK Key:** [position](./chapter-parameters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.index` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `2` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.position` </li> <li> **Heartbeat:** `l:stream:chapter_pos` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Position </li> <li> **Context Data:** `a.media.chapter.position` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.position` </li> </ul> |
 
 The position (index, integer) of the chapter inside the content.  
 
@@ -55,7 +55,7 @@ The position (index, integer) of the chapter inside the content.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Chapter Offset** | <ul> <li> **SDK Key:** [startTime](./chapter-paramaters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.offset` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `58` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.offset` </li> <li> **Heartbeat:** `l:stream:chapter_offset` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Offset </li> <li> **Context Data:** `a.media.chapter.offset` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.offset` </li> </ul> |
+| **Chapter Offset** | <ul> <li> **SDK Key:** [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API Key:** `media.chapter.offset` </li> <li> **Required:** SDK: No; API: Yes. </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample value:** `58` </li> </ul> | <ul> <li> **Adobe Analytics:** `a.media.chapter.offset` </li> <li> **Heartbeat:** `l:stream:chapter_offset` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Chapter Offset </li> <li> **Context Data:** `a.media.chapter.offset` </li> <li> **Data Feed:** </li> <li> **Audience Manager:** `c_contextdata.a.media.chapter.offset` </li> </ul> |
 
 The offset of the chapter inside the content (in seconds) from the start.  
 
