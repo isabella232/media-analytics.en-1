@@ -13,7 +13,7 @@ snippet: y
 >
 >This measurement option has been deprecated.
 
-[Legacy Milestone documentation](milestone_analytics_video.pdf)
+[Legacy Milestone documentation](assets/milestone_analytics_video.pdf)
 
 ## Configuration {#section_rzx_j1z_cfb}
 

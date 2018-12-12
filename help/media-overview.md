@@ -81,7 +81,7 @@ For devices or platforms that do not currently have SDK support (or even if they
 The table below provides a list of the devices that are currently supported through our Media SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see [Download SDKs](sdk-implement/download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
 
 |  | Media SDK | Media Collection API |
-| --- | :---: | :---: |
+|-----|:---:|:---:|
 | **JavaScript Browser** |![](assets/icon-blue-check.png)| ![](assets/icon-blue-check.png)|
 | **iOS Devices** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
 | **Android Devices** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
