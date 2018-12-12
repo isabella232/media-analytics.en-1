@@ -36,7 +36,7 @@ Some of the many benefits that Adobe's media measurement solutions provide inclu
 
 * **Timely analysis -** Make real-time, actionable decisions utilizing key performance metrics (e.g., duration) across multiple channels. Main content events are measured in **10-second** intervals to capture all activity as it occurs. Ad tracking events occur at **1-second** intervals.
 * **Drive engagement -** Fully engage users through fewer buffering events and by understanding where and when ads should play within content to provide a smooth, less intrusive experience that brings users back and delivers repeat visits. 
-* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through [Federated Analytics](federated-analytics.md). 
+* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through the [Federated Analytics](federated-analytics.md) feature.
 * **Increased granularity -** Evaluate viewing behavior at the most granular level, including individual visitor time of day, concurrent viewers/listeners by minute, and average duration the content was consumed. 
 * **Precise measurement -** Measure across the multiple devices used for media consumption, including OTT, smartphone, tablet, desktop, and more, to monitor user engagement patterns and habits. 
 * **Segmentation -** Apply classifications to your players, devices, genres, chapters, and shows to see how each has an impact on your overall views/listens and customer engagement with content, audio, ads, and combined.
@@ -57,7 +57,7 @@ Some of the many benefits of the Heartbeats method include:
 
 ### Comparison Chart
 
-|  |**Video Analytics - Milestone** |**Media Analytics - Heartbeats** |
+|  | Video Analytics - Milestone | Media Analytics - Heartbeats |
 |---|---|---|
 | **Media Events** | High-level Standard Events  | Detailed and Custom Events every 10s for main content, every 1s for ads |
 | **Metrics and Dimensions** | Variances among Vendors, Non-Standardized Metrics and Dimensions  | Clear, Standardized Metrics, Dimensions, and Benchmarks across Vendors  |
@@ -80,21 +80,21 @@ The SDKs are routinely updated when new versions of devices are released, and yo
 For devices or platforms that do not currently have SDK support (or even if they do), you can implement the Media Collection API, through which you make RESTful API calls directly from the device/platform to the Media Analytics backend. 
 The table below provides a list of the devices that are currently supported through our Media SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see [Download SDKs](sdk-implement/download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
 
-|  |**Media SDK** |**Media Collection API** |
-|---|---|---|
-| **JavaScript Browser** |**&#42;** |**&#42;** |
-| **iOS Devices** |**&#42;** |**&#42;** |
-| **Android Devices** |**&#42;** |**&#42;** |
-| **Unified Windows Platforms (UWP)** | |**&#42;** |
-| **Blackberry** | |**&#42;** |
-| **Apple TV (new/legacy)** |**&#42;** |**&#42;** |
-| **ROKU (JS)** |**&#42;** |**&#42;** |
-| **ROKU (Native app)** |  |**&#42;** |
-| **OSX** | |**&#42;** |
-| **Fire TV** |**&#42;** |**&#42;** |
-| **Android TV** |**&#42;** |**&#42;** |
-| **Chromecast** |**&#42;** |**&#42;** |
-| **Xbox One/360** | |**&#42;** |
-| **Sony PS3/PS4** | |**&#42;** |
-| **(Other/New Connected Devices)** |  |**&#42;** |
+|  | Media SDK | Media Collection API |
+| --- | :---: | :---: |
+| **JavaScript Browser** |![](assets/icon-blue-check.png)| ![](assets/icon-blue-check.png)|
+| **iOS Devices** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **Android Devices** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **Unified Windows Platforms (UWP)** | |![](assets/icon-blue-check.png)  |
+| **Blackberry** | |![](assets/icon-blue-check.png)  |
+| **Apple TV (new/legacy)** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **ROKU (JS)** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **ROKU (Native app)** |  |![](assets/icon-blue-check.png)  |
+| **OSX** | |![](assets/icon-blue-check.png)  |
+| **Fire TV** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **Android TV** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **Chromecast** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
+| **Xbox One/360** | |![](assets/icon-blue-check.png)  |
+| **Sony PS3/PS4** | |![](assets/icon-blue-check.png)  |
+| **(Other/New Connected Devices)** |  |![](assets/icon-blue-check.png)  |
 
