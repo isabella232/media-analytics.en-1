@@ -80,21 +80,21 @@ The SDKs are routinely updated when new versions of devices are released, and yo
 For devices or platforms that do not currently have SDK support (or even if they do), you can implement the Media Collection API, through which you make RESTful API calls directly from the device/platform to the Media Analytics backend. 
 The table below provides a list of the devices that are currently supported through our Media SDK implementation and Media Collection API implementation. To download the most recent version of the SDK, see [Download SDKs](sdk-implement/download-sdks.md). If there is a device that is not listed which you are seeking measurement against, please contact customer care or your solution consultant for the status of that device. 
 
-|  | Media SDK | Media Collection API |
-|-----|:---:|:---:|
-| **JavaScript Browser** |![](assets/icon-blue-check.png)| ![](assets/icon-blue-check.png)|
-| **iOS Devices** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **Android Devices** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **Unified Windows Platforms (UWP)** | |![](assets/icon-blue-check.png)  |
-| **Blackberry** | |![](assets/icon-blue-check.png)  |
-| **Apple TV (new/legacy)** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **ROKU (JS)** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **ROKU (Native app)** |  |![](assets/icon-blue-check.png)  |
-| **OSX** | |![](assets/icon-blue-check.png)  |
-| **Fire TV** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **Android TV** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **Chromecast** |![](assets/icon-blue-check.png)  |![](assets/icon-blue-check.png)  |
-| **Xbox One/360** | |![](assets/icon-blue-check.png)  |
-| **Sony PS3/PS4** | |![](assets/icon-blue-check.png)  |
-| **(Other/New Connected Devices)** |  |![](assets/icon-blue-check.png)  |
+| | Media SDK | Media Collection API |
+|---|:---:|:---:|
+| **JavaScript Browser** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **iOS Devices** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **Android Devices** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **Unified Windows Platforms (UWP)** | | ![](assets/icon-blue-check.png) |
+| **Blackberry** | | ![](assets/icon-blue-check.png) |
+| **Apple TV (new/legacy)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **ROKU (JS)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **ROKU (Native app)** | | ![](assets/icon-blue-check.png) |
+| **OSX** | | ![](assets/icon-blue-check.png) |
+| **Fire TV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **Android TV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **Chromecast** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **Xbox One/360** | | ![](assets/icon-blue-check.png) |
+| **Sony PS3/PS4** | | ![](assets/icon-blue-check.png) |
+| **(Other/New Connected Devices)** | | ![](assets/icon-blue-check.png) |
 

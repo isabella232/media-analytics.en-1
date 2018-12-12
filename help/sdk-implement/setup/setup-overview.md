@@ -128,13 +128,13 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
 | Video Analytics 1.x SDKs&#42; | Developer Guides |
-| Android | [Configure for Android ](assets/vhl-dev-guide-v15_android.pdf) |
-| AppleTV | [Configure for AppleTV ](assets/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [Configure for Chromecast ](assets/chromecast_1.x_sdk.pdf) |
-| iOS | [Configure for iOS ](assets/vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [Configure for JavaScript ](assets/vhl-dev-guide-v15_js.pdf) |
+| Android | [Configure for Android ](./assets/vhl-dev-guide-v15_android.pdf) |
+| AppleTV | [Configure for AppleTV ](./assets/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | [Configure for Chromecast ](./assets/chromecast_1.x_sdk.pdf) |
+| iOS | [Configure for iOS ](./assets/vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [Configure for JavaScript ](./assets/vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> **Android:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [Configure for TVML ](assets/vhl_tvml.pdf) | 
+| TVML | [Configure for TVML ](./assets/vhl_tvml.pdf) | 
 
 **&#42;** For all 1.x SDKs, the links are for the full PDF download of the documentation.
 
