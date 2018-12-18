@@ -17,7 +17,7 @@ With AAM, you are not tied to a data seller, exchange, or demand-side platform. 
 
 >[!IMPORTANT]
 >
->To ensure the smooth transfer of data to AAM, you should be on the latest versions of the heartbeat libraries.
+>To ensure the smooth transfer of data to AAM, you should be on the latest versions of the Heartbeat libraries.
 
 Federated Data fully supports data sharing to AAM. Please work with your Adobe team for confirmation of Federated Data settings.
 
@@ -27,7 +27,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
 
 * **Chromecast:**
 
-    * `getVisitorProfile()` -
+    * `getVisitorProfile() -`
 
       Returns the visitor profile that was most recently obtained. Returns an empty object if no signal has been submitted yet.
 
@@ -35,7 +35,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile.audienceManager.getVisitorProfile();
       ```
 
-    * `getDpid()` -
+    * `getDpid() -`
 
       Returns the visitor profile that was most recently obtained. Returns an empty obje t if no signal has been submitted yet.
 
@@ -43,7 +43,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile.audienceManager.getDpid();
       ```
 
-    * `getDpuuid()` -
+    * `getDpuuid() -`
 
       Returns the current DPUUID.
 
@@ -51,7 +51,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile.audienceManager.getDpuuid();
       ```
 
-    * `setDpidAndDpuuid()` -
+    * `setDpidAndDpuuid() -`
 
       Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
 
@@ -59,7 +59,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
       ```
 
-    * `submitSignal()` -
+    * `submitSignal() -`
 
       Sends audience management a signal with traits.
 
@@ -69,7 +69,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
 
 * **Roku:**
 
-    * `audienceVisitorProfile` -
+    * `audienceVisitorProfile -`
 
       Returns the visitor profile that was most recently obtained. Returns an empty object if no signal has been submitted yet.
 
@@ -77,7 +77,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile().audienceVisitorProfile()
       ```
 
-    * `audienceDpid` -
+    * `audienceDpid -`
 
       Returns the visitor profile that was most recently obtained. Returns an empty obje t if no signal has been submitted yet.
 
@@ -85,7 +85,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile().audienceDpid()
       ```
 
-    * `audienceDpuuid` -
+    * `audienceDpuuid -`
 
       Returns the current DPUUID.
 
@@ -93,7 +93,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile().audienceDpuuid()
       ```
 
-    * `audienceSetDpidAndDpuuid` -
+    * `audienceSetDpidAndDpuuid -`
 
       Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
 
@@ -101,7 +101,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
       ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
       ```
 
-    * `audienceSubmitSignal` -
+    * `audienceSubmitSignal -`
 
       Sends audience management a signal with traits.
 

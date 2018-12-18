@@ -10,7 +10,7 @@ user-guide-title: Adobe Analytics for Audio and Video
 + Introduction to Audio and Video Analytics {#intro-to-ava}  
     + [Prerequisites](intro-to-ava/prereqs.md) 
     + Implementation Paths {#implementation-paths} 
-        + [Client-side](intro-to-ava/implementation-paths/implementation-paths.md)
+        + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
         + [Adobe Launch](intro-to-ava/implementation-paths/launch-path.md)
         + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)

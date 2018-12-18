@@ -15,7 +15,7 @@ Before you begin your tracking implementation, you have some early decisions to 
 * **Milestone -** The older Adobe tracking implementation
 * **Data Insertion APIs -** Implementing tracking without using Media SDKs
 
-For *Media Analytics*, here are the tasks you must complete prior to implementing:
+For a *Media Analytics* implementation, here are the tasks you must complete before you begin:
 
 1. **Enable Experience Cloud.** You need to implement the Experience Cloud ID Service (formerly known as Visitor ID Service).
 

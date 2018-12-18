@@ -21,13 +21,7 @@ Primetime eliminates the complexity of reaching, monetizing, and activating glob
 * Robust set of events and metadata to ensure accuracy across QoS buffering or mobile connectivity interruptions issues and end-user interactions such as seeking, pausing, and backgrounding on mobile. 
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 
-TVSDK is already integrated with the Media SDK, which makes implementation much easier and faster across every supported platform. Primetime also supports the partnership with Nielsen. To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](../../intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s):
-
-* [Video Analytics in TVSDK 1.4 for Android](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics) 
-* [Video Analytics in TVSDK 2.4 for Browser TVSDK](https://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html#Video_analytics) 
-* [Video Analytics in TVDSK 1.4 for Desktop HLS](https://help.adobe.com/en_US/primetime/psdk/dhls/1.4/index.html#Video_analytics) 
-* [Video Analytics in TVDSK 2.3 for Desktop HLS](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/index.html#Video_analytics) 
-* [Video Analytics in TVSDK 1.4 for iOS](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics)
+TVSDK is already integrated with the Media SDK, which makes implementation much easier and faster across every supported platform. Primetime also supports the partnership with Nielsen. To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](../../intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s): [Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html)
 
 >[!NOTE]
 >
