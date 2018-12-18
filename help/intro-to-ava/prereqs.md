@@ -39,5 +39,5 @@ For *Media Analytics*, here are the tasks you must complete prior to implementin
 
    For additional information about the Experience Cloud ID, see [Experience Cloud ID Overview](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html), and [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/). 
 
-1. **Enable Adobe Analytics Reports.** To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement](../media-reports/media-reports-enable.md).
+1. **Enable Adobe Analytics Reports.** To enable reports in Analytics and see the content and ad data you are collecting, see \[Media reports enablement\]\(../media-reports/media-reports-enable.md\).
 
