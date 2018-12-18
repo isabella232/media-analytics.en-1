@@ -21,20 +21,20 @@ The following tables provide translations between the Milestone solution and the
 
 | Milestone Metric | Variable Type | Media Analytics Metric |
 | --- | --- | --- |
-| Content | eVar Default expiration: Visit | Content |
-| Content Type | eVar Default expiration: Page view | Content Type |
-| Content Time Spent | Event Type: Counter | Content Time Spent |
-| Video Initiates | Event Type: Counter | Video Initiates |
-| Video Completes | Event Type: Counter | Content Complete | 
+| Content | eVar<br/><br/>Default expiration: Visit | Content |
+| Content Type | eVar<br/><br/> Default expiration: Page view | Content Type |
+| Content Time Spent | Event<br/><br/> Type: Counter | Content Time Spent |
+| Video Initiates | Event<br/><br/> Type: Counter | Video Initiates |
+| Video Completes | Event<br/><br/> Type: Counter | Content Complete | 
 
 **Media Module variables:**
 
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
-| `Media.trackUsingContextData` | `s.Media.trackUsingContextData = true;` | N/A | All Media Analytics data is only sent using Context Data.  |
-| `Media.contextDataMapping` | `s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones": { 25:"event4", 50:"event5", 75:"event6" } };` | N/A | Media Analytics context data is automatically populated into reserved variables. Mapping to eVars, props, and events I no longer needed within the implementation code. Customers can map context data to variables using processing rules.  |
-| `Media.trackVars` | `s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";` | N/A | No longer needed since mapping happens via reserved variables and processing rules.  |
-| `Media.trackEvents` | `s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"` | N/A | No longer needed since mapping happens via reserved variables and processing rules.  | 
+| `Media.trackUsingContextData` | `s.Media.trackUsingContextData = ` <br/> &nbsp;&nbsp; `true;` | N/A | All Media Analytics data is only sent using Context Data.  |
+| `Media.contextDataMapping` | `s.Media.contextDataMapping = ` <br/> &nbsp;&nbsp; `{ "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones": { 25:"event4", 50:"event5", 75:"event6" } };` | N/A | Media Analytics context data is automatically populated into reserved variables. Mapping to eVars, props, and events I no longer needed within the implementation code. Customers can map context data to variables using processing rules.  |
+| `Media.trackVars` | `s.Media.trackVars = ` <br/> &nbsp;&nbsp;`"events, prop2, eVar1, eVar2, eVar3";` | N/A | No longer needed since mapping happens via reserved variables and processing rules.  |
+| `Media.trackEvents` | `s.Media.trackEvents = ` <br/> &nbsp;&nbsp; `"event1, event2, event3, event4, event5, event6, event7"` | N/A | No longer needed since mapping happens via reserved variables and processing rules.  | 
 
 **Optional variables**
 
