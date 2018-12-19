@@ -228,7 +228,6 @@ Ping the backend every 10 seconds.
 **Sample request body:**
 
 ```
-
 { 
     playerTime: { 
         playhead: 0, 

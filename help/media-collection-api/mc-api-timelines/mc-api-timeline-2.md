@@ -56,6 +56,7 @@ This call signals _the user's intention to play_ a video. It returns a Session I
     } 
 }
 ```
+
 ### Action 2 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
