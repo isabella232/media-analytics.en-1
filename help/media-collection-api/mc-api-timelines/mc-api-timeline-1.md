@@ -11,7 +11,7 @@ snippet: y
 
 ## VOD, pre-roll ads, pausing, buffering, viewing content to the end
 
-The following diagrams illustrate the playhead timeline corresonding to the timeline of a user's actions. The details for each action and its accompanying requests are presented below.
+The following diagrams illustrate the playhead timeline and the corresonding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
 
 
 ![](assets/va_api_content.png)
@@ -27,29 +27,29 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request | Implementation Details |
 | --- | :---: | :---: | --- | --- |
-| Auto-play or Play button pressed, video starts loading.  | 0 | 0 | `/api/v1/sessions | This call signals _the user's intention to play_ a video. <br/><br/>It returns a Session ID ( `{sid}`) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting". <br/><br/>[Mandatory session parameters ](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body. <br/><br/>On the backend, this call generates an Adobe Analytics initiate call.  |
+| Auto-play or Play button pressed, video starts loading.  | 0 | 0 | `/api/v1/sessions` | This call signals _the user's intention to play_ a video. <br/><br/>It returns a Session ID ( `{sid}`) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting". <br/><br/>[Mandatory session parameters ](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body. <br/><br/>On the backend, this call generates an Adobe Analytics initiate call.  |
 
-`/api/v1/sessions` - Sample request body:
+Sample request body:
 
 ```
-
 { 
     playerTime: { 
-        playhead: 0, ts: <timestamp> }, 
-        eventType:sessionStart, params: { 
-            "media.playerName": "sample-html5-api-player", 
-            "analytics.trackingServer": "[ _YOUR_TS_ ]", 
-            "analytics.reportSuite": "[ _YOUR_RSID_ ]", 
-            "analytics.visitorId": "[ _YOUR_VISITOR_ID_ ]", 
-            "media.contentType": "VOD", 
-            "media.length": 60.3333333333333, 
-            "media.id": "VA API Sample Player", 
-            "visitor.marketingCloudOrgId": "[YOUR_MCID]", 
-            "media.name": "ClickMe", 
-            "media.channel": "sample-channel", 
-            "media.sdkVersion": "va-api-0.0.0", 
-            "analytics.enableSSL": false 
-        } 
+        playhead: 0, ts: <timestamp> 
+    }, 
+    eventType:sessionStart, params: { 
+        "media.playerName": "sample-html5-api-player", 
+        "analytics.trackingServer": "[ _YOUR_TS_ ]", 
+        "analytics.reportSuite": "[ _YOUR_RSID_ ]", 
+        "analytics.visitorId": "[ _YOUR_VISITOR_ID_ ]", 
+        "media.contentType": "VOD", 
+        "media.length": 60.3333333333333, 
+        "media.id": "VA API Sample Player", 
+        "visitor.marketingCloudOrgId": "[YOUR_MCID]", 
+        "media.name": "ClickMe", 
+        "media.channel": "sample-channel", 
+        "media.sdkVersion": "va-api-0.0.0", 
+        "analytics.enableSSL": false 
+    } 
 }
 ```
 
@@ -67,7 +67,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track pre-roll ad break start | 0 | 0 | `/api/v1/sessions/{sid}/events` | Ads can only be tracked within an ad break.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 {
@@ -90,7 +90,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track pre-roll Ad #1 start | 0 | 0 | `/api/v1/sessions/{sid}/events` | Start tracking the first pre-roll ad, which is 15 seconds long. Including custom metadata with this `adStart` .  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 {
@@ -127,7 +127,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 10 | 0 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -146,7 +146,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track pre-roll Ad #1 complete | 15 | 0 | `/api/v1/sessions/{sid}/events` | Track the end of the first pre-roll ad.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -165,7 +165,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track pre-roll Ad #2 start | 15 | 0 | `/api/v1/sessions/{sid}/events` | Track the start of the second pre-roll ad, which is 7 seconds long.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -197,7 +197,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 20 | 0 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 
@@ -217,7 +217,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track pre-roll Ad #2 complete | 22 | 0 | `/api/v1/sessions/{sid}/events` | Track the end of the second pre-roll ad.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -236,7 +236,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track pre-roll ad break complete | 22 | 0 | `/api/v1/sessions/{sid}/events` | The ad break is over. Throughout the ad break, the play state has remained "playing".  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -255,7 +255,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track play event | 22 | 0 | `/api/v1/sessions/{sid}/events` | After the `adBreakComplete` event, put the player is in the "playing" state using the `play` event.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -274,7 +274,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 30 | 8 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -293,7 +293,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Buffer start event occurred | 33 | 11 | `/api/v1/sessions/{sid}/events` | Track the player's move to the "buffering" state.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -311,7 +311,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Buffering ended, the app tracks resumption of content | 36 | 11 | `/api/v1/sessions/{sid}/events` | Buffering ends after 3 seconds, so put the player back to the "playing" state. You must send another track play event coming out of buffering.  **The `play` call after a `bufferStart` infers a "bufferEnd" call to the back end,** so there is no need for a `bufferEnd` event.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -330,7 +330,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 40 | 15 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -348,7 +348,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track mid-roll ad break start | 46 | 21 | `/api/v1/sessions/{sid}/events` | Mid-roll ad of 8 seconds duration: send `adBreakStart` .  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -372,7 +372,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track mid-roll Ad #3 start | 46 | 21 | `/api/v1/sessions/{sid}/events` | Track the mid-roll ad.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -404,7 +404,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 50 | 21 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -422,7 +422,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track mid-roll Ad #1 complete | 54 | 21 | `/api/v1/sessions/{sid}/events` | The mid-roll ad is complete.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -441,7 +441,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | Track mid-roll ad break complete | 54 | 21 | `/api/v1/sessions/{sid}/events` | The ad break is complete.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -460,7 +460,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 60 | 27 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -479,7 +479,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | User pressed Pause | 64 | 31 | `/api/v1/sessions/{sid}/events` | The user's action moves the play state to "paused".  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -498,7 +498,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 70 | 31 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds. Player is still in the "buffering" state; the user is stuck at 20 seconds of content. Fuming...  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -516,7 +516,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | User pressed Play to resume main content | 74 | 31 | `/api/v1/sessions/{sid}/events` | Move the play state to "playing".  **The `play` call after a `pauseStart` infers a "resume" call to the back end,** so there is no need for a `resume` event.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -534,7 +534,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | App sends ping event | 80 | 37 | `/api/v1/sessions/{sid}/events` | Ping the backend every 10 seconds.  |
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
@@ -552,7 +552,7 @@ The following diagrams illustrate the playhead timeline corresonding to the time
 | --- | :---: | :---: | --- | --- |
 | The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events` | Send `sessionComplete` to the backend to indicate that the user finished watching the entire content.  | 
 
-`/api/v1/sessions/{sid}/events` - Sample request body:
+Sample request body:
 
 ```
 { 
