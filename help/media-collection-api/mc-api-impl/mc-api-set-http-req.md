@@ -13,6 +13,5 @@ The request body for all Media Collection API requests must be in JSON format, s
 
 ```
 httpRequest.setRequestHeader('Content-Type', 'application/json'); 
-
 ```
 

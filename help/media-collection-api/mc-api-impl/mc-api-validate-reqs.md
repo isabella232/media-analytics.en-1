@@ -24,11 +24,13 @@ Content-Length: 2716
 Connection: keep-alive
 
 {"$schema":"https://json-schema.org/draft-04/schema#",
-"id":"https://alpha.hb-api.omtrdc.net/api/v1/schemas/sessionStart",
-"definitions":{"playerTime":{"type":"object","properties":
-{"playhead":{"type":"number"},"ts":{"type":"integer"}},
-"required":["playhead","ts"],"additionalProperties":false},
-"eventType":{"type":"string","enum":["sessionStart",
+ "id":"https://alpha.hb-api.omtrdc.net/api/v1/schemas/sessionStart",
+ "definitions":{"playerTime":{"type":"object","properties":
+                             {"playhead":{"type":"number"},
+                              "ts":{"type":"integer"}},
+                              "required":["playhead","ts"],
+                              "additionalProperties":false},
+ "eventType":{"type":"string","enum":["sessionStart",
                                      "play",
                                      "ping",
                                      "bufferStart",
@@ -42,25 +44,29 @@ Connection: keep-alive
                                      "adComplete",
                                      "adSkip",
                                      "sessionEnd"]},
-"qoeData":{"type":"object","properties":{"media.qoe.bitrate":{"type":"integer"},
-                                         "media.qoe.droppedFrames":{"type":"integer"},
-                                         "media.qoe.framesPerSecond":{"type":"integer"},
-                                         "media.qoe.timeToStart":{"type":"integer"}},"required":[],
-                                         "additionalProperties":false},
-"customMetadata":{"type":"object","patternProperties":{"^[a-zA-Z0-9_\\.]+$":{"type":"string"}},
-"additionalProperties":false},
-"sessionStart":{"properties":{"eventType":{"type":"string","enum":["sessionStart"]},
-                              "playerTime":{"$ref":"#/definitions/playerTime"},
-                              "params":{"type":"object","properties":{"appInstallationId":{"type":"string"},
-                                                                      "analytics.trackingServer":{"type":"string"},
-                                                                      "analytics.reportSuite":{"type":"string"},
-                                                                      <...>
-                                                                      "visitor.marketingCloudOrgId"],
-                              "additionalProperties":false},
-"customMetadata":{"$ref":"#/definitions/customMetadata"},
-"qoeData":{"$ref":"#/definitions/qoeData"}},
-"required":["eventType","playerTime","params"],"additionalProperties":false}},
-"type":"object","$ref":"#/definitions/sessionStart"}
+ "qoeData":{"type":"object","properties":{"media.qoe.bitrate":{"type":"integer"},
+                                          "media.qoe.droppedFrames":{"type":"integer"},
+                                          "media.qoe.framesPerSecond":{"type":"integer"},
+                                          "media.qoe.timeToStart":{"type":"integer"}},
+                                          "required":[],
+                                          "additionalProperties":false},
+ "customMetadata":{"type":"object",
+                   "patternProperties":{"^[a-zA-Z0-9_\\.]+$":{"type":"string"}},
+                   "additionalProperties":false},
+ "sessionStart":{"properties":{"eventType":{"type":"string","enum":["sessionStart"]},
+                               "playerTime":{"$ref":"#/definitions/playerTime"},
+                               "params":{"type":"object",
+                                         "properties":{"appInstallationId":{"type":"string"},
+                                                       "analytics.trackingServer":{"type":"string"},
+                                                       "analytics.reportSuite":{"type":"string"},
+                                                       <...>
+                                                       "visitor.marketingCloudOrgId"],
+                                                       "additionalProperties":false},
+                                                       "customMetadata":{"$ref":"#/definitions/customMetadata"},
+                                                       "qoeData":{"$ref":"#/definitions/qoeData"}},
+                              "required":["eventType","playerTime","params"],
+                              "additionalProperties":false}},
+                 "type":"object","$ref":"#/definitions/sessionStart"}}
 ```
 
 >[!NOTE]

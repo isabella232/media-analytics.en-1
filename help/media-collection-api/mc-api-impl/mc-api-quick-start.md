@@ -36,7 +36,7 @@ snippet: y
            "analytics.visitorId": "[YOUR_VISITOR_ID]", 
            "media.contentType": "VOD", 
            "media.length": 60.39333333333333, 
-           "media.id": "VA API Sample Player", 
+           "media.id": "MA API Sample Player", 
            "visitor.marketingCloudOrgId": "[YOUR_ORG_ID]", 
            "media.name": "ClickMe", 
            "media.channel": "sample-channel", 
@@ -50,7 +50,7 @@ snippet: y
    >
    >You must use the correct data types in the JSON request body. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md).
 
-1. Send Sessions requests to the VA API endpoint. If your request payload is invalid, identify the problem and retry until you get a `201 Created` response. In this `curl` example, the JSON request body is in a file named [!DNL sample_data_session]: 
+1. Send Sessions requests to the MA API endpoint. If your request payload is invalid, identify the problem and retry until you get a `201 Created` response. In this `curl` example, the JSON request body is in a file named [!DNL sample_data_session]: 
 
    ```
    $ curl -i -d \ 
@@ -71,4 +71,4 @@ snippet: y
    Access-Control-Expose-Headers: Location
    ```
 
-If the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) succeeds, you receive a `201 Created` response similar to the one above. The response includes a Session ID in the Location header. The Session ID is the crucial piece of information in the response, as it is required for all subsequent tracking calls. After a successful return of a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md), you can confidently proceed with implementing video tracking using the VA API in your video player.
+If the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) succeeds, you receive a `201 Created` response similar to the one above. The response includes a Session ID in the Location header. The Session ID is the crucial piece of information in the response, as it is required for all subsequent tracking calls. After a successful return of a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md), you can confidently proceed with implementing video tracking using the MA API in your video player.

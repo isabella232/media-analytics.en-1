@@ -12,7 +12,7 @@ snippet: y
 ## Request Parameter Table
 
 | | Request Key | Required | Set On... | Description |
-| --- | --- | --- | --- | --- |
+| --- | --- | :---: | :---: | --- |
 | **Analytics Data** | `analytics.trackingServer` | Y | `sessionStart` | The URL of your Adobe Analytics server |
 | | `analytics.reportSuite` | Y | `sessionStart` | The ID that identifies your Analytics reporting data |
 | | `analytics.enableSSL` | N | `sessionStart` | True or false for enabling SSL |
@@ -75,11 +75,11 @@ snippet: y
 
 ## Additional Details {#section_ryt_ccy_lcb}
 
-* **`visitor.marketingCloudUserId` ** You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
+* **`visitor.marketingCloudUserId`** You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
 
   >[!NOTE]
   >
-  >Video Analytics is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps.
+  >Media Analytics is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps.
 
 * **`appInstallationId`**
 
@@ -91,16 +91,12 @@ snippet: y
   >
   >The `appInstallationId` uniquely identifies the app *and the device*. It needs to be unique for each app on each device, i.e., two users using the same version of the same app on different devices must each send a different (unique) `appInstallationId`.
 
-  <!-- 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
+\<ul id="ul_iwc_fqt_pbb"\> 
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+</ul> -->
 
-Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-<ul id="ul_iwc_fqt_pbb"> 
- <li>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
-</ul>
-
- -->
-
-* **`visitor.marketingCloudOrgId`** In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Video Analytics performs [federation rule matching](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated-analytics.html)). 
+* **`visitor.marketingCloudOrgId`** In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated-analytics.html)). 
 
 * **Analytics Legacy User ID (aid)** and **Declared User IDs (customerIDs)**:
 

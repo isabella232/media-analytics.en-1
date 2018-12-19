@@ -13,7 +13,7 @@ This code snippet from the Reference Player shows one way of coding a [Sessions 
 
 ```js
 var  
-**sessionData** = { 
+sessionData = { 
         ... 
         "media.contentType": "VOD", 
         "media.channel": "sample-channel", 
