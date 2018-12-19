@@ -9,9 +9,9 @@ help/cert_req_form_nielsen.docx
 help/federated-analytics.md
 help/intro-to-ava/
 help/measurement-options/
-# help/media-collection-api/
+help/media-collection-api/
 help/media-overview.md
-help/media-reports/
+# help/media-reports/
 help/metrics-and-metadata/
 help/nielsen-partnership/
 help/sdk-implement/
