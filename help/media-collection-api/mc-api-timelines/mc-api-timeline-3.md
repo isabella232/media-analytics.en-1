@@ -27,7 +27,7 @@ The following diagrams illustrate the playhead timeline and the corresponding ti
 ### Action 1 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Auto-play or Play button pressed, video starts loading.  | 0 | 0 | `/api/v1/sessions`  | 
 
 **Implementation Details:** 
@@ -62,7 +62,7 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 ### Action 2 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App starts ping event timer | 0 | 0 | | 
 
 **Implementation Details:** 
@@ -72,7 +72,7 @@ Start your 10-second ping timer. The first ping event should then fire 10 second
 ### Action 3 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track pre-roll ad break start | 0 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -97,7 +97,7 @@ Ads can only be tracked within an ad break.
 ### Action 4 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track pre-roll Ad #1 start | 0 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -136,7 +136,7 @@ Start tracking the first pre-roll ad, which is 15 seconds long. Including custom
 ### Action 5 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 10 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -158,7 +158,7 @@ Ping the backend every 10 seconds.
 ### Action 6 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track pre-roll Ad #1 complete | 15 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -180,7 +180,7 @@ Track the end of the first pre-roll ad.
 ### Action 7 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track pre-roll Ad #2 start | 15 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -215,7 +215,7 @@ Track the start of the second pre-roll ad, which is 7 seconds long.
 ### Action 8 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 20 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -237,7 +237,7 @@ Ping the backend every 10 seconds.
 ### Action 9 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track pre-roll Ad #2 complete | 22 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -259,7 +259,7 @@ Track the end of the second pre-roll ad.
 ### Action 10 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track pre-roll ad break complete | 22 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -281,7 +281,7 @@ The ad break is over. Throughout the ad break, the play state has remained "play
 ### Action 11 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track play event | 22 | 0 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -303,7 +303,7 @@ After the `adBreakComplete` event, put the player is in the "playing" state usin
 ### Action 12 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track chapter start event | 23 | 1 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -328,7 +328,7 @@ After the play event, track the start of the first chapter.
 ### Action 13 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 30 | 8 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -350,7 +350,7 @@ Ping the backend every 10 seconds.
 ### Action 14 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Buffer start event occurred | 33 | 11 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -372,7 +372,7 @@ Track the move to the "buffering" state.
 ### Action 15 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Buffering ended, the app tracks resumption of content | 36 | 11 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -394,7 +394,7 @@ Buffering ends after 3 seconds, so put the player back to the "playing" state. Y
 ### Action 16 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 40 | 15 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -416,7 +416,7 @@ Ping the backend every 10 seconds.
 ### Action 17 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App tracks chapter end | 45 | 20 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -438,7 +438,7 @@ The first chapter ends, right before the second ad break.
 ### Action 18 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track mid-roll ad break start | 46 | 21 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -463,7 +463,7 @@ Mid-roll ad of 8 seconds duration: send `adBreakStart` .
 ### Action 19 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track mid-roll Ad #3 start | 46 | 21 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -498,7 +498,7 @@ Track the mid-roll ad.
 ### Action 20 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 50 | 21 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -520,7 +520,7 @@ Ping the backend every 10 seconds.
 ### Action 21 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track mid-roll Ad #1 complete | 54 | 21 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -542,7 +542,7 @@ The mid-roll ad is complete.
 ### Action 22 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track mid-roll ad break complete | 54 | 21 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -564,7 +564,7 @@ The ad break is complete.
 ### Action 23 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Track the start of Chapter 2 | 55 | 22 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -589,7 +589,7 @@ The ad break is complete.
 ### Action 24 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 60 | 27 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -611,7 +611,7 @@ Ping the backend every 10 seconds.
 ### Action 25 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | User pressed Pause | 64 | 31 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -633,7 +633,7 @@ The user action moves the play state to "paused".
 ### Action 26 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 70 | 31 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -655,7 +655,7 @@ Ping the backend every 10 seconds. Player is still in the "buffering" state; the
 ### Action 27 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | User pressed Play to resume main content | 74 | 31 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -677,7 +677,7 @@ Move the play state to "playing".  **The `play` call after a `pauseStart` infers
 ### Action 28 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | App sends ping event | 80 | 37 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -699,7 +699,7 @@ Ping the backend every 10 seconds.
 ### Action 29 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | Chapter 2 ends | 87 | 44 | `/api/v1/sessions/{sid}/events`  | 
 
 **Implementation Details:** 
@@ -721,7 +721,7 @@ Track the end of the second and final chapter.
 ### Action 30 
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | 
-| --- | :---: | :---: | --- | --- |
+| --- | :---: | :---: | --- |
 | The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events`  | Send `sessionComplete` to the backend to indicate that the user finished watching the entire content.  | 
 
 **Implementation Details:** 

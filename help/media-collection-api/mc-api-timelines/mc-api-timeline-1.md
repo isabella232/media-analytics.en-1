@@ -67,7 +67,7 @@ This call signals _the user's intention to play_ a video. <br/><br/>It returns a
 ### Action 3
 
 
-| Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request | Implementation Details |
+| Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request | 
 | --- | :---: | :---: | --- |
 | Track pre-roll ad break start | 0 | 0 | `/api/v1/sessions/{sid}/events` | 
 
