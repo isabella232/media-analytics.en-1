@@ -9,14 +9,16 @@ snippet: y
 
 # Timeline 2 - User abandons session{#timeline-user-abandons-session}
 
+## VOD, Pre-roll ad, mid-roll ads, user abandons content early
+
 ![](assets/va_api_content_2.png)
 
 ![](assets/va_api_actions_2.png)
 
-## VOD, Pre-roll ad, mid-roll ads, user abandons content early
+## Action details
 
-| Action # | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | Implementation Details |
-| --- | --- | --- | --- | --- | --- |
+| Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request | Implementation Details |
+| --- | :---: | :---: | --- | --- |
 | 1 | Auto-play or Play button pressed | 0 | 0 | `/api/v1/sessions` `{ playerTime:{ playhead: 0, ts: <timestamp> }, eventType:sessionStart, params:{ "media.playerName": "sample-html5-api-player", "analytics.trackingServer": "[ _YOUR-TS_ ]", "analytics.reportSuite": "[ _YOUR-RSID_ ]", "analytics.visitorId": "[ _YOUR-VISITOR-ID_ ]", "media.contentType": "VOD", "media.length": 60.3333333333333, "media.id": "VA API Sample Player", "visitor.marketingCloudOrgId": "[YOUR-MCID]", "media.name": "ClickMe", "media.channel": "sample-channel", "media.sdkVersion": "va-api-0.0.0", "analytics.enableSSL": false } }` | This call signals _the user's intention to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting".  [Mandatory session parameters](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body.  On the backend, this call generates an Adobe Analytics initiate call.  |
 | 2 | App starts ping event timer | 0 | 0 | | Start your app's 10-second ping timer. First ping event should then fire 10 seconds into the session.  |
 | 3 | Track pre-roll ad break start | 0 | 0 | `/api/v1/sessions/{sid}/events` `{ playerTime:{ playhead: 0, ts: <timestamp>}, eventType:adBreakStart, params: { "media.ad.podFriendlyName": "ad_pod1", "media.ad.podIndex": 0, "media.ad.podSecond": 0 } }` | Pre-roll ads must be tracked. Ads can only be tracked within an ad break.  |
