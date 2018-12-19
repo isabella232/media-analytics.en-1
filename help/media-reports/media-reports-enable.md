@@ -13,7 +13,7 @@ Each report suite that collects video metrics must be configured before video da
 
 >[!TIP]
 >
->To take advantage of new capabilities, existing Video Analytics customers should re-enable video tracking for their RSIDs.
+>To take advantage of new capabilities, existing Media Analytics customers should re-enable video tracking for their RSIDs.
 
 1. In [Reports & Analytics](https://my.omniture.com/login/), click  **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** . 
 
@@ -44,8 +44,8 @@ Each report suite that collects video metrics must be configured before video da
 
    | Option | Description |
    | --- | --- |
-   | Continue using custom variables.  | <ul> <li> **Pros:** Content trending continues to work after migration.  </li> <li> **Cons:** Requires you to keep two custom eVars and three custom events allocated to video. You regain use of one custom eVar and one custom event.  </li> </ul> To continue using custom variables: <ol> <li>Select Use Custom Variables , then click Save .  </li> <li>When prompted, map your current custom eVars and events and then click Save : </li> </ol> |
-   | Migrate to solution variables.  | <ul> <li> **Pros:** You regain use of three custom eVars and four custom events.  </li> <li> **Cons:** You lose **all** historical trending and comparison for media reports. This means that you cannot trend content views or content time played for any dates before you migrated to heartbeats.  </li> </ul> Restriction:  Do not migrate to solution variables unless you are certain that you do not want to preserve this trending.  All customers should use solution variables and processing rules to put media data into existing props and eVars, only if they need to preserve historical continuity.  To migrate to solution variables: <ol> <li>Select Use Solution Variables and click Save .  </li> </ol> | 
+   | Continue using custom variables.  | <ul> <li> **Pros:** Content trending continues to work after migration.  </li> <li> **Cons:** Requires you to keep two custom eVars and three custom events allocated to video. You regain use of one custom eVar and one custom event.  </li> </ul> To continue using custom variables: <ol> <li>Select Use Custom Variables, then click Save.  </li> <li>When prompted, map your current custom eVars and events and then click Save : </li> </ol> |
+   | Migrate to solution variables.  | <ul> <li> **Pros:** You regain use of three custom eVars and four custom events.  </li> <li> **Cons:** You lose **all** historical trending and comparison for media reports. This means that you cannot trend content views or content time played for any dates before you migrated to heartbeats.  </li> </ul> **Restriction:**  Do not migrate to solution variables unless you are certain that you do not want to preserve this trending.  All customers should use solution variables and processing rules to put media data into existing props and eVars, only if they need to preserve historical continuity.  To migrate to solution variables: <ol> <li>Select Use Solution Variables and click Save .  </li> </ol> | 
    
    >[!IMPORTANT] 
    >Migrating to solution variables causes you to lose **all** historical trending and comparison for media reports.  
