@@ -15,7 +15,7 @@ snippet: y
 
 **Buffer tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|
 |  `ADBMediaHeartbeatEventBufferStart`  | Constant for tracking Buffer Start event  |
 |  `ADBMediaHeartbeatEventBufferComplete`  | Constant for tracking Buffer Complete event  |

@@ -13,7 +13,7 @@ snippet: y
 
 Standard Metadata Constants:  
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata`  | Constant for attaching standard metadata on `MediaObject`.  |
 

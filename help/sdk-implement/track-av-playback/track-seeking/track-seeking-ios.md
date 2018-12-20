@@ -15,7 +15,7 @@ snippet: y
 
 **Seek tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|
 |  `ADBMediaHeartbeatEventSeekStart`  | Constant for tracking Seek Start event.  |
 |  `ADBMediaHeartbeatEventSeekComplete`  | Constant for tracking Seek Complete event.  |

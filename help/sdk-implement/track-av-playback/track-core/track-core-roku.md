@@ -10,7 +10,6 @@ snippet: y
 # Track core playback on Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
@@ -18,7 +17,7 @@ snippet: y
    **`MediaObject` reference:**
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    | `name`  | Video name  | Yes  |
    | `mediaid`  | Video unique identifier  | Yes  |
    | `length`  | Video length  | Yes  |
@@ -26,7 +25,7 @@ snippet: y
 
    **`StreamType` constants:**
 
-   |  Constant Name  | Description  |
+   |  Constant Name  | Description&nbsp;&nbsp;  |
    |---|---|
    | `VOD`  | Stream type for Video on Demand.  |
    | `LIVE`  | Stream type for LIVE content.  |
@@ -41,15 +40,11 @@ snippet: y
    mediaInfo.playhead = "0"
    mediaInfo.length = "600"
    ```
-
-    * **Roku:**
-
 1. **Attach video metadata -** Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
     * **Standard video metadata -**
     
       >[!NOTE]
-      >
       >Attaching the standard video metadata object to the media object is optional.
 
       [Implement standard metadata on Roku](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -69,15 +64,12 @@ snippet: y
    ```
 
    >[!TIP]
-   >
    >The second value is the custom video metadata object name that you created in step 2.
 
    >[!IMPORTANT]
-   >
    >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. This API is used to load the video data/metadata and to estimate the time-to-start QoS metric (the time duration between `trackSessionStart` and `trackPlay`).
 
    >[!NOTE]
-   >
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
 1. **Track the actual start of playback -** Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
@@ -99,7 +91,6 @@ snippet: y
    ```
 
    >[!IMPORTANT]
-   >
    >`trackSessionEnd` marks the end of a video tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
 1. **Track all possible pause scenarios -** Identify the event from the video player for video pause and call `trackPause`: 
@@ -122,7 +113,6 @@ snippet: y
    ```
 
    >[!TIP]
-   >
    >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the video playback resumes.
 
 * Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)

@@ -10,15 +10,14 @@ snippet: y
 # Track core playback on Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guide for Android here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   **` [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)` **
+   **`[createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)`**
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    |  `name`  | Media name  | Yes  |
    |  `mediaId`  | Media unique identifier  | Yes  |
    |  `length`  | Media length  | Yes  |

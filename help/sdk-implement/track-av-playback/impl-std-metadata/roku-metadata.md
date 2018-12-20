@@ -50,28 +50,28 @@ You can use the following constants to track media events:
 
 ### Other constants
 
-|  Constant  | Description  |
+|  Constant  | Description&nbsp;&nbsp;  |
 |---|---|
 | `ERROR_SOURCE_PLAYER`  | Constant for Error source being Player  |
 
 ### MediaObjectkey constants (Used as keys within MediaObject instances)
 
-| Constant | Description |
+| Constant | Description&nbsp;&nbsp; |
 | --- | --- |
 | `MEDIA_STANDARD_VIDEO_METADATA` |Constant to set video metadata on the `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` |Constant to set the ad metadata on the `EventData` `trackEvent` |
-| `VIDEO_RESUMED` | Constant for sending a video-resumed heartbeat. To resume video tracking of previously stopped content, you need to set the `VIDEO_RESUMED` _property_ on the `mediaInfo` **`mediaTrackLoad`**. ( `VIDEO_RESUMED` **`mediaTrackEvent`** API.) `VIDEO_RESUMED` `true` For example, say a user watches 30% of the content, then closes the app. This will lead to the session being ended. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they previously left off, then the application should set `VIDEO_RESUMED` `mediaTrackLoad` ` mediaInfo = adb_media_init_mediainfo("test_media_name", "test_media_id", 10, "vod") mediaInfo[ADBMobile().VIDEO_RESUMED] = true mediaContextData = {} ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` This will create a new session for the video, but it also causes the SDK to send a heartbeat request with the event type "resume", which can be used in reporting to tie two different media sessions together.  | 
+| `VIDEO_RESUMED` | Constant for sending a video-resumed heartbeat. To resume video tracking of previously stopped content, you need to set the `VIDEO_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`VIDEO_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `VIDEO_RESUMED` should be set to true when an application wants to continue to track content that a user stopped watching but now intends to resume watching. <br/><br/>For example, say a user watches 30% of the content, then closes the app. This will lead to the session being ended. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `VIDEO_RESUMED` to "true" while calling the `mediaTrackLoad` API. The result is that these two different media sessions for the same video content can be linked together. Following is the implementation example: <br/><br/> `mediaInfo =` <br/> &nbsp;&nbsp;`adb_media_init_mediainfo(` <br/> &nbsp;&nbsp;&nbsp;&nbsp;`"test_media_name",` <br/> &nbsp;&nbsp;&nbsp; `"test_media_id",`<br/> &nbsp;&nbsp;&nbsp;&nbsp; `10,` <br/>&nbsp;&nbsp;&nbsp;&nbsp; `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().VIDEO_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>This will create a new session for the video, but it also causes the SDK to send a heartbeat request with the event type "resume", which can be used in reporting to tie two different media sessions together.  | 
 
 ### Content type constants
 
-|  Constant  | Description  |
+|  Constant  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `MEDIA_STREAM_TYPE_LIVE`  | Constant for Stream Type LIVE  |
 |  `MEDIA_STREAM_TYPE_VOD`  | Constant for Stream Type VOD  |
 
 ### Event Type Constants (Used for the trackEvent call)
 
-|  Constant  | Description  |
+|  Constant  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `MEDIA_BUFFER_START`  | Event Type for Buffer Start  |
 |  `MEDIA_BUFFER_COMPLETE`  | Event Type for Buffer Complete  |

@@ -15,7 +15,7 @@ snippet: y
 
 **Buffer tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|
 | `BufferStart`  | Constant for tracking Buffer Start event  |
 | `BufferComplete`  | Constant for tracking Buffer Complete event  |

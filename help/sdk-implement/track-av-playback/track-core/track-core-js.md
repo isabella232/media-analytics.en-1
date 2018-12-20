@@ -10,15 +10,14 @@ snippet: y
 # Track core playback on JavaScript{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   **` [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)` **
+   **`[createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)`**
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    |  `name`  | Video name  | Yes  |
    |  `mediaid`  | Video unique identifier  | Yes  |
    |  `length`  | Video length  | Yes  |
@@ -26,7 +25,7 @@ snippet: y
 
    **`StreamType` constants:** 
 
-   |  Constant Name  | Description  |
+   |  Constant Name  | Description&nbsp;&nbsp;  |
    |---|---|
    |  `VOD`  | Stream type for Video on Demand.  |
    |  `LIVE`  | Stream type for LIVE content.  |

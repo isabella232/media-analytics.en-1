@@ -10,10 +10,7 @@ snippet: y
 # Track core playback on iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
-
-## Implement {#section_BB217BE6585D4EDEB34C198559575004}
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 

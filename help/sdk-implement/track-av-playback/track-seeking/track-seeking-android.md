@@ -15,7 +15,7 @@ snippet: y
 
 **Seek tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|
 |  `MediaHeartbeat.Event.SeekStart`  | Constant for tracking Seek Start event.  |
 |  `MediaHeartbeat.Event.SeekComplete`  | Constant for tracking Seek Complete event.  |

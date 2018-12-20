@@ -127,7 +127,7 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
-| Video Analytics 1.x SDKs* | Developer Guides |
+| Video Analytics 1.x SDKs* &nbsp;&nbsp;&nbsp;&nbsp;| Developer Guides |
 | --- | --- |
 | Android | [Configure for Android ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [Configure for AppleTV ](vhl-dev-guide-v1x_appletv.pdf) |

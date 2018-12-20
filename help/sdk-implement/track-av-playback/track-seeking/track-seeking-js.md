@@ -15,7 +15,7 @@ snippet: y
 
 **Seek tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|
 |  `SeekStart`  | Constant for tracking Seek Start event.  |
 |  `SeekComplete`  | Constant for tracking Seek Complete event.  |

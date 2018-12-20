@@ -11,7 +11,7 @@ snippet: y
 
 # Implement standard metadata on iOS{#implement-standard-metadata-on-ios}
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `ADBMediaObjectKeyStandardMediaMetadata`  | Constant for attaching standard video metadata on `MediaInfo ADBMediaObject`  |
 

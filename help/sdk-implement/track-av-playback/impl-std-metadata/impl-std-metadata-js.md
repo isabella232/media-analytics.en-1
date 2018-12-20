@@ -11,8 +11,8 @@ snippet: y
 
 # Implement standard metadata on JavaScript{#implement-standard-metadata-on-javascript}
 
-|  Constant name  | Description  |
-|---|---|
+|  Constant name  | Description&nbsp;&nbsp;  |
+| --- | --- |
 |  `StandardVideoMetadata`  | Constant for attaching standard video metadata on Video `MediaObject`  |
 
 Instantiate a standard video metdata object, populate the desired variables, and set the metadata object on the Media Heartbeat object. For example: 
@@ -49,6 +49,5 @@ _onVideoLoad = function () {
     mediaInfo.setValue(MediaObjectKey.StandardVideoMetadata, standardVideoMetadata); 
     this._mediaHeartbeat.trackSessionStart(mediaInfo, contextData); 
 }; 
-
 ```
 

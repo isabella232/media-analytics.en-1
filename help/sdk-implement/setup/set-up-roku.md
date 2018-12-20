@@ -25,11 +25,9 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 
    1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
 
-      * `adbmobile.brs`:
-
-         This library file will be included in your Roku app source folder. 
+      * `adbmobile.brs`: This library file will be included in your Roku app source folder. 
        
-      * `ADBMobileConfig.json` This SDK configuration file is customized for your app.
+      * `ADBMobileConfig.json`: This SDK configuration file is customized for your app.
 
    1. Add the library file and JSON config file to your project source.
 

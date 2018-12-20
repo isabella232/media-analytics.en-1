@@ -71,7 +71,6 @@ standardVideoMetadata[ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT] = "sample
 var mediaObject = ADBMobile.media.createMediaObject(content.name, content.id, content.length, content.streamType); 
 mediaObject[ADBMobile.media.MediaObjectKey.StandardVideoMetadata] = standardVideoMetadata; 
 ADBMobile.media.trackSessionStart(mediaObject, mediaMetadata); 
-
 ```
 
 ```js
