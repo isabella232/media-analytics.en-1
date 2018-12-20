@@ -11,9 +11,8 @@ snippet: y
 
 # Implement standard ad metadata on JavaScript{#implement-standard-ad-metadata-on-javascript}
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
-|  | |
 |  `StandardAdMetadata`  | Constant for attaching standard ad metadata on Ad Object  |
 
 * **Standard ad metadata -** For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform: 

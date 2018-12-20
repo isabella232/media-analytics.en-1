@@ -15,7 +15,7 @@ snippet: y
 
 **Ad tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `AdBreakStart`  | Constant for tracking AdBreak Start event  |
 |  `AdBreakComplete`  | Constant for tracking AdBreak Complete event  |
@@ -28,7 +28,7 @@ snippet: y
    **`AdBreakObject` reference:** 
 
    | Variable Name | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `name` | Ad break name such as pre-roll, mid-roll, and post-roll.  | Yes |
    | `position` | The number position of the ad break starting with 1.  | Yes |
    | `startTime` | Playhead value at the start of the ad break.  | Yes | 

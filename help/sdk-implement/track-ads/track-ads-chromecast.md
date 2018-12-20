@@ -17,7 +17,7 @@ snippet: y
 
 **Ad tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `AdBreakStart`  | Constant for tracking AdBreak Start event  |
 |  `AdBreakComplete`  | Constant for tracking AdBreak Complete event  |
@@ -31,7 +31,6 @@ snippet: y
 
    ```
    adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_START_POS, playerName); 
-   
    ```
 
 1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent) 
@@ -46,7 +45,6 @@ snippet: y
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
-   
    ```
 
 1. Optionally attach standard and/or ad metadata to the video tracking session through context data variables.
@@ -66,7 +64,6 @@ snippet: y
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
-   
    ```
 
 1. If there are any additional ads within the same `AdBreak`, repeat steps 3 through 6 again. 

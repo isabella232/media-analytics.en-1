@@ -17,7 +17,7 @@ Standard Metadata Constants:
 |---|---|
 |  `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata`  | Constant for attaching standard metadata on `MediaObject`.  |
 
-**Metadata keys API Reference** - ` [Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)`
+**Metadata keys API Reference** - [Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
 
 * Create a `HashMap` of standard metadata key value pairs using the metadata keys referenced above. 
 * Set the standard metadata `HashMap` on `MediaInfo` using the Standard Metadata constant for the metadata. 

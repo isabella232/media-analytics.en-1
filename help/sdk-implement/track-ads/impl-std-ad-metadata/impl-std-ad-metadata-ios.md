@@ -11,7 +11,7 @@ snippet: y
 
 # Implement standard ad metadata on iOS{#implement-standard-ad-metadata-on-ios}
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `ADBMediaObjectKeyStandardAdMetadata`  | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject`  |
 

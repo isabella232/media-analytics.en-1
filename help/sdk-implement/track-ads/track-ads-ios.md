@@ -15,7 +15,7 @@ snippet: y
 
 **Ad tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `ADBMediaHeartbeatEventAdBreakStart`  | Constant for tracking AdBreak Start event  |
 |  `ADBMediaHeartbeatEventAdBreakComplete`  | Constant for tracking AdBreak Complete event  |
@@ -28,7 +28,7 @@ snippet: y
    **`AdBreakObject` reference:** 
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    |  `name`  | Ad break name such as pre-roll, mid-roll, and post-roll.  | Yes  |
    |  `position`  | The number position of the ad break within the content, starting with 1. | Yes  |
    |  `startTime`  | Playhead value at the start of the ad break.  | Yes  |
@@ -56,7 +56,7 @@ snippet: y
    `AdObject` reference: 
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    |  `name`  | Friendly name of the ad.  | Yes  |
    |  `adId`  | Unique identifier for the ad.  | Yes  |
    |  `position`  | The number position of the ad within the ad break, starting with 1. | Yes  |

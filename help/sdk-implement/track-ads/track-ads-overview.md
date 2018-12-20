@@ -45,7 +45,7 @@ Here are the key elements you use to track ad playback:
 
 **Ad tracking constants:**
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `AdBreakStart`  | Constant for tracking AdBreak Start event  |
 |  `AdBreakComplete`  | Constant for tracking AdBreak Complete event  |
@@ -58,7 +58,7 @@ Here are the key elements you use to track ad playback:
    **`AdBreakObject` reference:** 
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    |  `name`  | Ad break name such as pre-roll, mid-roll, and post-roll.  | Yes  |
    |  `position`  | The number position of the ad break within the content, starting with 1. | Yes  |
    |  `startTime`  | Playhead value at the start of the ad break.  | Yes  |
@@ -70,7 +70,7 @@ Here are the key elements you use to track ad playback:
    `AdObject` reference: 
 
    |  Variable Name  | Description  | Required  |
-   |---|---|---|
+   | --- | --- | :---: |
    |  `name`  | Friendly name of the ad.  | Yes  |
    |  `adId`  | Unique identifier for the ad.  | Yes  |
    |  `position`  | The number position of the ad within the ad break, starting with 1. | Yes  |
@@ -127,7 +127,6 @@ if (e.type == "ad skip") {
 if (e.type == "ad break complete") { 
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
-
 ```
 
 ## Validate {#section_5F1783F5FE2644F1B94B0101F73D57EB}

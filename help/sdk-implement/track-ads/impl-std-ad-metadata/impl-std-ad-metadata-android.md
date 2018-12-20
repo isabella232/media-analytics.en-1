@@ -11,7 +11,7 @@ snippet: y
 
 # Implement standard ad metadata on Android{#implement-standard-ad-metadata-on-android}
 
-|  Constant name  | Description  |
+|  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
 |  `MediaHeartbeat.MediaObjectKey.StandardAdMetadata`  | Constant for attaching standard ad metadata on Ad `MediaObject`.  |
 
