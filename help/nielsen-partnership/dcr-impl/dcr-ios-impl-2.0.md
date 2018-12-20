@@ -69,7 +69,7 @@ The following types of metadata must be configured:
       mediaId                   : <VIDEO_ID> 
       length                    : <VIDEO_LENGTH> 
       streamType                : ADBMediaHeartbeatStreamTypeVOD]; 
-   
+
   // Create content metadata object 
   NSMutableDictionary *contentMetadata =  
     [[NSMutableDictionary alloc] init]; 
@@ -78,11 +78,10 @@ The following types of metadata must be configured:
   [contentMetadata setObject:SAMPLE_LENGTH forKey:@"length"]; 
   [contentMetadata setObject:SAMPLE_PROGRAM forKey:@"program"]; 
   [contentMetadata setObject:CONTENT_TYPE forKey:@"type"]; 
-   
+
   // Set the content metadata on mediaInfo object 
   [mediaObject setValue:contentMetadata  
     forKey:MEDIAHEARTBEAT_NIELSEN_CONTENT_METADATA]; 
-  
   ```
 
 * **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject`for the session start. For more information about the core playback implementation for iOS, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-core-playback_ios.html).
@@ -96,11 +95,11 @@ The following types of metadata must be configured:
                                          mediaId     : <VIDEO_ID> 
                                          length      : <VIDEO_LENGTH> 
                                          streamType  : ADBMediaHeartbeatStreamTypeVOD]; 
-   
+
   // Create channel info metadata object 
   NSMutableDictionary *channelInfo = [[NSMutableDictionary alloc] init]; 
       [channelInfo setObject:SAMPLE_CHANNEL_NAME forKey:@"channelName"]; 
-   
+
   // Set the channel info metadata on mediaInfo object 
   [mediaObject setValue:channelInfo  
     forKey:MEDIAHEARTBEAT_NIELSEN_CHANNEL_METADATA];
@@ -116,13 +115,13 @@ The following types of metadata must be configured:
                                    adId                   : [AD_ID] 
                                    position               : [POSITION] 
                                    length                 : [LENGTH]]; 
-   
+
   // Create Ad metadata object 
   NSMutableDictionary *adMetadata = [[NSMutableDictionary alloc] init]; 
       [adMetadata setObject:SAMPLE_ASSET_ID forKey:@"assetid"]; 
       [adMetadata setObject:AD_TYPE forKey:@"type"]; 
       [adMetadata setObject:SAMPLE_DURATION forKey:@"duration"]; 
-   
+
   // Set the ad metadata on adObject 
   [adObject setValue:adMetadata forKey:MEDIAHEARTBEAT_NIELSEN_AD_METADATA];
   ```
@@ -149,11 +148,11 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
            mediaId                   : VIDEO_ID 
            length                    : VIDEO_LENGTH 
            streamType                : ADBMediaHeartbeatStreamTypeVOD]; 
-    
+
        [mediaObject setValue:@{ 
            @"channelName": @"Adobe", 
        } forKey:ADBMediaObjectKeyNielsenChannelMetadata]; 
-    
+
        [_mediaHeartbeat trackSessionStart:mediaObject data:nil]; 
    }
    ```
@@ -161,7 +160,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
    >[!NOTE]
    >
    >DEPRECATED (and removed from `onMainVideoLoaded` example above): 
-      
+
    ```
    ... 
    [mediaObject setValue:@{ 
@@ -184,7 +183,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
        if (id3Tag) { 
            if ([id3Tag rangeOfString:@"www.nielsen.com"].length > 0) { 
                [_playerPlugin trackTimedMetadata:id3Tag]; 
-                
+
            } 
            else { 
                NSLog(@"Could not send ID3 Tags"); 

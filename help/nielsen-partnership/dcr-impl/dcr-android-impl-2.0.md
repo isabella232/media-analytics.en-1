@@ -25,7 +25,7 @@ You can configure each of the video heartbeat library components individually fo
 
    ```java
    // Creation of AppInfo Object 
-    
+
    Map <String, Object> appInfo =  
      new HashMap<String, Object>(); 
    appInfo.put("appid", <SAMPLE_APP_ID>); 
@@ -80,7 +80,7 @@ The following types of metadata must be configured:
       <VIDEO_LENGTH>, 
       MediaHeartbeat.StreamType.VOD 
   ); 
-   
+
   // Create content metadata object 
   HashMap<String, Object> contentMetadata =  
     new HashMap<String, Object>(); 
@@ -89,7 +89,7 @@ The following types of metadata must be configured:
   contentMetadata.put("length", SAMPLE_LENGTH); 
   contentMetadata.put("program", SAMPLE_PROGRAM); 
   contentMetadata.put("type", CONTENT_TYPE); 
-   
+
   // Set the content metadata on mediaInfo object 
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
@@ -106,11 +106,11 @@ The following types of metadata must be configured:
       <VIDEO_LENGTH>, 
       MediaHeartbeat.StreamType.VOD 
   ); 
-   
+
   // Create channel info metadata object 
   HashMap<String, Object> channelInfo = new HashMap<String, Object>(); 
   channelInfo.put("channelName", SAMPLE_CHANNEL_NAME); 
-   
+
   // Set the channel info metadata on mediaInfo object 
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
@@ -126,13 +126,13 @@ The following types of metadata must be configured:
       <AD_ID>,  
       <POSITION>,  
       <LENGTH>); 
-   
+
   // Create Ad metadata object 
   HashMap<String, Object> adMetadata = new HashMap<String, Object>(); 
   adMetadata.put("assetid", SAMPLE_ASSET_ID); 
   adMetadata.put("type", AD_TYPE); 
   adMetadata.put("duration", SAMPLE_DURATION); 
-   
+
   // Set the Ad metadata on adInfo object 
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenAdMetadata, adMetadata);
   ```
@@ -155,7 +155,7 @@ To implement MTVR in Android 2.x, make the following changes to your existing Ni
    public void onVideoStart() { 
        HashMap<String, Object> nielsenContentMetadata = NielsenMetadata.metadata; 
        HashMap<String, Object> nielsenChannelMetadata = NielsenMetadata.channelInfo; 
-        
+
        mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, nielsenContentMetadata); 
        mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, nielsenChannelMetadata); 
        _heartbeat.trackSessionStart(mediaInfo, null); 
