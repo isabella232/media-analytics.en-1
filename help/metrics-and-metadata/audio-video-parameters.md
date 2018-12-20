@@ -476,7 +476,9 @@ Average Minute Audience metric is computed as Total Content Time Spent, for one 
 | --- | --- | --- | --- |
 | **Estimated Streams** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:** 1 - For a 19 minutes playback; 2 - For a 31 minutes playback; 3 - For a 78 minutes playback. </li> </ul> | <ul> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeats:** N/A </li> </ul> | <ul> <li> **Available:** Use custom processing rule </li> <li> **Reserved Variable:** N/A </li> <li> **Report Name:** Custom </li> <li> **Context Data:** `a.media.estimatedStreams` </li> <li> **Data Feed:** `N/A` </li> <li> **Audience Manager:** `c_contextdata.a.media.estimatedStreams` </li> </ul> |
 
-The estimated number of video or audio streams per each individual content. This value is increased for each 30 minutes of play time (content + ads). Customers must create their own processing rules to have the value available for reporting.  A stream is counted at every 30 minutes, based on the `ms_s` `totalTimePlayed = Video Total Time` `estimatedStreams = FLOOR(ms_s/1800) + 1` 
+The estimated number of video or audio streams per each individual content. This value is increased for each 30 minutes of play time (content + ads). Customers must create their own processing rules to have the value available for reporting. 
+
+A stream is counted every 30 minutes, based on the `ms_s` (or `totalTimePlayed = Video Total Time`), similar to: `estimatedStreams = FLOOR(ms_s/1800) + 1`
 
 ### Paused Impacted Streams 
 
