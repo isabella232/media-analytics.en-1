@@ -49,7 +49,7 @@ Table data description:
 **Release Date: 09/13/18** 
 
 >[!NOTE] 
->Available in [Media Collection API Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection API Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Identifies the stream type. Valid values are "audio", "video", and " ".  [Segments](../metrics-and-metadata/segments.md): <br/>StreamType "All" - Segment all media stream data.  **Rule:** Content (ID) exists <br/>StreamType "Audio" - Segment all audio stream data.  **Rule:** Content (ID) exists AND Stream Type = audio <br/>StreamType "Video" - Segment all video stream data. **Rule:** Content (ID) exists AND Stream Type = video 
 
@@ -302,7 +302,7 @@ A property that defines the time of the day when the content was broadcast or pl
 **Release Date: 09/13/18** 
 
 >[!NOTE]  
->Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Name of the artist.  
 
@@ -315,7 +315,7 @@ Name of the artist.
 **Release Date: 09/13/18** 
 
 >[!NOTE]  
->Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Name of the album.  
 
@@ -328,7 +328,7 @@ Name of the album.
 **Release Date: 09/13/18** 
 
 >[!NOTE]  
->Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Name of the record label.  
 
@@ -341,7 +341,7 @@ Name of the record label.
 **Release Date: 09/13/18** 
 
 >[!NOTE]  
->Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Name of the author (of an audiobook).  
 
@@ -354,7 +354,7 @@ Name of the author (of an audiobook).
 **Release Date: 09/13/18** 
 
 >[!NOTE]  
->Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Name / ID of the radio station.  
 
@@ -367,7 +367,7 @@ Name / ID of the radio station.
 **Release Date: 09/13/18** 
 
 >[!NOTE]  
->Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  
+>Available in \[Media Collection Overview\]\(../media-collection-api/mc-api-overview.md\) or \[Download SDKs\]\(../sdk-implement/download-sdks.md\) 2.2.  
 
 Name of the audio content publisher.  
 
