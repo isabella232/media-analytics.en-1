@@ -13,7 +13,7 @@ snippet: y
 
 ### Video Analytics start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
@@ -32,7 +32,7 @@ snippet: y
 
 ### Standard metadata in Video Analytics start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -51,7 +51,7 @@ snippet: y
 
 ### Heartbeat start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
@@ -66,7 +66,7 @@ snippet: y
 
 ### Video metadata in Video Analytics start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
@@ -78,7 +78,7 @@ snippet: y
 
 ### Heartbeat Analytics start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | aa_start |
 | `l:event:playhead` | 0 |
@@ -91,14 +91,14 @@ snippet: y
 
 ### Video metadata in Heartbeat start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Standard metadata in Heartbeat start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
@@ -124,7 +124,7 @@ snippet: y
 
 ### Video Analytics ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `pev2` | msa_s |
 | `a.media.name` | 123456 |
@@ -144,7 +144,7 @@ snippet: y
 
 ### Heartbeat ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
@@ -158,14 +158,14 @@ snippet: y
 
 ### Video metadata in Video Analytics ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
 ### Standard metadata in Video Analytics ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -189,7 +189,7 @@ snippet: y
 
 ### Heartbeat Analytics ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | aa_ad_start |
 | `l:event:playhead` | 0 |
@@ -201,14 +201,14 @@ snippet: y
 
 ### Video metadata in Heartbeat ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Standard metadata in Heartbeat ad start call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
@@ -232,7 +232,7 @@ snippet: y
 
 ### Heartbeat ad complete call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | complete |
 | `l:event:playhead` | 15 |
@@ -244,7 +244,7 @@ snippet: y
 
 ### Heartbeat ad play call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | play |
 | `l:event:playhead` | 15 |
@@ -258,7 +258,7 @@ snippet: y
 
 ### Heartbeat play call
 
-|  Parameter | Value (sample) |
+|  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `s:event:type` | play |
 | `l:event:playhead` | 29 |
