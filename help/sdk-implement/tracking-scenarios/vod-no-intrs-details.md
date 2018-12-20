@@ -13,7 +13,7 @@ snippet: y
 
 This scenario has one VOD asset, with no ads, which is played once from beginning to end. 
 
-|  Trigger  | Heartbeat method  | Network calls  | Notes  |
+|  Trigger  | Heartbeat method  | Network calls  | Notes&nbsp;&nbsp;  |
 |---|---|---|---|
 |  User clicks **[!UICONTROL Play]** | `trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | This can be either a user clicking Play or an auto-play event.  |
 |  First frame of the video  | `trackPlay`  | Heartbeat Content Play  | This method triggers the timer, and from this point forward, heartbeats will be sent every 10 seconds for the duration of the playback.  |
@@ -26,21 +26,21 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 
 ### Heartbeat Content Start
 
-|  Parameter  | Value  | Notes  |
+|  Parameter  | Value  | Notes&nbsp;&nbsp;  |
 |---|---|---|
-|  `s:sc:rsid`  | [Your Adobe Report Suite ID]  |  |
-|  `s:sc:tracking_server`  | [Your Analytics Tracking Server URL]  |  |
+|  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |
+|  `s:sc:tracking_server`  | <Your Analytics Tracking Server URL>  |  |
 |  `s:user:mid`  | must be set  | Should match the mid value on the `Adobe Analytics Content Start` call.  |
 |  `s:event:type`  | `"start"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
-|  `s:asset:video_id`  | [Your Video Name]  |  |
+|  `s:asset:video_id`  | <Your Video Name>  |  |
 |  `s:meta:*`  | optional  | Custom metadata that is set on the video.  |
 
 ## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. All of the other parameters should still exist.
 
-|  Parameter  | Value  | Notes  |
+|  Parameter  | Value  | Notes&nbsp;&nbsp;  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
@@ -51,16 +51,16 @@ During video playback, a timer sends at least one heartbeat every 10 seconds. Th
 
 In the content heartbeats, look for the following parameters: 
 
-|  Parameters  | Value  | Notes  |
+|  Parameters  | Value  | Notes&nbsp;&nbsp;  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
-|  `l:event:playhead`  | [playhead position] e.g., 50,60,70  | This parameter reflects the current position of the playhead.  |
+|  `l:event:playhead`  | <playhead position> e.g., 50,60,70  | This parameter reflects the current position of the playhead.  |
 
 ## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
 
 When playback has completed, which means that the end of the playhead is reached, a `Heartbeat Content Complete` call is sent. This call looks like other Heartbeat calls, but it contains some specific parameters:
 
-|  Parameters  | Value  | Notes  |
+|  Parameters  | Value  | Notes&nbsp;&nbsp;  |
 |---|---|---|
 |  `s:event:type`  | `"complete"`  |  |
 |  `s:asset:type`  | `"main"`  |  |

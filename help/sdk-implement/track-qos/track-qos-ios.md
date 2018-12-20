@@ -17,16 +17,16 @@ snippet: y
 
    **QoSObject variables:** 
 
-   >[!TIP]
-   >
-   >These variables are only required if you are planning to track QoS.
-
    | Variable | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `bitrate` | Current bitrate | Yes |
    | `startupTime` | Startup time | Yes |
    | `fps` | FPS value | Yes |
    | `droppedFrames` | Number of dropped frames | Yes | 
+
+   >[!TIP]
+   >
+   >These variables are only required if you are planning to track QoS.
 
    **QoS object creation:** 
 

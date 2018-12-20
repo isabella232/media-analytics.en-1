@@ -13,7 +13,7 @@ snippet: y
 
 In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different.
 
-| Trigger | Heartbeat method | Network calls | Notes |
+| Trigger | Heartbeat method | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | The user clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The ad starts.  | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
@@ -175,7 +175,6 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To view this scenario in iOS, set up the following code: 
@@ -280,7 +279,6 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript** To view this scenario in JavaScript, enter the following text: 
@@ -560,7 +558,6 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS** To view this scenario in iOS, set up the following code: 
@@ -748,7 +745,6 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript** To view this scenario in JavaScript, enter the following text:
@@ -1058,5 +1054,4 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
    
   ........ 
   ........ 
-  
   ```

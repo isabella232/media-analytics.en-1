@@ -22,7 +22,7 @@ snippet: y
    >These variables are only required if you are planning to track QoS.
 
    | Variable | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `bitrate` | Current bitrate | Yes |
    | `startupTime` | Startup time | Yes |
    | `fps` | FPS value | Yes |
@@ -45,7 +45,6 @@ snippet: y
    public void onBitrateChange(Observable observable, Object data) {  
        _heartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, null, null); 
    } 
-   
    ```
 
    >[!IMPORTANT]

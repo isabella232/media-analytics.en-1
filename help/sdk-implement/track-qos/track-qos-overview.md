@@ -34,7 +34,7 @@ Create or update the QoS object instance for the playback.
    >These variables are only required if you are planning to track QoS.
 
    | Variable | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `bitrate` | Current bitrate | Yes |
    | `startupTime` | Startup time | Yes |
    | `fps` | FPS value | Yes |

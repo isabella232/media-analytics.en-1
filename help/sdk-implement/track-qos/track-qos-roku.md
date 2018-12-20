@@ -22,7 +22,7 @@ snippet: y
    >These variables are only required if you are planning to track QoS.
 
    | Variable | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `bitrate` | Current bitrate | Yes |
    | `startupTime` | Startup time | Yes |
    | `fps` | FPS value | Yes |
@@ -36,7 +36,6 @@ snippet: y
    qosInfo.fps = 0
    qosInfo.droppedFrames = 1
    qosInfo.startupTime = 2
-   
    ```
 
 1. When playback switches bitrates, call the `BitrateChange` event in the Media Heartbeat instance:

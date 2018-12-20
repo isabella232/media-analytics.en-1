@@ -15,7 +15,7 @@ In this scenario, a portion of the VOD content is marked as a chapter.
 
 Unless specified, the network calls in this scenario are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network call happens at the same time, but the payload is different. 
 
-|  Trigger  | Heartbeat method  | Network calls  | Notes  |
+|  Trigger&nbsp;&nbsp;  | Heartbeat method&nbsp;&nbsp;  | Network calls&nbsp;&nbsp;  | Notes&nbsp;&nbsp;  |
 |---|---|---|---|
 |  User clicks **[!UICONTROL Play]** | `trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | We have not yet told the measurement library that there is a pre-roll ad, so these network calls are still exactly the same as Single VoD.  |
 |  The chapter starts.  | `trackEvent:ChapterStart`  | Heartbeat Chapter Start  |  |
@@ -109,7 +109,6 @@ In this scenario, part of the VOD content is a chapter.
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To view this scenario in iOS, set up the following code: 
@@ -172,7 +171,6 @@ In this scenario, part of the VOD content is a chapter.
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** To view this scenario in JavaScript, enter the following text: 
@@ -247,7 +245,6 @@ In this scenario, part of the VOD content is a chapter.
    
   ........ 
   ........ 
-  
   ```
 
 ## Sample code, chapter at the beginning {#section_flj_5bj_x2b}
@@ -319,7 +316,6 @@ In this scenario, VOD content is played back with one chapter at the beginning o
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To view this scenario in iOS, set up the following code: 
@@ -382,7 +378,6 @@ In this scenario, VOD content is played back with one chapter at the beginning o
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** To view this scenario in JavaScript, enter the following text: 
@@ -456,6 +451,5 @@ In this scenario, VOD content is played back with one chapter at the beginning o
    
   ........ 
   ........ 
-  
   ```
 

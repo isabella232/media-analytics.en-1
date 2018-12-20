@@ -11,7 +11,7 @@ snippet: y
 
 ## Scenario {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
 
-In this scenario, there are two sessions running in parallel for two separate videos and using two separate instances of `MediaHeartbeat.`.
+In this scenario, there are two sessions running in parallel for two separate videos and using two separate instances of `MediaHeartbeat`.
 
 This scenario is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate videos. Each of these sessions uses a separate instance of `MediaHeartbeat`.
 
@@ -21,7 +21,7 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
 
 ### Heartbeat session
 
-|  Parameter  | Value  | Notes  |
+|  Parameter  | Value  | Notes&nbsp;&nbsp;  |
 |---|---|---|
 |  `s:event:sid`  | Unique session ID  | A unique session ID that exists in all of the heartbeat network calls until the `trackSessionEnd` method is called.  |
 
@@ -70,7 +70,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
           return _player.getCurrentPlaybackTime(); 
       } 
   } 
-  
   ```
 
   ```java
@@ -106,7 +105,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
         Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video2);  
       _player2.loadContent(uri); 
   } 
-  
   ```
 
   Both instances of `VideoAnalyticsProvider` and `MediaHeartbeat` track two separate sessions, each with its own unique session IDs. The two sessions in the Charles debugging tool or debug logs can be identified by using the session ID value. To display this scenario in Android, set up the following code:
@@ -151,7 +149,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** 
@@ -236,7 +233,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
             [[VideoAnalyticsProvider alloc] initWithPlayerDelegate:self.videoPlayer2]; 
       } 
   } 
-  
   ```
 
   ```
@@ -273,7 +269,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
             [[VideoAnalyticsProvider alloc] initWithPlayerDelegate:self.videoPlayer2]; 
       } 
   } 
-  
   ```
 
   Both instances of `VideoAnalyticsProvider` and `ADBMediaHeartbeat` track two separate sessions, each with its own unique session IDs. The two sessions in the Charles debugging tool or debug logs can be identified by using the session ID value.
@@ -314,7 +309,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** 
@@ -354,7 +348,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
       this._mediaHeartbeat =  
         new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
   } 
-  
   ```
 
   ```js
@@ -377,7 +370,6 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
    
   // Load the main video content for the 2nd player.  
   _player2.loadContent(URL_TO_VIDEO_2); 
-  
   ```
 
   Both instances of `VideoAnalyticsProvider` and `MediaHeartbeat` track two separate sessions, each with its own unique session IDs. You can see the two sessions in the Charles debugging tool.

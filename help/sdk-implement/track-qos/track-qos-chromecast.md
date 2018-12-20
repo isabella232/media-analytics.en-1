@@ -41,7 +41,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
    >These variables are only required if you are planning to track QoS.
 
    | Variable | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `bitrate` | Current bitrate | Yes |
    | `startupTime` | Startup time | Yes |
    | `fps` | FPS value | Yes |
@@ -51,14 +51,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    ```
    qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10); 
-   
    ```
 
 1. When playback switches bitrates, call the `BitrateChange` event in the Media Heartbeat instance: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent) 
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange); 
-   
    ```
 
    >[!IMPORTANT]

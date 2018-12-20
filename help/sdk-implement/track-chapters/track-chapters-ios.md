@@ -22,7 +22,7 @@ snippet: y
    >These variables are only required if you are planning to track chapters.
 
    | Variable Name | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `name` | Chapter name | Yes |
    | `position` | Chapter position | Yes |
    | `length` | Chapter length | Yes |

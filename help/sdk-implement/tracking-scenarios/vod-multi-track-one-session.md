@@ -19,7 +19,7 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
 
 ### Heartbeat Session
 
-| Parameter | Value | Notes |
+| Parameter | Value | Notes&nbsp;&nbsp; |
 | --- | --- | --- |
 | `s:event:sid` | Unique session ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
@@ -56,7 +56,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
       config.debugLogging = true;  
       _heartbeat = new MediaHeartbeat(this, config); 
   } 
-  
   ```
 
   ```java
@@ -69,7 +68,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   public Double getCurrentPlaybackTime() { 
       return _player.getCurrentPlaybackTime(); 
   } 
-  
   ```
 
   ```java
@@ -92,7 +90,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video1);  
        _player.loadContent(uri); 
   } 
-  
   ```
 
   To display the first session by using the `VideoAnalyticsProvider` (hence `MediaHeartbeat`) instance in Android, set up the following code: 
@@ -137,7 +134,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
    
   ........ 
   ........ 
-  
   ```
 
   To display the second session, you can use the same `VideoAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session: 
@@ -182,7 +178,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To create two instances of `MediaHeartbeat` for two video players, enter the following: 
@@ -229,7 +224,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   } 
     
   @end 
-  
   ```
 
   ```
@@ -252,7 +246,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
             [[VideoAnalyticsProvider alloc] initWithPlayerDelegate:self.videoPlayer]; 
       } 
   } 
-  
   ```
 
   To display the first session by using the `VideoAnalyticsProvider` (hence `MediaHeartbeat`) instance in iOS, set up the following code: 
@@ -291,7 +284,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
   To display the second session, you can use the same `VideoAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session: 
@@ -330,7 +322,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** 
@@ -369,7 +360,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
       this._mediaHeartbeat =  
         new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
   } 
-  
   ```
 
   ```js

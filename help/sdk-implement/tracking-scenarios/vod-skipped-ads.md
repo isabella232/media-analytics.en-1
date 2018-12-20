@@ -17,7 +17,7 @@ This scenario comprises VOD content playback with a skipped ad.
 
 This is the same scenario as [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.  
 
-| Trigger | Heartbeat method | Network calls | Notes |
+| Trigger&nbsp;&nbsp; | Heartbeat method&nbsp; | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | User clicks [!UICONTROL Play] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The ad starts.  | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
@@ -118,7 +118,6 @@ The parameters are identical to the parameters in the [VOD playback with pre-rol
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To view this scenario, enter the following text: 
@@ -199,7 +198,6 @@ The parameters are identical to the parameters in the [VOD playback with pre-rol
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** To view this scenario in JavaScript, enter the following text: 
@@ -286,6 +284,5 @@ The parameters are identical to the parameters in the [VOD playback with pre-rol
    
   ........ 
   ........ 
-  
   ```
 

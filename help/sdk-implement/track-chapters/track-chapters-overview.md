@@ -42,7 +42,7 @@ Chapter tracking includes chapter starts, chapter completes, and chapter skips. 
    >These variables are only required if you are planning to track chapters.
 
    | Variable Name | Description | Required |
-   | --- | --- | --- |
+   | --- | --- | :---: |
    | `name` | Chapter name | Yes |
    | `position` | Chapter position | Yes |
    | `length` | Chapter length | Yes |
@@ -82,18 +82,15 @@ if (e.type == "chapter complete") {
 if (e.type == "chapter skip") { 
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
 }; 
-
 ```
 
 ## Validate {#section_07EC2811BE3249249494596BFE9BF869}
 
-**Chapter Start **
+**Chapter Start**
 
 On start of an individual chapter playback, one key calls are sent:
 
-* Heartbeat chapter start**&#42;**
-
-**&#42;**This call contains additional chapter metadata variables.
+* Heartbeat chapter start (This call contains additional chapter metadata variables.)
 
 **Chapter Complete**
 

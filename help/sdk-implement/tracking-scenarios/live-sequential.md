@@ -15,7 +15,7 @@ In this scenario, there is one live asset with no ads played for 40 secs after j
 
 This is the same scenario as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point. 
 
-| Trigger | Heartbeat method | Network calls | Notes |
+| Trigger | Heartbeat method | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | User clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | First frame of the content plays.  | `trackPlay` | Heartbeat Content Play | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
@@ -32,12 +32,12 @@ This is the same scenario as the [VOD playback with no ads](../../sdk-implement/
 
 |  Parameter  | Value  | Notes  |
 |---|---|---|
-|  `s:sc:rsid`  | [Your Adobe Report Suite ID]  |  |
-|  `s:sc:tracking_serve`  | [Your Analytics Tracking Server URL]  |  |
+|  `s:sc:rsid`  | <Your Adobe Report Suite ID>  |  |
+|  `s:sc:tracking_serve`  | <Your Analytics Tracking Server URL>  |  |
 |  `s:user:mid`  | `s:user:mid`  | Should match the mid value on the Adobe Analytics Content Start Call  |
 |  `s:event:type`  | `"start"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
-|  `s:asset:video_id`  | [Your Video Name]  |  |
+|  `s:asset:video_id`  | <Your Video Name>  |  |
 |  `s:stream:type`  | `live`  |  |
 |  `s:meta:*`  | *optional* | Custom metadata set on the video  |
 
@@ -59,7 +59,7 @@ In the content heartbeats, look for a few specific things:
 |  Parameter  | Value  | Notes  |
 |---|---|---|
 |  `s:event:type`  | `"play"`  |  |
-|  `l:event:playhead`  | [playhead position] e.g., 50, 60, 70  | This should reflect the current position of the playhead.  |
+|  `l:event:playhead`  | <playhead position> e.g., 50, 60, 70  | This should reflect the current position of the playhead.  |
 
 ## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
 
@@ -157,7 +157,6 @@ When playback for any given episode has completed (playhead crosses episode boun
   ........ 
    
   // Continue similarly tracking further sessions in the live stream if required 
-  
   ```
 
 * **iOS -** Here is the expected API call order: 
@@ -233,7 +232,6 @@ When playback for any given episode has completed (playhead crosses episode boun
   ........ 
     
   // Continue tracking further sessions in live stream similarly if required 
-  
   ```
 
 * **JavaScript -** Here is the expected API call order: 
@@ -325,6 +323,5 @@ When playback for any given episode has completed (playhead crosses episode boun
   ........ 
    
   // Continue tracking further sessions in live stream similarly if required 
-  
   ```
 

@@ -15,7 +15,7 @@ In this scenario, the user skips a chapter in the main content.
 
 This is the same scenario as [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md), except the user in this case intends to seek out of the chapter thereby skipping it to land into main content. 
 
-|  Trigger  | Heartbeat method  | Network calls  | Notes  |
+|  Trigger  | Heartbeat method  | Network calls&nbsp;&nbsp;  | Notes  |
 |---|---|---|---|
 |  User clicks **[!UICONTROL Play]** | `trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | The measurement library is unaware that there is a pre-roll ad. These network calls are still exactly the same as [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario.  |
 |  The chapter starts.  | `trackEvent:ChapterStart`  | Heartbeat Chapter Start  |  |
@@ -118,7 +118,6 @@ The parameters used during chapter playback are identical to the parameters in t
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To view this scenario in iOS, set up the following code: 
@@ -194,7 +193,6 @@ The parameters used during chapter playback are identical to the parameters in t
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** To view this scenario in JavaScript, enter the following text: 
@@ -282,6 +280,5 @@ The parameters used during chapter playback are identical to the parameters in t
    
   ........ 
   ........ 
-  
   ```
 

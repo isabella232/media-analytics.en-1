@@ -15,7 +15,7 @@ This scenario comprises seeking in the main content during playback.
 
 This is the same scenario as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point.
 
-| Trigger | Heartbeat method | Network calls | Notes |
+| Trigger&nbsp;&nbsp; | Heartbeat method&nbsp;&nbsp; | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | User clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | First frame of the content plays.  | `trackPlay` | Heartbeat Content Play | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
@@ -85,7 +85,6 @@ In this scenario, the user is seeking when the main content is being played.
    
   ........ 
   ........ 
-  
   ```
 
 * **iOS -** To view this scenario in iOS, set up the following code: 
@@ -140,7 +139,6 @@ In this scenario, the user is seeking when the main content is being played.
   [_mediaHeartbeat trackSessionEnd]; 
   ....... 
   ....... 
-  
   ```
 
 * **JavaScript -** To view this scenario, enter the following text: 
@@ -203,6 +201,5 @@ In this scenario, the user is seeking when the main content is being played.
    
   ........ 
   ........ 
-  
   ```
 
