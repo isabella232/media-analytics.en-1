@@ -40,6 +40,7 @@ snippet: y
    mediaInfo.playhead = "0"
    mediaInfo.length = "600"
    ```
+
 1. **Attach video metadata -** Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
     * **Standard video metadata -**
