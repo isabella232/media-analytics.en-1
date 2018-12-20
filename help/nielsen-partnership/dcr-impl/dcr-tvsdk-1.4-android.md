@@ -131,7 +131,7 @@ To implement MTVR in TVSDK for Android, make the following changes to your exist
 
 1. Update the Nielsen video metadata in `VideoAnalyticsNielsenMetadata` to include the following key/values:
 
-   | Key | Value |
+   | Key | &nbsp;&nbsp;Value&nbsp;&nbsp; |
    | --- | --- |
    | `tv` | "true" |
    | `datasource` | "id3" |

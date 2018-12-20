@@ -24,7 +24,6 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
    Initialize Nielsen Measurement by providing the required AppInfo with application details. For more information about `AppInfo`, see `NielsenAppInfo` in [Variables and Metadata](../dcr-vars-metadata.md).
 
    ```
-
    // Configure Nielsen API 
    [PTVideoAnalyticsTracker nielsenConfigure: @{ 
         @"appid" : @"APP-ID-PROVIDED-BY-ADOBE-REPRESENTATIVE", 
@@ -32,7 +31,6 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
         @"appname" : @"Sample Player Name", 
         @"sfcode" : @"dcr" 
    }];
-
    ```
 
 1. Implement `PTVideoAnalyticsNielsenMetadata`.
@@ -50,7 +48,6 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
    Create an instance of the `PTVideoAnalyticsNielsenMetadata`, and this instance contains all of the configuration information that is needed to enable video heartbeat tracking. For example: 
 
    ```
-
    -(PTVideoAnalyticsNielsenMetadata*) createNielsenMetadata 
    { 
        PTVideoAnalyticsNielsenMetadata* nielsenMetadata = [[[PTVideoAnalyticsNielsenMetadata alloc] init] 
@@ -109,7 +106,6 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
          
        return  nielsenMetadata; 
    }
-
    ```
 
    >[!IMPORTANT]
@@ -119,20 +115,16 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
 1. Add `PTVideoAnalyticsNielsenMetadata` to `PTMediaPlayerItem` metadata.
 
    ```
-
    PTVideoAnalyticsNielsenMetadata* nielsenMetadata =  [self createNielsenMetadata];
 
    //attach nielsenMetadata to your MediaPlayerItem 
    [self.item.metadata setMetadata:nielsenMetadata forKey:PTNielsenTrackingMetadataKey];
-
    ```
 
 1. Create an instance of `PTVideoAnalyticsTracker` immediately after you create the `PTMediaPlayer` instance.
 
    ```
-
    PTVideoAnalyticsTracker *videoAnalyticsTracker = [[[PTVideoAnalyticsTracker alloc] initWithMediaPlayer:self.player] autorelease];
-
    ```
 
 ## MTVR Implementation Guide {#section_5435E9606C124DF5A5A984FC1BAD022E}
@@ -141,7 +133,7 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 
 1. Update the Nielsen video metadata in `PTVideoAnalyticsNielsenMetadata` to include the following key/values:
 
-   | Key | Value |
+   | Key | &nbsp;&nbsp;Value&nbsp;&nbsp; |
    | --- | --- |
    | `tv` | *true* |
    | `datasource` | *id3* |
@@ -151,7 +143,6 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
    For dynamic ads, the default value is *2*. A value of *1* is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../dcr-vars-metadata.md).
 
    ```
-
    - (PTVideoAnalyticsNielsenMetadata*) createNielsenMetadata { 
        PTVideoAnalyticsNielsenMetadata* nielsenMetadata =  
          [[[PTVideoAnalyticsNielsenMetadata alloc] init] autorelease]; 
@@ -196,7 +187,6 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
      
        return  nielsenMetadata; 
    }
-
    ```
 
 1. Retrieving the Nielsen ID3 tags and passing it to `MediaHeartbeat` is internally implemented in `PTVideoAnalyticsTracker`.
@@ -214,9 +204,7 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 1. To enable or disable Nielsen tracking, use the following usage example to set the user opt-out preference:
 
    ```
-
    [PTVideoAnalyticsTracker nielsenUserOptOut:@"USER_OPT_OUT_URL_STRING"];
-
    ```
 
 >[!TIP]

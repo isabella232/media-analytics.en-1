@@ -67,7 +67,7 @@ Here are the criteria for self-certification:
 ![](assets/provision.png)
 
 | Full Certification | Self Certification |
-| ___ | ___ |
+| --- | --- |
 | **Key Actions** <ul> <li>The Adobe consultant submits the data-sharing provisioning request to the Adobe provisioning team.  </li> <li>Nielsen confirms that the data is being shared.  </li> </ul> | **Key Actions** <ul> <li>Adobe provisions report suite for data sharing.  </li> <li>Nielsen validates that the data was received.  </li> </ul> |
 | **Key Deliverables** <ul> <li>A status update is made to the Zendesk ticket.  </li> </ul> | **Key Deliverables** None.  |
 | **Estimated Time** <ul> <li>1 week </li> </ul> | **Estimated Time** <ul> <li>1 week </li> </ul> |

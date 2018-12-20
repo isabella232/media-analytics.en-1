@@ -93,12 +93,6 @@ If you choose to separate your Adobe and Nielsen opt-outs on mobile devices, her
 
        The contents of this variable must be added to every single [!DNL Analytics] call in a specific context data parameter.     
     
-       <!-- 
-
-Sample code and details are here. [ O R They? ]
-
- -->
-
     1. After implementing the Nielsen opt-out status in a variable and adding it as context data to all [!DNL Analytics] calls, the app developer must log in to the [!DNL Adobe Mobile Services] UI to configure the postbacks to fire only when the Nielsen opt-out parameter is not present.
 
        This step results in a `goodbye` ping that is sent to Nielsen, which terminates Nielsen data collection. For more information, see [Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html).

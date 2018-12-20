@@ -79,4 +79,4 @@ Here is some information to remember for Adobe validations:
 
 ID3 tags have a payload of approximately 249 characters and start with `www.nielsen.com`.
 
-See [www.nielsen.com/X100zdCIGeIlgZnkYj6UvQ==/X100zdCIGeIlgZnkYj6UvQ==/AAAB2Jz2_k74GXSzx4npHuI_JwJd3QSUpW30rDkGTcbHEzIMWleCzM-uvNOP9fzJcQMWQLJqzXMCAxParOb5sGijSV9dNM3QiBniJYGZ5GI-lL1fXTTN0IgZ4iWBmeRiPpS9AAAAAAAAAAAAAAAAAAAAAFJWFM5SVhTONNU=/00000/00000/00](https://id3.org) for comprehensive information on ID3 tags.
+See [https://id3.org](https://id3.org) for comprehensive information on ID3 tags.

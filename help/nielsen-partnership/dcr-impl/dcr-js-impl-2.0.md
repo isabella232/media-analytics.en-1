@@ -169,6 +169,7 @@ To implement DTVR in Javascript 2.0, make the following changes to your existing
    >
    >DEPRECATED (and removed from `_onLoad` example above):  
 
+   ```js
    ... 
    if(isDTVRContent){ 
        nielsenContentMetadata["tv"] = true; 
@@ -176,6 +177,7 @@ To implement DTVR in Javascript 2.0, make the following changes to your existing
        nielsenContentMetadata["admodel"] = 1;        
    } 
    ...
+   ```
 
    For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 

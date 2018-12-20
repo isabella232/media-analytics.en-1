@@ -162,6 +162,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
    >
    >DEPRECATED (and removed from `onMainVideoLoaded` example above): 
       
+   ```
    ... 
    [mediaObject setValue:@{ 
            @"tv":@"true", 
@@ -170,6 +171,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
        } 
        forKey:ADBMediaObjectKeyNielsenContentMetadata]; 
    ...
+   ```
 
    For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 

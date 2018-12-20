@@ -166,6 +166,7 @@ To implement MTVR in Android 2.x, make the following changes to your existing Ni
    >
    >DEPRECATED (and removed from `onVideoStart()` example above): 
 
+   ```java
    ... 
    // nielsen content metadata and channel info 
    if (isDTVRContent) { 
@@ -174,6 +175,7 @@ To implement MTVR in Android 2.x, make the following changes to your existing Ni
        nielsenContentMetadata.put("<badmodel", 1); 
    } 
    ...
+   ```
 
    For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
 
