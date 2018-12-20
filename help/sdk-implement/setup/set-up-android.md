@@ -19,8 +19,8 @@ snippet: y
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK to your project.
 
-    1. Expand the Android zip file (e.g., [!DNL MediaSDK-android-v2.*.zip]). 
-    1. Verify that the [!DNL MediaSDK.jar] file exists in the [!DNL libs/] directory. 
+    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`). 
+    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory. 
     
     1. Add the library to your project.
 
@@ -40,12 +40,12 @@ snippet: y
 
         1. In the Eclipse IDE, right-click on the project name. 
         1. Click  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** . 
-        1. Select [!DNL MediaSDK.jar]. 
+        1. Select `MediaSDK.jar`. 
         1. Click **[!UICONTROL Open]**. 
         1. Right-click the project again, and click  **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** . 
         1. Click the **[!UICONTROL Order]** and **[!UICONTROL Export]** tabs. 
         
-        1. Ensure that the [!DNL MediaSDK.jar] file is selected.
+        1. Ensure that the `MediaSDK.jar` file is selected.
 
 1. Import the library.
 
@@ -54,7 +54,6 @@ snippet: y
    import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate; 
    import com.adobe.primetime.va.simple.MediaHeartbeatConfig; 
    import com.adobe.primetime.va.simple.MediaObject; 
-   
    ```
 
 1. Create the `MediaHeartbeatConfig` instance.
@@ -117,7 +116,7 @@ Your app using the Media SDK requires the following permissions to send data in 
 * `INTERNET` 
 * `ACCESS_NETWORK_STATE`
 
-To add these permissions, add the following lines to your [!DNL AndroidManifest.xml] file in the application project directory:
+To add these permissions, add the following lines to your `AndroidManifest.xml` file in the application project directory:
 
 * `<uses-permission android:name="android.permission.INTERNET" />` 
 * `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />`

@@ -25,17 +25,17 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast library to your project.
 
-    1. The [!DNL AdobeMobileLibrary-Chromecast-2.1.0 zip] file consists of the following software components:
+    1. The `AdobeMobileLibrary-Chromecast-2.1.0 zip` file consists of the following software components:
 
-        * [!DNL adbmobile-chromecast.min.js]:
+        * `adbmobile-chromecast.min.js`:
 
           This library file will be included in your Chromecast app source folder. 
         
-        * [!DNL ADBMobileConfig] config
+        * `ADBMobileConfig` config
 
-          This SDK configuration file is customized for your app. A sample `ADBMobileConfig` implementation is provided with the SDK (under [!DNL samples/]). Obtain the proper settings from an Adobe representative.
+          This SDK configuration file is customized for your app. A sample `ADBMobileConfig` implementation is provided with the SDK (under `samples/`). Obtain the proper settings from an Adobe representative.
 
-    1. Add the library file to your [!DNL index.html] file, and create the `ADBMobileConfig` global variable as follows (the global variable used to configure Adobe Mobile for Heartbeats has an exclusive key named `mediaHeartbeat`):
+    1. Add the library file to your `index.html` file, and create the `ADBMobileConfig` global variable as follows (the global variable used to configure Adobe Mobile for Heartbeats has an exclusive key named `mediaHeartbeat`):
 
        ```js    
        <script> 
@@ -84,7 +84,7 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 
        ADBMobile Config Parameters for mediaHeartbeat key:
 
-   | Config Parameter | Description |
+   | Config Parameter | Description&nbsp;&nbsp;&nbsp;&nbsp; |
    | --- | --- |
    | `server` | String that represents the URL of the tracking endpoint on the backend.  |
    | `publisher` | String that represents the content publisher unique identifier.  |

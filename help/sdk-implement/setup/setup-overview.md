@@ -25,8 +25,8 @@ There are three main SDK components involved in media tracking:
 
    **Config parameters:**
 
-   |  Variable Name  | Description  | Required  | Default Value  |
-   |---|---|---|---|
+   |  Variable Name  | Description&nbsp;&nbsp;  | Required  | Default Value  |
+   |---|---|:---:|---|
    |  `trackingServer`  | Tracking server for media analytics. This is different from your analytics tracking server.  | Yes  | Empty String  |
    |  `channel`  | Channel name  | No  | Empty String  |
    |  `ovp`  | Name of the online media platform through which content gets distributed  | No  | Empty String  |
@@ -37,8 +37,8 @@ There are three main SDK components involved in media tracking:
 
 1. Implement the `MediaHeartbeatDelegate`. 
 
-    | Method name | Description | Required |
-    | --- | --- | --- |
+    | Method name | Description&nbsp;&nbsp; | Required |
+    | --- | --- | :---: |
     | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data.  | Yes |
     | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program.  | Yes | 
 
@@ -46,8 +46,8 @@ There are three main SDK components involved in media tracking:
    >
    >The Quality of Service (QoS) object is optional. If QoS data is available for your player and you wish to track that data, then the following variables are required:
 
-   |  Variable name  | Description  | Required  |
-   |---|---|---|
+   |  Variable name  | Description&nbsp;&nbsp;  | Required  |
+   | --- | --- | :---: |
    |  `bitrate`  | The bitrate of media in bits per second.  | Yes  |
    |  `startupTime`  | The start up time of media in milliseconds.  | Yes  |
    |  `fps`  | The frames displayed per second.  | Yes  |
@@ -115,7 +115,7 @@ Media implementations are composed of two types of tracking calls:
 
 Media tracking works the same across all platforms, desktop and mobile. Audio tracking currently works in mobile platforms. For all tracking calls there are a few key universal variables to be validated:
 
-* **AppMeasurement (Analytics)**For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variable](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html). 
+* **AppMeasurement (Analytics)** For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variable](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html). 
 
   >[!IMPORTANT]
   >
@@ -123,11 +123,12 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
   The analytics tracking server should end in `.sc.omtrdc.net` or be a CNAME. 
 
-* **Heartbeats (Media Analytics)**Always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
+* **Heartbeats (Media Analytics)** Always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
-| Video Analytics 1.x SDKs&#42; | Developer Guides |
+| Video Analytics 1.x SDKs* | Developer Guides |
+| --- | --- |
 | Android | [Configure for Android ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [Configure for AppleTV ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Configure for Chromecast ](chromecast_1.x_sdk.pdf) |
@@ -136,7 +137,7 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 | Primetime | <ul> <li> **Android:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configure for TVML ](vhl_tvml.pdf) | 
 
-**&#42;** For all 1.x SDKs, the links are for the full PDF download of the documentation.
+\* For all 1.x SDKs, the links are for the full PDF download of the documentation.
 
 ## Latest Primetime Media SDK Documentation {#section_tzh_llk_t2b}
 

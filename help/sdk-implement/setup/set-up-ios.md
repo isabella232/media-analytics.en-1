@@ -23,15 +23,15 @@ snippet: y
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK to your project.
 
-    1. Verify that the following software components exist in the [!DNL libs] directory:
+    1. Verify that the following software components exist in the `libs` directory:
 
-        * [!DNL ADBMediaHeartbeat.h]: The Objective-C header file that is used for iOS heartbeat tracking APIs. 
-        * [!DNL ADBMediaHeartbeatConfig.h]: The Objective-C header file for the SDK configuration. 
-        * [!DNL MediaSDK.a]: A bitcode-enabled fat binary that contains the library builds for iOS devices (armv7, armv7s, arm64) and simulators (i386 and x86_64).
+        * `ADBMediaHeartbeat.h`: The Objective-C header file that is used for iOS heartbeat tracking APIs. 
+        * `ADBMediaHeartbeatConfig.h`: The Objective-C header file for the SDK configuration. 
+        * `MediaSDK.a`: A bitcode-enabled fat binary that contains the library builds for iOS devices (armv7, armv7s, arm64) and simulators (i386 and x86_64).
 
           This binary should be linked when the target is intended for an iOS app. 
         
-        * [!DNL MediaSDK_TV.a]: A bitcode-enabled fat binary containing the library builds for new Apple TV devices (arm64) and simulator (x86_64).
+        * `MediaSDK_TV.a`: A bitcode-enabled fat binary containing the library builds for new Apple TV devices (arm64) and simulator (x86_64).
 
           This binary should be linked when the target is intended for an Apple TV (tvOS) app.
 
@@ -86,7 +86,6 @@ snippet: y
    config.playerName     = <SAMPLE_PLAYER_NAME>; 
    config.ssl            = <YES/NO>; 
    config.debugLogging   = <YES/NO>; 
-   
    ```
 
 1. Implement the `ADBMediaHeartbeatDelegate` protocol.
@@ -140,12 +139,12 @@ With the release of the new Apple TV, you can now create applications to run in 
 
 Perform the following steps in your Xcode project. This guide is written assuming your project has a target that is an Apple TV app targeting tvOS:
 
-1. Drag the [!DNL VideoHeartbeat_TV.a] library file into your project’s [!DNL lib] folder. 
+1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder. 
 
 1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
 
-   * [!DNL MediaSDK_TV.a]
-   * [!DNL AdobeMobileLibrary_TV.a] 
-   * [!DNL libsqlite3.0.tbd] 
-   * [!DNL SystemConfiguration.framework]
+   * `MediaSDK_TV.a`
+   * `AdobeMobileLibrary_TV.a` 
+   * `libsqlite3.0.tbd` 
+   * `SystemConfiguration.framework`
 

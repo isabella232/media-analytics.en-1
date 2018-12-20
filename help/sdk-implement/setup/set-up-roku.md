@@ -53,8 +53,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
           "lifecycleTimeout":30, 
           "batchLimit":50, 
           "privacyDefault":"optedin", 
-          "poi":[
-         ]
+          "poi":[ ]
       },
       "marketingCloud":{
         "org":""
@@ -69,10 +68,9 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
       "acquisition":{ 
         "server":"example.com",
         "appid":"sample-app-id"
-      
       },
       
-   "mediaHeartbeat":{ 
+      "mediaHeartbeat":{ 
          "server":"example.com", 
          "publisher":"sample-publisher", 
          "channel":"sample-channel", 
@@ -84,15 +82,15 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
       }
       ```
 
-   | Config Parameter | Description |
-   | --- | --- |
-   | `server` | String that represents the URL of the tracking endpoint on the backend.  |
-   | `publisher` | String that represents the content publisher unique identifier.  |
-   | `channel` | String that represents the name of the content distribution channel.  |
-   | `ssl` | Boolean that represents whether SSL should be used for tracking calls.  |
-   | `ovp` | String that represents the name of the video player provider.  |
-   | `sdkversion` | String that represents the current version of the app/SDK.  |
-   | `playerName` | String that represents the name of the player.  | 
+      | Config Parameter | Description&nbsp;&nbsp;&nbsp;&nbsp; |
+      | --- | --- |
+      | `server` | String that represents the URL of the tracking endpoint on the backend.  |
+      | `publisher` | String that represents the content publisher unique identifier.  |
+      | `channel` | String that represents the name of the content distribution channel.  |
+      | `ssl` | Boolean that represents whether SSL should be used for tracking calls.  |
+      | `ovp` | String that represents the name of the video player provider.  |
+      | `sdkversion` | String that represents the current version of the app/SDK.  |
+      | `playerName` | String that represents the name of the player.  | 
 
       >[!IMPORTANT]
       >

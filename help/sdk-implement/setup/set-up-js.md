@@ -22,11 +22,11 @@ snippet: y
    1. Expand the `VideoHeartbeatLibrary-js-v2.*.zip` file that you downloaded. 
    1. Verify that the `VideoHeartbeat.min.js` file exists in the `libs` directory: 
    
-   1. Host the [!DNL VideoHeartbeat.min.js] file.
+   1. Host the `VideoHeartbeat.min.js` file.
 
       This core JavaScript file must be hosted on a web server that is accessible to all pages on your site. You need the path to these files for the next step. 
    
-   1. Reference [!DNL VideoHeartbeat.min.js] on all site pages.
+   1. Reference `VideoHeartbeat.min.js` on all site pages.
 
       Include `VideoHeartbeat` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. For example:     
    
@@ -39,7 +39,7 @@ snippet: y
 
       >[!NOTE]
       >
-      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and [!DNL VideoHeartbeat.min.js] can also be used with compatible module loaders.
+      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `VideoHeartbeat.min.js` can also be used with compatible module loaders.
 
 1. For easy access to the APIs, create local references to the `MediaHeartbeat` classes.
 
