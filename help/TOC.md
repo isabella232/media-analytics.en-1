@@ -8,6 +8,21 @@ index: n
 # Adobe Analytics for Audio and Video {#using}
 
 + [Measuring Audio and Video in Adobe Analytics](media-overview.md) 
++ Measurement Options {#measurement-options}
+    + Media Module Milestone Tracking {#mm-milestone-tracking}
+        + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
+        + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+        + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+    + Custom Link in Analytics {#cl-in-aa}
+        + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
++ Introduction to Audio and Video Analytics {#intro-to-ava}  
+    + [Prerequisites](intro-to-ava/prereqs.md) 
+    + Implementation Paths {#implementation-paths} 
+        + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
+        + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
+        + [Adobe Launch](intro-to-ava/implementation-paths/launch-path.md)
+        + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+    + [Audience Manager Enablement](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
     + [Download SDKs](sdk-implement/download-sdks.md) 
     + Set up and Configure {#setup}
@@ -118,3 +133,84 @@ index: n
         + [Migration Overview](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
         + [Code Comparison: 1.x to 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
         + [1.x to 2.x API Conversion](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
++ Media Collection API (RESTful) {#media-collection-api}
+    + [Overview](media-collection-api/mc-api-overview.md)
+    + API Reference {#mc-api-ref}
+        + [Sessions Request](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+        + [Events Request](media-collection-api/mc-api-ref/mc-api-events-req.md)
+        + [Request Parameters](media-collection-api/mc-api-ref/mc-api-req-params.md)
+        + [Event Types and Descriptions](media-collection-api/mc-api-ref/mc-api-event-types.md)
+        + [JSON Validation Schemas](media-collection-api/mc-api-ref/mc-api-json-validation.md)
+    + Implementing the API {#mc-api-impl}
+        + [Quick Start](media-collection-api/mc-api-impl/mc-api-quick-start.md)
+        + [Setting the HTTP Request Type in Your Player](media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+        + [Obtaining a Session ID](media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
+        + [Implementing an Events Request](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+        + [Validating Event Requests](media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+        + [Sending Ping Events](media-collection-api/mc-api-impl/mc-api-sed-pings.md)
+        + [Sending QoE Data](media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+        + [Custom Metadata Support](media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+        + [Timeout Conditions](media-collection-api/mc-api-impl/mc-api-timeout.md)
+        + [Controlling the Order of Events](media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
+        + [Queueing Events When Sessions Response is Slow](media-collection-api/mc-api-impl/mc-api-queuing.md)
+    + Media Tracking Timelines {#mc-api-timelines}
+        + [Timeline 1 - View to end of content](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+        + [Timeline 2 - User abandons session](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
+        + [Timeline 3 - Chapters](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
+    + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
++ Metrics and Metadata {#metrics-and-metadata} 
+    + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md) 
+    + [Ad parameters](metrics-and-metadata/ad-parameters.md) 
+    + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md) 
+    + [Quality Parameters](metrics-and-metadata/quality-parameters.md) 
+    + [Segments](metrics-and-metadata/segments.md)
+    + [Calculated Metrics](metrics-and-metadata/calculated-metrics.md)
++ Reporting and Analysis {#media-reports}  
+    + [Media Reports Enablement](media-reports/media-reports-enable.md) 
+    + Media Default Reports {#media-default-reports}  
+        + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
+        + [Media Overview](media-reports/media-default-reports/media-reports-overview.md)  
+        + [Media Detail](media-reports/media-default-reports/media-reports-detail.md)  
+        + [Media Daypart](media-reports/media-default-reports/media-reports-daypart.md)  
+        + [Media Concurrent Viewers](media-reports/media-default-reports/media-concurrent-viewers.md) 
+        + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
+    + [Media Workspace Templates](media-reports/media-workspace-templates.md)
++ Nielsen Partnership {#nielsen-partnership} 
+    + [Overview](nielsen-partnership/nielsen-overview.md)
+    + [Getting Started with Adobe/Nielsen](nielsen-partnership/nielsen-getting-started.md) 
+    + Implementation {#dcr-impl} 
+        + [2.1 for Android](nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md)
+        + [2.1 for iOS](nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md)
+        + [2.1 for JavaScript](nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md)
+        + [2.0 for Android](nielsen-partnership/dcr-impl/dcr-android-impl-2.0.md)
+        + [2.0 for iOS](nielsen-partnership/dcr-impl/dcr-ios-impl-2.0.md)
+        + [2.0 for JavaScript](nielsen-partnership/dcr-impl/dcr-js-impl-2.0.md)
+        + [1.x for Android](nielsen-partnership/dcr-impl/dcr-android-impl-1.x.md) 
+        + [1.x for iOS](nielsen-partnership/dcr-impl/dcr-ios-impl-1.x.md) 
+        + [1.x for JavaScript](nielsen-partnership/dcr-impl/dcr-js-impl-1.x.md) 
+        + [TVSDK 1.4 for iOS](nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-ios.md) 
+        + [TVSDK 1.4 for Android](nielsen-partnership/dcr-impl/dcr-tvsdk-1.4-android.md) 
+        + Opt-Out Implementation {#dcr-opt-out} 
+            + [Opt-Out Overview](nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-overview.md)
+            + [Opt-out Settings](nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md)
+        + [Implementation Examples](nielsen-partnership/dcr-impl/dcr-impl-examples.md) 
+        + [DTVR/MTVR Implementation](nielsen-partnership/dcr-impl/dcr-dtvr.md) 
+    + [Variables and Metadata](nielsen-partnership/dcr-vars-metadata.md) 
+    + [Nielsen Hierarchy](nielsen-partnership/dcr-hierarchy.md)
+    + Certification {#dcr-certification} 
+        + [Overview](nielsen-partnership/dcr-certification/dcr-cert-overview.md) 
+        + [Certification Process](nielsen-partnership/dcr-certification/dcr-cert-process.md) 
+        + [Certification Request Form](nielsen-partnership/dcr-certification/dcr-cert-request-form.md) 
+        + Validation {#dcr-cert-validation} 
+            + [Test 1: Standard Playback](nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-test1.md)
+            + [Test 2: Video Interruption](nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-test2.md)
+            + [Test 3: Opt-out Nielsen](nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-test3.md)
+            + [Test Call Details](nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
+            + [Data Comparison](nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-data-compare.md) 
+        + Debug {#dcr-cert-debug} 
+            + [Configure Adobe Debug](nielsen-partnership/dcr-certification/dcr-cert-debug/dcr-cert-debug-config.md) 
+            + [Create a New Debug Report](nielsen-partnership/dcr-certification/dcr-cert-debug/dcr-cert-debug-new-report.md) 
+            + [Debug Dashboards and Reports](nielsen-partnership/dcr-certification/dcr-cert-debug/dcr-cert-debug-dash-repts.md) 
++ [Federated Analytics](federated-analytics.md) 
++ Additional resources {#additional-resources}
+    + [Documentation Updates](additional-resources/doc-updates.md)

@@ -65,7 +65,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-##### Media Heartbeat initialization (2.x)
+#### Media Heartbeat initialization (2.x)
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -139,7 +139,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-##### MediaHeartbeatDelegate (2.x)
+#### MediaHeartbeatDelegate (2.x)
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);
@@ -199,7 +199,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata90` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
 #### Standard Metadata (1.x)
 
