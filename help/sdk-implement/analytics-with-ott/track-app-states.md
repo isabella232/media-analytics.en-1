@@ -25,9 +25,9 @@ States are the different screens or views in your application. Each time a new s
   ADBMobile.analytics.trackState("State Name",{});
   ```
 
-The state name is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, `View State` is reported as `Page Name` and `state views` is reported as `page views`.
+The state name is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, `View State` is reported as `Page Name`; `state views` is reported as `page views`.
 
-In addition to the `State Name`, you can send additional context data with each track action call:
+In addition to `State Name`, you can send additional context data with each track action call:
 
 * **Roku -** 
 
@@ -43,7 +43,6 @@ In addition to the `State Name`, you can send additional context data with each 
   var dictionary = { }; 
   dictionary["myapp.login.LoginStatus"] = "logged in"; 
   ADBMobile.analytics.trackState("Home Screen", dictionary); 
-  
   ```
 
 >[!NOTE]
@@ -51,3 +50,4 @@ In addition to the `State Name`, you can send additional context data with each 
 >Context data values must be mapped to custom variables in Adobe Mobile services.
 
 States are typically viewed by using a pathing report, so you can see how users navigate your app and which states are most commonly viewed. 
+
