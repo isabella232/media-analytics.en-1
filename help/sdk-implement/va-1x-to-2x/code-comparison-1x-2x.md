@@ -21,15 +21,22 @@ All of the configuration parameters and tracking APIs are now consolidated into 
 * `publisher` - Removed; Experience Cloud Org ID is used instead as a publisher
 * `quiteMode` - Removed
 
-The following tables provide side-by-side code comparisons between 1.x and 2.x, covering Initialization, Core Playback, Ad Playback, Chapter Playback, and some additional events. 
+**Links to 1.x and 2.x sample players:**
+
+* [1.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58) 
+* [2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47) 
+
+The following sections provide code comparisons between 1.x and 2.x, covering Initialization, Core Playback, Ad Playback, Chapter Playback, and some additional events. 
 
 ## VHL Code Comparison: INITIALIZATION
 
+### Object Initialization
+
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Object Initialization**_ **1.x:** <ul> <li> `Heartbeat()` </li> <li> `VideoPlayerPlugin()` </li> <li> `AdobeAnalyticsPlugin()` </li> <li> `HeartbeatPlugin()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat()` </li> <li> `MediaHeartbeatConfig()` </li> </ul> |
+| <ul> <li> `Heartbeat()` </li> <li> `VideoPlayerPlugin()` </li> <li> `AdobeAnalyticsPlugin()` </li> <li> `HeartbeatPlugin()` </li> </ul> | <ul> <li> `MediaHeartbeat()` </li> <li> `MediaHeartbeatConfig()` </li> </ul> |
 
-### Set up the video player plugin (1.x)
+#### Video player plugin initialization (1.x)
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -58,9 +65,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-[1.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58) 
-
-### Media Heartbeat initialization (2.x)
+##### Media Heartbeat initialization (2.x)
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -74,13 +79,13 @@ mediaConfig.appVersion = Configuration.HEARTBEAT.SDK;
 this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-[2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47) 
+### Delegates
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Delegates**_ **1.x:** <ul> <li> `VideoPlayerPluginDelegate()` </li> <li> `VideoPlayerPluginDelegate().getVideoInfo` </li> <li> `VideoPlayerPluginDelegate().getAdBreakInfo` </li> <li> `VideoPlayerPluginDelegate().getAdInfo` </li> <li> `VideoPlayerPluginDelegate().getChapterInfo` </li> <li> `VideoPlayerPluginDelegate().getQoSInfo` </li> <li> `VideoPlayerPluginDelegate().get.onError` </li> <li> `AdobeAnalyticsPluginDelegate()` </li> <li> `AdobeHeartbeatPluginDelegate()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeatDelegate()` </li> <li> `MediaHeartbeatDelegate().getCurrentPlaybackTime` </li> <li> `MediaHeartbeatDelegate().getQoSObject` </li> </ul> |
+| <ul> <li> `VideoPlayerPluginDelegate()` </li> <li> `VideoPlayerPluginDelegate().getVideoInfo` </li> <li> `VideoPlayerPluginDelegate().getAdBreakInfo` </li> <li> `VideoPlayerPluginDelegate().getAdInfo` </li> <li> `VideoPlayerPluginDelegate().getChapterInfo` </li> <li> `VideoPlayerPluginDelegate().getQoSInfo` </li> <li> `VideoPlayerPluginDelegate().get.onError` </li> <li> `AdobeAnalyticsPluginDelegate()` </li> <li> `AdobeHeartbeatPluginDelegate()` </li> </ul> | <ul> <li> `MediaHeartbeatDelegate()` </li> <li> `MediaHeartbeatDelegate().getCurrentPlaybackTime` </li> <li> `MediaHeartbeatDelegate().getQoSObject` </li> </ul> |
 
-### VideoPlayerPluginDelegate (1.x)
+#### VideoPlayerPluginDelegate (1.x)
 
 ```js
 $.extend(SampleVideoPlayerPluginDelegate.prototype, VideoPlayerPluginDelegate.prototype);
@@ -110,9 +115,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L17) 
-
-### AdobeAnalyticsPluginDelegate (1.x)
+#### AdobeAnalyticsPluginDelegate (1.x)
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -124,9 +127,7 @@ SampleAdobeAnalyticsPluginDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.adobe.analytics.plugin.delegate.js#L17) 
-
-### HeartbeatDelegate (1.x)
+#### HeartbeatDelegate (1.x)
 
 ```js
 $.extend(SampleHeartbeatDelegate.prototype, HeartbeatDelegate.prototype);
@@ -138,9 +139,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.heartbeat.delegate.js#L17) 
-
-### MediaHeartbeatDelegate (2.x)
+##### MediaHeartbeatDelegate (2.x)
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);
@@ -160,15 +159,15 @@ SampleMediaHeartbeatDelegate.prototype.getQoSObject = function() {
 this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L57) 
-
 ## VHL Code Comparison: CORE PLAYBACK
+
+### Session Start
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| _**Session Start**_ **1.x:** <ul> <li> `VideoPlayerPluginDelegate.trackVideoLoad()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| <ul> <li> `VideoPlayerPluginDelegate.trackVideoLoad()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-### Session Start (1.x)
+#### Session Start (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -185,10 +184,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-[1.x Sample Player - trackVideoLoad() ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L107) 
-[1.x Sample Player - getVideoInfo() ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js#L23)
-
-### Session Start (2.x)
+#### Session Start (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -199,13 +195,13 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-[2.x Sample Player - createMediaObject() ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L88) 
+### Standard Video Metadata
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Standard Video Metadata**_ **1.x:** <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata90` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata90` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-### Standard Metadata (1.x)
+#### Standard Metadata (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -227,9 +223,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L107) 
-
-### Standard Metadata (2.x)
+#### Standard Metadata (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -252,16 +246,16 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L88) 
-
 >[!NOTE]
 >Instead of setting the Standard Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`. 
 
+### Custom Video Metadata
+
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Custom Video Metadata**_ **1.x:** <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-### Custom Metadata (1.x)
+#### Custom Metadata (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -275,9 +269,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Custom Metadata (2.x)
+#### Custom Metadata (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -293,17 +285,17 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 >[!NOTE]
 >Instead of setting the Custom Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the `MediaHeartbeat.trackSessionStart()` API. 
 
 
+### Playback
+
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Playback**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackPlay()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackPlay()` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackPlay()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackPlay()` </li> </ul> |
 
-### Playback (1.x)
+#### Playback (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -312,9 +304,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Playback (1.x)
+#### Playback (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -323,13 +313,13 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Pause
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Pause**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackPause()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackPausel()` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackPause()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackPausel()` </li> </ul> |
 
-### Pause (1.x)
+#### Pause (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onPause = function() { 
@@ -338,9 +328,7 @@ VideoAnalyticsProvider.prototype._onPause = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Pause (2.x)
+#### Pause (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -349,13 +337,13 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Seek Complete
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Seek Complete**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackSeekComplete()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackSeekComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete)` </li> </ul> |
 
-### Seeking (1.x)
+#### Seeking (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -364,9 +352,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Seeking (2.x)
+#### Seeking (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -375,13 +361,13 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Buffer Start
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Buffer Start**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackBufferStart()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackBufferStart()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart)` </li> </ul> |
 
-### Buffer Start (1.x)
+#### Buffer Start (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -390,9 +376,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Buffer Start (2.x)
+#### Buffer Start (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -401,13 +385,13 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Buffer Complete
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Buffer Complete**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackBufferComplete()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackBufferComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete)` </li> </ul> |
 
-### Buffer Complete (1.x)
+#### Buffer Complete (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -416,9 +400,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Buffer Complete (2.x)
+#### Buffer Complete (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -427,13 +409,13 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Playback Complete
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Playback Complete**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackComplete()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackComplete()` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackComplete()` </li> </ul> |
 
-### Playback Complete (1.x)
+#### Playback Complete (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -444,9 +426,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Playback Complete (2.x)
+#### Playback Complete (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -455,15 +435,15 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 ## VHL Code Comparison: AD PLAYBACK
+
+### Ad Start
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| _**Ad Start**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackAdStart()` </li> <li> `VideoPlayerPluginDelegate.getAdBreakInfo()` </li> <li> `VideoPlayerPluginDelegate.getAdInfo()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createAdBreakObject()` </li> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackAdStart()` </li> <li> `VideoPlayerPluginDelegate.getAdBreakInfo()` </li> <li> `VideoPlayerPluginDelegate.getAdInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdBreakObject()` </li> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart)` </li> </ul> |
 
-### Ad Start (1.x)
+#### Ad Start (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -472,17 +452,13 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) ... 
-
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
     return this._player.getAdInfo(); 
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js) 
-
-### Ad Start (2.x)
+#### Ad Start (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -501,13 +477,13 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Standard Ad Metadata
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Standard Ad Metadata**_ **1.x:** <ul> <li> `AdMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
+| <ul> <li> `AdMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
 
-### Standard Ad Metadata (1.x)
+#### Standard Ad Metadata (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -526,9 +502,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Standard Ad Metadata (2.x)
+#### Standard Ad Metadata (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -553,16 +527,16 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 >[!NOTE]
 >Instead of setting the Standard Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Ad Metadata is set through the `AdMetadata` key `MediaObject.MediaObjectKey.StandardVideoMetadata`
 
+### Custom Ad Metadata
+
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Custom Ad Metadata**_ **1.x:** <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
+| <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
 
-### Custom Ad Metadata (1.x)
+#### Custom Ad Metadata (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -581,9 +555,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Custom Ad Metadata (2.x)
+#### Custom Ad Metadata (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -605,16 +577,16 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 >[!NOTE]
 >Instead of setting the Custom Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata` API, in VHL 2.0, the Standard Ad Metadata is set through the `MediaHeartbeat.trackAdStart()` API. 
 
+### Ad Skip
+
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Ad Skip**_ **1.x:** <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
+| <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
 
-### Ad Skip (1.x)
+#### Ad Skip (1.x)
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
@@ -622,9 +594,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js) 
-
-### Ad Skip (2.x)
+#### Ad Skip (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() { 
@@ -633,16 +603,16 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 >[!NOTE]
 >In VHL 1.5.X APIs; `getAdinfo()` and `getAdBreakInfo()` must return null if the player is outside the Ad break boundaries. 
 
+### Ad Complete
+
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Ad Complete**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackAdComplete()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackAdComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete)` </li> </ul> |
 
-### Ad Complete (1.x)
+#### Ad Complete (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -651,9 +621,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Ad Complete (2.x)
+#### Ad Complete (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -663,15 +631,15 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 ## VHL Code Comparison: CHAPTER PLAYBACK
+
+### Chapter Start
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| _**Chapter Start**_ **1.x:** <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> <li> `VideoPlayerPlugin.trackChapterStart()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createChapterObject` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
+| <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> <li> `VideoPlayerPlugin.trackChapterStart()` </li> </ul> | <ul> <li> `MediaHeartbeat.createChapterObject` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
 
-### Chapter Start (1.x)
+#### Chapter Start (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -680,17 +648,13 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
     return this._player.getChapterInfo();
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js) 
-
-### Chapter Start (2.x)
+#### Chapter Start (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -704,13 +668,13 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Chapter Skip
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Chapter Skip**_ **1.x:** <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip)` </li> </ul> |
+| <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip)` </li> </ul> |
 
-### Chapter Skip (1.x)
+#### Chapter Skip (1.x)
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
@@ -718,12 +682,10 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/sample.video.player.plugin.delegate.js) 
-
 >[!NOTE]
 >In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries. 
 
-### Chapter Skip (2.x)
+#### Chapter Skip (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
@@ -731,13 +693,13 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Chapter Custom Metadata
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Chapter Custom Metadata**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackChapterStart()` </li> <li> `AdobeAnalyticsPlugin.setChapterMetadata()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.createChapterObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackChapterStart()` </li> <li> `AdobeAnalyticsPlugin.setChapterMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createChapterObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
 
-### Chapter Custom Metadata (1.x)
+#### Chapter Custom Metadata (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -749,9 +711,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Chapter Custom Metadata (2.x)
+#### Chapter Custom Metadata (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -767,13 +727,13 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Chapter Complete
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Chapter Complete**_ **1.x:** <ul> <li> `trackChapterComplete()` </li> </ul> | ... **2.x:** <ul> <li> `trackEvent(MediaHeartbeat.Event.ChapterComplete)` </li> </ul> |
+| <ul> <li> `trackChapterComplete()` </li> </ul> | <ul> <li> `trackEvent(MediaHeartbeat.Event.ChapterComplete)` </li> </ul> |
 
-### Chapter Complete (1.x)
+#### Chapter Complete (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -782,9 +742,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Chapter Complete (1.x)
+#### Chapter Complete (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -793,15 +751,15 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-[Sample Player 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
 ## VHL Code Comparison: OTHER EVENTS
+
+### Bitrate Change
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| _**Bitrate Change**_ **1.x:** <ul> <li> `VideoPlayerPlugin.trackBitrateChange()` </li> </ul> | ... **2.x:** <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange)` </li> </ul> |
+| <ul> <li> `VideoPlayerPlugin.trackBitrateChange()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange)` </li> </ul> |
 
-### Bitrate Change (1.x)
+#### Bitrate Change (1.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -812,9 +770,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
-
-### Bitrate Change (2.x)
+#### Bitrate Change (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -825,13 +781,13 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
+### Video Resume
 
 | 1.x API | 2.x API |
 | --- | --- |
-| _**Video Resume**_ **1.x:** <ul> <li> `VideoInfo.resumed()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> <li> `VideoPlayerPlugin.trackVideoLoad()` </li> </ul> | ... **2.x:** <ul> <li> `MediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| <ul> <li> `VideoInfo.resumed()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> <li> `VideoPlayerPlugin.trackVideoLoad()` </li> </ul> | <ul> <li> `MediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-### Video Resume (1.x)
+#### Video Resume (1.x)
 
 ```js
 this._videoInfo.resumed=true;
@@ -844,9 +800,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-[Sample 1.x Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/player/video.player.js) 
-
-### Video Resume (2.x)
+#### Video Resume (2.x)
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -858,7 +812,5 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
     this._mediaHeartbeat.trackSessionStart(mediaInfo, contextData);
 };
 ```
-
-[Sample 2.x Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js) 
 
 For more information on tracking video with 2.x, see [Track Core Video Playback](../../sdk-implement/track-av-playback/track-core-overview.md).
