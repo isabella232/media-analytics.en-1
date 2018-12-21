@@ -10,7 +10,7 @@ uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 Custom Video Tracking utilizes the [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
 
 * In JavaScript: `s.tl()` function
-* In Mobile Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), \[trackAction() OTT\]\(link to local file: help/sdk-implement/analytics-with-ott/track-app-actions.md \)
+* In Mobile Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](../../sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 

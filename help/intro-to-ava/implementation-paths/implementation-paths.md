@@ -13,7 +13,7 @@ For each of these implementation paths, customers need to contact their Sales Re
 
 * **Client Side -** These are Media Analytics-only integrations. You can choose Video Heartbeat SDK and/or the Media Collection API integrations. This path can be used across any video player, including customer and/or OVP players such as Brightcove, Ooyala, thePlatform, and so on.
 
-  If Media Analytics is your intended path, see the [Media SDK Implementation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_stand-implement.html) and the \[Media Collection API\]\(../../media-collection-api/mc-api-overview.md\).
+  If Media Analytics is your intended path, see the [Media SDK Implementation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_stand-implement.html) and the [Media Collection API](../../media-collection-api/mc-api-overview.md).
 
   >[!IMPORTANT]
   >
@@ -32,6 +32,6 @@ For each of these implementation paths, customers need to contact their Sales Re
     * Robust set of events and metadata to ensure accuracy across QoS buffering or mobile connectivity interruptions issues and end-user interactions such as seeking, pausing, and backgrounding on mobile. 
     * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 
-  TVSDK is already integrated with the Media Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. Primetime also supports the partnership with Nielsen. To leverage Primetime, follow the same guidelines and prerequisites found in \[Client-side\]\(../../intro-to-ava/implementation-paths/client-side-path.md\) along with the following docs for your platform(s): [Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html).
+  TVSDK is already integrated with the Media Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. Primetime also supports the partnership with Nielsen. To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](../../intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s): [Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html).
 
   You should also contact your Sales Representative/Account Manger to discuss what you need to do to purchase TVSDK.
