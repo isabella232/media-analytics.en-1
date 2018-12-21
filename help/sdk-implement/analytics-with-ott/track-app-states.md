@@ -13,13 +13,13 @@ States are the different screens or views in your application. Each time a new s
 
 `trackState` is typically called each time a new screen is loaded.
 
-* **Roku -** 
+* **Roku:** 
 
   ```js
   ADBMobile().trackState("State Name", {})
   ```
 
-* **Chromecast -** 
+* **Chromecast:** 
 
   ```js
   ADBMobile.analytics.trackState("State Name",{});
@@ -29,7 +29,7 @@ The state name is reported in the `View State` variable in Adobe Mobile services
 
 In addition to `State Name`, you can send additional context data with each track action call:
 
-* **Roku -** 
+* **Roku:** 
 
   ```js
   dictionary = { } 
@@ -37,7 +37,7 @@ In addition to `State Name`, you can send additional context data with each trac
   ADBMobile().trackState("Home Screen", dictionary)
   ```
 
-* **Chromecast -** 
+* **Chromecast:** 
 
   ```js
   var dictionary = { }; 

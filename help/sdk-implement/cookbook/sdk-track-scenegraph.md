@@ -54,18 +54,18 @@ The connector bridge is designed to perform as follows:
 
 |  Category  | Method Name  | Description  |
 |---|---|---|
-|  ***Constants*** | ||
+|  **Constants** | ||
 |  | `sceneGraphConstants`  | Returns an object containing `SceneGraphConstants`. Refer to the table above for details.  |
 |  | | |
-|  ***Debug Logging*** | ***For more information refer to the Debug Logging section of the legacy SDK.*** ||
+|  **Debug Logging** | For more information refer to the Debug Logging section of the legacy SDK. ||
 |  | `setDebugLogging`  | SceneGraph API to set debug logging on the ADBMobile SDK.  |
 |  | `getDebugLogging`  | SceneGraph API to get debug logging from the ADBMobile SDK.  |
 |  | | |
-|  ***Privacy Status / Opt-Out*** | ***For more information, refer to the Opt-Out/Privacy Status section of the legacy SDK.*** ||
+|  **Privacy Status / Opt-Out** | For more information, refer to the Opt-Out/Privacy Status section of the legacy SDK. ||
 |  | `setPrivacyStatus`  | SceneGraph API to set privacy status on the ADBMobile SDK.  |
 |  | `getPrivacyStatus`  | SceneGraph API to get privacy status from the ADBMobile SDK.  |
 |  | | |
-|  ***Analytics*** | ***For more information refer to the Analytics section of the legacy SDK.*** ||
+|  **Analytics** | For more information refer to the Analytics section of the legacy SDK. ||
 |  | `trackState`  | SceneGraph API to track state on the ADBMobile SDK.  |
 |  | `trackAction`  | SceneGraph API to track action on the ADBMobile SDK.  |
 |  | `trackingIdentifier`  | SceneGraph API to get a tracking identifier from the ADBMobile SDK.  |
@@ -73,18 +73,18 @@ The connector bridge is designed to perform as follows:
 |  | `setUserIdentifier`  | SceneGraph API to set the user identifier on the ADBMobile SDK.  |
 |  | `getAllIdentifiers`  | SceneGraph API retrieves all user identities known and persisted by the Roku SDK.  |
 |  | | |
-|  ***Experience Cloud*** | ***For more information refer to the Experience Cloud section of the legacy SDK.*** ||
+|  **Experience Cloud** | For more information refer to the Experience Cloud section of the legacy SDK. ||
 |  | `visitorSyncIdentifiers`  | SceneGraph API to sync Experience Cloud identifiers on the ADBMobile SDK.  |
 |  | `visitorMarketingCloudID`  | SceneGraph API to get Visitor Experience Cloud ID from the ADBMobile SDK.  |
 |  | | |
-|  ***Audience Manager*** | ***For more information refer to the Audience Manager section of the legacy SDK.*** ||
+|  **Audience Manager** | For more information refer to the Audience Manager section of the legacy SDK. ||
 |  | `audienceSubmitSignal`  | SceneGraph API to send an audience management signal with trait.  |
 |  | `audienceVisitorProfile`  | SceneGraph API to get an audience manager visitor profile from the ADBMobile SDK.  |
 |  | `audienceDpid`  | SceneGraph API to get an audience Dpid from the ADBMobile SDK.  |
 |  | `audienceDpuuid`  | SceneGraph API to get an audience Dpuuid from the ADBMobile SDK.  |
 |  | `audienceSetDpidAndDpuuid`  | SceneGraph API to set audience Dpid and Dpuuid on the ADBMobile SDK.  |
 |  | | |
-|  ***MediaHeartbeat*** | ***For more information refer to the MediaHeartbeat section of the legacy SDK.*** ||
+|  **MediaHeartbeat** | For more information refer to the MediaHeartbeat section of the legacy SDK. ||
 |  | `mediaTrackLoad`  | SceneGraph API to load video content for MediaHeartbeat tracking.  |
 |  | mediaTrackStart  | SceneGraph API to start video tracking session using MediaHeartbeat.  |
 |  | `mediaTrackUnload`  | SceneGraph API to unload video content from MediaHeartbeat tracking.  |
@@ -119,27 +119,25 @@ The connector bridge is designed to perform as follows:
 
 ### adbmobile.brs
 
-|  Name  | API Signature  | Input  | Return Type&nbsp;&nbsp;  |
+|  Name  | API Signature&nbsp;&nbsp;  | Input  | Return Type&nbsp;&nbsp;  |
 |---|---|---|---|
-|  `getADBMobileConnectorInstance`  | `ADBMobile().getADBMobileConnectorInstance()`  | `adbmobileTask`  | `ADBMobileConnector`  |
-|  *Comments:* Refer to the `ADBMobileConnector` API reference for details.  ||||
-|  ||||
+|  `getADBMobileConnectorInstance`  | `ADBMobile().` <br/>&nbsp;&nbsp; `getADBMobileConnectorInstance()`  | `adbmobileTask`  | `ADBMobileConnector`  |
 |  `sgConstants`  | `ADBMobile().sgConstants()`  | None  | `SceneGraphConstants`  |
-|  *Comments:* Refer to the `SceneGraphConstants` API reference for details.  ||||
 
-In addition to methods above, `ADBMobileConnector` also exposes all the `ADBMobile` constants for the following:
+>[!NOTE]
+>Refer to the `ADBMobileConnector` API reference for details.  
 
 ### ADBMobile Constants
 
-|  Feature  | Constant Name  | Description&nbsp;&nbsp;  |
+|  Feature  | Constant Name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|---|
 |  Versioning  | `version`  | Constant for retreiving AdobeMobileLibrary verison info  |
 |  Privacy/opt-out  | `PRIVACY_STATUS_OPT_IN`  | Constant for privacy status opted in  |
 |   | `PRIVACY_STATUS_OPT_OUT`  | Constant for privacy status opted out  |
-|  MediaHeartbeat Constants  | Refer to the constants on this page: [Media Heartbeat Methods](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/r_vhl_med-hrbts-meth.html).  | Use these constants for using MediaHeartbeat APIs  |
-|  Standard Metadata  | Refer to the constants on this page: [Standard Metadata Parameters](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/c_vhl_stand-meta_roku.html).  | Use these constants to attach Standard Video/Ad metadata in MediaHeartbeat APIs  |
+|  MediaHeartbeat Constants  | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/r_vhl_med-hrbts-meth.html).  | Use these constants with MediaHeartbeat APIs  |
+|  Standard Metadata  | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/c_vhl_stand-meta_roku.html).  | Use these constants to attach Standard Video/Ad metadata in MediaHeartbeat APIs  |
 
-Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnet because they do not use any components for Brightscript that are unavailable in SceneGraph nodes. For more information on these methods, refer to the table below:
+Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. For more information on these methods, refer to the table below:
 
 ### Global Methods for MediaHeartbeat
 

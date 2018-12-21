@@ -15,13 +15,13 @@ Set and get the unique user ID on the ADBMobile SDK as follows:
 
 1. **Set:**
 
-   * **Roku -** 
+   * **Roku:** 
    
      ```    
      ADBMobile().setUserIdentifer("app-generated-unique-id")
      ```
    
-   * **Chromecast -** 
+   * **Chromecast:** 
    
      ```    
      ADBMobile().config.setUserIdentifer("app-generated-unique-id");
@@ -29,13 +29,13 @@ Set and get the unique user ID on the ADBMobile SDK as follows:
 
 1. **Get:**
 
-   * **Roku -** 
+   * **Roku:** 
    
      ```    
      vid = ADBMobile().userIdentifer()
      ```
    
-   * **Chromecast -** 
+   * **Chromecast:** 
    
      ```    
      vid = ADBMobile().config.getUserIdentifer();
