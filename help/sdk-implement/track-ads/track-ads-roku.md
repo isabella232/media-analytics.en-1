@@ -2,9 +2,7 @@
 seo-title: Track ads on Roku
 title: Track ads on Roku
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track ads on Roku{#track-ads-on-roku}

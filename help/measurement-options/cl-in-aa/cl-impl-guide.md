@@ -2,9 +2,7 @@
 seo-title: Custom Link implementation guide
 title: Custom Link implementation guide
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Custom Link implementation guide{#custom-link-implementation-guide}

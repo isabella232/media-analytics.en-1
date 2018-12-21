@@ -2,9 +2,7 @@
 seo-title: Track quality of experience on Android
 title: Track quality of experience on Android
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track quality of experience on Android{#track-quality-of-experience-on-android}

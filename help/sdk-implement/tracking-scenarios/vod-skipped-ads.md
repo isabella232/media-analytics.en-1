@@ -2,9 +2,7 @@
 seo-title: VOD playback with skipped ads
 title: VOD playback with skipped ads
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD playback with skipped ads{#vod-playback-with-skipped-ads}

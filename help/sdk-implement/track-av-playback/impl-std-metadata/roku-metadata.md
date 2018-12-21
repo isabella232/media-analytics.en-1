@@ -2,9 +2,7 @@
 seo-title: Roku metadata keys
 title: Roku metadata keys
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Roku metadata keys{#roku-metadata-keys}

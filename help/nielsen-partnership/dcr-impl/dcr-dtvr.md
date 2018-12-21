@@ -2,9 +2,7 @@
 seo-title: DTVR/MTVR implementation
 title: DTVR/MTVR implementation
 uuid: eda6e89e-67e4-4196-9842-703b8a025ade
-index: y
-internal: n
-snippet: y
+
 ---
 
 # DTVR/MTVR implementation{#dtvr-mtvr-implementation}

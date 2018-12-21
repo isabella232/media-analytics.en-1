@@ -2,9 +2,7 @@
 seo-title: Media detail
 title: Media detail
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Media detail{#media-detail}

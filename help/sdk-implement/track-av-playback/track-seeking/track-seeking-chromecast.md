@@ -2,9 +2,7 @@
 seo-title: Track seeking on Chromecast
 title: Track seeking on Chromecast
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track seeking on Chromecast{#track-seeking-on-chromecast}

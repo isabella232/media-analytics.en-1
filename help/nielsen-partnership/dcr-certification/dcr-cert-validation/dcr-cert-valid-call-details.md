@@ -2,9 +2,7 @@
 seo-title: Test call details
 title: Test call details
 uuid: bbbc47f7-1663-43cb-9ddf-f6d723a94ccf
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Test call details{#test-call-details}

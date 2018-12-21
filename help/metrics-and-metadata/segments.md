@@ -2,9 +2,7 @@
 seo-title: Segments
 title: Segments
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Segments{#segments}

@@ -2,9 +2,7 @@
 seo-title: Download SDKs
 title: Download SDKs
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Download SDKs{#download-sdks}

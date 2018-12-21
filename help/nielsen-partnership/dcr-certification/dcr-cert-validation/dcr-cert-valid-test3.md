@@ -2,9 +2,7 @@
 seo-title: Test 3  Opt-out Nielsen
 title: Test 3  Opt-out Nielsen
 uuid: 4b96209f-b336-475e-a848-618caea9c184
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Test 3: Opt-out Nielsen{#test-opt-out-nielsen}

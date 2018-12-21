@@ -4,9 +4,7 @@ title: VOD playback with pre-roll ads
 description: In this scenario, pre-roll ads have been inserted before the main content.
 seo-description: In this scenario in Adobe Media Analytics, pre-roll ads have been inserted before the main content.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD playback with pre-roll ads{#vod-playback-with-pre-roll-ads}

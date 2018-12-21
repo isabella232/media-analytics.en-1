@@ -2,9 +2,7 @@
 seo-title: Track errors on Chromecast
 title: Track errors on Chromecast
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track errors on Chromecast{#track-errors-on-chromecast}

@@ -2,9 +2,7 @@
 seo-title: VOD one tracker for multiple sessions
 title: VOD one tracker for multiple sessions
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD one tracker for multiple sessions{#vod-one-tracker-for-multiple-sessions}

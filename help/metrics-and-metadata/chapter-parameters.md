@@ -2,9 +2,7 @@
 seo-title: Chapter parameters
 title: Chapter parameters
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Chapter parameters{#chapter-parameters}

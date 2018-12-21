@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Implement standard ad metadata on Roku
 title: Implement standard ad metadata on Roku
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Implement standard ad metadata on Roku{#implement-standard-ad-metadata-on-roku}

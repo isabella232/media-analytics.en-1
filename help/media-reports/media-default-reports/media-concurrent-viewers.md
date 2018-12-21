@@ -2,9 +2,7 @@
 seo-title: Media concurrent viewers
 title: Media concurrent viewers
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Media concurrent viewers{#media-concurrent-viewers}

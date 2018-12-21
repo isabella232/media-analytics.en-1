@@ -2,9 +2,7 @@
 seo-title: Media reports enablement
 title: Media reports enablement
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Media reports enablement{#media-reports-enablement}

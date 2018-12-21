@@ -2,9 +2,7 @@
 seo-title: Create a new Debug report
 title: Create a new Debug report
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Create a new Debug report{#create-a-new-debug-report}

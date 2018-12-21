@@ -2,9 +2,7 @@
 seo-title: Data comparison
 title: Data comparison
 uuid: 121a3d73-4e7a-4c12-b5c6-1dde5cffd82e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Data comparison{#data-comparison}

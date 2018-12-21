@@ -2,9 +2,7 @@
 seo-title: Measuring audio and video in Adobe Analytics
 title: Measuring audio and video in Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Measuring audio and video in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}

@@ -2,9 +2,7 @@
 seo-title: 2.1 for Android
 title: 2.1 for Android
 uuid: e28b349e-e637-40d3-8081-99e2170caf54
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Android 2.1{#for-android}

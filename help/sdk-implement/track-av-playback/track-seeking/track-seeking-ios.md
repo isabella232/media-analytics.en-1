@@ -2,9 +2,7 @@
 seo-title: Track seeking on iOS
 title: Track seeking on iOS
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track seeking on iOS{#track-seeking-on-ios}

@@ -2,9 +2,7 @@
 seo-title: Opt-out settings
 title: Opt-out settings
 uuid: 5475be14-de41-49f6-a717-7b7fbf982890
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Opt-out settings{#opt-out-settings}

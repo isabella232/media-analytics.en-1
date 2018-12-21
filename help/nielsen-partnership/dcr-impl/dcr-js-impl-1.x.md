@@ -2,9 +2,7 @@
 seo-title: 1.x for JavaScript
 title: 1.x for JavaScript
 uuid: 415d219b-c3a7-42bf-8fba-70ef829e60eb
-index: y
-internal: n
-snippet: y
+
 ---
 
 # JavaScript 1.x{#x-for-javascript}

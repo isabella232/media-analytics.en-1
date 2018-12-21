@@ -2,9 +2,7 @@
 seo-title: Nielsen hierarchy
 title: Nielsen hierarchy
 uuid: c991dd28-e490-4fad-99bc-1c3f44d8219e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Nielsen hierarchy{#nielsen-hierarchy}

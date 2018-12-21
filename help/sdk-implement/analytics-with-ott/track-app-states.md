@@ -2,9 +2,7 @@
 seo-title: Track app states
 title: Track app states
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track app states{#track-app-states}

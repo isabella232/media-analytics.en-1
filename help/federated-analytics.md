@@ -2,9 +2,7 @@
 seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Federated Analytics{#federated-analytics}

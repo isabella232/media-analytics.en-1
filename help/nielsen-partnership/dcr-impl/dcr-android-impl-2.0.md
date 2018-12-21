@@ -2,9 +2,7 @@
 seo-title: 2.0 for Android
 title: 2.0 for Android
 uuid: 43138b42-9756-4d00-86a7-90c05b51feea
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Android 2.0{#for-android}

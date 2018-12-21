@@ -2,9 +2,7 @@
 seo-title: iOS metadata keys
 title: iOS metadata keys
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-index: y
-internal: n
-snippet: y
+
 ---
 
 # iOS metadata keys{#ios-metadata-keys}

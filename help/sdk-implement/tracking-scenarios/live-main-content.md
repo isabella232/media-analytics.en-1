@@ -2,9 +2,7 @@
 seo-title: Live main content
 title: Live main content
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Live main content{#live-main-content}

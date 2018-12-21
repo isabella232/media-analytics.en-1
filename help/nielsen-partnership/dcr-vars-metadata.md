@@ -2,9 +2,7 @@
 seo-title: Variables and metadata
 title: Variables and metadata
 uuid: 2b44a399-9c37-4169-be06-1da4ac91131c
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Variables and metadata{#variables-and-metadata}

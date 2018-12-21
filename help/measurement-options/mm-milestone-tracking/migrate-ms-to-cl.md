@@ -2,9 +2,7 @@
 seo-title: Migrating from Milestone to Custom Link
 title: Migrating from Milestone to Custom Link
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Migrating from Milestone to Custom Link{#migrating-from-milestone-to-custom-link}

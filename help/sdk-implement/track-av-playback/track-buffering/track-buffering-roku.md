@@ -2,9 +2,7 @@
 seo-title: Track buffering on Roku
 title: Track buffering on Roku
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track buffering on Roku{#track-buffering-on-roku}

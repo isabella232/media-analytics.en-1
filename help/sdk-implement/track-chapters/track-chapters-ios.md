@@ -2,9 +2,7 @@
 seo-title: Track chapters and segments on iOS
 title: Track chapters and segments on iOS
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track chapters and segments on iOS{#track-chapters-and-segments-on-ios}

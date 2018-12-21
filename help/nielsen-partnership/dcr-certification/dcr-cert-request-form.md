@@ -2,9 +2,7 @@
 seo-title: Certification request form
 title: Certification request form
 uuid: e4c32360-65df-4d5a-b74d-e00a2f9862be
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Certification request form{#certification-request-form}
