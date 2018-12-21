@@ -9,9 +9,7 @@ snippet: y
 
 # SDK debugging{#sdk-debugging}
 
-You can enable or disable logging for Heartbeats.
-
-The Video Heartbeat Library (VHL) provides an extensive tracing/logging mechanism that is put in place throughout the entire video-tracking stack. You can enable or disable this logging for the VHL by setting the `debugLogging` flag on the Config object.
+You can enable and disable logging. The Media SDK provides an extensive tracing/logging mechanism that is put in place throughout the entire video-tracking stack. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
 
 **Sample code for debug logging:**
 

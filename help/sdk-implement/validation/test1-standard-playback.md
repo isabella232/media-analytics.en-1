@@ -11,7 +11,7 @@ snippet: y
 
 This test case is required as part of the certification request form. It validates general playback and sequencing.
 
-Download the certification request form here: [Certification request form](../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md).
+Download the certification request form here: [Certification Request Form](cert_req_form_nielsen.docx).
 
 Video implementations are composed of the following types of tracking calls:
 

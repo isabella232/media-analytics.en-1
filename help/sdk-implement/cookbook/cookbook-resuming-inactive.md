@@ -11,7 +11,7 @@ snippet: y
 
 **Long Pauses -**
 
-The VA library automatically tracks how long the video playback is in one of the following inactive states:
+The Media SDK automatically tracks how long the video playback is in one of the following inactive states:
 
 * Paused
 * Seeking
@@ -22,7 +22,7 @@ If a video tracking session remains in an inactive state for longer than 30 minu
 
 **Manually resume previously closed session -**
 
-The VA library will only automatically resume sessions if the application was not closed. If the application stores user data and has the capability to resume a previously closed video, it is possible to manually trigger a resume event. When starting the video tracking session, set the optional Video Resumed property.
+The Media SDK will only automatically resume sessions if the application was not closed. If the application stores user data and has the capability to resume a previously closed video, it is possible to manually trigger a resume event. When starting the video tracking session, set the optional Video Resumed property.
 
 * **Android:** 
 
