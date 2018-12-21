@@ -2,9 +2,7 @@
 seo-title: Getting started with Adobe/Nielsen
 title: Getting started with Adobe/Nielsen
 uuid: 3a45a2d9-af88-4702-b9e3-856f72f2ca44
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Getting started with Adobe/Nielsen{#getting-started-with-adobe-nielsen}

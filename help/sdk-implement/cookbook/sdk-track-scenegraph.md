@@ -2,9 +2,7 @@
 seo-title: Tracking in SceneGraph (Roku)
 title: Tracking in SceneGraph (Roku)
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Tracking in SceneGraph (Roku){#tracking-in-scenegraph-roku}

@@ -2,9 +2,7 @@
 seo-title: Sending ping events
 title: Sending ping events
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Sending ping events{#sending-ping-events}

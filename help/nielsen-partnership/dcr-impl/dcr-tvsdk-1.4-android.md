@@ -2,9 +2,7 @@
 seo-title: TVSDK 1.4 for Android
 title: TVSDK 1.4 for Android
 uuid: acadd835-f162-45b5-a2c4-af7345b0474e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # TVSDK 1.4 for Android{#tvsdk-for-android}

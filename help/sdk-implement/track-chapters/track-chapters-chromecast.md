@@ -2,9 +2,7 @@
 seo-title: Track chapters and segments on Chromecast
 title: Track chapters and segments on Chromecast
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track chapters and segments on Chromecast{#track-chapters-and-segments-on-chromecast}

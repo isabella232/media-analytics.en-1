@@ -2,9 +2,7 @@
 seo-title: Audience Manager enablement
 title: Audience Manager enablement
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Audience Manager enablement{#audience-manager-enablement}

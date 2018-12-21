@@ -2,9 +2,7 @@
 seo-title: Ad parameters
 title: Ad parameters
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Ad parameters{#ad-parameters}

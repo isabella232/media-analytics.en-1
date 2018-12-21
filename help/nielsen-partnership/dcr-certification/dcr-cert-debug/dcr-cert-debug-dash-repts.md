@@ -2,9 +2,7 @@
 seo-title: Debug dashboards and reports
 title: Debug dashboards and reports
 uuid: 3b6fbc58-d164-4067-9dd6-f15d9c5921b2
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Debug dashboards and reports{#debug-dashboards-and-reports}

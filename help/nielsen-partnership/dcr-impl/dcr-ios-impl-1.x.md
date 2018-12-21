@@ -2,9 +2,7 @@
 seo-title: 1.x for iOS
 title: 1.x for iOS
 uuid: 0a4b89c2-c612-4dee-b1c5-18be0f951dcd
-index: y
-internal: n
-snippet: y
+
 ---
 
 # iOS 1.x{#x-for-ios}

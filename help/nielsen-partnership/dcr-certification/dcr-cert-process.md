@@ -2,9 +2,7 @@
 seo-title: Certification process
 title: Certification process
 uuid: 05b42891-e607-4961-b2a6-7bba0d6d3693
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Certification process{#certification-process}

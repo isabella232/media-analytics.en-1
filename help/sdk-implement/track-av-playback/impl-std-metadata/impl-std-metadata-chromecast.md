@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Implement standard metadata on Chromecast
 title: Implement standard metadata on Chromecast
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Implement standard metadata on Chromecast{#implement-standard-metadata-on-chromecast}

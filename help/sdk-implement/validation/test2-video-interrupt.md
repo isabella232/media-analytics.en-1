@@ -2,9 +2,7 @@
 seo-title: Test 2  Video interruption
 title: Test 2  Video interruption
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Test 2: Video interruption{#test-video-interruption}

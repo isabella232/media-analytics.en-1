@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Implement standard ad metadata on Android
 title: Implement standard ad metadata on Android
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Implement standard ad metadata on Android{#implement-standard-ad-metadata-on-android}

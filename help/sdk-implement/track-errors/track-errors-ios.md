@@ -2,9 +2,7 @@
 seo-title: Track errors on iOS
 title: Track errors on iOS
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track errors on iOS{#track-errors-on-ios}

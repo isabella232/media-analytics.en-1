@@ -2,9 +2,7 @@
 seo-title: VOD playback with a skipped chapter
 title: VOD playback with a skipped chapter
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD playback with a skipped chapter{#vod-playback-with-a-skipped-chapter}

@@ -2,9 +2,7 @@
 seo-title: Set up Android
 title: Set up Android
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Set up Android{#set-up-android}

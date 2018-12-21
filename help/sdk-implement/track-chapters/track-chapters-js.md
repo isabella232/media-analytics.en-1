@@ -2,9 +2,7 @@
 seo-title: Track chapters and segments on JavaScript
 title: Track chapters and segments on JavaScript
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track chapters and segments on JavaScript{#track-chapters-and-segments-on-javascript}

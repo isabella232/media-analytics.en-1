@@ -2,9 +2,7 @@
 seo-title: SDK debugging
 title: SDK debugging
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-index: y
-internal: n
-snippet: y
+
 ---
 
 # SDK debugging{#sdk-debugging}

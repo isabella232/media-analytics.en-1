@@ -2,9 +2,7 @@
 seo-title: Implementation examples
 title: Implementation examples
 uuid: a4433296-113e-452d-a35a-084c93a076c5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Implementation examples{#implementation-examples}

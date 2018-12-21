@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Implement standard metadata on iOS
 title: Implement standard metadata on iOS
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Implement standard metadata on iOS{#implement-standard-metadata-on-ios}

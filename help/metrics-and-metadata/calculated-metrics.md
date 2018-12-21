@@ -2,9 +2,7 @@
 seo-title: Calculated metrics
 title: Calculated metrics
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Calculated metrics{#calculated-metrics}

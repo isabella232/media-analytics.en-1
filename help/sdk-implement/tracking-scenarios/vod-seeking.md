@@ -2,9 +2,7 @@
 seo-title: VOD playback with seeking in the main content
 title: VOD playback with seeking in the main content
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD playback with seeking in the main content{#vod-playback-with-seeking-in-the-main-content}

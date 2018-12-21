@@ -2,9 +2,7 @@
 seo-title: 2.0 for iOS
 title: 2.0 for iOS
 uuid: 7d182ee8-4788-4c2a-a8ae-da591cff0db3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # iOS 2.0{#for-ios}

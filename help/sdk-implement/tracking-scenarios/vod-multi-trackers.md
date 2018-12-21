@@ -2,9 +2,7 @@
 seo-title: VOD multiple trackers in parallel
 title: VOD multiple trackers in parallel
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD multiple trackers in parallel{#vod-multiple-trackers-in-parallel}

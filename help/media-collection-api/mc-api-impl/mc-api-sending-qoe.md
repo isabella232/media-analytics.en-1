@@ -2,9 +2,7 @@
 seo-title: Sending QoE data
 title: Sending QoE data
 uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Sending QoE data{#sending-qoe-data}

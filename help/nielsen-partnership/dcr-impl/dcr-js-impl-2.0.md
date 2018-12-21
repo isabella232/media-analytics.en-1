@@ -2,9 +2,7 @@
 seo-title: 2.0 for JavaScript
 title: 2.0 for JavaScript
 uuid: 127b3f48-a7b4-4354-a398-96b3a2ed52a6
-index: y
-internal: n
-snippet: y
+
 ---
 
 # JavaScript 2.0{#for-javascript}

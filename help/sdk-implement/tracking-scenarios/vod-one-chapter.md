@@ -2,9 +2,7 @@
 seo-title: VOD playback with one chapter
 title: VOD playback with one chapter
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-index: y
-internal: n
-snippet: y
+
 ---
 
 # VOD playback with one chapter{#vod-playback-with-one-chapter}

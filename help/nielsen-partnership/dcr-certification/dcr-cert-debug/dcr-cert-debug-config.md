@@ -2,9 +2,7 @@
 seo-title: Configure Adobe Debug
 title: Configure Adobe Debug
 uuid: 4478e04c-2225-4cab-b91d-1427f19bd72a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configure Adobe Debug{#configure-adobe-debug}

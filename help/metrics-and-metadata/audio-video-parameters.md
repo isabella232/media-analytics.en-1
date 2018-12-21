@@ -2,9 +2,7 @@
 seo-title: Audio and video parameters
 title: Audio and video parameters
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Audio and video parameters{#audio-and-video-parameters}

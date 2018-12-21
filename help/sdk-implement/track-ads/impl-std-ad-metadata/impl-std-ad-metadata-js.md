@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Implement standard ad metadata on JavaScript
 title: Implement standard ad metadata on JavaScript
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Implement standard ad metadata on JavaScript{#implement-standard-ad-metadata-on-javascript}

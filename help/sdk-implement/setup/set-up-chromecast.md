@@ -2,9 +2,7 @@
 seo-title: Set up Chromecast
 title: Set up Chromecast
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Set up Chromecast{#set-up-chromecast}

@@ -2,9 +2,7 @@
 seo-title: Test 1  Standard playback
 title: Test 1  Standard playback
 uuid: 530477b8-4de3-449d-bb6d-a47dadd1da5a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Test 1: Standard playback{#test-standard-playback}

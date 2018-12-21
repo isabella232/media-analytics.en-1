@@ -2,9 +2,7 @@
 seo-title: Custom metadata support
 title: Custom metadata support
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Custom metadata support{#custom-metadata-support}

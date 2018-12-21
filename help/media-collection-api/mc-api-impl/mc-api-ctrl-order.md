@@ -2,9 +2,7 @@
 seo-title: Controlling the order of events
 title: Controlling the order of events
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Controlling the order of events{#controlling-the-order-of-events}

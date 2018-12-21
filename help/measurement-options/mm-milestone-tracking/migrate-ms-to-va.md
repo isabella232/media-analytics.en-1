@@ -2,9 +2,7 @@
 seo-title: Migrating from Milestone to Media Analytics
 title: Migrating from Milestone to Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Migrating from Milestone to Media Analytics{#migrating-from-milestone-to-media-analytics}

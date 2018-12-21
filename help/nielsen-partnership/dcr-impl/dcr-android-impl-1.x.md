@@ -2,9 +2,7 @@
 seo-title: 1.x for Android
 title: 1.x for Android
 uuid: e86fbf06-275d-4a40-8575-db9515b7a034
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Android 1.x{#x-for-android}

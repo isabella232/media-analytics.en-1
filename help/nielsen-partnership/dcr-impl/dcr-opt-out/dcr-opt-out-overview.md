@@ -2,9 +2,7 @@
 seo-title: Opt-Out overview
 title: Opt-Out overview
 uuid: 9b7f7570-aeb8-42d5-a758-f6010c523ddf
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Opt-Out overview{#opt-out-overview}

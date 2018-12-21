@@ -2,9 +2,7 @@
 seo-title: Milestone overview
 title: Milestone overview
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Milestone overview{#milestone-overview}

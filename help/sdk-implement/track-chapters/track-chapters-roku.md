@@ -2,9 +2,7 @@
 seo-title: Track chapters and segments on Roku
 title: Track chapters and segments on Roku
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track chapters and segments on Roku{#track-chapters-and-segments-on-roku}

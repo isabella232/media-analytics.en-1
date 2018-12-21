@@ -2,9 +2,7 @@
 seo-title: Track errors on Roku
 title: Track errors on Roku
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track errors on Roku{#track-errors-on-roku}

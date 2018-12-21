@@ -2,9 +2,7 @@
 seo-title: Track core playback on Android
 title: Track core playback on Android
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track core playback on Android{#track-core-playback-on-android}

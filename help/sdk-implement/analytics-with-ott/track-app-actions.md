@@ -2,9 +2,7 @@
 seo-title: Track app actions
 title: Track app actions
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Track app actions{#track-app-actions}
