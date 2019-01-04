@@ -68,7 +68,7 @@ The type of this asset.
 
 ### Asset ID 
 
-| Label | Implementation | Network Parameters | Reporting |
+| Label | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Asset ID** | <ul> <li> **Adobe Constant:** `ASSET_ID` </li> <li> **Key:** `assetid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `vid-123` </li> </ul> | <ul> <li> **Nielsen:** `&ai` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.assetid`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `a:meta:a:nielsen:assetid`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** Nielsen Asset/Program </li> <li> **Context Data:** `a.nielsen.assetid` </li> <li> **Data Feed:** `assetid` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.assetid` </li> </ul> |
 
