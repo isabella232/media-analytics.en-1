@@ -369,7 +369,7 @@ s.Media.segmentByOffsetMilestones
 | `Media.adSegmentByOffsetMilestones` | `s.Media.adSegmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available | 
 -->
 
-table>
+<table>
 <thead>                        
 <tr>
 <th>Milestone
