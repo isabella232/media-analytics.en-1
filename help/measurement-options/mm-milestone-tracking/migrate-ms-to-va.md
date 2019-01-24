@@ -37,7 +37,7 @@ The following tables provide translations between the Milestone solution and the
 -->
 
 <table>
-<th>
+<thead>
 <tr>
 <th>Milestone
 </th>
@@ -67,10 +67,10 @@ s.Media.trackUsingContextData
 </tr>
 <tr>
 <td>
-<p class="p">
+<p>
 <code>Media.contextDataMapping
 </code></p>
-<p class="p"> 
+<p> 
 </p>
 </td>
 <td>
