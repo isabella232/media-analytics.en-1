@@ -146,6 +146,7 @@ processing rules.
 
 ### Optional variables
 
+<!--
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
 | `Media.autoTrack` | `s.Media.autoTrack = ` <br/> &nbsp;&nbsp; `true;` | N/A | We no longer provide pre-built player mappings.  |
@@ -158,10 +159,207 @@ processing rules.
 | `Media.trackOffsetMilestones` | `s.Media.trackOffsetMilestones = ` <br/> &nbsp;&nbsp; `"20,40,60";` | N/A | Media Analytics always tracks progress markers at 10%, 25%, 50%, 75%, 95% |
 | `Media.segmentByMilestones` | `s.Media.segmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available |
 | `Media.segmentByOffsetMilestones` | `s.Media.segmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available | 
+-->
 
+<table>
+<thead>
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>Media.autoTrack
+</code>
+</td>
+<td>
+<pre>
+s.Media.autoTrack
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>We no longer provide pre-built player mappings.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.autoTrackNetStreams
+</code>
+</td>
+<td>
+<pre>
+s.Media.autoTrackNetStreams
+  = true
+</pre>
+</td>
+<td>N/A
+</td>
+<td>We no longer provide pre-built player mappings.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.completeByCloseOffset
+</code>
+</td>
+<td>
+<pre>
+s.Media.completeByCloseOffset
+  = true
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Content Complete only supports a 100% progress marker.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.completeCloseOffsetThreshold
+</code>
+</td>
+<td>
+<pre>
+s.Media.completeCloseOffsetThreshold 
+  = 1
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Content Complete only supports a 100% progress marker.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.playerName
+</code>
+</td>
+<td>
+<pre>
+s.Media.playerName 
+  = "Custom Player Name"
+</pre>
+</td>
+<td>
+<p>SDK Key: 
+<code>playerName
+</code>*
+</p>
+<p>API Key: 
+<code>media.playerName
+</code>
+</p>
+<p> 
+</p>
+</td>
+<td>
+<p>
+<code>MediaHeartbeatConfig.playerName
+</code>
+</p>
+<p> 
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.trackSeconds
+</code>
+</td>
+<td>
+<pre>
+s.Media.trackSeconds
+  = 15
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Media Analytics is set to 10 seconds for content and 1 second for
+ads. No other options are available.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.trackMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.trackMilestones
+  = "25,50,75";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Media Analytics always tracks progress markers at 10%, 25%, 50%,
+75%, 95%
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.trackOffsetMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.trackOffsetMilestones
+  = "20,40,60";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Media Analytics always tracks progress markers at 10%, 25%, 50%,
+75%, 95%
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.segmentByMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.segmentByMilestones
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Auto track is no longer available
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.segmentByOffsetMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.segmentByOffsetMilestones
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Auto track is no longer available
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Ad tracking variables
 
+<!--
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
 | `Media.adTrackSeconds` | `s.Media.adTrackSeconds = ` <br/> &nbsp;&nbsp; `15` | N/A | Media Analytics is set to 10 seconds for content and 1 second for ads. No other options are available.  |
@@ -169,9 +367,111 @@ processing rules.
 | `Media.adTrackOffsetMilestones` | `s.Media.adTrackOffsetMilestones = ` <br/> &nbsp;&nbsp; `"20,40,60";` | N/A | Media Analytics is set to 1 second for ads. No other options are available.  |
 | `Media.adSegmentByMilestones` | `s.Media.adSegmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available |
 | `Media.adSegmentByOffsetMilestones` | `s.Media.adSegmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available | 
+-->
+
+table>
+<thead>                        
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>Media.adTrackSeconds
+</code>
+</td>
+<td>
+<pre>
+s.Media.adTrackSeconds
+  = 15
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Media Analytics is set to 10 seconds for content and 1 second for
+ads. No other options are available.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.adTrackMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.adTrackMilestones
+  = "25,50,75";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Progress markers are not provided by default for ads. Use
+calculated metrics to build ad progress markers.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.adTrackOffsetMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.adTrackOffsetMilestones
+  = "20,40,60";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Media Analytics is set to 1 second for ads. No other options are
+available.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.adSegmentByMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.adSegmentByMilestones
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Auto track is no longer available
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.adSegmentByOffsetMilestones
+</code>
+</td>
+<td>
+<pre>
+s.Media.adSegmentByOffsetMilestones
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Auto track is no longer available
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Media Module methods
 
+<!--
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
 | `Media.open` | `s.Media.open(mediaName, mediaLength, mediaPlayerName)` | `trackSessionStart` | `trackSessionStart(mediaObject, contextData)` |
@@ -193,5 +493,440 @@ processing rules.
 | `Media.stop` | `s.Media.stop(mediaName, mediaOffset)` | `trackPause` `trackEvent` | `trackPause()` `trackEvent(MediaHeartbeat.Event.SeekStart)` `trackEvent(MediaHeartbeat.Event.BufferStart);` |
 | `Media.monitor` | `s.Media.monitor(s, media)` | Use custom or standard metadata to set additional variables | `var customVideoMetadata = {` <br/>&nbsp;&nbsp; `isUserLoggedIn: "false", tvStation: "Sample TV station", programmer: "Sample programmer" };` <br/> `var standardVideoMetadata = {};` <br/> `standardVideoMetadata [MediaHeartbeat.VideoMetadataKeys.EPISODE] = ` <br/> &nbsp;&nbsp; `"Sample Episode"; standardVideoMetadata [MediaHeartbeat.VideoMetadataKeys.SHOW] = ` <br/> &nbsp;&nbsp; `"Sample Show"; mediaObject.setValue( MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, standardVideoMetadata);` |
 | `Media.track` | `s.Media.track(mediaName)` | N/A | Tracking call frequency is automatically set.  | 
+-->
 
+<table>
+<thead>   
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>Media.open
+</code>
+</td>
+<td>
+<pre>
+s.Media.open(mediaName,
+             mediaLength,
+             mediaPlayerName)
+</pre>
+</td>
+<td>
+<code>trackSessionStart
+</code>
+</td>
+<td>
+<pre>
+trackSessionStart(mediaObject, 
+                  contextData)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>mediaName
+</code>
+</td>
+<td>
+<code>mediaName
+</code>: (Required) The name of the video as
+you want it to appear in video reports.
+</td>
+<td>
+<code>name
+</code>
+</td>
+<td>
+<pre>
+createMediaObject(name, 
+                  mediaId, 
+                  length, 
+                  streamType)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>mediaLength
+</code>
+</td>
+<td>
+<code>mediaLength
+</code>: (Required) The length of the video
+in seconds.
+</td>
+<td>
+<code>length
+</code>
+</td>
+<td>
+<pre>
+createMediaObject(name, 
+                  mediaId, 
+                  length, 
+                  streamType)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>mediaPlayerName
+</code>
+</td>
+<td>
+<code>mediaPlayerName
+</code>: (Required) The name of the
+media player used to view the video, as you want it to appear in
+video reports.
+</td>
+<td>
+<code>playerName
+</code>
+</td>
+<td>
+<pre>
+MediaHeartbeatConfig.playerName
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.openAd
+</code>
+</td>
+<td>
+<pre>
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
+</pre>
+</td>
+<td>
+<pre>
+trackEvent(
+  MediaHeartbeat.Event.AdStart, 
+  adObject, 
+  adCustomMetadata);
+</pre>
+</td>
+<td>
+<pre>
+mediaHeartbeat.trackEvent(
+  MediaHeartbeat.Event.AdBreakStart, 
+  adBreakObject);
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>name
+</code>
+</td>
+<td>
+<code>name
+</code>: (Required) The name or ID of the
+ad.
+</td>
+<td>
+<code>name
+</code>
+</td>
+<td>
+<pre>
+createAdObject(name, 
+               adId, 
+               position, 
+               length)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>length
+</code>
+</td>
+<td>
+<code>length
+</code>: (Required) The length of the ad.
+</td>
+<td>
+<code>length
+</code>
+</td>
+<td>
+<pre>
+createAdObject(name, 
+               adId, 
+               position, 
+               length)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>playerName
+</code>
+</td>
+<td>
+<code>playerName
+</code>: (Required) The name of the media
+player used to view the ad.
+</td>
+<td>
+<code>playerName
+</code>
+</td>
+<td>
+<pre>
+MediaHeartbeatConfig.playerName
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>parentName
+</code>
+</td>
+<td>
+<code>parentName
+</code>: The name or ID of the primary
+content where the ad is embedded.
+</td>
+<td>N/A
+</td>
+<td>Automatically inherited
+</td>
+</tr>
+<tr>
+<td>
+<code>parentPod
+</code>
+</td>
+<td>
+<code>parentPod
+</code>: The position in the primary content
+the ad was played.
+</td>
+<td>
+<code>position
+</code>
+</td>
+<td>
+<pre>
+createAdBreakObject(name, 
+                    position, 
+                    startTime)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>parentPodPosition
+</code>
+</td>
+<td>
+<code>parentPodPosition
+</code>: The position within the pod
+where the ad is played.
+</td>
+<td>
+<code>position
+</code>
+</td>
+<td>
+<pre>
+createAdObject(name, 
+               adId, 
+               position, 
+               length)
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>CPM
+</code>
+</td>
+<td>
+<code>CPM
+</code>: The CPM or encrypted CPM (prefixed with a
+"~") that applies to this playback.
+</td>
+<td>N/A
+</td>
+<td>Not available by defulat in Media Analytics
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.click
+</code>
+</td>
+<td>
+<pre>
+s.Media.click(name,offset)
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Use a custom link analytics call to track clicks
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.close
+</code>
+</td>
+<td>
+<pre>
+s.Media.close(mediaName)
+</pre>
+</td>
+<td>
+<code>trackSessionEnd
+</code>
+</td>
+<td>
+<pre>
+trackSessionEnd()
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.complete
+</code>
+</td>
+<td>
+<pre>
+s.Media.complete(name,offset)
+</pre>
+</td>
+<td>
+<code>trackComplete
+</code>
+</td>
+<td>
+<pre>
+trackComplete()
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.play
+</code>
+</td>
+<td>
+<pre>
+s.Media.play(name,
+             offset,
+             segmentNum,
+             segment, 
+             segmentLength)
+</pre>
+</td>
+<td>
+<code>trackPlay
+</code>
+</td>
+<td>
+<pre>
+trackPlay()
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.stop
+</code>
+</td>
+<td>
+<pre>
+s.Media.stop(mediaName,
+             mediaOffset)
+</pre>
+</td>
+<td>
+<code>trackPause
+</code> or 
+<code>trackEvent
+</code>
+</td>
+<td>
+<code>trackPause()
+</code> or
+<code>trackEvent(MediaHeartbeat.Event.SeekStart)
+</code> or
+<code>trackEvent(MediaHeartbeat.Event.BufferStart);
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.monitor
+</code>
+</td>
+<td>
+<pre>
+s.Media.monitor(s, media)
+</pre>
+</td>
+<td>Use custom or standard metadata to set additional
+variables
+</td>
+<td>
+<pre>
+var customVideoMetadata = {
+    isUserLoggedIn: "false",
+    tvStation: "Sample TV station",
+    programmer: "Sample programmer"
+}; 
+
+var standardVideoMetadata = {};
+standardVideoMetadata
+  [MediaHeartbeat.VideoMetadataKeys.EPISODE] = 
+  "Sample Episode";
+standardVideoMetadata
+  [MediaHeartbeat.VideoMetadataKeys.SHOW] = 
+  "Sample Show";
+
+mediaObject.setValue(
+  MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, 
+  standardVideoMetadata);
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.track
+</code>
+</td>
+<td>
+<pre>
+s.Media.track(mediaName)
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Tracking call frequency is automatically set.
+</td>
+</tr>
+</tbody>
+</table>
 
