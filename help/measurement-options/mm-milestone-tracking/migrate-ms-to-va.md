@@ -15,7 +15,7 @@ The following tables provide translations between the Milestone solution and the
 
 ## Migration guide {#section_iyb_pbz_cfb}
 
-**Variable Reference:**
+### Variable Reference
 
 | Milestone Metric | Variable Type | Media Analytics Metric |
 | --- | --- | --- |
@@ -25,16 +25,126 @@ The following tables provide translations between the Milestone solution and the
 | Video Initiates | Event<br/><br/> Type: Counter | Video Initiates |
 | Video Completes | Event<br/><br/> Type: Counter | Content Complete | 
 
-**Media Module variables:**
+### Media Module variables
 
+<!--
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
 | `Media.trackUsingContextData` | `s.Media.trackUsingContextData = ` <br/> &nbsp;&nbsp; `true;` | N/A | All Media Analytics data is only sent using Context Data.  |
 | `Media.contextDataMapping` | `s.Media.contextDataMapping = {` <br/>&nbsp;&nbsp; `"a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones": {` <br/>&nbsp;&nbsp;&nbsp;&nbsp; `25:"event4", 50:"event5", 75:"event6" } };` | N/A | Media Analytics context data is automatically populated into reserved variables. Mapping to eVars, props, and events I no longer needed within the implementation code. Customers can map context data to variables using processing rules.  |
 | `Media.trackVars` | `s.Media.trackVars = ` <br/> &nbsp;&nbsp; `"events, prop2, eVar1, eVar2, eVar3";` | N/A | No longer needed since mapping happens via reserved variables and processing rules.  |
 | `Media.trackEvents` | `s.Media.trackEvents = ` <br/> &nbsp;&nbsp; `"event1, event2, event3, event4, event5, event6, event7"` | N/A | No longer needed since mapping happens via reserved variables and processing rules.  | 
+-->
 
-**Optional variables**
+<table>
+<th>
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>Media.trackUsingContextData
+</code></td>
+<td>
+<pre>
+s.Media.trackUsingContextData
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>All Media Analytics data is only sent using Context Data.
+</td>
+</tr>
+<tr>
+<td>
+<p class="p">
+<code>Media.contextDataMapping
+</code></p>
+<p class="p"> 
+</p>
+</td>
+<td>
+<pre>
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones": {
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Media Analytics context data is automatically populated into
+reserved variables. Mapping to eVars, props, and events I no longer
+needed within the implementation code. Customers can map context
+data to variables using processing rules.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.trackVars
+</code></td>
+<td>
+<pre>
+s.Media.trackVars = 
+  "events,
+  prop2,
+  eVar1,
+  eVar2,
+  eVar3";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>No longer needed since mapping happens via reserved variables and
+processing rules.
+</td>
+</tr>
+<tr>
+<td>
+<code>Media.trackEvents
+</code></td>
+<td>
+<pre>
+s.Media.trackEvents =  
+  "event1,
+  event2,
+  event3,
+  event4,
+  event5,
+  event6,
+  event7"
+</pre>
+</td>
+<td>N/A
+</td>
+<td>No longer needed since mapping happens via reserved variables and
+processing rules.
+</td>
+</tr>
+</tbody>
+</table>
+
+### Optional variables
 
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
@@ -50,7 +160,7 @@ The following tables provide translations between the Milestone solution and the
 | `Media.segmentByOffsetMilestones` | `s.Media.segmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available | 
 
 
-**Ad tracking variables:**
+### Ad tracking variables
 
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
@@ -60,7 +170,7 @@ The following tables provide translations between the Milestone solution and the
 | `Media.adSegmentByMilestones` | `s.Media.adSegmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available |
 | `Media.adSegmentByOffsetMilestones` | `s.Media.adSegmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Auto track is no longer available | 
 
-**Media Module methods:**
+### Media Module methods
 
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
