@@ -43,9 +43,7 @@ The following tables provide translations between the Milestone solution and the
 <tbody>
 <tr>
 <td>
-<pre>
 Media.trackUsingContextData
-</pre>
 </td>
 <td>
 <pre>
@@ -60,10 +58,7 @@ s.Media.trackUsingContextData
 </tr>
 <tr>
 <td>
-<p>
-<pre>
 Media.contextDataMapping
-</pre></p>
 </td>
 <td>
 <pre>
@@ -93,9 +88,7 @@ data to variables using processing rules.
 </tr>
 <tr>
 <td>
-<pre>
 Media.trackVars
-</pre>
 </td>
 <td>
 <pre>
@@ -115,9 +108,7 @@ processing rules.
 </tr>
 <tr>
 <td>
-<pre>
 Media.trackEvents
-</pre>
 </td>
 <td>
 <pre>
@@ -158,9 +149,7 @@ processing rules.
 <tbody>
 <tr>
 <td>
-<pre>
 Media.autoTrack
-</pre>
 </td>
 <td>
 <pre>
@@ -175,9 +164,7 @@ s.Media.autoTrack
 </tr>
 <tr>
 <td>
-<pre>
 Media.autoTrackNetStreams
-</pre>
 </td>
 <td>
 <pre>
@@ -192,9 +179,7 @@ s.Media.autoTrackNetStreams
 </tr>
 <tr>
 <td>
-<pre>
 Media.completeByCloseOffset
-</pre>
 </td>
 <td>
 <pre>
@@ -209,9 +194,7 @@ s.Media.completeByCloseOffset
 </tr>
 <tr>
 <td>
-<pre>
 Media.completeCloseOffsetThreshold
-</pre>
 </td>
 <td>
 <pre>
@@ -226,9 +209,7 @@ s.Media.completeCloseOffsetThreshold
 </tr>
 <tr>
 <td>
-<pre>
 Media.playerName
-</pre>
 </td>
 <td>
 <pre>
@@ -237,19 +218,16 @@ s.Media.playerName
 </pre>
 </td>
 <td>
-<p>SDK Key:
+SDK Key:
 <pre>
 playerName
-</pre>*
-</p>
-<p>API Key: 
+</pre>
+API Key: 
 <pre>
 media.playerName
 </pre>
-</p>
 </td>
 <td>
-<p>
 <pre>
 MediaHeartbeatConfig.playerName
 </pre>
@@ -258,9 +236,7 @@ MediaHeartbeatConfig.playerName
 </tr>
 <tr>
 <td>
-<pre>
 Media.trackSeconds
-</pre>
 </td>
 <td>
 <pre>
@@ -276,9 +252,7 @@ ads. No other options are available.
 </tr>
 <tr>
 <td>
-<pre>
 Media.trackMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -294,9 +268,7 @@ s.Media.trackMilestones
 </tr>
 <tr>
 <td>
-<pre>
 Media.trackOffsetMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -312,9 +284,7 @@ s.Media.trackOffsetMilestones
 </tr>
 <tr>
 <td>
-<pre>
 Media.segmentByMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -329,9 +299,7 @@ s.Media.segmentByMilestones
 </tr>
 <tr>
 <td>
-<pre>
 Media.segmentByOffsetMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -365,9 +333,7 @@ s.Media.segmentByOffsetMilestones
 <tbody>
 <tr>
 <td>
-<pre>
 Media.adTrackSeconds
-</pre>
 </td>
 <td>
 <pre>
@@ -383,9 +349,7 @@ ads. No other options are available.
 </tr>
 <tr>
 <td>
-<pre>
 Media.adTrackMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -401,9 +365,7 @@ calculated metrics to build ad progress markers.
 </tr>
 <tr>
 <td>
-<pre>
 Media.adTrackOffsetMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -419,9 +381,7 @@ available.
 </tr>
 <tr>
 <td>
-<pre>
 Media.adSegmentByMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -436,9 +396,7 @@ s.Media.adSegmentByMilestones
 </tr>
 <tr>
 <td>
-<pre>
 Media.adSegmentByOffsetMilestones
-</pre>
 </td>
 <td>
 <pre>
@@ -472,9 +430,7 @@ s.Media.adSegmentByOffsetMilestones
 <tbody>
 <tr>
 <td>
-<pre>
 Media.open
-</pre>
 </td>
 <td>
 <pre>
@@ -499,10 +455,8 @@ trackSessionStart(
 </tr>
 <tr>
 <td>
-<pre>
 mediaName
-</pre>
-(Required) The name of the video as
+<br/><br/>(Required) The name of the video as
 you want it to appear in video reports.
 </td>
 <td>
@@ -527,10 +481,8 @@ createMediaObject(
 </tr>
 <tr>
 <td>
-<pre>
 mediaLength
-</pre>
-(Required) The length of the video
+<br/><br/>(Required) The length of the video
 in seconds.
 </td>
 <td>
@@ -555,10 +507,8 @@ createMediaObject(
 </tr>
 <tr>
 <td>
-<pre>
 mediaPlayerName
-</pre>
-(Required) The name of the media player used to view the video, 
+<br/><br/>(Required) The name of the media player used to view the video, 
 as you want it to appear in video reports.
 </td>
 <td>
@@ -579,9 +529,7 @@ MediaHeartbeatConfig.playerName
 </tr>
 <tr>
 <td>
-<pre>
 Media.openAd
-</pre>
 </td>
 <td>
 <pre>
@@ -613,10 +561,8 @@ mediaHeartbeat.trackEvent(
 </tr>
 <tr>
 <td>
-<pre>
 name
-</pre>
-(Required) The name or ID of the ad.
+<br/><br/>(Required) The name or ID of the ad.
 </td>
 <td>
 <pre>
@@ -640,9 +586,7 @@ createAdObject(
 </tr>
 <tr>
 <td>
-<pre>
 length
-</pre>
 (Required) The length of the ad.
 </td>
 <td>
@@ -667,10 +611,8 @@ createAdObject(
 </tr>
 <tr>
 <td>
-<pre>
 playerName
-</pre>
-(Required) The name of the media
+<br/><br/>(Required) The name of the media
 player used to view the ad.
 </td>
 <td>
@@ -692,10 +634,8 @@ MediaHeartbeatConfig.
 </tr>
 <tr>
 <td>
-<pre>
 parentName
-</pre>
-The name or ID of the primary content where the ad is embedded.
+<br/><br/>The name or ID of the primary content where the ad is embedded.
 </td>
 <td>
 <pre>
@@ -709,10 +649,8 @@ parentName
 </tr>
 <tr>
 <td>
-<pre>
 parentPod
-</pre>
-The position in the primary content the ad was played.
+<br/><br/>The position in the primary content the ad was played.
 </td>
 <td>
 <pre>
@@ -735,10 +673,8 @@ createAdBreakObject(
 </tr>
 <tr>
 <td>
-<pre>
 parentPodPosition
-</pre>
-The position within the pod where the ad is played.
+<br/><br/>The position within the pod where the ad is played.
 </td>
 <td>
 <pre>
@@ -762,9 +698,7 @@ createAdObject(
 </tr>
 <tr>
 <td>
-<pre>
 CPM
-</pre>
 The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.
 </td>
 <td>
@@ -779,9 +713,7 @@ CPM
 </tr>
 <tr>
 <td>
-<pre>
 Media.click
-</pre>
 </td>
 <td>
 <pre>
@@ -795,9 +727,7 @@ s.Media.click(name,offset)
 </tr>
 <tr>
 <td>
-<pre>
 Media.close
-</pre>
 </td>
 <td>
 <pre>
@@ -817,9 +747,7 @@ trackSessionEnd()
 </tr>
 <tr>
 <td>
-<pre>
 Media.complete
-</pre>
 </td>
 <td>
 <pre>
@@ -951,7 +879,8 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track(mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>N/A
