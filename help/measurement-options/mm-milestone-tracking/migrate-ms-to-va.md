@@ -5,7 +5,7 @@ uuid: fdc96146-af63-48ce-b938-c0ca70729277
 
 ---
 
-# Migrating from Milestone to Media Analytics{#migrating-from-milestone-to-media-analytics}
+# Migrating from Milestone to Media Analytics {#migrating-from-milestone-to-media-analytics}
 
 ## Overview {#section_ihl_nbz_cfb}
 
@@ -15,7 +15,7 @@ The following tables provide translations between the Milestone solution and the
 
 ## Migration guide {#section_iyb_pbz_cfb}
 
-### Variable Reference
+### Variable reference
 
 | Milestone Metric | Variable Type | Media Analytics Metric |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ The following tables provide translations between the Milestone solution and the
 | Content Type | eVar<br/><br/> Default expiration: Page view | Content Type |
 | Content Time Spent | Event<br/><br/> Type: Counter | Content Time Spent |
 | Video Initiates | Event<br/><br/> Type: Counter | Video Initiates |
-| Video Completes | Event<br/><br/> Type: Counter | Content Complete | 
+| Video Completes | Event<br/><br/> Type: Counter | Content Complete |
 
 ### Media Module variables
 
@@ -61,7 +61,7 @@ s.Media.trackUsingContextData
 <p>
 <code>Media.contextDataMapping
 </code></p>
-<p> 
+<p>
 </p>
 </td>
 <td>
@@ -116,7 +116,7 @@ processing rules.
 </code></td>
 <td>
 <pre>
-s.Media.trackEvents =  
+s.Media.trackEvents = 
   "event1,
   event2,
   event3,
@@ -206,7 +206,7 @@ s.Media.completeByCloseOffset
 </td>
 <td>
 <pre>
-s.Media.completeCloseOffsetThreshold 
+s.Media.completeCloseOffsetThreshold
   = 1
 </pre>
 </td>
@@ -222,28 +222,23 @@ s.Media.completeCloseOffsetThreshold
 </td>
 <td>
 <pre>
-s.Media.playerName 
+s.Media.playerName
   = "Custom Player Name"
 </pre>
 </td>
 <td>
-<p>SDK Key: 
-<code>playerName
-</code>*
+<p>SDK Key:
+<code>playerName</code>*
 </p>
 <p>API Key: 
 <code>media.playerName
 </code>
-</p>
-<p> 
 </p>
 </td>
 <td>
 <p>
 <code>MediaHeartbeatConfig.playerName
 </code>
-</p>
-<p> 
 </p>
 </td>
 </tr>
@@ -336,7 +331,7 @@ s.Media.segmentByOffsetMilestones
 ### Ad tracking variables
 
 <table>
-<thead>                        
+<thead>
 <tr>
 <th>Milestone
 </th>
@@ -438,7 +433,7 @@ s.Media.adSegmentByOffsetMilestones
 ### Media Module methods
 
 <table>
-<thead>   
+<thead>
 <tr>
 <th>Milestone
 </th>
@@ -711,7 +706,7 @@ createAdObject(name,
 </td>
 <td>N/A
 </td>
-<td>Not available by defulat in Media Analytics
+<td>Not available by default in Media Analytics
 </td>
 </tr>
 <tr>
@@ -821,16 +816,14 @@ s.Media.stop(mediaName,
 </tr>
 <tr>
 <td>
-<code>Media.monitor
-</code>
+<code>Media.monitor</code>
 </td>
 <td>
 <pre>
 s.Media.monitor(s, media)
 </pre>
 </td>
-<td>Use custom or standard metadata to set additional
-variables
+<td>Use custom or standard metadata to set additional variables
 </td>
 <td>
 <pre>
@@ -838,7 +831,7 @@ var customVideoMetadata = {
     isUserLoggedIn: "false",
     tvStation: "Sample TV station",
     programmer: "Sample programmer"
-}; 
+};
 
 var standardVideoMetadata = {};
 standardVideoMetadata
@@ -871,5 +864,4 @@ s.Media.track(mediaName)
 </tr>
 </tbody>
 </table>
-
 
