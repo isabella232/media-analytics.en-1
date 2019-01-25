@@ -9,7 +9,7 @@ uuid: fdc96146-af63-48ce-b938-c0ca70729277
 
 ## Overview {#section_ihl_nbz_cfb}
 
-The core concepts of video measurement are the same for Milestone and Media Analytics, which is taking video player events and mapping them to analytics methods, while also grabbing player metadata and values and mapping them to analytics variables. The Media Analytics solution grew out of Milestone, so many of the methods and metrics are the same, however, the configuration approach and code has changed significantly. It should be possible to update the player event code to point to the new Media Analytics methods. See [Overview](../../sdk-implement/setup/setup-overview.md) and [Overview](../../sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+The core concepts of video measurement are the same for Milestone and Media Analytics, which is taking video player events and mapping them to analytics methods, while also grabbing player metadata and values and mapping them to analytics variables. The Media Analytics solution grew out of Milestone, so many of the methods and metrics are the same, however, the configuration approach and code has changed significantly. It should be possible to update the player event code to point to the new Media Analytics methods. See [SDK Overview](../../sdk-implement/setup/setup-overview.md) and [Tracking Overview](../../sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
 
 The following tables provide translations between the Milestone solution and the Media Analytics solution.
 
@@ -44,7 +44,8 @@ The following tables provide translations between the Milestone solution and the
 <tr>
 <td>
 <code>Media.trackUsingContextData
-</code></td>
+</code>
+</td>
 <td>
 <pre>
 s.Media.trackUsingContextData
@@ -61,8 +62,6 @@ s.Media.trackUsingContextData
 <p>
 <code>Media.contextDataMapping
 </code></p>
-<p>
-</p>
 </td>
 <td>
 <pre>
@@ -92,8 +91,8 @@ data to variables using processing rules.
 </tr>
 <tr>
 <td>
-<code>Media.trackVars
-</code></td>
+<code>Media.trackVars</code>
+</td>
 <td>
 <pre>
 s.Media.trackVars = 
@@ -112,8 +111,8 @@ processing rules.
 </tr>
 <tr>
 <td>
-<code>Media.trackEvents
-</code></td>
+<code>Media.trackEvents</code>
+</td>
 <td>
 <pre>
 s.Media.trackEvents = 
@@ -429,6 +428,8 @@ s.Media.adSegmentByOffsetMilestones
 </tr>
 </tbody>
 </table>
+
+<!--
 
 ### Media Module methods
 
@@ -865,3 +866,4 @@ s.Media.track(mediaName)
 </tbody>
 </table>
 
+-->
