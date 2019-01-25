@@ -218,18 +218,13 @@ s.Media.playerName
 </pre>
 </td>
 <td>
-SDK Key:
-<pre>
-playerName
-</pre>
-API Key: 
-<pre>
-media.playerName
-</pre>
+SDK Key: playerName; 
+API Key: media.playerName
 </td>
 <td>
 <pre>
-MediaHeartbeatConfig.playerName
+MediaHeartbeatConfig.
+  playerName
 </pre>
 </p>
 </td>
@@ -455,8 +450,7 @@ trackSessionStart(
 </tr>
 <tr>
 <td>
-mediaName
-<br/><br/>(Required) The name of the video as
+mediaName - (Required) The name of the video as
 you want it to appear in video reports.
 </td>
 <td>
@@ -481,8 +475,7 @@ createMediaObject(
 </tr>
 <tr>
 <td>
-mediaLength
-<br/><br/>(Required) The length of the video
+mediaLength - (Required) The length of the video
 in seconds.
 </td>
 <td>
@@ -507,8 +500,7 @@ createMediaObject(
 </tr>
 <tr>
 <td>
-mediaPlayerName
-<br/><br/>(Required) The name of the media player used to view the video, 
+mediaPlayerName - (Required) The name of the media player used to view the video, 
 as you want it to appear in video reports.
 </td>
 <td>
@@ -523,7 +515,8 @@ playerName
 </td>
 <td>
 <pre>
-MediaHeartbeatConfig.playerName
+MediaHeartbeatConfig.
+  playerName
 </pre>
 </td>
 </tr>
@@ -545,24 +538,29 @@ s.Media.openAd(
 </td>
 <td>
 <pre>
-trackEvent(
-  MediaHeartbeat.Event.AdStart, 
-  adObject, 
-  adCustomMetadata);
+trackEvent
 </pre>
 </td>
 <td>
 <pre>
 mediaHeartbeat.trackEvent(
-  MediaHeartbeat.Event.AdBreakStart, 
+  MediaHeartbeat.
+    Event.
+    AdBreakStart, 
   adBreakObject);
+...
+trackEvent(
+  MediaHeartbeat.
+    Event.
+    AdStart, 
+  adObject, 
+  adCustomMetadata);
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-name
-<br/><br/>(Required) The name or ID of the ad.
+name - (Required) The name or ID of the ad.
 </td>
 <td>
 <pre>
@@ -611,8 +609,7 @@ createAdObject(
 </tr>
 <tr>
 <td>
-playerName
-<br/><br/>(Required) The name of the media
+playerName - (Required) The name of the media
 player used to view the ad.
 </td>
 <td>
@@ -634,8 +631,7 @@ MediaHeartbeatConfig.
 </tr>
 <tr>
 <td>
-parentName
-<br/><br/>The name or ID of the primary content where the ad is embedded.
+parentName - The name or ID of the primary content where the ad is embedded.
 </td>
 <td>
 <pre>
@@ -649,8 +645,7 @@ parentName
 </tr>
 <tr>
 <td>
-parentPod
-<br/><br/>The position in the primary content the ad was played.
+parentPod - The position in the primary content the ad was played.
 </td>
 <td>
 <pre>
@@ -673,8 +668,7 @@ createAdBreakObject(
 </tr>
 <tr>
 <td>
-parentPodPosition
-<br/><br/>The position within the pod where the ad is played.
+parentPodPosition - The position within the pod where the ad is played.
 </td>
 <td>
 <pre>
@@ -717,7 +711,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(name,offset)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>N/A
@@ -731,7 +727,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close(mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -751,7 +748,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -847,17 +846,23 @@ s.Media.monitor(s, media)
 </td>
 <td>
 <pre>
-var customVideoMetadata = {
-  isUserLoggedIn: "false",
-  tvStation: "Sample TV station",
-  programmer: "Sample programmer"
+var customVideoMetadata = 
+{
+  isUserLoggedIn: 
+    "false",
+  tvStation: 
+    "Sample TV station",
+  programmer: 
+    "Sample programmer"
 };
 ...
-var standardVideoMetadata = {};
+var standardVideoMetadata 
+  = {};
 standardVideoMetadata
   [MediaHeartbeat.
    VideoMetadataKeys.
-   EPISODE] = "Sample Episode";
+   EPISODE] = 
+  "Sample Episode";
 standardVideoMetadata
   [MediaHeartbeat.
    VideoMetadataKeys.
