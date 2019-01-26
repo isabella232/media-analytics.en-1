@@ -15,7 +15,59 @@ The following tables provide translations between the Milestone solution and the
 
 ## Migration guide {#section_btt_fc2_dfb}
 
-**Video Variable Reference:**
+### Video Variable Reference
+
+<table>
+<thead>
+<tr>
+<th><strong>Milestone Metric</strong></th>
+<th><strong>Variable Type</strong></th>
+<th><strong>Custom Link</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content</td>
+<td>
+<p>eVar</p>
+<p>Default expiration: Visit</p>
+</td>
+<td>Define your own eVar</td>
+</tr>
+<tr>
+<td>Content Type</td>
+<td>
+<p>eVar</p>
+<p>Default expiration: Page view</p>
+</td>
+<td>Define your own eVar</td>
+</tr>
+<tr>
+<td>Content Time Spent</td>
+<td>
+<p>Event</p>
+<p>Type: Counter</p>
+</td>
+<td>Define your own event</td>
+</tr>
+<tr>
+<td>Video Initiates</td>
+<td>
+<p>Event</p>
+<p>Type: Counter</p>
+</td>
+<td>Define your own event</td>
+</tr>
+<tr>
+<td>Video Completes</td>
+<td>
+<p>Event</p>
+<p>Type: Counter</p>
+</td>
+<td>Define your own event</td>
+</tr>
+</tbody>
+</table>
 
 | Milestone Metric | Variable Type | Custom Link |
 | --- | --- | --- |
@@ -25,7 +77,123 @@ The following tables provide translations between the Milestone solution and the
 | Video Initiates | Event<br/> Type: Counter | Define your own event |
 | Video Completes | Event<br/> Type: Counter | Define your own event | 
 
-**Media Module variables:**
+### Media Module variables
+
+<table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th>Milestone Syntax</th>
+<th>Custom Link</th>
+<th>Custom Link Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Media.trackUsingContextData</td>
+<td>
+<pre>
+s.Media.trackUsingContextData
+  = true;
+</pre>
+</td>
+<td>
+<pre>
+s.linkTrackVars
+  = mediaName;
+s.contextData[‘variable']
+  = mediaName;
+</pre>
+</td>
+<td>
+<pre>
+s.linkTrackVars
+  = 'events, 
+  contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.contextDataMapping
+</td>
+<td>
+<pre>
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
+</pre>
+</td>
+<td>N/A</td>
+<td>Mapping context data to eVars, props, and events is now completed
+through processing rules.</td>
+</tr>
+<tr>
+<td>Media.trackVars</td>
+<td>
+<pre>
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
+</pre>
+</td>
+<td>linkTrackVars</td>
+<td>
+<pre>
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.view';
+</pre>
+</td>
+</tr>
+<tr>
+<td>Media.trackEvents</td>
+<td>
+<pre>
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
+</pre>
+</td>
+<td>linkTrackEvents</td>
+<td>
+<pre>
+s.linkTrackEvents
+  = 'event2';
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
 
 | Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
 | --- | --- | --- | --- |
@@ -34,7 +202,7 @@ The following tables provide translations between the Milestone solution and the
 | `Media.trackVars` | `s.Media.trackVars  = ` <br/> &nbsp;&nbsp; `"events, prop2, eVar1, eVar2, eVar3";` | `linkTrackVars` | `s.linkTrackVars  = ` <br/> &nbsp;&nbsp; `'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.video.name, contextData.video.view';` |
 | `Media.trackEvents` | `s.Media.trackEvents  = ` <br/> &nbsp;&nbsp; `"event1, event2, event3, event4, event5, event6, event7"` | `linkTrackEvents` | `s.linkTrackEvents  = ` <br/> &nbsp;&nbsp; `'event2';` |
 
-**Optional variables:**
+### Optional variables
 
  | Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
  | --- | --- | --- | --- |
@@ -49,7 +217,7 @@ The following tables provide translations between the Milestone solution and the
  | `Media.segmentByMilestones` | `s.Media.segmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available |
  | `Media.segmentByOffsetMilestones` | `s.Media.segmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available | 
 
-**Ad tracking variables:**
+### Ad tracking variables
 
 | Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
 | --- | --- | --- | --- |
@@ -59,7 +227,7 @@ The following tables provide translations between the Milestone solution and the
 | `Media.adSegmentByMilestones` | `s.Media.adSegmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available |
 | `Media.adSegmentByOffsetMilestones` | `s.Media.adSegmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available | 
 
-**Media Module methods:**
+### Media Module methods
 
 | Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
 | --- | --- | --- | --- |

@@ -168,7 +168,8 @@ Media.autoTrackNetStreams
 </td>
 <td>
 <pre>
-s.Media.autoTrackNetStreams
+s.Media.
+  autoTrackNetStreams
   = true
 </pre>
 </td>
@@ -183,7 +184,8 @@ Media.completeByCloseOffset
 </td>
 <td>
 <pre>
-s.Media.completeByCloseOffset
+s.Media.
+  completeByCloseOffset
   = true
 </pre>
 </td>
@@ -198,7 +200,8 @@ Media.completeCloseOffsetThreshold
 </td>
 <td>
 <pre>
-s.Media.completeCloseOffsetThreshold
+s.Media.
+  completeCloseOffsetThreshold
   = 1
 </pre>
 </td>
@@ -235,7 +238,8 @@ Media.trackSeconds
 </td>
 <td>
 <pre>
-s.Media.trackSeconds
+s.Media.
+  trackSeconds
   = 15
 </pre>
 </td>
@@ -251,7 +255,8 @@ Media.trackMilestones
 </td>
 <td>
 <pre>
-s.Media.trackMilestones
+s.Media.
+  trackMilestones
   = "25,50,75";
 </pre>
 </td>
@@ -267,7 +272,8 @@ Media.trackOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.trackOffsetMilestones
+s.Media.
+  trackOffsetMilestones
   = "20,40,60";
 </pre>
 </td>
@@ -298,7 +304,8 @@ Media.segmentByOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByOffsetMilestones
+s.Media.
+  segmentByOffsetMilestones
   = true;
 </pre>
 </td>
@@ -332,7 +339,8 @@ Media.adTrackSeconds
 </td>
 <td>
 <pre>
-s.Media.adTrackSeconds
+s.Media.
+  adTrackSeconds
   = 15
 </pre>
 </td>
@@ -348,7 +356,8 @@ Media.adTrackMilestones
 </td>
 <td>
 <pre>
-s.Media.adTrackMilestones
+s.Media.
+  adTrackMilestones
   = "25,50,75";
 </pre>
 </td>
@@ -364,7 +373,8 @@ Media.adTrackOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.adTrackOffsetMilestones
+s.Media.
+  adTrackOffsetMilestones
   = "20,40,60";
 </pre>
 </td>
@@ -380,7 +390,8 @@ Media.adSegmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.adSegmentByMilestones
+s.Media.
+  adSegmentByMilestones
   = true;
 </pre>
 </td>
@@ -395,7 +406,8 @@ Media.adSegmentByOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.adSegmentByOffsetMilestones
+s.Media.
+  adSegmentByOffsetMilestones
   = true;
 </pre>
 </td>
