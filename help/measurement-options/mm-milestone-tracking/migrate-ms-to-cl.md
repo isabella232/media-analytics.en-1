@@ -93,18 +93,13 @@ The following tables provide translations between the Milestone solution and the
 <td>Media.trackUsingContextData</td>
 <td>
 <pre>
-s.Media.trackUsingContextData
+
+s.Media.
+  trackUsingContextData
   = true;
 </pre>
 </td>
-<td>
-<pre>
-s.linkTrackVars
-  = mediaName;
-s.contextData[‘variable']
-  = mediaName;
-</pre>
-</td>
+<td>linkTrackVars</td>
 <td>
 <pre>
 s.linkTrackVars
@@ -189,6 +184,137 @@ s.Media.trackEvents
 <pre>
 s.linkTrackEvents
   = 'event2';
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Custom Link
+</th>
+<th>Custom Link Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.trackUsingContextData
+</td>
+<td>
+<pre>
+s.Media.
+  trackUsingContextData 
+  = true;
+</pre>
+</td>
+<td>
+<pre>
+s.linkTrackVars
+  = mediaName;
+s.contextData[‘variable']
+  = mediaName;
+</pre>
+</td>
+<td>
+<pre>
+s.linkTrackVars
+  = 'events, 
+contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.contextDataMapping
+</td>
+<td>
+<pre>
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Mapping context data to eVars, props, and events is now completed
+through processing rules.
+</td>
+</tr>
+<tr>
+<td>
+Media.trackVars
+</td>
+<td>
+<pre>
+s.Media.trackVars
+= "events,
+prop2,
+eVar1,
+eVar2,
+eVar3";
+</pre>
+</td>
+<td>
+linkTrackVars
+</td>
+<td>
+<pre>
+s.linkTrackVars
+= 'events,
+prop10,
+eVar10,
+eVar12,
+eVar13,
+eVar15,
+contextData.video.name,
+contextData.video.view';
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.trackEvents
+</td>
+<td>
+<pre>
+s.Media.trackEvents
+= "event1,
+event2,
+event3,
+event4,
+event5,
+event6,
+event7"
+</pre>
+</td>
+<td>
+linkTrackEvents
+</td>
+<td>
+<pre>
+s.linkTrackEvents
+= 'event2';
 </pre>
 </td>
 </tr>
