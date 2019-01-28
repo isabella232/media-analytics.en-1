@@ -69,7 +69,6 @@ The following tables provide translations between the Milestone solution and the
 </tbody>
 </table>
 
-<!--
 | Milestone Metric | Variable Type | Custom Link |
 | --- | --- | --- |
 | Content | eVar<br/> Default expiration: Visit | Define your own eVar |
@@ -77,7 +76,6 @@ The following tables provide translations between the Milestone solution and the
 | Content Time Spent | Event<br/> Type: Counter | Define your own event |
 | Video Initiates | Event<br/> Type: Counter | Define your own event |
 | Video Completes | Event<br/> Type: Counter | Define your own event | 
--->
 
 ### Media Module variables
 
@@ -322,14 +320,12 @@ s.linkTrackEvents
 </tbody>
 </table>
 
-<!--
 | Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
 | --- | --- | --- | --- |
 | `Media.trackUsingContextData` | `s.Media.trackUsingContextData  = ` <br/> &nbsp;&nbsp; `true;` | `s.linkTrackVars  = ` <br/> &nbsp;&nbsp; `mediaName; s.contextData[‘variable']  = ` <br/> &nbsp;&nbsp; `mediaName;` | `s.linkTrackVars  = ` <br/> &nbsp;&nbsp; `'events,  contextData.video.name’;  s.contextData[‘video.name']  = ` <br/> &nbsp;&nbsp; `mediaName;` |
 | Media.contextDataMapping | `s.Media.contextDataMapping = {` <br/> &nbsp;&nbsp; ` "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{` <br/> &nbsp;&nbsp; `     25:"event4",     50:"event5",     75:"event6" } };` | N/A | Mapping context data to eVars, props, and events is now completed through processing rules.  |
 | `Media.trackVars` | `s.Media.trackVars  = ` <br/> &nbsp;&nbsp; `"events, prop2, eVar1, eVar2, eVar3";` | `linkTrackVars` | `s.linkTrackVars  = ` <br/> &nbsp;&nbsp; `'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.video.name, contextData.video.view';` |
 | `Media.trackEvents` | `s.Media.trackEvents  = ` <br/> &nbsp;&nbsp; `"event1, event2, event3, event4, event5, event6, event7"` | `linkTrackEvents` | `s.linkTrackEvents  = ` <br/> &nbsp;&nbsp; `'event2';` |
--->
 
 ### Optional variables
 
