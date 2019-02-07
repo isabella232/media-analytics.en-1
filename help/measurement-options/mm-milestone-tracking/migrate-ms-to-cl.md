@@ -74,28 +74,36 @@ The following tables provide translations between the Milestone solution and the
 <table>
 <thead>
 <tr>
-<th>Milestone</th>
-<th>Milestone Syntax</th>
-<th>Custom Link</th>
-<th>Custom Link Syntax</th>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Custom Link
+</th>
+<th>Custom Link Syntax
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Media.trackUsingContextData</td>
+<td>
+Media.trackUsingContextData
+</td>
 <td>
 <pre>
 s.Media.
-  trackUsingContextData
+  trackUsingContextData 
   = true;
 </pre>
 </td>
-<td>linkTrackVars</td>
+<td>
+linkTrackVars
+</td>
 <td>
 <pre>
 s.linkTrackVars
   = 'events, 
-     contextData.video.name’; 
+contextData.video.name’; 
 s.contextData[‘video.name']
   = mediaName;
 </pre>
@@ -123,58 +131,66 @@ s.Media.contextDataMapping = {
 };
 </pre>
 </td>
-<td>N/A</td>
+<td>N/A
+</td>
 <td>Mapping context data to eVars, props, and events is now completed
-through processing rules.</td>
+through processing rules.
+</td>
 </tr>
 <tr>
-<td>Media.trackVars</td>
+<td>
+Media.trackVars
+</td>
 <td>
 <pre>
 s.Media.trackVars
-  = "events,
-     prop2,
-     eVar1,
-     eVar2,
-     eVar3";
+= "events,
+prop2,
+eVar1,
+eVar2,
+eVar3";
 </pre>
 </td>
-<td>linkTrackVars</td>
+<td>
+linkTrackVars
+</td>
 <td>
 <pre>
 s.linkTrackVars
-  = 'events,
-     prop10,
-     eVar10,
-     eVar12,
-     eVar13,
-     eVar15,
-     contextData.
-       video.name,
-     contextData.
-       video.view';
+= 'events,
+prop10,
+eVar10,
+eVar12,
+eVar13,
+eVar15,
+contextData.video.name,
+contextData.video.view';
 </pre>
 </td>
 </tr>
 <tr>
-<td>Media.trackEvents</td>
+<td>
+Media.trackEvents
+</td>
 <td>
 <pre>
 s.Media.trackEvents
-  = "event1,
-     event2,
-     event3,
-     event4,
-     event5,
-     event6,
-     event7"
+= "event1,
+event2,
+event3,
+event4,
+event5,
+event6,
+event7"
 </pre>
 </td>
-<td>linkTrackEvents</td>
+<td>
+linkTrackEvents
+</td>
 <td>
 <pre>
 s.linkTrackEvents
-  = 'event2';
+= 'event2';
 </pre>
 </td>
 </tr>
@@ -207,12 +223,7 @@ s.Media.
 </pre>
 </td>
 <td>
-<pre>
-s.linkTrackVars
-  = mediaName;
-s.contextData[‘variable']
-  = mediaName;
-</pre>
+linkTrackVars
 </td>
 <td>
 <pre>
@@ -314,51 +325,640 @@ s.linkTrackEvents
 
 ### Optional variables
 
- | Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
- | --- | --- | --- | --- |
- | `Media.autoTrack` | `s.Media.autoTrack = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available |
- | `Media.autoTrackNetStreams` | `s.Media.autoTrackNetStreams = ` <br/> &nbsp;&nbsp; `true` | N/A | Not Available |
- | `Media.completeByCloseOffset` | `s.Media.completeByCloseOffset = ` <br/> &nbsp;&nbsp; `true` | N/A | Not Available |
- | `Media.completeCloseOffsetThreshold` | `s.Media.completeCloseOffsetThreshold = ` <br/> &nbsp;&nbsp; `1` | N/A | Not Available |
- | `Media.playerName` | `s.Media.playerName  = ` <br/> &nbsp;&nbsp; `"Custom Player Name"` | Set eVar or context data variable in link call | `s.contextData['video.player'] = ` <br/> &nbsp;&nbsp; `"CustomPlayer Name";` |
- | `Media.trackSeconds` | `s.Media.trackSeconds = 15` | N/A | Not Available |
- | `Media.trackMilestones` | `s.Media.trackMilestones  = ` <br/> &nbsp;&nbsp; `"25,50,75";` | N/A | Not Available |
- | `Media.trackOffsetMilestones` | `s.Media.trackOffsetMilestones  = ` <br/> &nbsp;&nbsp; `"20,40,60";` | N/A | Not Available |
- | `Media.segmentByMilestones` | `s.Media.segmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available |
- | `Media.segmentByOffsetMilestones` | `s.Media.segmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available | 
+<table>
+<thead>
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Custom Link
+</th>
+<th>Custom Link Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.autoTrack
+</td>
+<td>
+<pre>
+s.Media.autoTrack
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.autoTrackNetStreams
+</td>
+<td>
+<pre>
+s.Media.autoTrackNetStreams
+  = true
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.completeByCloseOffset
+</td>
+<td>
+<pre>
+s.Media.completeByCloseOffset
+  = true
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.completeCloseOffsetThreshold
+</td>
+<td>
+<pre>
+s.Media.
+  completeCloseOffsetThreshold
+    = 1
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.playerName
+</td>
+<td>
+<pre>
+s.Media.playerName 
+  = "Custom Player Name"
+</pre>
+</td>
+<td>
+Set eVar or context data variable in link call
+</td>
+<td>
+<pre>
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.trackSeconds
+</td>
+<td>
+<pre>
+s.Media.trackSeconds = 15
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.trackMilestones
+</td>
+<td>
+<pre>
+s.Media.trackMilestones 
+  = "25,50,75";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.trackOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.trackOffsetMilestones 
+  = "20,40,60";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.segmentByMilestones
+</td>
+<td>
+<pre>
+s.Media.segmentByMilestones
+  = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.segmentByOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  segmentByOffsetMilestones
+    = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Ad tracking variables
 
-| Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
-| --- | --- | --- | --- |
-| `Media.adTrackSeconds` | `s.Media.adTrackSeconds  = ` <br/> &nbsp;&nbsp; `15` | N/A | Not Available |
-| `Media.adTrackMilestones` | `s.Media.adTrackMilestones  = ` <br/> &nbsp;&nbsp; `"25,50,75";` | N/A | Not Available |
-| `Media.adTrackOffsetMilestones` | `s.Media.adTrackOffsetMilestones  = ` <br/> &nbsp;&nbsp; `"20,40,60";` | N/A | Not Available |
-| `Media.adSegmentByMilestones` | `s.Media.adSegmentByMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available |
-| `Media.adSegmentByOffsetMilestones` | `s.Media.adSegmentByOffsetMilestones = ` <br/> &nbsp;&nbsp; `true;` | N/A | Not Available | 
+<table>
+<thead>
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Custom Link
+</th>
+<th>Custom Link Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.adTrackSeconds
+</td>
+<td>
+<pre>
+s.Media.adTrackSeconds 
+  = 15 
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.adTrackMilestones
+</td>
+<td>
+<pre>
+s.Media.adTrackMilestones 
+  = "25,50,75";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.adTrackOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adTrackOffsetMilestones 
+    = "20,40,60";
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.adSegmentByMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adSegmentByMilestones
+    = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.adSegmentByOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adSegmentByOffsetMilestones
+    = true;
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Media Module methods
 
-| Milestone | Milestone Syntax | Custom Link | Custom Link Syntax |
-| --- | --- | --- | --- |
-| `Media.open` | `s.Media.open(mediaName, mediaLength, mediaPlayerName)` | `s.tl(this, linkType, linkName, variableOverrides, doneAction)` | `s.linkTrackVars = ` <br/> &nbsp;&nbsp; `'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.view'; s.linkTrackEvents='event2'; s.prop10=mediaName; s.eVar10=mediaName; s.eVar12="video"; s.eVar15=mediaPlayerName; s.events='event2'; s.contextData['video.name']=mediaName; s.contextData['video.view']='true'; s.tl(this,'o','Video Start');` |
-| `mediaName` | **mediaName:** (required) The name of the video as you want it to appear in video reports.  | Set eVar or context data variable in link call | `s.prop10=mediaName; s.eVar10=mediaName; s.contextData['video.name'] = ` <br/> &nbsp;&nbsp; `mediaName;` |
-| `mediaLength` | **mediaLength:** (required) The length of the video in seconds.  | Set eVar or context data variable in link call | `s.contextData['video.length'] = ` <br/> &nbsp;&nbsp; `"90";` |
-| `mediaPlayerName` | **mediaPlayerName:** (required) The name of the media player used to view the video, as you want it to appear in video reports.  | Set eVar or context data variable in link call | `s.contextData['video.player'] = ` <br/> &nbsp;&nbsp; `"CustomPlayer Name";` |
-| `Media.openAd` | `s.Media.openAd( name, length, playerName, parentName, parentPod, parentPodPosition, CPM)` | N/A | Not Available |
-| `name` | **name:** (required) The name or ID of the ad.  | N/A | Not Available |
-| `length` | **length:** (required) The length of the ad.  | N/A | Not Available |
-| `playerName` | **playerName:** (required) The name of the media player used to view the ad.  | N/A | Not Available |
-| `parentName` | **parentName:** The name or ID of the primary content where the ad is embedded.  | N/A | Not Available |
-| `parentPod` | **parentPod:** The position in the primary content the ad was played.  | N/A | Not Available |
-| `parentPodPosition` | **parentPodPosition:** The position within the pod where the ad is played.  | N/A | Not Available |
-| `CPM` | **CPM:** The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.  | N/A | Not Available |
-| `Media.click` | `s.Media.click(name, offset)` | `s.tl(this, linkType, linkName, variableOverrides, doneAction)` | Use a custom link analytics call to track clicks |
-| `Media.close` | `s.Media.close(mediaName)` | N/A | Not Available |
-| `Media.complete` | `s.Media.complete( name, offset)` | `s.tl( this, linkType, linkName, variableOverrides, doneAction)` | `s.linkTrackVars = ` <br/> &nbsp;&nbsp; `'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.complete'; s.linkTrackEvents='event3'; s.prop10=mediaName; s.eVar10=mediaName; s.eVar12="video"; s.eVar15=mediaPlayerName; s.events='event3'; s.contextData['video.name'] = ` <br/> &nbsp;&nbsp; `mediaName; s.contextData['video.complete'] ='true'; s.tl(this,'o','Video Complete');` |
-| `Media.play` | `s.Media.play( name, offset, segmentNum, segment, segmentLength)` | N/A | Not Available |
-| `Media.stop` | `s.Media.stop( mediaName, mediaOffset)` | N/A | Not Available |
-| `Media.monitor` | `s.Media.monitor(s, media)` | Set eVar or context data variable in link call | `s.linkTrackVars = ` <br/> &nbsp;&nbsp; `'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.view'; s.linkTrackEvents = ` <br/> &nbsp;&nbsp; `'event2';` |
-| `Media.track` | `s.Media.track(mediaName)` | N/A | Not Available |
-
+<table>
+<thead>
+<tr>
+<th>Milestone
+</th>
+<th>Milestone Syntax
+</th>
+<th>Custom Link
+</th>
+<th>Custom Link Syntax
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Media.open</td>
+<td>
+<pre>
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
+</pre>
+</td>
+<td>s.tl()</td>
+<td>
+<pre>
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.video.name,
+     contextData.video.view';
+s.linkTrackEvents 
+  = 'event2';
+s.prop10 
+  = mediaName;
+s.eVar10 
+  = mediaName;
+s.eVar12 
+  = "video";
+s.eVar15 
+  = mediaPlayerName;
+s.events 
+  = 'event2';
+s.contextData['video.name'] 
+  = mediaName;
+s.contextData['video.view'] 
+  = 'true';
+s.tl(this,'o','Video Start');
+</pre>
+</td>
+</tr>
+<tr>
+<td>mediaName</td>
+<td><b>mediaName:</b> (required) The name of the video as you want it to appear in video reports.</td>
+<td>Set eVar or context data variable in link call</td>
+<td>
+<pre>
+s.prop10 = mediaName;
+s.eVar10 = mediaName;
+s.contextData['video.name']
+  = mediaName;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+mediaLength
+</td>
+<td>
+<b>mediaLength:</b> (required) The length of the video in
+seconds.
+</td>
+<td>
+Set eVar or context data variable in link call
+</td>
+<td>
+<pre>
+s.contextData['video.length']
+  = ”90”;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+mediaPlayerName
+</td>
+<td>
+<b>mediaPlayerName:</b> (required) The name of the media player
+used to view the video, as you want it to appear in video
+reports.
+</td>
+<td>
+Set eVar or context data variable in link call
+</td>
+<td>
+<pre>
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.openAd
+</td>
+<td>
+<pre>
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available</td>
+</tr>
+<tr>
+<td>name</td>
+<td><b>name:</b> (required) The name or ID of the ad.</td>
+<td>N/A</td>
+<td>Not Available</td>
+</tr>
+<tr>
+<td>
+length
+</td>
+<td>
+<b>length:</b> (required) The length of the ad.
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+playerName
+</td>
+<td>
+<b>playerName:</b> (required) The name of the media player used
+to view the ad.
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+parentName
+</td>
+<td>
+<b>parentName:</b> The name or ID of the primary content where
+the ad is embedded.
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+parentPod
+</td>
+<td>
+<b>parentPod:</b> The position in the primary content the ad was
+played.
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+parentPodPosition
+</td>
+<td>
+<b>parentPodPosition:</b> The position within the pod where the
+ad is played.
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+CPM
+</td>
+<td>
+<b>CPM:</b> The CPM or encrypted CPM (prefixed with a "~") that
+applies to this playback.
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.click
+</td>
+<td>
+<pre>
+s.Media.click(name, offset)
+</pre>
+</td>
+<td>
+<pre>
+s.tl()
+</pre>
+</td>
+<td>Use a custom link analytics call to track clicks
+</td>
+</tr>
+<tr>
+<td>
+Media.close
+</td>
+<td>
+<pre>
+s.Media.close(mediaName)
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.complete
+</td>
+<td>
+<pre>
+s.Media.complete(
+  name,
+  offset)
+</pre>
+</td>
+<td>
+s.tl()
+</td>
+<td>
+<pre>
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.complete';
+s.linkTrackEvents 
+  = 'event3';
+s.prop10 
+  = mediaName;
+s.eVar10 
+  = mediaName;
+s.eVar12 
+  = "video";
+s.eVar15 
+  = mediaPlayerName;
+s.events 
+  = 'event3';
+s.contextData['video.name']
+ =  mediaName;
+s.contextData['video.complete']
+ = 'true';
+s.tl(this,'o','Video Complete');
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.play
+</td>
+<td>
+<pre>
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.stop
+</td>
+<td>
+<pre>
+s.Media.stop(
+  mediaName,
+  mediaOffset)
+</pre>
+</td>
+<td>N/A 
+</td>
+<td>Not Available
+</td>
+</tr>
+<tr>
+<td>
+Media.monitor
+</td>
+<td>
+<pre>
+s.Media.monitor(s, media)
+</pre>
+</td>
+<td>
+Set eVar or context data variable in link call
+</td>
+<td>
+<pre>
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.view';
+s.linkTrackEvents = 'event2';
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.track
+</td>
+<td>
+<pre>
+s.Media.track(mediaName)
+</pre>
+</td>
+<td>N/A
+</td>
+<td>Not Available
+</td>
+</tr>
+</tbody>
+</table>
 

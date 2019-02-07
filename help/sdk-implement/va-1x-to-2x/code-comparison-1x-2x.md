@@ -5,7 +5,7 @@ uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 
 ---
 
-# Code comparison: 1.x to 2.x{#code-comparison-x-to-x}
+# Code comparison: 1.x to 2.x {#code-comparison-x-to-x}
 
 All of the configuration parameters and tracking APIs are now consolidated into the `MediaHeartbeats` and `MediaHeartbeatConfig` classes.
 
@@ -36,7 +36,7 @@ The following sections provide code comparisons between 1.x and 2.x, covering In
 | --- | --- |
 | <ul> <li> `Heartbeat()` </li> <li> `VideoPlayerPlugin()` </li> <li> `AdobeAnalyticsPlugin()` </li> <li> `HeartbeatPlugin()` </li> </ul> | <ul> <li> `MediaHeartbeat()` </li> <li> `MediaHeartbeatConfig()` </li> </ul> |
 
-#### Video player plugin initialization (1.x)
+#### Video player plugin initialization (1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -65,7 +65,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### Media Heartbeat initialization (2.x)
+#### Media Heartbeat initialization (2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -85,7 +85,7 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | --- | --- |
 | <ul> <li> `VideoPlayerPluginDelegate()` </li> <li> `VideoPlayerPluginDelegate().getVideoInfo` </li> <li> `VideoPlayerPluginDelegate().getAdBreakInfo` </li> <li> `VideoPlayerPluginDelegate().getAdInfo` </li> <li> `VideoPlayerPluginDelegate().getChapterInfo` </li> <li> `VideoPlayerPluginDelegate().getQoSInfo` </li> <li> `VideoPlayerPluginDelegate().get.onError` </li> <li> `AdobeAnalyticsPluginDelegate()` </li> <li> `AdobeHeartbeatPluginDelegate()` </li> </ul> | <ul> <li> `MediaHeartbeatDelegate()` </li> <li> `MediaHeartbeatDelegate().getCurrentPlaybackTime` </li> <li> `MediaHeartbeatDelegate().getQoSObject` </li> </ul> |
 
-#### VideoPlayerPluginDelegate (1.x)
+#### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleVideoPlayerPluginDelegate.prototype, VideoPlayerPluginDelegate.prototype);
@@ -115,7 +115,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-#### AdobeAnalyticsPluginDelegate (1.x)
+#### AdobeAnalyticsPluginDelegate (1.x) {#analytics-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -127,7 +127,7 @@ SampleAdobeAnalyticsPluginDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### HeartbeatDelegate (1.x)
+#### HeartbeatDelegate (1.x) {#hb-delegate-1.x}
 
 ```js
 $.extend(SampleHeartbeatDelegate.prototype, HeartbeatDelegate.prototype);
@@ -139,7 +139,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### MediaHeartbeatDelegate (2.x)
+#### MediaHeartbeatDelegate (2.x) {#mh-delegate-2.x}
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);
@@ -167,7 +167,7 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 | --- | --- |
 | <ul> <li> `VideoPlayerPluginDelegate.trackVideoLoad()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-#### Session Start (1.x)
+#### Session Start (1.x) {#session-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -184,7 +184,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Session Start (2.x)
+#### Session Start (2.x) {#session-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -201,7 +201,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | --- | --- |
 | <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-#### Standard Metadata (1.x)
+#### Standard Metadata (1.x) {#std-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -223,7 +223,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### Standard Metadata (2.x)
+#### Standard Metadata (2.x) {#std-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -255,7 +255,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | --- | --- |
 | <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-#### Custom Metadata (1.x)
+#### Custom Metadata (1.x) {#custom-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -269,7 +269,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### Custom Metadata (2.x)
+#### Custom Metadata (2.x) {#custom-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -295,7 +295,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackPlay()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackPlay()` </li> </ul> |
 
-#### Playback (1.x)
+#### Playback (1.x) {#playback-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -304,7 +304,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 };
 ```
 
-#### Playback (2.x)
+#### Playback (2.x) {#playback-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -319,7 +319,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackPause()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackPausel()` </li> </ul> |
 
-#### Pause (1.x)
+#### Pause (1.x) {#pause-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onPause = function() { 
@@ -328,7 +328,7 @@ VideoAnalyticsProvider.prototype._onPause = function() {
 };
 ```
 
-#### Pause (2.x)
+#### Pause (2.x) {#pause-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -343,7 +343,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackSeekComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete)` </li> </ul> |
 
-#### Seeking (1.x)
+#### Seeking (1.x) {#seek-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -352,7 +352,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-#### Seeking (2.x)
+#### Seeking (2.x) {#seek-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -367,7 +367,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackBufferStart()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart)` </li> </ul> |
 
-#### Buffer Start (1.x)
+#### Buffer Start (1.x) {#buffer-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -376,7 +376,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-#### Buffer Start (2.x)
+#### Buffer Start (2.x) {#buffer-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -391,7 +391,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackBufferComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete)` </li> </ul> |
 
-#### Buffer Complete (1.x)
+#### Buffer Complete (1.x) {#buffer-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -400,7 +400,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-#### Buffer Complete (2.x)
+#### Buffer Complete (2.x) {#buffer-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -415,7 +415,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackComplete()` </li> </ul> |
 
-#### Playback Complete (1.x)
+#### Playback Complete (1.x) {#playback-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -426,7 +426,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-#### Playback Complete (2.x)
+#### Playback Complete (2.x) {#playback-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -443,7 +443,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackAdStart()` </li> <li> `VideoPlayerPluginDelegate.getAdBreakInfo()` </li> <li> `VideoPlayerPluginDelegate.getAdInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdBreakObject()` </li> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart)` </li> </ul> |
 
-#### Ad Start (1.x)
+#### Ad Start (1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -458,7 +458,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Start (2.x)
+#### Ad Start (2.x) {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -483,7 +483,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | --- | --- |
 | <ul> <li> `AdMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
 
-#### Standard Ad Metadata (1.x)
+#### Standard Ad Metadata (1.x) {#ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -502,7 +502,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Standard Ad Metadata (2.x)
+#### Standard Ad Metadata (2.x) {#ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -536,7 +536,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | --- | --- |
 | <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
 
-#### Custom Ad Metadata (1.x)
+#### Custom Ad Metadata (1.x) {#custom-ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -555,7 +555,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Custom Ad Metadata (2.x)
+#### Custom Ad Metadata (2.x) {#custom-ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -586,7 +586,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | --- | --- |
 | <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
 
-#### Ad Skip (1.x)
+#### Ad Skip (1.x) {@#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
@@ -594,7 +594,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Skip (2.x)
+#### Ad Skip (2.x) {@#ad-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() { 
@@ -612,7 +612,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackAdComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete)` </li> </ul> |
 
-#### Ad Complete (1.x)
+#### Ad Complete (1.x) {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -621,7 +621,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### Ad Complete (2.x)
+#### Ad Complete (2.x) {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -639,7 +639,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> <li> `VideoPlayerPlugin.trackChapterStart()` </li> </ul> | <ul> <li> `MediaHeartbeat.createChapterObject` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
 
-#### Chapter Start (1.x)
+#### Chapter Start (1.x) {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -654,7 +654,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 };
 ```
 
-#### Chapter Start (2.x)
+#### Chapter Start (2.x) {#chap-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -674,7 +674,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip)` </li> </ul> |
 
-#### Chapter Skip (1.x)
+#### Chapter Skip (1.x) {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
@@ -685,7 +685,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 >[!NOTE]
 >In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries. 
 
-#### Chapter Skip (2.x)
+#### Chapter Skip (2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
@@ -699,7 +699,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackChapterStart()` </li> <li> `AdobeAnalyticsPlugin.setChapterMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createChapterObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
 
-#### Chapter Custom Metadata (1.x)
+#### Chapter Custom Metadata (1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -711,7 +711,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### Chapter Custom Metadata (2.x)
+#### Chapter Custom Metadata (2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -733,7 +733,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | <ul> <li> `trackChapterComplete()` </li> </ul> | <ul> <li> `trackEvent(MediaHeartbeat.Event.ChapterComplete)` </li> </ul> |
 
-#### Chapter Complete (1.x)
+#### Chapter Complete (1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -742,7 +742,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### Chapter Complete (1.x)
+#### Chapter Complete (2.x) {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -759,7 +759,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 | --- | --- |
 | <ul> <li> `VideoPlayerPlugin.trackBitrateChange()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange)` </li> </ul> |
 
-#### Bitrate Change (1.x)
+#### Bitrate Change (1.x) {#bitrate-chg-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -770,7 +770,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-#### Bitrate Change (2.x)
+#### Bitrate Change (2.x) {#bitrate-chg-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -787,7 +787,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | --- | --- |
 | <ul> <li> `VideoInfo.resumed()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> <li> `VideoPlayerPlugin.trackVideoLoad()` </li> </ul> | <ul> <li> `MediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
 
-#### Video Resume (1.x)
+#### Video Resume (1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -800,7 +800,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Video Resume (2.x)
+#### Video Resume (2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 

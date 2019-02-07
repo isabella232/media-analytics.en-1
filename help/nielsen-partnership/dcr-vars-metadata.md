@@ -5,7 +5,7 @@ uuid: 2b44a399-9c37-4169-be06-1da4ac91131c
 
 ---
 
-# Variables and metadata{#variables-and-metadata}
+# Variables and metadata {#variables-and-metadata}
 
 Table data description:
 
@@ -127,7 +127,7 @@ The episode name must meet the following requirements: <br/>
 
 From SDK v2.1 and higher, the value in `l:asset:length` is used to override the value of `length` .
 
-### Media URL (v2.0↓ Only) 
+### Media URL (v2.0↓ Only) {#media-url-pre-2.0}
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |

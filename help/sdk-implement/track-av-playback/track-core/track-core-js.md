@@ -12,46 +12,47 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   **`[createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)`**
+   **[createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)**
 
-   |  Variable Name  | Description  | Required  |
-   | --- | --- | :---: |
-   |  `name`  | Video name  | Yes  |
-   |  `mediaid`  | Video unique identifier  | Yes  |
-   |  `length`  | Video length  | Yes  |
-   |  `streamType`  | Stream type (see `constants MediaHeartbeat.StreamType.VOD`)  | Yes  |
+    |  Variable Name  | Description  | Required  |
+    | --- | --- | :---: |
+    |  `name`  | Media name  | Yes  |
+    |  `mediaid`  | Media unique identifier  | Yes  |
+    |  `length`  | Media length  | Yes  |
+    |  `streamType`  | Stream type (see _StreamType constants_ below)  | Yes  |
+    |  `mediaType`  | Media type (see _MediaType constants_ below)  | Yes  |
 
    **`StreamType` constants:** 
 
-   |  Constant Name  | Description&nbsp;&nbsp;  |
-   |---|---|
-   |  `VOD`  | Stream type for Video on Demand.  |
-   |  `LIVE`  | Stream type for LIVE content.  |
-   |  `LINEAR`  | Stream type for LINEAR content.  |
+    |  Constant Name  | Description&nbsp;&nbsp;  |
+    |---|---|
+    |  `VOD`  | Stream type for Video on Demand.  |
+    |  `LIVE`  | Stream type for LIVE content.  |
+    |  `LINEAR`  | Stream type for LINEAR content.  |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<VIDEO_NAME>, <VIDEO_ID>, <VIDEO_LENGTH>, <STREAM_TYPE>.VOD);`
+   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>.VOD);`
 
    ```
    var mediaObject =  
-     MediaHeartbeat.createMediaObject(<VIDEO_NAME>,  
+     MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                       <MEDIA_ID,  
-                                      <VIDEO_LENGTH>, 
+                                      <MEDIA_LENGTH>, 
                                       MediaHeartbeat.StreamType.VOD);
    ```
 
-1. **Attach video metadata -** Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
+1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard video metadata -** [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+    * **Standard metadata -** [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
     
       >[!NOTE]
       >
-      >Attaching the standard video metadata object to the media object is optional.
+      >Attaching the standard metadata object to the media object is optional.
 
-        * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript) (VideoMetadataKeys)
+        * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript) 
 
-          See the comprehensive set of available video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+          See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
-    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this video. For example:     
+    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this media. For example:     
     
       ```js    
       /* Set custom context data */ 
@@ -70,29 +71,29 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
    >[!TIP]
    >
-   >The second value is the custom video metadata object name that you created in step 2.
+   >The second value is the custom media metadata object name that you created in step 2.
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. This API is used to load the video data/metadata and to estimate the time-to-start QoS metric (the time duration between `trackSessionStart` and `trackPlay`).
+   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. This API is used to load the data/metadata and to estimate the time-to-start QoS metric (the time duration between `trackSessionStart` and `trackPlay`).
 
    >[!NOTE]
    >
-   >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Track the actual start of playback -** Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
 
    ```js
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Track the completion of playback -** Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback -** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```js
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Track the end of the session -** Identify the event from the video player for the unloading/closing of the video playback, where the user closes the video and/or the video is completed and has been unloaded, and call `trackSessionEnd`: 
+1. **Track the end of the session -** Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
 
    ```js
    mediaHeartbeat.trackSessionEnd();
@@ -100,22 +101,22 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marks the end of a video tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` marks the end of a tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
-1. **Track all possible pause scenarios -** Identify the event from the video player for video pause and call `trackPause`: 
+1. **Track all possible pause scenarios -** Identify the event from the media player for pause and call `trackPause`: 
 
    ```js
    mediaHeartbeat.trackPause();
    ```
 
-   **Pause Scenarios -** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+   **Pause Scenarios -** Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.
     * (*Mobile Apps*) - The user puts the application into the background, but you want the app to keep the session open.
-    * (*Mobile Apps*) - Any type of system interrupt occurs that causes an application to be backgrounded. For example, the user receives a call, or a pop up from another application occurs, but you want the application to keep the session alive to give the user the opportunity to resume the video from the point of interruption.
+    * (*Mobile Apps*) - Any type of system interrupt occurs that causes an application to be backgrounded. For example, the user receives a call, or a pop up from another application occurs, but you want the application to keep the session alive to give the user the opportunity to resume the media from the point of interruption.
 
-1. Identify the event from the player for video play and/or video resume from pause and call `trackPlay`: 
+1. Identify the event from the player for play and/or resume from pause and call `trackPlay`: 
 
    ```js
    mediaHeartbeat.trackPlay();
@@ -123,7 +124,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the video playback resumes.
+   >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 * Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the JavaScript SDK for a complete tracking example.

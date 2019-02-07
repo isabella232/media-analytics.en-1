@@ -7,7 +7,7 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 
 # Set up JavaScript{#set-up-javascript}
 
-* **Obtain valid configuration parameters for Heartbeats -** These parameters can be obtained from an Adobe representative after you set up your analytics account. 
+* **Obtain valid configuration parameters -** These parameters can be obtained from an Adobe representative after you set up your analytics account. 
 * **Implement `AppMeasurement` for JavaScript in your media application -** For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html). 
 
 * **Provide the following capabilities in your media player:**
@@ -17,23 +17,23 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) library to your project. Create local references to the classes for convenience.
 
-   1. Expand the `VideoHeartbeatLibrary-js-v2.*.zip` file that you downloaded. 
-   1. Verify that the `VideoHeartbeat.min.js` file exists in the `libs` directory: 
+   1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded. 
+   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory: 
    
-   1. Host the `VideoHeartbeat.min.js` file.
+   1. Host the `MediaSDK.min.js` file.
 
       This core JavaScript file must be hosted on a web server that is accessible to all pages on your site. You need the path to these files for the next step. 
    
-   1. Reference `VideoHeartbeat.min.js` on all site pages.
+   1. Reference `MediaSDK.min.js` on all site pages.
 
-      Include `VideoHeartbeat` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. For example:     
+      Include `MediaSDK` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. For example:     
    
       ```    
       <script type="text/javascript" 
-      src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/VideoHeartbeat.min.js"></script>
+      src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.min.js"></script>
       ```
 
-   1. To quickly verify that the Heartbeat library was successfully imported, instantiate the `ADB.va.MediaHeartbeatConfig` class.
+   1. To quickly verify that the library was successfully imported, instantiate the `ADB.va.MediaHeartbeatConfig` class.
 
       >[!NOTE]
       >

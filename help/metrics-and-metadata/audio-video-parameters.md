@@ -9,6 +9,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 
 >[!IMPORTANT]
 >
+>On February 7th, 2019, Adobe Analytics for Video and Audio released a metric name change. <i>Media Initiates</i> will now be called <i>Media Starts</i>. This change was made to reflect industry standards in metrics and reporting, and to make the metric easily identifiable in reporting. 
+
+>[!NOTE]
+>
 >Beginning on September 13th, 2018 a change was made to the labels for some dimensions, metrics, and reports, to allow for cross-content tracking of video and audio analytics. The labels that have been changed include: *video initiates* to *media initiates*, *video length* to *content length*, and *video name* to *content name*. The video reports in Reports and Analytics have all been updated to use the name "Media" rather than "Video". The label changes did not change data collection or historic data. Please take note of these changes in the case that you're using them within Report Builder or in any other external automated data pulls that might be impacted by this change.
 
 This topic presents a list of audio and video content data, including context data values, that Adobe collects via solution variables.
@@ -258,11 +262,11 @@ Table data description:
 
 ## Audio and Video Metrics {#section_3D5F9C555274428AA6030D07596177E9}
 
-### Media Initiates 
+### Media Starts 
 
 | Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp;|
 | --- | --- | --- | --- |
-| **Media Initiates** | <ul> <li> **SDK Key:** Automatically set</li> <li> **API Key:** N/A</li> <li> **Type:** string</li> <li> **Sent with:** Initiate</li> <li> **Min. SDK Version:** Any</li> <li> **Sample value:** `TRUE` </li> <li> **Description:** Load event for the media. (This occurs when the viewer clicks the **Play** button). This would count even if there are pre-roll ads, buffering, errors, and so on.  Important:  This can only be true if it is set. If it is not set, no value is returned.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:** `a.media.view` </li> <li> **Heartbeats:** `s:event:type=start` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Media Initiates </li> <li> **Context Data:** `a.media.view` </li> <li> **Data Feed:** `videostart` </li> <li> **Audience Manager:** `c_contextdata.a.media.view` </li> </ul> |
+| **Media Starts** | <ul> <li> **SDK Key:** Automatically set</li> <li> **API Key:** N/A</li> <li> **Type:** string</li> <li> **Sent with:** Initiate</li> <li> **Min. SDK Version:** Any</li> <li> **Sample value:** `TRUE` </li> <li> **Description:** Load event for the media. (This occurs when the viewer clicks the **Play** button). This would count even if there are pre-roll ads, buffering, errors, and so on.  Important:  This can only be true if it is set. If it is not set, no value is returned.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:** `a.media.view` </li> <li> **Heartbeats:** `s:event:type=start` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Media Starts </li> <li> **Context Data:** `a.media.view` </li> <li> **Data Feed:** `videostart` </li> <li> **Audience Manager:** `c_contextdata.a.media.view` </li> </ul> |
 
 ### Content Starts 
 

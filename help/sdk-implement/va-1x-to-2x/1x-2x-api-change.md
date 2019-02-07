@@ -5,7 +5,7 @@ uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 
 ---
 
-# API 1.x to 2.x conversion{#x-to-x-api-conversion}
+# API 1.x to 2.x conversion {#one-x-to-two-x-conv}
 
 **Media SDK 2.x API References:**
 
