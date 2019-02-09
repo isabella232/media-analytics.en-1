@@ -9,7 +9,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 ## Download the 2.x Media SDKs {#section_551A10AD7880426BB29AE52482BB4211}
 
-| 2.x Media SDKs&nbsp;&nbsp; | Latest Media SDK Downloads | APIs | Documentation |
+| 2.x Media SDKs&nbsp;&nbsp;&nbsp;&nbsp; | Latest Media SDK Downloads | APIs | Documentation |
 | --- | --- | --- | --- |
 | Android/FireTV | [Media SDK for Android v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Android API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Set up Android](../sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [Media SDK for for iOS v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) (Contact [Customer Care ](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 2.0 SDK) | [iOS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Set up iOS](../sdk-implement/setup/set-up-ios.md) |
@@ -19,7 +19,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 ## Download the Adobe Nielsen 2.x SDKs {#section_ih5_vpz_p1b}
 
-|  Adobe Nielsen 2.x SDKs  | Latest Media SDK Downloads | Nielsen Implementation Guides |
+|  Adobe Nielsen 2.x SDKs&nbsp;&nbsp;&nbsp;&nbsp;  | Latest Media SDK Downloads | Nielsen Implementation Guides |
 |---|---|---|
 | **Android** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [Android 2.1](../nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
 | **iOS** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [iOS 2.1](../nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |

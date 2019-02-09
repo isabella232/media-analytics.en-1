@@ -25,7 +25,7 @@ Custom Video Tracking utilizes the [manual link tracking using custom link code]
 * Metadata can be added to any tracking call as part of the link data
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
 
-```js
+```javascript
 /* Call on video complete */ 
  
 if (e.type == "ended") {  
@@ -52,7 +52,7 @@ if (e.type == "ended") {
 
 **Sample JavaScript for HTML5 Player**
 
-```js
+```javascript
 <script type="text/javascript"> 
   myvideo = document.getElementById('movie'); 
   myvideo.addEventListener('play',myHandler,false); 

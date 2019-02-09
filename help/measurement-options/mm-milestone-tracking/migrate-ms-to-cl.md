@@ -115,14 +115,22 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s.Media.contextDataMapping = {
-  "a.media.name":"eVar2,prop2",
-  "a.media.segment":"eVar3",
-  "a.contentType":"eVar1",
-  "a.media.timePlayed":"event3",
-  "a.media.view":"event1",
-  "a.media.segmentView":"event2",
-  "a.media.complete":"event7",
+s.Media.
+  contextDataMapping = {
+  "a.media.name":
+    "eVar2,prop2",
+  "a.media.segment":
+    "eVar3",
+  "a.contentType":
+    "eVar1",
+  "a.media.timePlayed":
+    "event3",
+  "a.media.view":
+    "event1",
+  "a.media.segmentView":
+    "event2",
+  "a.media.complete":
+    "event7",
   "a.media.milestones":{
     25:"event4",
     50:"event5",
@@ -144,11 +152,11 @@ Media.trackVars
 <td>
 <pre>
 s.Media.trackVars
-= "events,
-prop2,
-eVar1,
-eVar2,
-eVar3";
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -157,14 +165,16 @@ linkTrackVars
 <td>
 <pre>
 s.linkTrackVars
-= 'events,
-prop10,
-eVar10,
-eVar12,
-eVar13,
-eVar15,
-contextData.video.name,
-contextData.video.view';
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.view';
 </pre>
 </td>
 </tr>
@@ -175,13 +185,13 @@ Media.trackEvents
 <td>
 <pre>
 s.Media.trackEvents
-= "event1,
-event2,
-event3,
-event4,
-event5,
-event6,
-event7"
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -190,7 +200,7 @@ linkTrackEvents
 <td>
 <pre>
 s.linkTrackEvents
-= 'event2';
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -270,11 +280,11 @@ Media.trackVars
 <td>
 <pre>
 s.Media.trackVars
-= "events,
-prop2,
-eVar1,
-eVar2,
-eVar3";
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -283,14 +293,16 @@ linkTrackVars
 <td>
 <pre>
 s.linkTrackVars
-= 'events,
-prop10,
-eVar10,
-eVar12,
-eVar13,
-eVar15,
-contextData.video.name,
-contextData.video.view';
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.view';
 </pre>
 </td>
 </tr>
@@ -301,13 +313,13 @@ Media.trackEvents
 <td>
 <pre>
 s.Media.trackEvents
-= "event1,
-event2,
-event3,
-event4,
-event5,
-event6,
-event7"
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -316,7 +328,7 @@ linkTrackEvents
 <td>
 <pre>
 s.linkTrackEvents
-= 'event2';
+  = 'event2';
 </pre>
 </td>
 </tr>

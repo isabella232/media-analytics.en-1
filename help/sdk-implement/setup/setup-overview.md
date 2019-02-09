@@ -67,7 +67,7 @@ There are three main SDK components involved in media tracking:
 
    The following sample code utilizes our JavaScript 2.x SDK for an HTML5 video player: 
 
-   ```js
+   ```javascript
    // Create local references to the heartbeat classes 
    var MediaHeartbeat = ADB.va.MediaHeartbeat; 
    var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig; 
@@ -101,7 +101,6 @@ There are three main SDK components involved in media tracking:
    // Create mediaHeartbeat instance      
    this.mediaHeartbeat =  
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
-   
    ```
 
 ## Validate {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
@@ -132,7 +131,7 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 | Chromecast | [Configure for Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configure for iOS ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [Configure for JavaScript ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> **Android:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS:** [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> **Android:**  [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS:**  [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS:**  [Configure Video Analytics ](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configure for TVML ](vhl_tvml.pdf) | 
 
 \* For all 1.x SDKs, the links are for the full PDF download of the documentation.

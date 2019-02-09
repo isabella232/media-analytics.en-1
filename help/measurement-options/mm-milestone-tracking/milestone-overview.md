@@ -64,7 +64,7 @@ The following variables let you configure video measurement. You must define val
 
 ## Optional variables {#section_ufg_zzy_cfb}
 
-| Variable&nbsp;&nbsp;&nbsp; | Description |
+| Variable&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | --- | --- |
 | `Media.autoTrack` | **Syntax:** <br/><br/> `s.Media.autoTrack = true` <br/><br/>Enables automatic tracking for supported players. Supported players are as follows: <ul> <li> Open Source Media Framework (OSMF) </li> <li> FLVPlayback (Video players created by the import video wizard in Flash Professional) </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API versions 2 & 3 (see [Brightcove](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_other_players.html)) </li> <li> Windows Media Player, Quicktime, or Real Player using JavaScript </li> </ul> <br/><br/>If you are not using one of the above players you can use `Media.open` `Media.play` `Media.stop` `Media.close` to track player events.|
 | `Media.autoTrackNetStreams` | **Syntax:** <br/><br/> `s.Media.autoTrackNetStreams = true` <br/><br/>Flash 10.3 introduced new functionality to the NetStream component that enables enhanced video tracking. If you are using a custom Flash NetStream player you can enable this variable to enable functionality similar to autoTrack. This method requires that videos are viewed in Flash 10.3 or later.  |
@@ -122,7 +122,7 @@ You can track media players by creating functions attached to the video player e
 
 To accomplish this, you can define four custom functions that you can call from the media player event handlers. The various parameters passed into `Media.open`, `Media.play`, `Media.stop`, and `Media.close` come from the player. The following pseudocode demonstrates how this might be done:
 
-```
+```javascript
 /* Call on video load */ 
 function startMovie() { 
     s.Media.open(mediaName, mediaLength, mediaPlayerName); 
@@ -157,13 +157,13 @@ The JavaScript media module identifies all `<embed>` or `<object>` tags in the p
 
 You must have the `classid` attribute set on the object you want to track. The `classid` is required to expose the event handlers used by the Media Module to automatically track the video.
 
-```
+```javascript
 s.Media.autoTrack = true
 ```
 
 ## JavaScript sample code {#section_i4g_4zy_cfb}
 
-```
+```javascript
 // Sample implementation 
 s.usePlugins=true 
 function s_doPlugins(s) { 
