@@ -40,7 +40,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
         
         1. Ensure that the **[!UICONTROL Copy Items if Needed]** checkbox is selected, the **[!UICONTROL Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL Add to Target]** are selected.
 
-           ![](assets/choose-options_ios.png)
+           ![Choose options](../assets/choose-options_ios.png)
 
         1. Click **[!UICONTROL Finish]**. 
         1. In **[!UICONTROL Project Navigator]**, select your app and select your targets. 

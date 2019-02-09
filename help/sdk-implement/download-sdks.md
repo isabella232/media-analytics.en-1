@@ -33,7 +33,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 ## Download the 1.x Media SDKs {#section_B91B3A02E68B4B42917E392AAE666522}
 
-| 1.x SDKs&nbsp;&nbsp;&nbsp;&nbsp; | Media SDK Downloads | Getting Started Guides |
+| &nbsp;1.x&nbsp;SDKs&nbsp;&nbsp; | Media SDK Downloads | Getting Started Guides |
 | --- | --- | --- |
 | Android | [SDK for Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Get Started - Media 1.x for Android](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_android.pdf) | 
 | iOS | [SDK for iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Get Started - Media 1.x for iOS](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_ios.pdf) | 
