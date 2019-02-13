@@ -9,7 +9,7 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 
 >[!IMPORTANT]
 >
->The following instructions are for the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation](../../sdk-implement/download-sdks.md). For Primetime integrators, see [Primetime Media SDK Documentation](#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_tzh_llk_t2b).
+>The following instructions apply to the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation](../../sdk-implement/download-sdks.md). For Primetime integrators, see [Primetime Media SDK Documentation](#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_tzh_llk_t2b).
 
 ## General Implementation Guidelines {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
@@ -118,24 +118,24 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
   >
   >An RDC tracking server or CNAME resolving to an RDC server is required for Experience Cloud Visitor ID service.
 
-  The analytics tracking server should end in `.sc.omtrdc.net` or be a CNAME. 
+  The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME. 
 
-* **Heartbeats (Media Analytics)** Always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
+* **Heartbeats (Media Analytics)** Always has the format "`[namespace].hb.omtrdc.net`", where "`[namespace]`" is defined by your login company and is provided by Adobe.
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
-| Video Analytics 1.x SDKs* &nbsp;&nbsp;&nbsp;&nbsp;| Developer Guides |
+| &nbsp;Video Analytics 1.x SDKs* &nbsp;&nbsp;| &nbsp; Developer Guides |
 | --- | --- |
 | Android | [Configure for Android ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [Configure for AppleTV ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Configure for Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configure for iOS ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [Configure for JavaScript ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> **Android:** &nbsp; [Configure Video Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS:** &nbsp; [Configure Video Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS:** &nbsp; [Configure Video Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> **Android: ** &nbsp;&nbsp; [Configure Video Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> **DHLS: ** &nbsp;&nbsp; [Configure Video Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_ ) </li> <li> **iOS: ** &nbsp;&nbsp; [Configure Video Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configure for TVML ](vhl_tvml.pdf) | 
 
 \* For all 1.x SDKs, the links are for the full PDF download of the documentation.
 
-## Latest Primetime Media SDK Documentation {#section_tzh_llk_t2b}
+## Primetime Media SDK Documentation {#section_tzh_llk_t2b}
 
-*  [Primetime User Guides](https://helpx.adobe.com/primetime/user-guide.html)
+* [Primetime User Guides](https://helpx.adobe.com/primetime/user-guide.html)

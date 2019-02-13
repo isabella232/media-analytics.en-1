@@ -26,7 +26,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 **On pause/resume:**
 
 * Call `trackPause`
-* Call `trackPlay` *when playback resumes*
+* Call `trackPlay` &nbsp; _when playback resumes_
 
 **On media complete:**
 

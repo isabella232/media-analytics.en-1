@@ -80,19 +80,19 @@ The table below provides a list of the devices that are currently supported thro
 
 | &nbsp;&nbsp;&nbsp;&nbsp; | Media SDK | Media Collection API |
 |---|:---:|:---:|
-| **JavaScript Browser** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **iOS Devices** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Android Devices** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Unified Windows Platforms (UWP)** | | ![](assets/icon-blue-check.png) |
-| **Blackberry** | | ![](assets/icon-blue-check.png) |
-| **Apple TV (new/legacy)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **ROKU (JS)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **ROKU (Native app)** | | ![](assets/icon-blue-check.png) |
-| **OSX** | | ![](assets/icon-blue-check.png) |
-| **Fire TV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Android TV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Chromecast** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Xbox One/360** | | ![](assets/icon-blue-check.png) |
-| **Sony PS3/PS4** | | ![](assets/icon-blue-check.png) |
-| **(Other/New Connected Devices)** | | ![](assets/icon-blue-check.png) |
+| **JavaScript Browser**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **iOS Devices**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **Android Devices**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **Unified Windows Platforms (UWP)**  | | ![](assets/icon-blue-check.png) |
+| **Blackberry**  | | ![](assets/icon-blue-check.png) |
+| **Apple TV (new/legacy)**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **ROKU (JS)**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **ROKU (Native app)**  | | ![](assets/icon-blue-check.png) |
+| **OSX**  | | ![](assets/icon-blue-check.png) |
+| **Fire TV**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **Android TV**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **Chromecast**  | ![](assets/icon-blue-check.png)  | ![](assets/icon-blue-check.png) |
+| **Xbox One/360**  | | ![](assets/icon-blue-check.png) |
+| **Sony PS3/PS4**  | | ![](assets/icon-blue-check.png) |
+| **(Other/New Connected Devices)**  | | ![](assets/icon-blue-check.png) |
 
