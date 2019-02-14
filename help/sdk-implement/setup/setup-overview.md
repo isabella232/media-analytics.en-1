@@ -23,7 +23,7 @@ There are three main SDK components involved in media tracking:
 
    **Config parameters:**
 
-   |  Variable Name  | Description&nbsp;&nbsp;  | Required  | Default Value  |
+   |  &nbsp;Variable Name&nbsp; | Description&nbsp; | Required  | &nbsp;Default Value&nbsp;  |
    |---|---|:---:|---|
    |  `trackingServer`  | Tracking server for media analytics. This is different from your analytics tracking server.  | Yes  | Empty String  |
    |  `channel`  | Channel name  | No  | Empty String  |
@@ -35,7 +35,7 @@ There are three main SDK components involved in media tracking:
 
 1. Implement the `MediaHeartbeatDelegate`. 
 
-    | Method name | Description&nbsp;&nbsp; | Required |
+    | &nbsp;Method name&nbsp; | &nbsp;Description&nbsp; | Required |
     | --- | --- | :---: |
     | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data.  | Yes |
     | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program.  | Yes | 
@@ -124,7 +124,7 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
-| &nbsp;Video Analytics 1.x SDKs* &nbsp;&nbsp;| &nbsp; Developer Guides |
+| Video&nbsp;Analytics&nbsp;1.x&nbsp;SDKs*&nbsp; | &nbsp;Developer&nbsp;Guides&nbsp; |
 | --- | --- |
 | Android | [Configure for Android ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [Configure for AppleTV ](vhl-dev-guide-v1x_appletv.pdf) |
