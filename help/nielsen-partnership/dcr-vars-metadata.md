@@ -43,7 +43,7 @@ The Nielsen content metadata is provided to the Nielsen SDK through the Media SD
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Client ID** | <ul> <li> **Adobe Constant (v2.1↑):** `CLIENT_ID` </li> <li> **Key (v2.0↓):** `clientid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `us-100000` </li> </ul> | <ul> <li> **Nielsen:** `&ci` </li> <li> **Adobe Analytics:** `a.nielsen.clientid` </li> <li> **Heartbeat:** `s:meta:a.nielsen.clientid` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** prop </li> <li> **Report Name:** Nielsen Client ID </li> <li> **Context Data:** `a.nielsen.clientid` </li> <li> **Data Feed:** `nielsenclientid` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.clientid` </li> </ul> |
+| **Client ID** | <ul> <li> **Adobe Constant (v2.1↑):**&nbsp;`CLIENT_ID` </li> <li> **Key (v2.0↓):**&nbsp;`clientid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`us-100000` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&ci` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.clientid` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.clientid` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** prop </li> <li> **Report Name:** Nielsen Client ID </li> <li> **Context Data:**&nbsp;`a.nielsen.clientid` </li> <li> **Data Feed:**&nbsp;`nielsenclientid` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.clientid` </li> </ul> |
 
 Parent company ID: This value is automatically populated through the provided App ID. To override the brand that is configured for your App ID, you must pass the parent value here, along with the sub-brand ID that is associated to that brand in the `subbrand` key. For example: multiple brands in the App. **Adobe Constant usage:** <ul> <li>Android - `NielsenContentMetadataKeys.CLIENT_ID;` </li> <li>iOS - `ADBNielsenContentMetadataKeyCLIENT_ID;` </li> <li>JavaScript - `NielsenContentMetadataKeys.CLIENT_ID;` </li> </ul> 
 
@@ -54,7 +54,7 @@ Parent company ID: This value is automatically populated through the provided Ap
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Sub-brand** | <ul> <li> **Adobe Constant:** `VCID` </li> <li> **Key:** `vcid` ( `subbrand` deprecated for v2.1) </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `c01` </li> </ul> | <ul> <li> **Nielsen:** `&c6` </li> <li> **Adobe Analytics:** `a.nielsen.vcid` </li> <li> **Heartbeat:** `s:meta:a.nielsen.vcid` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** Nielsen VCID </li> <li> **Context Data:** `a.nielsen.vcid` </li> <li> **Data Feed:** `nielsenvcid` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.vcid` </li> </ul> |
+| **Sub-brand** | <ul> <li> **Adobe Constant:**&nbsp;`VCID` </li> <li> **Key:**&nbsp;`vcid` ( `subbrand` deprecated for v2.1) </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`c01` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c6` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.vcid` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.vcid` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** Nielsen VCID </li> <li> **Context Data:**&nbsp;`a.nielsen.vcid` </li> <li> **Data Feed:**&nbsp;`nielsenvcid` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.vcid` </li> </ul> |
 
 This value is automatically populated through the provided App ID. To override the sub-brand that is configured for your App ID, you can pass the value here. For example: you might want to override this value if you have multiple sub-brands in your App. The Nielsen key `subrand` is deprecated, in favor of `vcid` .
 
@@ -62,7 +62,7 @@ This value is automatically populated through the provided App ID. To override t
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Content Type** | <ul> <li> **Adobe Constant:** `TYPE` </li> <li> **Key:** `type` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `Content` </li> </ul> | <ul> <li> **Nielsen:** `&c3` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** N/A </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `nielsencontenttype` </li> <li> **Audience Manager:** </li> </ul> |
+| **Content Type** | <ul> <li> **Adobe Constant:**&nbsp;`TYPE` </li> <li> **Key:**&nbsp;`type` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`Content` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c3` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** N/A </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`nielsencontenttype` </li> <li> **Audience Manager:** </li> </ul> |
 
 The type of this asset.
 
@@ -70,7 +70,7 @@ The type of this asset.
 
 | Label | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Asset ID** | <ul> <li> **Adobe Constant:** `ASSET_ID` </li> <li> **Key:** `assetid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `vid-123` </li> </ul> | <ul> <li> **Nielsen:** `&ai` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.assetid`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `a:meta:a:nielsen:assetid`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** Nielsen Asset/Program </li> <li> **Context Data:** `a.nielsen.assetid` </li> <li> **Data Feed:** `assetid` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.assetid` </li> </ul> |
+| **Asset ID** | <ul> <li> **Adobe Constant:**&nbsp;`ASSET_ID` </li> <li> **Key:**&nbsp;`assetid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`vid-123` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&ai` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.assetid`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`a:meta:a:nielsen:assetid`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** Nielsen Asset/Program </li> <li> **Context Data:**&nbsp;`a.nielsen.assetid` </li> <li> **Data Feed:**&nbsp;`assetid` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.assetid` </li> </ul> |
 
 This is a unique ID that is assigned to the asset. Nielsen currently recommends that you use `TMS_ID` s, which are also now known as Gracenote IDs.
 
@@ -78,7 +78,7 @@ This is a unique ID that is assigned to the asset. Nielsen currently recommends 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Full Episode** | <ul> <li> **Adobe Constant:** `IS_FULL_EPISODE` </li> <li> **Key:** `isfullepisode` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `y` = full episode, `n` = not a full episode </li> </ul> | <ul> <li> **Nielsen:** `&c53` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `videoshowtype` </li> <li> **Audience Manager:** </li> </ul> |
+| **Full Episode** | <ul> <li> **Adobe Constant:**&nbsp;`IS_FULL_EPISODE` </li> <li> **Key:**&nbsp;`isfullepisode` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`y` = full episode, `n` = not a full episode </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c53` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`videoshowtype` </li> <li> **Audience Manager:** </li> </ul> |
 
 Full episode flag.
 
@@ -86,7 +86,7 @@ Full episode flag.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Program** | <ul> <li> **Adobe Constant:** `PROGRAM` </li> <li> **Key:** `program` </li> <li> **Required:** Yes **Supplier:** Client. </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `Monday Night Football` </li> </ul> | <ul> <li> **Nielsen:** `&cg` </li> <li> **Adobe Analytics:** `a.nielsen.program` </li> <li> **Heartbeat:** `s:meta:a.nielsen.program` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** `a.nielsen.program` </li> <li> **Data Feed:** `videoshow` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.program` </li> </ul> |
+| **Program** | <ul> <li> **Adobe Constant:**&nbsp;`PROGRAM` </li> <li> **Key:**&nbsp;`program` </li> <li> **Required:** Yes **Supplier:** Client. </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`Monday Night Football` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&cg` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.program` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.program` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.nielsen.program` </li> <li> **Data Feed:**&nbsp;`videoshow` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.program` </li> </ul> |
 
 Program name. This must be identical to the program name that is passed in TV metadata. Adobe recommends that you use the metadata that is registered in Nielsen TV Names systems (for example, `myEVNTS` / `myVOD`). If you do not use Nielsen TV Names systems, you can use the name registered with a third-party television listing service.
 
@@ -94,7 +94,7 @@ Program name. This must be identical to the program name that is passed in TV me
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Title** | <ul> <li> **Adobe Constant:** `TITLE` </li> <li> **Key:** `title` </li> <li> **Required:** Yes </li> <li> **Supplier**: Client </li> <li>Type: Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> </ul> | <ul> <li> **Nielsen:** `&tl` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.title`; **v2.0↓** `a.nielsen.sega`. </li> <li> **Heartbeat:** **v2.1↑** `s:meta:a.nielsen.title`; **v2.0↓** `s:meta:a.nielsen.sega`. </li> </ul> | <ul> <li> **Available:**No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** `a.nielsen.title` </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.title` </li> </ul> |
+| **Title** | <ul> <li> **Adobe Constant:**&nbsp;`TITLE` </li> <li> **Key:**&nbsp;`title` </li> <li> **Required:** Yes </li> <li> **Supplier**: Client </li> <li>Type: Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&tl` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.title`; **v2.0↓**&nbsp;`a.nielsen.sega`. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`s:meta:a.nielsen.title`; **v2.0↓**&nbsp;`s:meta:a.nielsen.sega`. </li> </ul> | <ul> <li> **Available:**No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.nielsen.title` </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.title` </li> </ul> |
 
 Title for the video asset (e.g., the episode name is _EpisodeTitle S3 E1_). 
 
@@ -102,7 +102,7 @@ Episode name must be identical to the episode name that is passed in TV metadata
 
 The episode name must meet the following requirements: <br/> 
 
-**Format:** `Episode Title + Season # + Episode #` (e.g., _Title S3E1_). <br/> 
+**Format:**&nbsp;`Episode Title + Season # + Episode #` (e.g., _Title S3E1_). <br/> 
 
 **Characters:** 40 character limit; No special characters. <br/> 
 
@@ -123,7 +123,7 @@ The episode name must meet the following requirements: <br/>
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Length** | <ul> <li> **Adobe Constant:** `LENGTH` </li> <li> **Key:** `length` </li> <li> **Required:** No - v2.1↑; Yes - v2.0↓. </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `18000` (seconds) </li> </ul> | <ul> <li> **Nielsen:** `&sd` </li> <li> **Adobe Analytics:** **v2.1↑** `a.media.length`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `l:asset:length`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** `a.media.length` </li> <li> **Data Feed:** `length` </li> <li> **Audience Manager:** `c_contextdata.a.media.length` </li> </ul> |
+| **Length** | <ul> <li> **Adobe Constant:**&nbsp;`LENGTH` </li> <li> **Key:**&nbsp;`length` </li> <li> **Required:** No - v2.1↑; Yes - v2.0↓. </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`18000` (seconds) </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&sd` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.media.length`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`l:asset:length`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.media.length` </li> <li> **Data Feed:**&nbsp;`length` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.length` </li> </ul> |
 
 From SDK v2.1 and higher, the value in `l:asset:length` is used to override the value of `length` .
 
@@ -131,7 +131,7 @@ From SDK v2.1 and higher, the value in `l:asset:length` is used to override the 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Media URL (v2.0↓ Only)** | <ul> <li> **Key:** `mediaURL` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c66` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Media URL (v2.0↓ Only)** | <ul> <li> **Key:**&nbsp;`mediaURL` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c66` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 >[!IMPORTANT] 
 >This parameter is no longer part of Nielsen content metadata in SDK Version 2.1. This is the URL of the content that is being streamed.
@@ -140,25 +140,25 @@ From SDK v2.1 and higher, the value in `l:asset:length` is used to override the 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Segment A** | <ul> <li> **Adobe Constant:** `SEGA` </li> <li> **Key:** `segA` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `&c32` </li> <li> **Adobe Analytics:** `a.nielsen.sega` </li> <li> **Heartbeat:** `s:meta:a.nielsen.sega` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** _Nielsen Segment A_ </li> <li> **Context Data:** `a.nielsen.sega` </li> <li> **Data Feed:** `segA` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.sega` </li> </ul> |
+| **Segment A** | <ul> <li> **Adobe Constant:**&nbsp;`SEGA` </li> <li> **Key:**&nbsp;`segA` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c32` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.sega` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.sega` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** _Nielsen Segment A_ </li> <li> **Context Data:**&nbsp;`a.nielsen.sega` </li> <li> **Data Feed:**&nbsp;`segA` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.sega` </li> </ul> |
 
 ### Segment B 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Segment B** | <ul> <li> **Adobe Constant:** `SEGB` </li> <li> **Key:** `segB` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `&c33` </li> <li> **Adobe Analytics:** `a.nielsen.segb` </li> <li> **Heartbeat:** `s:meta:a.nielsen.segb` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** _Nielsen Segment B_ </li> <li> **Context Data:** `a.nielsen.segb` </li> <li> **Data Feed:** `segB` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.segb` </li> </ul> |
+| **Segment B** | <ul> <li> **Adobe Constant:**&nbsp;`SEGB` </li> <li> **Key:**&nbsp;`segB` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c33` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.segb` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.segb` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** _Nielsen Segment B_ </li> <li> **Context Data:**&nbsp;`a.nielsen.segb` </li> <li> **Data Feed:**&nbsp;`segB` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.segb` </li> </ul> |
 
 ### Segment C 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Segment C** | <ul> <li> **Adobe Constant:** `SEGC` </li> <li> **Key:** `segC` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `&c34` </li> <li> **Adobe Analytics:** `a.nielsen.segc` </li> <li> **Heartbeat:** `s:meta:a.nielsen.segc` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** _Nielsen Segment C_ </li> <li> **Context Data:** `a.nielsen.segc` </li> <li> **Data Feed:** `segC` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.segc` </li> </ul> |
+| **Segment C** | <ul> <li> **Adobe Constant:**&nbsp;`SEGC` </li> <li> **Key:**&nbsp;`segC` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c34` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.segc` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.segc` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** _Nielsen Segment C_ </li> <li> **Context Data:**&nbsp;`a.nielsen.segc` </li> <li> **Data Feed:**&nbsp;`segC` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.segc` </li> </ul> |
 
 ### Cross Reference ID1 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Cross Reference ID1** | <ul> <li> **Adobe Constant:** `CROSS_REFERENCE_ID_1` </li> <li> **Key:** `crossid1` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> </ul> | <ul> <li> **Nielsen:** `&c36` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.crossid1`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `s:meta:a.nielsen.crossid1`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `crossId1` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.crossid1` </li> </ul> |
+| **Cross Reference ID1** | <ul> <li> **Adobe Constant:**&nbsp;`CROSS_REFERENCE_ID_1` </li> <li> **Key:**&nbsp;`crossid1` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c36` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.crossid1`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`s:meta:a.nielsen.crossid1`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`crossId1` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.crossid1` </li> </ul> |
 
 Standard Episode ID: The ID should be a unique value for each episode. You can use the episode ID that is registered through Nielsen TV Names systems, `myEVNTS` / `myVOD` , or a third-party television listing service (e.g., Gracenote/Tribune ID or Enterprise ID).
 
@@ -167,13 +167,13 @@ Standard Episode ID: The ID should be a unique value for each episode. You can u
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Cross Reference ID2** | <ul> <li> **Adobe Constant:** `CROSS_REFERENCE_ID_2` </li> <li> **Key:** `crossid2` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> </ul> | <ul> <li> **Nielsen:** `&c37` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.crossid2`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `s:meta:a.nielsen.crossid2`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `crossId2` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.crossid2` </li> </ul> |
+| **Cross Reference ID2** | <ul> <li> **Adobe Constant:**&nbsp;`CROSS_REFERENCE_ID_2` </li> <li> **Key:**&nbsp;`crossid2` </li> <li> **Required:** Recommended </li> <li> **Supplier:** Client </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c37` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.crossid2`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`s:meta:a.nielsen.crossid2`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** On HIT </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`crossId2` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.crossid2` </li> </ul> |
 
 ### Original Airdate 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Original Airdate** | <ul> <li> **Adobe Constant:** `AIR_DATE` </li> <li> **Key:** `airdate` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> <li> **Sample value:** `YYYYMMDDHH24 :MI:SS` </li> </ul> | <ul> <li> **Nielsen:** `&c54` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.airDate`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `s:meta:a.nielsen.airDate`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** `a.nielsen.airDate` </li> <li> **Data Feed:** `airdate` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.airDate` </li> </ul> |
+| **Original Airdate** | <ul> <li> **Adobe Constant:**&nbsp;`AIR_DATE` </li> <li> **Key:**&nbsp;`airdate` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> <li> **Sample value:**&nbsp;`YYYYMMDDHH24 :MI:SS` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c54` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.airDate`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`s:meta:a.nielsen.airDate`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.nielsen.airDate` </li> <li> **Data Feed:**&nbsp;`airdate` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.airDate` </li> </ul> |
 
 This is the original air date and time in the Eastern United States.
 
@@ -182,7 +182,7 @@ This is the original air date and time in the Eastern United States.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Ad Load Type** | <ul> <li> **Adobe Constant:** `AD_LOAD_TYPE` </li> <li> **Key:** `adloadtype` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> <li> **Sample value:** 1 = Linear; 2 = Dynamic. </li> </ul> | <ul> <li> **Nielsen:** `&c57` , `cr` (DTVR) </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.adloadtype`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `s:meta:a.nielsen.adloadtype`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** `a.nielsen.adloadtype` </li> <li> **Data Feed:** `adloadtype` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.adloadtype` </li> </ul> |
+| **Ad Load Type** | <ul> <li> **Adobe Constant:**&nbsp;`AD_LOAD_TYPE` </li> <li> **Key:**&nbsp;`adloadtype` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> <li> **Sample value:** 1 = Linear; 2 = Dynamic. </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c57` , `cr` (DTVR) </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.adloadtype`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`s:meta:a.nielsen.adloadtype`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.nielsen.adloadtype` </li> <li> **Data Feed:**&nbsp;`adloadtype` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.adloadtype` </li> </ul> |
 
 _Linear_ - Matches TV ad load; _Dynamic_ - Dynamic Ad Insertion (DAI) 
 
@@ -191,7 +191,7 @@ _Linear_ - Matches TV ad load; _Dynamic_ - Dynamic Ad Insertion (DAI)
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Ads Included** | <ul> <li> **Adobe Constant:** `ADS_INCLUDED` </li> <li> **Key:** `hasAds` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> <li> **Sample value:** `0` : No ads; `1` : Includes ads; `2` : Unknown (default). </li> </ul> | <ul> <li> **Nielsen:** `&c77` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `hasAds` </li> <li> **Audience Manager:** </li> </ul> |
+| **Ads Included** | <ul> <li> **Adobe Constant:**&nbsp;`ADS_INCLUDED` </li> <li> **Key:**&nbsp;`hasAds` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Used in Total Content Ratings:** Yes </li> <li> **Sample value:**&nbsp;`0` : No ads; `1` : Includes ads; `2` : Unknown (default). </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c77` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Analytics Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`hasAds` </li> <li> **Audience Manager:** </li> </ul> |
 
 This identifies whether or not the content includes ads. 
 
@@ -206,7 +206,7 @@ The Nielsen ad metadata is provided to the Nielsen SDK through the VHL API `trac
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Type** | <ul> <li> **Adobe Constant (v2.1↑):** `TYPE` </li> <li> **Key:** `type` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Possible values:** `preroll`; `midroll`; `postroll`; ad. </li> </ul> | <ul> <li> **Nielsen:** `&c3` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** Video </li> <li> **Context Data:** </li> <li> **Data Feed:** `N/A` </li> <li> **Audience Manager:** </li> </ul> |
+| **Type** | <ul> <li> **Adobe Constant (v2.1↑):**&nbsp;`TYPE` </li> <li> **Key:**&nbsp;`type` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Possible values:**&nbsp;`preroll`; `midroll`; `postroll`; ad. </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c3` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** Video </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:** </li> </ul> |
 
 **Adobe Constant Usage:** <br/>Android - `NielsenAdMetadataKeys.CLIENT_ID;` <br/>iOS - `ADBNielsenAdMetadataKeyCLIENT_ID;` <br/>JavaScript - `NielsenAdMetadataKeys.CLIENT_ID;` 
 
@@ -218,7 +218,7 @@ The Nielsen ad metadata is provided to the Nielsen SDK through the VHL API `trac
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Asset ID** | <ul> <li> **Adobe Constant:** `ASSET_ID` </li> <li> **Key:** `assetid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:** `ad-123` </li> </ul> | <ul> <li> **Nielsen:** `&ai` </li> <li> **Adobe Analytics:** **v2.1↑** `a.nielsen.assetid`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `s:meta:a.nielsen.assetid`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Video </li> <li> **Context Data:** `a.nielsen.assetid` </li> <li> **Data Feed:** `assetid` </li> <li> **Audience Manager:** `c_contextdata.a.nielsen.assetid` </li> </ul> |
+| **Asset ID** | <ul> <li> **Adobe Constant:**&nbsp;`ASSET_ID` </li> <li> **Key:**&nbsp;`assetid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> <li> **Sample value:**&nbsp;`ad-123` </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&ai` </li> <li> **Adobe Analytics:** **v2.1↑**&nbsp;`a.nielsen.assetid`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`s:meta:a.nielsen.assetid`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Video </li> <li> **Context Data:**&nbsp;`a.nielsen.assetid` </li> <li> **Data Feed:**&nbsp;`assetid` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.nielsen.assetid` </li> </ul> |
 
 The unique ID assigned to this asset.
 
@@ -227,7 +227,7 @@ The unique ID assigned to this asset.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Length** | <ul> <li> **Adobe Constant:** `LENGTH` </li> <li> **Key:** `length` </li> <li> **Required:** No - v2.1↑; Yes - v2.0↓. </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | **Nielsen:** <ul><li>`&sd`; **Adobe Analytics:** **v2.1↑** `a.media.ad.length`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑** `l:asset:ad_length`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** `a.media.ad.length` </li> <li> **Data Feed:** `length` </li> <li> **Audience Manager:** `c_contextdata.a.media.ad.length` </li> </ul> |
+| **Length** | <ul> <li> **Adobe Constant:**&nbsp;`LENGTH` </li> <li> **Key:**&nbsp;`length` </li> <li> **Required:** No - v2.1↑; Yes - v2.0↓. </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | **Nielsen:** <ul><li>`&sd`; **Adobe Analytics:** **v2.1↑**&nbsp;`a.media.ad.length`; **v2.0↓** N/A. </li> <li> **Heartbeat:** **v2.1↑**&nbsp;`l:asset:ad_length`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.media.ad.length` </li> <li> **Data Feed:**&nbsp;`length` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.length` </li> </ul> |
 
 The length of the ad in seconds.
 
@@ -239,7 +239,7 @@ The Nielsen channel metadata is provided to the Nielsen SDK through the VHL API 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Channel Name** | <ul> <li> **Adobe Constant (v2.1↑):** `CHANNEL_NAME` </li> <li> **Key:** `channelName` </li> <li> **Required:** Yes (for App only) </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `N/A` </li> <li> **Adobe Analytics:** `N/A` </li> <li> **Heartbeat:** `N/A` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `channelName` </li> <li> **Audience Manager:** </li> </ul> |
+| **Channel Name** | <ul> <li> **Adobe Constant (v2.1↑):**&nbsp;`CHANNEL_NAME` </li> <li> **Key:**&nbsp;`channelName` </li> <li> **Required:** Yes (for App only) </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`N/A` </li> <li> **Adobe Analytics:**&nbsp;`N/A` </li> <li> **Heartbeat:**&nbsp;`N/A` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`channelName` </li> <li> **Audience Manager:** </li> </ul> |
 
 The Channel Name field is a 32-character, free-form text field that contains the name of the channel. This parameter is used for troubleshooting and is not reported. If you specify none, the default value is used. 
 
@@ -256,7 +256,7 @@ The Nielsen App information is provided to the Nielsen SDK by using the VHL API 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **App ID** | <ul> <li> **Key:** `appid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `&c13` </li> <li> **Adobe Analytics:** `a.nielsen.appid` </li> <li> **Heartbeat:** `s:meta:a.nielsen.appid` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** prop </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** `a.nielsen.appid` </li> <li> **Data Feed:**  **Audience Manager:**; Browser - `apid`; Mobile - `appid`. </li> </ul> |
+| **App ID** | <ul> <li> **Key:**&nbsp;`appid` </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c13` </li> <li> **Adobe Analytics:**&nbsp;`a.nielsen.appid` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.nielsen.appid` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** prop </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:**&nbsp;`a.nielsen.appid` </li> <li> **Data Feed:**  **Audience Manager:**; Browser - `apid`; Mobile - `appid`. </li> </ul> |
 
 This is the ID that Nielsen assigns to each application. The App ID is a GUID data type. It is specific to each application. The top two levels of reporting are configured to your App ID (Brand and Sub-brand). These reporting levels are defined during onboarding when you set up your Nielsen MarketView Hierarchy. Nielsen provides App IDs for all implementations (mobile and browser). A separate App ID can be provided for development and production applications.
 
@@ -264,7 +264,7 @@ This is the ID that Nielsen assigns to each application. The App ID is a GUID da
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **App Name** | <ul> <li> **Key:** `appname` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `&c15` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `appName` </li> <li> **Audience Manager:** </li> </ul> |
+| **App Name** | <ul> <li> **Key:**&nbsp;`appname` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c15` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`appName` </li> <li> **Audience Manager:** </li> </ul> |
 
 The name of your application.
 
@@ -272,13 +272,13 @@ The name of your application.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **App Version** | <ul> <li> **Key:** `appversion` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** `&c12` </li> <li> **Adobe Analytics:**  **v2.1↑** `a.nielsen.appversion`; **v2.0↓** N/A. </li> <li> **Heartbeat:**  **v2.1↑** `s:meta:a.nielsen.appversion`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**  **Audience Manager:**; Browser - N/A; Mobile - `appVersion`. </li> </ul> |
+| **App Version** | <ul> <li> **Key:**&nbsp;`appversion` </li> <li> **Required:** No </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c12` </li> <li> **Adobe Analytics:**  **v2.1↑**&nbsp;`a.nielsen.appversion`; **v2.0↓** N/A. </li> <li> **Heartbeat:**  **v2.1↑**&nbsp;`s:meta:a.nielsen.appversion`; **v2.0↓** N/A. </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**  **Audience Manager:**; Browser - N/A; Mobile - `appVersion`. </li> </ul> |
 
 ### SF Code 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **SF Code** | <ul> <li> **Key:** `sfcode` </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** (Found in config) </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** `sfcode` </li> <li> **Audience Manager:** </li> </ul> |
+| **SF Code** | <ul> <li> **Key:**&nbsp;`sfcode` </li> <li> **Required:** Yes </li> <li> **Supplier:** Nielsen </li> <li> **Type:** Static </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** 1.6.7 </li> </ul> | <ul> <li> **Nielsen:** (Found in config) </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:**&nbsp;`sfcode` </li> <li> **Audience Manager:** </li> </ul> |
 
 This is the Nielsen collection facility to which the SDK should connect. 
 
@@ -303,137 +303,137 @@ This enables Debug Mode, which allows output to be viewed in console.
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Site Section** | <ul> <li> **Key:** N/A</li> <li> **Required:** Yes</li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&asn` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Site Section** | <ul> <li> **Key:** N/A</li> <li> **Required:** Yes</li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&asn` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Designated Market Area (DMA) 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Designated Market Area (DMA)** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK / Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&segment2` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Designated Market Area (DMA)** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK / Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&segment2` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Country Code 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Country Code** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK / Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&segment1` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Country Code** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK / Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&segment1` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Crash Identifier 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Crash Identifier** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&crs` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Crash Identifier** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&crs` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Browser/App Duration 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Browser/App Duration** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c27` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Browser/App Duration** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c27` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Hash Indicator 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Hash Indicator** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&enc` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Hash Indicator** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&enc` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### GPS Latitude 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **GPS Latitude** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&lat` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **GPS Latitude** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&lat` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### GPS Longitude 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **GPS Longitude** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&lon` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **GPS Longitude** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&lon` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Player ID 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Player ID** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c29` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Player ID** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c29` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Build Version 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Build Version** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c30` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Build Version** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c30` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Product (SubResource Type) 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Product (SubResource Type)** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Static </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&st` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Product (SubResource Type)** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Static </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&st` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Workflow Identifier 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Workflow Identifier** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Static </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&prd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Workflow Identifier** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Static </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&prd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Device Grouping 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Device Grouping** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c8` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Device Grouping** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c8` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### OS Grouping 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **OS Grouping** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c7` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **OS Grouping** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c7` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Adobe ID - Adobe Visitor ID 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Adobe ID - Adobe Visitor ID** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c40` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Adobe ID - Adobe Visitor ID** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** Client </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c40` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Platform 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Platform** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c10` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Platform** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c10` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### OS Version 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **OS Version** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c14` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **OS Version** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c14` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Device Version 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Device Version** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&devtypid` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Device Version** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&devtypid` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### DayCD 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **DayCD** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&wkd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **DayCD** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&wkd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### HourCD 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **HourCD** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&hrd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **HourCD** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&hrd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Reporting Data Date 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Reporting Data Date** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&dd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Reporting Data Date** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&dd` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Adobe Report Suite ID 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Adobe Report Suite ID** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&c35` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Adobe Report Suite ID** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** SDK </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&c35` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 
 ### Ping Received Time 
 
 | Label | Implementation | Network Parameters | Reporting |
 | --- | --- | --- | --- |
-| **Ping Received Time** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** Adobe </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:** `&ti` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
+| **Ping Received Time** | <ul> <li> **Key:** </li> <li> **Required:** Yes </li> <li> **Supplier:** Adobe </li> <li> **Type:** Dynamic </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** </li> </ul> | <ul> <li> **Nielsen:**&nbsp;`&ti` </li> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeat:** N/A </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** </li> <li> **Expiration:** </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** N/A </li> <li> **Audience Manager:** </li> </ul> |
 

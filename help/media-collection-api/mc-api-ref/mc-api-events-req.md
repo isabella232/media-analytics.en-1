@@ -13,7 +13,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ```
 
-**URI Parameter -** `sid`: Session ID returned from a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md).
+**URI Parameter -**&nbsp;`sid`: Session ID returned from a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md).
 
 **Request Body -** Must be JSON, must have the same structure as this sample request body:
 
