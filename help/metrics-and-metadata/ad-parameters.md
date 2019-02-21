@@ -35,63 +35,63 @@ Table data description:
 
 ### Ad ID 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad ID** | <ul> <li> **SDK Key:** [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.id` </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"2125"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.name` </li> <li> **Heartbeat:**&nbsp;`s:asset:ad_id` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On VISIT </li> <li> **Report Name:** Ad </li> <li> **Context Data:**&nbsp;`a.media.ad.name` </li> <li> **Data Feed:**&nbsp;`videoad` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.name` </li> </ul> |
+| **Ad ID** | <ul> <li> **SDK Key:**&nbsp;[adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.id` </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"2125"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.name` </li> <li> **Heartbeat:**&nbsp;`s:asset:ad_id` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On VISIT </li> <li> **Report Name:** Ad </li> <li> **Context Data:**&nbsp;`a.media.ad.name` </li> <li> **Data Feed:**&nbsp;`videoad` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.name` </li> </ul> |
 
 ID of the ad. (Any integer and/or letter combination) 
 
 ### Ad In Pod Position 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad In Pod Position** | <ul> <li> **SDK Key:** [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podPosition` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.podPosition` </li> <li> **Heartbeat:**&nbsp;`s:asset:pod_position` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad In Pod Position </li> <li> **Context Data:**&nbsp;`a.media.ad.podPosition` </li> <li> **Data Feed:**&nbsp;`videoadinpod` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.podPosition` </li> </ul> |
+| **Ad In Pod Position** | <ul> <li> **SDK Key:**&nbsp;[position](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podPosition` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.podPosition` </li> <li> **Heartbeat:**&nbsp;`s:asset:pod_position` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad In Pod Position </li> <li> **Context Data:**&nbsp;`a.media.ad.podPosition` </li> <li> **Data Feed:**&nbsp;`videoadinpod` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.podPosition` </li> </ul> |
 
 The position (index) of the ad inside the parent ad break. The first ad has index 0, the second ad has index 1, etc.  
 
 ### Ad Length 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad Length** | <ul> <li> **SDK Key:** [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.length` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.1 </li> <li> **Sample value:**&nbsp;`"15" ` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.length` </li> <li> **Heartbeat:**&nbsp;`l:asset:ad_length` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar and classification </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Length and Ad Length (variable) </li> <li> **Context Data:**&nbsp;`a.media.ad.length` </li> <li> **Data Feed:**&nbsp;`videoadlength` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.length` </li> </ul> |
+| **Ad Length** | <ul> <li> **SDK Key:**&nbsp; [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.length` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.1 </li> <li> **Sample value:**&nbsp;`"15" ` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.length` </li> <li> **Heartbeat:**&nbsp;`l:asset:ad_length` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar and classification </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Length and Ad Length (variable) </li> <li> **Context Data:**&nbsp;`a.media.ad.length` </li> <li> **Data Feed:**&nbsp;`videoadlength` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.length` </li> </ul> |
 
 Length of video ad in seconds.  
 
 ### Ad Player Name 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad Player Name** | <ul> <li> **SDK Key:** [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.playerName` </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"Freewheel"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.playerName` </li> <li> **Heartbeat:**&nbsp;`s:sp:player_name` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Player Name </li> <li> **Context Data:**&nbsp;`a.media.ad.playerName` </li> <li> **Data Feed:**&nbsp;`videoadplayername` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.playerName` </li> </ul> |
+| **Ad Player Name** | <ul> <li> **SDK Key:**&nbsp; [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.playerName` </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"Freewheel"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.playerName` </li> <li> **Heartbeat:**&nbsp;`s:sp:player_name` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Player Name </li> <li> **Context Data:**&nbsp;`a.media.ad.playerName` </li> <li> **Data Feed:**&nbsp;`videoadplayername` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.playerName` </li> </ul> |
 
 The name of the player responsible for rendering the ad.  
 
 ### Ad Break Name 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad Break Name** | <ul> <li> **SDK Key:** [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podFriendlyName` </li> <li> **Required:** SDK: Yes; API: No. </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"pre-roll"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.podFriendlyName` </li> <li> **Heartbeat:**&nbsp;`s:asset:pod_name` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Pod Name </li> <li> **Context Data:**&nbsp;`a.media.ad.podFriendlyName` </li> <li> **Data Feed:**&nbsp;`videoadpod` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.podFriendlyName` </li> </ul> |
+| **Ad Break Name** | <ul> <li> **SDK Key:**&nbsp; [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podFriendlyName` </li> <li> **Required:** SDK: Yes; API: No. </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"pre-roll"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.podFriendlyName` </li> <li> **Heartbeat:**&nbsp;`s:asset:pod_name` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Pod Name </li> <li> **Context Data:**&nbsp;`a.media.ad.podFriendlyName` </li> <li> **Data Feed:**&nbsp;`videoadpod` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.podFriendlyName` </li> </ul> |
 
 The friendly name of the Ad Break.  
 
 ### Ad Break Index 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad Break Index** | <ul> <li> **SDK Key:** [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podPosition` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:** </li> <li> **Heartbeat:** </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** N/A </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** </li> <li> **Audience Manager:** </li> </ul> |
+| **Ad Break Index** | <ul> <li> **SDK Key:**&nbsp; [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podPosition` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:** </li> <li> **Heartbeat:** </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** N/A </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** </li> <li> **Audience Manager:** </li> </ul> |
 
 The index of the ad break inside the content starting at 1. This property is used **only** by the Media SDK to generate the Pod ID.  
 
 ### Ad Break Position 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad Break Position** | <ul> <li> **SDK Key:** [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podSecond` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`90` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.podSecond` </li> <li> **Heartbeat:**&nbsp;`l:asset:pod_offset` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Pod Position </li> <li> **Context Data:**&nbsp;`a.media.ad.podSecond` </li> <li> **Data Feed:** </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.podSecond` </li> </ul> |
+| **Ad Break Position** | <ul> <li> **SDK Key:**&nbsp; [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.podSecond` </li> <li> **Required:** Yes </li> <li> **Type:** number </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`90` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.podSecond` </li> <li> **Heartbeat:**&nbsp;`l:asset:pod_offset` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** Classification </li> <li> **Report Name:** Pod Position </li> <li> **Context Data:**&nbsp;`a.media.ad.podSecond` </li> <li> **Data Feed:** </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.podSecond` </li> </ul> |
 
 The offset of the ad break inside the content, in seconds.  
 
 ### Ad Break ID 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Ad Break ID** | <ul> <li> **SDK Key:**&nbsp;`Automatically set` </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`c4a577424c84067899b807c76722d495_1 ` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.pod` </li> <li> **Heartbeat:**&nbsp;`l:asset:pod_id` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Pod </li> <li> **Context Data:**&nbsp;`a.media.ad.pod` </li> <li> **Data Feed:**&nbsp;`videoadpod` </li> <li> **Audience Manager:** </li> </ul> |
 
@@ -99,9 +99,9 @@ The offset of the ad break inside the content, in seconds.
 
 ### Ad Name 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Ad Name** | <ul> <li> **SDK Key:** [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.name` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.1 </li> <li> **Sample value:**&nbsp;`"Ford F-150"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.friendlyName` </li> <li> **Heartbeat:**&nbsp;`s:asset:ad_name` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar and classification </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Name and Ad Name (variable) </li> <li> **Context Data:**&nbsp;`a.media.ad.friendlyName` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.friendlyName` </li> </ul> |
+| **Ad Name** | <ul> <li> **SDK Key:**&nbsp; [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API Key:**&nbsp;`media.ad.name` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.1 </li> <li> **Sample value:**&nbsp;`"Ford F-150"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.friendlyName` </li> <li> **Heartbeat:**&nbsp;`s:asset:ad_name` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar and classification </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Ad Name and Ad Name (variable) </li> <li> **Context Data:**&nbsp;`a.media.ad.friendlyName` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.friendlyName` </li> </ul> |
 
 Friendly name of the ad.  In reporting, "Ad Name" is the classification and "Ad Name (variable)" is the eVar.  
 
@@ -109,7 +109,7 @@ Friendly name of the ad.  In reporting, "Ad Name" is the classification and "Ad 
 
 ### Advertiser 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Advertiser** | <ul> <li> **SDK Key:**&nbsp;`ADVERTISER` </li> <li> **API Key:**&nbsp;`media.ad.advertiser` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.advertiser` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.media.ad.advertiser` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** <i>Advertiser </i> </li> <li> **Context Data:**&nbsp;`a.media.ad.advertiser` </li> <li> **Data Feed:**&nbsp;`videoadvertiser` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.advertiser` </li> </ul> |
 
@@ -117,7 +117,7 @@ Company/Brand whose product is featured in the ad.
 
 ### Campaign ID 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Campaign ID** | <ul> <li> **SDK Key:**&nbsp;`CAMPAIGN_ID` </li> <li> **API Key:**&nbsp;`media.ad.campaignId` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:** Integer, or name (string).  </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.campaign` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.media.ad.campaign` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** <i>Campaign ID </i> </li> <li> **Context Data:**&nbsp;`a.media.ad.campaign` </li> <li> **Data Feed:**&nbsp;`videocampaign` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.campaign` </li> </ul> |
 
@@ -125,7 +125,7 @@ ID of the ad campaign.
 
 ### Creative ID 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Creative ID** | <ul> <li> **SDK Key:**&nbsp;`CREATIVE_ID` </li> <li> **API Key:**&nbsp;`media.ad.creativeId` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:** Integer, or name (string).  </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.creative` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.media.ad.creative` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** <i>Creative ID </i> </li> <li> **Context Data:**&nbsp;`a.media.ad.creative` </li> <li> **Data Feed:**&nbsp;`adclassificationcreative` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.creative` </li> </ul> |
 
@@ -133,7 +133,7 @@ ID of the ad creative.
 
 ### Site ID 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Site ID** | <ul> <li> **SDK Key:**&nbsp;`SITE_ID` </li> <li> **API Key:**&nbsp;`media.ad.siteId` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.site` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.media.ad.site` </li> </ul> | <ul> <li> **Available:** <i>Use custom processing rule </i> </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** <i> </i> </li> <li> **Context Data:**&nbsp;`a.media.ad.site` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.site` </li> </ul> |
 
@@ -141,7 +141,7 @@ ID of the ad site.
 
 ### Creative URL 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Creative URL** | <ul> <li> **SDK Key:**&nbsp;`CREATIVE_URL` </li> <li> **API Key:**&nbsp;`media.ad.creativeURL` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.creativeURL` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.media.ad.creativeURL` </li> </ul> | <ul> <li> **Available:** <i>Use custom processing rule </i> </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** <i> </i> </li> <li> **Context Data:**&nbsp;`a.media.ad.creativeURL` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.creativeURL` </li> </ul> |
 
@@ -149,7 +149,7 @@ URL of the ad creative.
 
 ### Placement ID 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Placement ID** | <ul> <li> **SDK Key:**&nbsp;`PLACEMENT_ID` </li> <li> **API Key:**&nbsp;`media.ad.placementId` </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start, Ad Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.placement` </li> <li> **Heartbeat:**&nbsp;`s:meta:a.media.ad.placement` </li> </ul> | <ul> <li> **Available:** <i>Use custom processing rule </i> </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** <i> </i> </li> <li> **Context Data:**&nbsp;`a.media.ad.placement` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.placement` </li> </ul> |
 
@@ -160,7 +160,7 @@ Placement ID of the ad.
 
 ### Ad Start 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Ad Start** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Start </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.view` </li> <li> **Heartbeat:**  `s:event:type=start`; `s:asset:type=ad`. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Ad Starts </li> <li> **Data Feed:**&nbsp;`videoadstart` </li> <li> **Context Data:**&nbsp;`a.media.ad.view` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.view` </li> </ul> |
 
@@ -168,7 +168,7 @@ Number of video ad starts.
 
 ### Ad Complete 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Ad Complete** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.complete` </li> <li> **Heartbeat:**  `s:event:type=complete`; `s:asset:type=ad`. </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Ad Completes </li> <li> **Data Feed:**&nbsp;`videoadcomplete` </li> <li> **Context Data:**&nbsp;`a.media.ad.complete` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.complete` </li> </ul> |
 
@@ -176,7 +176,7 @@ Number of video ad completes.
 
 ### Ad Time Spent 
 
-| Label&nbsp;&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp;| Implementation&nbsp;&nbsp;| Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Ad Time Spent** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** Yes </li> <li> **Type:** string </li> <li> **Sent with:** Ad Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`15` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.ad.timePlayed` </li> <li> **Heartbeat:** </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Ad Time Spent </li> <li> **Data Feed:**&nbsp;`videoadtime` </li> <li> **Context Data:**&nbsp;`a.media.ad.timePlayed` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.ad.timePlayed` </li> </ul> |
 

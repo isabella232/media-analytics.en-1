@@ -35,15 +35,15 @@ Table data description:
 
 ### Average Bitrate 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Average Bitrate** | <ul> <li> **SDK Key:** [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API Key:**&nbsp;`media.qoe.bitrate` </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`800-899` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bitrateAverageBucket` </li> <li> **Heartbeat:**&nbsp;`l:stream:bitrate` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Average Bitrate </li> <li> **Context Data:**&nbsp;`a.media.qoe.bitrateAverageBucket` </li> <li> **Data Feed:**&nbsp;`videoqoebitrateaverageevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bitrateAverageBucket` </li> </ul> |
+| **Average Bitrate** | <ul> <li> **SDK Key:**&nbsp; [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API Key:**&nbsp;`media.qoe.bitrate` </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`800-899` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bitrateAverageBucket` </li> <li> **Heartbeat:**&nbsp;`l:stream:bitrate` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Average Bitrate </li> <li> **Context Data:**&nbsp;`a.media.qoe.bitrateAverageBucket` </li> <li> **Data Feed:**&nbsp;`videoqoebitrateaverageevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bitrateAverageBucket` </li> </ul> |
 
 The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals. The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session. 
 
 ### Time to Start 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Time to Start** | <ul> <li> **SDK Key:** </li> <li> **API Key:**&nbsp;`media.qoe.timeToStart` </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`30,000` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.timeToStart` </li> <li> **Heartbeat:**&nbsp;`l:stream:startup_time` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Time to Start </li> <li> **Context Data:**&nbsp;`a.media.qoe.timeToStart` </li> <li> **Data Feed:**&nbsp;`videoqoetimetostartevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.timeToStart` </li> </ul> |
 
@@ -51,7 +51,7 @@ This value defaults to zero if you do not set it through the QoSObject. You set 
 
 ### FPS 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **FPS** | <ul> <li> **SDK Key:** </li> <li> **API Key:**&nbsp;`media.qoe.framesPerSecond` </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Initiate, Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`24` </li> </ul> | <ul> <li> **Adobe Analytics:** </li> <li> **Heartbeat:**&nbsp;`l:stream:fps` </li> </ul> | <ul> <li> **Available:** No </li> <li> **Reserved Variable:** N/A </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** </li> <li> **Audience Manager:** </li> </ul> |
 
@@ -59,7 +59,7 @@ The current value of the stream frame-rate (in frames per second).
 
 ### Dropped Frames 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Dropped Frames** | <ul> <li> **SDK Key:**&nbsp;`droppedFrames` </li> <li> **API Key:**&nbsp;`media.qoe.droppedFrames` </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`3` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.droppedFrameCount` </li> <li> **Heartbeat:**&nbsp;`l:stream:dropped_frames` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Dropped Frames </li> <li> **Context Data:**&nbsp;`a.media.qoe.droppedFrameCount` </li> <li> **Data Feed:**&nbsp;`videoqoedroppedframecountevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.droppedFrameCount` </li> </ul> |
 
@@ -67,7 +67,7 @@ The number of dropped frames (Integer). This value is computed as a sum of all f
 
 ### Buffer Events 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Buffer Events** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`2` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bufferCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=buffer` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Buffer Events </li> <li> **Context Data:**&nbsp;`a.media.qoe.bufferCount` </li> <li> **Data Feed:**&nbsp;`videoqoebuffercountevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bufferCount` </li> </ul> |
 
@@ -75,7 +75,7 @@ The number of buffer events. This metric is computed as a count of the different
 
 ### Total Buffer Duration 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Total Buffer Duration** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** </li> <li> **Sample value:**&nbsp;`30` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bufferTime` </li> <li> **Heartbeat:**&nbsp;`l:event:duration` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Total Buffer Duration </li> <li> **Context Data:**&nbsp;`a.media.qoe.bufferTime` </li> <li> **Data Feed:**&nbsp;`videoqoebuffertimeevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bufferTime` </li> </ul> |
 
@@ -83,7 +83,7 @@ The number of buffer events. This metric is computed as a count of the different
 
 ### Bitrate Changes 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Bitrate Changes** | <ul> <li> **SDK Key:** </li> <li> **API Key:**&nbsp;`media.qoe.bitrateChange` </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`3` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bitrateChangeCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=bitrate_change` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Bitrate Changes </li> <li> **Context Data:**&nbsp;`a.media.qoe.bitrateChangeCount` </li> <li> **Data Feed:**&nbsp;`videoqoebitratechangecountevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bitrateChangeCount` </li> </ul> |
 
@@ -91,7 +91,7 @@ The number of bitrate changes (Integer). This value is computed as a sum of all 
 
 ### Errors / Error Events 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Errors / Error Events** | <ul> <li> **SDK Key:** </li> <li> **API Key:** </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.errorCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=error` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Errors </li> <li> **Context Data:**&nbsp;`a.media.qoe.errorCount` </li> <li> **Data Feed:**&nbsp;`videoqoeerrorcountevar` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.errorCount` </li> </ul> |
 
@@ -99,7 +99,7 @@ The number of errors occurred (Integer). This value is computed as a sum of all 
 
 ### Player SDK Error IDs 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Player SDK Error IDs** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.playerSdkErrors` </li> <li> **Heartbeat:**&nbsp;`s:event:type=error` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Errors </li> <li> **Context Data:**&nbsp;`a.media.qoe.playerSdkErrors` </li> <li> **Data Feed:**&nbsp;`videoqoeplayersdkerrors` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.playerSdkErrors` </li> </ul> |
 
@@ -107,7 +107,7 @@ The unique error IDs generated by the player SDK. Customers must provide the err
 
 ### External Error IDs 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **External Error IDs** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.externalErrors` </li> <li> **Heartbeat:**&nbsp;`s:event:type=error` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Errors </li> <li> **Context Data:**&nbsp;`a.media.qoe.externalErrors` </li> <li> **Data Feed:**&nbsp;`videoqoeextneralerrors` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.externalErrors` </li> </ul> |
 
@@ -115,7 +115,7 @@ The unique error IDs from any external source, e.g., CDN errors. Customers must 
 
 ### Media SDK Error IDs 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Media SDK Error IDs** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:** </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.mediaSdkErrors` </li> <li> **Heartbeat:**&nbsp;`s:event:type=error` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** eVar </li> <li> **Expiration:** On HIT </li> <li> **Report Name:** Errors </li> <li> **Context Data:**&nbsp;`a.media.qoe.mediaSdkErrors` </li> <li> **Data Feed:**&nbsp;`mediaqoeexternalerrors` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.mediaSdkErrors` </li> </ul> |
 
@@ -123,7 +123,7 @@ The unique error IDs generated by Media SDK during playback.
 
 ### Session End 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Session End** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 2.1 </li> <li> **Sample value:**&nbsp;`end` </li> </ul> | <ul> <li> **Adobe Analytics:** N/A </li> <li> **Heartbeats:**&nbsp;`s:event:type=end` </li> </ul> | <ul> <li> **Available:** Use custom processing rule </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** N/A </li> <li> **Context Data:** </li> <li> **Data Feed:** </li> <li> **Audience Manager:** </li> </ul> |
 
@@ -134,7 +134,7 @@ The end event means that the SDK is sending a close call to the backend. On the 
 
 ### Time To Start 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Time To Start** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`30,000` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.timeToStart` </li> <li> **Heartbeat:**&nbsp;`l:stream:startup_time` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Time to Start </li> <li> **Context Data:**&nbsp;`a.media.qoe.timeToStart` </li> <li> **Data Feed:**&nbsp;`videoqoetimetostart` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.timeToStart` </li> </ul> |
 
@@ -142,15 +142,15 @@ The end event means that the SDK is sending a close call to the backend. On the 
 
 ### Buffer Events 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| **Buffer Events** | <ul> <li> **SDK Key:** [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`2` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bufferCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=buffer` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Buffer Events </li> <li> **Context Data:**&nbsp;`a.media.qoe.bufferCount` </li> <li> **Data Feed:**&nbsp;`videoqoebuffercount` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bufferCount` </li> </ul> |
+| **Buffer Events** | <ul> <li> **SDK Key:**&nbsp; [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`2` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bufferCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=buffer` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Buffer Events </li> <li> **Context Data:**&nbsp;`a.media.qoe.bufferCount` </li> <li> **Data Feed:**&nbsp;`videoqoebuffercount` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bufferCount` </li> </ul> |
 
 The number of buffer events (Integer). This metric is computed as a count of buffer events that occurred during a playback session. 
 
 ### Total Buffer Duration 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Total Buffer Duration** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`15` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bufferTime` </li> <li> **Heartbeat:**&nbsp;`l:event:duration` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Total Buffer Duration </li> <li> **Context Data:**&nbsp;`a.media.qoe.bufferTime` </li> <li> **Data Feed:**&nbsp;`videoqoebuffertime` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bufferTime` </li> </ul> |
 
@@ -158,7 +158,7 @@ The number of buffer events (Integer). This metric is computed as a count of buf
 
 ### Bitrate Changes 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Bitrate Changes** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** Event </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`"3"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bitrateChangeCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=bitrate_change` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Bitrate Changes </li> <li> **Context Data:**&nbsp;`a.media.qoe.bitrateChangeCount` </li> <li> **Data Feed:**&nbsp;`videoqoebitratechangecount` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bitrateChangeCount` </li> </ul> |
 
@@ -166,7 +166,7 @@ The number of bitrate changes. This value is computed as a sum of all bitrate ch
 
 ### Errors 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Errors** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.errorCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=error` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Error Events </li> <li> **Context Data:**&nbsp;`a.media.qoe.errorCount` </li> <li> **Data Feed:**&nbsp;`videoqoeerrorcount` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.errorCount` </li> </ul> |
 
@@ -174,7 +174,7 @@ The number of errors occurred (Integer). This value is computed as a sum of all 
 
 ### Dropped Frames 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Dropped Frames** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`1` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.droppedFrameCount` </li> <li> **Heartbeat:**&nbsp;`l:stream:dropped_frames` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Dropped Frames </li> <li> **Context Data:**&nbsp;`a.media.qoe.droppedFrameCount` </li> <li> **Data Feed:**&nbsp;`videoqoedroppedframecount` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.droppedFrameCount` </li> </ul> |
 
@@ -182,7 +182,7 @@ The number of dropped frames (Integer). This value is computed as a sum of all f
 
 ### Drops Before Start 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Drops Before Start** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.dropBeforeStart` </li> <li> **Heartbeat:**&nbsp;`s:event:type=aa_start` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Drops before Start </li> <li> **Context Data:**&nbsp;`a.media.qoe.dropBeforeStart` </li> <li> **Data Feed:**&nbsp;`videoqoedropbeforestart` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.dropBeforeStart` </li> </ul> |
 
@@ -193,7 +193,7 @@ The number of times a user quit the video before its start. This metric is set t
 
 ### Buffer Impacted Streams 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Buffer Impacted Streams** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.buffer` </li> <li> **Heartbeat:**&nbsp;`s:event:type=buffer` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Buffer Impacted Streams </li> <li> **Context Data:**&nbsp;`a.media.qoe.buffer` </li> <li> **Data Feed:**&nbsp;`videoqoebuffer` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.buffer` </li> </ul> |
 
@@ -204,7 +204,7 @@ The number of streams impacted by buffering. This metric is set to 1 only if at 
 
 ### Bitrate Change Impacted Streams 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Bitrate Change Impacted Streams** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bitrateChange` </li> <li> **Heartbeat:**&nbsp;`s:event:type=bitrate_change` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Buffer Change Impacted Streams </li> <li> **Context Data:**&nbsp;`a.media.qoe.bitrateChange` </li> <li> **Data Feed:**&nbsp;`videoqoebitratechange` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bitrateChange` </li> </ul> |
 
@@ -215,7 +215,7 @@ The number of streams in which bitrate changes occurred. This metric is set to 1
 
 ### Average Bitrate 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Average Bitrate** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`3200` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.bitrateAverage` </li> <li> **Heartbeat:**&nbsp;`l:stream:bitrate` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Average Bitrate </li> <li> **Context Data:**&nbsp;`a.media.qoe.bitrateAverage` </li> <li> **Data Feed:**&nbsp;`videoqoebitrateaverage` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.bitrateAverage` </li> </ul> |
 
@@ -223,7 +223,7 @@ The average bitrate (in kbps, integer). This metric is computed as a weighted av
 
 ### Error Impacted Streams 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Error Impacted Streams** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.error` </li> <li> **Heartbeat:**&nbsp;`s:event:type=error` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Error Impacted Streams </li> <li> **Context Data:**&nbsp;`a.media.qoe.error` </li> <li> **Data Feed:**&nbsp;`videoqoeerror` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.error` </li> </ul> |
 
@@ -234,7 +234,7 @@ The number of streams in which bitrate changes occurred. This metric is set to 1
 
 ### Dropped Frame Impacted Streams 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Dropped Frame Impacted Streams** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.droppedFrames` </li> <li> **Heartbeat:**&nbsp;`l:stream:dropped_frames` </li> </ul> | <ul> <li> **Available:** Yes </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** Dropped Frame Impacted Streams </li> <li> **Context Data:**&nbsp;`a.media.qoe.droppedFrames` </li> <li> **Data Feed:**&nbsp;`videoqoedroppedframes` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.droppedFrames` </li> </ul> |
 
@@ -245,7 +245,7 @@ The number of streams in which frames were dropped. This metric is set to 1 only
 
 ### Stalling Impacted Streams 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Stalling Impacted Streams** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.5+ </li> <li> **Sample value:**&nbsp;`TRUE` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.stall` </li> <li> **Heartbeat:**&nbsp;`s:event:type=stall` </li> </ul> | <ul> <li> **Available:** Use custom processing rule </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Context Data:**&nbsp;`a.media.qoe.stall` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.stall` </li> </ul> |
 
@@ -256,7 +256,7 @@ The number of streams in which a stalled event occurred. This metric is set to 1
 
 ### Stalling Events 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Stalling Events** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** string </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.5+ </li> <li> **Sample value:**&nbsp;`"3"` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.stallCount` </li> <li> **Heartbeat:**&nbsp;`s:event:type=stall` </li> </ul> | <ul> <li> **Available:** Use custom processing rule </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** </li> <li> **Context Data:**&nbsp;`a.media.qoe.stallCount` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.stallCount` </li> </ul> |
 
@@ -264,7 +264,7 @@ The number of times the playback was stalled during a playback session. Customer
 
 ### Total Stalling Duration 
 
-| Label&nbsp;&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
+| Label&nbsp; | Implementation&nbsp;&nbsp; | Network Parameters&nbsp;&nbsp;&nbsp;&nbsp; | Reporting&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | **Total Stalling Duration** | <ul> <li> **SDK Key:** Automatically set </li> <li> **API Key:** N/A </li> <li> **Required:** No </li> <li> **Type:** number </li> <li> **Sent with:** Close </li> <li> **Min. SDK Version:** 1.5+ </li> <li> **Sample value:**&nbsp;`12` </li> </ul> | <ul> <li> **Adobe Analytics:**&nbsp;`a.media.qoe.stallTime` </li> <li> **Heartbeat:**&nbsp;`s:event:type=stall` </li> </ul> | <ul> <li> **Available:** Use custom processing rule </li> <li> **Reserved Variable:** event </li> <li> **Report Name:** </li> <li> **Context Data:**&nbsp;`a.media.qoe.stallTime` </li> <li> **Data Feed:**&nbsp;`N/A` </li> <li> **Audience Manager:**&nbsp;`c_contextdata.a.media.qoe.stallTime` </li> </ul> |
 
