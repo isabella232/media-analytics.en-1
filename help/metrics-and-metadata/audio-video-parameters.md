@@ -43,85 +43,85 @@ Table data description:
 
 ### Stream Type 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.streamType` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 2.2 Available in [Media Collection API Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li>  <li> **Sample value:**<br/> `"video"` </li> <li> **Description:**<br/> Identifies the stream type. Valid values are "audio", "video", and " ".  [Segments](../metrics-and-metadata/segments.md): <br/>StreamType "All" - Segment all media stream data.  **Rule:**<br/> Content (ID) exists <br/>StreamType "Audio" - Segment all audio stream data.  **Rule:**<br/> Content (ID) exists AND Stream Type = audio <br/>StreamType "Video" - Segment all video stream data. **Rule:**<br/> Content (ID) exists AND Stream Type = video <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.streamType` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.streamType` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On VISIT </li> <li> **Report Name:**<br/> Content </li> <li> **Context Data:**<br/> `a.media.streamType` </li> <li> **Data Feed:**<br/> `videostreamtype` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.streamType` </li> </ul> |
 
 ### Content ID 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> [mediaId](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.id` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `"4586695ABC"` </li> <li>**Description:**<br/> Content ID of the content, which can be used to tie back to other industry / CMS IDs, equal to the last value of `s:asset:video_id` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.name` </li> <li> **Heartbeats:**<br/> `s:asset:video_id` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On VISIT </li> <li> **Report Name:**<br/> Content </li> <li> **Context Data:**<br/> `a.media.name` </li> <li> **Data Feed:**<br/> `video` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.name` </li> </ul> |
 
 ### Content Length (variable) 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [length](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.length` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/>: VOD: 128; Live: 86400; Linear: 1800. </li><li> **Description:**<br/> Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds). It equals the last value of `l:asset:length` `l:asset:length` `l:asset:duration` In reporting, Video Length is the classification, and Content Length (variable) is the eVAR.  **Important:**<br/>  This property is used to compute several metrics, such as progress tracking metrics and Average Minute Audience. If this is not set, or not greater than zero, then these metrics are not available.  For Live media with an unknown duration, the value of 86400 is the default.  Pre Version 1.5.1, this was `l:asset:duration` `l:asset:length` <br/> **Release Date: 09/13/18** </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.length` </li> <li> **Heartbeats:**<br/> `l:asset:length` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Content Length (variable) </li> <li> **Context Data:**<br/> `a.media.length` </li> <li> **Data Feed:**<br/> `videolength` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.length` </li> </ul> |
 
 ### Video Length 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [length](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.length` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/>: VOD: 128; Live: 86400; Linear: 1800. </li> <li> **Description:**<br/> Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds). It equals the last value of `l:asset:length` `l:asset:length` `l:asset:duration` In reporting, Video Length is the classification, and Content Length (variable) is the eVAR.  Important:  This property is used to compute several metrics, such as progress tracking metrics and Average Minute Audience. If this is not set, or not greater than zero, then these metrics are not available.  For Live media with an unknown duration, the value of 86400 is the default.  Pre Version 1.5.1, this was `l:asset:duration` `l:asset:length` <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.length` </li> <li> **Heartbeats:**<br/> `l:asset:length` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Video Length </li> <li> **Context Data:**<br/> `a.media.length` </li> <li> **Data Feed:**<br/> `videoclassificationlength` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.length` </li> </ul> |
 
 ### Content Type 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [streamType](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.contentType` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> restricted string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `"vod"` </li> <li> **Description:**<br/> Available values per **Stream Type**: <br/> **Audio:**<br/> "song", "podcast", "audiobook", "radio" <br/> **Video:**<br/> "VoD", "Live", "Linear", "UGC", "DVoD" <br/> Customers can provide custom values for this parameter.  This equals `s:stream:type` `missing_content_type` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.contentType` </li> <li> **Heartbeats:**<br/> `s:stream:type` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Content Type </li> <li> **Context Data:**<br/> `a.contentType` </li> <li> **Data Feed:**<br/> `videocontenttype` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.contentType` </li> </ul> |
 
 ### Media session ID 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> Obtained from backend </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.8 </li> <li> **Sample value:**<br/> `1482236761294786918253` </li> <li> **Description:**<br/> This identifies an instance of a content stream unique to an individual playback.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.vsid` </li> <li> **Heartbeat:**<br/> `s:event:sid` </li> </ul> | <ul> <li> **Available:**<br/> Use processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> `a.media.vsid` </li> <li> **Data Feed:**<br/> `vsid` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.vsid` </li> </ul> |
 
 ### Content Player Name 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [playerName](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.playerName` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `"Brightcove"` `"Primetime"` </li> <li> **Description:**<br/> Name of the player.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.playerName` </li> <li> **Heartbeats:**<br/> `s:sp:player_name` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Content Player Name </li> <li> **Context Data:**<br/> `a.media.playerName` </li> <li> **Data Feed:**<br/> `videoplayername` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.playerName` </li> </ul> |
 
 ### Content Channel 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [channel](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.channel` </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `"Sports"` </li> <li> **Description:**<br/> Distribution Station/Channels or where the content is played. Any string value is accepted here.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.channel` </li> <li> **Heartbeats:**<br/> `s:sp:channel` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Content Channel </li> <li> **Context Data:**<br/> `a.media.channel` </li> <li> **Data Feed:**<br/> `videochannel` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.channel` </li> </ul> |
 
 ### Content Segment 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `"[0-10]"` </li> <li> **Description:**<br/> The interval that describes the part of the content that has been viewed (in minutes). The segment is computed as min and max of the playhead values during a playback session.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Content Segment </li> <li> **Context Data:**<br/> `a.media.segment` </li> <li> **Data Feed:**<br/> `videosegment` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.segment` </li> </ul> |
 
 ### Content Name (variable) 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [name](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.name` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.1 </li> <li> **Sample value:**<br/> `"The Big Bang Theory"` </li> <li> **Description:**<br/> In reporting, Video Name is the classification, and Content Name (variable) is the eVAR. This is the "friendly" (human-readable) name of the content, equal to the last value of `s:asset:name` <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.friendlyName` </li> <li> **Heartbeats:**<br/> `s:asset:name` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Content Name (variable) </li> <li> **Context Data:**<br/> `a.media.friendlyName` </li> <li> **Data Feed:**<br/> `videoname` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.friendlyName` </li> </ul> |
 
 ### Video Name 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [name](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.name` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.1 </li> <li> **Sample value:**<br/> `"The Big Bang Theory"` </li> <li> **Description:**<br/> This is the "friendly" (human-readable) name of the content, equal to the last value of `s:asset:name` In reporting, Video Name is the classification, and Content Name (variable) is the eVAR.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.friendlyName` </li> <li> **Heartbeats:**<br/> `s:asset:name` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Video Name </li> <li> **Context Data:**<br/> `a.media.friendlyName` </li> <li> **Data Feed:**<br/> `videoclassificationname` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.friendlyName` </li> </ul> |
 
 ### Video Path 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `"4586695ABC"` </li> <li> **Description:**<br/> Ability to track path of viewer across site and/or App to see path they took to view a particular video. Any integer and/or letter combination.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.name` </li> <li> **Heartbeats:**<br/> `s:asset:video_id` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> prop </li> <li> **Report Name:**<br/> Video Path </li> <li> **Context Data:**<br/> `a.media.name` </li> <li> **Data Feed:**<br/> `videopath` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.name` </li> </ul> |
 
 ### SDK Version 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/>  [appVersion](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> `media.sdkVersion` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"2.62.0_release"` </li> <li> **Description:**<br/> The SDK version used by the player. This could have any custom value that makes sense for your player. Customers will have to create their own processing rules to have the value available for reporting.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.sdkVersion` </li> <li> **Heartbeats:**<br/> `s:sp:sdk` </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.sdkVersion` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.sdkVersion` </li> </ul> |
 
 ### VHL Version 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"js-2.0.1.88-c8c0b1"` </li> <li> **Description:**<br/> The Heartbeat SDK version used for the tracking session. Customers will have to create their own processing rules to have the value available for reporting.  [MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.vhlVersion` </li> <li> **Heartbeats:**<br/> `s:sp:hb_version` </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> `a.media.vhlVersion` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.vhlVersion` </li> </ul> |
 
@@ -129,133 +129,133 @@ Table data description:
 
 ### Show 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `SHOW` </li> <li> **API Key:**<br/> `media.show` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"Modern Family"` `"Blacklist"` `"New Girl"` </li> <li> **Description:**<br/> Program/Series Name <br/>Program Name is required only if the show is part of a series.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.show` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.show` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Show </li> <li> **Context Data:**<br/> `a.media.show` </li> <li> **Data Feed:**<br/> `videoshow` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.show` </li> </ul> |
 
 ### Stream Format 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `STREAM_FORMAT` </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"Live"` </li> <li> **Description:**<br/> Format of the stream (Live, VOD, Linear).  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.format` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.format` </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> `a.media.format` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.format` </li> </ul> |
 
 ### Season 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `SEASON` </li> <li> **API Key:**<br/> `media.season` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"2"` </li> <li> **Description:**<br/> The season number the show belongs to.  Season Series is required only if the show is part of a series.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.season` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.season` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Season </li> <li> **Context Data:**<br/> `a.media.season` </li> <li> **Data Feed:**<br/> `videoseason` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.season` </li> </ul> |
 
 ### Episode 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `EPISODE` </li> <li> **API Key:**<br/> `media.episode` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"13"` </li> <li> **Description:**<br/> The number of the episode.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.episode` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.episode` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Episode </li> <li> **Context Data:**<br/> `a.media.episode` </li> <li> **Data Feed:**<br/> `videoepisode` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.episode` </li> </ul> |
 
 ### Asset ID 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `ASSET_ID` </li> <li> **API Key:**<br/> `media.assetId` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"89745363"` </li> <li> **Description:**<br/> This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.asset` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.asset` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Report Name:**<br/> Asset ID </li> <li> **Context Data:**<br/> `a.media.asset` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.asset` </li> </ul> |
 
 ### Genre 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `GENRE` </li> <li> **API Key:**<br/> `media.genre` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"Drama", "Comedy"` </li> <li> **Description:**<br/> Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation. In reporting, the list eVar will split each value into a line item, with each line item receiving equal metrics weight.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.genre` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.genre` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> List eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Genre </li> <li> **Context Data:**<br/> `a.media.genre` </li> <li> **Data Feed:**<br/> `videogenre` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.genre` </li> </ul> |
 
 ### First Air Date 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `FIRST_AIR_DATE` </li> <li> **API Key:**<br/> `media.firstAirDate` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"2016-01-25"` </li> <li> **Description:**<br/> The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.airDate` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.airDate` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> First Air Date </li> <li> **Context Data:**<br/> `a.media.airDate` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.airDate` </li> </ul> |
 
 ### First Digital Date 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `FIRST_DIGITAL_DATE` </li> <li> **API Key:**<br/> `media.firstDigitalDate` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"2016-01-25"` </li> <li> **Description:**<br/> The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.digitalDate` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.digitalDate` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Report Name:**<br/> First Digital Date </li> <li> **Context Data:**<br/> `a.media.digitalDate` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.digitalDate` </li> </ul> |
 
 ### Content Rating 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `RATING` </li> <li> **API Key:**<br/> `media.rating` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `TVY, TVG, TVPG, TVMA` </li> <li> **Description:**<br/> Rating as defined by TV Parental Guidelines.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.rating` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.rating` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Report Name:**<br/> Content Rating </li> <li> **Context Data:**<br/> `a.media.rating` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.rating` </li> </ul> |
 
 ### Originator 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `ORIGINATOR` </li> <li> **API Key:**<br/> `media.originator` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"Warner Brothers", "Sony", "Disney"` </li> <li> **Description:**<br/> Creator of the content.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.originator` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.originator` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> Classification </li> <li> **Report Name:**<br/> Originator </li> <li> **Context Data:**<br/> `a.media.originator` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.originator` </li> </ul> |
 
 ### Network 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `NETWORK` </li> <li> **API Key:**<br/> `media.network` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"Fox", "Bravo", "ESPN"` </li> <li> **Description:**<br/> The network/channel name.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.network` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.network` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Network </li> <li> **Context Data:**<br/> `a.media.network` </li> <li> **Data Feed:**<br/> `videonetwork` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.network` </li> </ul> |
 
 ### Show Type 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `SHOW_TYPE` </li> <li> **API Key:**<br/> `media.showType` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> "0" = Full episode; "1" = Preview/trailer; "2" = Clip; "3" = Other. </li> <li> **Description:**<br/> Type of content, expressed as an integer between 0 and 3.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.type` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.type` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Show Type </li> <li> **Context Data:**<br/> `a.media.type` </li> <li> **Data Feed:**<br/> `videoshowtype` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.type` </li> </ul> |
 
 ### MVPD 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `MVPD` </li> <li> **API Key:**<br/> `media.pass.mvpd` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"Comcast", "DirecTV", "Dish"` </li> <li> **Description:**<br/> MVPD provided via Adobe authentication.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.pass.mvpd` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.pass.mvpd` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> MVPD </li> <li> **Context Data:**<br/> `a.media.pass.mvpd` </li> <li> **Data Feed:**<br/> `videomvpd` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.pass.mvpd` </li> </ul> |
 
 ### Authorized 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `AUTHORIZED` </li> <li> **API Key:**<br/> `media.pass.auth` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"TRUE"` </li> <li> **Description:**<br/> The user has been authorized via AdobePass.  **Important:**<br/>  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.pass.auth` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.pass.auth` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Authorized </li> <li> **Context Data:**<br/> `a.media.pass.auth` </li> <li> **Data Feed:**<br/> `videoauthorized` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.pass.auth` </li> </ul> |
 
 ### Day Part 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `DAY_PART` </li> <li> **API Key:**<br/> `media.dayPart` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> </li> <li> **Description:**<br/> A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.dayPart` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.dayPart` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Day Part </li> <li> **Context Data:**<br/> `a.media.dayPart` </li> <li> **Data Feed:**<br/> `videodaypart` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.dayPart` </li> </ul> |
 
 ### Media Feed Type 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> `FEED` </li> <li> **API Key:**<br/> `media.feed` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 </li> <li> **Sample value:**<br/> `"East-HD", "West-HD", "East-SD"` </li> <li> **Description:**<br/> Type of feed.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.feed` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.feed` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Media Feed Type </li> <li> **Context Data:**<br/> `a.media.feed` </li> <li> **Data Feed:**<br/> `videofeedtype` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.feed` </li> </ul> |
 
 ### Artist 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.artist` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 <br/>Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li> <li> **Sample value:**<br/> `"The Beatles"` </li> <li> **Description:**<br/> Name of the artist.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.artist` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.artist` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.artist` </li> <li> **Data Feed:**<br/> `videoaudioartist` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.artist` </li> </ul> |
 
 ### Album 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.album` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 <br/>Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li> <li> **Sample value:**<br/> `"Revolver"` </li> <li> **Description:**<br/> Name of the album.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.album` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.album` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.album` </li> <li> **Data Feed:**<br/> `videoaudioalbum` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.album` </li> </ul> |
 
 ### Label 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.label` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 <br/>Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li> <li> **Sample value:**<br/> `"Revolver"` </li> <li> **Description:**<br/> Name of the record label.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.label` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.label` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.label` </li> <li> **Data Feed:**<br/> `videoaudiolabel` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.label` </li> </ul> |
 
 ### Author 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.author` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 <br/>Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li> <li> **Sample value:**<br/> `"John Kennedy Toole"` </li> <li> **Description:**<br/> Name of the author (of an audiobook).  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.author` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.author` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.author` </li> <li> **Data Feed:**<br/> `videoaudioauthor` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.author` </li> </ul> |
 
 ### Station 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.station` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 <br/>Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li> <li> **Sample value:**<br/> `"NPR"` </li> <li> **Description:**<br/> Name / ID of the radio station.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.station` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.station` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.station` </li> <li> **Data Feed:**<br/> `videoaudiostation` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.station` </li> </ul> |
 
 ### Publisher 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> `media.publisher` </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Initiate, Close </li> <li> **Min. SDK Version:**<br/> 1.5.7 <br/>Available in [Media Collection Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs](../sdk-implement/download-sdks.md) 2.2.  </li> <li> **Sample value:**<br/> `"Random Bauhaus"` </li> <li> **Description:**<br/> Name of the audio content publisher.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.publisher` </li> <li> **Heartbeats:**<br/> `s:meta:a.media.publisher` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> `a.media.publisher` </li> <li> **Data Feed:**<br/> `videoaudiopublisher` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.publisher` </li> </ul> |
 
@@ -263,109 +263,109 @@ Table data description:
 
 ### Media Starts 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set</li> <li> **API Key:**<br/> N/A</li> <li> **Type:**<br/> string</li> <li> **Sent with:**<br/> Initiate</li> <li> **Min. SDK Version:**<br/> Any</li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> Load event for the media. (This occurs when the viewer clicks the **Play** button). This would count even if there are pre-roll ads, buffering, errors, and so on.  Important:  This can only be true if it is set. If it is not set, no value is returned.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> `a.media.view` </li> <li> **Heartbeats:**<br/> `s:event:type=start` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Media Starts </li> <li> **Context Data:**<br/> `a.media.view` </li> <li> **Data Feed:**<br/> `videostart` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.view` </li> </ul> |
 
 ### Content Starts 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> First frame of media is consumed. If the user drops during ad, buffering, etc., then there would be no "Content Start" event.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Content Starts </li> <li> **Context Data:**<br/> `a.media.play` </li> <li> **Data Feed:**<br/> `videoplay` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.play` </li> </ul> |
 
 ### Content Complete 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> A stream that was watched to completion - This does not necessarily mean the user watched or listened to the whole stream; they could have skipped ahead. This only means the user reached the end of the stream, 100%.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> `s:event:type=complete` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Content Completes </li> <li> **Context Data:**<br/> `a.media.complete` </li> <li> **Data Feed:**<br/> `videocomplete` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.complete` </li> </ul> |
 
 ### Content Time Spent 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `105` </li> <li> **Description:**<br/> Sums the event duration (in seconds) for all events of type PLAY on the main content.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Content Time Spent </li> <li> **Context Data:**<br/> `a.media.timePlayed` </li> <li> **Data Feed:**<br/> `videotime` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.timePlayed` </li> </ul> |
 
 ### Media Time Spent 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `120` </li> <li> **Description:**<br/> Sums the event duration (in seconds) for all events of type PLAY, both main and ad content.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Media Time Spent </li> <li> **Context Data:**<br/> `a.media.totalTimePlayed` </li> <li> **Data Feed:**<br/> `videototaltime` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.totalTimePlayed` </li> </ul> |
 
 ### Unique Time Played 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `94` </li> <li> **Description:**<br/> The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> `a.media.uniqueTimePlayed` </li> <li> **Data Feed:**<br/> `videouniquetimeplayed` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.uniqueTimePlayed` </li> </ul> |
 
 ### Ten % Progress Marker 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> Playhead passes the 10% marker of content based on length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> 10% Progress Marker </li> <li> **Context Data:**<br/> `a.media.progress10` </li> <li> **Data Feed:**<br/> `videoprogress10` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.progress10` </li> </ul> |
 
 ### Twenty-five % Progress Marker 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> Playhead passes the 25% marker of content based on content length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> 25% Progress Marker </li> <li> **Context Data:**<br/> `a.media.progress25` </li> <li> **Data Feed:**<br/> `videoprogress25` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.progress25` </li> </ul> |
 
 ### Fifty % Progress Marker 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> Playhead passes the 50% marker of content based on content length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> 50% Progress Marker </li> <li> **Context Data:**<br/> `a.media.progress50` </li> <li> **Data Feed:**<br/> `videoprogress50` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.progress50` </li> </ul> |
 
 ### Seventy-five % Progress Marker 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> **N/A** </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> Playhead passes the 75% marker of content based on content length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> 75% Progress Marker </li> <li> **Context Data:**<br/> `a.media.progress75` </li> <li> **Data Feed:**<br/> `videoprogress75` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.progress75` </li> </ul> |
 
 ### Ninety-five % Progress Marker 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> Playhead passes the 95% marker of content based on content length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> 95% Progress Marker </li> <li> **Context Data:**<br/> `a.media.progress95` </li> <li> **Data Feed:**<br/> `videoprogress95` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.progress95` </li> </ul> |
 
 ### Average Minute Audience 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> Greater than or equal to 1 </li> <li> **Description:**<br/> Average Minute Audience metric is computed as Total Content Time Spent, for one specific media item, divided by its length for all of its playback sessions: `average_minute_audience = timeSpent / videoLength;` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Average Minute Audience </li> <li> **Context Data:**<br/> `a.media.averageMinuteAudience` </li> <li> **Data Feed:**<br/> `videoaverageminuteaudience` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.averageMinuteAudience` </li> </ul> |
 
 ### Estimated Streams 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> 1 - For a 19 minutes playback; 2 - For a 31 minutes playback; 3 - For a 78 minutes playback. </li> <li> **Description:**<br/> The estimated number of video or audio streams per each individual content. This value is increased for each 30 minutes of play time (content + ads). Customers must create their own processing rules to have the value available for reporting. A stream is counted every 30 minutes, based on the `ms_s` (or `totalTimePlayed = Video Total Time`), similar to: `estimatedStreams = FLOOR(ms_s/1800) + 1`</li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> `a.media.estimatedStreams` </li> <li> **Data Feed:**<br/> `N/A` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.estimatedStreams` </li> </ul> |
 
 ### Paused Impacted Streams 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> 1.5.6 </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> This value is either true or false. It is true if one or more pauses occurred during playback of a single media item.  Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> `s:event:type=pause` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Paused Impacted Stream </li> <li> **Context Data:**<br/> `a.media.pause` </li> <li> **Data Feed:**<br/> `videopause` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.pause` </li> </ul> |
 
 ### Pause Events 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> 1.5.6 </li> <li> **Sample value:**<br/> `2` </li> <li> **Description:**<br/> This metric is computed as a count of pause periods that occurred during a playback session.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> `s:event:type=pause` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Pause Events </li> <li> **Context Data:**<br/> `a.media.pauseCount` </li> <li> **Data Feed:**<br/> `videopausecount` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.pauseCount` </li> </ul> |
 
 ### Total Pause Duration 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> 1.5.6 </li> <li> **Sample value:**<br/> `190` </li> <li> **Description:**<br/> Sums the duration (in seconds) of all events of type PAUSE.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Total Pause Duration </li> <li> **Context Data:**<br/> `a.media.pauseTime` </li> <li> **Data Feed:**<br/> `videopausetime` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.pauseTime` </li> </ul> |
 
 ### Content Resumes 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> **`media.resume`** </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> 1.5.6 </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> A Resume is counted for each playback that resumes after more than 30 minutes of buffer, pause, or stall period OR if this value is set by the player on the `VideoInfo` `trackPlay` Important:  This can only be true if it is set. If it is not set, no value is returned.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> `s:event:type=resume` </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Content Resumes </li> <li> **Context Data:**<br/> `a.media.resume` </li> <li> **Data Feed:**<br/> `videoresume` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.resume` </li> </ul> |
 
 ### Content Segment Views 
 
-| Implementation | Network Parameters | Reporting |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:**<br/> Any </li> <li> **Sample value:**<br/> `TRUE` </li> <li> **Description:**<br/> The number of views of the main content. A Content Segment View is counted when there is at least one frame viewed.  Important:  This can only be true if it is set. If it is not set, no value is returned. </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Content Segment Views </li> <li> **Context Data:**<br/> `a.media.segmentView` </li> <li> **Data Feed:**<br/> `videosegmentviews` </li> <li> **Audience Manager:**<br/> `c_contextdata.a.media.segmentView` </li> </ul> |
 
