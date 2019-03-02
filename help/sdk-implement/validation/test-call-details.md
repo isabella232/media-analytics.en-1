@@ -9,7 +9,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 ## Start the video player {#section_qts_xff_f2b}
 
-### Video Analytics start call
+### Media Analytics start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -28,7 +28,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Length for linear streams should be set to the best estimate for the current show.
 
-### Standard metadata in Video Analytics start call
+### Standard metadata in Media Analytics start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -62,7 +62,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-### Video metadata in Video Analytics start call
+### Video metadata in Media Analytics start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -120,7 +120,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 ## View ad playback {#section_wz3_yff_f2b}
 
-### Video Analytics ad start call
+### Media Analytics ad start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -154,14 +154,14 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-### Video metadata in Video Analytics ad start call
+### Video metadata in Media Analytics ad start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Standard metadata in Video Analytics ad start call
+### Standard metadata in Media Analytics ad start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|

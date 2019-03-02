@@ -14,7 +14,7 @@ Download the certification request form here: [Certification Request Form](cert_
 Video implementations are composed of the following types of tracking calls:
 
 * Video and Ad Start calls are sent directly to the AppMeasurement server. 
-* Video Analytics (VA) heartbeat calls are sent on start and every ten seconds to the Adobe VA tracking server.
+* Media Analytics (MA) heartbeat calls are sent on start and every ten seconds to the Adobe VA tracking server.
 
 Video tracking will behave the same across all platforms, desktop and mobile.
 
@@ -27,13 +27,13 @@ You must complete and record the actions in the following order:
    * **AppMeasurement (Adobe Analytics) -** An RDC tracking server or CNAME that resolves to an RDC server is required for the Experience Cloud Visitor ID service. The analytics tracking server should end in `.sc.omtrdc.net` or be a CNAME.     
     
 
-   * **Video Analytics (Heartbeats) -** This server always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
+   * **Media Analytics (Heartbeats) -** This server always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
 
    You need to validate certain key, universal variables across all tracking calls.
 
    * **ADOBE**
 
-     **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set-up properly. It is found in both AppMeasurement and Video Analytics (VA) calls.
+     **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set-up properly. It is found in both AppMeasurement and Media Analytics (MA) calls.
 
      **Heartbeat Play Call**
 
@@ -42,7 +42,7 @@ You must complete and record the actions in the following order:
      | `s:event:type` | play |
      | `s:user:mid` | 30250035503789876473484580554595324209 |
 
-     **Video Analytics Start Call**
+     **Media Analytics Start Call**
 
      |  Parameter | Value (sample) |
      |---|---|

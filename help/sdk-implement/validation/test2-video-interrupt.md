@@ -15,7 +15,7 @@ You must complete and record these tasks in following order:
 
 1. **Start the video player.** When the video player starts, the following calls are sent in the following order:
 
-   1. Video analytics start* 
+   1. Media analytics start* 
    1. Heartbeat start* 
    1. Heartbeat analytics start
 

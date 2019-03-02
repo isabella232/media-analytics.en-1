@@ -14,7 +14,7 @@ Playback in a video application can be interrupted in a variety of ways: a user 
 
 >[!NOTE]
 >
->The Video Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Doing this results in the playback up to that point not counting towards the total playback time, along with losing earlier progress markers, segments, and so on. Instead, call `trackPlay` when the app returns and/or the video resumes playing.
+>The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Doing this results in the playback up to that point not counting towards the total playback time, along with losing earlier progress markers, segments, and so on. Instead, call `trackPlay` when the app returns and/or the video resumes playing.
 
 ## FAQ about handling application interrupts: {#section_osf_xqs_h2b}
 

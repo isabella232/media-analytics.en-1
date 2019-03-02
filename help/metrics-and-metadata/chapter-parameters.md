@@ -30,6 +30,11 @@ Table data description:
     * *Data Feed* - Column name for variable found in Clickstream or Live Stream data feeds
     * *Audience Manager* - Trait name found in Adobe Audience Manager
 
+>[!IMPORTANT]
+>
+>Do not change the classification names for any variables listed below that are described under Reporting/Reserved Variable as "classification".  
+>The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and, when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
+
 ## Chapter Metadata {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
 
 ### Chapter Name 

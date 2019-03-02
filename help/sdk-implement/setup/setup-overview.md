@@ -11,6 +11,20 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 >
 >The following instructions apply to the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation](../../sdk-implement/download-sdks.md). For Primetime integrators, see [Primetime Media SDK Documentation](#concept_425EDB4E08BA47EABBCDE3F02742EBD8/section_tzh_llk_t2b).
 
+
+## Minimum Platform Version Support {#minimum-platform-version}
+
+The following table describes the minimum platform versions supported for each SDK, beginning February 19, 2019.
+
+| OS/Browser | Min Version Required |
+| --- | --- |
+|iOS | iOS 6+ |
+|Android | Android 5.0+ - Lollipop |
+| Chrome |v22+ |
+| Mozilla | v27+ |
+| Safari | v7+ |
+| IE | v11+ |
+
 ## General Implementation Guidelines {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
 There are three main SDK components involved in media tracking:

@@ -14,9 +14,7 @@ Each report suite that collects video metrics must be configured before video da
 >To take advantage of new capabilities, existing Media Analytics customers should re-enable video tracking for their RSIDs.
 
 1. In [Reports & Analytics](https://my.omniture.com/login/), click  **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** . 
-
-1. Select the report suite(s) where you are collecting video data and click  **[!UICONTROL Edit Settings]** > **[!UICONTROL Media Management]** > **[!UICONTROL Media Reporting]** .
-
+1. Select the report suite(s) where you are collecting video data and click  **[!UICONTROL Edit Settings]** > **[!UICONTROL Media Management]** > **[!UICONTROL Media Reporting]** .  
    ![](assets/media-reporting.png){width="400px"}
 
 1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
@@ -47,3 +45,7 @@ Each report suite that collects video metrics must be configured before video da
    
    >[!IMPORTANT] 
    >Migrating to solution variables causes you to lose **all** historical trending and comparison for media reports.  
+
+>[!IMPORTANT]
+>
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., ![Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md) ) that are described there under Reporting/Reserved Variable as "classification".  The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
