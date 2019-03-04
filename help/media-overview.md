@@ -96,9 +96,9 @@ The table below provides a list of the devices that are currently supported thro
 | **Sony PS3/PS4**  | | ![](assets/icon-blue-check.png) |
 | **(Other/New Connected Devices)**  | | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see ![Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version).
+For Media SDK, also see ![Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md
 
-## Transport Layer Security (TLS) {#tls}
+## Transport Layer Security {#transport-layer-security}
 
 **TLS Notice --** Adobe has security compliance standards that require the end-of-life of older security protocols. To continue to meet the evolving security protocol standards, Adobe is moving toward the use of TLS 1.2, in order to have the most up-to-date and secure version in use. From February 20th, 2019, Adobe will support only TLS 1.1 or later. With this change, Adobe will no longer collect data from end users with older devices or web browsers deploying TLS 1.0. Migrating to TLS 1.2 provides improved security. It is important that you go through the specifics and plan out the changes for a smooth transition.
 
