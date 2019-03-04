@@ -96,7 +96,7 @@ The table below provides a list of the devices that are currently supported thro
 | **Sony PS3/PS4**  | | ![](assets/icon-blue-check.png) |
 | **(Other/New Connected Devices)**  | | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see ![Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md
+For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
 ## Transport Layer Security {#transport-layer-security}
 
