@@ -15,7 +15,7 @@ uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 
 ## Configuration {#section_rzx_j1z_cfb}
 
-**Milestone Video Configuration**
+### Milestone Video Configuration
 
 To track video, designate a set of *Custom Conversion Variables* (eVars) and *Custom Events* for use in tracking and reporting. One *Custom Insight* variable ( `s.prop` ) is also used for pathing.
 
@@ -23,7 +23,9 @@ The variables you select for each metric are added to the video configuration pa
 
 You can also track any number of additional metrics for video. For example, if you use multiple video players on your site, you might populate an eVar with the player name. Some of the variables you select might also be used in other areas of your site. For example, if used across your site, the *content type* variable can let you measure what percentage of your page views are coming from video, and let you relate conversion events to video.
 
-**Milestone Reporting Configuration -** To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Admin > Report Suite Manager].** Select the report suite, then choose **[!UICONTROL Video Management > Video Reporting]:**
+### Milestone Reporting Configuration
+
+To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Admin > Report Suite Manager].** Select the report suite, then choose **[!UICONTROL Video Management > Video Reporting]:**
 
 ![](assets/0clip_image002_1537416456.png){width="248"}
 
@@ -64,7 +66,7 @@ The following variables let you configure video measurement. You must define val
 
 ## Optional variables {#section_ufg_zzy_cfb}
 
-| Variable&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| &nbsp;Variable&nbsp;&nbsp;&nbsp; | Description |
 | --- | --- |
 | `Media.autoTrack` | **Syntax:** <br/><br/> `s.Media.autoTrack = true` <br/><br/>Enables automatic tracking for supported players. Supported players are as follows: <ul> <li> Open Source Media Framework (OSMF) </li> <li> FLVPlayback (Video players created by the import video wizard in Flash Professional) </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API versions 2 & 3 (see [Brightcove](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_other_players.html)) </li> <li> Windows Media Player, Quicktime, or Real Player using JavaScript </li> </ul> <br/><br/>If you are not using one of the above players you can use `Media.open` `Media.play` `Media.stop` `Media.close` to track player events.|
 | `Media.autoTrackNetStreams` | **Syntax:** <br/><br/> `s.Media.autoTrackNetStreams = true` <br/><br/>Flash 10.3 introduced new functionality to the NetStream component that enables enhanced video tracking. If you are using a custom Flash NetStream player you can enable this variable to enable functionality similar to autoTrack. This method requires that videos are viewed in Flash 10.3 or later.  |

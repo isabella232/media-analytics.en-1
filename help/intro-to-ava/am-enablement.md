@@ -23,87 +23,87 @@ Federated Data fully supports data sharing to AAM. Please work with your Adobe t
 
 You can use these methods to send signals and retrieve visitor segments from Audience Manager:
 
-* **Chromecast:**
+### Chromecast {#am-chromecast}
 
-    * `getVisitorProfile() -`
+* `getVisitorProfile() -`
 
-      Returns the visitor profile that was most recently obtained. Returns an empty object if no signal has been submitted yet.
+   Returns the visitor profile that was most recently obtained. Returns an empty object if no signal has been submitted yet.
 
-      ```js    
-      ADBMobile.audienceManager.getVisitorProfile();
-      ```
+   ```js    
+   ADBMobile.audienceManager.getVisitorProfile();
+   ```
 
-    * `getDpid() -`
+* `getDpid() -`
 
-      Returns the visitor profile that was most recently obtained. Returns an empty obje t if no signal has been submitted yet.
+   Returns the visitor profile that was most recently obtained. Returns an empty obje t if no signal has been submitted yet.
 
-      ```js    
-      ADBMobile.audienceManager.getDpid();
-      ```
+   ```js    
+   ADBMobile.audienceManager.getDpid();
+   ```
 
-    * `getDpuuid() -`
+* `getDpuuid() -`
 
-      Returns the current DPUUID.
+   Returns the current DPUUID.
 
-      ```js    
-      ADBMobile.audienceManager.getDpuuid();
-      ```
+   ```js    
+   ADBMobile.audienceManager.getDpuuid();
+   ```
 
-    * `setDpidAndDpuuid() -`
+* `setDpidAndDpuuid() -`
 
-      Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
+   Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
 
-      ```js    
-      ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
-      ```
+   ```js    
+   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ```
 
-    * `submitSignal() -`
+* `submitSignal() -`
 
-      Sends audience management a signal with traits.
+   Sends audience management a signal with traits.
 
-      ```js    
-      ADBMobile.audienceManager.SubmitSignal();
-      ```
+   ```js    
+   ADBMobile.audienceManager.SubmitSignal();
+   ```
 
-* **Roku:**
+### Roku {#am-roku}
 
-    * `audienceVisitorProfile -`
+* `audienceVisitorProfile -`
 
-      Returns the visitor profile that was most recently obtained. Returns an empty object if no signal has been submitted yet.
+   Returns the visitor profile that was most recently obtained. Returns an empty object if no signal has been submitted yet.
 
-      ```js    
-      ADBMobile().audienceVisitorProfile()
-      ```
+   ```js    
+   ADBMobile().audienceVisitorProfile()
+   ```
 
-    * `audienceDpid -`
+* `audienceDpid -`
 
-      Returns the visitor profile that was most recently obtained. Returns an empty obje t if no signal has been submitted yet.
+   Returns the visitor profile that was most recently obtained. Returns an empty obje t if no signal has been submitted yet.
 
-      ```js    
-      ADBMobile().audienceDpid()
-      ```
+   ```js    
+   ADBMobile().audienceDpid()
+   ```
 
-    * `audienceDpuuid -`
+* `audienceDpuuid -`
 
-      Returns the current DPUUID.
+   Returns the current DPUUID.
 
-      ```js    
-      ADBMobile().audienceDpuuid()
-      ```
+   ```js    
+   ADBMobile().audienceDpuuid()
+   ```
 
-    * `audienceSetDpidAndDpuuid -`
+* `audienceSetDpidAndDpuuid -`
 
-      Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
+   Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
 
-      ```js    
-      ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
-      ```
+   ```js    
+   ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
+   ```
 
-    * `audienceSubmitSignal -`
+* `audienceSubmitSignal -`
 
-      Sends audience management a signal with traits.
+   Sends audience management a signal with traits.
 
-      ```js    
-      ADBMobile().audienceSubmitSignal()
-      ```
+   ```js    
+   ADBMobile().audienceSubmitSignal()
+   ```
 

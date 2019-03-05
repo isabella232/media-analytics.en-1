@@ -11,7 +11,7 @@ Media Analytics (Heartbeats) is Adobe’s standardized media tracking solution. 
 
 Adobe Launch, the follow-on product to Dynamic Tag Management, features a Launch Extension that facilitates implementing tracking in your media players.
 
-You can learn more about the Launch extension here: [Adobe Analytics for Media Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-for-video-extension)
+You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension)
 
 >[!NOTE]
 >
