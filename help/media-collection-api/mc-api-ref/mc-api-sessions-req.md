@@ -34,7 +34,7 @@ The request body must be JSON, and must have the same structure as this sample r
         "analytics.visitorId": "<your-userId>", 
         "media.contentType": "VOD", 
         "media.length": 60.39333333333333, 
-        "media.id": "VA API Sample Player", 
+        "media.id": "MA API Sample Player", 
         "visitor.marketingCloudOrgId": "<your-org-id>", 
         "media.name": "ClickMe", 
         "media.channel": "sample-channel", 

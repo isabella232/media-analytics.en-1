@@ -24,11 +24,11 @@ Ping events should *not* include the `params` map in the request body.
 
 ## bufferStart
 
-Sent when buffering starts. There is no `bufferResume` event type. A bufferResume is inferred when you send a `play` event after `bufferStart`.
+Sent when buffering starts. There is no `bufferResume` event type. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
 
 ## pauseStart
 
-Sent when the user presses Pause. There is no `resume` event type. A resume is inferred when you send a `play` event after a `pauseStart`.
+Sent when the user presses Pause. There is no `resume` event type. A `resume` is inferred when you send a `play` event after a `pauseStart`.
 
 ## adBreakStart
 
@@ -64,9 +64,9 @@ Signals the completion of a chapter
 
 ## sessionEnd
 
-This is used to notify the VA backend to immediately close the session when the user has abandoned viewing the content and is unlikely to return
+This is used to notify the MA backend to immediately close the session when the user has abandoned their viewing of the content and they are unlikely to return.
 
-If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend)
+If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
 ## sessionComplete
 

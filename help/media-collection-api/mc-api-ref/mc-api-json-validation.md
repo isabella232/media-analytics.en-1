@@ -7,7 +7,7 @@ uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 
 # JSON validation schemas{#json-validation-schemas}
 
-The VA backend validates the request parameters for each event type using JSON validation schemas. These schemas are available to you, and serve as the current authority on parameter types used in the VA API.
+The MA backend validates the request parameters for each event type using JSON validation schemas. These schemas are available to you, and serve as the current authority on parameter types used in the MA API.
 
 ```
 POST

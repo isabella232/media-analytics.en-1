@@ -15,16 +15,18 @@ Contrast the realtime approach of the Media Collection API with the batch proces
 
 ## Implementation {#section_jhp_jpk_cfb}
 
-**Event schemas:** The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+### Event schemas
 
-**Order of events:**
+The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+
+### Order of events
 
 * The first event in the batch payload must be `sessionStart`.
 * You must include `media.downloaded: true` in the standard metadata parameters ( `params` key) on the `sessionStart` event. If this parameter is not present or is set to false, the Downloaded Content API will return a 400 response code (Bad Request). This is so the backend can distinguish between downloaded and live content, and process it accordingly. (Note that if `media.downloaded: true`is set on a live session, this will likewise result in a 400 response from the Media Collection API.)
 
 * It is the responsibility of the implementation to correctly store player events in the order of their appearance.
 
-**Response codes:**
+### Response codes
 
 * 201 - Created: Successful Request; the data is valid and the session was created and will be processed.
 * 400 - Bad Request; schema validation has failed, all data is discarded, no sessions data will be processed.
@@ -55,27 +57,26 @@ When computing the Analytics start/close calls for the downloaded content scenar
 
 ### Downloaded Content API
 
-  ```
-  [{ 
+```
+[{ 
     eventType: "sessionStart", 
     playerTime:{playhead: 0, ts: 1529997923478},  
-    params:{ 
+    params:{
         "media.downloaded": true
     }, 
     customMetadata:{},  
     qoeData:{} 
-    }, 
-    {eventType: "play",  
-     playerTime:{playhead: 0,  ts: 1529997928174}}, 
-    {eventType: "ping",  
-     playerTime:{playhead: 10, ts: 1529997937503}}, 
-    {eventType: "ping",  
-     playerTime:{playhead: 20, ts: 1529997947533}}, 
-    {eventType: "ping",  
-     playerTime:{playhead: 30, ts: 1529997957545},}, 
-    {eventType: "sessionComplete", 
-     playerTime:{playhead: 35, ts: 1529997960559 
-    } 
-  }]
-  ```
+}, 
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}}, 
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}}, 
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}}, 
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},}, 
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559} 
+}]
+```
 
