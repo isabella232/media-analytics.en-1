@@ -13,9 +13,13 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ```
 
-**URI Parameter -**&nbsp;`sid`: Session ID returned from a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md).
+## URI Parameter
 
-**Request Body -** Must be JSON, must have the same structure as this sample request body:
+`sid`: Session ID returned from a [Sessions request.](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+
+## Request Body
+
+Must be JSON, must have the same structure as this sample request body:
 
 ```
 { 
@@ -46,7 +50,7 @@ For a list of valid event types for this release, see [Event types and descripti
 >
 >In the absence of the `adBreakStart` and `adBreakComplete` "bookends" around ads, `adStart` and `adComplete` events will simply be ignored, and the corresponding ad duration will be tracked as main content duration. This could have a significant impact on the aggregated data which will be available in Adobe Analytics.
 
-**Response**
+## Response
 
 ```
 HTTP/1.1 204 No Content 

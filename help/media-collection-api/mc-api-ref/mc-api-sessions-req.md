@@ -12,9 +12,13 @@ POST
 https://{uri}/api/v1/sessions
 ```
 
-**URI Parameters -** None
+## URI Parameters
 
-**Request Body -** Must be JSON, must have the same structure as this sample request body: 
+None
+
+## Request Body
+
+The request body must be JSON, and must have the same structure as this sample request body: 
 
 ```
 { 
@@ -51,20 +55,15 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime` (Mandatory)
-
     * `playhead` - Must be in seconds, but it can be a float.
     * `ts` - Timestamp; must be in milliseconds.
-
 * `eventType` (Mandatory)
+   **Valid value:** `sessionStart`
 * `params` (Mandatory) 
 * `customMetadata` (Optional)
 * `qoeData` (Optional)
 
-**Valid `eventType` value:**
-
-* `sessionStart`
-
-**Response -**
+## Response
 
 ```
 HTTP/1.1 201 Created 

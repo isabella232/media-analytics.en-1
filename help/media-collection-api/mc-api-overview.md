@@ -19,7 +19,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 
 ## Media Tracking Data Flows {#section_pwq_n34_qbb}
 
-* A media player implementing the Media Collection API makes RESTful API tracking calls directly to the media tracking back end server, whereas a player implementing the Media SDK makes tracking calls to the SDK APIs inside the player app. One effect of making calls over the web is that the player implementing the Media Collection API needs to handle some of the processing that the Media SDK handles automatically. (Details in [Media Collection Implementation](../media-collection-api/mc-api-impl/mc-api-quick-start.md).)
+* A media player implementing the Media Collection API makes RESTful API tracking calls directly to the media tracking back end server, whereas a player implementing the Media SDK makes tracking calls to the SDK APIs inside the player app. One effect of making calls over the web is that the player implementing the Media Collection API needs to handle some of the processing that the Media SDK handles automatically. (Details in [Media Collection Implementation.](../media-collection-api/mc-api-impl/mc-api-quick-start.md))
 * The tracking data captured with the Media Collection API is sent and initially processed differently than the tracking data captured in a Media SDK player, but the same VA processing engine on the backend is used for both solutions.
 
 ![](assets/col_api_overview_simple.png)
@@ -30,7 +30,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 
 **HTTP Method:** POST, with JSON request body.
 
-**API Calls:**
+### API Calls {#mc-api-calls}
 
 * **`sessions` -** Establishes a session with the server, and returns a Session ID used in subsequent `events` calls. Your app calls this once at the start of a tracking session. 
 
@@ -44,7 +44,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
   {uri}/api/v1/sessions/{session-id}/events
   ```
 
-**Request Body:**
+### Request Body {#mc-api-request-body}
 
 ```
 { 
@@ -81,7 +81,7 @@ The Media Collection API is essentially an adapter, acting as a server-side vers
 
 For each `eventType`, there is a publicly available [JSON validation schema](mc-api-ref/mc-api-json-validation.md) that you should use to verify parameter types and whether a parameter is optional or required for a particular event.
 
-**Event Types:**
+### Event Types {#mc-api-event-types}
 
 * `sessionStart`
 * `play`

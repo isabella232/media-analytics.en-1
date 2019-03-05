@@ -15,7 +15,7 @@ Contrast the realtime approach of the Media Collection API with the batch proces
 
 ## Implementation {#section_jhp_jpk_cfb}
 
-**Event schemas:** The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview](../media-collection-api/mc-api-overview.md); and: [Validating event requests](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md).
+**Event schemas:** The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 **Order of events:**
 
@@ -31,7 +31,7 @@ Contrast the realtime approach of the Media Collection API with the batch proces
 
 ## Integration with Adobe Analtyics {#section_cty_kpk_cfb}
 
-When computing the Analytics start/close calls for the downloaded content scenario, the backend sets an extra Analytics field called `ts`. These are timestamps for the first and last events received (initiate and complete). This mechanism allows a completed media session to be placed at the correct point in time (I.e., even if the user doesn't come back online for several days, the media session is reported to have occurred at the time the content was actually viewed). You must enable this mechanism on the Adobe Analytics side by creating a *timestamp optional report suite*. To enable a timestamp optional report suite, see [Timestamps Optional](https://marketing.adobe.com/resources/help/en_US/reference/timestamp-optional.html).
+When computing the Analytics start/close calls for the downloaded content scenario, the backend sets an extra Analytics field called `ts`. These are timestamps for the first and last events received (initiate and complete). This mechanism allows a completed media session to be placed at the correct point in time (I.e., even if the user doesn't come back online for several days, the media session is reported to have occurred at the time the content was actually viewed). You must enable this mechanism on the Adobe Analytics side by creating a *timestamp optional report suite*. To enable a timestamp optional report suite, see [Timestamps Optional.](https://marketing.adobe.com/resources/help/en_US/reference/timestamp-optional.html)
 
 ## Sample session comparison {#section_qnk_lpk_cfb}
 
@@ -39,7 +39,7 @@ When computing the Analytics start/close calls for the downloaded content scenar
 [url]/v1/sessions
 ```
 
-* **Media Collection API:** 
+### Media Collection API
 
   ```
   { 
@@ -53,15 +53,14 @@ When computing the Analytics start/close calls for the downloaded content scenar
   }
   ```
 
-* **Downloaded Content API:** 
+### Downloaded Content API
 
   ```
   [{ 
     eventType: "sessionStart", 
     playerTime:{playhead: 0, ts: 1529997923478},  
     params:{ 
-   
-        <b>"media.downloaded": true</b> 
+        "media.downloaded": true
     }, 
     customMetadata:{},  
     qoeData:{} 
