@@ -29,15 +29,24 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     |  `VOD`  | Stream type for Video on Demand.  |
     |  `LIVE`  | Stream type for LIVE content.  |
     |  `LINEAR`  | Stream type for LINEAR content.  |
+    |  `AOD`  | Stream type for Audio on Demand.  |
+    |  `AUDIOBOOK`  | Stream type for Audio Book.  |
+    |  `PODCAST`  | Stream type for Podcast.  |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>.VOD);`
+   **`MediaType` constants:** The genereal format for creating the media object:
+
+   |  Constant Name  | Description  |
+   |---|---|
+   |  `Audio`  | Media type for Audio streams.  |
+   |  `Video`  | Media type for Video streams.  |
 
    ```
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                       <MEDIA_ID,  
                                       <MEDIA_LENGTH>, 
-                                      MediaHeartbeat.StreamType.VOD);
+                                      MediaHeartbeat.StreamType.VOD,
+                                      <MEDIA_TYPE>);
    ```
 
 1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.

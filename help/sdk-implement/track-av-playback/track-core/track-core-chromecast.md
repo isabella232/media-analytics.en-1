@@ -13,15 +13,17 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   The general format for creating the media object: `createMediaObject(name, mediaId, length, streamType)` ``
+   The general format for creating the media object: `createMediaObject(name, mediaId, length, streamType, mediaType)` ``
 
    **`MediaObject` reference:** [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject) 
 
    ```
-   mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>); 
+   mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
    ```
 
    **`StreamType` constants:** [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+
+   **`MediaType` constants:** [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **Attach video metadata -** Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
