@@ -26,27 +26,64 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
    |  Constant Name  | Description&nbsp;&nbsp;  |
    |---|---|
-   | `VOD`  | Stream type for Video on Demand.  |
-   | `LIVE`  | Stream type for LIVE content.  |
-   | `LINEAR`  | Stream type for LINEAR content.  |
-   | `AOD`  | Stream type for Audio On Demand  |
-   | `AUDIOBOOK`  | Stream type for Audio Book  |
-   | `PODCAST`  | Stream type for Podcast  |
+   | `MEDIA_STREAM_TYPE_VOD`  | Stream type for Video on Demand.  |
+   | `MEDIA_STREAM_TYPE_LIVE`  | Stream type for LIVE content.  |
+   | `MEDIA_STREAM_TYPE_LINEAR`  | Stream type for LINEAR content.  |
+   | `MEDIA_STREAM_TYPE_AOD`  | Stream type for Audio On Demand  |
+   | `MEDIA_STREAM_TYPE_AUDIOBOOK`  | Stream type for Audio Book  |
+   | `MEDIA_STREAM_TYPE_PODCAST`  | Stream type for Podcast  |
 
    **`MediaType` constants:** The genereal format for creating the media object:
 
    |  Constant Name  | Description  |
    |---|---|
-   |  `Audio`  | Media type for Audio streams.  |
-   |  `Video`  | Media type for Video streams.  |
+   |  `MEDIA_STREAM_TYPE_AUDIO`  | Media type for Audio streams.  |
+   |  `MEDIA_STREAM_TYPE_VIDEO`  | Media type for Video streams.  |
+
+   **Create a media info object for video with VOD content:**
 
    ```
-   var mediaObject =  
-     MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
-                                      <MEDIA_ID,  
-                                      <MEDIA_LENGTH>, 
-                                      MediaHeartbeat.StreamType.VOD,
-                                      <MEDIA_TYPE>);
+    mediaInfo = adb_media_init_mediainfo(
+     "<MEDIA_NAME>",
+     "<MEDIA_ID>",
+     600,
+     ADBMobile().MEDIA_STREAM_TYPE_VOD,
+     ADBMobile().MEDIA_TYPE_VIDEO
+   )
+   ```
+
+   or
+
+   ```
+   mediaInfo = adb_media_init_mediainfo()
+   mediaInfo.name = "<MEDIA_NAME>"
+   mediaInfo.id = "<MEDIA_ID>"
+   mediaInfo.length = 600
+   mediaInfo.streamType = ADBMobile().MEDIA_STREAM_TYPE_VOD
+   mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_VIDEO
+   ```
+
+   **Create a media info object for video with AOD content:**
+
+   ```
+   mediaInfo = adb_media_init_mediainfo(
+    "<MEDIA_NAME>", 
+    "<MEDIA_ID>", 
+    600, 
+    ADBMobile().MEDIA_STREAM_TYPE_AOD, 
+    ADBMobile().MEDIA_TYPE_AUDIO
+   )
+   ```
+
+   or
+
+   ```
+   mediaInfo = adb_media_init_mediainfo()
+   mediaInfo.name = "<MEDIA_NAME>"
+   mediaInfo.id = "<MEDIA_ID>"
+   mediaInfo.length = 600
+   mediaInfo.streamType = ADBMobile().MEDIA_STREAM_TYPE_AOD
+   mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_AUDIO
    ```
 
 1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
@@ -135,7 +172,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
       ```    
       mediaContextData = {}
       mediaContextData["cmk1"] = "cmv1"
-      mediaContextData[""cmk2""] = "cmv2"
+      mediaContextData["cmk2"] = "cmv2"
       ```
 
 1. **Track the intention to start playback -** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance: 
