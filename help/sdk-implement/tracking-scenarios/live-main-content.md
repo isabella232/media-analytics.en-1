@@ -59,9 +59,9 @@ There will not be a complete call, because the live stream was never completed.
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.LIVE 
   ); 
    
@@ -96,8 +96,8 @@ There will not be a complete call, because the live stream was never completed.
   ```
   // Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeLIVE]; 
      
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -129,9 +129,9 @@ There will not be a complete call, because the live stream was never completed.
   ```js
   // Set up mediaObject 
   var mediaInfo =  
-    MediaHeartbeat.createMediaObject(Configuration.VIDEO_NAME,  
-                                     Configuration.VIDEO_ID,  
-                                     Configuration.VIDEO_LENGTH,  
+    MediaHeartbeat.createMediaObject(Configuration.MEDIA_NAME,  
+                                     Configuration.MEDIA_ID,  
+                                     Configuration.MEDIA_LENGTH,  
                                      MediaHeartbeat.StreamType.VOD); 
    
   var videoMetadata = { 

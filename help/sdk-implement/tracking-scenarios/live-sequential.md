@@ -77,9 +77,9 @@ When playback for any given episode has completed (playhead crosses episode boun
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.LIVE 
   ); 
    
@@ -118,9 +118,9 @@ When playback for any given episode has completed (playhead crosses episode boun
   // There is no need to reinstantiate a mediaHeartbeat instance for tracking sesison 2. 
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.LIVE 
   ); 
    
@@ -162,8 +162,8 @@ When playback for any given episode has completed (playhead crosses episode boun
   ```
   // Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeLIVE]; 
       
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -199,8 +199,8 @@ When playback for any given episode has completed (playhead crosses episode boun
    
   // Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeLIVE]; 
      
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -238,9 +238,9 @@ When playback for any given episode has completed (playhead crosses episode boun
   // Set up mediaObject 
    
   var mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -282,9 +282,9 @@ When playback for any given episode has completed (playhead crosses episode boun
    
   // Set up mediaObject 
   var mediaInfo2 = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.LIVE 
   ); 
    

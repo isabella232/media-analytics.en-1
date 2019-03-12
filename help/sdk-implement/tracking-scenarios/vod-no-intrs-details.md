@@ -74,9 +74,9 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
   ```java
   // Set up  mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -120,8 +120,8 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
   ```
   when the user clicks Play 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
     
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -159,8 +159,8 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
   ```js
   // Set up mediaObject 
    
-  var mediaInfo = MediaHeartbeat.createMediaObject(Configuration.VIDEO_NAME, Configuration.VIDEO_ID,  
-  Configuration.VIDEO_LENGTH,MediaHeartbeat.StreamType.VOD); 
+  var mediaInfo = MediaHeartbeat.createMediaObject(Configuration.MEDIA_NAME, Configuration.MEDIA_ID,  
+  Configuration.MEDIA_LENGTH,MediaHeartbeat.StreamType.VOD); 
   var videoMetadata = { 
       CUSTOM_KEY_1 : CUSTOM_VAL_1,  
       CUSTOM_KEY_2 : CUSTOM_VAL_2,  

@@ -155,9 +155,9 @@ if (e.type == "play") {
     // Check for start of media 
     if (!sessionStarted) { 
         /* Set media info */     
-        /* MediaHeartbeat.createMediaObject(<VIDEO_NAME>,  
-                                            <VIDEO_ID>,  
-                                            <VIDEO_LENGTH>, 
+        /* MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
+                                            <MEDIA_ID>,  
+                                            <MEDIA_LENGTH>, 
                                             MediaHeartbeat.StreamType.VOD);*/ 
         var mediaInfo = MediaHeartbeat.createMediaObject( 
           document.getElementsByTagName('video')[0].getAttribute("name"),  

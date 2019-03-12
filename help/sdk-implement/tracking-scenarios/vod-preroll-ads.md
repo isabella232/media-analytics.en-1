@@ -76,9 +76,9 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   ```java
   // Set up  mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -180,8 +180,8 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   ```
   //  Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
       
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -284,9 +284,9 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   ```js
   // Set up mediaObject 
   var mediaInfo =  
-    MediaHeartbeat.createMediaObject(Configuration.VIDEO_NAME,  
-                                     Configuration.VIDEO_ID,  
-                                     Configuration.VIDEO_LENGTH,MediaHeartbeat.StreamType.VOD); 
+    MediaHeartbeat.createMediaObject(Configuration.MEDIA_NAME,  
+                                     Configuration.MEDIA_ID,  
+                                     Configuration.MEDIA_LENGTH,MediaHeartbeat.StreamType.VOD); 
   var videoMetadata = { 
       CUSTOM_KEY_1 : CUSTOM_VAL_1,  
       CUSTOM_KEY_2 : CUSTOM_VAL_2, 
@@ -386,9 +386,9 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -563,8 +563,8 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
   ```
   //  Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
      
   NSMutableDictionary *videoContextData =  
@@ -751,9 +751,9 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
 
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -875,9 +875,9 @@ In this scenario, VOD content is played back with a pre-roll ad, the content, a 
    
   // Set up mediaObject 
   var mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
    
   ); 

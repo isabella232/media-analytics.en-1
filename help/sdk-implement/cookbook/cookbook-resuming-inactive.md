@@ -28,13 +28,13 @@ The Media SDK will only automatically resume sessions if the application was not
   // Set MediaHeartbeat.MediaObjectKey.VideoResumed to true 
   public void onVideoLoad(Observable observable, Object data) { 
    
-      // Replace <VIDEO_NAME> with the video name. 
-      // Replace <VIDEO_ID> with a video unique identifier. 
-      // Replace <VIDEO_LENGTH> with the video length.  
+      // Replace <MEDIA_NAME> with the video name. 
+      // Replace <MEDIA_ID> with a video unique identifier. 
+      // Replace <MEDIA_LENGTH> with the video length.  
       MediaObject mediaInfo = MediaHeartbeat.createMediaObject(  
-          <VIDEO_NAME>,  
-          <VIDEO_ID>,  
-          <VIDEO_LENGTH>,  
+          <MEDIA_NAME>,  
+          <MEDIA_ID>,  
+          <MEDIA_LENGTH>,  
           MediaHeartbeat.StreamType.VOD 
       ); 
        
@@ -49,13 +49,13 @@ The Media SDK will only automatically resume sessions if the application was not
 
   ```
   - (void)onMainVideoLoaded:(NSNotification *)notification { 
-      //Replace <VIDEO_NAME> with the video name. 
-      //Replace <VIDEO_ID> with a video unique identifier. 
-      //Replace <VIDEO_LENGTH> with the video length.     
+      //Replace <MEDIA_NAME> with the video name. 
+      //Replace <MEDIA_ID> with a video unique identifier. 
+      //Replace <MEDIA_LENGTH> with the video length.     
       ADBMediaObject *mediaObject =  
-        [ADBMediaHeartbeat createMediaObjectWithName:<VIDEO_NAME> 
-                           mediaId:<VIDEO_ID> 
-                           length:<VIDEO_LENGTH> 
+        [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME> 
+                           mediaId:<MEDIA_ID> 
+                           length:<MEDIA_LENGTH> 
                            streamType:ADBMediaHeartbeatStreamTypeVOD]; 
    
       //Set to YES if this user is resuming a previously closed media session 
@@ -70,13 +70,13 @@ The Media SDK will only automatically resume sessions if the application was not
 
   ```js
   _onVideoLoad = function () { 
-      // Replace <VIDEO_NAME> with the video name. 
-      // Replace <VIDEO_ID> with a video unique identifier. 
-      // Replace <VIDEO_LENGTH> with the video length.  
+      // Replace <MEDIA_NAME> with the video name. 
+      // Replace <MEDIA_ID> with a video unique identifier. 
+      // Replace <MEDIA_LENGTH> with the video length.  
       var mediaObject =  
-        MediaHeartbeat.createMediaObject(<VIDEO_NAME>,  
-                                         <VIDEO_ID,  
-                                         <VIDEO_LENGTH>,  
+        MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
+                                         <MEDIA_ID,  
+                                         <MEDIA_LENGTH>,  
                                          MediaHeartbeat.StreamType.VOD);
 
       // Set to true if this user is resuming a previously closed media session 

@@ -205,7 +205,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
-    console.log('Player event: VIDEO_LOAD');
+    console.log('Player event: MEDIA_LOAD');
 
     var contextData = {};
 
@@ -227,7 +227,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
-    console.log('Player event: VIDEO_LOAD');
+    console.log('Player event: MEDIA_LOAD');
     var contextData = {};
     var mediaInfo = MediaHeartbeat.createMediaObject(videoInfo.name, videoInfo.id, videoInfo.length, videoInfo.streamType);
 
@@ -804,7 +804,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
-    console.log('Player event: VIDEO_LOAD');
+    console.log('Player event: MEDIA_LOAD');
     var contextData = {};
     var videoInfo = this._player.getVideoInfo();
     var mediaInfo = MediaHeartbeat.createMediaObject(videoInfo.playerName, videoInfo.id, videoInfo.length, videoInfo.streamType);

@@ -110,9 +110,9 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID, 
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID, 
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -276,8 +276,8 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
   ```
   // Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
       
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -357,7 +357,7 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
   analyticsProvider1 = new VideoAnalyticsProvider(_player1); 
    
   // Load the main video content.  
-  _player1.loadContent(URL_TO_VIDEO_1); 
+  _player1.loadContent(URL_TO_MEDIA_1); 
    
   // Create second VideoPlayer instance.  
   var _player2 = new VideoPlayer(); 
@@ -367,7 +367,7 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
   analyticsProvider2 = new VideoAnalyticsProvider(_player2); 
    
   // Load the main video content for the 2nd player.  
-  _player2.loadContent(URL_TO_VIDEO_2); 
+  _player2.loadContent(URL_TO_MEDIA_2); 
   ```
 
   Both instances of `VideoAnalyticsProvider` and `MediaHeartbeat` track two separate sessions, each with its own unique session IDs. You can see the two sessions in the Charles debugging tool.

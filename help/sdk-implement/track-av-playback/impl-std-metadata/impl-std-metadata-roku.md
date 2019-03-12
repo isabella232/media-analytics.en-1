@@ -19,7 +19,7 @@ standardMetadata[ADBMobile().MEDIA_VideoMetadataKeySHOW] = "sample show"
 standardMetadata[ADBMobile().MEDIA_VideoMetadataKeySEASON] = "sample season" 
 standardMetadata[ADBMobile().MEDIA_VideoMetadataKeyEPISODE] = "sample episode" 
 
-mediaInfo[ADBMobile().MEDIA_STANDARD_VIDEO_METADATA] = standardMetadata 
+mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
 ```
 
 **Audio:**

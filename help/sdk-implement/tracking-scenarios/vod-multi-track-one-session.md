@@ -95,9 +95,9 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -139,9 +139,9 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -251,8 +251,8 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   ```
   // Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
        
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -289,8 +289,8 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   ```
   // Set up mediaObject 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
        
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -369,6 +369,6 @@ This scenario is the same as the [VOD playback with no ads](../../sdk-implement/
   analyticsProvider1 = new VideoAnalyticsProvider(_player1); 
    
   // Load the main video content.  
-  _player1.loadContent(URL_TO_VIDEO_1);
+  _player1.loadContent(URL_TO_MEDIA_1);
   ```
 

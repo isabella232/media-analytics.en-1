@@ -50,9 +50,9 @@ In this scenario, part of the VOD content is a chapter.
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -114,8 +114,8 @@ In this scenario, part of the VOD content is a chapter.
   ```
   when the user clicks Play 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
       
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -176,9 +176,9 @@ In this scenario, part of the VOD content is a chapter.
   ```js
   // Set up mediaObject 
   var mediaInfo = MediaHeartbeat.createMediaObject( 
-     Configuration.VIDEO_NAME,  
-     Configuration.VIDEO_ID,  
-     Configuration.VIDEO_LENGTH,  
+     Configuration.MEDIA_NAME,  
+     Configuration.MEDIA_ID,  
+     Configuration.MEDIA_LENGTH,  
      MediaHeartbeat.StreamType.VOD 
    
   ); 
@@ -256,9 +256,9 @@ In this scenario, VOD content is played back with one chapter at the beginning o
   ```java
   // Set up mediaObject 
   MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.VIDEO_NAME,  
-      Configuration.VIDEO_ID,  
-      Configuration.VIDEO_LENGTH,  
+      Configuration.MEDIA_NAME,  
+      Configuration.MEDIA_ID,  
+      Configuration.MEDIA_LENGTH,  
       MediaHeartbeat.StreamType.VOD 
   ); 
    
@@ -321,8 +321,8 @@ In this scenario, VOD content is played back with one chapter at the beginning o
   ```
   when the user clicks Play 
   ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:VIDEO_NAME  
-                       length:VIDEO_LENGTH  
+    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                       length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
      
   NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
@@ -383,9 +383,9 @@ In this scenario, VOD content is played back with one chapter at the beginning o
   ```js
   // Set up mediaObject 
   var mediaInfo = MediaHeartbeat.createMediaObject( 
-     Configuration.VIDEO_NAME,  
-     Configuration.VIDEO_ID,  
-     Configuration.VIDEO_LENGTH,  
+     Configuration.MEDIA_NAME,  
+     Configuration.MEDIA_ID,  
+     Configuration.MEDIA_LENGTH,  
      MediaHeartbeat.StreamType.VOD 
    
   ); 

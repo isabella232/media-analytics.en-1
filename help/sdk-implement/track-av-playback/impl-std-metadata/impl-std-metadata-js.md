@@ -33,9 +33,9 @@ Instantiate a standard video metdata object, populate the desired variables, and
 _onVideoLoad = function () { 
     //Create the Media Object   
     var mediaInfo =  
-      MediaHeartbeat.createMediaObject(<VIDEO_NAME>,  
-                                       <VIDEO_ID,  
-                                       <VIDEO_LENGTH>, 
+      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
+                                       <MEDIA_ID,  
+                                       <MEDIA_LENGTH>, 
                                        MediaHeartbeat.StreamType.VOD); 
  
     //Set standard Video Metadata 
