@@ -7,6 +7,43 @@ uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 
 # Get concurrent viewers JSON report data{#get-concurrent-viewers-json-report-data}
 
+You can extract concurrent viewers report data using the Web Services APIs:
+* The Web Services API docs are available at: [Web Services](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 
+* APIs online at: [Analytics APIs](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
+
+For example, you could filter the data using any segment that built on the UI. 
+To filter by a specific Content ID, you would need to create a new segment.  
+A sample configuration for this scenario would look like this:
+
+```
+{
+  "reportDescription":{
+    "reportSuiteID":"nflmobileappprod",
+    "dateFrom":"2018-07-08",
+    "dateTo":"2018-07-09",
+    "metrics":[
+      {
+        "id":"instances"
+      }
+    ],
+    "elements":[
+      {
+        "id":"videoconcurrentviewers",
+        "top":"2880"
+      }
+    ],
+    "segments":[
+      {
+        "id":"s1234_58ca4fc7e4b0abc238707bb9"                                         
+      }
+    ],
+    "sortBy":"instances",
+    "locale":"en_US"
+  }
+}
+```
+
+<!--
 You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
 
 1. Navigate to: [https://marketing.adobe.com/developer/api-explorer](https://marketing.adobe.com/developer/api-explorer).
@@ -72,3 +109,5 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
    ![](assets/api_helper_2.png) 
 
    ![](assets/api_helper_1.png)
+
+-->
