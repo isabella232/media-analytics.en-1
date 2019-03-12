@@ -9,7 +9,7 @@ snippet: y
 
 # Documentation updates{#documentation-updates}
 
-**Last updated:** November 1, 2018
+## Last updated: November 1, 2018 {#November-2018-update}
 
 * This update was primarily for the 2.2 Media SDK release on the Android and iOS platforms. 
 * The 2.2 Media SDK release on Android and iOS provides support for tracking audio on those platforms, along with internal improvements.
@@ -26,7 +26,7 @@ snippet: y
 
 * The Federated Analytics form was updated to Version 3.2, to reflect new parameters involved with tracking audio.
 
-**Update: October 10, 2018**
+## Update: October 10, 2018 {#October-2018-update}
 
 * Document structure was "refactored" in the SDK Implementation area, by combining the individual (but mostly identical) platform implementation guides into one SDK implementation section, with platform-specific tracking examples presented in sub-sections beneath common tracking topics. 
 * Files were renamed throughout in anticipation of a migration to a new doc system. All DITA prefixes ( [!DNL c_, r_, t_] indicating concept, reference, and task topic types respectively) were eliminated. All underscores ('_') were replaced with hyphens ('-'). Also, file names now more closely resemble the titles of the topics.
