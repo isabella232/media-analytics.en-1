@@ -15,11 +15,11 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI Parameter
 
-`sid`: Session ID returned from a [Sessions request.](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: The session ID returned from a [Sessions request.](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## Request Body
 
-Must be JSON, must have the same structure as this sample request body:
+The request body must be JSON, and must have the same structure as this sample request body:
 
 ```
 { 

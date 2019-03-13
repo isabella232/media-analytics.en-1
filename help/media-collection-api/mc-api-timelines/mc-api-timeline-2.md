@@ -26,11 +26,11 @@ The following diagrams illustrate the playhead timeline and the corresponding ti
 | --- | :---: | :---: | --- |
 | Auto-play or Play button pressed | 0 | 0 | `/api/v1/sessions`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 This call signals _the user's intention to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting".  [Mandatory session parameters](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body.  On the backend, this call generates an Adobe Analytics initiate call.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -61,7 +61,7 @@ This call signals _the user's intention to play_ a video. It returns a Session I
 | --- | :---: | :---: | --- |
 | App starts ping event timer | 0 | 0 | |
 
-**Implementation Details:**
+#### Implementation Details
 
 Start your app's 10-second ping timer. First ping event should then fire 10 seconds into the session.
 
@@ -71,11 +71,11 @@ Start your app's 10-second ping timer. First ping event should then fire 10 seco
 | --- | :---: | :---: | --- |
 | Track pre-roll ad break start | 0 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Pre-roll ads must be tracked. Ads can only be tracked within an ad break.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -97,11 +97,11 @@ Pre-roll ads must be tracked. Ads can only be tracked within an ad break.
 | --- | :---: | :---: | --- |
 | Track pre-roll Ad #1 start | 0 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 A 12 second ad starts.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -132,11 +132,11 @@ A 12 second ad starts.
 | --- | :---: | :---: | --- |
 | App sends ping event | 10 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Ping the backend every 10 seconds.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -154,11 +154,11 @@ Ping the backend every 10 seconds.
 | --- | :---: | :---: | --- |
 | Track pre-roll Ad #1 complete | 12 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 The first pre-roll ad is over.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -176,11 +176,11 @@ The first pre-roll ad is over.
 | --- | :---: | :---: | --- |
 | Track pre-roll ad break complete | 12 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 The ad break is over. Throughout the ad break, the player has remained in the "playing" state.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -198,11 +198,11 @@ The ad break is over. Throughout the ad break, the player has remained in the "p
 | --- | :---: | :---: | --- |
 | Track play event | 12 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Move the player to the "playing" state; begin tracking the start of content playback.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -221,11 +221,11 @@ Move the player to the "playing" state; begin tracking the start of content play
 | --- | :---: | :---: | --- |
 | App sends ping event | 20 | 8 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Ping the backend every 10 seconds.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -243,11 +243,11 @@ Ping the backend every 10 seconds.
 | --- | :---: | :---: | --- |
 | App sends ping event | 30 | 18 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Ping the backend every 10 seconds.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -265,11 +265,11 @@ Ping the backend every 10 seconds.
 | --- | :---: | :---: | --- |
 | Error occurs, app sends error information.  | 32 | 20 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 For error events, `qoeData` parameters `errorID` and `errorSource` are required.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -291,11 +291,11 @@ For error events, `qoeData` parameters `errorID` and `errorSource` are required.
 | --- | :---: | :---: | --- |
 | App recovers from error, user presses Play | 37 | 20 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -313,11 +313,11 @@ For error events, `qoeData` parameters `errorID` and `errorSource` are required.
 | --- | :---: | :---: | --- |
 | App sends ping event | 40 | 28 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Ping the backend every 10 seconds.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -335,11 +335,11 @@ Ping the backend every 10 seconds.
 | --- | :---: | :---: | --- |
 | Track mid-roll ad break start | 45 | 33 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Mid-roll ad of 8 seconds duration: send `adBreakStart` .
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -361,11 +361,11 @@ Mid-roll ad of 8 seconds duration: send `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Track mid-roll Ad #1 start | 45 | 33 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Track the mid-roll ad.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
@@ -394,11 +394,11 @@ Track the mid-roll ad.
 | --- | :---: | :---: | --- |
 | User closes the app. The app determines that the user has abandoned viewing and isn't returning to this session.  | 48 | 33 | `/api/v1/sessions/{sid}/events`  |
 
-**Implementation Details:**
+#### Implementation Details
 
 Send `sessionEnd` to the VA backend to indicate that the session should be closed immediately, with no further processing.
 
-**Sample request body:**
+#### Sample request body
 
 ```
 {
