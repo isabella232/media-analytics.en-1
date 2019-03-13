@@ -9,11 +9,20 @@ snippet: y
 
 # Documentation updates{#documentation-updates}
 
+## Last updated: March 7, 2019 {#March-2019-update}
+
+* This update was primarily for the 2.2 Media SDK release on the JavaScript and OTT platforms. 
+* The 2.2 Media SDK release on JavaScript and OTT platforms provides the same support as 
+  described below for the iOS and Android platforms (November 1, 2018 update).
+
 ## Last updated: November 1, 2018 {#November-2018-update}
 
 * This update was primarily for the 2.2 Media SDK release on the Android and iOS platforms. 
-* The 2.2 Media SDK release on Android and iOS provides support for tracking audio on those platforms, along with internal improvements.
-* With the addition of audio tracking, and with both audio and video tracking capabilities now available in both the Media SDK and the Media Collection API, a relatively wholesale naming update is called for:
+* The 2.2 Media SDK release on Android and iOS provides support for tracking audio on those 
+  platforms, along with internal improvements.
+* With the addition of audio tracking, and with both audio and video tracking capabilities 
+  now available in both the Media SDK and the Media Collection API, a relatively wholesale 
+  naming update is called for:
 
     * The overall solution is titled Adobe Analytics for Audio and Video
     * The shorthand formerly used throughout the docs, "Video Analytics", is now "Media Analytics"
