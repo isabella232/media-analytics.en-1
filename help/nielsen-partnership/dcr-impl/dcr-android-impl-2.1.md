@@ -11,7 +11,7 @@ This Android sample code helps you implement the Video Heartbeat Library for Nie
 
 ## Configure the Video Heartbeat Library {#section_AEA0B5C7F06C4D45BE17A1EAD1BD7300}
 
-For detailed instructions, see [Video Heartbeat 2.x Developer Guide for Android](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/).
+For detailed instructions, see [Set up Android](../../sdk-implement/setup/set-up-android.md).
 
 ## Configure the Nielsen API in Android {#section_BB671DDBC2324205BBE985D684C7E0A7}
 
@@ -122,7 +122,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information, see [Track ads](sdk-implement/track-ads/track-ads-android.md).
+* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information, see [Track ads](../../sdk-implement/track-ads/track-ads-android.md).
 
   For example: 
 
@@ -155,7 +155,7 @@ To implement MTVR in Android 2.1, make the following changes to your existing Ni
    | `AD_LOAD_TYPE` | <ul> <li>When linear ads are present (DTVR), the `AD_LOAD_TYPE` = 1.  </li> <li>When DAI ads are present (DCR), the `AD_LOAD_TYPE` = 2.  </li> </ul> |
    | `TYPE` | `content` | 
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
 
    For example: 
 

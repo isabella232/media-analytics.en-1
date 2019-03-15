@@ -132,8 +132,8 @@ The connector bridge is designed to perform as follows:
 |  Versioning  | `version`  | Constant for retreiving AdobeMobileLibrary verison info  |
 |  Privacy/opt-out  | `PRIVACY_STATUS_OPT_IN`  | Constant for privacy status opted in  |
 |   | `PRIVACY_STATUS_OPT_OUT`  | Constant for privacy status opted out  |
-|  MediaHeartbeat Constants  | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods](../sdk-implement/track-av-playback/track-core/track-core-roku.md).  | Use these constants with MediaHeartbeat APIs  |
-|  Standard Metadata  | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters](../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md).  | Use these constants to attach Standard Video/Ad metadata in MediaHeartbeat APIs  |
+|  MediaHeartbeat Constants  | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods](../../sdk-implement/track-av-playback/track-core/track-core-roku.md).  | Use these constants with MediaHeartbeat APIs  |
+|  Standard Metadata  | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md).  | Use these constants to attach Standard Video/Ad metadata in MediaHeartbeat APIs  |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. For more information on these methods, refer to the table below:
 
@@ -149,7 +149,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## Implementation {#section_dbz_ydz_y2b}
 
-1. **Download the Roku Library**Download the latest Roku library from [https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases).
+1. **Download the Roku Library** - Download the [latest Roku library](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0).
 
 1. **Set Up Your Development Environment**
 
