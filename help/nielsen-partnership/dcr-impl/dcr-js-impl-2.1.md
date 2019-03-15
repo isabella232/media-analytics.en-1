@@ -13,8 +13,6 @@ This JavaScript sample code helps you implement the Video Heartbeat Library for 
 
 You can configure each of the video heartbeat library components individually for Digital Content Ratings (Nielsen).
 
-For more information, see [Video Heartbeat 2.x Developer Guide for JavaScript](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/).
-
 To configure the Nielsen API:
 
 1. Create an instance of AppInfo with all the required application information needed to initialize Nielsen Measurement and provide it to MediaHeartbeatConfig.
@@ -24,7 +22,7 @@ To configure the Nielsen API:
 
    You can obtain the Nielsen config key through your Adobe representative.
 
-For more information, see [Set up and Configure your MediaHeartbeat instance](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_set-up-vid-track-feat_js.html). If you created the `MediaHeartbeatConfig` instance, complete the steps to add the Nielsen app info and the config key.
+For more information, see [Set up and Configure your MediaHeartbeat instance](../../sdk-implement/setup/set-up-js.md). If you created the `MediaHeartbeatConfig` instance, complete the steps to add the Nielsen app info and the config key.
 
 For example: 
 
@@ -53,7 +51,7 @@ Nielsen metadata objects are used to provide required tracking data to Nielsen S
 
 The following types of metadata must be configured:
 
-* **Content Metadata** Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_track-core-playback_js.html).
+* **Content Metadata** Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-js.md).
 
   For example: 
 
@@ -87,7 +85,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
 
-* **Channel Metadata** Create the channel info metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_track-core-playback_js.html).
+* **Channel Metadata** Create the channel info metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-js.md).
 
   For example: 
 
@@ -109,7 +107,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the AdObject for any Ad start event. For more information about the core playback implementation for Javascript, see [Track ads](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/t_vhl_track-ads_js.html).
+* **Ad Metadata** Create Ad metadata object while initializing the AdObject for any Ad start event. For more information about the core playback implementation for Javascript, see [Track ads](../../sdk-implement/track-ads/track-ads-js.md).
 
   For example: 
 

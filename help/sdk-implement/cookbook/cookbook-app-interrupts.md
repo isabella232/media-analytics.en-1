@@ -28,5 +28,5 @@ Playback in a video application can be interrupted in a variety of ways: a user 
 
 * *What about restarting the same session?*
 
-  For detailed instructions on restarting a tracking session, see this page: [Manually resume a previously closed session](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/c_vhl_resume-inact-vid-sess-man-resume-cl-sess_js.html). The SDK sends a resume ping to notify the back-end that the user is manually resuming the session.
+  For detailed instructions on restarting a tracking session, see this page: [Manually resume a previously closed session](../../sdk-implement/cookbook/cookbook-resuming-inactive.md). The SDK sends a resume ping to notify the back-end that the user is manually resuming the session.
 

@@ -132,8 +132,8 @@ The connector bridge is designed to perform as follows:
 |  Versioning  | `version`  | Constant for retreiving AdobeMobileLibrary verison info  |
 |  Privacy/opt-out  | `PRIVACY_STATUS_OPT_IN`  | Constant for privacy status opted in  |
 |   | `PRIVACY_STATUS_OPT_OUT`  | Constant for privacy status opted out  |
-|  MediaHeartbeat Constants  | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/r_vhl_med-hrbts-meth.html).  | Use these constants with MediaHeartbeat APIs  |
-|  Standard Metadata  | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/roku/c_vhl_stand-meta_roku.html).  | Use these constants to attach Standard Video/Ad metadata in MediaHeartbeat APIs  |
+|  MediaHeartbeat Constants  | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods](../sdk-implement/track-av-playback/track-core/track-core-roku.md).  | Use these constants with MediaHeartbeat APIs  |
+|  Standard Metadata  | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters](../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md).  | Use these constants to attach Standard Video/Ad metadata in MediaHeartbeat APIs  |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. For more information on these methods, refer to the table below:
 

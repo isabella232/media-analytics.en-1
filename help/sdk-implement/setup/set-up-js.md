@@ -110,4 +110,4 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 
 In version 2.x, all of the public methods are consolidated into the `ADB.va.MediaHeartbeat` class to make it easier on developers. Also, all configs are now consolidated into the `ADB.va.MediaHeartbeatConfig` class.
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_mig_1x_to_2x.html). 
+For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md). 

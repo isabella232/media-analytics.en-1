@@ -48,7 +48,7 @@ You can configure each of the video heartbeat library components individually fo
 
 Another step for configuring Nielsen is to provide the Nielsen config key to `MediaHeartbeatConfig`.
 
-You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `MediaHeartbeat` and for creating an instance of `MediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_set-up-vid-track-feat_android.html). If you have the `MediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
+You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `MediaHeartbeat` and for creating an instance of `MediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](../../sdk-implement/setup/set-up-android.html). If you have the `MediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
 
 ```java
 // Media Heartbeat initialization 
@@ -66,7 +66,7 @@ You can configure each of the video heartbeat library components individually fo
 
 The following types of metadata must be configured:
 
-* **Content Metadata** Create the content metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-core-playback_android.html).
+* **Content Metadata** Create the content metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-android.md).
 
   For example: 
 
@@ -101,7 +101,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
 
-* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-core-playback_android.html).
+* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-android.md).
 
   For example: 
 
@@ -122,7 +122,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for Android, see [Track ads](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/android_2.0/t_vhl_track-ads_android.html).
+* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information, see [Track ads](sdk-implement/track-ads/track-ads-android.md).
 
   For example: 
 

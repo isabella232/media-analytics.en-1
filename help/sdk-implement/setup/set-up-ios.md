@@ -129,7 +129,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 In version 2.x, all of the public methods are consolidated into the `ADBMediaHeartbeat` class to make it easier on developers. All configurations have been consolidated into the `ADBMediaHeartbeatConfig` class.
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_mig_1x_to_2x.html).
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md).
 
 **Configure a Native App for tvOS -**
 

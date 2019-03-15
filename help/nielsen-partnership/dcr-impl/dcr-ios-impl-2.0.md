@@ -13,8 +13,6 @@ The iOS sample code helps you implement the Video Heartbeat Library for Nielsen 
 
 You can configure each of the video heartbeat library components individually for Digital Content Ratings (Nielsen).
 
-For detailed instructions, see [Video Heartbeat 2.x Developer Guide for iOS](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/).
-
 ## Configure the Nielsen API in iOS {#section_50B80952CDA9415EA36FB2FAC5029E7F}
 
 Initialize Nielsen Measurement by providing the required AppInfo with application details.
@@ -35,7 +33,7 @@ For more information about AppInfo, see *NielsenAppInfo* in [Variables and metad
 
 Another step for configuring Nielsen is to provide Nielsen config key to `ADBMediaHeartbeatConfig`.
 
-You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `ADBMediaHeartbeat` and creating an instance of `ADBMediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_set-up-vid-track-feat_ios.html). If you have the `ADBMediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
+You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `ADBMediaHeartbeat` and creating an instance of `ADBMediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](../../sdk-implement/setup/set-up-ios.md). If you have the `ADBMediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
 
 ```
 // Media Heartbeat Initialization 
@@ -56,7 +54,7 @@ The following types of metadata must be configured:
 
 * **Content Metadata**
 
-  Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for iOS, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-core-playback_ios.html).
+  Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for iOS, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-ios.md).
 
   For example: 
 
@@ -82,7 +80,7 @@ The following types of metadata must be configured:
     forKey:MEDIAHEARTBEAT_NIELSEN_CONTENT_METADATA]; 
   ```
 
-* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject`for the session start. For more information about the core playback implementation for iOS, see [Track core playback](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-core-playback_ios.html).
+* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject`for the session start. For more information, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-ios.md).
 
   For example: 
 
@@ -103,7 +101,7 @@ The following types of metadata must be configured:
     forKey:MEDIAHEARTBEAT_NIELSEN_CHANNEL_METADATA];
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for iOS, see [Track ads](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/ios_2.0/t_vhl_track-ads_ios.html).
+* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for iOS, see [Track ads](../../sdk-implement/track-ads/track-ads-ios.md).
 
   For example: 
 
