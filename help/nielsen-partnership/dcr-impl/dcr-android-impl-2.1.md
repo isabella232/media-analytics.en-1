@@ -48,7 +48,7 @@ You can configure each of the video heartbeat library components individually fo
 
 Another step for configuring Nielsen is to provide the Nielsen config key to `MediaHeartbeatConfig`.
 
-You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `MediaHeartbeat` and for creating an instance of `MediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](../../sdk-implement/setup/set-up-android.html). If you have the `MediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
+You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `MediaHeartbeat` and for creating an instance of `MediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](../../sdk-implement/setup/set-up-android.md). If you have the `MediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
 
 ```java
 // Media Heartbeat initialization 
