@@ -8,7 +8,7 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 # Set up Android{#set-up-android}
 
 * **Obtain valid configuration parameters for the Media SDK -** These parameters can be obtained from an Adobe representative after you set up your analytics account. 
-* **Implement ADBMobile for Android in your application -** For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions](https://marketing.adobe.com/resources/help/en_US/mobile/android/). 
+* **Implement ADBMobile for Android in your application -** For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://marketing.adobe.com/resources/help/en_US/mobile/android/) 
 
 * **Provide the following capabilities in your media player:**
 
@@ -123,4 +123,4 @@ To add these permissions, add the following lines to your `AndroidManifest.xml` 
 
 In versions 2.x, all of the public methods are consolidated into the `com.adobe.primetime.va.simple.MediaHeartbeat` class to make it easier on developers. Also, all configs are now consolidated into the `com.adobe.primetime.va.simple.MediaHeartbeatConfig` class.
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md). 
+For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md) 

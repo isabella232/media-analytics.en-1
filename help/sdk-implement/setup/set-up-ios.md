@@ -8,11 +8,11 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 # Set up iOS{#set-up-ios}
 
 * **Obtain valid configuration parameters for the Media SDK -** These parameters can be obtained from an Adobe representative after you set up your analytics account. 
-* **Implement ADBMobile for iOS in your application -** For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions](https://marketing.adobe.com/resources/help/en_US/mobile/ios/). 
+* **Implement ADBMobile for iOS in your application -** For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/) 
 
   >[!IMPORTANT]
   >
-  >Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). This feature aims to improve network security by ensuring that your apps use only industry-standard protocols and ciphers. This feature is enabled by default, but you have configuration options that provide you with choices for working with ATS. For details on ATS, see [](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html).
+  >Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). This feature aims to improve network security by ensuring that your apps use only industry-standard protocols and ciphers. This feature is enabled by default, but you have configuration options that provide you with choices for working with ATS. For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **Provide the following capabilities in your media player:**
 
@@ -129,11 +129,11 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 In version 2.x, all of the public methods are consolidated into the `ADBMediaHeartbeat` class to make it easier on developers. All configurations have been consolidated into the `ADBMediaHeartbeatConfig` class.
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md).
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 **Configure a Native App for tvOS -**
 
-With the release of the new Apple TV, you can now create applications to run in the native tvOS environment. You can either create a purely native app, using any of several frameworks available in iOS, or you can create your app using XML templates and JavaScript. Starting with MediaSDK version 2.0, support for tvOS is available. For more information about tvOS, see [tvOS Developer site](https://developer.apple.com/tvos/documentation/).
+With the release of the new Apple TV, you can now create applications to run in the native tvOS environment. You can either create a purely native app, using any of several frameworks available in iOS, or you can create your app using XML templates and JavaScript. Starting with MediaSDK version 2.0, support for tvOS is available. For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/documentation/)
 
 Perform the following steps in your Xcode project. This guide is written assuming your project has a target that is an Apple TV app targeting tvOS:
 

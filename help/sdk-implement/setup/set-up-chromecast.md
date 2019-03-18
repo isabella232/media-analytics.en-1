@@ -17,7 +17,7 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
     * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
     * *An API that provides player information* - This information includes details such as the media name and the play head position.
 
-Adobe Mobile services provides a new UI that brings together mobile marketing capabilities for mobile applications from across the Adobe Marketing Cloud. Initially, the Mobile service provides seamless integration of app analytics and targeting capabilities for the Adobe Analytics and Adobe Target solutions. Learn more at [Adobe Mobile Services documentation](https://marketing.adobe.com/resources/help/en_US/mobile/).
+Adobe Mobile services provides a new UI that brings together mobile marketing capabilities for mobile applications from across the Adobe Marketing Cloud. Initially, the Mobile service provides seamless integration of app analytics and targeting capabilities for the Adobe Analytics and Adobe Target solutions. Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com/resources/help/en_US/mobile/)
 
 Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast applications written in JavaScript, leverage and collect audience data through audience management, and measure video engagement through Video heartbeats. 
 
@@ -125,5 +125,5 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
    | `syncIdentifiers()` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs()` in the JavaScript library.  For example: `var identifiers = {}; identifiers["idType"] = "idValue"; ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
-   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
+   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) 
 
