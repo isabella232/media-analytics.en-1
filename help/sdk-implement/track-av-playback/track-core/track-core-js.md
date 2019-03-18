@@ -10,7 +10,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 >[!IMPORTANT]
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+1. **Initial tracking setup - ** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
    **[createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)**
 
@@ -49,9 +49,9 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
                                       <MEDIA_TYPE>);
    ```
 
-1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+1. **Attach metadata - ** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard metadata -** [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+    * **Standard metadata - ** [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
     
       >[!NOTE]
       >
@@ -61,7 +61,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
           See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
-    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this media. For example:     
+    * **Custom metadata - ** Create a variable object for the custom variables and populate with the data for this media. For example:     
     
       ```js    
       /* Set custom context data */ 
@@ -72,7 +72,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
       };
       ```
 
-1. **Track the intention to start playback -** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance: 
+1. **Track the intention to start playback - ** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance: 
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -90,19 +90,19 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback - ** Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
 
    ```js
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Track the completion of playback -** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback - ** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```js
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Track the end of the session -** Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
+1. **Track the end of the session - ** Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
 
    ```js
    mediaHeartbeat.trackSessionEnd();
@@ -112,13 +112,13 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
    >
    >`trackSessionEnd` marks the end of a tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
-1. **Track all possible pause scenarios -** Identify the event from the media player for pause and call `trackPause`: 
+1. **Track all possible pause scenarios - ** Identify the event from the media player for pause and call `trackPause`: 
 
    ```js
    mediaHeartbeat.trackPause();
    ```
 
-   **Pause Scenarios -** Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+   **Pause Scenarios - ** Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.

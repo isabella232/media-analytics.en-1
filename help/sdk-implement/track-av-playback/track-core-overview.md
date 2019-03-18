@@ -1,60 +1,62 @@
 ---
-seo-title: Overview
-title: Overview
+seo-title: Tracking Overview
+title: Tracking Overview
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 
 ---
 
-# Overview{#overview}
+# Tracking Overview{#tracking-overview}
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+
+## Player Events
 
 Tracking core playback includes tracking media load, media start, media pause, and media complete. Although not mandatory, tracking buffering and seeking are also core components used for tracking content playback. In your media player API, identify the player events that correspond with the Media SDK tracking calls, and code your event handlers to call tracking APIs, and to populate required and optional variables.
 
-**On media load:**
+### On media load
 
 * Create the media object 
 * Populate metadata 
 * Call `trackSessionStart`; for example: `trackSessionStart(mediaObject, contextData)`
 
-**On media start:**
+### On media start
 
 * Call `trackPlay`
 
-**On pause/resume:**
+### On pause/resume
 
 * Call `trackPause`
 * Call `trackPlay` &nbsp; _when playback resumes_
 
-**On media complete:**
+### On media complete
 
 * Call `trackComplete`
 
-**On media abort:**
+### On media abort
 
 * Call `trackSessionEnd`
 
-**When scrubbing starts:**
+### When scrubbing starts
 
 * Call `trackEvent(SeekStart)`
 
-**When scrubbing ends:**
+### When scrubbing ends
 
 * Call `trackEvent(SeekComplete)`
 
-**When buffering starts:**
+### When buffering starts
 
 * Call `trackEvent(BufferStart);`
 
-**When buffering ends:**
+### When buffering ends
 
 * Call `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see *Set up and configure:* [Overview](../../sdk-implement/setup/setup-overview.md).
+>The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implement {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -100,7 +102,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
       Instantiate a standard metdata object, populate the desired variables, and set the metadata object on the Media Heartbeat object.
 
-      See the comprehensive list of metadata here: [Audio and video parameters](../../metrics-and-metadata/audio-video-parameters.md)
+      See the comprehensive list of metadata here: [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
     
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this content.
 
@@ -158,7 +160,8 @@ if (e.type == "play") {
         /* MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                             <MEDIA_ID>,  
                                             <MEDIA_LENGTH>, 
-                                            MediaHeartbeat.StreamType.VOD);*/ 
+                                            <MEDIA_STREAMTYPE>,
+                                            <MEDIA_MEDIATYPE>);*/ 
         var mediaInfo = MediaHeartbeat.createMediaObject( 
           document.getElementsByTagName('video')[0].getAttribute("name"),  
           document.getElementsByTagName('video')[0].getAttribute("id"),  
@@ -228,7 +231,7 @@ if (e.type == “buffered”) {
 
 ## Validate {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-**Content Start**
+### Content Start
 
 On start of a media player, these key calls are sent in the following order:
 
@@ -238,22 +241,22 @@ On start of a media player, these key calls are sent in the following order:
 
 Calls 1 and 2 contain additional metadata variables for both custom and standard.
 
-**Content Play**
+### Content Play
 
 During regular main content playback, Heartbeat calls are sent to the Heartbeat server every ten seconds.
 
-**Content Complete**
+### Content Complete
 
 At the 100% point, on content or at a show boundary on a linear stream, a Heartbeat complete call will be sent.
 
-**Content Pause**
+### Content Pause
 
 When the player pauses, player pause event calls will be sent every 10 seconds. After pause ends, the play events should resume.
 
-**Content Scrub/Seek**
+### Content Scrub/Seek
 
 On scrubbing of the playhead, no special tracking calls are sent. However, when playback resumes after scrubbing, the playhead value should reflect the new position in the main content.
 
-**Content Buffer**
+### Content Buffer
 
 When the media player buffers, player buffer event calls are sent every 10 seconds. After buffering ends, the play events should resume. 

@@ -123,5 +123,5 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  `ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs` For example: `identifiers&nbsp;=&nbsp;{} identifiers["idType"]&nbsp;=&nbsp;"idValue" ADBMobile().visitorSyncIdentifiers(identifiers)` |
 
-   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html). 
+   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html)
 

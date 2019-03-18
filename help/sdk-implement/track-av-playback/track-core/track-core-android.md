@@ -10,52 +10,53 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 >[!IMPORTANT]
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guide for Android here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+1. **Initial tracking setup - ** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   **`[createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)`**
+    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
+ 
+    |  Variable Name  | Description  | Required  |
+    | --- | --- | :---: |
+    |  `name`  | Media name  | Yes  |
+    |  `mediaId`  | Media unique identifier  | Yes  |
+    |  `length`  | Media length  | Yes  |
+    |  `streamType`  | Stream type (see _StreamType constants_ below)  | Yes  |
+    |  `mediaType`  | Media type (see _MediaType constants_ below)  | Yes  |
+ 
+    **`StreamType` constants:** 
+ 
+    |  Constant Name  | Description  |
+    |---|---|
+    |  `VOD`  | Stream type for Video on Demand.  |
+    |  `LIVE`  | Stream type for Live content.  |
+    |  `LINEAR`  | Stream type for Linear content.  |
+    |  `AOD`  | Stream type for Audio On Demand  |
+    |  `AUDIOBOOK`  | Stream type for Audio Book  |
+    |  `PODCAST`  | Stream type for Podcast  |
+ 
+    **`MediaType` constants:** 
+ 
+    |  Constant Name  | Description  |
+    |---|---|
+    |  `Audio`  | Media type for Audio streams.  |
+    |  `Video`  | Media type for Video streams.  |
+ 
+    ```
+    MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
+      <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);
+    ```
 
-   |  Variable Name  | Description  | Required  |
-   | --- | --- | :---: |
-   |  `name`  | Media name  | Yes  |
-   |  `mediaId`  | Media unique identifier  | Yes  |
-   |  `length`  | Media length  | Yes  |
-   |  `streamType`  | Stream type (e.g., `MediaHeartbeat.StreamType.[VOD | LINEAR | VOD]`)  | Yes  |
-   |  `mediaType`  | Media type (e.g., `MediaHeartbeat.MediaType.[Audio | Video]`  | Yes  |
+1. **Attach metadata - ** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-   **`StreamType` constants:** 
-
-   |  Constant Name  | Description  |
-   |---|---|
-   |  `VOD`  | Stream type for Video on Demand.  |
-   |  `LIVE`  | Stream type for Live content.  |
-   |  `LINEAR`  | Stream type for Linear content.  |
-   |  `AOD`  | Stream type for Audio On Demand  |
-   |  `AUDIOBOOK`  | Stream type for Audio Book  |
-   |  `PODCAST`  | Stream type for Podcast  |
-
-   **`MediaType` constants:** The genereal format for creating the media object:
-
-   |  Constant Name  | Description  |
-   |---|---|
-   |  `Audio`  | Media type for Audio streams.  |
-   |  `Video`  | Media type for Video streams.  |
-
-   ```
-   MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
-     <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);
-   ```
-
-1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
-
-    * **Standard metadata -** [Implement standard metadata on Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
+    * **Standard metadata - ** [Implement standard metadata on Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
     
       >[!NOTE]
       >
       >Attaching the standard metadata object to the media object is optional.
 
-        * Media metadata keys API Reference - [Standard metadata keys - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)See the comprehensive set of available video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+        * Media metadata keys API Reference - [Standard metadata keys - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+        * See the comprehensive set of available video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
-    * **Custom metadata -** Create a dictionary for the custom variables and populate with the data for this media. For example:     
+    * **Custom metadata - ** Create a dictionary for the custom variables and populate with the data for this media. For example:     
     
       ```java    
       HashMap<String, String> mediaMetadata =  
@@ -65,7 +66,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
       mediaMetadata.put("programmer", "Sample programmer");
       ```
 
-1. **Track the intention to start playback -** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. For example: 
+1. **Track the intention to start playback - ** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. For example: 
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -85,7 +86,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    >
    >If you are not using custom media metadata, simply send an empty object for the second argument in `trackSessionStart`.
 
-1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback - ** Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
@@ -94,7 +95,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    }
    ```
 
-1. **Track the completion of playback -** Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback - ** Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```java
    public void onVideoComplete(Observable observable, Object data) { 
@@ -102,7 +103,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    }
    ```
 
-1. **Track the end of the session -** Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
+1. **Track the end of the session - ** Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
 
    ```java
    // Closes the media and/or the media completed and unloaded,  
@@ -116,7 +117,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    >
    >`trackSessionEnd` marks the end of a media tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
 
-1. **Track all possible pause scenarios -** Identify the event from the media player for media pause and call `trackPause`: 
+1. **Track all possible pause scenarios - ** Identify the event from the media player for media pause and call `trackPause`: 
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
@@ -124,7 +125,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    }
    ```
 
-   **Pause Scenarios -** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+   **Pause Scenarios - ** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.
