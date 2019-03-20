@@ -19,7 +19,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 * Create the media object 
 * Populate metadata 
-* Call `trackSessionStart`; for example: `trackSessionStart(mediaObject, contextData)`
+* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
 
 ### On media start
 

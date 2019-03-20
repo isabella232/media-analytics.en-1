@@ -28,10 +28,11 @@ The following table describes the minimum platform versions supported for each S
 ## General Implementation Guidelines {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
 There are three main SDK components involved in media tracking:
-
 * Media Heartbeat Config - The config contains the basic settings for reporting. 
 * Media Heartbeat Delegate - The delegate controls playback time and the QoS object. 
 * Media Heartbeat - The primary library containing members and methods.
+
+Complete the following implementation steps:
 
 1. Create a `MediaHeartbeatConfig` instance and set your config parameter values. 
 
@@ -124,7 +125,8 @@ Media implementations are composed of two types of tracking calls:
 
 Media tracking works the same across all platforms, desktop and mobile. Audio tracking currently works in mobile platforms. For all tracking calls there are a few key universal variables to be validated:
 
-* **AppMeasurement (Analytics)** For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variable.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html) 
+* **AppMeasurement (Analytics)** 
+   For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variable.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html) 
 
   >[!IMPORTANT]
   >
@@ -132,7 +134,8 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME. 
 
-* **Heartbeats (Media Analytics)** Always has the format "`[namespace].hb.omtrdc.net`", where "`[namespace]`" is defined by your login company and is provided by Adobe.
+* **Heartbeats (Media Analytics)** 
+   Always has the format "`[namespace].hb.omtrdc.net`", where "`[namespace]`" is defined by your login company and is provided by Adobe.
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 

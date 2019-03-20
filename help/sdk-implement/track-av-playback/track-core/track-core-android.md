@@ -10,7 +10,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 >[!IMPORTANT]
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guide for Android here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup - ** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+1. **Initial tracking setup** 
+
+    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
     [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
  
@@ -45,7 +47,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
       <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);
     ```
 
-1. **Attach metadata - ** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+1. **Attach metadata** 
+
+    Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
     * **Standard metadata - ** [Implement standard metadata on Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
     
@@ -66,7 +70,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
       mediaMetadata.put("programmer", "Sample programmer");
       ```
 
-1. **Track the intention to start playback - ** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. For example: 
+1. **Track the intention to start playback** 
+
+    To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. For example: 
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -86,7 +92,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    >
    >If you are not using custom media metadata, simply send an empty object for the second argument in `trackSessionStart`.
 
-1. **Track the actual start of playback - ** Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback** 
+
+    Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`: 
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
@@ -95,7 +103,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    }
    ```
 
-1. **Track the completion of playback - ** Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback** 
+
+    Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```java
    public void onVideoComplete(Observable observable, Object data) { 
@@ -103,7 +113,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    }
    ```
 
-1. **Track the end of the session - ** Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
+1. **Track the end of the session** 
+
+    Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`: 
 
    ```java
    // Closes the media and/or the media completed and unloaded,  
@@ -117,7 +129,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    >
    >`trackSessionEnd` marks the end of a media tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
 
-1. **Track all possible pause scenarios - ** Identify the event from the media player for media pause and call `trackPause`: 
+1. **Track all possible pause scenarios** 
+
+    Identify the event from the media player for media pause and call `trackPause`: 
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  

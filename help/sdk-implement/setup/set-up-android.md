@@ -7,13 +7,17 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 
 # Set up Android{#set-up-android}
 
-* **Obtain valid configuration parameters for the Media SDK -** These parameters can be obtained from an Adobe representative after you set up your analytics account. 
-* **Implement ADBMobile for Android in your application -** For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://marketing.adobe.com/resources/help/en_US/mobile/android/) 
+## Prerequisites
 
+* **Obtain valid configuration parameters for the Media SDK** 
+   These parameters can be obtained from an Adobe representative after you set up your analytics account. 
+* **Implement ADBMobile for Android in your application** 
+   For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://marketing.adobe.com/resources/help/en_US/mobile/android/) 
 * **Provide the following capabilities in your media player:**
+   * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
+   * *An API that provides player information* - This information includes details such as the media name and the play head position.
 
-    * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
-    * *An API that provides player information* - This information includes details such as the media name and the play head position.
+## SDK Implementation
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK to your project.
 

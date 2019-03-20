@@ -7,8 +7,12 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 
 # Set up JavaScript{#set-up-javascript}
 
-* **Obtain valid configuration parameters -** These parameters can be obtained from an Adobe representative after you set up your analytics account. 
-* **Implement `AppMeasurement` for JavaScript in your media application -** For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html) 
+## Prerequisites
+
+* **Obtain valid configuration parameters** 
+   These parameters can be obtained from an Adobe representative after you set up your analytics account. 
+* **Implement `AppMeasurement` for JavaScript in your media application** 
+   For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html) 
 
 * **Provide the following capabilities in your media player:**
 
@@ -106,7 +110,7 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
    appMeasurement.charSet = "UTF­8";
    ```   
 
-**Migrate from version 1.x to 2.x in JavaScript**
+## Migrate from version 1.x to 2.x in JavaScript
 
 In version 2.x, all of the public methods are consolidated into the `ADB.va.MediaHeartbeat` class to make it easier on developers. Also, all configs are now consolidated into the `ADB.va.MediaHeartbeatConfig` class.
 

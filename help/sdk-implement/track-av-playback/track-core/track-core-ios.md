@@ -10,7 +10,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 >[!IMPORTANT]
 >This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+1. **Initial tracking setup** 
+
+    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
    [createMediaObjectWithName API](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:) 
 
@@ -51,7 +53,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
                                         mediaType: <MEDIA_TYPE>];
    ```
 
-1. **Attach video metadata - ** Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
+1. **Attach video metadata** 
+
+    Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
     * **Standard video metadata - ** 
 
@@ -72,7 +76,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
       [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
       ```
 
-1. **Track the intention to start playback - ** To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. 
+1. **Track the intention to start playback** 
+
+    To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. 
 
    >[!TIP]
    >
@@ -93,7 +99,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
    >
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Track the actual start of playback - ** Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
+1. **Track the actual start of playback** 
+
+    Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call `trackPlay`: 
 
    ```
    - (void)onVideoPlay:(NSNotification *)notification { 
@@ -101,7 +109,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
    }
    ```
 
-1. **Track the completion of playback - ** Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`: 
+1. **Track the completion of playback** 
+
+    Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`: 
 
    ```
    - (void)onVideoComplete:(NSNotification *)notification { 
@@ -109,7 +119,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
    }
    ```
 
-1. **Track the end of the session - ** Identify the event from the video player for the unloading/closing of the video playback, where the user closes the video and/or the video is completed and has been unloaded, and call `trackSessionEnd`: 
+1. **Track the end of the session** 
+
+    Identify the event from the video player for the unloading/closing of the video playback, where the user closes the video and/or the video is completed and has been unloaded, and call `trackSessionEnd`: 
 
    ```
    - void)onMainVideoUnloaded:(NSNotification *)notification { 
@@ -121,7 +133,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
    >
    >`trackSessionEnd` marks the end of a video tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Track all possible pause scenarios - ** Identify the event from the video player for video pause and call `trackPause`: 
+1. **Track all possible pause scenarios** 
+
+    Identify the event from the video player for video pause and call `trackPause`: 
 
    ```
    - (void)onVideoPause:(NSNotification *)notification { 

@@ -7,23 +7,31 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 
 # Set up Chromecast{#set-up-chromecast}
 
-**Should I use the Chromecast JavaScript SDK or can I use the Standard JavaScript SDK?** The correct answer is "Chromecast", for these reasons:
+## FAQ
 
+_Should I use the Chromecast JavaScript SDK or can I use the Standard JavaScript SDK?_
+
+The correct answer is "Chromecast", for the following reasons:
 * The AppMeasurement and VisitorAPI libraries in the Standard JS SDK are not certified to work on OTT platforms. In the Chromecast JS SDK, the Video Heartbeats Library (VHL), Analytics, and VisitorAPI are all built-in to the single, unified, certified-for-Chromecast SDK. 
 * The Chromecast SDK is much more lightweight than the standard JS SDK. This is very crucial for the lower-end hardware used by OTT platforms.
-* **Obtain valid configuration parameters for Heartbeats -** These parameters can be obtained from an Adobe representative after you set up your media analytics account. 
-* **Provide the following capabilities in your media player:**
 
-    * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
-    * *An API that provides player information* - This information includes details such as the media name and the play head position.
+## Prerequisites
+
+* **Obtain valid configuration parameters for Heartbeats** 
+   These parameters can be obtained from an Adobe representative after you set up your media analytics account. 
+* **Provide the following capabilities in your media player:**
+   * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
+   * *An API that provides player information* - This information includes details such as the media name and the play head position.
 
 Adobe Mobile services provides a new UI that brings together mobile marketing capabilities for mobile applications from across the Adobe Marketing Cloud. Initially, the Mobile service provides seamless integration of app analytics and targeting capabilities for the Adobe Analytics and Adobe Target solutions. Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com/resources/help/en_US/mobile/)
 
 Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast applications written in JavaScript, leverage and collect audience data through audience management, and measure video engagement through Video heartbeats. 
 
+## SDK Implementation
+
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast library to your project.
 
-    1. The `AdobeMobileLibrary-Chromecast-2.1.0 zip` file consists of the following software components:
+    1. The `AdobeMobileLibrary-Chromecast-[version]` zip file consists of the following software components:
 
         * `adbmobile-chromecast.min.js`:
 
@@ -121,8 +129,8 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 
    | Method | Description |
    | --- | --- |
-   | `getMarketingCloudID()` | Retrieves the Experience Cloud Visitor ID from the Visitor ID service.  `ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs()` in the JavaScript library.  For example: `var identifiers = {}; identifiers["idType"] = "idValue"; ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `getMarketingCloudID()` | Retrieves the Experience Cloud Visitor ID from the Visitor ID service.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
+   | `syncIdentifiers()` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs()` in the JavaScript library.  For example: <br/><br/>`var identifiers = {}; <br/><br/>identifiers["idType"] = "idValue"; <br/><br/>ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) 

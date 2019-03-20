@@ -7,17 +7,21 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 
 # Set Up Roku{#set-up-roku}
 
-* **Obtain valid configuration parameters for Heartbeats -** These parameters can be obtained from an Adobe representative after you set up your media analytics account. 
-* **Provide the following capabilities in your media player:**
+## Prerequisites
 
-    * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
-    * *An API that provides player information* - This information includes details such as the media name and the play head position.
+* **Obtain valid configuration parameters for Heartbeats** 
+   These parameters can be obtained from an Adobe representative after you set up your media analytics account. 
+* **Provide the following capabilities in your media player:**
+    * _An API to subscribe to player events_ - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
+    * _An API that provides player information_ - This information includes details such as the media name and the play head position.
 
 Adobe Mobile services provides a new UI that brings together mobile marketing capabilities for mobile applications from across the Adobe Marketing Cloud. Initially, the Mobile service provides seamless integration of app analytics and targeting capabilities for the Adobe Analytics and Adobe Target solutions.
 
 Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com/resources/help/en_US/mobile/)
 
 Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications written in BrightScript, leverage and collect audience data through audience management, and measure video engagement through Video heartbeats. 
+
+## SDK Implementation
 
 1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku library to your project.
 
@@ -121,7 +125,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
    | Method | Description |
    | --- | --- |
    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  `ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs` For example: `identifiers&nbsp;=&nbsp;{} identifiers["idType"]&nbsp;=&nbsp;"idValue" ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs` For example: <br/><br/>`identifiers&nbsp;=&nbsp;{} <br/><br/>identifiers["idType"]&nbsp;=&nbsp;"idValue" <br/><br/>ADBMobile().visitorSyncIdentifiers(identifiers)` |
 
    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html)
 
