@@ -11,6 +11,8 @@ uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 
 From `ADBStandardMetadataKeys.h`:
 
+## Video Metadata Keys
+
 |  Constant name  | Description  | Type  |
 |---|---|---|
 | `ADBVideoMetadataKeySHOW`  | Show  | Video  |
@@ -30,6 +32,22 @@ From `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyDAY_PART`  | Day part  | Video  |
 | `ADBVideoMetadataKeyFEED`  | Feed  | Video  |
 | `ADBVideoMetadataKeySTREAM_FORMAT`  | Stream format  | Video  |
+
+## Audio Metadata Keys
+
+|  Constant name  | Description  | Type  |
+|---|---|---|
+| `ADBAudioMetadataKeyALBUM`  | Show  | Audio  |
+| `ADBAudioMetadataKeyARTIST`  | Season  | Audio  |
+| `ADBAudioMetadataKeyAUTHOR`  | Season  | Audio  |
+| `ADBAudioMetadataKeyLABEL`  | Episode  | Audio  |
+| `ADBAudioMetadataKeyPUBLISHER`  | Asset  | Audio  |
+| `ADBAudioMetadataKeySTATION`  | Genre  | Audio  |
+
+## Ad Metadata Keys
+
+|  Constant name  | Description  | Type  |
+|---|---|---|
 | `ADBAdMetadataKeyADVERTISER`  | Advertiser  | Ad  |
 | `ADBAdMetadataKeyCAMPAIGN_ID`  | Campaign Id  | Ad  |
 | `ADBAdMetadataKeyCREATIVE_ID`  | Creative Id  | Ad  |

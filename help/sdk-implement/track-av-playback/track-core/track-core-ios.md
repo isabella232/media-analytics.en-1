@@ -57,24 +57,27 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 
     Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
-    * **Standard video metadata - ** 
+    * **Standard video metadata** 
 
-        * [Implement standard metadata on iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-        * **Video metadata keys - ** [iOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+       * [Implement standard metadata on iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+       * **Video metadata keys** 
+           [iOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
         
-        * See the comprehensive list of video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+       * See the comprehensive list of video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
     
-      >[!NOTE]
-      >
-      >Attaching the standard video metadata object to the media object is optional.
+       >[!NOTE]
+       >
+       >Attaching the standard video metadata object to the media object is optional.
 
-    * **Custom metadata - ** Create a variable object for the custom variables and populate with the data for this video. For example:
+    * **Custom metadata** 
+    
+       Create a variable object for the custom variables and populate with the data for this video. For example:
 
-      ```    
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"]; 
-      [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-      ```
+       ```    
+       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
+       [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"]; 
+       [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+       ```
 
 1. **Track the intention to start playback** 
 
@@ -143,7 +146,9 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
    }
    ```
 
-   **Pause Scenarios - ** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+   **Pause Scenarios** 
+   
+   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.

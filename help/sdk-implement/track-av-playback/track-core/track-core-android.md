@@ -51,7 +51,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 
     Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard metadata - ** [Implement standard metadata on Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
+    * **Standard metadata** 
+    
+       [Implement standard metadata on Android](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)     
     
       >[!NOTE]
       >
@@ -60,7 +62,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
         * Media metadata keys API Reference - [Standard metadata keys - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
         * See the comprehensive set of available video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
-    * **Custom metadata - ** Create a dictionary for the custom variables and populate with the data for this media. For example:     
+    * **Custom metadata** 
+    
+       Create a dictionary for the custom variables and populate with the data for this media. For example:     
     
       ```java    
       HashMap<String, String> mediaMetadata =  
@@ -139,7 +143,9 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
    }
    ```
 
-   **Pause Scenarios - ** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+   **Pause Scenarios** 
+   
+   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.

@@ -15,27 +15,37 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 
     Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-    **`MediaObject` API reference:** [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject) 
+    **`MediaObject` API reference:** 
+    
+    [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject) 
  
     ```
     mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
     ```
  
-    **`StreamType` constants:** [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+    **`StreamType` constants:** 
+    
+    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
  
-    **`MediaType` constants:** [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+    **`MediaType` constants:** 
+    
+    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **Attach video metadata** 
 
     Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
-    * **Standard video metadata -** [Implement standard metadata on Chromecast](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)     
+    * **Standard video metadata** 
+    
+       [Implement standard metadata on Chromecast](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)     
     
        >[!NOTE]
        >
        >Attaching the standard video metadata object to the media object is optional.
 
-    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this video. For example:
+    * **Custom metadata** 
+    
+       Create a variable object for the custom variables and populate with the data for this video. For example:
 
        ```js    
        /* Set custom context data */ 
@@ -98,7 +108,9 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
     ADBMobile.media.trackPause();
     ```
 
-    **Pause Scenarios -** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+    **Pause Scenarios** 
+    
+    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.

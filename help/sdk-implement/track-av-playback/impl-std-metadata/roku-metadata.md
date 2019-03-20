@@ -7,7 +7,7 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 
 # Roku metadata keys{#roku-metadata-keys}
 
-Standard video and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
+Standard video, audio, and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
 
 ## Video metadata constants {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -30,6 +30,17 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 | Day Part | `a.media.dayPart` | `MEDIA_VideoMetadataKeyDAY_PART` |
 | Feed | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | Stream Format | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` | 
+
+## Audio metadata constants {#audio-metadata-constants}
+
+| Metadata Name | Context Data Key | Constant Name |
+| --- | --- | --- |
+| Artist | `a.media.artist` | `MEDIA_AudioMetadataKeyARTIST` |
+| Album | `a.media.album` | `MEDIA_AudioMetadataKeyALBUM` |
+| Label | `a.media.label` | `MEDIA_AudioMetadataKeyLABEL` |
+| Author | `a.media.author` | `MEDIA_AudioMetadataKeyAUTHOR` |
+| Station | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
+| Publisher | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
 ## Ad metadata constants {#section_5290E1BA54A24D30875F4F55C6CF9458}
 
@@ -56,7 +67,7 @@ You can use the following constants to track media events:
 
 | Constant | Description&nbsp;&nbsp; |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` |Constant to set video metadata on the `MediaInfo` `trackLoad` |
+| `MEDIA_STANDARD_MEDIA_METADATA` |Constant to set metadata on the `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` |Constant to set the ad metadata on the `EventData` `trackEvent` |
 | `MEDIA_RESUMED` | Constant for sending a video-resumed heartbeat. To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `MEDIA_RESUMED` should be set to true when an application wants to continue to track content that a user stopped watching but now intends to resume watching. <br/><br/>For example, say a user watches 30% of the content, then closes the app. This will lead to the session being ended. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. The result is that these two different media sessions for the same video content can be linked together. Following is the implementation example: <br/><br/> `mediaInfo =` <br/> &nbsp;&nbsp;`adb_media_init_mediainfo(` <br/> &nbsp;&nbsp;&nbsp;&nbsp;`"test_media_name",` <br/> &nbsp;&nbsp;&nbsp; `"test_media_id",`<br/> &nbsp;&nbsp;&nbsp;&nbsp; `10,` <br/>&nbsp;&nbsp;&nbsp;&nbsp; `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>This will create a new session for the video, but it also causes the SDK to send a heartbeat request with the event type "resume", which can be used in reporting to tie two different media sessions together.  | 
 

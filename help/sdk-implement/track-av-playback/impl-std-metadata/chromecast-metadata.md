@@ -42,7 +42,9 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 | Site ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | Creative URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementation for Chromecast {#section_wvy_bdn_w2b}
+## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+
+### Video
 
 ```js
 // setting Standard Video Metadata as context data on trackLoad API mediaContextData = { } 
@@ -70,6 +72,26 @@ var mediaObject = ADBMobile.media.createMediaObject(content.name, content.id, co
 mediaObject[ADBMobile.media.MediaObjectKey.StandardVideoMetadata] = standardVideoMetadata; 
 ADBMobile.media.trackSessionStart(mediaObject, mediaMetadata); 
 ```
+
+### Audio
+
+```js
+// setting Standard Audio Metadata as context data on trackLoad API mediaContextData = { } 
+mediaMetadata["audiotype"] = "podcast"; 
+var standardAudioMetadata = {}; 
+standardAudioMetadata[ADBMobile.media.AudioMetadataKeys.ARTIST] = “sample artist”; 
+standardAudioMetadata[ADBMobile.media.AudioMetadataKeys.ALBUM] = "sample album" ; 
+standardAudioMetadata[ADBMobile.media.AudioMetadataKeys.LABEL] = "sample label"; 
+standardAudioMetadata[ADBMobile.media.AudioMetadataKeys.AUTHOR] = "sample author" ; 
+standardAudioMetadata[ADBMobile.media.AudioMetadataKeys.STATION] = "sample station " ; 
+standardAudioMetadata[ADBMobile.media.AudioMetadataKeys.PUBLISHER] = "sample publisher"; 
+ 
+var mediaObject = ADBMobile.media.createMediaObject(content.name, content.id, content.length, content.streamType, content.mediaType); 
+mediaObject[ADBMobile.media.MediaObjectKey.StandardAudiooMetadata] = standardAudiooMetadata; 
+ADBMobile.media.trackSessionStart(mediaObject, mediaMetadata); 
+```
+
+### Ads
 
 ```js
 // setting Standard Ad Metadata as context data on ad start event 

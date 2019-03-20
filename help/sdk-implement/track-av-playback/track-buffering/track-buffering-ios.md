@@ -9,16 +9,17 @@ uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../../sdk-implement/download-sdks.md)
 
-**Buffer tracking constants:**
+## Buffer tracking constants
+
 
 |  Constant name  | Description&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---|---|
 |  `ADBMediaHeartbeatEventBufferStart`  | Constant for tracking Buffer Start event  |
 |  `ADBMediaHeartbeatEventBufferComplete`  | Constant for tracking Buffer Complete event  |
 
-**Implement**
+## Implement buffering
 
 1. Listen for the playback buffering events from media player, and on buffer start event notification, track buffering using the `BufferStart` event: 
 

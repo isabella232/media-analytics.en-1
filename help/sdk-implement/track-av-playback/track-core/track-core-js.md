@@ -35,7 +35,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     |  `AUDIOBOOK`  | Stream type for Audio Book.  |
     |  `PODCAST`  | Stream type for Podcast.  |
 
-    **`MediaType` constants:** The genereal format for creating the media object:
+    **`MediaType` constants:** 
 
     |  Constant Name  | Description  |
     |---|---|
@@ -55,7 +55,9 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
     Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard metadata -** [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+    * **Standard metadata** 
+    
+       [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
     
        >[!NOTE]
        >
@@ -65,7 +67,9 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
           See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
-    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this media. For example:     
+    * **Custom metadata** 
+    
+       Create a variable object for the custom variables and populate with the data for this media. For example:     
     
        ```js    
        /* Set custom context data */ 
@@ -132,7 +136,9 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     mediaHeartbeat.trackPause();
     ```
 
-    **Pause Scenarios -** Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+    **Pause Scenarios** 
+    
+    Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.

@@ -92,7 +92,9 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
     Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard metadata -** [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+    * **Standard metadata** 
+    
+       [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
     
        >[!NOTE]
        >
@@ -102,7 +104,9 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
           See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
 
-    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this media. For example:     
+    * **Custom metadata** 
+    
+       Create a variable object for the custom variables and populate with the data for this media. For example:     
     
        ```js    
        /* Set custom context data */ 
@@ -173,14 +177,16 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
     Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
-    * **Standard video metadata -**
-    
-       >[!NOTE]
-       >Attaching the standard video metadata object to the media object is optional.
+    * **Standard video metadata**
 
        [Implement standard metadata on Roku](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
     
-    * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this video. For example:     
+       >[!NOTE]
+       >Attaching the standard video metadata object to the media object is optional.
+    
+    * **Custom metadata** 
+    
+       Create a variable object for the custom variables and populate with the data for this video. For example:     
     
        ```    
        mediaContextData = {}
@@ -240,7 +246,9 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
     ADBMobile().mediaTrackPause()
     ```
 
-    **Pause Scenarios -** Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
+    **Pause Scenarios** 
+    
+    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. The following scenarios all require that your app call `trackPause()`:
 
     * The user explicitly hits pause in the app.
     * The player puts itself into the Pause state.
