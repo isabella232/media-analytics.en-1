@@ -9,7 +9,7 @@ uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
 
 **Ad tracking constants:**
 
