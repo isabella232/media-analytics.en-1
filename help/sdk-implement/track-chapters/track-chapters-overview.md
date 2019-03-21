@@ -14,6 +14,7 @@ uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 Chapter and segment tracking is available for custom-defined media chapters or segments. Some common uses for chapter tracking are to define custom segments based on media content (such as baseball innings), or to define content segments between ad breaks. Chapter tracking is **not** required for core media tracking implementations.
 
 Chapter tracking includes chapter starts, chapter completes, and chapter skips. You can use the media player API with customized segmentation logic to identify chapter events and to populate the required and optional chapter variables. 
+
 ## Player events
 
 ### On chapter start
