@@ -9,9 +9,9 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
 
-**Ad tracking constants:**
+## Ad tracking constants
 
 |  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
@@ -21,9 +21,11 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 |  `AdComplete`  | Constant for tracking Ad Complete event  |
 |  `AdSkip`  | Constant for tracking Ad Skip event  |
 
+## Implementation steps
+
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   **`AdBreakObject` reference:** 
+   `AdBreakObject` reference: 
 
    | Variable Name | Description | Required |
    | --- | --- | :---: |
@@ -31,7 +33,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
    | `position` | The number position of the ad break starting with 1.  | Yes |
    | `startTime` | Playhead value at the start of the ad break.  | Yes | 
 
-   **Ad break object creation:** 
+   Ad break object creation: 
 
    ```js
    var adBreakObject =  
@@ -57,7 +59,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
    |  `position`  | The number position of the ad within the ad break, starting with 1. | Yes  |
    |  `length`  | Ad length  | Yes  |
 
-   **Ad object creation:** 
+   Ad object creation: 
 
    ```js
    var adObject =  

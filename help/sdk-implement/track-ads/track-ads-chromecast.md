@@ -9,11 +9,9 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
 
-## Implement {#section_83E0F9406A7743E3B57405D4CDA66F68}
-
-**Ad tracking constants:**
+## Ad tracking constants
 
 |  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
@@ -23,9 +21,11 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 |  `AdComplete`  | Constant for tracking Ad Complete event  |
 |  `AdSkip`  | Constant for tracking Ad Skip event  |
 
+## Implementation steps
+
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   **Ad break object creation:** [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject) 
+   Ad break object creation: [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject) 
 
    ```
    adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_START_POS, playerName); 
@@ -39,7 +39,7 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 
 1. Identify when the ad asset starts and create an `AdObject` instance using the ad information.
 
-   **Ad object creation:** [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject) 
+   Ad object creation: [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject) 
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 

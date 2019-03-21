@@ -9,9 +9,9 @@ uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../sdk-implement/download-sdks.md).
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
 
-**Ad tracking constants:**
+## Ad tracking constants
 
 |  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
@@ -21,9 +21,11 @@ uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 |  `AdComplete`  | Constant for tracking Ad Complete event  |
 |  `AdSkip`  | Constant for tracking Ad Skip event  |
 
+## Implementation steps
+
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   **`AdBreakObject` reference:** 
+   `AdBreakObject` reference: 
 
    | Variable Name | Description | Required |
    | --- | --- | :---: |

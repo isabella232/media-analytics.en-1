@@ -13,7 +13,7 @@ uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 
 Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. Use the media player's API to identify key player events and to populate the required and optional ad variables. See the comprehensive list of metadata here: [Ad parameters.](../../metrics-and-metadata/ad-parameters.md)
 
-Here are the key elements you use to track ad playback:
+## Player events {#player-events}
 
 **On ad break start, including pre-roll:**
 
@@ -39,9 +39,9 @@ Here are the key elements you use to track ad playback:
 
 * Call `trackEvent` for the ad break complete.
 
-## Implement {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
-**Ad tracking constants:**
+### Ad tracking constants
 
 |  Constant name  | Description&nbsp;&nbsp;  |
 |---|---|
@@ -51,9 +51,11 @@ Here are the key elements you use to track ad playback:
 |  `AdComplete`  | Constant for tracking Ad Complete event  |
 |  `AdSkip`  | Constant for tracking Ad Skip event  |
 
+### Implementation steps
+
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   **`AdBreakObject` reference:** 
+   `AdBreakObject` reference: 
 
    |  Variable Name  | Description  | Required  |
    | --- | --- | :---: |
