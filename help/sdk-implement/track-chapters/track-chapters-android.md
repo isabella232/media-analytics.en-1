@@ -26,7 +26,7 @@ uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
    | `length` | Chapter length | Yes |
    | `startTime` | Chapter start time | Yes |
 
-   **Chapter object:** 
+   Chapter object: 
 
    ```java
    MediaObject chapterDataInfo =  

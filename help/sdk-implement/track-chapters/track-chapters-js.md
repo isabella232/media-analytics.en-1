@@ -26,7 +26,7 @@ uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
    | `length` | Chapter length | Yes |
    | `startTime` | Chapter start time | Yes |
 
-   **Chapter object:** 
+   Chapter object: 
 
    ```js
    var chapterInfo =  

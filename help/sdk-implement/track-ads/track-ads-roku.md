@@ -58,7 +58,7 @@ uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
                            ad.duration) 
    ```
 
-1. Optionally attach standard and/or ad metadata to the video tracking session through context data variables.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
     * [Implement standard ad metadata on Roku](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad asset:     

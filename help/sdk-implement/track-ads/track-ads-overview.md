@@ -15,27 +15,30 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 
 ## Player events {#player-events}
 
-**On ad break start, including pre-roll:**
+### On ad break start
+
+>[!NOTE]
+>Including pre-roll
 
 * Create an `adBreak` object instance for the ad break. For example, `adBreakObject`. 
 
 * Call `trackEvent` for the ad break start with your `adBreakObject`.
 
-**On every ad asset start:**
+### On every ad asset start
 
 * Create an ad object instance for the ad asset. For example, `adObject`. 
 * Populate the ad metadata, `adCustomMetadata`. 
 * Call `trackEvent` for the ad start.
 
-**On every ad complete**
+### On every ad complete
 
 * Call `trackEvent` for the ad complete.
 
-**On ad skip**
+### On ad skip
 
 * Call `trackEvent` for the ad skip.
 
-**On ad break complete**
+### On ad break complete
 
 * Call `trackEvent` for the ad break complete.
 
@@ -91,7 +94,7 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 1. If there are any additional ads within the same `AdBreak`, repeat steps 3 through 7 again. 
 1. When the ad break is complete, use the `AdBreakComplete` event to track it:
 
-The following sample code utilizes the JavaScript 2.x SDK for an HTML5 video player. 
+The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player. 
 
 ```js
 /* Call on ad break start */ 

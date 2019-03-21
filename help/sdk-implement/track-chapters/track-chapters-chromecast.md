@@ -26,7 +26,7 @@ uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
    | `length` | Chapter length | Yes |
    | `startTime` | Chapter start time | Yes |
 
-   **Chapter object:** [createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject) 
+   Chapter object: [createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject) 
 
    ```js
    chapterInfo = ADBMobile.media.createChapterObject("First Chapter", 1, CHAPTER1_LENGTH, CHAPTER1_START_POS);

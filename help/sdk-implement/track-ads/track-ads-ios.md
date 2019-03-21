@@ -71,7 +71,7 @@ uuid: e979e679-cde5-4c30-8f34-867feceac13a
                                     length:[LENGTH]];
    ```
 
-1. Optionally attach standard and/or ad metadata to the video tracking session through context data variables.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
     * [Implement standard ad metadata on iOS](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:     

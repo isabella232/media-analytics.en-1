@@ -69,7 +69,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
                                    <LENGTH>);
    ```
 
-1. Optionally attach standard and/or ad metadata to the video tracking session through context data variables.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
     * [Implement standard ad metadata on JavaScript](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:     

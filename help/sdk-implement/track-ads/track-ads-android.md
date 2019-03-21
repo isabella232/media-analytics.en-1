@@ -73,7 +73,7 @@ uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
                                    <LENGTH>);
    ```
 
-1. Optionally attach standard and/or ad metadata to the video tracking session through context data variables.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
     * [Implement standard ad metadata on Android](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:     

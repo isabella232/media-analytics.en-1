@@ -9,7 +9,9 @@ uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 
 # Implement standard ad metadata on Roku{#implement-standard-ad-metadata-on-roku}
 
-**Standard ad metadata -** For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform: 
+## Implemement standard ad metadata
+
+For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform: 
 
 ```
 standardAdMetadata = {} 

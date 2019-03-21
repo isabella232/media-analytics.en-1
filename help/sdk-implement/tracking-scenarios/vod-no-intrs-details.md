@@ -14,13 +14,13 @@ This scenario has one VOD asset, with no ads, which is played once from beginnin
 |  Trigger  | Heartbeat method  | Network calls  | Notes&nbsp;&nbsp;  |
 |---|---|---|---|
 |  User clicks **[!UICONTROL Play]** | `trackSessionStart`  | Analytics Content Start, Heartbeat Content Start  | This can be either a user clicking Play or an auto-play event.  |
-|  First frame of the video  | `trackPlay`  | Heartbeat Content Play  | This method triggers the timer, and from this point forward, heartbeats will be sent every 10 seconds for the duration of the playback.  |
+|  First frame of the media  | `trackPlay`  | Heartbeat Content Play  | This method triggers the timer, and from this point forward, heartbeats will be sent every 10 seconds for the duration of the playback.  |
 |  Content plays  |  | Content Heartbeats  |  |
 |  Content is complete  | `trackComplete`  | Heartbeat Content Complete  | *Complete* means that the end of the playhead was reached.  |
 
 ## Parameters {#section_45D7B10031524411B91E2C569F7818B0}
 
-Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. There are many parameters that Adobe uses to populate the various video reports, but only the most important parameters are listed in the following table: 
+Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. There are many parameters that Adobe uses to populate the various media reports, but only the most important parameters are listed in the following table: 
 
 ### Heartbeat Content Start
 
@@ -31,8 +31,8 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |  `s:user:mid`  | must be set  | Should match the mid value on the `Adobe Analytics Content Start` call.  |
 |  `s:event:type`  | `"start"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
-|  `s:asset:video_id`  | &lt;Your Video Name&gt;  |  |
-|  `s:meta:*`  | optional  | Custom metadata that is set on the video.  |
+|  `s:asset:media_id`  | &lt;Your Media Name&gt;  |  |
+|  `s:meta:*`  | optional  | Custom metadata that is set on the media.  |
 
 ## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
 
@@ -45,7 +45,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## Content heartbeats {#section_3B5945336E464160A94518231CEE8F53}
 
-During video playback, a timer sends at least one heartbeat every 10 seconds. These heartbeats contain information about playback, ads, buffering, and so on. The exact content of each heartbeat is beyond the scope of this document, but the critical issue is that heartbeats are triggered consistently while playback continues.
+During media playback, a timer sends at least one heartbeat every 10 seconds. These heartbeats contain information about playback, ads, buffering, and so on. The exact content of each heartbeat is beyond the scope of this document, but the critical issue is that heartbeats are triggered consistently while playback continues.
 
 In the content heartbeats, look for the following parameters: 
 
@@ -69,7 +69,7 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
 
 ![](assets/main-content-regular-playback.png)
 
-* **Android -** 
+### Android
 
   ```java
   // Set up  mediaObject 
@@ -80,26 +80,26 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
       MediaHeartbeat.StreamType.VOD 
   ); 
    
-  HashMap<String, String> videoMetadata = new HashMap<String, String>(); 
-  videoMetadata.put(CUSTOM_VAL_1, CUSTOM_KEY_1); 
-  videoMetadata.put(CUSTOM_VAL_2, CUSTOM_KEY_2); 
+  HashMap<String, String> mediaMetadata = new HashMap<String, String>(); 
+  mediaMetadata.put(CUSTOM_VAL_1, CUSTOM_KEY_1); 
+  mediaMetadata.put(CUSTOM_VAL_2, CUSTOM_KEY_2); 
    
   // 1. Call trackSessionStart() when the user clicks Play or if autoplay  
   //    is used, i.e., there's an intent to start playback.  
-  _mediaHeartbeat.trackSessionStart(mediaInfo, videoMetadata); 
+  _mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
    
   ...... 
   ...... 
    
   // 2. Call trackPlay() when the playback actually starts,  
-  //    i.e., the first frame of video is rendered on the screen.  
+  //    i.e., the first frame of media is rendered on the screen.  
   _mediaHeartbeat.trackPlay(); 
    
   ....... 
   ....... 
    
   // 3. Call trackComplete() when the playback reaches the end,  
-  //    i.e., when the video completes and finishes playing.  
+  //    i.e., when the media completes and finishes playing.  
   _mediaHeartbeat.trackComplete(); 
    
   ........ 
@@ -107,7 +107,7 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
    
   // 4. Call trackSessionEnd() when the playback session is over.  
   //    This method must be called even if the user does not watch  
-  //    the video to completion.  
+  //    the media to completion.  
   _mediaHeartbeat.trackSessionEnd(); 
    
   ........ 
@@ -115,7 +115,7 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
   
   ```
 
-* **iOS -** 
+### iOS
 
   ```
   when the user clicks Play 
@@ -124,13 +124,13 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
                        length:MEDIA_LENGTH  
                        streamType:ADBMediaHeartbeatStreamTypeVOD]; 
     
-  NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init]; 
-  [videoContextData setObject:CUSTOM_VAL_1 forKey:CUSTOM_KEY_1]; 
-  [videoContextData setObject:CUSTOM_VAL_2 forKey:CUSTOM_KEY_2]; 
+  NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init]; 
+  [mediaContextData setObject:CUSTOM_VAL_1 forKey:CUSTOM_KEY_1]; 
+  [mediaContextData setObject:CUSTOM_VAL_2 forKey:CUSTOM_KEY_2]; 
     
   // 1. Call trackSessionStart when the user clicks Play or if autoplay is used,  
   //    i.e., there's an intent to start playback. 
-  [_mediaHeartbeat trackSessionStart:mediaObject data:videoContextData]; 
+  [_mediaHeartbeat trackSessionStart:mediaObject data:mediaContextData]; 
   ...... 
   ...... 
     
@@ -141,27 +141,27 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
   ....... 
     
   // 3. Call trackComplete when the playback reaches the end, i.e.,  
-  //    when the video completes and finishes playing. 
+  //    when the media completes and finishes playing. 
   [_mediaHeartbeat trackComplete]; 
   ........ 
   ........ 
     
   // 4. Call trackSessionEnd when the playback session is over. This method  
-  //    must be called even if the user does not watch the video to completion. 
+  //    must be called even if the user does not watch the media to completion. 
   [_mediaHeartbeat trackSessionEnd]; 
   ........ 
   ........ 
   
   ```
 
-* **JavaScript -** 
+### JavaScript
 
   ```js
   // Set up mediaObject 
    
   var mediaInfo = MediaHeartbeat.createMediaObject(Configuration.MEDIA_NAME, Configuration.MEDIA_ID,  
   Configuration.MEDIA_LENGTH,MediaHeartbeat.StreamType.VOD); 
-  var videoMetadata = { 
+  var mediaMetadata = { 
       CUSTOM_KEY_1 : CUSTOM_VAL_1,  
       CUSTOM_KEY_2 : CUSTOM_VAL_2,  
       CUSTOM_KEY_3 : CUSTOM_VAL_3 
@@ -170,20 +170,20 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
    
   // 1. Call trackSessionStart() when the user clicks play, or when autoplay is used,  
   //    i.e., there's an intent to start playback. 
-  this._mediaHeartbeat.trackSessionStart(mediaInfo, videoMetadata); 
+  this._mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
    
   ...... 
   ...... 
    
   // 2. Call trackPlay() when the main content starts, i.e.,  
-  //    the first frame of the video content is rendered on the screen. 
+  //    the first frame of the media content is rendered on the screen. 
   this._mediaHeartbeat.trackPlay(); 
    
   ....... 
   ....... 
    
   // 3. Call trackComplete() when the playback reaches the end,  
-        i.e., the video completes and finishes playing. 
+        i.e., the media completes and finishes playing. 
   this._mediaHeartbeat.trackComplete(); 
    
   ........ 
@@ -191,7 +191,7 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
    
   // 4. Call trackSessionEnd() when the playback session is over.  
   //    This method must be called even if the user does not  
-  //    watch the video to completion. 
+  //    watch the media to completion. 
   this._mediaHeartbeat.trackSessionEnd(); 
    
   ........ 

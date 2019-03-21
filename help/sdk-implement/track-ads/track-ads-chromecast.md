@@ -45,7 +45,7 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. Optionally attach standard and/or ad metadata to the video tracking session through context data variables.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
     * **Standard ad metadata -** For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform: 
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad asset:

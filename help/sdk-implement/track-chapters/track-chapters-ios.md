@@ -26,7 +26,7 @@ uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
    | `length` | Chapter length | Yes |
    | `startTime` | Chapter start time | Yes |
 
-   **Chapter object:** 
+   Chapter object: 
 
    ```
    id chapterObject =  
