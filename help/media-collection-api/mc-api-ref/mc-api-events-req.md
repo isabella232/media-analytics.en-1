@@ -39,7 +39,7 @@ The request body must be JSON, and must have the same structure as this sample r
     * `ts` - Timestamp; must be in milliseconds.
 * `eventType` (Mandatory)
 * `params` (Optional) 
-* `customMetadata` (Optional; send with `adStart` event type only)
+* `customMetadata` (Optional; send only with `adStart` and `chapterStart` event types)
 * `qoeData` (Optional)
 
 For a list of valid event types for this release, see [Event types and descriptions](../../media-collection-api/mc-api-ref/mc-api-event-types.md).

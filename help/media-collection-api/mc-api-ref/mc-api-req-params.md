@@ -20,7 +20,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 | Request&nbsp;Key&nbsp; | Required | Set On... | Description |
 | --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | N | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
+| `visitor.marketingCloudOrgId` | Y | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | The Experience Cloud User ID, for accessing the Experience Cloud family of apps |
 | `visitor.aamLocationHint` | N | `sessionStart` | Provides Adobe Audience Manager Edge data |
 | `appInstallationId` | N | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
@@ -37,7 +37,6 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | `media.channel` | Y | `sessionStart` | The channel of distribution of the content. This could be an mobile application name or a web site name, property name |
 | `media.resume` | N | `sessionStart` | Indicates whether or not to resume a closed session |
 | `media.sdkVersion` | N | `sessionStart` | The SDK verison used by the player |
-| `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |
 
 ## Content Standard Metadata
 
@@ -133,7 +132,7 @@ You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated-analytics.html)). 
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching](../../federated-analytics.md)). 
 
 ### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
 
@@ -157,3 +156,6 @@ AAM Location Hint: This parameter indicates which Adobe Audience Manager (AAM) E
 
 If the app determines that a session was closed and then resumed at a later time, e.g., the user left the video but eventually came back, and the player resumed the video from the playhead where it was stopped, you can send an optional boolean **media.resume** parameter inside the params bucket of the `sessionStart` call.
 
+<!--
+| `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |
+-->

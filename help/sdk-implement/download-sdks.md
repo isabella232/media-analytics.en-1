@@ -35,10 +35,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 | 1.x&nbsp;SDKs&nbsp; | &nbsp;Media&nbsp;SDK&nbsp;Downloads&nbsp; | &nbsp;Getting&nbsp;Started&nbsp;Guides&nbsp; |
 | --- | --- | --- |
-| Android | [SDK for Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Get Started - Media 1.x for Android](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_android.pdf) | 
-| iOS | [SDK for iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Get Started - Media 1.x for iOS](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_ios.pdf) | 
-| JavaScript | [SDK for JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Get Started - Media 1.x for JS](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_js.pdf) | 
-| TVML | [SDK for TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Get Started - Media 1.x for TVML](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl_tvml.pdf) |
-| Apple TV | SDK for Apple TV v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [Get Started - Media 1.x for Apple TV](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK for Chromecast v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [Get Started - Media 1.x for Chromecast](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/chromecast_1.x_sdk.pdf) | 
+| Android | [SDK for Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Get Started - Media 1.x for Android](setup/vhl-dev-guide-v15_android.pdf) | 
+| iOS | [SDK for iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Get Started - Media 1.x for iOS](setup/vhl-dev-guide-v15_ios.pdf) | 
+| JavaScript | [SDK for JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Get Started - Media 1.x for JS](setup/vhl-dev-guide-v15_js.pdf) | 
+| TVML | [SDK for TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Get Started - Media 1.x for TVML](setup/vhl_tvml.pdf) |
+| Apple TV | SDK for Apple TV v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [Get Started - Media 1.x for Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK for Chromecast v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [Get Started - Media 1.x for Chromecast](setup/chromecast_1.x_sdk.pdf) | 
 

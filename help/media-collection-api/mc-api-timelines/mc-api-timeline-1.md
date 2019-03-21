@@ -132,16 +132,67 @@ Start tracking the first pre-roll ad, which is 15 seconds long. Including custom
 
 ### Action 5 {#Action-5}
 
+#### Action 5.1 {#Action-5-1}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App sends ping event | 10 | 0 | `/api/v1/sessions/{sid}/events` |
+| App sends ping event | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-#### Implementation Detail
+##### Implementation Detail
 
-Ping the backend every 10 seconds.
+Ping the backend every 1 second while inside an ad.
 
-#### Sample request body
+##### Sample request body
+
+```
+{
+    playerTime: {
+        playhead: 0,
+        ts: <timestamp>
+    },
+    eventType:ping
+}
+```
+
+#### Action 5.2 {#Action-5-2}
+
+| Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
+| --- | :---: | :---: | --- |
+| App sends ping event | 2 | 0 | `/api/v1/sessions/{sid}/events` |
+
+##### Implementation Detail
+
+Ping the backend every 1 second while inside an ad.
+
+##### Sample request body
+
+```
+{
+    playerTime: {
+        playhead: 0,
+        ts: <timestamp>
+    },
+    eventType:ping
+}
+```
+
+#### Action 5.3 {#Action-5-3}
+
+
+| Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
+| --- | :---: | :---: | --- |
+| App sends ping event | 3 | 0 | `/api/v1/sessions/{sid}/events` |
+
+##### Implementation Detail
+
+Ping the backend every 1 second while inside an ad.
+
+>[!NOTE]
+>
+>Subsequent ads in the timeline will skip showing the series of one-second pings 
+>in the interest of conserving space...
+
+##### Sample request body
 
 ```
 {

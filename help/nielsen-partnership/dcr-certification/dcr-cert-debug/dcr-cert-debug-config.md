@@ -76,7 +76,8 @@ To download and install the SSL certificate:
     1. Complete one of the following procedures:
 
         * [Adding certificates to the Trusted Root Certification Authorities store for a local computer](https://technet.microsoft.com/en-us/library/cc754841.aspx#BKMK_addlocal) 
-        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
+<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
+-->
 
     1. For Firefox, complete the procedure in [Installing root certificate in Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox).
 
