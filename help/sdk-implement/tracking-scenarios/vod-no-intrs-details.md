@@ -71,130 +71,130 @@ In this scenario, the content is 40 seconds long. It is played until the end wit
 
 ### Android
 
-  ```java
-  // Set up  mediaObject 
-  MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
-      Configuration.MEDIA_NAME,  
-      Configuration.MEDIA_ID,  
-      Configuration.MEDIA_LENGTH,  
-      MediaHeartbeat.StreamType.VOD 
-  ); 
-   
-  HashMap<String, String> mediaMetadata = new HashMap<String, String>(); 
-  mediaMetadata.put(CUSTOM_VAL_1, CUSTOM_KEY_1); 
-  mediaMetadata.put(CUSTOM_VAL_2, CUSTOM_KEY_2); 
-   
-  // 1. Call trackSessionStart() when the user clicks Play or if autoplay  
-  //    is used, i.e., there's an intent to start playback.  
-  _mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
-   
-  ...... 
-  ...... 
-   
-  // 2. Call trackPlay() when the playback actually starts,  
-  //    i.e., the first frame of media is rendered on the screen.  
-  _mediaHeartbeat.trackPlay(); 
-   
-  ....... 
-  ....... 
-   
-  // 3. Call trackComplete() when the playback reaches the end,  
-  //    i.e., when the media completes and finishes playing.  
-  _mediaHeartbeat.trackComplete(); 
-   
-  ........ 
-  ........ 
-   
-  // 4. Call trackSessionEnd() when the playback session is over.  
-  //    This method must be called even if the user does not watch  
-  //    the media to completion.  
-  _mediaHeartbeat.trackSessionEnd(); 
-   
-  ........ 
-  ........ 
-  
-  ```
+```java
+// Set up  mediaObject 
+MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
+  Configuration.MEDIA_NAME,  
+  Configuration.MEDIA_ID,  
+  Configuration.MEDIA_LENGTH,  
+  MediaHeartbeat.StreamType.VOD 
+); 
+
+HashMap<String, String> mediaMetadata = new HashMap<String, String>(); 
+mediaMetadata.put(CUSTOM_VAL_1, CUSTOM_KEY_1); 
+mediaMetadata.put(CUSTOM_VAL_2, CUSTOM_KEY_2); 
+
+// 1. Call trackSessionStart() when the user clicks Play or if autoplay  
+//    is used, i.e., there's an intent to start playback.  
+_mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+
+...... 
+...... 
+
+// 2. Call trackPlay() when the playback actually starts,  
+//    i.e., the first frame of media is rendered on the screen.  
+_mediaHeartbeat.trackPlay(); 
+
+....... 
+....... 
+
+// 3. Call trackComplete() when the playback reaches the end,  
+//    i.e., when the media completes and finishes playing.  
+_mediaHeartbeat.trackComplete(); 
+
+........ 
+........ 
+
+// 4. Call trackSessionEnd() when the playback session is over.  
+//    This method must be called even if the user does not watch  
+//    the media to completion.  
+_mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+
+```
 
 ### iOS
 
-  ```
-  when the user clicks Play 
-  ADBMediaObject *mediaObject =  
-    [ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
-                       length:MEDIA_LENGTH  
-                       streamType:ADBMediaHeartbeatStreamTypeVOD]; 
-    
-  NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init]; 
-  [mediaContextData setObject:CUSTOM_VAL_1 forKey:CUSTOM_KEY_1]; 
-  [mediaContextData setObject:CUSTOM_VAL_2 forKey:CUSTOM_KEY_2]; 
-    
-  // 1. Call trackSessionStart when the user clicks Play or if autoplay is used,  
-  //    i.e., there's an intent to start playback. 
-  [_mediaHeartbeat trackSessionStart:mediaObject data:mediaContextData]; 
-  ...... 
-  ...... 
-    
-  // 2. Call trackPlay when the playback actually starts, i.e., when the  
-  //    first frame of main content is rendered on the screen. 
-  [_mediaHeartbeat trackPlay]; 
-  ....... 
-  ....... 
-    
-  // 3. Call trackComplete when the playback reaches the end, i.e.,  
-  //    when the media completes and finishes playing. 
-  [_mediaHeartbeat trackComplete]; 
-  ........ 
-  ........ 
-    
-  // 4. Call trackSessionEnd when the playback session is over. This method  
-  //    must be called even if the user does not watch the media to completion. 
-  [_mediaHeartbeat trackSessionEnd]; 
-  ........ 
-  ........ 
-  
-  ```
+```
+when the user clicks Play 
+ADBMediaObject *mediaObject =  
+[ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                   length:MEDIA_LENGTH  
+                   streamType:ADBMediaHeartbeatStreamTypeVOD]; 
+
+NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init]; 
+[mediaContextData setObject:CUSTOM_VAL_1 forKey:CUSTOM_KEY_1]; 
+[mediaContextData setObject:CUSTOM_VAL_2 forKey:CUSTOM_KEY_2]; 
+
+// 1. Call trackSessionStart when the user clicks Play or if autoplay is used,  
+//    i.e., there's an intent to start playback. 
+[_mediaHeartbeat trackSessionStart:mediaObject data:mediaContextData]; 
+...... 
+...... 
+
+// 2. Call trackPlay when the playback actually starts, i.e., when the  
+//    first frame of main content is rendered on the screen. 
+[_mediaHeartbeat trackPlay]; 
+....... 
+....... 
+
+// 3. Call trackComplete when the playback reaches the end, i.e.,  
+//    when the media completes and finishes playing. 
+[_mediaHeartbeat trackComplete]; 
+........ 
+........ 
+
+// 4. Call trackSessionEnd when the playback session is over. This method  
+//    must be called even if the user does not watch the media to completion. 
+[_mediaHeartbeat trackSessionEnd]; 
+........ 
+........ 
+
+```
 
 ### JavaScript
 
-  ```js
-  // Set up mediaObject 
-   
-  var mediaInfo = MediaHeartbeat.createMediaObject(Configuration.MEDIA_NAME, Configuration.MEDIA_ID,  
-  Configuration.MEDIA_LENGTH,MediaHeartbeat.StreamType.VOD); 
-  var mediaMetadata = { 
-      CUSTOM_KEY_1 : CUSTOM_VAL_1,  
-      CUSTOM_KEY_2 : CUSTOM_VAL_2,  
-      CUSTOM_KEY_3 : CUSTOM_VAL_3 
-   
-  }; 
-   
-  // 1. Call trackSessionStart() when the user clicks play, or when autoplay is used,  
-  //    i.e., there's an intent to start playback. 
-  this._mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
-   
-  ...... 
-  ...... 
-   
-  // 2. Call trackPlay() when the main content starts, i.e.,  
-  //    the first frame of the media content is rendered on the screen. 
-  this._mediaHeartbeat.trackPlay(); 
-   
-  ....... 
-  ....... 
-   
-  // 3. Call trackComplete() when the playback reaches the end,  
-        i.e., the media completes and finishes playing. 
-  this._mediaHeartbeat.trackComplete(); 
-   
-  ........ 
-  ........ 
-   
-  // 4. Call trackSessionEnd() when the playback session is over.  
-  //    This method must be called even if the user does not  
-  //    watch the media to completion. 
-  this._mediaHeartbeat.trackSessionEnd(); 
-   
-  ........ 
-  ........
-  ```
+```js
+// Set up mediaObject 
+
+var mediaInfo = MediaHeartbeat.createMediaObject(Configuration.MEDIA_NAME, Configuration.MEDIA_ID,  
+Configuration.MEDIA_LENGTH,MediaHeartbeat.StreamType.VOD); 
+var mediaMetadata = { 
+  CUSTOM_KEY_1 : CUSTOM_VAL_1,  
+  CUSTOM_KEY_2 : CUSTOM_VAL_2,  
+  CUSTOM_KEY_3 : CUSTOM_VAL_3 
+
+}; 
+
+// 1. Call trackSessionStart() when the user clicks play, or when autoplay is used,  
+//    i.e., there's an intent to start playback. 
+this._mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+
+...... 
+...... 
+
+// 2. Call trackPlay() when the main content starts, i.e.,  
+//    the first frame of the media content is rendered on the screen. 
+this._mediaHeartbeat.trackPlay(); 
+
+....... 
+....... 
+
+// 3. Call trackComplete() when the playback reaches the end,  
+    i.e., the media completes and finishes playing. 
+this._mediaHeartbeat.trackComplete(); 
+
+........ 
+........ 
+
+// 4. Call trackSessionEnd() when the playback session is over.  
+//    This method must be called even if the user does not  
+//    watch the media to completion. 
+this._mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........
+```
 
