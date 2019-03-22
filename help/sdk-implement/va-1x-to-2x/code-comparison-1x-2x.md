@@ -354,7 +354,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| `VideoPlayerPlugin.trackSeekComplete()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete)` |
+| `VideoPlayerPlugin.trackSeekComplete()`  | `MediaHeartbeat.<br/>&nbsp;&nbsp;trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
 #### Seeking (1.x) {#seek-1.x}
 
@@ -378,7 +378,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| `VideoPlayerPlugin.trackBufferStart()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart)` |
+| `VideoPlayerPlugin.trackBufferStart()`  | `MediaHeartbeat.trackEvent(<br/>&nbsp;&nbsp;MediaHeartbeat.Event.BufferStart)` |
 
 #### Buffer Start (1.x) {#buffer-start-1.x}
 
@@ -402,7 +402,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| `VideoPlayerPlugin.trackBufferComplete()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete)` |
+| `VideoPlayerPlugin.trackBufferComplete()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.BufferComplete)` |
 
 #### Buffer Complete (1.x) {#buffer-complete-1.x}
 
@@ -456,8 +456,8 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackAdStart()`  | `MediaHeartbeat.createAdBreakObject()` |
 | `VideoPlayerPluginDelegate.getAdBreakInfo()`  | `MediaHeartbeat.createAdObject()` |
-| `VideoPlayerPluginDelegate.getAdInfo()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart)` |
-| | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart)` |
+| `VideoPlayerPluginDelegate.getAdInfo()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.AdBreakStart)` |
+| | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.AdStart)` |
 
 #### Ad Start (1.x) {#ad-start-1.x}
 
@@ -629,8 +629,8 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| `VideoPlayerPlugin.trackAdComplete()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete)` |
-| | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete)` |
+| `VideoPlayerPlugin.trackAdComplete()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.AdComplete)` |
+| | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.AdBreakComplete)` |
 
 #### Ad Complete (1.x) {#ad-complete-1.x}
 
@@ -658,7 +658,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | VHL 1.x | VHL 2.x |
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()`  | `MediaHeartbeat.createChapterObject` |
-| `VideoPlayerPlugin.trackChapterStart()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` |
+| `VideoPlayerPlugin.trackChapterStart()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.ChapterStart)` |
 
 #### Chapter Start (1.x) {#chap-start-1.x}
 
@@ -693,7 +693,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| `VideoPlayerPluginDelegate.getChapterInfo()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip)` |
+| `VideoPlayerPluginDelegate.getChapterInfo()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.ChapterSkip)` |
 
 #### Chapter Skip (1.x) {#chap-skip-1.x}
 
@@ -719,7 +719,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackChapterStart()`  | `MediaHeartbeat.createChapterObject()` |
-| `AdobeAnalyticsPlugin.setChapterMetadata()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` |
+| `AdobeAnalyticsPlugin.setChapterMetadata()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.ChapterStart)` |
 
 #### Chapter Custom Metadata (1.x) {#chap-cust-meta-1.x}
 
@@ -779,7 +779,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| `VideoPlayerPlugin.trackBitrateChange()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange)` |
+| `VideoPlayerPlugin.trackBitrateChange()`  | `MediaHeartbeat.trackEvent(<br/><br/>&nbsp;&nbsp;MediaHeartbeat.Event.BitrateChange)` |
 
 #### Bitrate Change (1.x) {#bitrate-chg-1.x}
 
