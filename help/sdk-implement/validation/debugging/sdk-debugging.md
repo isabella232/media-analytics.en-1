@@ -13,39 +13,36 @@ You can enable and disable logging. The Media SDK provides an extensive tracing/
 
 ### Android
 
-  ```java
-  // Media Heartbeat initialization 
-  MediaHeartbeatConfig config = new MediaHeartbeatConfig(); 
-  config.debugLogging = true; 
-   
-  // Use this space for setting other config values 
-   
-  MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
-  
-  ```
+```java
+// Media Heartbeat initialization 
+MediaHeartbeatConfig config = new MediaHeartbeatConfig(); 
+config.debugLogging = true; 
+
+// Use this space for setting other config values 
+
+MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
+```
 
 ### iOS
 
-  ```
-  // Media Heartbeat Initialization 
-  ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
-  config.debugLogging = YES; 
-   
-  // Use this space for setting other config values 
-  ADBMediaHeartbeat *_mediaHeartbeat =  
-    [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
-  
-  ```
+```
+// Media Heartbeat Initialization 
+ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
+config.debugLogging = YES; 
+
+// Use this space for setting other config values 
+ADBMediaHeartbeat *_mediaHeartbeat =  
+[[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+```
 
 ### JavaScript
 
-  ```js
-  // Media Heartbeat initialization 
-  var mediaConfig = new MediaHeartbeatConfig(); 
-  mediaConfig.debugLogging = true; 
-  this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
-  
-  ```
+```js
+// Media Heartbeat initialization 
+var mediaConfig = new MediaHeartbeatConfig(); 
+mediaConfig.debugLogging = true; 
+this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
+```
 
 ### OTT (Chromecast, Roku) 
 
