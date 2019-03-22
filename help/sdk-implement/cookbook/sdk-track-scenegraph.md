@@ -159,19 +159,6 @@ response = {
 </tbody>
 </table>
 
-<!--
-| Field | Type | Default | Usage |
-| --- | --- | --- | --- |
-| `adbmobileApiCall` | `assocarray` | _Invalid_ | **_Do NOT_** modify this field or let is be used by the Application. This field is used by the ADBMobile SceneGraphConnector to route API calls via SceneGraph nodes and to fetch responses. Therefore, this key/field is reserved for AdobeMobileSDK for SceneGraph compatibility.  Important:  Any modifications to this field may result in AdobeMobileSDK functioning incorrectly.  |
-| `adbmobileApiResponse` | `assocarray` | _Invalid_ | **Read-Only** All of the APIs executed on AdobeMobileSDK will return responses on this field. Register for a callback to listen for updates to this field in order to receive response objects. Following is the format for the response object: <br/><br/> 
-<pre>`response = {` 
-`"apiName" : <SceneGraphConstants.API_NAME>` 
-`"returnValue : <API_RESPONSE>` 
- `}` 
-</pre>
-<br/><br/>An instance of this response object will be sent for any API call on AdobeMobileSDK that is expected to return a value as per the API reference guide. For example, an API call for **visitorMarketingCloudID()** will return following response object: <br/><br/>`response = {` <br/>&nbsp;&nbsp; `"apiName" : m.adbmobileConstants.VISITOR_MARKETING_CLOUD_ID` <br/>&nbsp;&nbsp; `"returnValue : "07050xxxx25671xxxx33760xxxx72644xxxx14"` <br/> `}` OR, response data can be invalid as well: <br/><br/>`response = {` <br/>&nbsp;&nbsp; `"apiName" : m.adbmobileConstants.VISITOR_MARKETING_CLOUD_ID` <br/>&bsp;&nbsp; `"returnValue : invalid }` |
--->
-
 ### `adbmobile.brs`
 
 #### `getADBMobileConnectorInstance`
