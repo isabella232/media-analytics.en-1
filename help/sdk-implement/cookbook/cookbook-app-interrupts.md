@@ -28,5 +28,5 @@ Playback in a media application can be interrupted in a variety of ways: a user 
 
 * _What about restarting the same session?_
 
-   For detailed instructions on restarting a tracking session, see this page: [Manually resume a previously closed session](../../sdk-implement/cookbook/cookbook-resuming-inactive.md). The SDK sends a resume ping to notify the back-end that the user is manually resuming the session.
+   For detailed instructions on restarting a tracking session, see this page: [Manually resume a previously closed session.](../../sdk-implement/cookbook/cookbook-resuming-inactive.md) The SDK sends a resume ping to notify the back-end that the user is manually resuming the session.
 

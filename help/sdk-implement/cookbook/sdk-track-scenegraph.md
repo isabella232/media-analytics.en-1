@@ -134,26 +134,31 @@ The connector bridge is designed to perform as follows:
 <td> assocarray </td>
 <td> Invalid </td>
 <td> Read-Only All of the APIs executed on AdobeMobileSDK will return responses on this field. Register for a callback to listen for updates to this field in order to receive response objects. Following is the format for the response object:  
-<pre>
+<codeblock>
 response = {
-  "apiName" : &lt;SceneGraphConstants.API_NAME&gt; 
+  "apiName" : &lt;SceneGraphConstants.
+               API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
 } 
-</pre>
+</codeblock>
 An instance of this response object will be sent for any API call on AdobeMobileSDK that is expected to return a value as per the API reference guide. For example, an API call for visitorMarketingCloudID() will return the following response object: 
-<pre>
+<codeblock>
 response = {
-  "apiName" : m.adbmobileConstants.VISITOR_MARKETING_CLOUD_ID  
-  "returnValue : "07050xxxx25671xxxx33760xxxx72644xxxx14"  
+  "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : "07050x25671x33760x72644x14"  
 } 
-</pre>
+</codeblock>
 OR, response data can be invalid as well: 
-<pre>
+<codeblock>
 response = {  
-  "apiName" : m.adbmobileConstants.VISITOR_MARKETING_CLOUD_ID  
+  "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</pre>
+</codeblock>
 </td>
 </tr>
 </tbody>

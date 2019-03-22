@@ -34,7 +34,10 @@ The following sections provide code comparisons between 1.x and 2.x, covering In
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `Heartbeat()` </li> <li> `VideoPlayerPlugin()` </li> <li> `AdobeAnalyticsPlugin()` </li> <li> `HeartbeatPlugin()` </li> </ul> | <ul> <li> `MediaHeartbeat()` </li> <li> `MediaHeartbeatConfig()` </li> </ul> |
+| `Heartbeat()` |  `MediaHeartbeat()` |
+|  `VideoPlayerPlugin()` |  `MediaHeartbeatConfig()` |
+|  `AdobeAnalyticsPlugin()` | |
+|  `HeartbeatPlugin()` | |
 
 #### Video player plugin initialization (1.x) {#plugin-init-1.x}
 
@@ -83,7 +86,14 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPluginDelegate()` </li> <li> `VideoPlayerPluginDelegate().getVideoInfo` </li> <li> `VideoPlayerPluginDelegate().getAdBreakInfo` </li> <li> `VideoPlayerPluginDelegate().getAdInfo` </li> <li> `VideoPlayerPluginDelegate().getChapterInfo` </li> <li> `VideoPlayerPluginDelegate().getQoSInfo` </li> <li> `VideoPlayerPluginDelegate().get.onError` </li> <li> `AdobeAnalyticsPluginDelegate()` </li> <li> `AdobeHeartbeatPluginDelegate()` </li> </ul> | <ul> <li> `MediaHeartbeatDelegate()` </li> <li> `MediaHeartbeatDelegate().getCurrentPlaybackTime` </li> <li> `MediaHeartbeatDelegate().getQoSObject` </li> </ul> |
+| `VideoPlayerPluginDelegate()`  |  `MediaHeartbeatDelegate()` |
+| `VideoPlayerPluginDelegate().getVideoInfo`  | `MediaHeartbeatDelegate().getCurrentPlaybackTime` |
+| `VideoPlayerPluginDelegate().getAdBreakInfo`  | `MediaHeartbeatDelegate().getQoSObject` |
+| `VideoPlayerPluginDelegate().getAdInfo`  | |
+| `VideoPlayerPluginDelegate().getChapterInfo`  | |
+| `VideoPlayerPluginDelegate().getQoSInfo`  | |
+| `VideoPlayerPluginDelegate().get.onError`  | |
+| `AdobeAnalyticsPluginDelegate()`  | |
 
 #### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
 
@@ -165,7 +175,8 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| <ul> <li> `VideoPlayerPluginDelegate.trackVideoLoad()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| `VideoPlayerPluginDelegate.trackVideoLoad()`  | `MediaHeartbeat.createMediaObject()`  |
+| `VideoPlayerPluginDelegate.getVideoInfo()`  | `MediaHeartbeat.trackSessionStart()`  |
 
 #### Session Start (1.x) {#session-start-1.x}
 
@@ -199,7 +210,8 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| `VideoMetadataKeys()`  | `MediaHeartbeat.createMediaObject()` |
+| `AdobeAnalyticsPlugin.setVideoMetadata()`  | `MediaHeartbeat.trackSessionStart()` |
 
 #### Standard Metadata (1.x) {#std-meta-1.x}
 
@@ -253,7 +265,8 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setVideoMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createMediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| `VideoMetadataKeys()`  | `MediaHeartbeat.createMediaObject()` |
+| `AdobeAnalyticsPlugin.setVideoMetadata()`  | `MediaHeartbeat.trackSessionStart()` |
 
 #### Custom Metadata (1.x) {#custom-meta-1.x}
 
@@ -293,7 +306,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackPlay()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackPlay()` </li> </ul> |
+| `VideoPlayerPlugin.trackPlay()`  | `MediaHeartbeat.trackPlay()` |
 
 #### Playback (1.x) {#playback-1.x}
 
@@ -317,7 +330,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackPause()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackPausel()` </li> </ul> |
+| `VideoPlayerPlugin.trackPause()`  | `MediaHeartbeat.trackPausel()` |
 
 #### Pause (1.x) {#pause-1.x}
 
@@ -341,7 +354,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackSeekComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete)` </li> </ul> |
+| `VideoPlayerPlugin.trackSeekComplete()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
 #### Seeking (1.x) {#seek-1.x}
 
@@ -365,7 +378,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackBufferStart()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart)` </li> </ul> |
+| `VideoPlayerPlugin.trackBufferStart()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart)` |
 
 #### Buffer Start (1.x) {#buffer-start-1.x}
 
@@ -389,7 +402,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackBufferComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete)` </li> </ul> |
+| `VideoPlayerPlugin.trackBufferComplete()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete)` |
 
 #### Buffer Complete (1.x) {#buffer-complete-1.x}
 
@@ -413,7 +426,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackComplete()` </li> </ul> |
+| `VideoPlayerPlugin.trackComplete()`  | `MediaHeartbeat.trackComplete()` |
 
 #### Playback Complete (1.x) {#playback-complete-1.x}
 
@@ -441,7 +454,10 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackAdStart()` </li> <li> `VideoPlayerPluginDelegate.getAdBreakInfo()` </li> <li> `VideoPlayerPluginDelegate.getAdInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdBreakObject()` </li> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart)` </li> </ul> |
+| `VideoPlayerPlugin.trackAdStart()`  | `MediaHeartbeat.createAdBreakObject()` |
+| `VideoPlayerPluginDelegate.getAdBreakInfo()`  | `MediaHeartbeat.createAdObject()` |
+| `VideoPlayerPluginDelegate.getAdInfo()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart)` |
+| | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart)` |
 
 #### Ad Start (1.x) {#ad-start-1.x}
 
@@ -481,7 +497,8 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `AdMetadataKeys()` </li> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
+| `AdMetadataKeys()`  | `MediaHeartbeat.createAdObject()` |
+| `AdobeAnalyticsPlugin.setAdMetadata()`  | `MediaHeartbeat.trackAdStart()` |
 
 #### Standard Ad Metadata (1.x) {#ad-meta-1.x}
 
@@ -534,7 +551,8 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
+| `AdobeAnalyticsPlugin.setAdMetadata()`  | `MediaHeartbeat.createAdObject()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### Custom Ad Metadata (1.x) {#custom-ad-meta-1.x}
 
@@ -584,7 +602,8 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `AdobeAnalyticsPlugin.setAdMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createAdObject()` </li> <li> `MediaHeartbeat.trackAdStart()` </li> </ul> |
+| `AdobeAnalyticsPlugin.setAdMetadata()`  | `MediaHeartbeat.createAdObject()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### Ad Skip (1.x) {@#ad-skip-1.x}
 
@@ -610,7 +629,8 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackAdComplete()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete)` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete)` </li> </ul> |
+| `VideoPlayerPlugin.trackAdComplete()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete)` |
+| | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete)` |
 
 #### Ad Complete (1.x) {#ad-complete-1.x}
 
@@ -637,7 +657,8 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> <li> `VideoPlayerPlugin.trackChapterStart()` </li> </ul> | <ul> <li> `MediaHeartbeat.createChapterObject` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
+| `VideoPlayerPluginDelegate.getChapterInfo()`  | `MediaHeartbeat.createChapterObject` |
+| `VideoPlayerPlugin.trackChapterStart()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` |
 
 #### Chapter Start (1.x) {#chap-start-1.x}
 
@@ -672,7 +693,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPluginDelegate.getChapterInfo()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip)` </li> </ul> |
+| `VideoPlayerPluginDelegate.getChapterInfo()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip)` |
 
 #### Chapter Skip (1.x) {#chap-skip-1.x}
 
@@ -697,7 +718,8 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackChapterStart()` </li> <li> `AdobeAnalyticsPlugin.setChapterMetadata()` </li> </ul> | <ul> <li> `MediaHeartbeat.createChapterObject()` </li> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` </li> </ul> |
+| `VideoPlayerPlugin.trackChapterStart()`  | `MediaHeartbeat.createChapterObject()` |
+| `AdobeAnalyticsPlugin.setChapterMetadata()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart)` |
 
 #### Chapter Custom Metadata (1.x) {#chap-cust-meta-1.x}
 
@@ -731,7 +753,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `trackChapterComplete()` </li> </ul> | <ul> <li> `trackEvent(MediaHeartbeat.Event.ChapterComplete)` </li> </ul> |
+| `trackChapterComplete()`  | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
 #### Chapter Complete (1.x) {#chap-complete-1.x}
 
@@ -757,7 +779,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 
 | VHL 1.x | VHL 2.x |
 | --- | --- |
-| <ul> <li> `VideoPlayerPlugin.trackBitrateChange()` </li> </ul> | <ul> <li> `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange)` </li> </ul> |
+| `VideoPlayerPlugin.trackBitrateChange()`  | `MediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange)` |
 
 #### Bitrate Change (1.x) {#bitrate-chg-1.x}
 
@@ -785,7 +807,9 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 
 | 1.x API | 2.x API |
 | --- | --- |
-| <ul> <li> `VideoInfo.resumed()` </li> <li> `VideoPlayerPluginDelegate.getVideoInfo()` </li> <li> `VideoPlayerPlugin.trackVideoLoad()` </li> </ul> | <ul> <li> `MediaObject()` </li> <li> `MediaHeartbeat.trackSessionStart()` </li> </ul> |
+| `VideoInfo.resumed()`  | `MediaObject()` |
+| `VideoPlayerPluginDelegate.getVideoInfo()`  | `MediaHeartbeat.trackSessionStart()` |
+| `VideoPlayerPlugin.trackVideoLoad()`  | |
 
 #### Video Resume (1.x) {#video-resume-1.x}
 
