@@ -136,8 +136,8 @@ The connector bridge is designed to perform as follows:
 <td> Read-Only All of the APIs executed on AdobeMobileSDK will return responses on this field. Register for a callback to listen for updates to this field in order to receive response objects. Following is the format for the response object:  
 <pre>
 response = {
-  "apiName" : <SceneGraphConstants.API_NAME> 
-  "returnValue : <API_RESPONSE> 
+  "apiName" : &lt;SceneGraphConstants.API_NAME&gt; 
+  "returnValue : &lt;API_RESPONSE&gt; 
 } 
 </pre>
 An instance of this response object will be sent for any API call on AdobeMobileSDK that is expected to return a value as per the API reference guide. For example, an API call for visitorMarketingCloudID() will return the following response object: 
