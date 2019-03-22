@@ -11,30 +11,30 @@ The user ID is a unique custom visitor identifier defined by the application for
 
 Set and get the unique user ID on the ADBMobile SDK as follows:
 
-1. **Set:**
+* **Set:**
 
    * **Roku:** 
    
-     ```    
-     ADBMobile().setUserIdentifer("app-generated-unique-id")
-     ```
+      ```    
+      ADBMobile().setUserIdentifer("app-generated-unique-id")
+      ```
    
    * **Chromecast:** 
    
-     ```    
-     ADBMobile().config.setUserIdentifer("app-generated-unique-id");
-     ```
+      ```    
+      ADBMobile().config.setUserIdentifer("app-generated-unique-id");
+      ```
 
-1. **Get:**
+* **Get:**
 
    * **Roku:** 
    
-     ```    
-     vid = ADBMobile().userIdentifer()
-     ```
+      ```    
+      vid = ADBMobile().userIdentifer()
+      ```
    
    * **Chromecast:** 
    
-     ```    
-     vid = ADBMobile().config.getUserIdentifer();
-     ```
+      ```    
+      vid = ADBMobile().config.getUserIdentifer();
+      ```

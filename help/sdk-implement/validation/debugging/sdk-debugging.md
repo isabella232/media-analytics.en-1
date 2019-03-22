@@ -9,9 +9,9 @@ uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 
 You can enable and disable logging. The Media SDK provides an extensive tracing/logging mechanism that is put in place throughout the entire video-tracking stack. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
 
-**Sample code for debug logging:**
+## Sample code for debug logging
 
-* **Android -** 
+### Android
 
   ```java
   // Media Heartbeat initialization 
@@ -24,7 +24,7 @@ You can enable and disable logging. The Media SDK provides an extensive tracing/
   
   ```
 
-* **iOS -** 
+### iOS
 
   ```
   // Media Heartbeat Initialization 
@@ -37,7 +37,7 @@ You can enable and disable logging. The Media SDK provides an extensive tracing/
   
   ```
 
-* **JavaScript -** 
+### JavaScript
 
   ```js
   // Media Heartbeat initialization 
@@ -47,28 +47,32 @@ You can enable and disable logging. The Media SDK provides an extensive tracing/
   
   ```
 
-* **OTT (Chromecast, Roku) -** The ADBMobile library provides debug logging through the `setDebugLogging` method. Debug logging should be set to `false` for all the production apps.
+### OTT (Chromecast, Roku) 
 
-    * Roku -     
+The ADBMobile library provides debug logging through the `setDebugLogging` method. Debug logging should be set to `false` for all the production apps.
+
+#### Roku
     
-      ```    
-      ADBMobile().setDebugLogging(true)
-      ```    
+```    
+ADBMobile().setDebugLogging(true)
+```    
     
-    * Chromecast -     
+#### Chromecast
     
-      ```    
-      ADBMobile.config.setDebugLogging(true)
-      ```
+```    
+ADBMobile.config.setDebugLogging(true)
+```
 
-  **Using Adobe Bloodhound to Test Chromecast Applications -** During application development, Bloodhound allows you to view server calls locally, and optionally forward the data to Adobe collection servers. For more information about Bloodhound, see the following guides:
+**Using Adobe Bloodhound to Test Chromecast Applications -** During application development, Bloodhound allows you to view server calls locally, and optionally forward the data to Adobe collection servers. For more information about Bloodhound, see the following guides:
 
-    * [Bloodhound 3.x for Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/) 
-    * [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [Bloodhound 3.x for Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/) 
+* [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
 
-  >[!IMPORTANT]
-  >
-  >As of April 30, 2017, Adobe Bloodhound has been sunset. Starting on May 1, 2017, no additional enhancements and no additional Engineering or Adobe Expert Care support will be provided.
+>[!IMPORTANT]
+>
+>As of April 30, 2017, Adobe Bloodhound has been sunset. Starting on May 1, 2017, no additional enhancements and no additional Engineering or Adobe Expert Care support will be provided.
+
+### Log Messages
 
 Log messages follow this format: 
 
@@ -79,12 +83,10 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 
 * **timestamp:** This is the current CPU time (time-zoned for GMT) 
 * **level:** There are 4 message levels defined:
-
-    * INFO - Usually the input data from the application (validate player name, video ID, etc.) 
-    * DEBUG - Debug logs, used by the developers to debug more complex issues 
-    * WARN - Indicates potential integration/configuration errors or Heartbeats SDK bugs 
-    * ERROR - Indicates important integration errors or Heartbeats SDK bugs
-
+   * INFO - Usually the input data from the application (validate player name, video ID, etc.) 
+   * DEBUG - Debug logs, used by the developers to debug more complex issues 
+   * WARN - Indicates potential integration/configuration errors or Heartbeats SDK bugs 
+   * ERROR - Indicates important integration errors or Heartbeats SDK bugs
 * **tag:** The name of the sub-component that issued the log message (usually the class name) 
 * **message:** The actual trace message
 

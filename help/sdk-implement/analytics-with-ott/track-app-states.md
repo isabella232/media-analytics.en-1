@@ -7,45 +7,47 @@ uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 
 # Track app states{#track-app-states}
 
-States are the different screens or views in your application. Each time a new state is displayed in your application, for example, when a user navigates from the home page to the video details screen, you should send a `trackState` call.
+States are the different screens or views in your application. Each time a new state is displayed in your application, you should send a `trackState` call. For example, when a user navigates from the home page to the video details screen, send a `trackState` call. States are typically viewed by using a pathing report, so you can see how users navigate your app and which states are most commonly viewed. 
 
-`trackState` is typically called each time a new screen is loaded.
+## trackState calls
 
-* **Roku:** 
+You typically call `trackState` each time the app loads a new screen.
 
-  ```js
-  ADBMobile().trackState("State Name", {})
-  ```
+### Roku
 
-* **Chromecast:** 
+```js
+ADBMobile().trackState("State Name", {})
+```
 
-  ```js
-  ADBMobile.analytics.trackState("State Name",{});
-  ```
+### Chromecast
 
-The state name is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, `View State` is reported as `Page Name`; `state views` is reported as `page views`.
+```js
+ADBMobile.analytics.trackState("State Name",{});
+```
 
-In addition to `State Name`, you can send additional context data with each track action call:
+The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, "View State" is reported as "Page Name"; "State Views" is reported as "Page Views".
 
-* **Roku:** 
+## Send context data
 
-  ```js
-  dictionary = { } 
-  dictionary["myapp.login.LoginStatus"] = "logged in"  
-  ADBMobile().trackState("Home Screen", dictionary)
-  ```
+In addition to "State Name", you can send additional context data with each track action call.
 
-* **Chromecast:** 
+### Roku
 
-  ```js
-  var dictionary = { }; 
-  dictionary["myapp.login.LoginStatus"] = "logged in"; 
-  ADBMobile.analytics.trackState("Home Screen", dictionary); 
-  ```
+```js
+dictionary = { } 
+dictionary["myapp.login.LoginStatus"] = "logged in"  
+ADBMobile().trackState("Home Screen", dictionary)
+```
+
+### Chromecast
+
+```js
+var dictionary = { }; 
+dictionary["myapp.login.LoginStatus"] = "logged in"; 
+ADBMobile.analytics.trackState("Home Screen", dictionary); 
+```
 
 >[!NOTE]
 >
 >Context data values must be mapped to custom variables in Adobe Mobile services.
-
-States are typically viewed by using a pathing report, so you can see how users navigate your app and which states are most commonly viewed. 
 

@@ -7,15 +7,16 @@ uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 
 # API 1.x to 2.x conversion {#one-x-to-two-x-conv}
 
-**Media SDK 2.x API References:**
+## Media SDK 2.x API References
 
 * [Android API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
+* [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## Required Track APIs:
+## Required Track* APIs:
 
-|  VHL 1.x | VHL 2.x |
+|  &nbsp;VHL&nbsp;1.x&nbsp; | VHL&nbsp;2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | N/A |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |

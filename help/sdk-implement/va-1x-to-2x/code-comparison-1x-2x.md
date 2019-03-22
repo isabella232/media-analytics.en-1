@@ -813,4 +813,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-For more information on tracking video with 2.x, see [Track Core Video Playback](../../sdk-implement/track-av-playback/track-core-overview.md).
+For more information on tracking video with 2.x, see [Track Core Video Playback.](../../sdk-implement/track-av-playback/track-core-overview.md)

@@ -9,7 +9,7 @@ uuid: 438fde3d-98f9-46d1-9672-75d204361568
 
 To create a new Debug report:
 
-1. In **Create New Debug Report**, select the following:
+1. In [!UICONTROL Create New Debug Report] select the following:
 
    ![](assets/create-new-debug-report.png)
 
@@ -18,18 +18,18 @@ To create a new Debug report:
     * **Name the Report** - Enter the player name and date so that you can easily track the player during certification and keep brands and platforms separate. 
     * **Adobe Analytics**
 
-        * **User Name** and **Shared Secret -** These fields are optional, but you can add your web services API credentials to Adobe Debug to display the variable names and variable settings for the report suite.
+       * [!UICONTROL User Name] and [!UICONTROL Shared Secret] - These fields are optional, but you can add your web services API credentials to Adobe Debug to display the variable names and variable settings for the report suite.
 
           You can access in one of the following ways:
 
-            * **Analytics > Admin > Company Settings > Web Services** 
-            * **Analytics > Admin > User Management > Users > Individual User Settings** To create a web services API credential for a new user, in **User Management**, add the user to the **Web Service Access** user group.
+          * [!UICONTROL Analytics > Admin > Company Settings > Web Services]
+          * [!UICONTROL Analytics > Admin > User Management > Users > Individual User Settings] To create a web services API credential for a new user, in [!UICONTROL User Management], add the user to the **Web Service Access** user group.
 
-        * **Default Endpoint** - The data in this field is provided by Adobe and cannot be changed. 
-        * **Extra Endpoint** - Add `CNAMES`, if you use them, for tracking server like `metrics.companyname.com`
+        * [!UICONTROL Default Endpoint] - The data in this field is provided by Adobe and cannot be changed. 
+        * [!UICONTROL Extra Endpoint] - Add `CNAMES`, if you use them, for tracking server like `metrics.companyname.com`
 
-    * **Video Heartbeats**
+    * **Media Heartbeats**
 
-        * **Default Endpoint** - The data in this field is provided by Adobe and cannot be changed. 
-        * **Extra Endpoint** - Add `CNAMES`, if you use them, for tracking server like `metrics.companyname.com`.
+        * [!UICONTROL Default Endpoint] - The data in this field is provided by Adobe and cannot be changed. 
+        * [!UICONTROL Extra Endpoint] - Add `CNAMES`, if you use them, for your tracking server, e.g., `metrics.companyname.com`.
 
