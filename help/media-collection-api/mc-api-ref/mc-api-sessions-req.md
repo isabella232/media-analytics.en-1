@@ -58,7 +58,8 @@ The request body must be JSON, and must have the same structure as this sample r
     * `playhead` - Must be in seconds, but it can be a float.
     * `ts` - Timestamp; must be in milliseconds.
 * `eventType` (Mandatory)
-   **Valid value: ** `sessionStart`
+
+   **Valid value:**&nbsp;`sessionStart`
 * `params` (Mandatory) 
 * `customMetadata` (Optional)
 * `qoeData` (Optional)

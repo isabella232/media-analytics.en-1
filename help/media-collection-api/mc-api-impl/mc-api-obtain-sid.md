@@ -7,7 +7,7 @@ uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 
 # Obtaining a session ID{#obtaining-a-session-id}
 
-This code snippet from the Reference Player shows one way of coding a [Sessions request,](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Collection API version) from the Location header in the response: 
+This code snippet from the Reference Player shows one way of coding a [Sessions request,](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response: 
 
 ```js
 var  

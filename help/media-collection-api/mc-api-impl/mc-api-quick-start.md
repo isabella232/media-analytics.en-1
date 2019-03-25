@@ -9,7 +9,7 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful [Session request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Collection server. You can quickly verify your request data by sending requests manually (with `curl`, or Postman, etc.). This will give you immediate feedback on whether you have any issues with incorrect data types or incorrect information in your request. Use the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) to verify that you are supplying proper request data.
+>Gather the request data necessary for completing a successful [Session request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. You can quickly verify your request data by sending requests manually (with `curl`, or Postman, etc.). This will give you immediate feedback on whether you have any issues with incorrect data types or incorrect information in your request. Use the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) to verify that you are supplying proper request data.
 
 1. Gather the standard, required Adobe Analytics and Visitor data that you must supply to run any of the Experience Cloud applications:
 
@@ -34,7 +34,7 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
            "analytics.visitorId": "[YOUR_VISITOR_ID]", 
            "media.contentType": "VOD", 
            "media.length": 60.39333333333333, 
-           "media.id": "MA API Sample Player", 
+           "media.id": "MA Collection API Sample Player", 
            "visitor.marketingCloudOrgId": "[YOUR_ORG_ID]", 
            "media.name": "ClickMe", 
            "media.channel": "sample-channel", 
@@ -48,7 +48,7 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
    >
    >You must use the correct data types in the JSON request body. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md).
 
-1. Send Sessions requests to the MA API endpoint. If your request payload is invalid, identify the problem and retry until you get a `201 Created` response. In this `curl` example, the JSON request body is in a file named [!DNL sample_data_session]: 
+1. Send Sessions requests to the MA Collection API endpoint. If your request payload is invalid, identify the problem and retry until you get a `201 Created` response. In this `curl` example, the JSON request body is in a file named [!DNL sample_data_session]: 
 
    ```
    $ curl -i -d \ 

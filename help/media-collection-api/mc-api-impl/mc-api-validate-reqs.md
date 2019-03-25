@@ -9,7 +9,7 @@ uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 
 The JSON request body for each event type is validated on the backend with JSON schemas. The HTTP response body is populated with an error message when validation fails for an API call.
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}`, e.g., `{uri}/api/v1/schemas/sessionEnd`. These JSON validation schemas are the absolute authority for determining the current and correct request body parameters and their data types for each type of event.
+JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). These JSON validation schemas are the absolute authority for determining the correct request body parameters for each type of event.
 
 For example, the response to a request for the `sessionStart` validation schema appears something like this sample (slightly formatted for readability here): 
 

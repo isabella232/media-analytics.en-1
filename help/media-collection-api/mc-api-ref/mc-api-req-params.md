@@ -9,7 +9,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Analytics Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | The URL of your Adobe Analytics server |
 | `analytics.reportSuite` | Y | `sessionStart` | The ID that identifies your Analytics reporting data |
@@ -18,7 +18,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Visitor Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | The Experience Cloud User ID, for accessing the Experience Cloud family of apps |
@@ -27,7 +27,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Content Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | Unique identifer for the content |
 | `media.name` | N | `sessionStart` | Human readible name for the content |
@@ -40,7 +40,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Content Standard Metadata
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | The program or series name |
 | `media.season` | N | `sessionStart` | The season number the show or series belongs to |
@@ -61,7 +61,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Ad Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Friendly name of the ad break |
 | `media.ad.podIndex` | Y | `adBreakStart` | The index of the ad pod in the video |
@@ -74,7 +74,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Ad Standard Metadata
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | The company or brand whose product is featured in the ad |
 | `media.ad.campaignId` | N | `adStart` | The ID of the ad campaign |
@@ -85,7 +85,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Chapter Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | Identifies the chapter's position in the content |
 | `media.chapter.offset` | Y | `chapterStart` | The second in the playback where the chapter starts |
@@ -94,7 +94,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ## Quality Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | Description |
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Any | The bitrate of the stream |
 | `media.qoe.bitrateChange` | N | Any | The change of the stream bitrate |
@@ -104,7 +104,6 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | `media.qoe.errorID` | Y | Error | Supports the error event; signals that an error occurred during the session |
 | `media.qoe.errorSource` | Y | Error | The value should be either "player" or "external", depending upon the error type |
 
-
 ## Additional Details {#section_ryt_ccy_lcb}
 
 ### visitor.marketingCloudUserId
@@ -113,13 +112,13 @@ You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on
 
 >[!NOTE]
 >
->Media Analytics is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps.
+>Media Analytics (MA() is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps.
 
 ### appInstallationId
 
-* **If you *do not* pass an `appInstallationId` value -** The MA backend will no longer generate a MCID, but instead will rely on Adobe Analytics to do this. Adobe's recommendation is to either send a MCID if available, or an `appInstallationId` (along with the still mandatory `marketingCloudOrgId`) so that the Media Collection API generates the MCID and sends it on all calls.
+* **If you *do not* pass an `appInstallationId` value -** The MA back-end will no longer generate a MCID, but instead will rely on Adobe Analytics to do this. Adobe's recommendation is to either send a MCID if available, or an `appInstallationId` (along with the still mandatory `marketingCloudOrgId`) so that the Media Collection API generates the MCID and sends it on all calls.
 
-* **If you *do* pass `appInstallationId` value -** The MCID *can be* generated by the MA backend, if you pass values for `appInstallationId` and the (required) `marketingCloudOrgId` parameters. If you do pass `appInstallationId` yourself, you must persist its value on the client side. It must be unique to the app on a device, and must be persistent for as long as the app is not re-installed.
+* **If you *do* pass `appInstallationId` value -** The MCID *can be* generated by the MA back-end, if you pass values for `appInstallationId` and the (required) `marketingCloudOrgId` parameters. If you do pass `appInstallationId` yourself, you must persist its value on the client side. It must be unique to the app on a device, and must be persistent for as long as the app is not re-installed.
 
 >[!NOTE]
 >
@@ -132,12 +131,16 @@ You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching](../../federated-analytics.md)). 
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](../../federated-analytics.md))
 
 ### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
 
-* **analytics.aid**: The value of this key must be a string that represents the Analytics Legacy User ID
-* **visitor.customerIDs**: The value of this key must be an object of the following format:     
+* **analytics.aid:** 
+
+   The value of this key must be a string that represents the Analytics Legacy User ID
+* **visitor.customerIDs:** 
+
+   The value of this key must be an object of the following format:     
 
    ```js    
    "<<insert your ID name here>>": {  
@@ -146,11 +149,11 @@ In addition to being necessary for MCID generation when that is not provided, th
    }
    ```    
 
-Note that the **visitor.customerIDs** value can have any number of objects in the presented format.
+Note that the `visitor.customerIDs` value can have any number of objects in the presented format.
 
 ### visitor.aamLocationHint
 
-AAM Location Hint: This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. If you don't pass this parameter, Adobe hardcodes it to 1. This is particularly important when end users tend to use their devices in geographically distant locations (e.g., US-East, US-West, Europe, Asia). Otherwise, user data will be spread across multiple AAM Edges.
+This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. If you don't pass this parameter, Adobe hardcodes it to 1. This is particularly important when end users tend to use their devices in geographically distant locations (e.g., US-East, US-West, Europe, Asia). Otherwise, user data will be spread across multiple AAM Edges.
 
 ### media.resume
 

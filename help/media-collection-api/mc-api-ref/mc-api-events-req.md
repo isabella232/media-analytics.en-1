@@ -10,7 +10,6 @@ uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 ```
 POST 
 https://{uri}/api/v1/sessions/{sid}/events 
-
 ```
 
 ## URI Parameter
@@ -35,14 +34,14 @@ The request body must be JSON, and must have the same structure as this sample r
 ```
 
 * `playerTime` (Mandatory)
-    * `playhead` - Must be in seconds, but it can be a float.
-    * `ts` - Timestamp; must be in milliseconds.
+   * `playhead` - Must be in seconds, but it can be a float.
+   * `ts` - Timestamp; must be in milliseconds.
 * `eventType` (Mandatory)
 * `params` (Optional) 
 * `customMetadata` (Optional; send only with `adStart` and `chapterStart` event types)
 * `qoeData` (Optional)
 
-For a list of valid event types for this release, see [Event types and descriptions](../../media-collection-api/mc-api-ref/mc-api-event-types.md).
+For a list of valid event types for this release, see [Event types and descriptions.](../../media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
@@ -67,9 +66,9 @@ Access-Control-Expose-Headers Location
 
 |  HTTP Response Code  | Description  | Client Action Items  |
 |---|---|---|
-|  **204** | **No Content.** Heartbeat call was successful.  | N/A  |
-|  **400** | **Bad Request.** Request had improper format.  | Check the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) for the request type.  |
-|  **404** | **Not Found.** The session ID for the media session was not found in the backend service.  | The client application should use the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API to create another media session and report tracking on it.  |
-|  **410** | **Gone.** The media session was found in the backend service but the client can no longer report activity on it.  | The client application should use the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API to create another media session and report tracking on it.  |
+|  **204** | **No Content.** <br/><br/>Heartbeat call was successful.  | N/A  |
+|  **400** | **Bad Request.** <br/><br/>Request had improper format.  | Check the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) for the request type.  |
+|  **404** | **Not Found.** <br/><br/>The session ID for the media session was not found in the back-end service.  | The client application should use the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API to create another media session and report tracking on it.  |
+|  **410** | **Gone.** <br/><br/>The media session was found in the back-end service but the client can no longer report activity on it.  | The client application should use the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API to create another media session and report tracking on it.  |
 |  **500** | **Server error** | N/A  |
 

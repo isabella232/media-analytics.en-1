@@ -64,7 +64,7 @@ Signals the completion of a chapter
 
 ## sessionEnd
 
-This is used to notify the MA backend to immediately close the session when the user has abandoned their viewing of the content and they are unlikely to return.
+This is used to notify the Media Analytics backend to immediately close the session when the user has abandoned their viewing of the content and they are unlikely to return.
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
