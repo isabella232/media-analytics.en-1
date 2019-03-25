@@ -13,8 +13,8 @@ Each report suite that collects video metrics must be configured before video da
 >
 >To take advantage of new capabilities, existing Media Analytics customers should re-enable video tracking for their RSIDs.
 
-1. In [Reports & Analytics](https://my.omniture.com/login/), click  **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** . 
-1. Select the report suite(s) where you are collecting video data and click  **[!UICONTROL Edit Settings]** > **[!UICONTROL Media Management]** > **[!UICONTROL Media Reporting]** . 
+1. In [Reports & Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] > [!UICONTROL Report Suites]. 
+1. Select the report suite(s) where you are collecting video data and click [!UICONTROL Edit Settings] > [!UICONTROL Media Management] > [!UICONTROL Media Reporting]. 
    ![](assets/media-reporting.png){width="400px"}
 
 1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
