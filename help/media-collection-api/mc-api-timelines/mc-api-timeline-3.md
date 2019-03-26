@@ -22,17 +22,17 @@ The following diagrams illustrate the playhead timeline and the corresponding ti
 ## Action details
 
 
-### Action 1 {#Action-1}
+### Action 1 - Start session {#Action-1}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Auto-play or Play button pressed, video starts loading.  | 0 | 0 | `/api/v1/sessions`  |
 
-#### Implementation Details
+**Implementation details**
 
 This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting".  [Mandatory session parameters](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body.  On the backend, this call generates an Adobe Analytics initiate call.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -57,27 +57,27 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 2 {#Action-2}
+### Action 2 - Ping timer starts {#Action-2}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App starts ping event timer | 0 | 0 | |
 
-#### Implementation Details
+**Implementation details**
 
-Start your 10-second ping timer. The first ping event should then fire 10 seconds into the session.
+Start your ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.  
 
-### Action 3 {#Action-3}
+### Action 3 - Ad break start {#Action-3}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track pre-roll ad break start | 0 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ads can only be tracked within an ad break.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -92,17 +92,17 @@ Ads can only be tracked within an ad break.
 }
 ```
 
-### Action 4 {#Action-4}
+### Action 4 - Ad start {#Action-4}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track pre-roll Ad #1 start | 0 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Start tracking the first pre-roll ad, which is 15 seconds long. Including custom metadata with this `adStart` .
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -131,17 +131,17 @@ Start tracking the first pre-roll ad, which is 15 seconds long. Including custom
 }
 ```
 
-### Action 5 {#Action-5}
+### Action 5 - Ad pings {#Action-5}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 10 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
-Ping the backend every 10 seconds.
+Ping the backend every 1 second.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -153,17 +153,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 6 {#Action-6}
+### Action 6 - Ad complete {#Action-6}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track pre-roll Ad #1 complete | 15 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Track the end of the first pre-roll ad.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -175,17 +175,17 @@ Track the end of the first pre-roll ad.
 }
 ```
 
-### Action 7 {#Action-7}
+### Action 7 - Ad start {#Action-7}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track pre-roll Ad #2 start | 15 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Track the start of the second pre-roll ad, which is 7 seconds long.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -210,17 +210,17 @@ Track the start of the second pre-roll ad, which is 7 seconds long.
 }
 ```
 
-### Action 8 {#Action-8}
+### Action 8 - Ad pings {#Action-8}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 20 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
-Ping the backend every 10 seconds.
+Ping the backend every 0 second.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -232,17 +232,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 9 {#Action-9}
+### Action 9 - Ad complete {#Action-9}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track pre-roll Ad #2 complete | 22 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Track the end of the second pre-roll ad.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -254,17 +254,17 @@ Track the end of the second pre-roll ad.
 }
 ```
 
-### Action 10 {#Action-10}
+### Action 10 - Ad break complete {#Action-10}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track pre-roll ad break complete | 22 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 The ad break is over. Throughout the ad break, the play state has remained "playing".
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -276,17 +276,17 @@ The ad break is over. Throughout the ad break, the play state has remained "play
 }
 ```
 
-### Action 11 {#Action-11}
+### Action 11 - Play content {#Action-11}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track play event | 22 | 0 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 After the `adBreakComplete` event, put the player is in the "playing" state using the `play` event.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -298,17 +298,17 @@ After the `adBreakComplete` event, put the player is in the "playing" state usin
 }
 ```
 
-### Action 12 {#Action-12}
+### Action 12 - Chapter start {#Action-12}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track chapter start event | 23 | 1 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 After the play event, track the start of the first chapter.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -323,17 +323,17 @@ After the play event, track the start of the first chapter.
 }
 ```
 
-### Action 13 {#Action-13}
+### Action 13 - Ping {#Action-13}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 30 | 8 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ping the backend every 10 seconds.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -345,17 +345,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 14 {#Action-14}
+### Action 14 - Buffer start {#Action-14}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Buffer start event occurred | 33 | 11 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Track the move to the "buffering" state.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -367,17 +367,17 @@ Track the move to the "buffering" state.
 }
 ```
 
-### Action 15 {#Action-15}
+### Action 15 - Buffer end (play) {#Action-15}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Buffering ended, the app tracks resumption of content | 36 | 11 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Buffering ends after 3 seconds, so put the player back to the "playing" state. You must send another track play event coming out of buffering.  **The `play` call after a `bufferStart` infers a "bufferEnd" call to the back end,** so there is no need for a `bufferEnd` event.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -389,17 +389,17 @@ Buffering ends after 3 seconds, so put the player back to the "playing" state. Y
 }
 ```
 
-### Action 16 {#Action-16}
+### Action 16 - Ping {#Action-16}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 40 | 15 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ping the backend every 10 seconds.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -411,17 +411,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 17 {#Action-17}
+### Action 17 - Chapter end {#Action-17}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App tracks chapter end | 45 | 20 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 The first chapter ends, right before the second ad break.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -433,17 +433,17 @@ The first chapter ends, right before the second ad break.
 }
 ```
 
-### Action 18 {#Action-18}
+### Action 18 - Ad break start {#Action-18}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track mid-roll ad break start | 46 | 21 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Mid-roll ad of 8 seconds duration: send `adBreakStart` .
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -458,17 +458,17 @@ Mid-roll ad of 8 seconds duration: send `adBreakStart` .
 }
 ```
 
-### Action 19 {#Action-19}
+### Action 19 - Ad start {#Action-19}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track mid-roll Ad #3 start | 46 | 21 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Track the mid-roll ad.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -493,17 +493,17 @@ Track the mid-roll ad.
 }
 ```
 
-### Action 20 {#Action-20}
+### Action 20 - Ping {#Action-20}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 50 | 21 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ping the backend every 10 seconds.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -515,17 +515,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 21 {#Action-21}
+### Action 21 - Ad complete {#Action-21}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track mid-roll Ad #1 complete | 54 | 21 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 The mid-roll ad is complete.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -537,17 +537,17 @@ The mid-roll ad is complete.
 }
 ```
 
-### Action 22 {#Action-22}
+### Action 22 - Ad break complete {#Action-22}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track mid-roll ad break complete | 54 | 21 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 The ad break is complete.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -559,17 +559,17 @@ The ad break is complete.
 }
 ```
 
-### Action 23 {#Action-23}
+### Action 23 - Chapter start {#Action-23}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Track the start of Chapter 2 | 55 | 22 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -584,17 +584,17 @@ The ad break is complete.
 }
 ```
 
-### Action 24 {#Action-24}
+### Action 24 - Ping {#Action-24}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 60 | 27 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ping the backend every 10 seconds.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -606,17 +606,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 25 {#Action-25}
+### Action 25 - Pause {#Action-25}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | User pressed Pause | 64 | 31 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 The user action moves the play state to "paused".
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -628,17 +628,17 @@ The user action moves the play state to "paused".
 }
 ```
 
-### Action 26 {#Action-26}
+### Action 26 - Ping {#Action-26}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 70 | 31 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ping the backend every 10 seconds. Player is still in the "buffering" state; the user is stuck at 20 seconds of content. Fuming...
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -650,17 +650,17 @@ Ping the backend every 10 seconds. Player is still in the "buffering" state; the
 }
 ```
 
-### Action 27 {#Action-27}
+### Action 27 - Play content {#Action-27}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | User pressed Play to resume main content | 74 | 31 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Move the play state to "playing".  **The `play` call after a `pauseStart` infers a "resume" call to the back end**, so there is no need for a `resume` event.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -672,17 +672,17 @@ Move the play state to "playing".  **The `play` call after a `pauseStart` infers
 }
 ```
 
-### Action 28 {#Action-28}
+### Action 28 - Ping {#Action-28}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | App sends ping event | 80 | 37 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Ping the backend every 10 seconds.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -694,17 +694,17 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 29 {#Action-29}
+### Action 29 - Chapter end {#Action-29}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | Chapter 2 ends | 87 | 44 | `/api/v1/sessions/{sid}/events`  |
 
-#### Implementation Details
+**Implementation details**
 
 Track the end of the second and final chapter.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {
@@ -716,17 +716,17 @@ Track the end of the second and final chapter.
 }
 ```
 
-### Action 30 {#Action-30}
+### Action 30 - Session complete {#Action-30}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
 | The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events`  | 
 
-#### Implementation Details
+**Implementation details**
 
 Send `sessionComplete` to the backend to indicate that the user finished watching the entire content.
 
-#### Sample request body
+**Sample request body**
 
 ```
 {

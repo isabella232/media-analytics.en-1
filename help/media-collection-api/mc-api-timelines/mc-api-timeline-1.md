@@ -20,8 +20,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 ## Action details
 
-### Action 1 {#Action-1}
-
+### Action 1 - Start session {#Action-1}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -55,15 +54,17 @@ This call signals _the user's intention to play_ a video. <br/><br/>It returns a
 }
 ```
 
-### Action 2 {#Action-2}
-
+### Action 2 - Ping timer start {#Action-2}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App starts ping event timer | 0 | 0 | `/api/v1/sessions/{sid}/events` | Start your app's 10-second ping timer. First ping event should then fire 10 seconds into the session.  |
+| App starts ping event timer | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
-### Action 3 {#Action-3}
+**Implementation Details**
 
+Start your app's ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.  
+
+### Action 3 - Ad break start {#Action-3}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -89,8 +90,7 @@ Ads can only be tracked within an ad break.
 }
 ```
 
-### Action 4 {#Action-4}
-
+### Action 4 - Ad start {#Action-4}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -130,9 +130,9 @@ Start tracking the first pre-roll ad, which is 15 seconds long. Including custom
 }
 ```
 
-### Action 5 {#Action-5}
+### Action 5 - Ad pings {#Action-5}
 
-#### Action 5.1 {#Action-5-1}
+#### Action 5.1 - Ad ping 1 {#Action-5-1}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -154,7 +154,7 @@ Ping the backend every 1 second while inside an ad.
 }
 ```
 
-#### Action 5.2 {#Action-5-2}
+#### Action 5.2 - Ad ping 2 {#Action-5-2}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -176,7 +176,7 @@ Ping the backend every 1 second while inside an ad.
 }
 ```
 
-#### Action 5.3 {#Action-5-3}
+#### Action 5.3 - Ad ping 3 {#Action-5-3}
 
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
@@ -190,7 +190,7 @@ Ping the backend every 1 second while inside an ad.
 >[!NOTE]
 >
 >Subsequent ads in the timeline will skip showing the series of one-second pings 
->in the interest of readability...
+>in the interest of brevity...
 
 **Sample request body**
 
@@ -204,8 +204,7 @@ Ping the backend every 1 second while inside an ad.
 }
 ```
 
-### Action 6 {#Action-6}
-
+### Action 6 - Ad complete {#Action-6}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -227,8 +226,7 @@ Track the end of the first pre-roll ad.
 }
 ```
 
-### Action 7 {#Action-7}
-
+### Action 7 - Ad start {#Action-7}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -263,8 +261,7 @@ Track the start of the second pre-roll ad, which is 7 seconds long.
 }
 ```
 
-### Action 8 {#Action-8}
-
+### Action 8 - Ad pings {#Action-8}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -272,7 +269,7 @@ Track the start of the second pre-roll ad, which is 7 seconds long.
 
 **Implementation Detail**
 
-Ping the backend every 10 seconds.
+Ping the backend every 1 second.
 
 **Sample request body**
 
@@ -286,8 +283,7 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 9 {#Action-9}
-
+### Action 9 - Ad complete {#Action-9}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -309,8 +305,7 @@ Track the end of the second pre-roll ad.
 }
 ```
 
-### Action 10 {#Action-10}
-
+### Action 10 - Ad break complete {#Action-10}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -332,8 +327,7 @@ The ad break is over. Throughout the ad break, the play state has remained "play
 }
 ```
 
-### Action 11 {#Action-11}
-
+### Action 11 - Play content {#Action-11}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -355,8 +349,7 @@ After the `adBreakComplete` event, put the player is in the "playing" state usin
 }
 ```
 
-### Action 12 {#Action-12}
-
+### Action 12 - Ping {#Action-12}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -378,8 +371,7 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 13 {#Action-13}
-
+### Action 13 - Buffer start {#Action-13}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -400,8 +392,7 @@ Track the player's move to the "buffering" state.
 }
 ```
 
-### Action 14 {#Action-14}
-
+### Action 14 - Buffer end {#Action-14}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -423,8 +414,7 @@ Buffering ends after 3 seconds, so put the player back to the "playing" state. Y
 }
 ```
 
-### Action 15 {#Action-15}
-
+### Action 15 - Ping {#Action-15}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -445,8 +435,7 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 16 {#Action-16}
-
+### Action 16 - Ad break start {#Action-16}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -473,8 +462,7 @@ Mid-roll ad of 8 seconds duration: send `adBreakStart` .
 }
 ```
 
-### Action 17 {#Action-17}
-
+### Action 17 - Ad start {#Action-17}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -509,8 +497,7 @@ Track the mid-roll ad.
 }
 ```
 
-### Action 18 {#Action-18}
-
+### Action 18 - Ad ping {#Action-18}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -531,8 +518,7 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 19 {#Action-19}
-
+### Action 19 - Ad complete {#Action-19}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -554,8 +540,7 @@ The mid-roll ad is complete.
 }
 ```
 
-### Action 20 {#Action-20}
-
+### Action 20 - Ad break complete {#Action-20}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -577,8 +562,7 @@ The ad break is complete.
 }
 ```
 
-### Action 21 {#Action-21}
-
+### Action 21 - Ping {#Action-21}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -600,8 +584,7 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 22 {#Action-22}
-
+### Action 22 - Pause {#Action-22}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -623,8 +606,7 @@ The user's action moves the play state to "paused".
 }
 ```
 
-### Action 23 {#Action-23}
-
+### Action 23 - Ping {#Action-23}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -645,8 +627,7 @@ Ping the backend every 10 seconds. Player is still in the "buffering" state; the
 }
 ```
 
-### Action 24 {#Action-24}
-
+### Action 24 - Play {#Action-24}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -667,8 +648,7 @@ Move the play state to "playing".  **The `play` call after a `pauseStart` infers
 }
 ```
 
-### Action 25 {#Action-25}
-
+### Action 25 - Ping {#Action-25}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
@@ -689,8 +669,7 @@ Ping the backend every 10 seconds.
 }
 ```
 
-### Action 26 {#Action-26}
-
+### Action 26 - Session complete {#Action-26}
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
