@@ -13,7 +13,7 @@ In addition to the metrics and dimensions available when you enable each of the 
 
 Media reports are listed on the **[!UICONTROL Reports]** tab. Navigate to > **[!UICONTROL Media]** > **[!UICONTROL Media Engagement]** and select from: 
 
-| Media Report | Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Common Business Insights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Media&nbsp;Report | Description&nbsp;&nbsp;&nbsp;&nbsp; | Common Business Insights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | --- | --- |
 | [Media overview](media-reports-overview.md) | Displays several aggregate measurements to quickly monitor that media is performing as expected. A graph displays media starts next to ad impressions to let you quickly view and compare these metrics.  | <ul> <li>Totals for top metrics including content starts, completion rate, average time on stream, and average media items per visit.  </li> <li>Total content and ad starts for media filtered by device type or country.  </li> </ul> |
 | [Media detail](media-reports-detail.md) | Displays detailed metrics for all media items including starts, concurrent viewers, completion rate, play percentage, and ad impressions.  | <ul> <li>Totals for top metrics including media starts, content and ad starts, and average content per visit.  </li> <li>Total content and ad starts for media filtered by device type or country.  </li> </ul> |
