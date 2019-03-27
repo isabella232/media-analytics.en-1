@@ -9,7 +9,7 @@ uuid: 530477b8-4de3-449d-bb6d-a47dadd1da5a
 
 This test case is required as part of the certification request form and validates general playback and sequencing.
 
-Download the certification request form here: [Certification request form](../../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md).
+Download the certification request form here: [Certification request form.](../../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md)
 
 Video implementations are composed of the following types of tracking calls:
 
@@ -98,7 +98,7 @@ You must complete and record these tasks in the following order:
    1. Heartbeat analytics start 
    1. Nielsen view ping
 
-   &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **View ad break if available.**
 
@@ -111,7 +111,7 @@ You must complete and record these tasks in the following order:
      1. Heartbeat ad analytics start 
      1. Nielsen DCR view ping
 
-     &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+     &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
    * **Ad Play**
 
@@ -142,7 +142,7 @@ You must complete and record these tasks in the following order:
    * The playhead position should increment by 10 with every play call.
    * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
 
-   For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **Pause during playback for at least 30 seconds.**
 

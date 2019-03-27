@@ -13,4 +13,4 @@ uuid: e4c32360-65df-4d5a-b74d-e00a2f9862be
 
 When making a certification request, complete the certification request form and send it to your certification consultant. You must submit one request per platform (iOS/Android/JS).
 
-**Download the certification request form here:** [Certification Request Form](cert_req_form_nielsen.docx). 
+**Download the certification request form here:** [Certification Request Form.](cert_req_form_nielsen.docx)

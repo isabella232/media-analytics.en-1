@@ -13,7 +13,7 @@ The Android sample code helps you implement the Video Heartbeat Library for Niel
 
 You can configure each of the video heartbeat library components individually for Digital Content Ratings (Nielsen).
 
-For detailed instructions, see [Configure the Video Heartbeat Library](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_android.pdf)
+For detailed instructions, see [Configure the Video Heartbeat Library.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/vhl-dev-guide-v15_android.pdf)
 
 ## Create the AdobeNielsenAPI {#section_129D10D357DE4320AF8277DA387CA411}
 
@@ -35,7 +35,7 @@ Context context = <android-application-context>;
 AdobeNielsenAPI.configure(context, appInfo);
 ```
 
-For more information about `AppInfo`, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md).
+For more information about `AppInfo`, see *NielsenAppInfo* in [Variables and metadata.](../dcr-vars-metadata.md)
 
 ## Instantiate and Configure the Video Heartbeat Components {#section_DFDF33ACC9D347F99F4315DD11381641}
 
@@ -139,7 +139,7 @@ To implement MTVR in Android 1.6x, make the following changes to your existing N
    | `adloadtype` | <ul> <li>When linear ads are present (DTVR), the `adloadtype` = 1.  </li> <li>When DAI ads are present (DCR), the `adloadtype` = 2.  </li> </ul> |
    | `admodel` | <ul> <li>When linear ads are present (DTVR), the `admodel` = 1.  </li> <li>When DAI ads are present (DCR), the `admodel` = 2.  </li> </ul> | 
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation.](../../nielsen-partnership/dcr-impl/dcr-dtvr.md)
 
    For example: 
 
@@ -157,7 +157,7 @@ To implement MTVR in Android 1.6x, make the following changes to your existing N
    }
    ```
 
-   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata.](../dcr-vars-metadata.md)
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

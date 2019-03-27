@@ -46,7 +46,7 @@ A sample configuration for this scenario would look like this:
 <!--
 You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
 
-1. Navigate to: [https://marketing.adobe.com/developer/api-explorer](https://marketing.adobe.com/developer/api-explorer).
+1. Navigate to: [https://marketing.adobe.com/developer/api-explorer.](https://marketing.adobe.com/developer/api-explorer)
 1. Select and enter the following information in the API Explorer form:
 
     * **API -** Select "Report".

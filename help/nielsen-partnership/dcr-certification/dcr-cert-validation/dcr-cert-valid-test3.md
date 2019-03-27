@@ -9,7 +9,7 @@ uuid: 4b96209f-b336-475e-a848-618caea9c184
 
 This test case is required as part of the certification request form and validates mobile interruption behavior.
 
-Download the certification request form here: [Certification request form](../../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md).
+Download the certification request form here: [Certification request form.](../../../nielsen-partnership/dcr-certification/dcr-cert-request-form.md)
 
 ## Validation {#section_6596F19AC854443B8624A264ECE020FE}
 
@@ -47,7 +47,7 @@ You must complete and record these tasks in the following order:
 
      Verify that the current Nielsen Opt-in/Opt-out Privacy page is displayed properly in a window on the device.
 
-     For implementation details, see the Opt-Out section in [Opt-out implementation](https://engineeringportal.nielsen.com/docs/Browser_SDK_API_Reference#Browser_Opt-Out_Implementation).
+     For implementation details, see the Opt-Out section in [Opt-out implementation.](https://engineeringportal.nielsen.com/docs/Browser_SDK_API_Reference#Browser_Opt-Out_Implementation)
 
      After clicking the Nielsen opt-out, one Goodbye call is sent to Nielsen. Once the Goodbye call is sent, no additional network calls should be sent to Nielsen. 
 
@@ -100,7 +100,7 @@ You must complete and record these tasks in the following order:
    1. Heartbeat analytics start 
    1. Nielsen DCR start
 
-   &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **View ad playback.**
 
@@ -113,13 +113,13 @@ You must complete and record these tasks in the following order:
    1. Heartbeat ad analytics start 
    1. Nielsen DCR ad start
 
-   &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   &#42;These calls contain additional metadata and Nielsen variables. For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **Play main content video for at least 10 minutes uninterrupted.** 
 
    During regular main content playback, Heartbeat calls are sent to the Heartbeat server every ten seconds. Nielsen calls are sent to the Nielsen server every five minutes.
 
-   For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **Close the video player.** 
 

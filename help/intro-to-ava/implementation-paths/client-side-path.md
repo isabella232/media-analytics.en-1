@@ -11,7 +11,7 @@ Media Analytics (Heartbeats) is Adobe’s standardized media tracking solution. 
 
 Client Side integrations are implemented with Media Analytics only. You can choose to implement either the Media SDK or the Media Collection API (or both). The client-side path can be used across any player, including customer and/or OVP players such as Brightcove, Ooyala, thePlatform, and so on.
 
-If Media Analytics is your intended path, see [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and [Media Collection API](../../media-collection-api/mc-api-overview.md).
+If Media Analytics is your intended path, see [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and [Media Collection API.](../../media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >

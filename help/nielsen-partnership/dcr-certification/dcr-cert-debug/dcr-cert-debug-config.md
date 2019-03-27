@@ -39,7 +39,7 @@ The recommended browsers are the latest versions of Chrome and Firefox.
 
 To download and configure the Debug Proxy:
 
-1. Download the Debug Proxy app at [App Downloads](https://debug.adobe.com/#/downloads).
+1. Download the Debug Proxy app at [App Downloads.](https://debug.adobe.com/#/downloads)
 
    The supported operating systems are:
 
@@ -79,7 +79,7 @@ To download and install the SSL certificate:
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1. For Firefox, complete the procedure in [Installing root certificate in Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox).
+    1. For Firefox, complete the procedure in [Installing root certificate in Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
 
        You might need to quit and reopen Firefox to see the change.
 
@@ -87,7 +87,7 @@ To download and install the SSL certificate:
 
     1. Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **>** **[!UICONTROL Wifi settings]**. 
     
-    1. In Safari, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
+    1. In Safari, go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
 
        Safari will prompt you to install the SSL certificate.
 
@@ -99,14 +99,14 @@ If you are missing the HTTPS calls in Adobe Debug, you must install the SSL Cert
 
 To install the SSL certificate on an iOS device:
 
-1. On your laptop, turn on the Debug Proxy, and go to [Adobe Debug](https://debug.adobe.com). 
+1. On your laptop, turn on the Debug Proxy, and go to [Adobe Debug.](https://debug.adobe.com)
 1. Complete the following steps on your iOS device:
 
     1. Turn your device to airplane mode. 
     1. Select the same Wi-Fi signal that is used by your laptop. 
     1. On your laptop, manually set the IP and port shown on the Debug Proxy app. 
     1. Open an Apple Safari browser window. 
-    1. Go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl). 
+    1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
     1. Download and install the SSL certificate.
 
 1. On your laptop, start your Adobe Debug session. 
@@ -116,14 +116,14 @@ To install the SSL certificate on an iOS device:
 
 To install the SSL certificate on an Android device:
 
-1. On your laptop turn on the Debug Proxy and go to [Adobe Debug](https://debug.adobe.com). 
+1. On your laptop turn on the Debug Proxy and go to [Adobe Debug.](https://debug.adobe.com)
 1. Complete the following steps on your Android device:
 
     1. Set your device to Airplane Mode. 
     1. Select the same Wi-Fi signal that is used by your laptop. 
     1. On your laptop, manually set the IP and port shown on the Debug Proxy app. 
     1. Open a browser window. 
-    1. Go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl). 
+    1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
     1. Download and install the SSL certificate.
 
 1. On your laptop, start your Adobe Debug session. 

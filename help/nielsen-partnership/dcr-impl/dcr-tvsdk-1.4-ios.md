@@ -15,11 +15,11 @@ This iOS implementation guide helps you implement the `PTVideoAnalyticsTracker` 
 
 You can configure and initialize video analytics for Digital Content Ratings (Nielsen).
 
-For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics).
+For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics.](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#Video_analytics)
 
 1. Configure the Nielsen API in iOS.
 
-   Initialize Nielsen Measurement by providing the required AppInfo with application details. For more information about `AppInfo`, see `NielsenAppInfo` in [Variables and Metadata](../dcr-vars-metadata.md).
+   Initialize Nielsen Measurement by providing the required AppInfo with application details. For more information about `AppInfo`, see `NielsenAppInfo` in [Variables and Metadata.](../dcr-vars-metadata.md)
 
    ```
    // Configure Nielsen API 
@@ -41,7 +41,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
     * Channel Metadata `NielsenChannelMetadata`
     * Ad Metadata `NielsenAdMetadata`
 
-   For more information on required parameters for Nielsen metadata, see [Variables and Metadata](../dcr-vars-metadata.md).
+   For more information on required parameters for Nielsen metadata, see [Variables and Metadata.](../dcr-vars-metadata.md)
 
    Create an instance of the `PTVideoAnalyticsNielsenMetadata`, and this instance contains all of the configuration information that is needed to enable video heartbeat tracking. For example: 
 
@@ -138,7 +138,7 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
    | `adloadtype` | When linear ads are present (MTVR), the adloadtype = *1*.  <br/>When DAI ads are present (DCR), the adloadtype = *2*. |
    | `admodel` | When linear ads are present (MTVR), the admodel = *1*. <br/>When DAI ads are present (DCR), the admodel = *2*.  |
 
-   For dynamic ads, the default value is *2*. A value of *1* is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../dcr-vars-metadata.md).
+   For dynamic ads, the default value is *2*. A value of *1* is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR).](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B) For more information about variables and metadata, see [Variables and Metadata.](../dcr-vars-metadata.md)
 
    ```
    - (PTVideoAnalyticsNielsenMetadata*) createNielsenMetadata { 
@@ -207,4 +207,4 @@ To implement MTVR in TVSDK for iOS, make the following changes to your existing 
 
 >[!TIP]
 >
->For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md).
+>For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings.](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md)

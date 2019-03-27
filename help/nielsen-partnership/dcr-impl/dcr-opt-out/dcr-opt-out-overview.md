@@ -93,7 +93,7 @@ If you choose to separate your Adobe and Nielsen opt-outs on mobile devices, her
     
     1. After implementing the Nielsen opt-out status in a variable and adding it as context data to all [!DNL Analytics] calls, the app developer must log in to the [!DNL Adobe Mobile Services] UI to configure the postbacks to fire only when the Nielsen opt-out parameter is not present.
 
-       This step results in a `goodbye` ping that is sent to Nielsen, which terminates Nielsen data collection. For more information, see [Configure Postbacks](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html).
+       This step results in a `goodbye` ping that is sent to Nielsen, which terminates Nielsen data collection. For more information, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html)
 
 * **Mobile Video** Because the alignment of the opt-out requires extra steps for the app developer, separating the two opt-outs for mobile video involves not taking those extra steps.
 

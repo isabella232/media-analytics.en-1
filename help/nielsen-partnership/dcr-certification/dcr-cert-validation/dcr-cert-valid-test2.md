@@ -9,7 +9,7 @@ uuid: f9af7493-6bbe-489f-8b94-0d5ceaec9ec3
 
 This test case is required as part of the certification request form and validates mobile interruption behavior.
 
-To download the certification request form, click [Certification Request Form](../cert_req_form_nielsen.docx).
+To download the certification request form, click [Certification Request Form.](../cert_req_form_nielsen.docx)
 
 You must complete and record these tasks in following order:
 
@@ -30,7 +30,7 @@ You must complete and record these tasks in following order:
 
    During regular main content playback, Heartbeat calls are sent to the Heartbeat server every ten seconds. Nielsen calls are sent to the Nielsen server every five minutes.
 
-   For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **Move app or browser to the background.**
 
@@ -42,7 +42,7 @@ You must complete and record these tasks in following order:
 
 1. **Play main content video for at least 5 minutes uninterrupted.**
 
-   For call parameters and metadata, see [Test call details](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md).
+   For call parameters and metadata, see [Test call details.](../../../nielsen-partnership/dcr-certification/dcr-cert-validation/dcr-cert-valid-call-details.md)
 
 1. **Close video player.** 
 

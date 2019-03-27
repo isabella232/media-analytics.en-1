@@ -46,7 +46,7 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 
    >[!NOTE]
    >
-   >You must use the correct data types in the JSON request body. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md).
+   >You must use the correct data types in the JSON request body. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 1. Send Sessions requests to the MA Collection API endpoint. If your request payload is invalid, identify the problem and retry until you get a `201 Created` response. In this `curl` example, the JSON request body is in a file named [!DNL sample_data_session]: 
 

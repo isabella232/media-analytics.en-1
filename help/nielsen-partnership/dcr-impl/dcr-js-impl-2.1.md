@@ -17,12 +17,12 @@ To configure the Nielsen API:
 
 1. Create an instance of AppInfo with all the required application information needed to initialize Nielsen Measurement and provide it to MediaHeartbeatConfig.
 
-   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata.](../dcr-vars-metadata.md)
 1. Provide the Nielsen config key to `MediaHeartbeatConfig`.
 
    You can obtain the Nielsen config key through your Adobe representative.
 
-For more information, see [Set up and Configure your MediaHeartbeat instance](../../sdk-implement/setup/set-up-js.md). If you created the `MediaHeartbeatConfig` instance, complete the steps to add the Nielsen app info and the config key.
+For more information, see [Set up and Configure your MediaHeartbeat instance.](../../sdk-implement/setup/set-up-js.md) If you created the `MediaHeartbeatConfig` instance, complete the steps to add the Nielsen app info and the config key.
 
 For example: 
 
@@ -51,7 +51,7 @@ Nielsen metadata objects are used to provide required tracking data to Nielsen S
 
 The following types of metadata must be configured:
 
-* **Content Metadata** Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-js.md).
+* **Content Metadata** Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback.](../../sdk-implement/track-av-playback/track-core/track-core-js.md)
 
   For example: 
 
@@ -85,7 +85,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
 
-* **Channel Metadata** Create the channel info metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-js.md).
+* **Channel Metadata** Create the channel info metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for Javascript, see [Track core playback.](../../sdk-implement/track-av-playback/track-core/track-core-js.md)
 
   For example: 
 
@@ -107,7 +107,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the AdObject for any Ad start event. For more information about the core playback implementation for Javascript, see [Track ads](../../sdk-implement/track-ads/track-ads-js.md).
+* **Ad Metadata** Create Ad metadata object while initializing the AdObject for any Ad start event. For more information about the core playback implementation for Javascript, see [Track ads.](../../sdk-implement/track-ads/track-ads-js.md)
 
   For example: 
 
@@ -142,7 +142,7 @@ To implement DTVR in Javascript 2.1, make the following changes to your existing
    | `AD_LOAD_TYPE` | <ul> <li>When linear ads are present (DTVR), the `AD_LOAD_TYPE` = 1.  </li> <li>When DAI ads are present (DCR), the `AD_LOAD_TYPE` = 2.  </li> </ul> |
    | `TYPE` | `content` | 
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation.](../../nielsen-partnership/dcr-impl/dcr-dtvr.md)
 
    For example: 
 
@@ -181,7 +181,7 @@ To implement DTVR in Javascript 2.1, make the following changes to your existing
    };
    ```
 
-   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata.](../dcr-vars-metadata.md)
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

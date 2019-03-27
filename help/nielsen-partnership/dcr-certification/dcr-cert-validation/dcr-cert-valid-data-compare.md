@@ -73,7 +73,7 @@ To view the corresponding Nielsen data in Adobe Analytics:
 
    ![](assets/nielsen-time-zone.png)
 
-   For more information about creating a virtual report suite, see [Creating Virtual Report Suites](https://marketing.adobe.com/resources/help/en_US/reference/vrs-create.html).
+   For more information about creating a virtual report suite, see [Creating Virtual Report Suites.](https://marketing.adobe.com/resources/help/en_US/reference/vrs-create.html)
 
 ## Nielsen DCR Data {#section_48213E18F54A47A2A09BD7F886598C8A}
 

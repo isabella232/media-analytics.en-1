@@ -11,7 +11,7 @@ This Android sample code helps you implement the Video Heartbeat Library for Nie
 
 ## Configure the Video Heartbeat Library {#section_AEA0B5C7F06C4D45BE17A1EAD1BD7300}
 
-For detailed instructions, see [Set up Android](../../sdk-implement/setup/set-up-android.md).
+For detailed instructions, see [Set up Android.](../../sdk-implement/setup/set-up-android.md)
 
 ## Configure the Nielsen API in Android {#section_BB671DDBC2324205BBE985D684C7E0A7}
 
@@ -19,7 +19,7 @@ You can configure each of the video heartbeat library components individually fo
 
 1. Create an instance of `AppInfo` with all the required application info needed to initialize Nielsen Measurement.
 
-   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata.](../dcr-vars-metadata.md)
 
    ```java
    // Creation of AppInfo Object 
@@ -48,7 +48,7 @@ You can configure each of the video heartbeat library components individually fo
 
 Another step for configuring Nielsen is to provide the Nielsen config key to `MediaHeartbeatConfig`.
 
-You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `MediaHeartbeat` and for creating an instance of `MediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](../../sdk-implement/setup/set-up-android.md). If you have the `MediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
+You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `MediaHeartbeat` and for creating an instance of `MediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance.](../../sdk-implement/setup/set-up-android.md) If you have the `MediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
 
 ```java
 // Media Heartbeat initialization 
@@ -66,7 +66,7 @@ You can configure each of the video heartbeat library components individually fo
 
 The following types of metadata must be configured:
 
-* **Content Metadata** Create the content metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-android.md).
+* **Content Metadata** Create the content metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback.](../../sdk-implement/track-av-playback/track-core/track-core-android.md)
 
   For example: 
 
@@ -101,7 +101,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenContentMetadata, contentMetadata);
   ```
 
-* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-android.md).
+* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject` for the session start. For more information about the core playback implementation for Android, see [Track core playback.](../../sdk-implement/track-av-playback/track-core/track-core-android.md)
 
   For example: 
 
@@ -122,7 +122,7 @@ The following types of metadata must be configured:
   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.NielsenChannelMetadata, channelInfo);
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information, see [Track ads](../../sdk-implement/track-ads/track-ads-android.md).
+* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information, see [Track ads.](../../sdk-implement/track-ads/track-ads-android.md)
 
   For example: 
 
@@ -155,7 +155,7 @@ To implement MTVR in Android 2.1, make the following changes to your existing Ni
    | `AD_LOAD_TYPE` | <ul> <li>When linear ads are present (DTVR), the `AD_LOAD_TYPE` = 1.  </li> <li>When DAI ads are present (DCR), the `AD_LOAD_TYPE` = 2.  </li> </ul> |
    | `TYPE` | `content` | 
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation.](../dcr-impl/dcr-dtvr.md)
 
    For example: 
 
@@ -191,7 +191,7 @@ To implement MTVR in Android 2.1, make the following changes to your existing Ni
    }
    ```
 
-   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata.](../dcr-vars-metadata.md)
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

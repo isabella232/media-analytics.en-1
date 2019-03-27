@@ -38,7 +38,7 @@ The Federated Analytics service provides a system for sharing Adobe Media (audio
 
 1. Sender and Receiver work together to complete the Federation Rules Agreement form.
 
-   **Download the current version of the form here:** [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf).
+   **Download the current version of the form here:** [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf)
 
    >[!NOTE]
    >

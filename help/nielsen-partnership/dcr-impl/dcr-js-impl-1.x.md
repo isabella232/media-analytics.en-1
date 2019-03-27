@@ -41,7 +41,7 @@ heartbeat.configure(heartbeatConfig);
 >
 >You need to get the `nielsenPluginConfig.configKey` key from your Adobe representative.
 
-For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md).
+For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata.](../dcr-vars-metadata.md)
 
 ## Implement the NielsenPluginDelegate {#section_A9610928B87E49B3831B8C1A0BA9FEE6}
 
@@ -110,7 +110,7 @@ To implement DTVR in Javascript 1.x, make the following changes to your existing
    | `adloadtype` | <ul> <li>When linear ads are present (DTVR), the `adloadtype@` = 1.  </li> <li>When DAI ads are present (DCR), the `adloadtype` = 2.  </li> </ul> |
    | `admodel` | <ul> <li>When linear ads are present (DTVR), the `admodel` = 1.  </li> <li>When DAI ads are present (DCR), the `admodel` = 2.  </li> </ul> | 
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation.](../../nielsen-partnership/dcr-impl/dcr-dtvr.md)
 
    For example: 
 
@@ -125,7 +125,7 @@ To implement DTVR in Javascript 1.x, make the following changes to your existing
    };
    ```
 
-   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata.](../dcr-vars-metadata.md)
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 

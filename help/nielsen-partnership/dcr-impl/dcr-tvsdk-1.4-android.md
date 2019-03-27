@@ -13,11 +13,11 @@ This Android implementation guide helps you implement `VideoAnalyticsProviderWit
 
 You can configure and initialize video analytics for Digital Content Ratings (Nielsen).
 
-For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics). If you plan to enable Nielsen tracking, ensure that you create an instance of `VideoAnalytocsProviderWithNielsen` instead of `VideoAnalyticsProvider`.
+For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoHeartbeats`, see [Video Analytics.](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#Video_analytics) If you plan to enable Nielsen tracking, ensure that you create an instance of `VideoAnalytocsProviderWithNielsen` instead of `VideoAnalyticsProvider`.
 
 1. Configure the Nielsen API in Android.
 
-   Initialize Nielsen Measurement by providing the required AppInfo with application details. For more information about `AppInfo`, see `NielsenAppInfo` in [Variables and Metadata](../dcr-vars-metadata.md).
+   Initialize Nielsen Measurement by providing the required AppInfo with application details. For more information about `AppInfo`, see `NielsenAppInfo` in [Variables and Metadata.](../dcr-vars-metadata.md)
 
    ```java
    // Configure Nielsen API 
@@ -41,7 +41,7 @@ For detailed instructions about setting up `PTVideoAnalyticsTracker` for `VideoH
    * Channel Metadata ( `NielsenChannelMetadata`) 
    * Ad Metadata ( `NielsenAdMetadata`)
 
-   For more information on required parameters for Nielsen metadata, see [Variables and Metadata](../dcr-vars-metadata.md).
+   For more information on required parameters for Nielsen metadata, see [Variables and Metadata.](../dcr-vars-metadata.md)
 
    Create an instance of the `VideoAnalyticsNielsenMetadata`, and this instance contains all of the configuration information that is needed to enable video heartbeat tracking. For example: 
 
@@ -136,7 +136,7 @@ To implement MTVR in TVSDK for Android, make the following changes to your exist
    | `adloadtype` | <ul> <li>When linear ads are present (DTVR), the adloadtype = "1".  </li> <li>When DAI ads are present (DCR), the adloadtype = "2".  </li> </ul> |
    | `admodel` | <ul> <li>When linear ads are present (DTVR), the admodel = "1".  </li> <li>When DAI ads are present (DCR), the admodel = "2".  </li> </ul> |
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR)](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B). For more information about variables and metadata, see [Variables and Metadata](../dcr-vars-metadata.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [Digital Television Ratings (DTVR/MTVR).](../../nielsen-partnership/dcr-impl/dcr-dtvr.md#concept_CE553265019A45C58B234EF6F37DB12B) For more information about variables and metadata, see [Variables and Metadata.](../dcr-vars-metadata.md)
 
    ```java
    private VideoAnalyticsNielsenMetadata createVAMetadataWithNielsen() { 
@@ -201,5 +201,5 @@ To implement MTVR in TVSDK for Android, make the following changes to your exist
 
 >[!TIP]
 >
->For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md).
+>For help with implementing Web view for Opt-In/Opt-Out, see the sample implementation [Opt-out settings.](../../nielsen-partnership/dcr-impl/dcr-opt-out/dcr-opt-out-settings.md)
 

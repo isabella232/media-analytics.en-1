@@ -17,7 +17,7 @@ You can configure each of the video heartbeat library components individually fo
 
 Initialize Nielsen Measurement by providing the required AppInfo with application details.
 
-For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata](../dcr-vars-metadata.md). 
+For more information about AppInfo, see *NielsenAppInfo* in [Variables and metadata.](../dcr-vars-metadata.md)
 
 ```
 // Configure Nielsen API 
@@ -33,7 +33,7 @@ For more information about AppInfo, see *NielsenAppInfo* in [Variables and metad
 
 Another step for configuring Nielsen is to provide Nielsen config key to `ADBMediaHeartbeatConfig`.
 
-You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `ADBMediaHeartbeat` and creating an instance of `ADBMediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance](../../sdk-implement/setup/set-up-ios.md). If you have the `ADBMediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
+You can obtain the Nielsen config key from your Adobe representative. For more information about configuring `ADBMediaHeartbeat` and creating an instance of `ADBMediaHeartbeatConfig`, [Set up and configure your MediaHeartbeat Instance.](../../sdk-implement/setup/set-up-ios.md) If you have the `ADBMediaHeartbeatConfig` instance created, you can add the Nielsen config key in the following way: 
 
 ```
 // Media Heartbeat Initialization 
@@ -54,7 +54,7 @@ The following types of metadata must be configured:
 
 * **Content Metadata**
 
-  Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for iOS, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-ios.md).
+  Create the content metadata object while initializing the MediaObject for the session start. For more information about the core playback implementation for iOS, see [Track core playback.](../../sdk-implement/track-av-playback/track-core/track-core-ios.md)
 
   For example: 
 
@@ -80,7 +80,7 @@ The following types of metadata must be configured:
     forKey:MEDIAHEARTBEAT_NIELSEN_CONTENT_METADATA]; 
   ```
 
-* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject`for the session start. For more information, see [Track core playback](../../sdk-implement/track-av-playback/track-core/track-core-ios.md).
+* **Channel Metadata** Create the channel info metadata object while initializing the `MediaObject`for the session start. For more information, see [Track core playback.](../../sdk-implement/track-av-playback/track-core/track-core-ios.md)
 
   For example: 
 
@@ -101,7 +101,7 @@ The following types of metadata must be configured:
     forKey:MEDIAHEARTBEAT_NIELSEN_CHANNEL_METADATA];
   ```
 
-* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for iOS, see [Track ads](../../sdk-implement/track-ads/track-ads-ios.md).
+* **Ad Metadata** Create Ad metadata object while initializing the `AdObject` for any Ad start event. For more information about the core playback implementation for iOS, see [Track ads.](../../sdk-implement/track-ads/track-ads-ios.md)
 
   For example: 
 
@@ -132,7 +132,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
    | --- | --- |
    | `adloadtype` | <ul> <li>When linear ads are present (DTVR), the `adloadtype` = 1.  </li> <li>When DAI ads are present (DCR), the `adloadtype` = 2.  </li> </ul> | 
 
-   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation](../../nielsen-partnership/dcr-impl/dcr-dtvr.md).
+   For dynamic ads, the default value is 2. A value of 1 is used to convey that the ad load matches linear TV. For more information about these keys/values, see [DTVR/MTVR implementation.](../../nielsen-partnership/dcr-impl/dcr-dtvr.md)
 
    For example: 
 
@@ -168,7 +168,7 @@ To implement MTVR in iOS 2.0, make the following changes to your existing Nielse
    ...
    ```
 
-   For more information, see [Variables and metadata](../dcr-vars-metadata.md). 
+   For more information, see [Variables and metadata.](../dcr-vars-metadata.md)
 
 1. Retrieve the Nielsen ID3 tags and pass them to the `VideoPlayerPlugin` (VHL) instance by using the `trackTimedMetadata` API.
 
