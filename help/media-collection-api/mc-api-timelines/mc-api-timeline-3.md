@@ -139,7 +139,7 @@ Start tracking the first pre-roll ad, which is 15 seconds long. Including custom
 
 **Implementation details**
 
-Ping the backend every 1 second.
+Ping the backend every 1 second. (Subsequent ad pings not shown in the interest of brevity.)
 
 **Sample request body**
 

@@ -130,11 +130,11 @@ A 12 second ad starts.
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App sends ping event | 10 | 0 | `/api/v1/sessions/{sid}/events`  |
+| App sends ping event | 1 | 0 | `/api/v1/sessions/{sid}/events`  |
 
 **Implementation Details**
 
-Ping the backend every 1 second.
+Ping the backend every 1 second. (Subsequent ad pings not shown, in the interest of brevity.)
 
 **Sample request body**
 
