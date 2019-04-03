@@ -214,11 +214,11 @@ Track the start of the second pre-roll ad, which is 7 seconds long.
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App sends ping event | 20 | 0 | `/api/v1/sessions/{sid}/events`  |
+| App sends ping event | 16 | 0 | `/api/v1/sessions/{sid}/events`  |
 
 **Implementation details**
 
-Ping the backend every 0 second.
+Ping the backend every 1 second. (Subsequent ad pings not shown in the interest of brevity.)
 
 **Sample request body**
 
@@ -493,15 +493,15 @@ Track the mid-roll ad.
 }
 ```
 
-### Action 20 - Ping {#Action-20}
+### Action 20 - Ad Pings {#Action-20}
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| App sends ping event | 50 | 21 | `/api/v1/sessions/{sid}/events`  |
+| App sends ping event | 47 | 21 | `/api/v1/sessions/{sid}/events`  |
 
 **Implementation details**
 
-Ping the backend every 10 seconds.
+Ping the backend every 1 second. (Subsequent ad pings not shown in the interest of brevity.)
 
 **Sample request body**
 
