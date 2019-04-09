@@ -14,7 +14,7 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 1. Gather the standard, required Adobe Analytics and Visitor data that you must supply to run any of the Experience Cloud applications:
 
    * Visitor Experience Cloud Org ID
-   * Analytics Visitor ID
+   * Visitor Experience Cloud User ID
    * Analytics Report Suite ID
    * Analytics Tracking Server URL
 
@@ -31,11 +31,11 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
            "media.playerName": "sample-html5-api-player", 
            "analytics.trackingServer": "[YOUR_TS]", 
            "analytics.reportSuite": "[YOUR_RSID]", 
-           "analytics.visitorId": "[YOUR_VISITOR_ID]", 
            "media.contentType": "VOD", 
            "media.length": 60.39333333333333, 
            "media.id": "MA Collection API Sample Player", 
            "visitor.marketingCloudOrgId": "[YOUR_ORG_ID]", 
+           "visitor.marketingCloudUserId": "[YOUR_ECID]",
            "media.name": "ClickMe", 
            "media.channel": "sample-channel", 
            "media.sdkVersion": "va-api-0.0.0", 
