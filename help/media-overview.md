@@ -7,6 +7,8 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 
 # Measuring audio and video in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
+![Banner](./assets/media_analytics_banner.png)
+
 >[!IMPORTANT]
 >
 >The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. We encourage all customers to move towards adopting one or both of the two latest media tracking solutions, in order to capitalize on improvements and expanded measurement. You can view the [benefits of transitioning to the latest solutions](media-overview.md#section_cnj_5st_p1b) below. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Please reach out to your Adobe Account Manager if you have any further questions.
