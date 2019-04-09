@@ -14,14 +14,14 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | `analytics.trackingServer` | Y | `sessionStart` | The URL of your Adobe Analytics server |
 | `analytics.reportSuite` | Y | `sessionStart` | The ID that identifies your Analytics reporting data |
 | `analytics.enableSSL` | N | `sessionStart` | True or false for enabling SSL |
-| `analytics.visitorId` | N | `sessionStart` | Your Adobe Visitor ID, used across several Adobe applications |
+| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat `visitorId` equals the Analytics `VID.` |
 
 ## Visitor Data
 
 | Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | The Experience Cloud User ID, for accessing the Experience Cloud family of apps |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps.|
 | `visitor.aamLocationHint` | N | `sessionStart` | Provides Adobe Audience Manager Edge data |
 | `appInstallationId` | N | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
 
@@ -108,11 +108,11 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ### visitor.marketingCloudUserId
 
-You can pass the Experience Cloud User ID (also known as the `mid` or `mcid`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
+Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. This is a useful feature if you already integrate with other Experience Cloud products and have already obtained the MCID.
 
 >[!NOTE]
 >
->Media Analytics (MA() is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps.
+>Media Analytics (MA() is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps. _This is what you should use to identify users in most scenarios._
 
 ### appInstallationId
 
