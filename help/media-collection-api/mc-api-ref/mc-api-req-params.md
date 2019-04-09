@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA() is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps. _This is what you should use to identify users in most scenarios._
+>Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). You need an Experience Cloud ID to access these apps. _The ECID is what you should use to identify users in most scenarios._
 
 ### appInstallationId
 
