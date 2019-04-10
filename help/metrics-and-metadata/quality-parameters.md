@@ -117,12 +117,12 @@ Table data description:
 
 
 
-### Session End 
+
+### Session End {#session-end}
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:**<br/> 2.1 </li> <li> **Sample Value:**<br/> end </li><li> **Description:**<br/>The end event means that the SDK is sending a close call to the backend. On the receipt of this event, the backend will close the session for this video, and do no further processing. </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> (s:event:type=end) </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> N/A </li> <li> **Context Data:**<br/> </li> <li> **Data Feed:**<br/> </li> <li> **Audience Manager:**<br/> </li> </ul> |
-
+| <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:**<br/> 2.1 </li> <li> **Sample Value:**<br/> end </li><li> **Description:**<br/>The end event means that the SDK is sending a close call to the backend. On the receipt of this event, the backend will close the session for this video, and do no further processing. <br/>If the media was completed to 100%, this should be sent after s:event:type=complete. See [Content Complete](audio-video-parameters.md#content-complete)</li> </ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> (s:event:type=end) </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> N/A </li> <li> **Context Data:**<br/> </li> <li> **Data Feed:**<br/> </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
