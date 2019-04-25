@@ -29,7 +29,7 @@ The state name is reported in the "View State" variable in Adobe Mobile services
 
 ## Send context data
 
-In addition to "State Name", you can send additional context data with each track action call.
+In addition to "State Name", you can send additional context data with each track state call.
 
 ### Roku
 
