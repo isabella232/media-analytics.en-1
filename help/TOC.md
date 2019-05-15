@@ -176,6 +176,5 @@ index: n
         + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md) 
-+ [Nielsen Sunset](nielsen-sunset.md)
 + Additional resources {#additional-resources}
     + [Documentation Updates](additional-resources/doc-updates.md)
