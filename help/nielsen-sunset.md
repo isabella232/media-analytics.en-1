@@ -17,4 +17,3 @@ latest information on Nielsen solutions, see
 >page views, and more. It allowed Media and Entertainment companies to combine 
 >the power of Adobe’s Experience Cloud with Nielsen’s television ratings to 
 >create ratings for digital content that is consumed on any device.
-
