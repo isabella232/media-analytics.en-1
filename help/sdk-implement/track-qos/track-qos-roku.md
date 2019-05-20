@@ -13,13 +13,13 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 
 ## Implemement QOS
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the media SDK.
 
     QoSObject variables: 
  
     >[!TIP]
     >
-    >These variables are only required if you are planning to track QoS.
+    >These variables are only required if you are tracking QoS.
  
     | Variable | Description | Required |
     | --- | --- | :---: |
@@ -28,6 +28,19 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
     | `fps` | FPS value | Yes |
     | `droppedFrames` | Number of dropped frames | Yes |
  
+    For example:
+
+    ```
+    bitrate = 200000
+    fps = 0
+    droppedFrames = 1
+    startupTime = 2
+    qosinfo = adb_media_init_qosinfo(bitrate, startupTime, fps, droppedFrames)
+
+    ADBMobile().mediaUpdateQoS(qosinfo)
+    ```
+
+    <!--
     QoS object creation:
  
     ```
@@ -37,9 +50,19 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
     qosInfo.droppedFrames = 1
     qosInfo.startupTime = 2
     ```
+    -->
 
-1. When playback switches bitrates, call the `BitrateChange` event in the Media Heartbeat instance:
+1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the media SDK that the Bitrate changed. 
 
+    ```
+    ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+    ```
+
+    >[!NOTE]
+    >
+    >You need to call `updateQoSObject` with the updated bitrate value.
+
+    <!--
     ```
     qosContextData = {}
     ADBMobile().mediaTrackEvent(MEDIA_BITRATE_CHANGE, qosInfo, qosContextData)
@@ -48,6 +71,7 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
     >[!IMPORTANT]
     >
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
+    -->
 
 1. Make sure that `getQoSObject()` method returns the most updated QoS information. 
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](../../sdk-implement/track-errors/track-errors-overview.md).)
