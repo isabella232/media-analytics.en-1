@@ -131,12 +131,12 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 
 1. Setting the Advertising Identifier
 
-Method: `setAdvertisingIdentifier`
-Description: Sets the advertising identifier that is initially set by the customer.
-Usage: ADBMobile().setAdvertisingIdentifier("<sample_roku_device_ad_identifier>")
+    Method: `setAdvertisingIdentifier`
+    Description: Sets the advertising identifier that is initially set by the customer.
+    Usage: ADBMobile().setAdvertisingIdentifier("<sample_roku_device_ad_identifier>")
 
-Get the ROKU device unique AD identifier from the ROKU SDK, using the `getRIDA()` method.
+    Get the ROKU device unique AD identifier from the ROKU SDK, using the `getRIDA()` method.
 
-Roku Api Reference: 
-* [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
-* [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
+    Roku Api Reference: 
+    * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
+    * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
