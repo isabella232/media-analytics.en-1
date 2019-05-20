@@ -73,7 +73,6 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. Make sure that `getQoSObject()` method returns the most updated QoS information. 
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](../../sdk-implement/track-errors/track-errors-overview.md).)
 
     >[!TIP]
