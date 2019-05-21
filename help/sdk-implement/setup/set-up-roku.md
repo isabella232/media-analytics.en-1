@@ -126,12 +126,12 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
     | --- | --- |
     | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  `ADBMobile().visitorMarketingCloudID()` |
     | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]`="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-    | `setAdvertisingIdentifier` | Sets the advertising identifier that is initially set by the customer. For example: <br/><br/> `ADBMobile().setAdvertisingIdentifier("<sample_roku_device_ad_identifier>")`|
+    | `setAdvertisingIdentifier` | Used to set the Roku ID for Advertising (RIDA) on the SDK. For example: <br/><br/> `ADBMobile().`<br/>&nbsp;&nbsp;`setAdvertisingIdentifier(`<br/>&nbsp;&nbsp;`"<sample_roku_identifier_for_advertising>")` <br/><br/>Get the Roku ID for Advertising (RIDA) using the Roku SDK's [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
 
-    **Get ROKU device ID** - Get the ROKU device unique AD identifier from the ROKU SDK, using the `getRIDA()` method.
-
+    <!--
     Roku Api Reference: 
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
+    -->
  
     **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html)
