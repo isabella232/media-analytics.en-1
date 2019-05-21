@@ -122,10 +122,10 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
     >
     >Experience Cloud Visitor ID methods are prefixed with `visitor`.
  
-    | Method | Description |
+    | &nbsp;Method&nbsp;&nbsp; | Description |
     | --- | --- |
-    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  `ADBMobile().visitorMarketingCloudID()` |
-    | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]`="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  <br/><br/>`ADBMobile().`<br/>&nbsp;&nbsp;`visitorMarketingCloudID()` |
+    | `visitorSyncIdentifiers` | With the Experience Cloud Visitor ID, you can set additional customer IDs that can be associated with each visitor. The Visitor API accepts multiple customer IDs for the same visitor and a customer type identifier to separate the scope of the different customer IDs. This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]`="idValue"` <br/>`ADBMobile().`<br/>&nbsp;&nbsp;`visitorSyncIdentifiers(identifiers)` |
     | `setAdvertisingIdentifier` | Used to set the Roku ID for Advertising (RIDA) on the SDK. For example: <br/><br/> `ADBMobile().`<br/>&nbsp;&nbsp;`setAdvertisingIdentifier(`<br/>&nbsp;&nbsp;`"<sample_roku_identifier_for_advertising>")` <br/><br/>Get the Roku ID for Advertising (RIDA) using the Roku SDK's [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
 
     <!--
