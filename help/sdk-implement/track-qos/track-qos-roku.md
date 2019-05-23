@@ -13,7 +13,7 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 
 ## Implemement QOS
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the media SDK.
+1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
 
     QoSObject variables: 
  
@@ -52,7 +52,7 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the media SDK that the Bitrate changed. 
+1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed. 
 
     ```
     ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)

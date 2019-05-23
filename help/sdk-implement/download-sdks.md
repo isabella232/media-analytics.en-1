@@ -14,7 +14,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 | Android/FireTV | [Media SDK for Android v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Android API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Set up Android](../sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [Media SDK for for iOS v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) (Contact [Customer Care ](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 2.0 SDK) | [iOS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Set up iOS](../sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [Media SDK for JS v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Set up JavaScript](../sdk-implement/setup/set-up-js.md) |
-| Roku | [Media SDK for Roku v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0) | | [Set up Roku](../sdk-implement/setup/set-up-roku.md) |
+| Roku | [Media SDK for Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) | | [Set up Roku](../sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK for Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](../sdk-implement/setup/set-up-chromecast.md) |
 
 <!--
