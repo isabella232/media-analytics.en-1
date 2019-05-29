@@ -59,7 +59,7 @@ mediaDelegate.prototype.getQoSObject = function() {
 }; 
  
 if (e.type == "qos_update") { 
-    var qosInfo = MediaHeartbeat.createQoSObjectt(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>); 
+    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>); 
     mediaDelegate.qosInfo = qosInfo; 
 }; 
  

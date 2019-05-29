@@ -7,14 +7,14 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 
 # Media reports enablement{#media-reports-enablement}
 
-Each report suite that collects video metrics must be configured before video data is sent.
+Each report suite that collects media metrics must be configured before media data is sent.
 
 >[!TIP]
 >
->To take advantage of new capabilities, existing Media Analytics customers should re-enable video tracking for their RSIDs.
+>To take advantage of new capabilities, existing Media Analytics customers should re-enable media tracking for their RSIDs.
 
 1. In [Reports & Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] > [!UICONTROL Report Suites]. 
-1. Select the report suite(s) where you are collecting video data and click [!UICONTROL Edit Settings] > [!UICONTROL Media Management] > [!UICONTROL Media Reporting]. 
+1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] > [!UICONTROL Media Management] > [!UICONTROL Media Reporting]. 
    ![](assets/media-reporting.png){width="400px"}
 
 1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
@@ -23,12 +23,12 @@ Each report suite that collects video metrics must be configured before video da
 
     * **Media Core:** 
     
-       Core video measurement is used for media content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. Solution (or Custom) events will be used for Media Starts, Content Starts, Content Completes, and Content Time Spent. 
+       Core media measurement is used for media content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. Solution (or Custom) events will be used for Media Starts, Content Starts, Content Completes, and Content Time Spent. 
 
-    * **Media Ads:** Media ad measurement is used for the measurement of ads within the video content. This will use Solution eVvars to measure Ad, Ad Player Name, Ad Pod, and Ad in Pod Position. Solution events will be used for Ad Starts, Ad Completes, Ad Time Spent, and Video Time Spent. 
+    * **Media Ads:** Media ad measurement is used for the measurement of ads within the media content. This will use Solution eVvars to measure Ad, Ad Player Name, Ad Pod, and Ad in Pod Position. Solution events will be used for Ad Starts, Ad Completes, Ad Time Spent, and Video Time Spent. 
     * **Media Chapters:** 
     
-       Video chapters measurement is used for the measurement of chapters. A chapter is a sub-division of content within a single video. This will use a Solution eVar to store the Chapter ID. Solution events will be used for Chapter Starts, Chapter Completes, and Chapter Time Spent. Additional chapter metadata of Chapter Name and Chapter Position will be provided as classifications of Chapter ID. 
+       Video chapters measurement is used for the measurement of chapters. A chapter is a sub-division of content within a single media. This will use a Solution eVar to store the Chapter ID. Solution events will be used for Chapter Starts, Chapter Completes, and Chapter Time Spent. Additional chapter metadata of Chapter Name and Chapter Position will be provided as classifications of Chapter ID. 
 
     * **Media Quality:** 
     
@@ -36,7 +36,7 @@ Each report suite that collects video metrics must be configured before video da
 
     * **Video & Video Ad Metadata:** 
     
-       Metadata can be attached to a video and/or an ad to further describe and categorize that video/ad. Standardized video and ad metadata will be collected via solution variables and classifications. Values to include: Show, Season, Episode, Asset ID, Genre, First Air Date, First Digital Date, Content Rating, Originator, Network, Show Type, Ad Loads, MVPD, Authorized, Day Part, Media Session ID, Advertiser, Campaign ID, and Creative ID. 
+       Metadata can be attached to a media and/or an ad to further describe and categorize that media/ad. Standardized media and ad metadata will be collected via solution variables and classifications. Values to include: Show, Season, Episode, Asset ID, Genre, First Air Date, First Digital Date, Content Rating, Originator, Network, Show Type, Ad Loads, MVPD, Authorized, Day Part, Media Session ID, Advertiser, Campaign ID, and Creative ID. 
 
     * **Audio & Audio Ad Metadata:** 
     
@@ -54,7 +54,7 @@ Each report suite that collects video metrics must be configured before video da
 
    | Option | Description |
    | --- | --- |
-   | Continue using custom variables | <ul> <li> **Pros:** Content trending continues to work after migration. </li> <li> **Cons:** Requires you to keep two custom eVars and three custom events allocated to video. You regain use of one custom eVar and one custom event. </li> </ul> To continue using custom variables: <ol> <li>Select Use Custom Variables, then click Save. </li> <li>When prompted, map your current custom eVars and events and then click Save: </li> </ol> |
+   | Continue using custom variables | <ul> <li> **Pros:** Content trending continues to work after migration. </li> <li> **Cons:** Requires you to keep two custom eVars and three custom events allocated to media. You regain use of one custom eVar and one custom event. </li> </ul> To continue using custom variables: <ol> <li>Select Use Custom Variables, then click Save. </li> <li>When prompted, map your current custom eVars and events and then click Save: </li> </ol> |
    | Migrate to solution variables | <ul> <li> **Pros:** You regain use of three custom eVars and four custom events. </li> <li> **Cons:** You lose **all** historical trending and comparison for media reports. This means that you cannot trend content views or content time played for any dates before you migrated to heartbeats. </li> </ul> **Restriction:**  Do not migrate to solution variables unless you are certain that you do not want to preserve this trending. All customers should use solution variables and processing rules to put media data into existing props and eVars, only if they need to preserve historical continuity. To migrate to solution variables: Select Use Solution Variables and click Save. |
    
    >[!IMPORTANT] 
