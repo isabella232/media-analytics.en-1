@@ -267,7 +267,6 @@ Ping the backend every 10 seconds.
 
 **Implementation Details**
 
-For error events, `qoeData` parameters `errorID` and `errorSource` are required.
 
 **Sample request body**
 
@@ -277,11 +276,7 @@ For error events, `qoeData` parameters `errorID` and `errorSource` are required.
         playhead: 20,
         ts: <timestamp>
     },
-    eventType:error,
-    qoeData:{
-        "media.qoe.errorID": "<errorID>",
-        "media.qoe.media.errorSource": "player"
-    }
+    eventType:error
 }
 ```
 

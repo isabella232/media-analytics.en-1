@@ -97,12 +97,9 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Any | The bitrate of the stream |
-| `media.qoe.bitrateChange` | N | Any | The change of the stream bitrate |
 | `media.qoe.droppedFrames` | N | Any | The number of dropped frames in the stream |
 | `media.qoe.framesPerSecond` | N | Any | The number of frames per second |
 | `media.qoe.timeToStart` | N | Any | The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing |
-| `media.qoe.errorID` | Y | Error | Supports the error event; signals that an error occurred during the session |
-| `media.qoe.errorSource` | Y | Error | The value should be either "player" or "external", depending upon the error type |
 
 ## Additional Details {#section_ryt_ccy_lcb}
 

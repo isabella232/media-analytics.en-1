@@ -22,6 +22,10 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Ping events should *not* include the `params` map in the request body.
 
+## bitrateChange
+
+Sent when the bitrage changes.
+
 ## bufferStart
 
 Sent when buffering starts. There is no `bufferResume` event type. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
@@ -61,6 +65,10 @@ Signals a chapter skip
 ## chapterComplete
 
 Signals the completion of a chapter
+
+## error
+
+Signals an error occurred.
 
 ## sessionEnd
 
