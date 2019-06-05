@@ -605,7 +605,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()`  | `MediaHeartbeat.createAdObject()` |
 | | `MediaHeartbeat.trackAdStart()` |
 
-#### Ad Skip (1.x) {@#ad-skip-1.x}
+#### Ad Skip (1.x) {#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
@@ -613,7 +613,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Skip (2.x) {@#ad-skip-2.x}
+#### Ad Skip (2.x) {#ad-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() { 
