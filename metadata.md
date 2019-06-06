@@ -17,7 +17,7 @@ The metadata.md file includes repo-level metadata that passes through to user gu
 
 | metadata | what it does |
 |--- |--- |
-| solution-title | Used in article header as link |
+| solution-title | Used in article header as link. Keep it short. |
 | solution-hub-url | Opens helpx hub page |
 | solution-icon | Displays solution icon next to solution title. Not yet implemented |
 | getting-started-url | Link to helpx getting started page |
