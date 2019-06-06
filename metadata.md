@@ -7,7 +7,8 @@ getting-started-title: Getting Started
 getting-started-url: https://helpx.adobe.com/analytics/get-started.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/analytics/kt/index/analytics-videos.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/media-analytics.en
+git-repo: https://github.com/AdobeDocs/media-analytics.en
+index: yes
 ---
 
 # Metadata for internal use
