@@ -48,7 +48,7 @@ When computing the Analytics start/close calls for the downloaded content scenar
 ## Sample session comparison {#section_qnk_lpk_cfb}
 
 ```
-[url]/v1/sessions
+[url]/api/v1/sessions
 ```
 
 ### Media Collection API
