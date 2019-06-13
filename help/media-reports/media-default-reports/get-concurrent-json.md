@@ -7,20 +7,27 @@ uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 
 # Get concurrent viewers JSON report data{#get-concurrent-viewers-json-report-data}
 
-You can extract concurrent viewers report data using the Web Services APIs:
-* The Web Services API docs are available at: [Web Services](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 
-* APIs online at: [Analytics APIs](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
+You can obtain concurrent viewers report data using the _*1.4 version*_ of the Analytics APIs:
+* [Analytics APIs](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-For example, you could filter the data using any segment that built on the UI. 
-To filter by a specific Content ID, you would need to create a new segment.  
-A sample configuration for this scenario would look like this:
+1. Filter the data using any segment that built on the UI. To filter by a specific Content ID, create a new segment.  
+1. Set the `elements` -> `id` in the request body to `videoconcurrentviewers`.
+1. Request a sufficient amount of data. Adobe recommends 3200 minutes, to ensure there are no gaps in the data. 
+
+    * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._ 
+       So, you must account for sessions that start on one day and end after midnight (i.e., the next day).
+
+    * Request more than one day of data, but in your analysis _*use only the first day of the data.*_
+
+A sample request payload for this scenario would look like this:
 
 ```
 {
   "reportDescription":{
     "reportSuiteID":"nflmobileappprod",
-    "dateFrom":"2018-07-08",
-    "dateTo":"2018-07-09",
+    "dateFrom":"2018-07-01",
+    "dateTo":"2018-07-02",
     "metrics":[
       {
         "id":"instances"
@@ -29,7 +36,7 @@ A sample configuration for this scenario would look like this:
     "elements":[
       {
         "id":"videoconcurrentviewers",
-        "top":"2880"
+        "top":"3200"
       }
     ],
     "segments":[
