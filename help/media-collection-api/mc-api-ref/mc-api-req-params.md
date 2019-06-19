@@ -35,7 +35,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | `media.contentType` | Y | `sessionStart` | Format of the stream (can be any string, a few recommanded values are "Live", "VOD", or "Linear") |
 | `media.playerName` | Y | `sessionStart` | The name of the player responsible for rendering the content |
 | `media.channel` | Y | `sessionStart` | The channel of distribution of the content. This could be an mobile application name or a web site name, property name |
-| `media.resume` | N | `sessionStart` | Indicates whether or not to resume a closed session |
+| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
 | `media.sdkVersion` | N | `sessionStart` | The SDK verison used by the player |
 
 ## Content Standard Metadata
