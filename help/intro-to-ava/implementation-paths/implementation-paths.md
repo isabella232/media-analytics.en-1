@@ -19,10 +19,10 @@ For each of these implementation paths, customers need to contact their Sales Re
    >
    >To use Media Analytics, customers must also use Adobe Analytics.
 
-* **Adobe Launch -** Adobe Launch, the follow-on product to Dynamic Tag Management, features a Media Analytics Launch Extension that facilitates implementing video tracking in your players.
+* **Adobe Experience Platform Launch -** Adobe Experience Platform Launch, the follow-on product to Dynamic Tag Management, features a Media Analytics Launch Extension that facilitates implementing video tracking in your players.
 
-   You can learn more about VA Launch here: [Adobe Media Analytics for Audio and Video Extension](Adobe Media Analytics for Audio and Video Extension)
-* **Adobe Primetime -** Adobe Primetime is an Adobe Experience Cloud solution that helps content programmers and distributors monetize video on every connected screen.
+   You can learn more about Experience Platform Launch here: [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension)
+* **Adobe Primetime -** Adobe Primetime is an Adobe Experience Cloud solution that helps content programmers and distributors monetize media on every connected screen.
 
    Primetime eliminates the complexity of reaching, monetizing, and activating global audiences across devices by providing a modular platform for video publishing, advertising, personalization, and analytics. Additionally, Primetime offers solutions and value around the following:
 
