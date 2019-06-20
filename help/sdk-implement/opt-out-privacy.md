@@ -12,7 +12,7 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 You can control whether tracking activity is allowed on a specific device:
 
 * **Mobile Apps -** The VA library respects the `AdobeMobile` library’s privacy and opt-out settings. To opt-out of tracking, you need to use the `AdobeMobile` library. For more information on the `AdobeMobile` library’s opt-out and privacy settings, see [Opt-Out and Privacy Settings](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html). 
-* **JavaScript/Browser Apps -** The VA library respects the `VisitorAPI` privacy and opt­out settings. To opt­out of tracking, you need to opt out from the Visitor API service. For further information on opt­out and privacy, see [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/). 
+* **JavaScript/Browser Apps -** The VA library respects the `VisitorAPI` privacy and opt­out settings. To opt­out of tracking, you need to opt out from the Visitor API service. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/). 
 * **OTT Apps (Chromecast, Roku) -** The OTT SDKs provide General Data Protection Regulation (GDPR)-ready APIs that allow you to set `opt` status flags for data collection and transmission, and to retrieve locally stored identities.
 
   >[!NOTE]
