@@ -38,7 +38,7 @@ snippet: y
 ## Update: October 10, 2018 {#October-2018-update}
 
 * Document structure was "refactored" in the SDK Implementation area, by combining the individual (but mostly identical) platform implementation guides into one SDK implementation section, with platform-specific tracking examples presented in sub-sections beneath common tracking topics. 
-* Files were renamed throughout in anticipation of a migration to a new doc system. All DITA prefixes ( [!DNL c_, r_, t_] indicating concept, reference, and task topic types respectively) were eliminated. All underscores ('_') were replaced with hyphens ('-'). Also, file names now more closely resemble the titles of the topics.
+* Files were renamed throughout in anticipation of a migration to a new doc system. All DITA prefixes ( c_, r_, t_ ) indicating concept, reference, and task topic types respectively) were eliminated. All underscores ('_') were replaced with hyphens ('-'). Also, file names now more closely resemble the titles of the topics.
 * Updates to general Validation and Certification topics.
 * New introductory material including a presentation of measurement options, along with updates to prerequisites, implementation paths, and Audience Manager enablement.
 * Updates to Metrics and Metadata and Reporting and Analysis sections, reflecting the addition of Audio Analytics capabilities.

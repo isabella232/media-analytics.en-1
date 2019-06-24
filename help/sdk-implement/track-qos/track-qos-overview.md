@@ -17,7 +17,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 ### On any QoS metric changes:
 
-Create or update the QoS object instance for the playback.
+Create or update the QoS object instance for the playback. [QoS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
 ### On all bitrate change events
 

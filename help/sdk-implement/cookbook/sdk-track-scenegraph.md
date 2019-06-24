@@ -209,13 +209,13 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 1. **Set Up Your Development Environment**
 
-    1. Copy [!DNL adbmobile.brs] (AdobeMobileLibrary) into your [!DNL pkg:/source/] directory.
+    1. Copy `adbmobile.brs` (AdobeMobileLibrary) into your `pkg:/source/` directory.
     
-    1. For Scene Graph support, copy [!DNL adbmobileTask.brs] and [!DNL adbMobileTask.xml] into your [!DNL pkg:/components/] directory.
+    1. For Scene Graph support, copy `adbmobileTask.brs` and `adbMobileTask.xml` into your `pkg:/components/` directory.
 
 1. **Initialize**
 
-    1. Import [!DNL adbmobile.brs] into your Scene.
+    1. Import `adbmobile.brs` into your Scene.
 
        ```    
        <script type="text/brightscript" uri="pkg:/source/adbmobile.brs" />
