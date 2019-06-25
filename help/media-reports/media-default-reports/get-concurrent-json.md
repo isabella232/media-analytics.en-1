@@ -13,7 +13,7 @@ You can obtain concurrent viewers report data using the _*1.4 version*_ of the A
 
 1. Filter the data using any segment that built on the UI. To filter by a specific Content ID, create a new segment.  
 1. Set the `elements` -> `id` in the request body to `videoconcurrentviewers`.
-1. Request a sufficient amount of data. Adobe recommends 3200 minutes, to ensure there are no gaps in the data. 
+1. Request a sufficient amount of data. Adobe recommends 3200 data points, to ensure there are no gaps in the data. 
 
     * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._ 
        So, you must account for sessions that start on one day and end after midnight (i.e., the next day).
@@ -25,7 +25,7 @@ A sample request payload for this scenario would look like this:
 ```
 {
   "reportDescription":{
-    "reportSuiteID":"nflmobileappprod",
+    "reportSuiteID":"[YOUR_RSID]",
     "dateFrom":"2018-07-01",
     "dateTo":"2018-07-02",
     "metrics":[
