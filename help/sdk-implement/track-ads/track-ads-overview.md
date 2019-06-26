@@ -97,8 +97,7 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 
 >[!IMPORTANT]
 >
->Do not increment the video player playhead during ad playback!
-
+>Do not increment the media player playhead during ad playback!
 
 The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player. 
 
