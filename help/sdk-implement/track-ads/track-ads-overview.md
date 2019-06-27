@@ -97,7 +97,7 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 
 >[!IMPORTANT]
 >
->Do not increment the media player playhead during ad playback!
+>Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). If you do, the Content Time Spent metrics will be adversely impacted.
 
 The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player. 
 
