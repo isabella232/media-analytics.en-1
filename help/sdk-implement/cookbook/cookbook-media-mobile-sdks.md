@@ -7,8 +7,21 @@ uuid:
 
 # Identifying Mobile and Media SDK differences
 
-While there is functional overlap between the Media SDKs and the Mobile SDKs, the respective code bases diverge slightly in some areas.
+Some code and features differ slightly in some areas between these two solutions.
 
-## Quality of Service / Quality of Experience
+## Names 
 
-Qoe vs. Qos
+
+
+## Tracker creation 
+
+
+
+## Updating playhead 
+
+
+
+## QoE/QoS metrics
+
+
+
