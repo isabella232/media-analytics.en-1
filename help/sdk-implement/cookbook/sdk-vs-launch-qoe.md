@@ -24,4 +24,8 @@ Some code and features differ slightly in some areas between these two solutions
 ## QoE/QoS metrics
 
 
+## API References
 
+* Media SDK - [createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+
+* Launch - []()
