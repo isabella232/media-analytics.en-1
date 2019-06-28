@@ -28,4 +28,3 @@ uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 |  Content Buffer Duration Rate | Rate of Total Buffer Duration vs Content Time Spent (% ) | `Total Buffer Duration / Content Time Spent` |
 |  Content Time to Start Rate | Rate of Time to Start vs Content Time Spent (%) | `Time to Start / Content Time Spent` |
 |  Ad Time Spent Rate | Rate of Ad Time Spent vs Content Time Spent (%) | `Ad Time Spent / Content Time Spent` |
-
