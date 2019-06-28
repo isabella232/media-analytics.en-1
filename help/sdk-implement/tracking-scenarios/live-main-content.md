@@ -48,7 +48,7 @@ In the content heartbeats, look for a few specific things:
 
 ## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
 
-There will not be a complete call, because the live stream was never completed.
+There will not be a complete call in this scenario, because the live stream was never completed.
 
 ## Playhead Value Settings
 
