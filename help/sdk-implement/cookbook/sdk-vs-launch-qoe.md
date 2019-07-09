@@ -1,15 +1,13 @@
 ---
-seo-title: Identifying Mobile and Media SDK differences
-title: Identifying Mobile and Media SDK differences
+seo-title: Identifying Launch and Media SDK differences
+title: Identifying Launch and Media SDK differences
 uuid: 
 
 ---
 
-# Identifying Mobile and Media SDK differences
+# Identifying Launch and Media SDK differences
 
-Some code and features differ slightly in some areas between these two solutions.
-
-## Names 
+## API Differences
 
 
 
@@ -21,7 +19,8 @@ Some code and features differ slightly in some areas between these two solutions
 
 
 
-## QoE/QoS metrics
+## Feature Differences
+
 
 
 ## API References
