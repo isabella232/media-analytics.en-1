@@ -49,6 +49,14 @@ Table data description:
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> [streamType](./audio-video-parameters.md#section_Related_APIs) </li> <li> **API Key:**<br/> media.streamType </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** 2.2 <br/><br/>Available in [Media Collection API Overview](../media-collection-api/mc-api-overview.md) or [Download SDKs - Versions 2.2](../sdk-implement/download-sdks.md).  </li>  <li> **Sample value:**<br/> "video" </li> <li> **Description:**<br/> Identifies the stream type. Valid values are "audio", "video", and " ".  <br/><br/>[Segments](../metrics-and-metadata/segments.md): <br/><br/>StreamType "All" - Segment all media stream data. <br/> **Rule:** Content (ID) exists <br/><br/>StreamType "Audio" - Segment all audio stream data.  <br/>**Rule:** Content (ID) exists AND Stream Type = audio <br/><br/>StreamType "Video" - Segment all video stream data. <br/>**Rule:** Content (ID) exists AND Stream Type = video <br/><br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.streamType) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On VISIT </li> <li> **Report Name:**<br/> Content </li> <li> **Context Data:**<br/> (a.media.streamType) </li> <li> **Data Feed:**<br/> videostreamtype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.streamType) </li> </ul> |
 
+```
+public static MediaObject createMediaObject(java.lang.String name,
+                                            java.lang.String mediaId,
+                                            java.lang.Double length,
+                                            **java.lang.String streamType,**
+                                            MediaHeartbeat.MediaType mediaType)
+```
+
 ### Content ID 
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
@@ -385,3 +393,4 @@ Table data description:
 * Android - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeatConfig.html)
 * iOS - [ADBMediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeatConfig.html)
 * JavaScript - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeatConfig.html)
+
