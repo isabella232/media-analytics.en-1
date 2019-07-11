@@ -53,7 +53,7 @@ Table data description:
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId,
                                             java.lang.Double length,
-                                            **java.lang.String streamType,**
+                                            <b>java.lang.String streamType, </b>
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
