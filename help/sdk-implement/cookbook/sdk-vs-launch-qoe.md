@@ -15,6 +15,7 @@ uuid:
 ## Tracker creation
 
 ### Launch
+
    1. Use Media APIs exported by the Media Analytics Extension to the global window object:
 
        `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
@@ -37,10 +38,12 @@ uuid:
 ## More Documentation
 
 ### Media SDK 
+
    * [Set up JS](../../sdk-implement/setup/set-up-js.md)
    * [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch 
+
    * [Launch overview](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
    * [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
