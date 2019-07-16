@@ -16,6 +16,8 @@ uuid:
 
 ### Launch
 
+There are two paths you can go by:
+
 1. Use Media APIs exported by the Media Analytics Extension to the global window object:
 
     `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
@@ -34,6 +36,29 @@ uuid:
     Access `MediaHeartbeat` constants via the `media-heartbeat` Shared Module.
       
 ### Media SDK
+
+1. Add the Media Analytics library.
+1. Create a config object.
+1. Implement the delegate protocol.
+1. Create a Media Heartbeat instance.
+
+```
+// Media Heartbeat initialization
+var mediaConfig = new MediaHeartbeatConfig();
+...
+// Configuration setting
+mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
+...
+// Set up Media Delegate (Quality of Service and Playhead)
+var mediaDelegate = new MediaHeartbeatDelegate();
+...
+mediaDelegate.getQoSObject = function() {
+    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
+    ...
+}
+...
+this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
+```
 
 ## More Documentation
 
