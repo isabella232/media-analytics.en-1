@@ -39,6 +39,7 @@ uuid:
 ### Media SDK 
    * [Set up JS](../../sdk-implement/setup/set-up-js.md)
    * [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+
 ### Launch 
    * [Launch overview](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
    * [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
