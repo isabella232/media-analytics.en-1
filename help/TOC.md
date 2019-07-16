@@ -124,11 +124,11 @@ user-guide-title: Adobe Analytics for Audio and Video
         + [OTT and Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
         + [OTT and Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
     + Cookbook {#cookbook}
-        + [Handling application interrupts during playback](sdk-implement/cookbook/cookbook-app-interrupts.md)
-        + [Resolving main:play appearing between ads](sdk-implement/cookbook/cookbook-fix-ad-play-ad.md)
-        + [Resuming Inactive Sessions](sdk-implement/cookbook/cookbook-resuming-inactive.md)
-        + [Tracking in SceneGraph (Roku)](sdk-implement/cookbook/cookbook-sdk-track-scenegraph.md)
-        + [QoE in SDK and Launch](cookbook-sdk-vs-launch-qoe.md)
+        + [Handling application interrupts during playback](sdk-implement/cookbook/app-interrupts.md)
+        + [Resolving main:play appearing between ads](sdk-implement/cookbook/fix-ad-play-ad.md)
+        + [Resuming Inactive Sessions](sdk-implement/cookbook/resuming-inactive.md)
+        + [Tracking in SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
+        + [SDK and Launch Differences](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
     + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
         + [Migration Overview](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
         + [Code Comparison: 1.x to 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
