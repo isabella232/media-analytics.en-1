@@ -1,32 +1,41 @@
 ---
-seo-title: Identifying Launch and Media SDK differences
-title: Identifying Launch and Media SDK differences
+seo-title: Understand Launch versus Media SDK differences
+title: Understand Launch versus Media SDK differences
 uuid: 
 
 ---
 
-# Identifying Launch and Media SDK differences
+# Understand Launch versus Media SDK differences
 
-## Features 
+## Feature differences
 
-* Launch - Replaces DTM; makes setting up, configuring, and extending media tracking much easier. Has a UI with app-store-like collection of different "apps" (extensions) you can choose from.
-* Media SDK - Still recommended for Mobile apps; mature, efficient, robust tracking API.
+* *Launch* - Replaces Dynamic Tag Management (DTM). Launch provides you with a UI that helps walk you through setting up, configuring, and deploying your web-based media tracking solutions.
+* *Media SDK* - The Media SDKs provide you with libraries designed for specific platforms. The Media SDK is recommended for adding media tracking to your Mobile Apps.
 
-## Tracker creation
+## Tracker creation differences
 
 ### Launch
 
-There are two paths you can go by:
+Launch offers two approaches to creating the tracking infrastructure. Both approaches use the Media Analytics Launch Extension:
 
-1. Use Media APIs exported by the Media Analytics Extension to the global window object:
+1. Use the media tracking APIs from a web page.
 
-    `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
+    In this scenario, the MA Extension exports the media tracking APIs to a configured variable in the global window object: 
 
-    Pass a delegate object to `getInstance` that exposes functions returning a QoS object and current playhead value.
-1. Access Media APIs from a player extension that maps specific media player events to the tracking APIs. 
+    ```
+    window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
+    ```
+
+1. Use the media tracking APIs from another extension.
+
+    In this scenario, you use the media tracking APIs exposed by the `get-instance` and `media-heartbeat` Shared Modules.
+
+    >[!NOTE]
+    >
+    >Shared Modules are not available for use in web pages. You can only use Shared Modules from another extension.
 
     Create a MediaHeartbeat instance using the `get-instance` Shared Module. 
-    Pass a delegate object to `get-instance` that exposes functions returning a QoS object and current playhead value.
+    Pass a delegate object to `get-instance` that exposes getQoSObject() and getCurrentPlaybackTime() functions.
 
     ```
     var getMediaHeartbeatInstance =
@@ -37,19 +46,19 @@ There are two paths you can go by:
       
 ### Media SDK
 
-1. Add the Media Analytics library.
-1. Create a config object.
-1. Implement the delegate protocol.
-1. Create a Media Heartbeat instance.
+1. Add the Media Analytics library to your development project.
+1. Create a config object (`MediaHeartbeatConfig`).
+1. Implement the delegate protocol, exposing the getQoSObject() and getCurrentPlaybackTime() functions.
+1. Create a Media Heartbeat instance (`MediaHeartbeat`).
 
 ```
 // Media Heartbeat initialization
 var mediaConfig = new MediaHeartbeatConfig();
 ...
-// Configuration setting
+// Configuration settings
 mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
 ...
-// Set up Media Delegate (Quality of Service and Playhead)
+// Implement Media Delegate (Quality of Service and Playhead)
 var mediaDelegate = new MediaHeartbeatDelegate();
 ...
 mediaDelegate.getQoSObject = function() {
@@ -57,6 +66,7 @@ mediaDelegate.getQoSObject = function() {
     ...
 }
 ...
+// Create your tracker
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
