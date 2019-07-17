@@ -50,6 +50,20 @@ In the content heartbeats, look for a few specific things:
 
 There will not be a complete call in this scenario, because the live stream was never completed.
 
+## Playhead Value Settings
+
+For LIVE streams, you need to set the playhead to an offset from when the programming began, so that in reporting, analysts can determine at what point users are joining and leaving the LIVE stream within a 24-hour view.
+
+### At Start
+
+For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. This is as opposed to VOD, where you would set the playhead to "0". 
+
+For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). Then, say a user starts playing that LIVE stream at 12:00pm. In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+
+### On Pause
+
+The same "live playhead" logic applied at the start of playback must be applied when a user pauses the playback. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+
 ## Sample Code {#section_vct_j2j_x2b}
 
 ![](assets/live-content-playback.png)

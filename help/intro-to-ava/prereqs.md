@@ -21,9 +21,9 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
 1. **Enable Experience Cloud.** 
 
-    You need to implement the Experience Cloud ID Service (formerly known as Visitor ID Service).
+    You need to implement the Adobe Experience Platform Identity Service.
 
-    The Experience Cloud ID service enables the common identification framework for the Experience Cloud Core Services, solutions, and customer attributes and audiences in the People core service. It works by assigning a unique, persistent ID to a site visitor. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different Experience Cloud solutions.
+    The Identity Service enables the common identification framework for the Experience Cloud Core Services, solutions, and customer attributes and audiences in the People core service. It works by assigning a unique, persistent ID to a site visitor. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different Experience Cloud solutions.
 
     ![](assets/mc_id_service_graphic.png)
 
@@ -35,13 +35,13 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
     >
     >To participate in the Adobe Experience Cloud Device Co-op, the Experience Cloud ID service is required.
 
-    If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [Why the Experience Cloud ID Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+    If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
     >[!IMPORTANT]
     >
     >In the absence of any user ID information present on the media-specific calls, the default analytics [Fallback ID Methods](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) will apply.
 
-    For additional information about the Experience Cloud ID, see [Experience Cloud ID Overview,](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html) and [Experience Cloud ID Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/) 
+    For additional information about the Experience Cloud ID, see [Experience Cloud ID Overview,](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html) and [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/) 
 
 1. **Enable Adobe Analytics Reports.** 
 

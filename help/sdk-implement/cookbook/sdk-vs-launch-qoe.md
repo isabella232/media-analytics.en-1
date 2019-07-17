@@ -15,32 +15,61 @@ uuid:
 ## Tracker creation
 
 ### Launch
-   1. Use Media APIs exported by the Media Analytics Extension to the global window object:
 
-       `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
+There are two paths you can go by:
 
-       Pass a delegate object to `getInstance` that exposes functions returning a QoS object and current playhead value.
-   1. Access Media APIs from a player extension that maps specific media player events to the tracking APIs. 
+1. Use Media APIs exported by the Media Analytics Extension to the global window object:
 
-       Create a MediaHeartbeat instance using the `get-instance` Shared Module. 
-       Pass a delegate object to `get-instance` that exposes functions returning a QoS object and current playhead value.
+    `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
 
-       ```
-       var getMediaHeartbeatInstance =
-           turbine.getSharedModule('adobe-video-analytics', 'get-instance');
-       ```
+    Pass a delegate object to `getInstance` that exposes functions returning a QoS object and current playhead value.
+1. Access Media APIs from a player extension that maps specific media player events to the tracking APIs. 
 
-       Access `MediaHeartbeat` constants via the `media-heartbeat` Shared Module.
+    Create a MediaHeartbeat instance using the `get-instance` Shared Module. 
+    Pass a delegate object to `get-instance` that exposes functions returning a QoS object and current playhead value.
+
+    ```
+    var getMediaHeartbeatInstance =
+    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
+    ```
+
+    Access `MediaHeartbeat` constants via the `media-heartbeat` Shared Module.
       
 ### Media SDK
+
+1. Add the Media Analytics library.
+1. Create a config object.
+1. Implement the delegate protocol.
+1. Create a Media Heartbeat instance.
+
+```
+// Media Heartbeat initialization
+var mediaConfig = new MediaHeartbeatConfig();
+...
+// Configuration setting
+mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
+...
+// Set up Media Delegate (Quality of Service and Playhead)
+var mediaDelegate = new MediaHeartbeatDelegate();
+...
+mediaDelegate.getQoSObject = function() {
+    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
+    ...
+}
+...
+this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
+```
 
 ## More Documentation
 
 ### Media SDK 
-   * [Set up JS](../../sdk-implement/setup/set-up-js.md)
-   * [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+
+* [Set up JS](../../sdk-implement/setup/set-up-js.md)
+* [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+
 ### Launch 
-   * [Launch overview](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-   * [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+
+* [Launch overview](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 
