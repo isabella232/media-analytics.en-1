@@ -9,7 +9,7 @@ uuid:
 
 ## Feature differences
 
-* *Launch* - Replaces Dynamic Tag Management (DTM). Launch provides you with a UI that helps walk you through setting up, configuring, and deploying your web-based media tracking solutions.
+* *Launch* - Launch replaces and improves upon Dynamic Tag Management (DTM). Launch provides you with a UI that walks you through setting up, configuring, and deploying your web-based media tracking solutions.
 * *Media SDK* - The Media SDKs provide you with libraries designed for specific platforms. The Media SDK is recommended for adding media tracking to your Mobile Apps.
 
 ## Tracker creation differences
@@ -20,13 +20,13 @@ Launch offers two approaches to creating the tracking infrastructure. Both appro
 
 1. Use the media tracking APIs from a web page.
 
-    In this scenario, the MA Extension exports the media tracking APIs to a configured variable in the global window object: 
+    In this scenario, the Media Analytics Extension exports the media tracking APIs to a configured variable in the global window object: 
 
     ```
     window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
     ```
 
-1. Use the media tracking APIs from another extension.
+1. Use the media tracking APIs from another Launch extension.
 
     In this scenario, you use the media tracking APIs exposed by the `get-instance` and `media-heartbeat` Shared Modules.
 
@@ -34,8 +34,8 @@ Launch offers two approaches to creating the tracking infrastructure. Both appro
     >
     >Shared Modules are not available for use in web pages. You can only use Shared Modules from another extension.
 
-    Create a MediaHeartbeat instance using the `get-instance` Shared Module. 
-    Pass a delegate object to `get-instance` that exposes getQoSObject() and getCurrentPlaybackTime() functions.
+    Create a `MediaHeartbeat` instance using the `get-instance` Shared Module. 
+    Pass a delegate object to `get-instance` that exposes `getQoSObject()` and `getCurrentPlaybackTime()` functions.
 
     ```
     var getMediaHeartbeatInstance =
@@ -70,16 +70,15 @@ mediaDelegate.getQoSObject = function() {
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
-## More Documentation
+## Related Documentation
+
+### Launch 
+
+* [Launch overview](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### Media SDK 
 
 * [Set up JS](../../sdk-implement/setup/set-up-js.md)
 * [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
-
-### Launch 
-
-* [Launch overview](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-* [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-
 
