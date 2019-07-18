@@ -18,9 +18,8 @@ uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 ## Metadata keys API Reference
 
 * Create a `HashMap` of standard metadata key value pairs. 
-
-  [Video Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-  [Audio Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+   * [Video Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [Audio Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Set the standard metadata `HashMap` on `MediaInfo` using the Standard Metadata constant for the metadata. 
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
 
