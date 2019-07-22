@@ -9,9 +9,9 @@ uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. Use the media player's API to identify key player events and to populate the required and optional ad variables. See the comprehensive list of metadata here: [Ad parameters.](../../metrics-and-metadata/ad-parameters.md)
+Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. Use the media player's API to identify key player events and to populate the required and optional ad variables. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## Player events {#player-events}
 

@@ -9,7 +9,7 @@ uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../../sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Buffer tracking constants
 
@@ -33,4 +33,4 @@ uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
    ```
 
-See the tracking scenario [VOD playback with buffering](../../../sdk-implement/tracking-scenarios/vod-buffering.md) for more information.
+See the tracking scenario [VOD playback with buffering](/help/sdk-implement/tracking-scenarios/vod-buffering.md) for more information.

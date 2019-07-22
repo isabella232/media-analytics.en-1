@@ -9,11 +9,11 @@ uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 
 # VOD playback with pre-roll ads{#vod-playback-with-pre-roll-ads}
 
-In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different.
+In this scenario, pre-roll ads have been inserted before the main content. Unless specified, the network calls are the same as the calls in the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network calls happen at the same time, but the payload is different.
 
 | Trigger | Heartbeat method | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| The user clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The user clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The ad starts.  | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
 | The frame of ad #1 is played.  | `trackPlay` | Heartbeat Ad Play | The ad content plays before main content, and the heartbeats start when the ad starts.  |
 | The ad is played.  | | Ad Heartbeats | |
@@ -21,8 +21,8 @@ In this scenario, pre-roll ads have been inserted before the main content. Unles
 | The first frame of ad #2 is played.  | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start | |
 | The ad plays.  | | Ad Heartbeats | |
 | Ad #2 completes playing.  | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | The end of the ad and the pod is reached.  |
-| The content plays.  | | Content Heartbeats | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
-| The content is complete.  | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The content plays.  | | Content Heartbeats | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| The content is complete.  | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The session is over | `trackSessionEnd` | | `SessionEnd` |
 
 ## Parameters {#section_33CDFB6CB230437480B67A3D149EC44E}

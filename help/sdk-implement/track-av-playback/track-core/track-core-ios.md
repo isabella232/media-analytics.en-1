@@ -8,7 +8,7 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 # Track core playback on iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup** 
 
@@ -59,11 +59,11 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 
     * **Standard video metadata** 
 
-       * [Implement standard metadata on iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+       * [Implement standard metadata on iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
        * **Video metadata keys** 
-           [iOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+           [iOS metadata keys](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
         
-       * See the comprehensive list of video metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+       * See the comprehensive list of video metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
     
        >[!NOTE]
        >
@@ -169,6 +169,6 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 
 See the following for additional information on tracking core playback:
 
-* Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking scenarios: [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the iOS SDK for a complete tracking example.
 

@@ -9,7 +9,7 @@ uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implement chapter tracking
 

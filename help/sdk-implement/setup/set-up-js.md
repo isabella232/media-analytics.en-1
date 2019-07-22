@@ -19,7 +19,7 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
     * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player. 
     * *An API that provides player information* - This information includes details such as the media name and the play head position.
 
-1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) library to your project. Create local references to the classes for convenience.
+1. Add your [downloaded](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) library to your project. Create local references to the classes for convenience.
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded. 
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory: 
@@ -114,4 +114,4 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 
 In version 2.x, all of the public methods are consolidated into the `ADB.va.MediaHeartbeat` class to make it easier on developers. Also, all configs are now consolidated into the `ADB.va.MediaHeartbeatConfig` class.
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md) 
+For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md) 

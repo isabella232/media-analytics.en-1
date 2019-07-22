@@ -16,7 +16,7 @@ The Media SDK automatically tracks how long the media playback is in one of the 
 * Stalled
 * Buffering
 
-If a media tracking session remains in an inactive state for longer than 30 minutes, the session will automatically be closed. If the user resumes after a previously inactive video tracking session (`trackPlay`), Media Heartbeat automatically creates a new video session using the previously used video information and metadata, and sends a resume heartbeat event. For more information, see [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+If a media tracking session remains in an inactive state for longer than 30 minutes, the session will automatically be closed. If the user resumes after a previously inactive video tracking session (`trackPlay`), Media Heartbeat automatically creates a new video session using the previously used video information and metadata, and sends a resume heartbeat event. For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## Manually resume previously closed session 
 

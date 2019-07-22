@@ -11,7 +11,7 @@ uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 
 In this scenario, the user skips a chapter in the main content.
 
-This is the same scenario as [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md), except the user in this case intends to seek out of the chapter thereby skipping it to land into main content. 
+This is the same scenario as [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), except the user in this case intends to seek out of the chapter thereby skipping it to land into main content. 
 
 |  Trigger  | Heartbeat method  | Network calls&nbsp;&nbsp;  | Notes  |
 |---|---|---|---|
@@ -28,7 +28,7 @@ This is the same scenario as [VOD playback with one chapter](../../sdk-implement
 
 ## Parameters {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
 ## Sample code {#section_fyl_ncj_x2b}
 

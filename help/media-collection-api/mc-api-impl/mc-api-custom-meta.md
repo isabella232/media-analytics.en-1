@@ -11,5 +11,5 @@ You can provide custom key:value pairs on the `sessionStart`, `chapterStart`, an
 
 The `customMetadata` JSON key should contain an object of key:value pairs. The key should contain only alphanumerical characters, underline, and dot/period.
 
-[MA Collection API Events](../mc-api-ref/mc-api-events-req.md)
+[MA Collection API Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
 

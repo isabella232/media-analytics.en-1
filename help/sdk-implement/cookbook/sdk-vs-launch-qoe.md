@@ -79,6 +79,6 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 
 ### Media SDK 
 
-* [Set up JS](../../sdk-implement/setup/set-up-js.md)
+* [Set up JS](/help/sdk-implement/setup/set-up-js.md)
 * [API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 

@@ -13,7 +13,7 @@ The Media Collection API is Adobe's RESTful alternative to the client-side Media
 
    This feature provides you with the ability to track media while a user is offline, through local storing of event data until the user's device returns online. (See [Track downloaded content](track-downloaded-content.md) for details.)
 
-The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation are also relevant to the Media Collection API. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation are also relevant to the Media Collection API. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## Media Tracking Data Flows {#section_pwq_n34_qbb}
 

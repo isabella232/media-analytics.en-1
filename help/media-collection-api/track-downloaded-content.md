@@ -27,7 +27,7 @@ Each approach has its advantages and disadvantages: the Media Collection API tra
 
 ### Event schemas
 
-The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+The Downloaded Content API is based on the Media Collection API, so the event data that your player batches and sends requires that the same events schemas are used as in the Media Collection API. For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Order of events
 

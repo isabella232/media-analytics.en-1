@@ -11,7 +11,7 @@ uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 
 In this scenario, some buffering occurs when VOD content is played back.
 
-Unless specified, the network calls in this scenario are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Unless specified, the network calls in this scenario are the same as the calls in the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 |  Trigger&nbsp;&nbsp;  | Heartbeat method&nbsp;&nbsp;  | Network calls&nbsp;&nbsp;  | Notes&nbsp;&nbsp;  |
 |---|---|---|---|

@@ -8,7 +8,7 @@ uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 # Track buffering on Android{#track-buffering-on-android}
 
 >[!IMPORTANT]
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](../../../sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](/help/sdk-implement/download-sdks.md)
 
 ## Buffer tracking constants
 
@@ -35,4 +35,4 @@ uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
    }
    ```
 
-See the tracking scenario [VOD playback with buffering](../../../sdk-implement/tracking-scenarios/vod-buffering.md) for more information.
+See the tracking scenario [VOD playback with buffering](/help/sdk-implement/tracking-scenarios/vod-buffering.md) for more information.

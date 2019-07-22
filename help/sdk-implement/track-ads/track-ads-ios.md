@@ -9,7 +9,7 @@ uuid: e979e679-cde5-4c30-8f34-867feceac13a
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Ad tracking constants
 
@@ -73,7 +73,7 @@ uuid: e979e679-cde5-4c30-8f34-867feceac13a
 
 1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
-    * [Implement standard ad metadata on iOS](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+    * [Implement standard ad metadata on iOS](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:     
     
       ```    
@@ -126,4 +126,4 @@ uuid: e979e679-cde5-4c30-8f34-867feceac13a
    }
    ```
 
-See the tracking scenario [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) for more information.
+See the tracking scenario [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) for more information.

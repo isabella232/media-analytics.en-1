@@ -11,7 +11,7 @@ uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 
 In this scenario, a portion of the VOD content is marked as a chapter.
 
-Unless specified, the network calls in this scenario are the same as the calls in the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network call happens at the same time, but the payload is different. 
+Unless specified, the network calls in this scenario are the same as the calls in the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. The network call happens at the same time, but the payload is different. 
 
 |  Trigger&nbsp;&nbsp;  | Heartbeat method&nbsp;&nbsp;  | Network calls&nbsp;&nbsp;  | Notes&nbsp;&nbsp;  |
 |---|---|---|---|
@@ -20,8 +20,8 @@ Unless specified, the network calls in this scenario are the same as the calls i
 |  First frame of the chapter plays.  | `trackPlay`  | Heartbeat Content Play  | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
 |  The chapter plays.  |  | Chapter Heartbeats  |  |
 |  The chapter is complete.  | `trackEvent:trackChapterComplete`  | Heartbeat Chapter Complete  | This is when the end of the chapter is reached.  |
-|  The content plays.  |  | Content Heartbeats  | This network call is exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
-|  The content is complete.  | `trackComplete`  | Heartbeat Content Complete  | This network call is exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+|  The content plays.  |  | Content Heartbeats  | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+|  The content is complete.  | `trackComplete`  | Heartbeat Content Complete  | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 |  The session is over.  | `trackSessionEnd`  |  | `SessionEnd` means that the end of a viewing session has been reached. This API must be called even if the user does not watch the media to completion.  |
 
 ## Parameters {#section_869319D99A474FEA8EA840415EA97FBD}
