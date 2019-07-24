@@ -21,7 +21,7 @@ You must complete and record these tasks in following order:
     1. Heartbeat start
     1. Heartbeat analytics start
 
-    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Play main content video for at least 5 minutes uninterrupted**
 
@@ -29,9 +29,9 @@ You must complete and record these tasks in following order:
 
     During regular main content playback, Heartbeat calls are sent to the Heartbeat server every ten seconds.
 
-    For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-    Also see your platform's [Track Ads](../../sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+    Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
 1. **Move app or browser to the background** 
 
@@ -43,7 +43,7 @@ You must complete and record these tasks in following order:
 
 1. **Play main content video for at least 5 minutes uninterrupted** 
 
-    For call parameters and metadata, see [Test Call Details.](../../sdk-implement/validation/test-call-details.md)
+    For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Close video player** 
 

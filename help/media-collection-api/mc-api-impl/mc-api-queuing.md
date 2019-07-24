@@ -7,13 +7,13 @@ uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 
 # Queueing events when sessions response is slow{#queueing-events-when-sessions-response-is-slow}
 
-The Media Collection API is RESTful: i.e, you make an HTTP request and wait for the response. This is an important point only for when you make a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. This is important because the Session ID is required for all subsequent tracking calls. 
+The Media Collection API is RESTful: i.e, you make an HTTP request and wait for the response. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. This is important because the Session ID is required for all subsequent tracking calls. 
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](../../media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](../../media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
 
 >[!NOTE]
 >
->The [Events request](../../media-collection-api/mc-api-ref/mc-api-events-req.md) does not return data back to the client beyond an HTTP response code. 
+>The [Events request](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) does not return data back to the client beyond an HTTP response code. 
 
 Check the Reference Player in your distribution for one way to process events prior to receiving a Session ID. For example:
 

@@ -23,7 +23,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 
 ## SDK Implementation
 
-1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku library to your project.
+1. Add your [downloaded](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku library to your project.
 
     1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
  

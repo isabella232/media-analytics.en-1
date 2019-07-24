@@ -81,7 +81,7 @@ You must complete and record the actions in the following order:
     1. Heartbeat start
     1. Heartbeat analytics start
  
-    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **View ad break if available**
 
@@ -93,7 +93,7 @@ You must complete and record the actions in the following order:
     1. Heartbeat ad start
     1. Heartbeat ad analytics start
 
-    The first two calls contain additional metadata and variables. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+    The first two calls contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
     * **Ad Play**
 
@@ -120,7 +120,7 @@ You must complete and record the actions in the following order:
      * The playhead position should increment by 10 with every play call.
      * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
  
-       For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+       For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **Pause during playback for at least 30 seconds.** On pause of the video player, pause event calls will be sent every 10 seconds. After pause ends the play events should resume. 
 

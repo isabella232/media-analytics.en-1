@@ -28,7 +28,7 @@ The following diagrams illustrate the playhead timeline and the corresonding tim
 
 **Implementation Detail**
 
-This call signals _the user's intention to play_ a video. <br/><br/>It returns a Session ID ( `{sid}`) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting". <br/><br/>[Mandatory session parameters ](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body. <br/><br/>On the backend, this call generates an Adobe Analytics initiate call.
+This call signals _the user's intention to play_ a video. <br/><br/>It returns a Session ID ( `{sid}`) to the client that is used to identify all subsequent tracking calls within the session. The player state is not yet "playing", but is instead "starting". <br/><br/>[Mandatory session parameters ](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) must be included in the `params` map in the request body. <br/><br/>On the backend, this call generates an Adobe Analytics initiate call.
 
 **Sample request body**
 

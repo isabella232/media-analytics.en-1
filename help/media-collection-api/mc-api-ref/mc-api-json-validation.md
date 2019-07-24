@@ -14,4 +14,4 @@ POST
 https://{uri}/api/v1/schemas/{event-type}
 ```
 
-For more information about using the JSON validation schemas, see [Validating event requests.](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+For more information about using the JSON validation schemas, see [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)

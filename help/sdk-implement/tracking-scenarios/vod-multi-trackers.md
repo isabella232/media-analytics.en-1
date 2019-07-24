@@ -11,9 +11,9 @@ uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
-This scenario is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. Each of these sessions uses a separate instance of `MediaHeartbeat`.
+This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. Each of these sessions uses a separate instance of `MediaHeartbeat`.
 
-Unless specified, the network calls are the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Unless specified, the network calls are the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#section_45D7B10031524411B91E2C569F7818B0}
 

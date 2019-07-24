@@ -11,16 +11,16 @@ uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 
 This scenario comprises seeking in the main content during playback.
 
-This is the same scenario as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point.
+This is the same scenario as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point.
 
 | Trigger&nbsp;&nbsp; | Heartbeat method&nbsp;&nbsp; | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| User clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| User clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | First frame of the content plays.  | `trackPlay` | Heartbeat Content Play | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
-| Content plays | | Content Heartbeats | This network call is exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| Content plays | | Content Heartbeats | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | User begins seek operation on content | `trackSeekStart` | | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
 | Seek operation completes | `trackSeekComplete` | | Heartbeats begin to go out since seek is complete.  Tip:  The playhead value should represent the correct new playhead after the seek.  |
-| Content is complete | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| Content is complete | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | Session Over | `trackSessionEnd` | | `SessionEnd` |
 
 ## Sample Code {#section_q2d_wcj_x2b}

@@ -45,5 +45,5 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
 1. **Enable Adobe Analytics Reports.** 
 
-    To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](../media-reports/media-reports-enable.md)
+    To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](/help/media-reports/media-reports-enable.md)
 

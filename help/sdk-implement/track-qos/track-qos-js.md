@@ -9,7 +9,7 @@ uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implemement QOS
 
@@ -53,7 +53,7 @@ uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
 
 1. Make sure that `getQoSObject()` method returns the most updated QoS information. 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](../../sdk-implement/track-errors/track-errors-overview.md).) 
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).) 
 
    >[!TIP]
    >

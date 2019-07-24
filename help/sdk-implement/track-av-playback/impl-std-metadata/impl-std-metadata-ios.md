@@ -18,7 +18,7 @@ uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 ## Implementation
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys` 
-   [IOS metadata keys](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [IOS metadata keys](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. Set the standard metadata dictionary on `MediaInfo` `ADBMediaObject` instance using the Standard Metadata constant for metadata. 
 

@@ -25,7 +25,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 ## SDK Implementation
 
-1. Add your [downloaded](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK to your project.
+1. Add your [downloaded](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK to your project.
 
     1. Verify that the following software components exist in the `libs` directory:
 
@@ -135,7 +135,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 In version 2.x, all of the public methods are consolidated into the `ADBMediaHeartbeat` class to make it easier on developers. All configurations have been consolidated into the `ADBMediaHeartbeatConfig` class.
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 ## Configure a Native App for tvOS
 

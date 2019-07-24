@@ -8,7 +8,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 # Track core playback on Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](../../../sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup** 
 
@@ -94,7 +94,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
     * **Standard metadata** 
     
-       [Implement standard metadata on JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+       [Implement standard metadata on JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
     
        >[!NOTE]
        >
@@ -102,7 +102,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
        * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript) 
 
-          See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
 
     * **Custom metadata** 
     
@@ -179,7 +179,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
     * **Standard video metadata**
 
-       [Implement standard metadata on Roku](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+       [Implement standard metadata on Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
     
        >[!NOTE]
        >Attaching the standard video metadata object to the media object is optional.
@@ -264,6 +264,6 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
     >[!TIP]
     >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the video playback resumes.
 
-* Tracking scenarios: [VOD playback with no ads](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking scenarios: [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the Roku SDK for a complete tracking example.
 
