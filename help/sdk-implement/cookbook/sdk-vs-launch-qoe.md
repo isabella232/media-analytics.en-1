@@ -9,8 +9,8 @@ uuid:
 
 ## Feature differences
 
-* *Launch* - Launch replaces and improves upon Dynamic Tag Management (DTM). Launch provides you with a UI that walks you through setting up, configuring, and deploying your web-based media tracking solutions.
-* *Media SDK* - The Media SDKs provide you with libraries designed for specific platforms. The Media SDK is recommended for adding media tracking to your Mobile Apps.
+* *Launch* - Launch provides you with a UI that walks you through setting up, configuring, and deploying your web-based media tracking solutions. Launch improves upon Dynamic Tag Management (DTM). 
+* *Media SDK* - The Media SDK provides you with media tracking libraries designed for specific platforms (e.g.: Android, iOS, etc.). Adobe recommends Media SDK for tracking media usage in your Mobile Apps.
 
 ## Tracker creation differences
 
@@ -48,7 +48,7 @@ Launch offers two approaches to creating the tracking infrastructure. Both appro
 
 1. Add the Media Analytics library to your development project.
 1. Create a config object (`MediaHeartbeatConfig`).
-1. Implement the delegate protocol, exposing the getQoSObject() and getCurrentPlaybackTime() functions.
+1. Implement the delegate protocol, exposing the `getQoSObject()` and `getCurrentPlaybackTime()` functions.
 1. Create a Media Heartbeat instance (`MediaHeartbeat`).
 
 ```
