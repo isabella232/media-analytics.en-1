@@ -109,7 +109,7 @@ user-guide-title: Adobe Analytics for Audio and Video
     + Validation {#validation}
         + [Validation Overview](sdk-implement/validation/validation-overview.md)
         + [Test 1: Standard Playback](sdk-implement/validation/test1-standard-playback.md) 
-        + [Test 2: Video Interruption](sdk-implement/validation/test2-video-interrupt.md) 
+        + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md) 
         + [Test Call Details](sdk-implement/validation/test-call-details.md)
         + [Heartbeat Parameter Descriptions](sdk-implement/validation/heartbeat-params.md)
         + Debugging {#debugging} 

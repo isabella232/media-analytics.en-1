@@ -88,7 +88,7 @@ Complete the following implementation steps:
     
    //Media Heartbeat Config 
    var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "namespace.hb.omtrdc.net"; 
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
    mediaConfig.playerName = "HTML5 Basic"; 
    mediaConfig.channel = "Video Channel"; 
    mediaConfig.debugLogging = true; 
@@ -134,8 +134,8 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME. 
 
-* **Heartbeats (Media Analytics)** 
-   Always has the format "`[namespace].hb.omtrdc.net`", where "`[namespace]`" is defined by your login company and is provided by Adobe.
+* ** Media Analytics (Heartbeats)** 
+   This always has the format "`[your_namespace].hb.omtrdc.net`". The value of "`[your_namespace]`" specifies your company, and is provided by Adobe.
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 

@@ -54,15 +54,15 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-### Video metadata in Media Analytics start call
+### Media metadata in Media Analytics start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -81,13 +81,13 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | aa_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-### Video metadata in Heartbeat start call
+### Media metadata in Heartbeat start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -147,14 +147,14 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 | `s:meta:custom.[value]` | Custom metadata fields |
 | `s:meta:a.media.[value]` | Standard metadata fields |
 
-### Video metadata in Media Analytics ad start call
+### Media metadata in Media Analytics ad start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -192,12 +192,12 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | aa_ad_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Video metadata in Heartbeat ad start call
+### Media metadata in Heartbeat ad start call
 
 |  Parameter | Value (sample)&nbsp;&nbsp; |
 |---|---|
@@ -235,9 +235,9 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | complete |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
 ### Heartbeat ad play call
@@ -247,9 +247,9 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | play |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
 ## Play main content {#section_u1l_1gf_f2b}
@@ -261,10 +261,10 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:event:type` | play |
 | `l:event:playhead` | 29 |
 | `l:event:duration` | 10189 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 
 **Notes:**

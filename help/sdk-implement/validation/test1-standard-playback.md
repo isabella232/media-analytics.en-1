@@ -7,30 +7,32 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 
 # Test 1: Standard playback{#test-standard-playback}
 
-This test case validates general playback and sequencing, and is required as part of the certification request form. Download the certification request form here: [Certification Request Form.](cert_req_form_nielsen.docx) 
+This test case validates general playback and sequencing. It is required as part of the Certification Request Form. 
 
-Video implementations are composed of the following types of tracking calls:
-* Video and Ad Start calls are sent directly to the AppMeasurement server. 
-* Media Analytics (MA) heartbeat calls are sent on start and every ten seconds to the Adobe VA tracking server.
+**Download the certification request form here: ==>**&nbsp; [Certification Request Form.](cert_req_form.docx) 
+
+Media implementations are composed of the following types of tracking calls:
+* Media and Ad Start calls are sent directly to the AppMeasurement (Adobe Analytics) server. 
+* Media Analytics heartbeat calls are sent on start and every ten seconds (for content) or one second (for ads) to the Media Analytics tracking server.
 
 >[!NOTE]
->Video tracking will behave the same across all platforms, desktop and mobile.
+>Media tracking behaves the same across all platforms.
 
-You must complete and record the actions in the following order:
+You must complete and record these actions in the following order:
 
 1. **Load the page or app**
 
     **Tracking Servers** (For all website and mobile apps):
 
-    * **AppMeasurement (Adobe Analytics) -** An RDC tracking server or CNAME that resolves to an RDC server is required for the Experience Cloud Visitor ID service. The analytics tracking server should end in `.sc.omtrdc.net` or be a CNAME.     
+    * **AppMeasurement (Adobe Analytics) -** An RDC tracking server or CNAME that resolves to an RDC tracking server is required for the Experience Cloud Visitor ID service. The Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.     
     
-    * **Media Analytics (Heartbeats) -** This server always has the format `[namespace].hb.omtrdc.net`, where `[namespace]` is defined by your login company and is provided by Adobe.
+    * **Media Analytics (Heartbeats) -** This server always has the format "`[namespace].hb.omtrdc.net`", where `[namespace]` specifies your company name. This name is provided by Adobe.
 
-    You need to validate certain key, universal variables across all tracking calls:
+    You need to validate certain key variables that are universal across all tracking calls:
 
-    **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. It is found in both AppMeasurement and Media Analytics (MA) calls.
+    **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. It is found in both AppMeasurement and Media Analytics calls.
 
-    * **Heartbeat Play Call**
+    * **Media Analytics Play Call**
 
        |  Parameter | Value (sample) |
        |---|---|
@@ -67,17 +69,17 @@ You must complete and record the actions in the following order:
   
        >[!NOTE]
        >
-       >On VA Start Calls ( `s:event:type=start`) the `mid` values may not be present. This is OK. They may not appear until the VA Play Calls ( `s:event:type=play`).
+       >On VA Start Calls (`s:event:type=start`) the `mid` values may not be present. This is OK. They may not appear until the VA Play Calls ( `s:event:type=play`).
   
        |  Parameter | Value (sample) |
        |---|---|
        | `pev2` | ms_s |
 
-1. **Start the video player** 
+1. **Start the media player** 
 
-    When the video player starts, the key calls are sent in the following order:
+    When the media player starts, the key calls are sent in the following order:
 
-    1. Video analytics start
+    1. Media analytics start
     1. Heartbeat start
     1. Heartbeat analytics start
  
@@ -87,9 +89,9 @@ You must complete and record the actions in the following order:
 
     * **Ad Start**
 
-    When the video ad starts, the following key calls are sent in the following order:
+    When the media ad starts, the following key calls are sent in the following order:
 
-    1. Video ad analytics start
+    1. Media ad analytics start
     1. Heartbeat ad start
     1. Heartbeat ad analytics start
 
@@ -101,7 +103,7 @@ You must complete and record the actions in the following order:
     
     * **Ad Complete**
 
-       At the 100% point on a video ad, a Heartbeat complete call will be sent.
+       At the 100% point on a media ad, a Heartbeat complete call will be sent.
 
 1. **Pause ad playback for 30 seconds, if available.**&nbsp; **Ad Pause**
 
@@ -111,24 +113,24 @@ You must complete and record the actions in the following order:
     >
     >The playhead value should remain constant during the pause.
 
-1. **Play main content video for 10 minutes uninterrupted.**&nbsp;**Content Play **
+1. **Play main content media for 10 minutes uninterrupted.**&nbsp; **Content Play**
 
-    During regular main content playback, Heartbeat calls are sent to the Heartbeat server every ten seconds.
+    During main content playback, heartbeat calls are sent to the Media Analytics server every ten seconds.
  
     Notes:
  
      * The playhead position should increment by 10 with every play call.
      * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
  
-       For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+       For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b)
 
-1. **Pause during playback for at least 30 seconds.** On pause of the video player, pause event calls will be sent every 10 seconds. After pause ends the play events should resume. 
+1. **Pause during playback for at least 30 seconds.** On pause of the media player, pause event calls will be sent every 10 seconds. After pause ends the play events should resume. 
 
-1. **Seek/scrub video.** On scrubbing of video playhead, no special tracking calls are sent, however, when video playback resumes after scrubbing the playhead value should reflect the new position within the main content. 
+1. **Seek/scrub media.** On scrubbing of media playhead, no special tracking calls are sent, however, when media playback resumes after scrubbing the playhead value should reflect the new position within the main content. 
 
-1. **Replay video (VOD only).** When a video is replayed, a new set of video start calls should be sent, as if this is a fresh video view. 
+1. **Replay media (VOD only).** When media is replayed, a new set of media start calls should be sent, as if this is a fresh media view. 
 
-1. **View next video in playlist.** On video start of the next video in a playlist, a new set of video start calls should be sent. 
+1. **View next media in playlist.** On media start of the next media in a playlist, a new set of media start calls should be sent. 
 
-1. **Switch video or stream.** When switching live streams, a Heartbeat complete call for the first stream should not be sent. The video start calls and video play calls should begin with the new show and stream name and with the correct playhead and duration values for the new show.
+1. **Switch media or stream.** When switching live streams, a Heartbeat complete call for the first stream should not be sent. The media start calls and media play calls should begin with the new show and stream name and with the correct playhead and duration values for the new show.
 

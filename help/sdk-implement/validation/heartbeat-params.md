@@ -5,9 +5,9 @@ uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 
 ---
 
-# Heartbeat parameter descriptions{#heartbeat-parameter-descriptions}
+# Media Analytics (Heartbeat) parameter descriptions{#heartbeat-parameter-descriptions}
 
-List of heartbeat parameters that Adobe collects and processes on the heartbeats server:
+List of Media Analytics parameters that Adobe collects and processes on the heartbeats server:
 
 ## All Events
 
@@ -30,8 +30,8 @@ List of heartbeat parameters that Adobe collects and processes on the heartbeats
 | `s:cuser:customer_user_ids_x` | O | `MediaHeartbeatConfig` | All customer user IDs set on Audience Manager.  |
 | `l:aam:loc_hint` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
 | `s:aam:blob` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:sc:rsid` | R | Report Suit ID (or IDs) | SiteCatalyst RSID where reports should be sent.  |
-| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | SiteCatalyst tracking server.  |
+| `s:sc:rsid` | R | Report Suit ID (or IDs) | Adobe Analytics RSID where reports should be sent.  |
+| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Adobe Analytics tracking server.  |
 | `h:sc:ssl` | R | `MediaHeartbeatConfig` | Whether the traffic is over HTTPS (if set to 1) or over HTTP (is set to 0).  |
 | `s:sp:ovp` | O | `MediaHeartbeatConfig` | Set to "primetime" for Primetime players, or the actual OVP for other players.  |
 | `s:sp:sdk` | R | `MediaHeartbeatConfig` | The OVP version string.  |

@@ -1,21 +1,21 @@
 ---
-seo-title: Test 2  Video interruption
-title: Test 2  Video interruption
+seo-title: Test 2  Media interruption
+title: Test 2  Media interruption
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 
 ---
 
-# Test 2: Video interruption{#test-video-interruption}
+# Test 2: Media interruption{#test-media-interruption}
 
 This test case is required as part of the certification request form and validates mobile interruption behavior.
 
-Download the certification request here: [Certification Request Form.](cert_req_form_nielsen.docx)
+Download the certification request here: [Certification Request Form.](cert_req_form.docx)
 
 You must complete and record these tasks in following order:
 
-1. **Start the video player** 
+1. **Start the media player** 
 
-    When the video player starts, the following calls are sent in the following order:
+    When the media player starts, the following calls are sent in the following order:
 
     1. Media analytics start
     1. Heartbeat start
@@ -23,7 +23,7 @@ You must complete and record these tasks in following order:
 
     The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-1. **Play main content video for at least 5 minutes uninterrupted**
+1. **Play main content media for at least 5 minutes uninterrupted**
 
     **Content Play**
 
@@ -41,11 +41,11 @@ You must complete and record these tasks in following order:
 
     On returning from background, content playback should resume. 
 
-1. **Play main content video for at least 5 minutes uninterrupted** 
+1. **Play main content media for at least 5 minutes uninterrupted** 
 
     For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
-1. **Close video player** 
+1. **Close media player** 
 
-    No additional tracking calls should fire after video player is closed.
+    No additional tracking calls should fire after the media player is closed.
 
