@@ -74,5 +74,5 @@ List of Media Analytics parameters that Adobe collects and processes on the Medi
 
 | Name | Required / Optional | Data Source | Description&nbsp;&nbsp; |
 | ---  | :---: | --- | --- |
-| `s:event:type=end` | R | Media SDK | The `end` `close` | 
+| `s:event:type=end` | R | Media SDK | The `end`&nbsp; `close` | 
 
