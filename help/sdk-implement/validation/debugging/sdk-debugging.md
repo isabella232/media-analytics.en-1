@@ -88,7 +88,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag:** The name of the sub-component that issued the log message (usually the class name) 
 * **message:** The actual trace message
 
-You can use the logs output by the video heartbeat library to verify the implementation. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+You can use the logs output by the Media SDK library to verify the implementation. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like: 
 

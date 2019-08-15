@@ -68,12 +68,3 @@ if (e.type == "bitrate_change") {
 };
 ```
 
-## Validate {#section_F3174831408947A893F7E8C15659E5AA}
-
-### Bitrate change
-
-On each bitrate change, a Heartbeat `bitrate_change` call will be sent.
-
-### Error
-
-On player error, a Heartbeat error call will be sent with the error value included. 

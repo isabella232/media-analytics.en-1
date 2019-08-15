@@ -137,31 +137,3 @@ if (e.type == "ad break complete") {
 }; 
 ```
 
-## Validate {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### Ad Start
-
-On start of an individual ad playback, three key calls are sent in the following order:
-
-1. Video ad analytics start
-1. Heartbeat ad start
-1. Heartbeat analytics start
-
-Calls 1 and 2 contain additional metadata variables for both custom and standard.
-
-### Ad Play
-
-During ad playback, Heartbeat ad play calls are sent to the Heartbeat server every second.
-
-### Ad Complete
-
-At the 100% point of an ad, a Heartbeat ad complete call will be sent.
-
-### Ad Skip
-
-When an ad is skipped, no events are sent, so the tracking calls will not include the ad information.
-
->[!TIP]
->
->No unique calls are sent on ad break start and ad break complete.
-

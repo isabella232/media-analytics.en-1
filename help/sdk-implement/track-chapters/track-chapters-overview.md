@@ -82,18 +82,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## Validate {#section_07EC2811BE3249249494596BFE9BF869}
-
-### Chapter Start
-
-On start of an individual chapter playback, one key call is sent:
-
-* Heartbeat chapter start (This call contains additional chapter metadata variables.)
-
-### Chapter Complete
-
-At the chapter boundary end, a Heartbeat chapter complete call will be sent.
-
-### Chapter Skip
-
-When a chapter is skipped, a Heartbeat chapter skip call will be sent. 

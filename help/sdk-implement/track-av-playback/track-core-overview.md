@@ -231,32 +231,5 @@ if (e.type == “buffered”) {
 
 ## Validate {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### Content Start
+For information on validating your implementation, see [Validation.](/help/sdk-implement/validation/validation-overview.md)
 
-On start of a media player, these key calls are sent in the following order:
-
-1. Media analytics start
-1. Heartbeat start
-1. Heartbeat analytics start
-
-Calls 1 and 2 contain additional metadata variables for both custom and standard.
-
-### Content Play
-
-During regular main content playback, Heartbeat calls are sent to the Heartbeat server every ten seconds.
-
-### Content Complete
-
-At the 100% point, on content or at a show boundary on a linear stream, a Heartbeat complete call will be sent.
-
-### Content Pause
-
-When the player pauses, player pause event calls will be sent every 10 seconds. After pause ends, the play events should resume.
-
-### Content Scrub/Seek
-
-On scrubbing of the playhead, no special tracking calls are sent. However, when playback resumes after scrubbing, the playhead value should reflect the new position in the main content.
-
-### Content Buffer
-
-When the media player buffers, player buffer event calls are sent every 10 seconds. After buffering ends, the play events should resume. 

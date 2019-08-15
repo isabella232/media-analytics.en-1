@@ -37,7 +37,7 @@ Many of the same values that you see on Adobe Analytics Content Start Calls you 
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-During media playback, there is a timer that will send one or more heartbeats every 10 seconds. These heartbeats will contain information about playback, ads, buffering, and a number of other things. The exact content of each heartbeat is beyond the scope of this document, the critical thing to validate is that heartbeats are being triggered consistently while playback continues.
+During media playback, there is a timer that will send one or more heartbeats (or pings) every 10 seconds for main content, and every second for ads. These heartbeats will contain information about playback, ads, buffering, and a number of other things. The exact content of each heartbeat is beyond the scope of this document, the critical thing to validate is that heartbeats are being triggered consistently while playback continues.
 
 In the content heartbeats, look for a few specific things:  
 

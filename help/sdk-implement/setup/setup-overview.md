@@ -118,15 +118,13 @@ Complete the following implementation steps:
 
 ## Validate {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Media implementations are composed of two types of tracking calls:
+Media Analytics tracking implementations generate two types of tracking calls:
 
-* Media and Ad Start calls are sent directly to the AppMeasurement server. 
-* Heartbeat calls are sent to the Heartbeat tracking server on start, every ten seconds for content, and every one second for ads.
+* Media and ad Start calls are sent directly to the Adobe Analytics (AppMeasurement) server. 
+* Heartbeat calls are sent to the Media Analytics (heartbeats) tracking server, processed there, and passed on to the Adobe Analytics server.
 
-Media tracking works the same across all platforms, desktop and mobile. Audio tracking currently works in mobile platforms. For all tracking calls there are a few key universal variables to be validated:
-
-* **AppMeasurement (Analytics)** 
-   For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variable.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html) 
+* **Adobe Analytics (AppMeasurement) server** 
+   For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variables.](https://helpx.adobe.com/analytics/kb/determining-data-center.html) 
 
   >[!IMPORTANT]
   >
@@ -134,8 +132,10 @@ Media tracking works the same across all platforms, desktop and mobile. Audio tr
 
   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME. 
 
-* ** Media Analytics (Heartbeats)** 
+* ** Media Analytics (Heartbeats) server** 
    This always has the format "`[your_namespace].hb.omtrdc.net`". The value of "`[your_namespace]`" specifies your company, and is provided by Adobe.
+
+Media tracking works the same across all platforms, desktop and mobile. Audio tracking currently works on mobile platforms. For all tracking calls there are a few key universal variables to be validated:
 
 ## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
