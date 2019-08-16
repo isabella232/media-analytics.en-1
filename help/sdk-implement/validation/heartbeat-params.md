@@ -23,7 +23,7 @@ List of Media Analytics parameters that Adobe collects and processes on the Medi
 | s:asset:publisher|MediaHeartbeatConfig |(Required)<br/><br/>The publisher of the asset.  |
 | s:asset:video_id|VideoInfo |(Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog.  |
 | s:asset:type|Media SDK |(Required)<br/><br/>The asset type (main or ad).  |
-| s:stream:type|VideoInfo |(Required)<br/><br/>The stream type. Can be one of the following: <ul> <li> live </li> <li> vod </li> <li> linear </li> </ul>.  |
+| s:stream:type|VideoInfo |(Required)<br/><br/>The stream type. Can be one of the following: <ul> <li> live </li> <li> vod </li> <li> linear </li> </ul> |
 | s:user:id|Config object for mobile, app measurement VisitorID |(Optional)<br/><br/>User's specifically set Visitor ID.  |
 | s:user:aid|Experience Cloud Org |(Optional)<br/><br/>The user's Analytics Visitor ID value.  |
 | s:user:mid|Experience Cloud Org |(Required)<br/><br/>The user's Experience cloud visitor ID value.  |
@@ -64,15 +64,15 @@ List of Media Analytics parameters that Adobe collects and processes on the Medi
 | ---  | --- | --- |
 | s:stream:chapter_sid|Media SDK |(Required)<br/><br/>The unique identifier associated to the playback instance of the chapter.  <br/> **Note:** A chapter can be played multiple times due to seek-back operations performed by the user.  |
 | s:stream:chapter_name|ChapterInfo |(Optional)<br/><br/>The chapter's friendly (i.e., human readable) name.  |
-| s:stream:chapter_id|Media SDK |(Required)<br/><br/>The unique ID of the chapter. This value is computed automatically based on the following formula: <br/>MD5(video_id) + "_" + chapter_pos |
+| s:stream:chapter_id|Media SDK |(Required)<br/><br/>The unique ID of the chapter. This value is computed automatically based on the following formula: <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos`|
 | l:stream:chapter_pos|ChapterInfo |(Required)<br/><br/>The chapter's index in the list of chapters (starting with 1).  |
 | l:stream:chapter_offset|ChapterInfo |(Required)<br/><br/>The chapter's offset (expressed in seconds) inside the main content, excluding ads.  |
-| l:stream:chapter_length|ChapterInfo | The chapter's duration (expressed in seconds).  |(Required)<br/><br/>
+| l:stream:chapter_length|ChapterInfo | (Required)<br/><br/>The chapter's duration (expressed in seconds).  |
 | s:meta:custom_chapter_metadata.x|ChapterInfo |(Optional)<br/><br/>Custom chapter metadata.  |
 
 ## Session End Event
 
 | Name | Data&nbsp;Source | Description&nbsp;&nbsp; |
 | ---  | --- | --- |
-| s:event:type=end|Media SDK | The end&nbsp; close |(Required)<br/><br/>
+| s:event:type=end|Media SDK |(Required)<br/><br/> The `end`&nbsp;`close`|
 
