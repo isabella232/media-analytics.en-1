@@ -99,7 +99,7 @@ Complete and record the following actions (in order):
     1. Media Analytics server - Ad Start call
     1. Media Analytics server - "Adobe Analytics Ad Start call requested"
 
-    The first two calls contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b#view-ad-playback)
+    The first two calls contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
 
     The third call tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Ad Start call (`pev2=msa_s`) be sent to the Adobe Analytics server.
 

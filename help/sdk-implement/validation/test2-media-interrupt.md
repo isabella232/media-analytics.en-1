@@ -35,7 +35,7 @@ You must complete and record these tasks in following order:
 
     During content playback, the Media SDK sends play calls (heartbeats) to the Media Analytics server every ten seconds.
 
-    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
+    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
     Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
@@ -49,7 +49,7 @@ You must complete and record these tasks in following order:
 
 1. **Play main content media for at least 5 minutes uninterrupted** 
 
-    For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
+    For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
 1. **Close media player** 
 
