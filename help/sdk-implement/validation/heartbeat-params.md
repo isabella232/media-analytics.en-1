@@ -11,68 +11,68 @@ List of Media Analytics parameters that Adobe collects and processes on the Medi
 
 ## All Events
 
-| Name | &nbsp;Required/Optional&nbsp; | Data Source | &nbsp;Description&nbsp; |
-| ---  | :---: | --- | --- |
-| s:event:type | R | Media SDK | The type of the event being tracked. Event types: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
-| l:event:prev_ts | R | Media SDK | The timestamp of the last event of the same type in this session. The value is -1. |
-| l:event:ts | R | Media SDK | The timestamp of the event.  |
-| l:event:duration | R | Media SDK | This value is set internally (in milliseconds) by the Media SDK, not by the player. It is used to compute the time spent metrics on the backend. E.g.: a.media.totalTimePlayed is computed as a sum of the duration for all of the Play (type=play) heartbeats that are generated. <br/>*Note:* This parameter is set to 0 for certain events because they are "state change events" (e.g., type=complete, type=chapter_complete, or type=bitrate_change.) |
-| l:event:playhead | R | VideoInfo | The playhead was inside the currently active asset (main or ad), when the event was recorded.  |
-| s:event:sid | R | Media SDK | The session ID (a randomly generated string). All events in a certain session (video + ads) should be the same.  |
-| l:asset:duration / l:asset:length <br/>(Renamed from length duration) | R | VideoInfo | The video asset length of the main asset.  |
-| s:asset:publisher | R | MediaHeartbeatConfig | The publisher of the asset.  |
-| s:asset:video_id | R | VideoInfo | An ID uniquely identifying the video in the publisher's catalog.  |
-| s:asset:type | R | Media SDK | The asset type (main or ad).  |
-| s:stream:type | R | VideoInfo | The stream type. Can be one of the following: <ul> <li> live </li> <li> vod </li> <li> linear </li> </ul>.  |
-| s:user:id | O | Config object for mobile, app measurement VisitorID | User's specifically set Visitor ID.  |
-| s:user:aid | O | Experience Cloud Org | The user's Analytics Visitor ID value.  |
-| s:user:mid | R | Experience Cloud Org | The user's Experience cloud visitor ID value.  |
-| s:cuser:customer_user_ids_x | O | MediaHeartbeatConfig | All customer user IDs set on Audience Manager.  |
-| l:aam:loc_hint | R | MediaHeartbeatConfig | AAM data sent on each payload after aa_start |
-| s:aam:blob | R | MediaHeartbeatConfig | AAM data sent on each payload after aa_start |
-| s:sc:rsid | R | Report Suit ID (or IDs) | Adobe Analytics RSID where reports should be sent.  |
-| s:sc:tracking_server | R | MediaHeartbeatConfig | Adobe Analytics tracking server.  |
-| h:sc:ssl | R | MediaHeartbeatConfig | Whether the traffic is over HTTPS (if set to 1) or over HTTP (is set to 0).  |
-| s:sp:ovp | O | MediaHeartbeatConfig | Set to "primetime" for Primetime players, or the actual OVP for other players.  |
-| s:sp:sdk | R | MediaHeartbeatConfig | The OVP version string.  |
-| s:sp:player_name | R | VideoInfo | Video player name (the actual player software, used to identify the player).  |
-| s:sp:channel | O | MediaHeartbeatConfig | The channel where the user is watching the content. For a mobile app, the app name. For a website, the domain name.  |
-| s:sp:hb_version | R | Media SDK | The version number of the Media SDK library issuing the call.  |
-| l:stream:bitrate | R | QoSInfo | The current value of the stream bitrate (in bps).  |
+| Name | Data&nbsp;Source | &nbsp;Description&nbsp; |
+| ---  | --- | --- |
+| s:event:type|Media SDK |(Required)<br/><br/>The type of the event being tracked. Event types: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
+| l:event:prev_ts|Media SDK |(Required)<br/><br/>The timestamp of the last event of the same type in this session. The value is -1. |
+| l:event:ts|Media SDK |(Required)<br/><br/>The timestamp of the event.  |
+| l:event:duration|Media SDK |(Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. It is used to compute the time spent metrics on the backend. E.g.: a.media.totalTimePlayed is computed as a sum of the duration for all of the Play (type=play) heartbeats that are generated. <br/>*Note:* This parameter is set to 0 for certain events because they are "state change events" (e.g., type=complete, type=chapter_complete, or type=bitrate_change.) |
+| l:event:playhead|VideoInfo |(Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded.  |
+| s:event:sid|Media SDK |(Required)<br/><br/>The session ID (a randomly generated string). All events in a certain session (video + ads) should be the same.  |
+| l:asset:duration / l:asset:length <br/>(Renamed from length duration)|VideoInfo |(Required)<br/><br/>The video asset length of the main asset.  |
+| s:asset:publisher|MediaHeartbeatConfig |(Required)<br/><br/>The publisher of the asset.  |
+| s:asset:video_id|VideoInfo |(Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog.  |
+| s:asset:type|Media SDK |(Required)<br/><br/>The asset type (main or ad).  |
+| s:stream:type|VideoInfo |(Required)<br/><br/>The stream type. Can be one of the following: <ul> <li> live </li> <li> vod </li> <li> linear </li> </ul>.  |
+| s:user:id|Config object for mobile, app measurement VisitorID |(Optional)<br/><br/>User's specifically set Visitor ID.  |
+| s:user:aid|Experience Cloud Org |(Optional)<br/><br/>The user's Analytics Visitor ID value.  |
+| s:user:mid|Experience Cloud Org |(Required)<br/><br/>The user's Experience cloud visitor ID value.  |
+| s:cuser:customer_user_ids_x|MediaHeartbeatConfig |(Optional)<br/><br/>All customer user IDs set on Audience Manager.  |
+| l:aam:loc_hint|MediaHeartbeatConfig |(Required)<br/><br/>AAM data sent on each payload after aa_start |
+| s:aam:blob|MediaHeartbeatConfig |(Required)<br/><br/>AAM data sent on each payload after aa_start |
+| s:sc:rsid|Report Suit ID (or IDs) |(Required)<br/><br/>Adobe Analytics RSID where reports should be sent.  |
+| s:sc:tracking_server|MediaHeartbeatConfig |(Required)<br/><br/>Adobe Analytics tracking server.  |
+| h:sc:ssl|MediaHeartbeatConfig |(Required)<br/><br/>Whether the traffic is over HTTPS (if set to 1) or over HTTP (is set to 0).  |
+| s:sp:ovp|MediaHeartbeatConfig |(Optional)<br/><br/>Set to "primetime" for Primetime players, or the actual OVP for other players.  |
+| s:sp:sdk|MediaHeartbeatConfig |(Required)<br/><br/>The OVP version string.  |
+| s:sp:player_name|VideoInfo |(Required)<br/><br/>Video player name (the actual player software, used to identify the player).  |
+| s:sp:channel|MediaHeartbeatConfig |(Optional)<br/><br/>The channel where the user is watching the content. For a mobile app, the app name. For a website, the domain name.  |
+| s:sp:hb_version|Media SDK |(Required)<br/><br/>The version number of the Media SDK library issuing the call.  |
+| l:stream:bitrate|QoSInfo |(Required)<br/><br/>The current value of the stream bitrate (in bps).  |
 
 ## Error Events
 
-| Name | Required / Optional | Data Source | Description&nbsp;&nbsp; |
-| ---  | :---: | --- | --- |
-| `s:event:source` | R | Media SDK | The source of the error, either player-internal, or the application-level.  |
-| `s:event:id` | R | Media SDK | Error ID, uniquely identifies the error.  |
+| Name | Data&nbsp;Source | Description&nbsp;&nbsp; |
+| ---  | --- | --- |
+| s:event:source|Media SDK |(Required)<br/><br/>The source of the error, either player-internal, or the application-level.  |
+| s:event:id|Media SDK |(Required)<br/><br/>Error ID, uniquely identifies the error.  |
 
 ## Ad Events
 
-| Name | Required / Optional | Data Source | Description&nbsp;&nbsp; |
-| ---  | :---: | --- | --- |
-| `s:asset:ad_id` | R | `AdInfo` | The name of the ad.  |
-| `s:asset:ad_sid` | R | Media SDK | A unique identifier generated by the Media SDK, appended to all ad-related pings.  |
-| `s:asset:pod_id` | R | Media SDK | Pod ID inside the video. This value is computed automatically based on the following formula: <br/>MD5(video_id) + <br/>"_" + <br/>[pod index] |
-| `s:asset:pod_position` | R | `AdBreakInfo` | Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.).  |
-| `s:asset:resolver` | R | `AdBreakInfo` | The ad resolver.  |
-| `s:meta:custom_ad_metadata.x` | O | `MediaHeartbeat` | The custom ad metadata.  |
+| Name | Data&nbsp;Source | Description&nbsp;&nbsp; |
+| ---  | --- | --- |
+| s:asset:ad_id|AdInfo |(Required)<br/><br/>The name of the ad.  |
+| s:asset:ad_sid|Media SDK |(Required)<br/><br/>A unique identifier generated by the Media SDK, appended to all ad-related pings.  |
+| s:asset:pod_id|Media SDK |(Required)<br/><br/>Pod ID inside the video. This value is computed automatically based on the following formula: <br/>MD5(video_id) + <br/>"_" + <br/>[pod index] |
+| s:asset:pod_position|AdBreakInfo |(Required)<br/><br/>Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.).  |
+| s:asset:resolver|AdBreakInfo |(Required)<br/><br/>The ad resolver.  |
+| s:meta:custom_ad_metadata.x|MediaHeartbeat |(Optional)<br/><br/>The custom ad metadata.  |
 
 ## Chapter Events
 
-| Name | Required / Optional | Data Source | Description&nbsp;&nbsp; |
-| ---  | :---: | --- | --- |
-| `s:stream:chapter_sid` | R | Media SDK | The unique identifier associated to the playback instance of the chapter.  <br/> **Note:** A chapter can be played multiple times due to seek-back operations performed by the user.  |
-| `s:stream:chapter_name` | O | `ChapterInfo` | The chapter's friendly (i.e., human readable) name.  |
-| `s:stream:chapter_id` | R | Media SDK | The unique ID of the chapter. This value is computed automatically based on the following formula: <br/>MD5(video_id) + "_" + chapter_pos |
-| `l:stream:chapter_pos` | R | `ChapterInfo` | The chapter's index in the list of chapters (starting with 1).  |
-| `l:stream:chapter_offset` | R | `ChapterInfo` | The chapter's offset (expressed in seconds) inside the main content, excluding ads.  |
-| `l:stream:chapter_length` | R | `ChapterInfo` | The chapter's duration (expressed in seconds).  | 
-| `s:meta:custom_chapter_metadata.x` | O | `ChapterInfo` | Custom chapter metadata.  |
+| Name | Data&nbsp;Source | Description&nbsp;&nbsp; |
+| ---  | --- | --- |
+| s:stream:chapter_sid|Media SDK |(Required)<br/><br/>The unique identifier associated to the playback instance of the chapter.  <br/> **Note:** A chapter can be played multiple times due to seek-back operations performed by the user.  |
+| s:stream:chapter_name|ChapterInfo |(Optional)<br/><br/>The chapter's friendly (i.e., human readable) name.  |
+| s:stream:chapter_id|Media SDK |(Required)<br/><br/>The unique ID of the chapter. This value is computed automatically based on the following formula: <br/>MD5(video_id) + "_" + chapter_pos |
+| l:stream:chapter_pos|ChapterInfo |(Required)<br/><br/>The chapter's index in the list of chapters (starting with 1).  |
+| l:stream:chapter_offset|ChapterInfo |(Required)<br/><br/>The chapter's offset (expressed in seconds) inside the main content, excluding ads.  |
+| l:stream:chapter_length|ChapterInfo | The chapter's duration (expressed in seconds).  |(Required)<br/><br/>
+| s:meta:custom_chapter_metadata.x|ChapterInfo |(Optional)<br/><br/>Custom chapter metadata.  |
 
 ## Session End Event
 
-| Name | Required / Optional | Data Source | Description&nbsp;&nbsp; |
-| ---  | :---: | --- | --- |
-| `s:event:type=end` | R | Media SDK | The `end`&nbsp; `close` | 
+| Name | Data&nbsp;Source | Description&nbsp;&nbsp; |
+| ---  | --- | --- |
+| s:event:type=end|Media SDK | The end&nbsp; close |(Required)<br/><br/>
 
