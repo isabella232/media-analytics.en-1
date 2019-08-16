@@ -7,18 +7,24 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 
 # Test 1: Standard playback{#test-standard-playback}
 
-This test case validates general playback and sequencing. It is a required element of the Certification Request Form. 
+This test case validates general playback and sequencing. It is a required element of your certification request. 
+
+## Certification Request Form
 
 **Download the certification request form here: ==>**&nbsp; [Certification Request Form.](cert_req_form.docx) 
 
+## Certification Test 1 overview
+
 Media Analytics implementations include two types of tracking calls:
-* Calls made directly to your Adobe Analytics (AppMeasurement) server - These are only the "Media Start" and "Ad Start" calls.
+* Calls made directly to your Adobe Analytics (AppMeasurement) server - These calls occur on "Media Start" and "Ad Start" events.
 * Calls made to the Media Analytics (heartbeats) server - These include in-band calls: the SDK sends timed play calls or "pings" at 10-second intervals during content playback, and at one-second intervals during ads. Out-of-band calls include Pause, Buffering, Error, etc.
 
 >[!NOTE]
 >Media tracking behaves the same across all platforms.
 
-You must complete and record these actions in the following order:
+## Test procedure
+
+Complete and record the following actions (in order):
 
 1. **Load the page or app**
 
@@ -32,14 +38,14 @@ You must complete and record these actions in the following order:
 
     **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. It is found in both Adobe Analytics (AppMeasurement) and Media Analytics (heartbeats) calls.
 
-    * **Media Analytics (heartbeats) Play call**
+    * **Media Analytics Play call**
 
        |  Parameter | Value (sample) |
        |---|---|
        | `s:event:type` | play |
        | `s:user:mid` | 30250035503789876473484580554595324209 |
   
-    * **Adobe Analytics (AppMeasurement) Start call**
+    * **Adobe Analytics Start call**
   
        |  Parameter | Value (sample) |
        |---|---|
@@ -59,13 +65,13 @@ You must complete and record these actions in the following order:
        | `pev2` | ADBINTERNAL:Lifecycle |
        | `mid` | 30250035503789876473484580554595324209 |
   
-    * **Media Analytics (heartbeats) Start call**
+    * **Media Analytics Start call**
   
        |  Parameter | Value (sample) |
        |---|---|
        | `s:event:type` | start |
   
-    * **Media Analytics (heartbeats) Start call**
+    * **Media Analytics Start call**
   
        >[!NOTE]
        >
@@ -73,15 +79,15 @@ You must complete and record these actions in the following order:
 
 1. **Start the media player** 
 
-    When the media player starts, the key calls are sent in the following order:
+    When the media player starts, the Media SDK sends the key calls to the two servers in the following order:
 
-    1. Adobe Analytics (AppMeasurement) Start
-    1. Media Analytics (heartbeats) Start
-    1. Media Analytics (heartbeats) Adobe Analytics Start call requested
+    1. Adobe Analytics server - Start call
+    1. Media Analytics server - Start call
+    1. Media Analytics server - "Adobe Analytics Start call requested"
  
-    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
+    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-    The third call above tells the Media Analytics (heartbeats) server that the Media SDK requested that the Adobe Analytics Start call (`pev2=ms_s`) be sent to the Adobe Analytics server.
+    The third call above tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Start call (`pev2=ms_s`) be sent to the Adobe Analytics server.
 
 1. **View ad break if available**
 
@@ -89,17 +95,17 @@ You must complete and record these actions in the following order:
 
     When the ad starts, the following key calls are sent in the following order:
 
-    1. Adobe Analytics (AppMeasurement) Ad Start
-    1. Media Analytics (heartbeats) Ad Start
-    1. Media Analytics (heartbeats) Adobe Analytics Ad Start requested
+    1. Adobe Analytics server - Ad Start call
+    1. Media Analytics server - Ad Start call
+    1. Media Analytics server - "Adobe Analytics Ad Start call requested"
 
-    The first two calls contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+    The first two calls contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b#view-ad-playback)
 
-    The third call tells the Media Analytics (heartbeats) server that the Media SDK requested that the Adobe Analytics Ad Start call (`pev2=msa_s`) be sent to the Adobe Analytics server.
+    The third call tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Ad Start call (`pev2=msa_s`) be sent to the Adobe Analytics server.
 
     * **Ad Play**
 
-       During ad playback, the Media Analytics SDK sends play events of type ad to the Media Analytics server every second. 
+       During ad playback, the Media Analytics SDK sends play events of type "ad" to the Media Analytics server every second. 
     
     * **Ad Complete**
 
@@ -107,7 +113,7 @@ You must complete and record these actions in the following order:
 
 1. **Pause ad playback for 30 seconds, if available.**&nbsp; **Ad Pause**
 
-    During Ad Pause, Media Analytics heartbeat or "ping" calls are sent by the SDK to the Media Analytics (heartbeats) server every second.
+    During Ad Pause, Media Analytics heartbeat or "ping" calls are sent by the SDK to the Media Analytics server every second.
 
     >[!NOTE]
     >
@@ -115,14 +121,14 @@ You must complete and record these actions in the following order:
 
 1. **Play main content for 10 minutes uninterrupted.**&nbsp; **Content Play**
 
-    During main content playback, Media Analytics heartbeat or "ping" calls are sent to the Media Analytics server every 10 seconds.
+    During main content playback, the Media SDK sends heartbeats (Play calls) to the Media Analytics server every 10 seconds.
  
     Notes:
  
      * The playhead position should increment by 10 with every Play call.
      * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
  
-       For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b)
+       For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
 1. **Pause during playback for at least 30 seconds.** On pause of the media player, pause event calls will be sent by the SDK to the Media Analytics server every 10 seconds. After pause ends, the play events should resume. 
 
@@ -132,5 +138,5 @@ You must complete and record these actions in the following order:
 
 1. **View next media in playlist.** On Media Start of the next media in a playlist, a new set of Media Start calls should be sent. 
 
-1. **Switch media or stream.** When switching live streams, a Media Analytics (heartbeats) complete call for the first stream should not be sent. The Media Start calls and Play calls should begin with the new show and stream name, and with the correct playhead and duration values for the new show.
+1. **Switch media or stream.** When switching live streams, a Media Analytics complete call for the first stream should not be sent. The Media Start calls and Play calls should begin with the new show and stream name, and with the correct playhead and duration values for the new show.
 

@@ -7,9 +7,13 @@ uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 
 # Test 2: Media interruption{#test-media-interruption}
 
-This test case validates mobile interruption behavior. It is a required element of the Certification Request Form. 
+This test case validates mobile interruption behavior. It is a required element of your certification request. 
+
+## Certification Request Form
 
 **Download the certification request form here: ==>**&nbsp; [Certification Request Form.](cert_req_form.docx) 
+
+## Test procedure
 
 You must complete and record these tasks in following order:
 
@@ -21,15 +25,15 @@ You must complete and record these tasks in following order:
     1. Media Analytics (heartbeats) Start
     1. Media Analytics (heartbeats) Adobe Analytics Start call requested
 
-    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
+    The first two calls above contain additional metadata and variables. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-    The third call above tells the Media Analytics (heartbeats) server that the Media SDK requested that the Adobe Analytics Start call (`pev2=ms_s`) be sent to the Adobe Analytics server.
+    The third call above tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Start call (`pev2=ms_s`) be sent to the Adobe Analytics server.
 
 1. **Play main content for at least 5 minutes uninterrupted**
 
     **Content Play**
 
-    During content playback, the Media SDK sends play calls (heartbeats) to the Media Analytics (heartbeats) server every ten seconds.
+    During content playback, the Media SDK sends play calls (heartbeats) to the Media Analytics server every ten seconds.
 
     For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
@@ -37,7 +41,7 @@ You must complete and record these tasks in following order:
 
 1. **Move app or browser to the background** 
 
-    While the app runs in the background, only `main:pause` calls should be sent to the Media Analytics (heartbeats) server, starting with VHL version 1.6.6 and later. 
+    While the app runs in the background, only `main:pause` calls should be sent to the Media Analytics server, starting with VHL version 1.6.6 and later. 
 
 1. **Bring app or browser back to foreground** 
 

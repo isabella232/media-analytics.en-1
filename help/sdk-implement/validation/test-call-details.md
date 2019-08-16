@@ -7,9 +7,9 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 # Test call details{#test-call-details}
 
-## Start the media player {#section_qts_xff_f2b}
+## Start the media player {#start-the-media-player}
 
-### Adobe Analytics (AppMeasurement) Start call
+### Adobe Analytics (AppMeasurement) Start call {#aa-start-call}
 
 | Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -28,7 +28,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Length for linear streams should be set to the best estimate for the current show.
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Start call
+### Standard metadata in Adobe Analytics (AppMeasurement) Start call {#std-metadata-aa}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -47,14 +47,14 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Custom metadata in Adobe Analytics (AppMeasurement) Start call
+### Custom metadata in Adobe Analytics (AppMeasurement) Start call {#custom-metadata-aa}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### Media Analytics (heartbeats) Start call
+### Media Analytics (heartbeats) Start call {#ma-start-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -74,7 +74,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Playhead position for linear streams on video start should be set to the seconds elapsed since the start of the current show, not 0.
 
-### Standard metadata in Media Analytics (heartbeats) Start call
+### Standard metadata in Media Analytics (heartbeats) Start call {#std-metadata-ma}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -93,14 +93,14 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Custom metadata in Media Analytics (heartbeats) Start call
+### Custom metadata in Media Analytics (heartbeats) Start call {#custom-metadata-ma}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (heartbeats) Adobe Analytics Start call
+### Media Analytics (heartbeats) Adobe Analytics Start call {#ma-aa-start}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -118,9 +118,9 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 * This call indicates that the Media SDK has requested that an Adobe Analytics `pev2=ms_s` call be sent to the Adobe Analytics (AppMeasurement) server.
 * This call does not contain custom metadata.
 
-## View ad playback {#section_wz3_yff_f2b}
+## View ad playback {#view-ad-playback}
 
-### Adobe Analytics (AppMeasurement) Ad Start call
+### Adobe Analytics (AppMeasurement) Ad Start call {#aa-ad-start-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -143,7 +143,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Ad length may be set to -1 if not available on ad start.
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call
+### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -162,14 +162,14 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Custom metadata in Adobe Analytics (AppMeasurement) Ad Start call
+### Custom metadata in Adobe Analytics (AppMeasurement) Ad Start call {#custom-metadata-aa-ad-start}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Media Analytics (heartbeats) Ad Start call
+### Media Analytics (heartbeats) Ad Start call {#ma-ad-start-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -188,7 +188,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 * Additional context data variables should be present and contain metadata. See metadata details below.
 * Ad length may be set to -1 if not available on ad start.
 
-### Standard metadata in Media Analytics (heartbeats) Ad Start call
+### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -207,14 +207,14 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Custom metadata in Media Analytics (heartbeats) Ad Start call
+### Custom metadata in Media Analytics (heartbeats) Ad Start call {#custom-metadata-ma-ad-start}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (heartbeats) Adobe Analytics Ad Start call
+### Media Analytics (heartbeats) Adobe Analytics Ad Start call {#ma-aa-ad-start-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -226,7 +226,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Media Analytics (heartbeats) Adobe Analytics Ad Complete call
+### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -238,7 +238,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Media Analytics (heartbeats) Adobe Analytics Ad Play call
+### Media Analytics (heartbeats) Ad Play call {#ma-ad-play-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
@@ -250,9 +250,9 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-## Play main content {#section_u1l_1gf_f2b}
+## Play main content {#play-main-content}
 
-### Media Analytics (heartbeats) Play call
+### Media Analytics (heartbeats) Play call {#ma-play-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
