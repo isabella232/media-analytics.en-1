@@ -38,13 +38,6 @@ Complete and record the following actions (in order):
 
     **Adobe Visitor ID (`mid`):** The `mid` variable is used to capture the value set in the AMCV cookie. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. It is found in both Adobe Analytics (AppMeasurement) and Media Analytics (heartbeats) calls.
 
-    * **Media Analytics Play call**
-
-       |  Parameter | Value (sample) |
-       |---|---|
-       | `s:event:type` | play |
-       | `s:user:mid` | 30250035503789876473484580554595324209 |
-  
     * **Adobe Analytics Start call**
   
        |  Parameter | Value (sample) |
@@ -77,6 +70,13 @@ Complete and record the following actions (in order):
        >
        >On Media Analytics Start calls (`s:event:type=start`) the `mid` values may not be present. This is OK. They may not appear until the Media Analytics Play calls ( `s:event:type=play`).
 
+    * **Media Analytics Play call**
+
+       |  Parameter | Value (sample) |
+       |---|---|
+       | `s:event:type` | play |
+       | `s:user:mid` | 30250035503789876473484580554595324209 |
+  
 1. **Start the media player** 
 
     When the media player starts, the Media SDK sends the key calls to the two servers in the following order:
@@ -118,6 +118,8 @@ Complete and record the following actions (in order):
     >[!NOTE]
     >
     >The playhead value should remain constant during the pause.
+       
+    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md##ma-ad-pause-call)
 
 1. **Play main content for 10 minutes uninterrupted.**&nbsp; **Content Play**
 
@@ -131,6 +133,8 @@ Complete and record the following actions (in order):
        For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
 1. **Pause during playback for at least 30 seconds.** On pause of the media player, pause event calls will be sent by the SDK to the Media Analytics server every 10 seconds. After pause ends, the play events should resume. 
+
+    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#pause-main-content)
 
 1. **Seek/scrub media.** On scrubbing of media playhead, no special tracking calls are sent, however, when media playback resumes after scrubbing, the playhead value should reflect the new position within the main content. 
 

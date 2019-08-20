@@ -15,13 +15,13 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
-| `a.media.name` | 123456 |
-| `a.media.length` | 120 |
+| **`a.media.name`** | **123456** |
+| **`a.media.length`** | **120** |
 | `a.media.playerName` | HTML5 |
-| `a.media.view` | true |
+| **`a.media.view`** | **true** |
 | `a.contentType` | vod |
-| `custom.[value]` | Custom metadata fields |
-| `a.media.[value]` | Standard metadata fields |
+| **`custom.[value]`** | **Custom metadata fields** |
+| **`a.media.[value]`** | **Standard metadata fields** |
 
 **Notes:**
 
@@ -59,15 +59,15 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
 | `s:event:type` | start |
-| `l:event:playhead` | 0 |
+| **`l:event:playhead`** | **0** |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-| `s:meta:custom.[value]` | Custom metadata fields |
-| `s:meta:a.media.[value]` | Standard metadata fields |
+| **`s:meta:custom.[value]`** | **Custom metadata fields** |
+| **`s:meta:a.media.[value]`** | **Standard metadata fields** |
 
 **Notes:**
 
@@ -104,7 +104,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
-| `s:event:type` | aa_start |
+| **`s:event:type`** | **aa_start** |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
@@ -124,19 +124,19 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
-| `pev2` | msa_s |
+| **`pev2`** | **msa_s** |
 | `a.media.name` | 123456 |
-| `a.media.ad.name` | 9378 |
+| **`a.media.ad.name`** | **9378** |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| `a.media.ad.length` | 15 |
+| **`a.media.ad.length`** | **15** |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| `a.media.ad.view` | True |
-| `custom.[value]` | Metadata fields |
-| `a.media.[value]` | Standard metadata fields |
+| **`a.media.ad.view`** | **True** |
+| **`custom.[value]`** | **Metadata fields** |
+| **`a.media.[value]`** | **Standard metadata fields** |
 
 **Notes:**
 
@@ -173,15 +173,15 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
-| `s:event:type` | start |
+| **`s:event:type`** | **start** |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| `l:asset:length` | 120 |
+| **`l:asset:length`** | **120** |
 | `s:stream:type` | vod |
-| `s:asset:type` | ad |
-| `s:meta:custom.[value]` | Custom metadata fields |
-| `s:meta:a.media.[value]` | Standard metadata fields |
+| **`s:asset:type`** | **ad** |
+| **`s:meta:custom.[value]`** | **Custom metadata fields** |
+| **`s:meta:a.media.[value]`** | **Standard metadata fields** |
 
 **Notes:**
 
@@ -218,20 +218,8 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
-| `s:event:type` | aa_ad_start |
+| **`s:event:type`** | **aa_ad_start** |
 | `l:event:playhead` | 0 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
-
-|  Parameter | &nbsp;Value (sample)&nbsp; |
-|---|---|
-| `s:event:type` | complete |
-| `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
@@ -242,13 +230,37 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
-| `s:event:type` | play |
+| **`s:event:type`** | **play** |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| `s:asset:type` | ad |
+| **`s:asset:type`** | **ad** |
+
+### Media Analytics (heartbeats) Ad Pause call {#ma-ad-pause-call}
+
+|  Parameter | &nbsp;Value (sample)&nbsp; |
+|---|---|
+| **`s:event:type`** | **pause** |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| **`s:asset:type`** | **ad** |
+
+### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
+
+|  Parameter | &nbsp;Value (sample)&nbsp; |
+|---|---|
+| **`s:event:type`** | **complete** |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| **`s:asset:type`** | **ad** |
 
 ## Play main content {#play-main-content}
 
@@ -257,8 +269,8 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
 | `s:event:type` | play |
-| `l:event:playhead` | 29 |
-| `l:event:duration` | 10189 |
+| **`l:event:playhead`** | **29** |
+| **`l:event:duration`** | **10189** |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
@@ -269,4 +281,20 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 * The playhead position should increment by 10 seconds with every play call.
 * The `l:event:duration` value represents the number of milliseconds since the last tracking call and should be roughly the same value on each 10 second call.
+
+## Pause main content {#pause-main-content}
+
+### Media Analytics (heartbeats) Pause call {#ma-play-call}
+
+|  Parameter | &nbsp;Value (sample)&nbsp; |
+|---|---|
+| **`s:event:type`** | **pause** |
+| **`l:event:playhead`** | **29** |
+| `l:event:duration` | 10189 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | vod |
+| `s:asset:type` | main |
+
 
