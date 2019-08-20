@@ -17,7 +17,9 @@ This test case validates general playback and sequencing. It is a required eleme
 
 Media Analytics implementations include two types of tracking calls:
 * Calls made directly to your Adobe Analytics (AppMeasurement) server - These calls occur on "Media Start" and "Ad Start" events.
-* Calls made to the Media Analytics (heartbeats) server - These include in-band calls: the SDK sends timed play calls or "pings" at 10-second intervals during content playback, and at one-second intervals during ads. Out-of-band calls include Pause, Buffering, Error, etc.
+* Calls made to the Media Analytics (heartbeats) server - These include in-band and out-of-band calls: 
+   * In-band - The SDK sends timed play calls or "pings" at 10-second intervals during content playback, and at one-second intervals during ads. 
+   * Out-of-band - These calls can happen at any point, and include Pause, Buffering, errors, content complete, ad complete, etc.
 
 >[!NOTE]
 >Media tracking behaves the same across all platforms.
