@@ -284,7 +284,7 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 ## Pause main content {#pause-main-content}
 
-### Media Analytics (heartbeats) Pause call {#ma-play-call}
+### Media Analytics (heartbeats) Pause call {#ma-pause-call}
 
 |  Parameter | &nbsp;Value (sample)&nbsp; |
 |---|---|
