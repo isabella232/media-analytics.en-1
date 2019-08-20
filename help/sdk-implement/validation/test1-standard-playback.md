@@ -119,7 +119,7 @@ Complete and record the following actions (in order):
     >
     >The playhead value should remain constant during the pause.
        
-    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md##ma-ad-pause-call)
+    For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
 1. **Play main content for 10 minutes uninterrupted.**&nbsp; **Content Play**
 
