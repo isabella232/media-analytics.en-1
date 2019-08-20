@@ -66,8 +66,6 @@ Complete and record the following actions (in order):
        |---|---|
        | `s:event:type` | start |
   
-    * **Media Analytics Start call**
-  
        >[!NOTE]
        >
        >On Media Analytics Start calls (`s:event:type=start`) the `mid` values may not be present. This is OK. They may not appear until the Media Analytics Play calls ( `s:event:type=play`).

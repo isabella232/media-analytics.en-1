@@ -11,7 +11,7 @@ Adobe Debug provides reporting, in real-time, so you can view hits and metadata 
 
 For certification, these reports can be shared by simply copying the URL and sending the link, e.g., within a ZenDesk ticket.
 
->[!TIP]
+>[!NOTE]
 >
 >Only one session can be active at a time. The active session can be opened from the Dashboard.
 

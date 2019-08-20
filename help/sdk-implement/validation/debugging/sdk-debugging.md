@@ -7,7 +7,7 @@ uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 
 # SDK debugging{#sdk-debugging}
 
-You can enable and disable logging. The Media SDK provides an extensive tracing/logging mechanism that is put in place throughout the entire video-tracking stack. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+You can enable and disable logging. The Media SDK provides an extensive tracing/logging mechanism throughout the media-tracking stack. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Sample code for debug logging
 
@@ -59,7 +59,7 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-**Using Adobe Bloodhound to Test Chromecast Applications -** 
+## Using Adobe Bloodhound to Test Chromecast Applications 
 
 During application development, Bloodhound allows you to view server calls locally, and optionally forward the data to Adobe collection servers. For more information about Bloodhound, see the following guides:
 
@@ -70,7 +70,7 @@ During application development, Bloodhound allows you to view server calls local
 >
 >As of April 30, 2017, Adobe Bloodhound has been sunset. Starting on May 1, 2017, no additional enhancements and no additional Engineering or Adobe Expert Care support will be provided.
 
-### Log Messages
+## Log Messages
 
 Log messages follow this format: 
 

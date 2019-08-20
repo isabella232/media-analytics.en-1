@@ -28,7 +28,7 @@ To create a new Debug report:
         * [!UICONTROL Default Endpoint] - The data in this field is provided by Adobe and cannot be changed. 
         * [!UICONTROL Extra Endpoint] - Add `CNAMES`, if you use them, for tracking server like `metrics.companyname.com`
 
-    * **Media Heartbeats**
+    * **Video Heartbeats (Media Analytics)**
 
         * [!UICONTROL Default Endpoint] - The data in this field is provided by Adobe and cannot be changed. 
         * [!UICONTROL Extra Endpoint] - Add `CNAMES`, if you use them, for your tracking server, e.g., `metrics.companyname.com`.
