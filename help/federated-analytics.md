@@ -38,7 +38,10 @@ The Federated Analytics service provides a system for sharing Adobe Media (audio
 
 1. Sender and Receiver work together to complete the Federation Rules Agreement form.
 
-   **Download the current version of the form here ==>:** &nbsp; [Federation Rules Agreement](/help/federated_analytics_form.pdf)
+    **Download the current version of the form here:** 
+    
+    [Federation Rules Agreement](federated_analytics_form.pdf)
+   
 
    >[!NOTE]
    >
