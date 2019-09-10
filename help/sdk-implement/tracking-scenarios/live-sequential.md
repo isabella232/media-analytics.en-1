@@ -13,16 +13,16 @@ In this scenario, there is one live asset with no ads played for 40 secs after j
 
 This is the same scenario as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, but a part of the content is scrubbed through and a seek is completed from one point in main content to another point. 
 
-| Trigger | Heartbeat method | Network calls&nbsp;&nbsp; | Notes&nbsp;&nbsp; |
+| Trigger | Heartbeat method | &nbsp;Network&nbsp;calls&nbsp; | &nbsp;Notes&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| User clicks [!UICONTROL Play] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
-| First frame of the content plays.  | `trackPlay` | Heartbeat Content Play | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
+| User clicks [!UICONTROL Play] | trackSessionStart | Analytics Content Start, Heartbeat Content Start | The measurement library is unaware that there is a pre-roll ad, so these network calls are identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
+| First frame of the content plays.  | trackPlay | Heartbeat Content Play | When chapter content plays before main content, the Heartbeats start when the chapter starts.  |
 | Content plays | | Content Heartbeats | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
-| Session1 Over (Episode1 ended) | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | Complete means session1 for 1st episode was reached and watched completely. Before starting session for next episode this session must be ended.  |
-| Episode2 started (Session2 start) | `trackSessionStart` | Analytics Content Start Heartbeat Content Start | This is because user watched first episode and continued watching into another episode |
-| 1st Frame of Media | `trackPlay` | Heartbeat Content Play | This method triggers the timer and from this point forward, heartbeats will be sent every 10 seconds as long as playback continues.  |
+| Session1 Over (Episode1 ended) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete means session1 for 1st episode was reached and watched completely. Before starting session for next episode this session must be ended.  |
+| Episode2 started (Session2 start) | trackSessionStart | Analytics Content Start Heartbeat Content Start | This is because user watched first episode and continued watching into another episode |
+| 1st Frame of Media | trackPlay | Heartbeat Content Play | This method triggers the timer and from this point forward, heartbeats will be sent every 10 seconds as long as playback continues.  |
 | Content Plays | | Content Heartbeats | |
-| Session Over (Episode2 ended) | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | Complete means session2 for 2nd episode was reached and watched completely. Before starting session for next episode this session must be ended.  |
+| Session Over (Episode2 ended) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete means session2 for 2nd episode was reached and watched completely. Before starting session for next episode this session must be ended.  |
 
 ## Parameters {#section_D52B325B99DA42108EF560873907E02C}
 
