@@ -7,20 +7,20 @@ uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 
 # Custom Link implementation guide{#custom-link-implementation-guide}
 
-Custom Video Tracking utilizes the [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
 
-* In JavaScript: `s.tl()` function
+* In JavaScript: the `s.tl()` function
 * In Mobile Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**Requirements:**
+## Requirements
 
 * Access to video player API events and data
 * Ability to add scripts if using Analytics SDK
 * Ability to add tracking beacons (custom scripting or hardcode) if using Data Insertion API
 
-**Metadata:**
+## Metadata
 
 * Metadata can be added to any tracking call as part of the link data
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -41,7 +41,7 @@ if (e.type == "ended") {
 };
 ```
 
-**Why use Custom Link:**
+## Why use Custom Link
 
 * Minimal prerequisites are needed
 * Works on any platform, including no-script
@@ -50,7 +50,7 @@ if (e.type == "ended") {
 * Total control over every aspect of the video data
 * Remove link to sample player
 
-**Sample JavaScript for HTML5 Player**
+## Sample JavaScript for HTML5 Player
 
 ```javascript
 <script type="text/javascript"> 
