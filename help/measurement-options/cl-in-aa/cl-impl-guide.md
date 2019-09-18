@@ -5,7 +5,7 @@ uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 
 ---
 
-# Custom Link implementation guide{#custom-link-implementation-guide}
+# Custom Link Implementation Guide{#custom-link-implementation-guide}
 
 Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
 
