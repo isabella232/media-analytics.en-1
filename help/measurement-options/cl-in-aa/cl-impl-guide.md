@@ -28,7 +28,7 @@ Custom Video Tracking utilizes [manual link tracking using custom link code](htt
 /* Call on video complete */ 
  
 if (e.type == "ended") {  
-    s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15’; 
+    s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15'; 
     s.linkTrackEvents = 'event3'; 
     s.prop10 = mediaName; 
     s.eVar10 = mediaName; 
