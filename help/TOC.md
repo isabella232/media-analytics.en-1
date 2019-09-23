@@ -175,6 +175,6 @@ user-guide-title: Adobe Analytics for Audio and Video
         + [Media Concurrent Viewers](media-reports/media-default-reports/media-concurrent-viewers.md)
         + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
-+ [Federated Analytics](federated-analytics.md)
++ [Federated Analytics](data-sharing/federated-analytics.md)
 + Additional resources {#additional-resources}
     + [Documentation Updates](additional-resources/doc-updates.md)
