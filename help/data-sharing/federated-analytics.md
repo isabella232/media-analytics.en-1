@@ -40,8 +40,7 @@ The Federated Analytics service provides a system for sharing Adobe Media (audio
 
 ## Process {#section_byb_kb3_vbb}
 
-1. Sender and Receiver work together to complete the Federation Rules Agreement form. 
-1. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Download Acrobat for free.](https://get.adobe.com/reader/)
+1. Sender and Receiver work together to complete the Federation Rules Agreement form. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Download Acrobat for free.](https://get.adobe.com/reader/)
 1. Consulting services provides a sample data file to Receiver with actual data from Sender players, to further confirm correct data sharing rules are defined, provided data files are available.
 1. Sender and Receiver ensure the data sharing agreement will meet all contractual requirements between the two parties.
 1. Consulting services sends the completed form to Adobe Engineering to set-up data sharing rules.
