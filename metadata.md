@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-solution-title: Media Analytics
+solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/support/analytics.html
 solution-image: assets/analytics-icon-24.png
 getting-started-title: Getting Started
