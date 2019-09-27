@@ -7,7 +7,10 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 
 # Federated Analytics{#federated-analytics}
 
-The Federated Analytics service provides a system for sharing Adobe Media (audio and video) Analytics data between two partners. The standardized measurement data created by Media Analytics is the hallmark for Federated Analytics, allowing the same data to flow into a single report from multiple sources. Through the rules and logic governing Federated Analytics, data is easily controlled and individualized to meet the needs of each partnership. Federated Analytics makes audio and video measurement more efficient, streamlined, and actionable.
+The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners. 
+The standardized measurement data created by Media Analytics is the hallmark for Federated Analytics, allowing the same data to flow into a single report from multiple sources. 
+Through the rules and logic governing Federated Analytics, data is easily controlled and individualized to meet the needs of each partnership. 
+Federated Analytics makes audio and video measurement more efficient, streamlined, and actionable.
 
 ## Benefits {#section_804FFE8671594A6FB769CBE79EF9D627}
 
