@@ -7,7 +7,8 @@ uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 
+Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
 
 * In JavaScript: the `s.tl()` function
 * In Mobile Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -47,7 +48,6 @@ if (e.type == "ended") {
 * Any calculations, such as time spent or quartiles, must be calculated in a custom script 
 * Very straightforward with no hidden libraries or scripts
 * Total control over every aspect of the video data
-* Remove link to sample player
 
 ## Sample JavaScript for HTML5 Player
 
@@ -123,4 +123,3 @@ if (e.type == "ended") {
   }; 
 </script>
 ```
-
