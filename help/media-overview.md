@@ -22,10 +22,6 @@ Media tracking is enabled through either of the following:
 * **Media SDK -** Integrates with the most commonly used media players. 
 * **Media Collection API -** (RESTful API) Integrates with players for which there is no SDK support (or with players for which no SDK integration is desired).
 
-  The Media Collection API also provides an additional capability that is not yet available in the SDK:
-
-    * **Downloaded content tracking -** Provides support for tracking media content (video and audio) that is downloaded and played from a device regardless of the connectivity. This capability is built on top of the Media Collection API and follows the same player tracking specification. (There is no SDK support at this time.)
-
 Adobe Analytics for Media enables clients to track the full customer journey across their site, which includes media consumption, and these measures are easily integrated into Analytics reporting and other Experience Cloud products. Media measurement allows you to slice and dice your data into multiple dimensions and segments, capturing all of the metadata you need to do a full detailed analysis, and to attribute success criteria to fully consumed media, average time spent, and completed ads.
 
 The media solutions not only measure vital delivery metrics related to QoS, such as dropped frames, time spent buffering, and average bitrate. They can also be combined with your website or app data to visualize the flow of the customer and their interests, to better be able to make recommendations and personalize their experiences through the Adobe Experience Cloud.
@@ -54,6 +50,7 @@ Some of the many benefits of the Heartbeats method include:
 * **Shared data through Federated Analytics -** Capitalize on our industry-first media sharing capabilities, to evaluate data holistically across all of your media distribution partners—operators, programmers, and distributors. 
 * **Partnerships with Certified Ratings Partners -** Adobe partners with audience ratings partner Nielsen to provide neutral census third party measurement to allow for trusted, certified ratings. 
 * **Standardized solution across all platforms -** Enable consistent, standardized variables across all of your media and platforms to allow for a more efficient cross-campaign, device and vendor comparison.
+* **Downloaded content tracking -** Track media content (video and audio) that is downloaded and played on a device regardless of its connectivity. 
 
 ### Comparison Chart
 
