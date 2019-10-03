@@ -437,6 +437,20 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
 
+## California Consumer Privacy Act (CCPA) Parameters {#ccpa-params}
+
+### Opt Out Server Side Forwarding
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> analytics.optOutServerSideForwarding </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> boolean </li> <li> **Sent with:**<br/> Media Start </li> <li> **Min. SDK Version:** N/A </li> <li> **Sample value:**<br/> true </li> <li>**Description:**<br/> Set to true when the end user has opted out of their data being shared between Adobe Analytics and other Experience Cloud solutions (e.g. Audience Manager). </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (opt.dmp) </li> <li> **Heartbeats:**<br/> (s:meta:cm.ssf) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On VISIT </li> <li> **Report Name:**<br/> Content </li> <li> **Context Data:**<br/> N/A </li> <li> **Data Feed:**<br/> video </li> <li> **Audience Manager:**<br/> N/A </li> </ul> |
+
+### Opt Out Share
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> analytics.optOutShare </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> boolean </li> <li> **Sent with:**<br/> Media Start </li> <li> **Min. SDK Version:** N/A </li> <li> **Sample value:**<br/> true </li> <li>**Description:**<br/> Set to true when the end user has opted out of their data being federated (e.g. to other Adobe Analytics clients). </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (opt.oos) </li> <li> **Heartbeats:**<br/> (s:meta:cm.oos) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On VISIT </li> <li> **Report Name:**<br/> Content </li> <li> **Context Data:**<br/> N/A </li> <li> **Data Feed:**<br/> video </li> <li> **Audience Manager:**<br/> N/A </li> </ul> |
+
 ## Related APIs {#section_Related_APIs}
 
 ### createMediaObject APIs {#create-media-object}
