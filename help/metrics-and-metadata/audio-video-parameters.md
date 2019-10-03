@@ -113,11 +113,17 @@ public static MediaObject createMediaObject(java.lang.String name,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
-### Media session ID 
+### Media Session ID 
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> Obtained from backend </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** 1.5.8 </li> <li> **Sample value:**<br/> 1482236761294786918253 </li> <li> **Description:**<br/> This identifies an instance of a content stream unique to an individual playback.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.vsid) </li> <li> **Heartbeat:**<br/> (s:event:sid) </li> </ul> | <ul> <li> **Available:**<br/> Use processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.vsid) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vsid) </li> </ul> |
+
+### Media Downloaded Flag
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> Obtained from backend </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> boolean </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** 2.2 </li> <li> **Sample value:**<br/> true </li> <li> **Description:**<br/> Set to true when the hit is generated due to playing a downloaded content media session. Not present when downloaded content is not played.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.downloaded) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> </ul> |
 
 ### Content Player Name 
 
