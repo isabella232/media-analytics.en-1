@@ -101,6 +101,13 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | `media.qoe.framesPerSecond` | N | Any | The number of frames per second |
 | `media.qoe.timeToStart` | N | Any | The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing |
 
+## California Consumer Privacy Act (CCPA) Parameters {#ccpa-params}
+
+| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | Set to true when the end user has opted out of their data being shared between Adobe Analytics and other Experience Cloud solutions (e.g., Audience Manager)|
+| `analytics.optOutShare` | N | `sessionStart` | Set to true when the end user has opted out of their data being federated (e.g., to other Adobe Analytics clients). |
+
 ## Additional Details {#section_ryt_ccy_lcb}
 
 ### visitor.marketingCloudUserId
