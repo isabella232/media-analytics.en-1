@@ -15,7 +15,7 @@ You work with templates from the Workspace tab in Adobe Analytics, when you crea
 
   ![](assets/all-templates-audio.png)
 
-  For example, if you choose the Audio Consumption template, a project with the following audio-oriented dashboard is presented:
+  For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
   ![](assets/aa-workspace.png)
 

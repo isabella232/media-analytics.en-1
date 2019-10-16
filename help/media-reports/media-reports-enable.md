@@ -13,12 +13,12 @@ Each report suite that collects media metrics must be configured before media da
 >
 >To take advantage of new capabilities, existing Media Analytics customers should re-enable media tracking for their RSIDs.
 
-1. In [Reports & Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] > [!UICONTROL Report Suites]. 
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] > [!UICONTROL Media Management] > [!UICONTROL Media Reporting]. 
+1. In [Reports & Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin > Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings > Media Management > Media Reporting].**
 
     ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
     Media measurement includes the following modules:
 
@@ -50,16 +50,16 @@ Each report suite that collects media metrics must be configured before media da
 
    If you are not yet tracking ads, chapters, or playback quality, you can enable additional options at any time. 
 
-1. Click **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Save].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. If you see the [!UICONTROL Media Core measurement] page, continue to the next step. 
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. If you see the **[!UICONTROL Media Core measurement]** page, continue to the next step. 
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables. 
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables. 
 
    | Option | Notes |
    | --- | --- |
-   | Continue using custom variables | Pros and Cons:<ul> <li> **Pros:** Content trending continues to work after migration. </li> <li> **Cons:** Requires you to keep two custom eVars and three custom events allocated to media. You regain use of one custom eVar and one custom event. </li> </ul> To continue using custom variables: <ol> <li>Select Use Custom Variables, then click Save. </li> <li>When prompted, map your current custom eVars and events and then click Save: </li> </ol> |
-   | Migrate to solution variables | Pros and Cons:<ul> <li> **Pros:** You regain use of three custom eVars and four custom events. </li> <li> **Cons:** You lose **all** historical trending and comparison for media reports. This means that you cannot trend content views or content time played for any dates before you migrated to heartbeats. </li> </ul> **Restriction:**  Do not migrate to solution variables unless you are certain that you do not want to preserve this trending. All customers should use solution variables and processing rules to put media data into existing props and eVars, only if they need to preserve historical continuity. To migrate to solution variables: Select [!UICONTROL Use Solution Variables] and click [!UICONTROL Save]. <br><br> IMPORTANT: Migrating to solution variables causes you to lose **all** historical trending and comparison for media reports. |
+   | Continue using custom variables | Pros and Cons:<ul> <li> **Pros:** Content trending continues to work after migration. </li> <li> **Cons:** Requires you to keep two custom eVars and three custom events allocated to media. You regain use of one custom eVar and one custom event. </li> </ul> To continue using custom variables: <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | Migrate to solution variables | Pros and Cons:<ul> <li> **Pros:** You regain use of three custom eVars and four custom events. </li> <li> **Cons:** You lose **all** historical trending and comparison for media reports. This means that you cannot trend content views or content time played for any dates before you migrated to heartbeats. </li> </ul> **Restriction:**  Do not migrate to solution variables unless you are certain that you do not want to preserve this trending. All customers should use solution variables and processing rules to put media data into existing props and eVars, only if they need to preserve historical continuity. To migrate to solution variables: Select **[!UICONTROL Use Solution Variables]** and click **[!UICONTROL Save].** <br><br> IMPORTANT: Migrating to solution variables causes you to lose **all** historical trending and comparison for media reports. |
 
 >[!IMPORTANT]
 >
