@@ -139,7 +139,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 ## Configure a Native App for tvOS
 
-With the release of the new Apple TV, you can now create applications to run in the native tvOS environment. You can either create a purely native app, using any of several frameworks available in iOS, or you can create your app using XML templates and JavaScript. Starting with MediaSDK version 2.0, support for tvOS is available. For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/documentation/)
+With the release of the new Apple TV, you can now create applications to run in the native tvOS environment. You can either create a purely native app, using any of several frameworks available in iOS, or you can create your app using XML templates and JavaScript. Starting with MediaSDK version 2.0, support for tvOS is available. For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
 
 Perform the following steps in your Xcode project. This guide is written assuming your project has a target that is an Apple TV app targeting tvOS:
 
