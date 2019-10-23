@@ -16,9 +16,9 @@ You will also need to re-enable media tracking configuration from the Admin cons
 >The media metrics are _not_ available to be used outside of media tracking because most of these are computed by Media Analytics
 >based on heartbeat events. Also, it is important that the media metrics not be inflated by different implementations.
 
-The JavaScript example below will generate a Custom Link tracking call that has the name set to "Hero Banner".
-
 ## How To
+
+The JavaScript example below will generate a Custom Link tracking call that has the name set to "Hero Banner".
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
