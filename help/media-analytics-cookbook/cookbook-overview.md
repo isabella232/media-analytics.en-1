@@ -10,7 +10,7 @@ seo-description: Top-level Cookbook page, with general MA cookbook links and SDK
 
 ## General Media Analytics cookbook topics
 
-[Media Dimensions Outside Media Tracking]()
+[Media Dimensions Outside Media Tracking](/help/media-analytics-cookbook/media-dimensions.md)
 
 ## Media SDK cookbook topics
 
