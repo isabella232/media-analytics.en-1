@@ -28,10 +28,10 @@ In Analytics reporting, customers can use the `Show` eVar to break down the data
 
 ## Use Cases
 
-![](vid-stream-attr-category.png)
+![](/assets/vid-stream-attr-category.png)
 
-![](vid-stream-attr-hero.png)
+![](/assets/vid-stream-attr-hero.png)
 
-![](show-engagement.png)
+![](/assets/show-engagement.png)
 
-![](vid-stream-attr-subs.png)
+![](/assets/vid-stream-attr-subs.png)
