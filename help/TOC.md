@@ -124,6 +124,7 @@ user-guide-title: Adobe Analytics for Audio and Video
         + [OTT and Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
         + [OTT and Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
     + Cookbook {#cookbook}
+        + [SDK Cookbook](sdk-implement/cookbook/sdk-cookbook-overview.md)
         + [Handling application interrupts during playback](sdk-implement/cookbook/app-interrupts.md)
         + [Resolving main:play appearing between ads](sdk-implement/cookbook/fix-ad-play-ad.md)
         + [Resuming Inactive Sessions](sdk-implement/cookbook/resuming-inactive.md)
@@ -158,6 +159,9 @@ user-guide-title: Adobe Analytics for Audio and Video
         + [Timeline 2 - User abandons session](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
         + [Timeline 3 - Chapters](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
     + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
++ Cookbook {#media-analytics-cookbook}
+    + [Cookbook Overview](media-analytics-cookbook/cookbook-overview.md)
+    + [Media Dimensions Outside Media Tracking](media-analytics-cookbook/media-dimensions.md)
 + Metrics and Metadata {#metrics-and-metadata} 
     + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md) 
     + [Ad parameters](metrics-and-metadata/ad-parameters.md) 
