@@ -9,6 +9,9 @@ snippet: y
 
 # Documentation updates{#documentation-updates}
 
+* [Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+
+<!--
 ## Last updated: March 7, 2019 {#March-2019-update}
 
 * This update was primarily for the 2.2 Media SDK release on the JavaScript and OTT platforms. 
@@ -43,3 +46,4 @@ snippet: y
 * New introductory material including a presentation of measurement options, along with updates to prerequisites, implementation paths, and Audience Manager enablement.
 * Updates to Metrics and Metadata and Reporting and Analysis sections, reflecting the addition of Audio Analytics capabilities.
 
+-->
