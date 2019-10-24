@@ -23,7 +23,7 @@ This is the same scenario as the [VOD playback with no ads](/help/sdk-implement/
 | Content is complete | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | Session Over | `trackSessionEnd` | | `SessionEnd` |
 
-## Sample Code {#section_q2d_wcj_x2b}
+## Sample Code {#sample-code}
 
 In this scenario, the user is seeking when the main content is being played.
 

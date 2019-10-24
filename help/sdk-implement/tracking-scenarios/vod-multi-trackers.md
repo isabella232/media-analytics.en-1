@@ -23,7 +23,7 @@ Unless specified, the network calls are the same as the [VOD playback with no ad
 |---|---|---|
 |  `s:event:sid`  | Unique session ID  | A unique session ID that exists in all of the heartbeat network calls until the `trackSessionEnd` method is called.  |
 
-## Sample Code {#section_qpy_4dj_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 

@@ -7,7 +7,7 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 
 # Track downloaded content{#track-downloaded-content}
 
-## Overview {#section_hcy_3pk_cfb}
+## Overview {#overview}
 
 The Downloaded Content feature provides the ability to track media consumption while a user is offline. For example, a user downloads and installs an app on a mobile device. The user then downloads content using the app into local storage on the device. To track this downloaded data, Adobe has developed the Downloaded Content feature. With this feature, when the user plays content from a device's storage, tracking data is stored on the device, regardless of the device's connectivity. When the user finishes the playback session, and the device returns online, the stored tracking information is sent to the Media Collection API back-end inside a single payload. From there, processing and reporting proceeds as normal in the Media Collection API.
 
@@ -25,7 +25,7 @@ Each approach has its advantages and disadvantages:
 * The online scenario tracks in realtime; this requires a connectivity check before each network call.
 * The offline scenario (Downloaded Content feature) only needs one network connectivity check, but also requires a larger memory footprint on the device.
 
-## Implementation {#section_jhp_jpk_cfb}
+## Implementation {#implementation}
 
 ### Event schemas
 
@@ -44,11 +44,11 @@ The Downloaded Content feature is simply the offline version of the the (standar
 * 201 - Created: Successful Request; the data is valid and the session was created and will be processed.
 * 400 - Bad Request; schema validation has failed, all data is discarded, no sessions data will be processed.
 
-## Integration with Adobe Analtyics {#section_cty_kpk_cfb}
+## Integration with Adobe Analtyics {#integration-with-adobe-analtyics}
 
 When computing the Analytics start/close calls for the downloaded content scenario, the back-end sets an extra Analytics field called `ts.` These are timestamps for the first and last events received (start and complete). This mechanism allows a completed media session to be placed at the correct point in time (i.e., even if the user doesn't come back online for several days, the media session is reported to have occurred at the time the content was actually viewed). You must enable this mechanism on the Adobe Analytics side by creating a _timestamp optional report suite._ To enable a timestamp optional report suite, see [Timestamps Optional.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## Sample session comparison {#section_qnk_lpk_cfb}
+## Sample session comparison {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions

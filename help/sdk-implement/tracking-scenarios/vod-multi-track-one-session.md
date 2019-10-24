@@ -21,7 +21,7 @@ This scenario is the same as the [VOD playback with no ads](/help/sdk-implement/
 | --- | --- | --- |
 | `s:event:sid` | Unique session ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
-## Sample Code {#section_ndg_wdj_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/multi-sessions-one-at-a-time.png)
 

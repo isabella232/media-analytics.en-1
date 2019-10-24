@@ -39,7 +39,7 @@ When this happens, a `Content Heartbeat` call goes out in the same interval. You
 |  `s:stream:chapter_*`  |  | Stream information that is specific to the chapter data.  |
 |  `s:meta:*`  |  | Chapter with specific context data.  |
 
-## Sample code, chapter in the middle {#section_icd_5bj_x2b}
+## Sample code, chapter in the middle {#sample-code-chapter-in-the-middle}
 
 In this scenario, part of the VOD content is a chapter.
 
@@ -251,7 +251,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## Sample code, chapter at the beginning {#section_flj_5bj_x2b}
+## Sample code, chapter at the beginning {#sample-code-chapter-at-the-beginning}
 
 In this scenario, VOD content is played back with one chapter at the beginning of the playback.
 

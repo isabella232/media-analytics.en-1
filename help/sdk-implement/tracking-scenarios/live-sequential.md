@@ -68,7 +68,7 @@ When playback for any given episode has completed (playhead crosses episode boun
 |  `s:event:type`  | `"complete"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
 
-## Sample Code {#section_mpx_q2j_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 

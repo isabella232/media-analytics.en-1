@@ -30,7 +30,7 @@ This is the same scenario as [VOD playback with one chapter](/help/sdk-implement
 
 The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
-## Sample code {#section_fyl_ncj_x2b}
+## Sample code {#sample-code}
 
 ![](assets/chapter-skip.png)
 

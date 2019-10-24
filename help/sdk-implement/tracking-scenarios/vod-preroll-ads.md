@@ -65,7 +65,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 |  `s:event:type`  | `complete`  |  |
 |  `s:asset:type`  | `ad`  |  |
 
-## Sample code for a pre-roll ad break {#section_nwf_xy3_x2b}
+## Sample code for a pre-roll ad break {#sample-code-for-a-pre-roll-ad-break}
 
 In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and then the content is played.
 
@@ -375,7 +375,7 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   .......
   ```
 
-## Sample code for multiple ad breaks {#section_ojy_zy3_x2b}
+## Sample code for multiple ad breaks {#sample-code-for-multiple-ad-breaks}
 
 In this scenario, VOD content is played back with a pre-roll ad, the content, a mid-roll ad, the content, and a post-roll ad.
 

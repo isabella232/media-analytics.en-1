@@ -15,7 +15,7 @@ The Media Collection API is Adobe's RESTful alternative to the client-side Media
 
 The Media Collection API is essentially an adapter, acting as a server-side version of the Media SDK. This means that some aspects of the Media SDK documentation are also relevant to the Media Collection API. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
-## Media Tracking Data Flows {#section_pwq_n34_qbb}
+## Media Tracking Data Flows {#media-tracking-data-flows}
 
 A media player implementing the Media Collection API makes RESTful API tracking calls directly to the media tracking back-end server, whereas a player implementing the Media SDK makes tracking calls to the SDK APIs inside the player app. One effect of making calls over the web is that the player implementing the Media Collection API needs to handle some of the processing that the Media SDK handles automatically. (Details in [Media Collection Implementation.](mc-api-impl/mc-api-quick-start.md))
 
@@ -23,7 +23,7 @@ The tracking data captured with the Media Collection API is sent and initially p
 
 ![](assets/col_api_overview_simple.png)
 
-## API Overview {#section_y4n_mcl_kcb}
+## API Overview {#api-overview}
 
 **URI:** Obtain this from your Adobe representative.
 

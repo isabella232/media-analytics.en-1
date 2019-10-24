@@ -64,7 +64,7 @@ For example, say a LIVE streaming event starts at midnight and runs for 24 hours
 
 The same "live playhead" logic applied at the start of playback must be applied when a user pauses the playback. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
 
-## Sample Code {#section_vct_j2j_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/live-content-playback.png)
 

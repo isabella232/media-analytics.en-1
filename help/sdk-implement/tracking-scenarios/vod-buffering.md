@@ -33,7 +33,7 @@ Unless specified, the network calls in this scenario are the same as the calls i
 |---|---|---|
 |  `s:event:type`  | `"buffer"`  |  |
 
-## Sample Code {#section_hxn_fdj_x2b}
+## Sample Code {#sample-code}
 
 In this scenario, buffering occurs when the VOD content is played back.
 

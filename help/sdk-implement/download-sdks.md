@@ -17,7 +17,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 | Roku | [Media SDK for Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) | | [Set up Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK for Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Media Analytics Launch Extension {#section_o54_gsd_12b}
+## Media Analytics Launch Extension {#media-analytics-launch-extension}
 
 |  MA Launch Component&nbsp;&nbsp; | Downloads | Documentation |
 |---|---|---|

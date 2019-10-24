@@ -7,13 +7,13 @@ uuid: fdc96146-af63-48ce-b938-c0ca70729277
 
 # Migrating from Milestone to Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Overview {#section_ihl_nbz_cfb}
+## Overview {#overview}
 
 The core concepts of video measurement are the same for Milestone and Media Analytics, which is taking video player events and mapping them to analytics methods, while also grabbing player metadata and values and mapping them to analytics variables. The Media Analytics solution grew out of Milestone, so many of the methods and metrics are the same, however, the configuration approach and code has changed significantly. It should be possible to update the player event code to point to the new Media Analytics methods. See [SDK Overview](/help/sdk-implement/setup/setup-overview.md) and [Tracking Overview](/help/sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
 
 The following tables provide translations between the Milestone solution and the Media Analytics solution.
 
-## Migration guide {#section_iyb_pbz_cfb}
+## Migration guide {#migration-guide}
 
 ### Variable reference
 

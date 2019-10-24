@@ -108,7 +108,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | Set to true when the end user has opted out of their data being shared between Adobe Analytics and other Experience Cloud solutions (e.g., Audience Manager)|
 | `analytics.optOutShare` | N | `sessionStart` | Set to true when the end user has opted out of their data being federated (e.g., to other Adobe Analytics clients). |
 
-## Additional Details {#section_ryt_ccy_lcb}
+## Additional Details {#additional-details}
 
 ### visitor.marketingCloudUserId
 

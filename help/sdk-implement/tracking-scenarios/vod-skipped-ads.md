@@ -30,7 +30,7 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 
 The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
 
-## Sample Code {#section_lxt_qz3_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/ad-skip.png)
 

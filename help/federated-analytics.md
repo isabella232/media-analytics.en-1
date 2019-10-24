@@ -24,7 +24,7 @@ Federated Analytics makes audio and video measurement more efficient, streamline
 * **Timely:** Send and receive data in near real-time
 * **Easy:** Tag players once with Adobe SDKs, share data to many partners
 
-## Definitions {#section_ypl_mb3_vbb}
+## Definitions {#definitions}
 
 * **Sender:** Customer generating audio and video analytics data on owned players
 * **Receiver:** Customer receiving audio and video analytics data from sender
@@ -41,7 +41,7 @@ Federated Analytics makes audio and video measurement more efficient, streamline
 
 Download the current version of this form here: [Federation Rules Agreement](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
-## Process {#section_byb_kb3_vbb}
+## Process {#process}
 
 1. Sender and Receiver work together to complete the Federation Rules Agreement form. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Download Acrobat for free.](https://get.adobe.com/reader/)
 1. Consulting services provides a sample data file to Receiver with actual data from Sender players, to further confirm correct data sharing rules are defined, provided data files are available.

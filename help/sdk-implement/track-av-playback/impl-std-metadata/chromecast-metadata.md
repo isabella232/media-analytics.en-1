@@ -42,7 +42,7 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 | Site ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | Creative URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Sample implementations for Chromecast {#sample-implementations-for-chromecast}
 
 ### Video
 

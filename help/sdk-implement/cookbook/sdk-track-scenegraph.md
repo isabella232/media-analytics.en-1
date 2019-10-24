@@ -7,7 +7,7 @@ uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 
 # Tracking in SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
-## Introduction {#section_vfr_zcz_y2b}
+## Introduction {#introduction}
 
 Roku has introduced a new programming framework for developing applications: the SceneGraph XML programming framework. This new framework features two new key concepts:
 
@@ -16,7 +16,7 @@ Roku has introduced a new programming framework for developing applications: the
 
 The Adobe Mobile SDK for Roku is written in BrightScript. The SDK uses many components that are not available for an app running on SceneGraph (for example, threads). Therefore, a Roku app developer intending to use the SceneGraph framework cannot call Adobe Mobile SDK APIs (the latter are similar to those available in legacy BrightScript apps).
 
-## Architecture {#section_dj5_1dz_y2b}
+## Architecture {#architecture}
 
 To add SceneGraph support to the AdobeMobile SDK, Adobe has added a new API that creates a connector bridge between the AdobeMobile SDK and `adbmobileTask`. The latter is a SceneGraph node used for the SDK's API execution. (Usage of `adbmobileTask` is explained in detail throughout the rest of this document.)
 
@@ -28,7 +28,7 @@ The connector bridge is designed to perform as follows:
 
 ![](assets/SceneGraph_arch.png)
 
-## Components {#section_jwl_wqx_1bb}
+## Components {#components}
 
 **SceneGraph Application:**
 
@@ -46,7 +46,7 @@ The connector bridge is designed to perform as follows:
 * A SceneGraph task node that executes `AdobeMobileLibrary` APIs on a background thread.
 * Serves as a delegate to return data back to application scenes.
 
-## Public SceneGraph APIs {#section_jyd_hdz_y2b}
+## Public SceneGraph APIs {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -203,7 +203,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | This method returns initialized AdBreak Information object.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | This method returns an initialized QoS Information object.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` | 
 
-## Implementation {#section_dbz_ydz_y2b}
+## Implementation {#implementation}
 
 1. **Download the Roku Library -** Download the [latest Roku library.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
@@ -304,7 +304,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
        
        ```
 
-## Sample Implementation {#section_mld_lfz_y2b}
+## Sample Implementation {#sample-implementation}
 
 ### Sample API calls on Legacy SDK
 

@@ -38,7 +38,7 @@ Table data description:
 >classifications are enabled by checking the names of the variables. If any of 
 >them is missing, Adobe adds the missing ones again.
 
-## Ad Video Data {#section_hq3_nbv_51b}
+## Ad Video Data {#ad-video-data}
 
 ### Ad ID 
 

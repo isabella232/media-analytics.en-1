@@ -137,7 +137,7 @@ Media Analytics tracking implementations generate two types of tracking calls:
 
 Media tracking works the same across all platforms, desktop and mobile. Audio tracking currently works on mobile platforms. For all tracking calls there are a few key universal variables to be validated:
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## SDK 1.x Documentation {#sdk-1x-documentation}
 
 | Video&nbsp;Analytics&nbsp;1.x&nbsp;SDKs&nbsp; | &nbsp;Developer&nbsp;Guides&nbsp;(PDFs only) |
 | --- | --- |

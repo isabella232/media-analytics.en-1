@@ -63,7 +63,7 @@ When playback has completed, which means that the end of the playhead is reached
 |  `s:event:type`  | `"complete"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
 
-## Sample Code {#section_glq_vw3_x2b}
+## Sample Code {#sample-code}
 
 In this scenario, the content is 40 seconds long. It is played until the end without any interruptions.
 
