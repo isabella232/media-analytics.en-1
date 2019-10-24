@@ -15,7 +15,7 @@ The Media Concurrent Viewers dashboard displays concurrent viewers during one da
 
 ![](assets/video-concurrent-viewers.png)
 
-## Report features {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## Report features {#report-features}
 
 Here are some features of this report:
 
@@ -27,7 +27,7 @@ Here are some features of this report:
 * The report only works across one day. 
 * The customer can look at historical concurrent viewer reports (limited to a single day).
 
-## Limitations {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## Limitations {#limitations}
 
 Here are some limitations for this report:
 

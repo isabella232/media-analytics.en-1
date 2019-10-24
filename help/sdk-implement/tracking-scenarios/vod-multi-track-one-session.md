@@ -7,13 +7,13 @@ uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 
 # VOD one tracker for multiple sessions{#vod-one-tracker-for-multiple-sessions}
 
-## Scenario {#section_45D7B10031524411B91E2C569F7818B0}
+## Scenario {#parameters}
 
 In this scenario, the `MediaHeartbeat` instance is used to create two separate sessions in sequence.
 
 This scenario is the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
-## Parameters {#section_D52B325B99DA42108EF560873907E02C}
+## Parameters {#parameters}
 
 ### Heartbeat Session
 

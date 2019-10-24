@@ -12,7 +12,7 @@ The standardized measurement data created by Media Analytics is the hallmark for
 Through the rules and logic governing Federated Analytics, data is easily controlled and individualized to meet the needs of each partnership. 
 Federated Analytics makes audio and video measurement more efficient, streamlined, and actionable.
 
-## Benefits {#section_804FFE8671594A6FB769CBE79EF9D627}
+## Benefits {#benefits}
 
 * **Transparent:** Strip away the black box of data creation by using the same logic across companies
 * **Broad:** Understand the full reach and impact of audio and video consumption across partnerships, platforms, and devices
@@ -29,7 +29,7 @@ Federated Analytics makes audio and video measurement more efficient, streamline
 * **Sender:** Customer generating audio and video analytics data on owned players
 * **Receiver:** Customer receiving audio and video analytics data from sender
 
-## Requirements {#section_4758843A8941441B9A4D0D7A61077A6E}
+## Requirements {#requirements}
 
 * **Media Streams Contract:** Receiver and Sender must have contracted Adobe Analytics for Media Streams before gaining access to audio and video data within Adobe Analytics. Contact your account team for more details.
 * **Federated Addendum:** Each Sender and Receiver must have a signed addendum in place with Adobe before sending or receiving data. One addendum per customer is required, not one addendum per partnership. Contact your account team for more details. 

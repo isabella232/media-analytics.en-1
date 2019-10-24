@@ -7,7 +7,7 @@ uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 
 # VOD playback with seeking in the main content{#vod-playback-with-seeking-in-the-main-content}
 
-## Scenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scenario {#scenario}
 
 This scenario comprises seeking in the main content during playback.
 

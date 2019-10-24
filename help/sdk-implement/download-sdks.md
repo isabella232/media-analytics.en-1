@@ -23,7 +23,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 |---|---|---|
 | **MA Launch Extension** | [Sample HTML5 Player Extension](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
 
-## Download the 1.x Media SDKs {#section_B91B3A02E68B4B42917E392AAE666522}
+## Download the 1.x Media SDKs {#download-the-1.x-media-sDKs}
 
 | 1.x&nbsp;SDKs&nbsp; | &nbsp;Media&nbsp;SDK&nbsp;Downloads&nbsp; | &nbsp;Getting&nbsp;Started&nbsp;Guides&nbsp; |
 | --- | --- | --- |

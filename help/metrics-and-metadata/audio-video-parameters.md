@@ -315,7 +315,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> media.publisher </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** 1.5.7 <br/>Available in [Media Collection Overview](/help/media-collection-api/mc-api-overview.md) or [Download SDKs - Versions 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Sample value:**<br/> "Random Bauhaus" </li> <li> **Description:**<br/> Name of the audio content publisher.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> (a.media.publisher) </li> <li> **Data Feed:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## Audio and Video Metrics {#section_3D5F9C555274428AA6030D07596177E9}
+## Audio and Video Metrics {#audio-and-video-metrics}
 
 ### Media Starts 
 

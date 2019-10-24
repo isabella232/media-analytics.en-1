@@ -112,7 +112,7 @@ Table data description:
 
 
 
-## Standard Ad Metadata {#section_EFB805867916411E84DE1BA5A183D86A}
+## Standard Ad Metadata {#standard-ad-metadata}
 
 ### Advertiser 
 
@@ -163,7 +163,7 @@ Table data description:
 
 
 
-## Ad Metrics {#section_22AA1565F11C4F3990E2AB51CD3213F7}
+## Ad Metrics {#ad-metrics}
 
 ### Ad Start 
 

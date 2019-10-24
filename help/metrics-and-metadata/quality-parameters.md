@@ -27,7 +27,7 @@ Table data description:
    * *Data Feed* - Column name for variable found in Clickstream or Live Stream data feeds
    * *Audience Manager* - Trait name found in Adobe Audience Manager
 
-## Quality Metadata {#section_8467F9729DA04A888A2657712234D7C7}
+## Quality Metadata {#quality-metadata}
 
 ### Average Bitrate 
 
@@ -126,7 +126,7 @@ Table data description:
 
 
 
-## Quality Metrics {#section_8EB0C9CBC09340C8915E1D2707D0A9EE}
+## Quality Metrics {#quality-metrics}
 
 ### Time To Start 
 

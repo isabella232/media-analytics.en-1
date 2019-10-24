@@ -7,7 +7,7 @@ uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 
 # VOD multiple trackers in parallel{#vod-multiple-trackers-in-parallel}
 
-## Scenario {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## Scenario {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -15,7 +15,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 Unless specified, the network calls are the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
-## Parameters {#section_45D7B10031524411B91E2C569F7818B0}
+## Parameters {#parameters}
 
 ### Heartbeat session
 

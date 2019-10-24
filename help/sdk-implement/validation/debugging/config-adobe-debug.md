@@ -7,7 +7,7 @@ uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 
 # Configure Adobe Debug{#configure-adobe-debug}
 
-## Accessing Adobe Debug {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+## Accessing Adobe Debug {#accessing-adobe-debug}
 
 To access Adobe Debug:
 
@@ -30,7 +30,7 @@ To access Adobe Debug:
 
 The recommended browsers are the latest versions of Chrome and Firefox.
 
-## Debug Proxy {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+## Debug Proxy {#debug-proxy}
 
 Download and configure the Debug Proxy:
 
@@ -46,7 +46,7 @@ Download and configure the Debug Proxy:
 
     You might need to adjust your browser setting based on the OS and the browser.
 
-## Download and install the SSL Certificate on desktop or apps {#section_2F9547E301CB413299A67BD59AFBEE0D}
+## Download and install the SSL Certificate on desktop or apps {#download-and-install-sSL-desktop}
 
 The first time you run Adobe Debug, a unique SSL certificate will be generated. If you support HTTPS traffic across desktop and/or Apps, you need to download and install our SSL certificate.
 
@@ -80,7 +80,7 @@ Download and install the SSL certificate:
 
        Safari will prompt you to install the SSL certificate.
 
-## Install the SSL certificate for your mobile device {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+## Install the SSL certificate for your mobile device {#install-sSL-for-mobile-device}
 
 If you are missing the HTTPS calls in Adobe Debug, you must install the SSL Certificate for Adobe Debug on the mobile device.
 

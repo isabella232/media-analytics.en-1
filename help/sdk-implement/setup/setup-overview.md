@@ -25,7 +25,7 @@ The following table describes the minimum platform versions supported for each S
 | Safari | v7+ |
 | IE | v11+ |
 
-## General Implementation Guidelines {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## General Implementation Guidelines {#general-implementation-guidelines}
 
 There are three main SDK components involved in media tracking:
 * Media Heartbeat Config - The config contains the basic settings for reporting. 
@@ -116,7 +116,7 @@ Complete the following implementation steps:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validate {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## Validate {#validate}
 
 Media Analytics tracking implementations generate two types of tracking calls:
 

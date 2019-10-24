@@ -9,7 +9,7 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 
 Standard video, audio, and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
 
-## Video metadata constants {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Video metadata constants {#video-metadata-constants}
 
 | Metadata Name | Context Data Key | Constant Name |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ Standard video, audio, and ad metadata can be set on media and ad info objects r
 | Station | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | Publisher | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## Ad metadata constants {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Ad metadata constants {#ad-metadata-constants}
 
 | Metadata Name | Context Data Key | Constant Name |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ Standard video, audio, and ad metadata can be set on media and ad info objects r
 | Site ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | Creative URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` | 
 
-## Constants {#section_F55145DBE77F45B988849C42C044C7DA}
+## Constants {#constants}
 
 You can use the following constants to track media events:
 

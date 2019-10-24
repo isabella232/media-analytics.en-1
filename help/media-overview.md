@@ -13,7 +13,7 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 >
 >The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. We encourage all customers to move towards adopting one or both of the two latest media tracking solutions, in order to capitalize on improvements and expanded measurement. You can view the [benefits of transitioning to the latest solutions](media-overview.md#section_cnj_5st_p1b) below. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Please reach out to your Adobe Account Manager if you have any further questions.
 
-## Overview {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
+## Overview {#overview}
 
 Adobe Analytics for Media (also referred to as Media Analytics) is an add-on to the base Analytics offering that provides clients with robust media measurement for content, audio and advertisements. Media Analytics provides many benefits to customers to allow for real-time monitoring, detailed analysis, actionable insights and monetization opportunities.
 
@@ -26,7 +26,7 @@ Adobe Analytics for Media enables clients to track the full customer journey acr
 
 The media solutions not only measure vital delivery metrics related to QoS, such as dropped frames, time spent buffering, and average bitrate. They can also be combined with your website or app data to visualize the flow of the customer and their interests, to better be able to make recommendations and personalize their experiences through the Adobe Experience Cloud.
 
-## Benefits {#section_7712BA90EAE64C118218D1C581EF68B7}
+## Benefits {#benefits}
 
 Some of the many benefits that Adobe's media measurement solutions provide include:
 

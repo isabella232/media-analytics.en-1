@@ -32,7 +32,7 @@ Table data description:
 >Do not change the classification names for any variables listed below that are described under Reporting/Reserved Variable as "classification".  
 >The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and, when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
 
-## Chapter Metadata {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
+## Chapter Metadata {#chapter-metadata}
 
 ### Chapter Name 
 
@@ -64,7 +64,7 @@ Table data description:
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Chapter Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample Value:**<br/> </li><li> **Description:**<br/>The auto-generated ID of the chapter.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>name) </li> <li> **Heartbeat:**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Chapter </li> <li> **Context Data:**<br/> (a.media.chapter.<br/>name) </li> <li> **Data Feed:**<br/> videochapter </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> </ul> |
 
-## Chapter Metrics {#section_1C47D6FB1DF343C39CE7A8F724406F33}
+## Chapter Metrics {#chapter-Metrics}
 
 ### Chapter Start 
 
