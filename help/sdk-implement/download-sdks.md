@@ -7,7 +7,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 # Download SDKs{#download-sdks}
 
-## Download the 2.x Media SDKs {#section_551A10AD7880426BB29AE52482BB4211}
+## Download the 2.x Media SDKs {#download-2x-sdks}
 
 | 2.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |
 | --- | --- | --- | --- |
