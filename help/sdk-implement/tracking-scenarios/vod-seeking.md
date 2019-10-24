@@ -7,7 +7,7 @@ uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 
 # VOD playback with seeking in the main content{#vod-playback-with-seeking-in-the-main-content}
 
-## Scenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scenario {#scenario}
 
 This scenario comprises seeking in the main content during playback.
 
@@ -23,7 +23,7 @@ This is the same scenario as the [VOD playback with no ads](/help/sdk-implement/
 | Content is complete | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | Session Over | `trackSessionEnd` | | `SessionEnd` |
 
-## Sample Code {#section_q2d_wcj_x2b}
+## Sample Code {#sample-code}
 
 In this scenario, the user is seeking when the main content is being played.
 

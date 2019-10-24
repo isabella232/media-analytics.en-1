@@ -7,7 +7,7 @@ uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 
 # VOD playback with one chapter{#vod-playback-with-one-chapter}
 
-## Scenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scenario {#scenario}
 
 In this scenario, a portion of the VOD content is marked as a chapter.
 
@@ -24,7 +24,7 @@ Unless specified, the network calls in this scenario are the same as the calls i
 |  The content is complete.  | `trackComplete`  | Heartbeat Content Complete  | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 |  The session is over.  | `trackSessionEnd`  |  | `SessionEnd` means that the end of a viewing session has been reached. This API must be called even if the user does not watch the media to completion.  |
 
-## Parameters {#section_869319D99A474FEA8EA840415EA97FBD}
+## Parameters {#parameters}
 
 When chapter playback begins, a `Heartbeat Chapter Start` call is sent. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
@@ -39,7 +39,7 @@ When this happens, a `Content Heartbeat` call goes out in the same interval. You
 |  `s:stream:chapter_*`  |  | Stream information that is specific to the chapter data.  |
 |  `s:meta:*`  |  | Chapter with specific context data.  |
 
-## Sample code, chapter in the middle {#section_icd_5bj_x2b}
+## Sample code, chapter in the middle {#sample-code-chapter-in-the-middle}
 
 In this scenario, part of the VOD content is a chapter.
 
@@ -251,7 +251,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## Sample code, chapter at the beginning {#section_flj_5bj_x2b}
+## Sample code, chapter at the beginning {#sample-code-chapter-at-the-beginning}
 
 In this scenario, VOD content is played back with one chapter at the beginning of the playback.
 

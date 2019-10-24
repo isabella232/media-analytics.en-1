@@ -11,13 +11,13 @@ The Media Overview dashboard is designed to let you monitor media across your si
 
 ![](assets/media_overview.png){width="672px"} 
 
-## Quick Filters {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## Quick Filters {#quick-filters}
 
 Quickly display media metrics by device or geo country: 
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## Media Performance {#section_288FB476EDA44761BB8A86551F0A110C}
+## Media Performance {#media-performance}
 
 Click-and-drag to zoom in, then hover to view granular metrics for specific media. Click  ![](assets/video-overview-report-revert.png)
 

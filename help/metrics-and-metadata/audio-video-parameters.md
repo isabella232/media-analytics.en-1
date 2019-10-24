@@ -41,7 +41,7 @@ Table data description:
 >Do not change the classification names for any variables listed below that are described under Reporting/Reserved Variable as "classification".  
 >The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and, when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
 
-## Core Audio and Video Data {#section_y55_y1m_n1b}
+## Core Audio and Video Data {#core-audio-and-video-data}
 
 ### Stream Type {#stream-type}
 
@@ -181,7 +181,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** 1.5.7 </li> <li> **Sample value:**<br/> "js-2.0.1.88-c8c0b1" </li> <li> **Description:**<br/> The Media SDK version used for the tracking session. <br/><br/>Customers will have to create their own processing rules to have the value available for reporting.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.vhlVersion) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## Standard Audio and Video Metadata {#section_pfc_hbm_n1b}
+## Standard Audio and Video Metadata {#standard-audio-and-video-metadata}
 
 ### Show 
 
@@ -315,7 +315,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> media.publisher </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** 1.5.7 <br/>Available in [Media Collection Overview](/help/media-collection-api/mc-api-overview.md) or [Download SDKs - Versions 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Sample value:**<br/> "Random Bauhaus" </li> <li> **Description:**<br/> Name of the audio content publisher.  <br/> **Release Date: 09/13/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> </li> <li> **Context Data:**<br/> (a.media.publisher) </li> <li> **Data Feed:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## Audio and Video Metrics {#section_3D5F9C555274428AA6030D07596177E9}
+## Audio and Video Metrics {#audio-and-video-metrics}
 
 ### Media Starts 
 

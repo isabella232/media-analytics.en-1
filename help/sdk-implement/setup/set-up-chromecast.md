@@ -29,7 +29,7 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 
 ## SDK Implementation
 
-1. Add your [downloaded](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast library to your project.
+1. Add your [downloaded](/help/sdk-implement/download-sdks.md#download-2x-sdks) Chromecast library to your project.
 
     1. The `AdobeMobileLibrary-Chromecast-[version]` zip file consists of the following software components:
 

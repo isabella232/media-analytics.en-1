@@ -19,7 +19,7 @@ With AAM, you are not tied to a data seller, exchange, or demand-side platform. 
 
 Federated Data fully supports data sharing to AAM. Please work with your Adobe team for confirmation of Federated Data settings.
 
-## OTT / AAM methods {#section_yqq_5br_v2b}
+## OTT / AAM methods {#ott-aam-methods}
 
 You can use these methods to send signals and retrieve visitor segments from Audience Manager:
 

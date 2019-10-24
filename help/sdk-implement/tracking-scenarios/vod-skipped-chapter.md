@@ -7,7 +7,7 @@ uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 
 # VOD playback with a skipped chapter{#vod-playback-with-a-skipped-chapter}
 
-## Scenario {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## Scenario {#scenario}
 
 In this scenario, the user skips a chapter in the main content.
 
@@ -26,11 +26,11 @@ This is the same scenario as [VOD playback with one chapter](/help/sdk-implement
 |  The content completes playing.  | `trackComplete`  | Heartbeat Content Complete  | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario.  |
 |  The session is over.  | `trackSessionEnd`  |  | `SessionEnd` means the end of a viewing session. This API must be called even if the user does not watch the media to completion.  |
 
-## Parameters {#section_1874F6B7880B43C5856BD11FF85B382E}
+## Parameters {#parameters}
 
 The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
-## Sample code {#section_fyl_ncj_x2b}
+## Sample code {#sample-code}
 
 ![](assets/chapter-skip.png)
 

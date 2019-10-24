@@ -56,9 +56,9 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 >[!TIP]
 >
->The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>The playhead position is set as part of the set-up and configuration code. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## Implement {#section_BB217BE6585D4EDEB34C198559575004}
+## Implement {#implement}
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance using the media information for content name, content ID, content length, and stream type.
 
@@ -229,7 +229,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## Validate {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## Validate {#validate}
 
 For information on validating your implementation, see [Validation.](/help/sdk-implement/validation/validation-overview.md)
 

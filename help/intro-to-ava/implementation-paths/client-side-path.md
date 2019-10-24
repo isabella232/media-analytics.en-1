@@ -19,5 +19,4 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!NOTE]
 >
->Customers need to contact their Sales Representative/Account Manager to sign a new Sales Order as Media Analytics has a unique SKU and changes from a pricing model based on server calls to a model based on media streams.
-
+>Customers need to contact their Sales Representative/Account Manager to sign a new Sales Order, because Media Analytics has a unique SKU, and changes from a pricing model based on server calls to a model based on media streams.

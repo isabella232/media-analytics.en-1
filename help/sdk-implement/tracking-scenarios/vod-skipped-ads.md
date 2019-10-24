@@ -7,7 +7,7 @@ uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 
 # VOD playback with skipped ads{#vod-playback-with-skipped-ads}
 
-## Scenario {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## Scenario {#scenario}
 
 This scenario comprises VOD content playback with a skipped ad. 
 
@@ -26,11 +26,11 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | The content completes playing.  | `trackComplete()` | Heartbeat Content Complete | This network call is exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The session is over.  | `trackSessionEnd()` | | `SessionEnd` |
 
-## Parameters {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## Parameters {#parameters}
 
 The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
 
-## Sample Code {#section_lxt_qz3_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/ad-skip.png)
 

@@ -31,7 +31,7 @@ Chapter tracking includes chapter starts, chapter completes, and chapter skips. 
 
 * Call `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Implement chapter tracking {#implement-chapter-tracking}
 
 1. Identify when the chapter start event occurs and create the `ChapterObject` instance by using the chapter information.
 

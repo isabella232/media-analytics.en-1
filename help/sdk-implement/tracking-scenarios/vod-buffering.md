@@ -7,7 +7,7 @@ uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 
 # VOD playback with buffering{#vod-playback-with-buffering}
 
-## Scenario {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Scenario {#scenario}
 
 In this scenario, some buffering occurs when VOD content is played back.
 
@@ -25,7 +25,7 @@ Unless specified, the network calls in this scenario are the same as the calls i
 |  The content completes playing.  | `trackComplete`  | Heartbeat Content Complete  | The end of the playhead was reached.  |
 |  The session is over.  | `trackSessionEnd`  |  | `SessionEnd` means the end of a viewing session. This API must be called even if the user does not watch the video to completion.  |
 
-## Parameters {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## Parameters {#parameters}
 
 ### Heartbeat Buffer
 
@@ -33,7 +33,7 @@ Unless specified, the network calls in this scenario are the same as the calls i
 |---|---|---|
 |  `s:event:type`  | `"buffer"`  |  |
 
-## Sample Code {#section_hxn_fdj_x2b}
+## Sample Code {#sample-code}
 
 In this scenario, buffering occurs when the VOD content is played back.
 

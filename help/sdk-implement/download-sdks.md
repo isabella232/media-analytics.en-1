@@ -7,7 +7,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 # Download SDKs{#download-sdks}
 
-## Download the 2.x Media SDKs {#section_551A10AD7880426BB29AE52482BB4211}
+## Download the 2.x Media SDKs {#download-2x-sdks}
 
 | 2.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |
 | --- | --- | --- | --- |
@@ -17,13 +17,13 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 | Roku | [Media SDK for Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) | | [Set up Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK for Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Media Analytics Launch Extension {#section_o54_gsd_12b}
+## Media Analytics Launch Extension {#media-analytics-launch-extension}
 
 |  MA Launch Component&nbsp;&nbsp; | Downloads | Documentation |
 |---|---|---|
 | **MA Launch Extension** | [Sample HTML5 Player Extension](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
 
-## Download the 1.x Media SDKs {#section_B91B3A02E68B4B42917E392AAE666522}
+## Download the 1.x Media SDKs {#download-the-1.x-media-sDKs}
 
 | 1.x&nbsp;SDKs&nbsp; | &nbsp;Media&nbsp;SDK&nbsp;Downloads&nbsp; | &nbsp;Getting&nbsp;Started&nbsp;Guides&nbsp; |
 | --- | --- | --- |

@@ -25,7 +25,7 @@ In this scenario, pre-roll ads have been inserted before the main content. Unles
 | The content is complete.  | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.  |
 | The session is over | `trackSessionEnd` | | `SessionEnd` |
 
-## Parameters {#section_33CDFB6CB230437480B67A3D149EC44E}
+## Parameters {#parameters}
 
 When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type: 
 
@@ -65,7 +65,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 |  `s:event:type`  | `complete`  |  |
 |  `s:asset:type`  | `ad`  |  |
 
-## Sample code for a pre-roll ad break {#section_nwf_xy3_x2b}
+## Sample code for a pre-roll ad break {#sample-code-for-a-pre-roll-ad-break}
 
 In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and then the content is played.
 
@@ -375,7 +375,7 @@ In this scenario, the VOD consists of a pre-roll ad, a second pre-roll ad, and t
   .......
   ```
 
-## Sample code for multiple ad breaks {#section_ojy_zy3_x2b}
+## Sample code for multiple ad breaks {#sample-code-for-multiple-ad-breaks}
 
 In this scenario, VOD content is played back with a pre-roll ad, the content, a mid-roll ad, the content, and a post-roll ad.
 

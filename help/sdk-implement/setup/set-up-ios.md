@@ -25,7 +25,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 ## SDK Implementation
 
-1. Add your [downloaded](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK to your project.
+1. Add your [downloaded](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK to your project.
 
     1. Verify that the following software components exist in the `libs` directory:
 

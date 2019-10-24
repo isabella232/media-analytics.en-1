@@ -7,7 +7,7 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 
 # Opt-out and privacy{#opt-out-and-privacy}
 
-## Opt-out / Opt-in {#section_zfb_syq_v2b}
+## Opt-out / Opt-in {#opt-out-opt-in}
 
 You can control whether tracking activity is allowed on a specific device:
 
@@ -73,7 +73,7 @@ You can control whether tracking activity is allowed on a specific device:
 
   After the privacy setting is changed using `setPrivacyStatus`, the change is permanent until it is changed again using this method, or the app is uninstalled and reinstalled.
 
-## Retrieving Stored Identifiers (OTT Apps) {#section_mky_2yq_v2b}
+## Retrieving Stored Identifiers (OTT Apps) {#retrieving-stored-identifiers-ott-apps}
 
 This information helps you retrieve locally stored user identities from your Roku app.
 

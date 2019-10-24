@@ -7,7 +7,7 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 
 # Live main content{#live-main-content}
 
-## Scenario {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Scenario {#scenario}
 
 In this scenario, there is one live asset with no ads played for 40 secs after joining the live stream. 
 
@@ -18,7 +18,7 @@ In this scenario, there is one live asset with no ads played for 40 secs after j
 |  The content plays.  |  | Content Heartbeats  |  |
 |  The session is over.  | `trackSessionEnd`  |  | `SessionEnd` means the end of a viewing session. This API must be called even if the user does not consume the media to completion.  |
 
-## Parameters {#section_D52B325B99DA42108EF560873907E02C}
+## Parameters {#parameters}
 
 Many of the same values that you see on Adobe Analytics Content Start Calls you will also see on Heartbeat Content Start Calls. You will also see lots of other parameters that Adobe uses to populate the various Media reports in Adobe Analytics. We won't be covering all of them here, just the really important ones.
 
@@ -35,7 +35,7 @@ Many of the same values that you see on Adobe Analytics Content Start Calls you 
 |  `s:stream:type`  | live  |  |
 |  `s:meta:*`  | optional  | Custom metadata set on the media  |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 During media playback, there is a timer that will send one or more heartbeats (or pings) every 10 seconds for main content, and every second for ads. These heartbeats will contain information about playback, ads, buffering, and a number of other things. The exact content of each heartbeat is beyond the scope of this document, the critical thing to validate is that heartbeats are being triggered consistently while playback continues.
 
@@ -46,7 +46,7 @@ In the content heartbeats, look for a few specific things:
 |  `s:event:type`  | "play"  |  |
 |  `l:event:playhead`  | &lt;playhead position&gt; e.g., 50, 60, 70  | This should reflect the current position of the playhead.  |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 There will not be a complete call in this scenario, because the live stream was never completed.
 
@@ -64,7 +64,7 @@ For example, say a LIVE streaming event starts at midnight and runs for 24 hours
 
 The same "live playhead" logic applied at the start of playback must be applied when a user pauses the playback. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
 
-## Sample Code {#section_vct_j2j_x2b}
+## Sample Code {#sample-code}
 
 ![](assets/live-content-playback.png)
 

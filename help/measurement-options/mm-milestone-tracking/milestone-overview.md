@@ -13,7 +13,7 @@ uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 
 [Legacy Milestone documentation](milestone_analytics_video.pdf)
 
-## Configuration {#section_rzx_j1z_cfb}
+## Configuration {#configuration}
 
 ### Milestone Video Configuration
 
@@ -44,7 +44,7 @@ On the final screen, select the two eVars and three events to be used with your 
 <!--![](assets/0clip_image008_-92166399.png)-->
 ![](assets/rs3.png)
 
-## Video variable reference {#section_emg_c1z_cfb}
+## Video variable reference {#video-variable-reference}
 
 The following table contains additional details on the commerce variables and custom events for video:
 
@@ -56,7 +56,7 @@ The following table contains additional details on the commerce variables and cu
 | Video Initiates | Event <br/>Type: Counter | Indicates that a visitor has viewed some portion of a video. However, it does not provide any information about how much, or what part, of a video the visitor viewed.  |
 | Video Completes | Event <br/>Type: Counter | Indicates that a user has viewed a complete video. By default, the complete event is measured 1 second before the end of the video.  <br/>During implementation, you can specify how many seconds from the end of the video you would like to consider a view complete. For live video and other streams that don't have a defined end, you can specify a custom point to measure completes. For example, after a specific time viewed.  |
 
-## Media Module variables {#section_ts5_11z_cfb}
+## Media Module variables {#media-module-variables}
 
 The following variables let you configure video measurement. You must define values for the variables in the Required Variables table. Additionally, to track events in your video player, you must enable autoTrack (for supported players) or implement custom player event tracking using the open, play, stop, and close methods.
 
@@ -67,7 +67,7 @@ The following variables let you configure video measurement. You must define val
 | `Media.trackVars` | **Syntax:** <br/><br/> `s.Media.trackVars =` <br/> &nbsp;&nbsp; `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>A comma-separated list of all variables that are set in your video tracking code.  |
 | `Media.trackEvents` | **Syntax:** <br/><br/> `s.Media.trackEvents =` <br/> &nbsp;&nbsp; `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>A comma-separated list of all events that are set in your video tracking code.  | 
 
-## Optional variables {#section_ufg_zzy_cfb}
+## Optional variables {#optional-variables}
 
 | &nbsp;Variable&nbsp;&nbsp;&nbsp; | Description |
 | --- | --- |
@@ -82,7 +82,7 @@ The following variables let you configure video measurement. You must define val
 | `Media.segmentByMilestones` | **Syntax:** <br/><br/> `s.Media.segmentByMilestones = true;` <br/><br/>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.trackMilestones` <br/><br/>Segmenting by milestones is the only way to define segments when using `autoTrack`. <br/><br/>Default value: `false` |
 | `Media.segmentByOffsetMilestones` | **Syntax:** <br/><br/> `s.Media.segmentByOffsetMilestones = true;` <br/><br/>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.trackOffsetMilestones` <br/><br/>Segmenting by milestones is the only way to define segments when using `autoTrack`.  <br/><br/>Default value: `false` |
 
-## Ad Tracking variables {#section_bhv_xzy_cfb}
+## Ad Tracking variables {#ad-tracking-variables}
 
 These variables are used to send ad information in conjunction with the openAd method. See [VAST Video Ad Tracking.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_ads.html)
 
@@ -94,7 +94,7 @@ These variables are used to send ad information in conjunction with the openAd m
 | `Media.adSegmentByMilestones` | **Syntax:** <br/><br/> `s.Media.adSegmentByMilestones = true;` <br/><br/>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.adTrackMilestones` <br/><br/>Segmenting by milestones is the only way to define segments when using `autoTrack`.  <br/><br/>Default value: `false` |
 | `Media.adSegmentByOffsetMilestones` | **Syntax:** <br/><br/> `s.Media.adSegmentByOffsetMilestones = true;` <br/><br/>Automatically generates the segment name, segment number, and segment length data, based on the length of the media and the milestones specified in `Media.adTrackOffsetMilestones` <br/><br/>Segmenting by milestones is the only way to define segments when using `autoTrack`. <br/><br/>Default value: `false` | 
 
-## Media Module methods {#section_xp1_wzy_cfb}
+## Media Module methods {#media-module-methods}
 
 The media module methods are used to manually tracking player events and to track additional metrics that are not part of the standard video reports.
 
@@ -114,7 +114,7 @@ If you are using `Media.autoTrack` and are not tracking additional metrics, you 
 | `Media.track` | **Syntax:** <br/><br/> `s.Media.track(mediaName)` <br/><br/>Immediately sends the current video state, along with any `Media.trackVars` and Media.trackEvents you've defined. This method is used within `Media.monitor`. <br/><br/>See [Measuring Additional Metrics using Media.monitor.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html) <br/><br/>Call `Media.open` and `Media.play` on the video before calling this method. This method takes the following parameter: <ul> <li> **mediaName**: The name of the video. This must match the name used in `Media.open`.</li> </ul> This method is the only way to send additional variables while the video is playing. It resets the seconds interval and percent milestone counters to zero to prevent multiple tracking hits.  | 
 
 
-## Track video player events {#section_dsg_rzy_cfb}
+## Track video player events {#track-video-player-events}
 
 You can track media players by creating functions attached to the video player event handlers. This lets you call `Media.open`, `Media.play`, `Media.stop`, and `Media.close` at the appropriate times. For example:
 
@@ -156,7 +156,7 @@ function endMovie() {
 
 ```
 
-## JavaScript autotrack {#section_ahz_pzy_cfb}
+## JavaScript autotrack {#javascript-autotrack}
 
 The JavaScript media module identifies all `<embed>` or `<object>` tags in the page HTML. It then searches the data in each tag to determine which media player, if any, is being used. If the player is Windows Media Player, Quicktime, or Real Player, `autoTrack` can be used, though `autoTrack` for Windows media player works only with Internet Explorer. Manual tracking for Windows Media Player is required to support all other browsers.
 
@@ -166,7 +166,7 @@ You must have the `classid` attribute set on the object you want to track. The `
 s.Media.autoTrack = true
 ```
 
-## JavaScript sample code {#section_i4g_4zy_cfb}
+## JavaScript sample code {#javascript-sample-code}
 
 ```javascript
 // Sample implementation 

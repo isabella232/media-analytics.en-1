@@ -9,7 +9,7 @@ uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 
 Standard video and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
 
-## Metadata constants {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Metadata constants {#video-metadata-constants}
 
 | Metadata Name | Context Data Key | Constant Name |
 | --- | --- | --- |
@@ -31,7 +31,7 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 | Feed | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | Stream Format | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` | 
 
-## Ad metadata constants {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Ad metadata constants {#ad-metadata-constants}
 
 | Metadata Name | Context Data Key | Constant Name |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ Standard video and ad metadata can be set on media and ad info objects respectiv
 | Site ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | Creative URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Sample implementations for Chromecast {#sample-implementations-for-chromecast}
 
 ### Video
 

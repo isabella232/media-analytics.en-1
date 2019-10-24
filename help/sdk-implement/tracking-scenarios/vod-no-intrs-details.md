@@ -7,7 +7,7 @@ uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 
 # VOD playback with no ads{#vod-playback-with-no-ads}
 
-## Scenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scenario {#scenario}
 
 This scenario has one VOD asset, with no ads, which is played once from beginning to end. 
 
@@ -18,7 +18,7 @@ This scenario has one VOD asset, with no ads, which is played once from beginnin
 |  Content plays  |  | Content Heartbeats  |  |
 |  Content is complete  | `trackComplete`  | Heartbeat Content Complete  | *Complete* means that the end of the playhead was reached.  |
 
-## Parameters {#section_45D7B10031524411B91E2C569F7818B0}
+## Parameters {#parameters}
 
 Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. There are many parameters that Adobe uses to populate the various media reports, but only the most important parameters are listed in the following table: 
 
@@ -34,7 +34,7 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |  `s:asset:media_id`  | &lt;Your Media Name&gt;  |  |
 |  `s:meta:*`  | optional  | Custom metadata that is set on the media.  |
 
-## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. All of the other parameters should still exist.
 
@@ -43,7 +43,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 |  `s:event:type`  | `"play"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
 
-## Content heartbeats {#section_3B5945336E464160A94518231CEE8F53}
+## Content heartbeats {#content-heartbeats}
 
 During media playback, a timer sends at least one heartbeat every 10 seconds. These heartbeats contain information about playback, ads, buffering, and so on. The exact content of each heartbeat is beyond the scope of this document, but the critical issue is that heartbeats are triggered consistently while playback continues.
 
@@ -54,7 +54,7 @@ In the content heartbeats, look for the following parameters:
 |  `s:event:type`  | `"play"`  |  |
 |  `l:event:playhead`  | &lt;playhead position&gt; e.g., 50,60,70  | This parameter reflects the current position of the playhead.  |
 
-## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 When playback has completed, which means that the end of the playhead is reached, a `Heartbeat Content Complete` call is sent. This call looks like other Heartbeat calls, but it contains some specific parameters:
 
@@ -63,7 +63,7 @@ When playback has completed, which means that the end of the playhead is reached
 |  `s:event:type`  | `"complete"`  |  |
 |  `s:asset:type`  | `"main"`  |  |
 
-## Sample Code {#section_glq_vw3_x2b}
+## Sample Code {#sample-code}
 
 In this scenario, the content is 40 seconds long. It is played until the end without any interruptions.
 

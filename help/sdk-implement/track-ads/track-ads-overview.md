@@ -43,7 +43,7 @@ Ad playback includes tracking ad breaks, ad starts, ad completes, and ad skips. 
 
 * Call `trackEvent` for the ad break complete.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implement ad tracking {#implement-ad-tracking}
 
 ### Ad tracking constants
 

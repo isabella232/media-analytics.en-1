@@ -11,7 +11,7 @@ uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 >
 >The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Overview {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
+## Overview {#overview}
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. You can use the media player API to identify the variables related to QoS and error tracking. 
 
@@ -26,7 +26,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 Call `trackError(“media error id”);`
 
-## Implement {#section_3B8EBEB167624D0481E8AF4761F83047}
+## Implement {#implement}
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
