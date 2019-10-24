@@ -7,7 +7,7 @@ uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 
 # VOD one tracker for multiple sessions{#vod-one-tracker-for-multiple-sessions}
 
-## Scenario {#parameters}
+## Scenario {#scenario}
 
 In this scenario, the `MediaHeartbeat` instance is used to create two separate sessions in sequence.
 
@@ -25,7 +25,7 @@ This scenario is the same as the [VOD playback with no ads](/help/sdk-implement/
 
 ![](assets/multi-sessions-one-at-a-time.png)
 
-### Android 
+### Android {#android}
 
 To create two instances of `MediaHeartbeat` for two media players, set up the following code:
 
@@ -180,7 +180,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 
+### iOS {#ios}
 
 To create two instances of `MediaHeartbeat` for two media players, enter the following: 
 
@@ -326,7 +326,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-### JavaScript 
+### JavaScript {#javascript}
 
 ```js
 var MediaHeartbeat = ADB.va.MediaHeartbeat; 
