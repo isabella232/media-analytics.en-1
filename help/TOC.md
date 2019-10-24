@@ -177,4 +177,4 @@ user-guide-title: Adobe Analytics for Audio and Video
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + Additional resources {#additional-resources}
-    + [Documentation Updates](additional-resources/doc-updates.md)
+    + [Resources](additional-resources/doc-updates.md)
