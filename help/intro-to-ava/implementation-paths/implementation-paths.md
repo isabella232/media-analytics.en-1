@@ -30,8 +30,10 @@ For each of these implementation paths, customers need to contact their Sales Re
    * Support for measuring ad breaks with (or without) dynamic ad insertion. 
    * TVSDK's seamless ad insertion model allows for analytics that directly measures the ad playback, which increases accuracy. 
    * Robust set of events and metadata to ensure accuracy across QoS buffering or mobile connectivity interruptions issues and end-user interactions such as seeking, pausing, and backgrounding on mobile. 
+<!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
+-->
 
-   TVSDK is already integrated with the Media Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. Primetime also supports the partnership with Nielsen. To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](/help/intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s): [Primetime User Guide.](https://helpx.adobe.com/primetime/user-guide.html)
+   TVSDK is already integrated with the Media Analtyics (Heartbeats) SDK, which makes implementation much easier and faster across every supported platform. <!--Primetime also supports the partnership with Nielsen.--> To leverage Primetime, follow the same guidelines and prerequisites found in [Client-side](/help/intro-to-ava/implementation-paths/client-side-path.md) along with the following docs for your platform(s): [Primetime User Guide.](https://helpx.adobe.com/primetime/user-guide.html)
 
    You should also contact your Sales Representative/Account Manger to discuss what you need to do to purchase TVSDK.
