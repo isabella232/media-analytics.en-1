@@ -36,13 +36,11 @@ Table data description:
 | <ul> <li> **SDK Key:**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API Key:**<br/> media.qoe.bitrate </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample Value:**<br/> 800-899 </li><li> **Description:**<br/>The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals. The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>bitrateAverageBucket) </li> <li> **Heartbeat:**<br/> (l:stream:bitrate) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Average Bitrate </li> <li> **Context Data:**<br/> (a.media.qoe.<br/>bitrateAverageBucket) </li> <li> **Data Feed:**<br/> videoqoebitrateaverageevar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>bitrateAverageBucket) </li> </ul> |
 
 
-
-### Time to Start 
+### Time To Start 
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> </li> <li> **API Key:**<br/> media.qoe.timeToStart </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Start, Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample Value:**<br/> 30,000 </li><li> **Description:**<br/>This value defaults to zero if you do not set it through the QoSObject. You set this value in milliseconds. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Heartbeat:**<br/> (l:stream:startup_time) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> eVar </li> <li> **Expiration:**<br/> On HIT </li> <li> **Report Name:**<br/> Time to Start </li> <li> **Context Data:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Data Feed:**<br/> videoqoetimetostartevar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
-
 
 
 ### FPS 

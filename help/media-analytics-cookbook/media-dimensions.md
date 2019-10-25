@@ -1,14 +1,19 @@
 ---
-title: Media Dimensions Outside Media Tracking
-seo-title: Media Dimensions Outside Media Tracking
+title: Media Stream Attribution
+seo-title: Media Stream Attribution
 
 ---
 
-# Media Dimensions Outside Media Tracking
+# Media Stream Attribution
 
 This feature lets you link application actions to media tracking data without the need for additional processing rules and custom variables.
 
-Customers are now able to add any of the media dimensions to all other analytics calls, such as page views and custom links. During implementation, you must add the media context data parameters to the Analytics track calls. The full list of context data parameters used for media are available here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md) 
+## Media Dimensions Outside Media Tracking
+
+With Media Stream Attribution, customers are now able to add any of the media dimensions 
+to all other analytics calls, such as page views and custom links. During implementation, 
+you must add the media context data parameters to the Analytics track calls. The full list 
+of context data parameters used for media are available here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md) 
 
 You will also need to re-enable media tracking configuration from the Admin console for each report that you want to enable this feature for.
 
