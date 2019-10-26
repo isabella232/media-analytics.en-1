@@ -160,7 +160,7 @@ user-guide-title: Adobe Analytics for Audio and Video
         + [Timeline 3 - Chapters](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
     + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + Cookbook {#media-analytics-cookbook}
-    + [Cookbook](media-analytics-cookbook/cookbook-overview.md)
+    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](media-analytics-cookbook/media-dimensions.md)
 + Metrics and Metadata {#metrics-and-metadata} 
     + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md) 
@@ -182,4 +182,3 @@ user-guide-title: Adobe Analytics for Audio and Video
 + [Federated Analytics](federated-analytics.md)
 + Additional resources {#additional-resources}
     + [Resources](additional-resources/doc-updates.md)
-
