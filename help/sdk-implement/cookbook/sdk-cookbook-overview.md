@@ -8,7 +8,7 @@ seo-description: SDK-specific cookbook topics
 
 # SDK Cookbook Overview
 
-You can find general Media Analytics cookbook topics that apply to both the Media SDK and the Media Collection API here: [Media Analytics Cookbook.](/help/media-analytics-cookbook/cookbook-overview.md)
+You can find general Media Analytics cookbook topics that apply to both the Media SDK and the Media Collection API here: [Media Analytics Cookbook.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 The cookbook topics listed below are specific to the Media SDK version of Media Analytics:
 
