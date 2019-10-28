@@ -205,7 +205,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## Implementation {#implementation}
 
-1. **Download the Roku Library -** Download the [latest Roku library.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Download the Roku Library -** Download the [latest Roku library.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
 1. **Set Up Your Development Environment**
 
