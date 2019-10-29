@@ -48,7 +48,6 @@ Some of the many benefits of the Heartbeats method include:
 * **Streamlined implementation process -** Map variables more easily through your player API and validate implementations through the Adobe Debug Tool to ensure all necessary variables are tracked accurately. 
 * **Automatic Adobe Experience Cloud Integration** - Take advantage of the automatic integration with the Adobe Experience Cloud through the Experience Cloud ID, segment your media audiences, target them, and make media recommendations based on user preferences. 
 * **Shared data through Federated Analytics -** Capitalize on our industry-first media sharing capabilities, to evaluate data holistically across all of your media distribution partners—operators, programmers, and distributors. 
-* **Partnerships with Certified Ratings Partners -** Adobe partners with audience ratings partner Nielsen to provide neutral census third party measurement to allow for trusted, certified ratings. 
 * **Standardized solution across all platforms -** Enable consistent, standardized variables across all of your media and platforms to allow for a more efficient cross-campaign, device and vendor comparison.
 * **Downloaded content tracking -** Track media content (video and audio) that is downloaded and played on a device regardless of its connectivity. 
 

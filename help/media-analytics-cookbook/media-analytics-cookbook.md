@@ -1,16 +1,16 @@
 ---
-title: Cookbook Overview
-seo-title: Cookbook Overview
+title: Media Analytics Cookbook
+seo-title: Media Analytics Cookbook
 description: Top-level Cookbook page, with general MA cookbook links and SDK-specific links.
 seo-description: Top-level Cookbook page, with general MA cookbook links and SDK-specific links.
 
 ---
 
-# Cookbook Overview
+# Media Analytics Cookbook 
 
 ## General Media Analytics cookbook topics
 
-[Media Dimensions Outside Media Tracking](/help/media-analytics-cookbook/media-dimensions.md)
+[Media Stream Attribution](/help/media-analytics-cookbook/media-dimensions.md)
 
 ## Media SDK cookbook topics
 
