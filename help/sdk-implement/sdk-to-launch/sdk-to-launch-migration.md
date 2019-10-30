@@ -1,12 +1,12 @@
 ---
-seo-title: Migrating From the standalone Media SDK to Adobe Launch
-title: Migrating From the standalone Media SDK to Adobe Launch
+seo-title: Migrating from the standalone Media SDK to Adobe Launch
+title: Migrating from the standalone Media SDK to Adobe Launch
 seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 
 ---
 
-# Migrating From the standalone Media SDK to Adobe Launch 
+# Migrating from the standalone Media SDK to Adobe Launch 
 
 This documentation focuses mainly on Media Analytics implementation differences 
 between the standalone Media SDK and the Media Analytics Launch extension.
