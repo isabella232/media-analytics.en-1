@@ -1,3 +1,11 @@
+---
+seo-title: Migrating From the standalone Media SDK to Adobe Launch
+title: Migrating From the standalone Media SDK to Adobe Launch
+seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
+description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
+
+---
+
 # Migrating From the standalone Media SDK to Adobe Launch 
 
 This documentation focuses mainly on Media Analytics implementation differences 
@@ -52,7 +60,7 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 #### Launch Extension
 
-[Create a Media Tracker](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Media API reference - Create a Media Tracker](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
 Before you create the tracker, you should register the media extension and 
 dependent extensions with the mobile core.
@@ -136,13 +144,13 @@ The implementation should update the current player playhead by calling the
 `updateCurrentPlayhead` method exposed by the tracker. For accurate tracking 
 you should call this method at least once per second.
 
-[Update Current Playher](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Media API reference - Update Current Player](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
     
 The implementation should update the QoE information by calling the `updateQoEObject` 
 method exposed by the tracker. We expect this method to be called whenever there 
 is a change in the quality metrics. 
 
-[Update QoE Object](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Media API reference - Update QoE Object](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
 #### Standalone Media SDK
 
@@ -155,116 +163,116 @@ should return the latest QoE and playhead whenever the tracker calls the
 
 #### Launch Extension
 
-**Standard Media Metadata:**
+* Standard Media Metadata:
 
-```java
-HashMap<String, Object> mediaObject = 
-  Media.createMediaObject("media-name", 
-                          "media-id", 
-                          60D, 
-                          MediaConstants.StreamType.VOD, 
-                          Media.MediaType.Video);
+   ```java
+   HashMap<String, Object> mediaObject = 
+     Media.createMediaObject("media-name", 
+                             "media-id", 
+                             60D, 
+                             MediaConstants.StreamType.VOD, 
+                             Media.MediaType.Video);
+   
+   HashMap<String, String> mediaMetadata = 
+     new HashMap<String, String>();
+   
+   // Standard metadata keys provided by adobe.
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
+                     "Sample Episode");
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
+                     "Sample Show");
+   
+   // Custom metadata keys
+   mediaMetadata.put("isUserLoggedIn", "false");
+   mediaMetadata.put("tvStation", "Sample TV Station");
+   
+   tracker.trackSessionStart(mediaInfo, mediaMetadata);
+   ```
 
-HashMap<String, String> mediaMetadata = 
-  new HashMap<String, String>();
+* Standard Ad Metadata:
 
-// Standard metadata keys provided by adobe.
-mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
-                  "Sample Episode");
-mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
-                  "Sample Show");
-
-// Custom metadata keys
-mediaMetadata.put("isUserLoggedIn", "false");
-mediaMetadata.put("tvStation", "Sample TV Station");
-
-tracker.trackSessionStart(mediaInfo, mediaMetadata);
-```
-
-**Standard Ad Metadata:**
-
-```java
-HashMap<String, Object> adObject = 
-  Media.createAdObject("ad-name", 
-                       "ad-id", 
-                       1L, 
-                       15D);
-HashMap<String, String> adMetadata = 
-  new HashMap<String, String>();
-
-// Standard metadata keys provided by adobe.
-adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
-               "Sample Advertiser");
-adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
-               "Sample Campaign");
-
-// Custom metadata keys
-adMetadata.put("affiliate", 
-               "Sample affiliate");
-_tracker.trackEvent(Media.Event.AdStart, 
-                    adObject, 
-                    adMetadata);
-```
+   ```java
+   HashMap<String, Object> adObject = 
+     Media.createAdObject("ad-name", 
+                          "ad-id", 
+                          1L, 
+                          15D);
+   HashMap<String, String> adMetadata = 
+     new HashMap<String, String>();
+   
+   // Standard metadata keys provided by adobe.
+   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
+                  "Sample Advertiser");
+   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
+                  "Sample Campaign");
+   
+   // Custom metadata keys
+   adMetadata.put("affiliate", 
+                  "Sample affiliate");
+   _tracker.trackEvent(Media.Event.AdStart, 
+                       adObject, 
+                       adMetadata);
+   ```
 
 #### Standalone Media SDK
 
-**Standard Media Metadata:**
+* Standard Media Metadata:
 
-```java
-MediaObject mediaInfo = 
-  MediaHeartbeat.createMediaObject("media-name", 
-                                   "media-id", 
-                                   60D, 
-                                   MediaHeartbeat.StreamType.VOD, 
-                                   MediaHeartbeat.MediaType.Video);
+   ```java
+   MediaObject mediaInfo = 
+     MediaHeartbeat.createMediaObject("media-name", 
+                                      "media-id", 
+                                      60D, 
+                                      MediaHeartbeat.StreamType.VOD, 
+                                      MediaHeartbeat.MediaType.Video);
+   
+   // Standard metadata keys provided by adobe.
+   Map <String, String> standardVideoMetadata = 
+     new HashMap<String, String>(); 
+   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE, 
+                             "Sample Episode"); 
+   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW, 
+                             "Sample Show"); 
+   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON, 
+                             "Sample Season"); 
+   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata, 
+                      standardVideoMetadata);
+   
+   // Custom metadata keys
+   HashMap<String, String> mediaMetadata = new HashMap<String, String>();
+   mediaMetadata.put("isUserLoggedIn", "false");
+   mediaMetadata.put("tvStation", "Sample TV Station");
+   tracker.trackSessionStart(mediaInfo, mediaMetadata);
+   ```
 
-// Standard metadata keys provided by adobe.
-Map <String, String> standardVideoMetadata = 
-  new HashMap<String, String>(); 
-standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE, 
-                          "Sample Episode"); 
-standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW, 
-                          "Sample Show"); 
-standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON, 
-                          "Sample Season"); 
-mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata, 
-                   standardVideoMetadata);
+* Standard Ad Metadata:
 
-// Custom metadata keys
-HashMap<String, String> mediaMetadata = new HashMap<String, String>();
-mediaMetadata.put("isUserLoggedIn", "false");
-mediaMetadata.put("tvStation", "Sample TV Station");
-tracker.trackSessionStart(mediaInfo, mediaMetadata);
-```
-
-**Standard Ad Metadata:**
-
-```java
-MediaObject adInfo = 
-  MediaHeartbeat.createAdObject("ad-name", 
-                                "ad-id", 
-                                1L, 
-                                15D);
-
-// Standard metadata keys provided by adobe.
-Map <String, String> standardAdMetadata = 
-  new HashMap<String, String>(); 
-standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, 
-                       "Sample Advertiser"); 
-standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, 
-                       "Sample Campaign"); 
-adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, 
-                standardAdMetadata); 
-
-HashMap<String, String> adMetadata = 
-  new HashMap<String, String>();
-adMetadata.put("affiliate", 
-               "Sample affiliate");
-
-tracker.trackEvent(MediaHeartbeat.Event.AdStart, 
-                   adObject, 
-                   adMetadata);
-```
+   ```java
+   MediaObject adInfo = 
+     MediaHeartbeat.createAdObject("ad-name", 
+                                   "ad-id", 
+                                   1L, 
+                                   15D);
+   
+   // Standard metadata keys provided by adobe.
+   Map <String, String> standardAdMetadata = 
+     new HashMap<String, String>(); 
+   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, 
+                          "Sample Advertiser"); 
+   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, 
+                          "Sample Campaign"); 
+   adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, 
+                   standardAdMetadata); 
+   
+   HashMap<String, String> adMetadata = 
+     new HashMap<String, String>();
+   adMetadata.put("affiliate", 
+                  "Sample affiliate");
+   
+   tracker.trackEvent(MediaHeartbeat.Event.AdStart, 
+                      adObject, 
+                      adMetadata);
+   ```
 
 ## iOS 
 
@@ -277,7 +285,7 @@ tracker.trackEvent(MediaHeartbeat.Event.AdStart,
 1. In the extension settings page, configure the tracking parameters.
     The Media extension will use the configured parameters for tracking. 
 
-[Media Analytics Extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Configure the Media Analytics extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 #### Standalone Media SDK
 
@@ -304,7 +312,7 @@ ADBMediaHeartbeat* tracker =
 
 #### Launch Extension
 
-[Create Media Tracker](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Media API reference - Create Media Tracker](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
 Before creating the tracker, register the media extension and dependent extensions with the mobile core.
 
@@ -384,13 +392,13 @@ The implementation should update the current player playhead by called the
 `updateCurrentPlayhead` method exposed by the tracker. For accurate tracking 
 you should call this method at least once per second.
 
-[Update Current Playhead](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Media API reference - Update Current Playhead](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
     
 The implementation should update the QoE information by calling the 
 `updateQoEObject` method exposed by the tracker. You should call this method 
 whenever there is a change in the quality metrics. 
 
-[Update QoE Object](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Media API reference - Update QoE Object](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
 #### Standalone Media SDK
 
@@ -404,104 +412,104 @@ methods.
 
 #### Launch Extension
 
-**Standard Media Metadata:**
+* Standard Media Metadata:
 
-```objective-c
-NSDictionary *mediaObject = 
-  [ACPMedia createMediaObjectWithName:@"media-name" 
-            mediaId:@"media-id" 
-            length:60 
-            streamType:ACPMediaStreamTypeVod 
-            mediaType:ACPMediaTypeVideo];
+   ```objective-c
+   NSDictionary *mediaObject = 
+     [ACPMedia createMediaObjectWithName:@"media-name" 
+               mediaId:@"media-id" 
+               length:60 
+               streamType:ACPMediaStreamTypeVod 
+               mediaType:ACPMediaTypeVideo];
+   
+   NSMutableDictionary *mediaMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+   
+   // Custom metadata keys
+   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+   ```
 
-NSMutableDictionary *mediaMetadata = 
-  [[NSMutableDictionary alloc] init];
+* Standard Ad Metadata:
 
-// Standard metadata keys provided by adobe.
-[mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-[mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-
-// Custom metadata keys
-[mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-[mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-[_tracker trackSessionStart:mediaObject data:mediaMetadata];
-```
-
-**Standard Ad Metadata:**
-
-```objective-c
-NSDictionary* adObject = 
-  [ACPMedia createAdObjectWithName:@"ad-name" 
-            adId:@"ad-id" 
-            position:1 
-            length:15];
-
-NSMutableDictionary* adMetadata = 
-  [[NSMutableDictionary alloc] init];
-
-// Standard metadata keys provided by adobe.
-[adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-[adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-
-// Custom metadata keys
-[adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-
-[tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-```
+   ```objective-c
+   NSDictionary* adObject = 
+     [ACPMedia createAdObjectWithName:@"ad-name" 
+               adId:@"ad-id" 
+               position:1 
+               length:15];
+   
+   NSMutableDictionary* adMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+   
+   // Custom metadata keys
+   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+   
+   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+   ```
 
 #### Standalone Media SDK
 
-**Standard Media Metadata:**
+* Standard Media Metadata:
 
-```objective-c
-ADBMediaObject *mediaObject = 
-  [ADBMediaHeartbeat createMediaObjectWithName:@"media-name" 
-                     mediaId:@"media-id" 
-                     length:60 
-                     streamType:ADBMediaHeartbeatStreamTypeVod 
-                     mediaType:ADBMediaTypeVideo];
-                                                                                                                                                  
-// Standard metadata keys provided by adobe.
-NSMutableDictionary *standardMetadata = [[NSMutableDictionary alloc] init];
-[standardMetadata setObject:@"Sample show" forKey:ADBVideoMetadataKeySHOW];
-[standardMetadata setObject:@"Sample season" forKey:ADBVideoMetadataKeySEASON];
-[mediaObject setValue:standardMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
+   ```objective-c
+   ADBMediaObject *mediaObject = 
+     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name" 
+                        mediaId:@"media-id" 
+                        length:60 
+                        streamType:ADBMediaHeartbeatStreamTypeVod 
+                        mediaType:ADBMediaTypeVideo];
+                                                                                                                                                     
+   // Standard metadata keys provided by adobe.
+   NSMutableDictionary *standardMetadata = [[NSMutableDictionary alloc] init];
+   [standardMetadata setObject:@"Sample show" forKey:ADBVideoMetadataKeySHOW];
+   [standardMetadata setObject:@"Sample season" forKey:ADBVideoMetadataKeySEASON];
+   [mediaObject setValue:standardMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
+   
+   //Attaching custom metadata
+   NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+       
+   [tracker trackSessionStart:mediaObject data:mediaMetadata];
+   ```
 
-//Attaching custom metadata
-NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-[mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-[mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-    
-[tracker trackSessionStart:mediaObject data:mediaMetadata];
-```
+* Standard Ad Metadata:
 
-**Standard Ad Metadata:**
-
-```objective-c
-ADBMediaObject* adObject = 
-  [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"] 
-                     adId:[adData objectForKey:@"id"]
-                     position:[[adData objectForKey:@"position"] doubleValue]
-                     length:[[adData objectForKey:@"length"] doubleValue]];
-    
-// Standard metadata keys provided by adobe.
-NSMutableDictionary *standardMetadata = 
-  [[NSMutableDictionary alloc] init];
-[standardMetadata setObject:@"Sample Advertiser" 
-                  forKey:ADBAdMetadataKeyADVERTISER];
-[standardMetadata setObject:@"Sample Campaign" 
-                  forKey:ADBAdMetadataKeyCAMPAIGN_ID];
-[adObject setValue:standardMetadata 
-                  forKey:ADBMediaObjectKeyStandardAdMetadata];
-    
-//Attaching custom metadata
-NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
-[adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
-    
-[tracker trackEvent:ADBMediaHeartbeatEventAdStart 
-         mediaObject:adObject 
-         data:adDictionary];
-```
+   ```objective-c
+   ADBMediaObject* adObject = 
+     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"] 
+                        adId:[adData objectForKey:@"id"]
+                        position:[[adData objectForKey:@"position"] doubleValue]
+                        length:[[adData objectForKey:@"length"] doubleValue]];
+       
+   // Standard metadata keys provided by adobe.
+   NSMutableDictionary *standardMetadata = 
+     [[NSMutableDictionary alloc] init];
+   [standardMetadata setObject:@"Sample Advertiser" 
+                     forKey:ADBAdMetadataKeyADVERTISER];
+   [standardMetadata setObject:@"Sample Campaign" 
+                     forKey:ADBAdMetadataKeyCAMPAIGN_ID];
+   [adObject setValue:standardMetadata 
+                     forKey:ADBMediaObjectKeyStandardAdMetadata];
+       
+   //Attaching custom metadata
+   NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+   [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+       
+   [tracker trackEvent:ADBMediaHeartbeatEventAdStart 
+            mediaObject:adObject 
+            data:adDictionary];
+   ```
 
 ## Web (JS)
 
@@ -516,7 +524,7 @@ NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
 1. In the extension settings page, configure the tracking parameters.
     The Media extension will use the configured parameters for tracking. 
 
-[Install & Configure Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch User Guide - Install & configure the media extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 #### Standalone Media SDK
 
@@ -541,4 +549,4 @@ to work properly.
 
 ### Tracker Creation
 
-[Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
+[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
