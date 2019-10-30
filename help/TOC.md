@@ -129,13 +129,16 @@ user-guide-title: Adobe Analytics for Audio and Video
         + [Resolving main:play appearing between ads](sdk-implement/cookbook/fix-ad-play-ad.md)
         + [Resuming Inactive Sessions](sdk-implement/cookbook/resuming-inactive.md)
         + [Tracking in SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
-        + [SDK and Launch Differences](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
     + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
         + [Migration Overview](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
         + [Code Comparison: 1.x to 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
         + [1.x to 2.x API Conversion](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
     + Media Analytics SDK to Launch Migration {#sdk-to-launch}
         + [SDK to Launch Migration](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
+        + SDK to Launch Migration Platform Guides {#sdk-to-launch-migration-platforms}
+            +[Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-android.md)
+            +[iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-ios.md)
+            +[JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-js.md)
 + Media Collection API (RESTful) {#media-collection-api}
     + [Overview](media-collection-api/mc-api-overview.md)
     + API Reference {#mc-api-ref}
