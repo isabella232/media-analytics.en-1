@@ -78,10 +78,10 @@ try {
     ...
 }
 ```
- 
+
 Once you register the media extension, create the tracker using the following API. 
 The tracker automatically picks the configuration from the configured launch property.
-    
+
 ```java
 Media.createTracker(new AdobeCallback<MediaTracker>() {
     @Override
@@ -182,7 +182,7 @@ tracker.trackSessionStart(mediaInfo, mediaMetadata);
 ```
 
 **Standard Ad Metadata:**
-  
+
 ```java
 HashMap<String, Object> adObject = 
   Media.createAdObject("ad-name", 
@@ -325,10 +325,10 @@ Before creating the tracker, register the media extension and dependent extensio
     return YES;
 }
 ```
- 
+
 Once the media extension is registered, tracker can be created using the following API. 
 The tracker automatically picks the configuration from the configured launch property.
-    
+
 ```objective-c
 [ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
     // Use the instance for tracking media.
@@ -428,7 +428,7 @@ NSMutableDictionary *mediaMetadata =
 ```
 
 **Standard Ad Metadata:**
-  
+
 ```objective-c
 NSDictionary* adObject = 
   [ACPMedia createAdObjectWithName:@"ad-name" 
