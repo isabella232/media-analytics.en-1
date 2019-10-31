@@ -136,9 +136,9 @@ user-guide-title: Adobe Analytics for Audio and Video
     + Media Analytics SDK to Launch Migration {#sdk-to-launch}
         + [SDK to Launch Migration](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
         + SDK to Launch Migration Platform Guides {#sdk-to-launch-migration-platforms}
-            +[Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-            +[iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-            +[JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+            + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+            + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+            + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Media Collection API (RESTful) {#media-collection-api}
     + [Overview](media-collection-api/mc-api-overview.md)
     + API Reference {#mc-api-ref}
