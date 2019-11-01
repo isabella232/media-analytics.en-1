@@ -1,6 +1,6 @@
 ---
 title: Track quality of experience on Android
-description: 
+description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK on Android.
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 
 ---

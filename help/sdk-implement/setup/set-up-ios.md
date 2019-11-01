@@ -1,6 +1,6 @@
 ---
 title: Set up iOS
-description: 
+description: Media SDK application setup for implementation on iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 ---

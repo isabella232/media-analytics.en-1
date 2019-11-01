@@ -1,6 +1,6 @@
 ---
 title: Test call details
-description: 
+description: This topic details the calls you must make to validate your implementation.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: VOD playback with seeking in the main content
-description: 
+description: An example of how to track VOD content in which seeking occurred using the Media SDK.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 
 ---

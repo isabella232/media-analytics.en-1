@@ -1,6 +1,6 @@
 ---
 title: Track ads on Roku
-description: 
+description: Implement ad tracking in Roku applications using the Media SDK.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Implement standard ad metadata on Roku
-description: 
+description: How to use standard ad metadata in ad tracking on Roku.
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 
 ---

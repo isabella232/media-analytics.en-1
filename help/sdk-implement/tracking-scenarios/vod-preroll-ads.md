@@ -1,7 +1,6 @@
 ---
 title: VOD playback with pre-roll ads
-description: 
-description: In this scenario, pre-roll ads have been inserted before the main content.
+description: An example of how to track VOD content that contains pre-roll ads using the Media SDK.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 
 ---

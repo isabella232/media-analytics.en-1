@@ -1,6 +1,6 @@
 ---
 title: Implement standard ad metadata on JavaScript
-description: 
+description: How to use standard ad metadata in ad tracking in browser (JS) apps.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 
 ---

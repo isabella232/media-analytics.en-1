@@ -1,6 +1,6 @@
 ---
 title: Configure Adobe Debug
-description: 
+description: This topic describes how to configure Adobe Debug, which you can use to troubleshoot Media SDK implementations.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 
 ---

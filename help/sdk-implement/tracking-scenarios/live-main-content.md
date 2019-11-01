@@ -1,6 +1,6 @@
 ---
 title: Live main content
-description: 
+description: An example of how to track live content using the Media SDK.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 
 ---

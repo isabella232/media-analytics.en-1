@@ -1,6 +1,6 @@
 ---
 title: VOD playback with one chapter
-description: 
+description: An example of tracking VOD playback that contains one chapter.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 
 ---

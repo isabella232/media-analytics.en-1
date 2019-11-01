@@ -1,6 +1,6 @@
 ---
 title: VOD playback with no ads
-description: 
+description: An example of tracking VOD playback that contains no ads.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 
 ---

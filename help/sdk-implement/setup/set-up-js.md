@@ -1,6 +1,6 @@
 ---
 title: Set up JavaScript
-description: 
+description: Media SDK application setup for implementation on JavaScript.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 
 ---

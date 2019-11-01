@@ -1,6 +1,6 @@
 ---
 title: Implement standard metadata on JavaScript
-description: 
+description: Describes setting standard video and ad metadata to be sent with tracking calls in browser apps (JS).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 
 ---

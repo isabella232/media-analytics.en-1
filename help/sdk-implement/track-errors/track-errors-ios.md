@@ -1,6 +1,6 @@
 ---
 title: Track errors on iOS
-description: 
+description: This topic describes implementing error tracking using the Media SDK on iOS.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 
 ---

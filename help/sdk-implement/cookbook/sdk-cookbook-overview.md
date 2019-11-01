@@ -1,6 +1,6 @@
 ---
 title: SDK Cookbook Overview
-description: 
+description: Cookbook overview.
 description: SDK-specific cookbook topics 
 
 ---

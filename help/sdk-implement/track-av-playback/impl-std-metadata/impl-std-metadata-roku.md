@@ -1,6 +1,6 @@
 ---
 title: Implement standard metadata on Roku
-description: 
+description: Describes setting standard video and ad metadata to be sent with tracking calls on Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 
 ---

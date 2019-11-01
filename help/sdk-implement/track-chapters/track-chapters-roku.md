@@ -1,6 +1,6 @@
 ---
 title: Track chapters and segments on Roku
-description: 
+description: This topic describes implementing chapter and segment tracking using the Media SDK on Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 
 ---

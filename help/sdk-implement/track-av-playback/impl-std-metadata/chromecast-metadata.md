@@ -1,6 +1,6 @@
 ---
 title: Chromecast metadata keys
-description: 
+description: Describes setting standard video and ad metadata to be sent with tracking calls on Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 
 ---

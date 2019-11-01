@@ -1,6 +1,6 @@
 ---
 title: Roku metadata keys
-description: 
+description: This topic describes the available Roku metadata keys.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 
 ---

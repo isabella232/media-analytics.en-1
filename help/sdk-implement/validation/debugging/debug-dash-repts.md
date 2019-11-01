@@ -1,6 +1,6 @@
 ---
 title: Debug dashboards and reports
-description: 
+description: This topic describes the Adobe debug dashboards.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 
 ---

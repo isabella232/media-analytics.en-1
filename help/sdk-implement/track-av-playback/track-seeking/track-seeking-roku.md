@@ -1,6 +1,6 @@
 ---
 title: Track seeking on Roku
-description: 
+description: This topic describes implementing seek tracking using the Media SDK on Roku.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 
 ---

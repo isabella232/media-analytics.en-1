@@ -1,6 +1,6 @@
 ---
 title: Setup Overview
-description: 
+description: Overview of setting up the Media SDK for media tracking in your mobile, OTT, and browser (JS) applications.
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 
 ---

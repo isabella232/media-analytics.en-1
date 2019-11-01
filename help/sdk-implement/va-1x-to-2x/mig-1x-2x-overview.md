@@ -1,6 +1,6 @@
 ---
 title: Migration overview
-description: 
+description: This topic provides an overview of migrating from 1.x to 2.x versions of the Media SDK.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 
 ---

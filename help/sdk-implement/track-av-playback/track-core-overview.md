@@ -1,6 +1,6 @@
 ---
 title: Tracking Overview
-description: 
+description: This topic describes tracking core playback, including tracking media load, media start, media pause, and media complete. 
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 
 ---

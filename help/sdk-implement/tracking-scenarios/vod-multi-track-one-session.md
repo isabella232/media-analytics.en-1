@@ -1,6 +1,6 @@
 ---
 title: VOD one tracker for multiple sessions
-description: 
+description: An example of how to use one tracker to track multiple sessions using the Media SDK.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 
 ---

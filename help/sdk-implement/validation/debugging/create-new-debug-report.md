@@ -1,6 +1,6 @@
 ---
 title: Create a new Debug report
-description: 
+description: This topic describes how to create a new Debug report.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 
 ---

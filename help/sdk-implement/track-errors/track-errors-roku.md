@@ -1,6 +1,6 @@
 ---
 title: Track errors on Roku
-description: 
+description: This topic describes implementing error tracking using the Media SDK on Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 
 ---

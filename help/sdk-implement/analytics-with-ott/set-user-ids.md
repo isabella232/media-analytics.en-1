@@ -1,6 +1,6 @@
 ---
 title: Set user IDs
-description: 
+description: APIs for setting user IDs, which server as a unique customer identifier.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 
 ---

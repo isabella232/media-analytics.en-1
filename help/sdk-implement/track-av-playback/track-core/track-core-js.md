@@ -1,6 +1,6 @@
 ---
 title: Track core playback on JavaScript
-description: 
+description: This topic describes how to implement core tracking using the Media SDK in browser apps (JS).
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
 ---
