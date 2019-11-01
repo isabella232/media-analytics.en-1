@@ -15,4 +15,3 @@ The cookbook topics listed below are specific to the Media SDK version of Media 
 * [Resolving main:play appearing between ads](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Resuming Inactive Sessions](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Tracking in SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [SDK and Launch Differences](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
