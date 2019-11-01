@@ -1,5 +1,6 @@
 ---
 title: Implement standard ad metadata on Android
+description: 
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 
 ---

@@ -1,5 +1,6 @@
 ---
 title: Validating event requests
+description: 
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 
 ---

@@ -1,5 +1,6 @@
 ---
 title: VOD playback with a skipped chapter
+description: 
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 
 ---

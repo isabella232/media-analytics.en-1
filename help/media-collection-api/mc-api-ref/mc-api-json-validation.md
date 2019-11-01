@@ -1,5 +1,6 @@
 ---
 title: JSON validation schemas
+description: 
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 
 ---

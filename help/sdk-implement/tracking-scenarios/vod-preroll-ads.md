@@ -1,5 +1,6 @@
 ---
 title: VOD playback with pre-roll ads
+description: 
 description: In this scenario, pre-roll ads have been inserted before the main content.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 

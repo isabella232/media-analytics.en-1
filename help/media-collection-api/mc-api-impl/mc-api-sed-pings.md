@@ -1,5 +1,6 @@
 ---
 title: Sending ping events
+description: 
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 
 ---

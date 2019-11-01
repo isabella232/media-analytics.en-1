@@ -1,5 +1,6 @@
 ---
 title: Track ads on JavaScript
+description: 
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 
 ---

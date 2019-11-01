@@ -1,5 +1,6 @@
 ---
 title: Track chapters and segments on JavaScript
+description: 
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 
 ---

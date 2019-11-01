@@ -1,5 +1,6 @@
 ---
 title: Understand Launch versus Media SDK differences
+description: 
 uuid: 
 
 ---

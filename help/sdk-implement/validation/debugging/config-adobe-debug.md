@@ -1,5 +1,6 @@
 ---
 title: Configure Adobe Debug
+description: 
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 
 ---

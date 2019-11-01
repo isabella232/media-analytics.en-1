@@ -1,5 +1,6 @@
 ---
 title: Resolving main play appearing between ads
+description: 
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 
 ---

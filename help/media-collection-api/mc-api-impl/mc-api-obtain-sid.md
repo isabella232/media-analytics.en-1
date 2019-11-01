@@ -1,5 +1,6 @@
 ---
 title: Obtaining a session ID
+description: 
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 
 ---
