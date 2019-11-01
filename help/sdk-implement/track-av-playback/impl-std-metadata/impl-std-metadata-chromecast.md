@@ -1,5 +1,4 @@
 ---
-description: null
 title: Implement standard metadata on Chromecast
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 
