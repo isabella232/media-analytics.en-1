@@ -1,7 +1,5 @@
 ---
 description: null
-seo-description: null
-seo-title: Implement standard metadata on Android
 title: Implement standard metadata on Android
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 

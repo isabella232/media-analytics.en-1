@@ -1,5 +1,4 @@
 ---
-seo-title: Track quality of experience on Chromecast
 title: Track quality of experience on Chromecast
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 

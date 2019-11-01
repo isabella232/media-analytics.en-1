@@ -1,5 +1,4 @@
 ---
-seo-title: VOD playback with buffering
 title: VOD playback with buffering
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 

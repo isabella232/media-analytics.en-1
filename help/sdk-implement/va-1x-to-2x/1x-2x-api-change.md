@@ -1,5 +1,4 @@
 ---
-seo-title: 1.x to 2.x API conversion
 title: 1.x to 2.x API conversion
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 

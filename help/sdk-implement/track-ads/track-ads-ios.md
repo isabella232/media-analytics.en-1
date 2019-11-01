@@ -1,5 +1,4 @@
 ---
-seo-title: Track ads on iOS
 title: Track ads on iOS
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 

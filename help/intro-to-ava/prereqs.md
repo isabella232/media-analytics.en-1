@@ -1,5 +1,4 @@
 ---
-seo-title: Prerequisites
 title: Prerequisites
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 

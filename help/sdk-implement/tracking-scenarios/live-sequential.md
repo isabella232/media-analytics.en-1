@@ -1,5 +1,4 @@
 ---
-seo-title: Live main content with sequential tracking
 title: Live main content with sequential tracking
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 

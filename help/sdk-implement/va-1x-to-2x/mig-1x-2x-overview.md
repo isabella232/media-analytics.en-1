@@ -1,5 +1,4 @@
 ---
-seo-title: Migration overview
 title: Migration overview
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 

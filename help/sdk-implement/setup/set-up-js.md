@@ -1,5 +1,4 @@
 ---
-seo-title: Set up JavaScript
 title: Set up JavaScript
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 

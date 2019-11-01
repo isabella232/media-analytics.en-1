@@ -1,5 +1,4 @@
 ---
-seo-title: Media workspace templates
 title: Media workspace templates
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 

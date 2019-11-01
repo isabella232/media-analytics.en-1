@@ -1,5 +1,4 @@
 ---
-seo-title: Media overview
 title: Media overview
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 

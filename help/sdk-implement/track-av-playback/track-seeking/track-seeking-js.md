@@ -1,5 +1,4 @@
 ---
-seo-title: Track seeking on JavaScript
 title: Track seeking on JavaScript
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 

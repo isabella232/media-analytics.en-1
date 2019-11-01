@@ -1,5 +1,4 @@
 ---
-seo-title: Request parameters
 title: Request parameters
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 

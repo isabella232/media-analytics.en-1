@@ -1,5 +1,4 @@
 ---
-seo-title: Track seeking on Android
 title: Track seeking on Android
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 

@@ -1,5 +1,4 @@
 ---
-seo-title: Debug dashboards and reports
 title: Debug dashboards and reports
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 

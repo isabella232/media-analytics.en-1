@@ -1,5 +1,4 @@
 ---
-seo-title: Track ads on Roku
 title: Track ads on Roku
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 

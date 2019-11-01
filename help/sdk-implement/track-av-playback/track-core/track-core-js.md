@@ -1,5 +1,4 @@
 ---
-seo-title: Track core playback on JavaScript
 title: Track core playback on JavaScript
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 

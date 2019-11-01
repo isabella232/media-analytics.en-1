@@ -1,5 +1,4 @@
 ---
-seo-title: Track core playback on Chromecast
 title: Track core playback on Chromecast
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 

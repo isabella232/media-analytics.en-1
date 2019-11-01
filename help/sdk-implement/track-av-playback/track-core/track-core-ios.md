@@ -1,5 +1,4 @@
 ---
-seo-title: Track core playback on iOS
 title: Track core playback on iOS
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 

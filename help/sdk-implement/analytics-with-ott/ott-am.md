@@ -1,5 +1,4 @@
 ---
-seo-title: OTT and Audience Manager
 title: OTT and Audience Manager
 uuid: d228db63-59c2-4624-99c6-6b49dc17f48e
 

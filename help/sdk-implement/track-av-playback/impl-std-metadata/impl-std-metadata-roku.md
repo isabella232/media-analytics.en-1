@@ -1,7 +1,5 @@
 ---
 description: null
-seo-description: null
-seo-title: Implement standard metadata on Roku
 title: Implement standard metadata on Roku
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 

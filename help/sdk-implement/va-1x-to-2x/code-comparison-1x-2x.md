@@ -1,5 +1,4 @@
 ---
-seo-title: Code comparison 1.x to 2.x
 title: Code comparison 1.x to 2.x
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 

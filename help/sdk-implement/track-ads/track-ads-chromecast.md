@@ -1,5 +1,4 @@
 ---
-seo-title: Track ads on Chromecast
 title: Track ads on Chromecast
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 

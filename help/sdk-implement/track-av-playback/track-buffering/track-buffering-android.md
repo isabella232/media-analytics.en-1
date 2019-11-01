@@ -1,5 +1,4 @@
 ---
-seo-title: Track buffering on Android
 title: Track buffering on Android
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 

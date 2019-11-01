@@ -1,5 +1,4 @@
 ---
-seo-title: Events request
 title: Events request
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 

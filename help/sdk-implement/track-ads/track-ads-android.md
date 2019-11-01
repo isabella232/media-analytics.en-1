@@ -1,5 +1,4 @@
 ---
-seo-title: Track ads on Android
 title: Track ads on Android
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 

@@ -1,5 +1,4 @@
 ---
-seo-title: Get concurrent viewers JSON report data
 title: Get concurrent viewers JSON report data
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 

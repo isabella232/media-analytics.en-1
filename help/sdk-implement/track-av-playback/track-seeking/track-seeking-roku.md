@@ -1,5 +1,4 @@
 ---
-seo-title: Track seeking on Roku
 title: Track seeking on Roku
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 

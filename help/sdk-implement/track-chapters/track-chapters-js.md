@@ -1,5 +1,4 @@
 ---
-seo-title: Track chapters and segments on JavaScript
 title: Track chapters and segments on JavaScript
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 

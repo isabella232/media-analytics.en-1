@@ -1,5 +1,4 @@
 ---
-seo-title: Set Up Roku
 title: Set Up Roku
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 

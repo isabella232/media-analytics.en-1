@@ -1,5 +1,4 @@
 ---
-seo-title: Track app actions
 title: Track app actions
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 

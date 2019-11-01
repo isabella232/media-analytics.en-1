@@ -1,5 +1,4 @@
 ---
-seo-title: Track quality of experience on JavaScript
 title: Track quality of experience on JavaScript
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 

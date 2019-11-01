@@ -1,5 +1,4 @@
 ---
-seo-title: Heartbeat parameter descriptions
 title: Heartbeat parameter descriptions
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 

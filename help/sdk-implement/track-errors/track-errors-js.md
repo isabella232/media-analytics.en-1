@@ -1,5 +1,4 @@
 ---
-seo-title: Track errors on JavaScript
 title: Track errors on JavaScript
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 

@@ -1,7 +1,5 @@
 ---
 description: null
-seo-description: null
-seo-title: Implement standard metadata on JavaScript
 title: Implement standard metadata on JavaScript
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 

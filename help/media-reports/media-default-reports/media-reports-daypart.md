@@ -1,5 +1,4 @@
 ---
-seo-title: Media daypart
 title: Media daypart
 uuid: aa545f72-6816-448f-af5d-3c5e18f7b3b7
 

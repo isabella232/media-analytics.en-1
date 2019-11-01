@@ -1,5 +1,4 @@
 ---
-seo-title: Chromecast metadata keys
 title: Chromecast metadata keys
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 

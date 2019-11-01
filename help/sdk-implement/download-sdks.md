@@ -1,5 +1,4 @@
 ---
-seo-title: Download SDKs
 title: Download SDKs
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 

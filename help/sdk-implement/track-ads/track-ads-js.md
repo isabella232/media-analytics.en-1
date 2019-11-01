@@ -1,5 +1,4 @@
 ---
-seo-title: Track ads on JavaScript
 title: Track ads on JavaScript
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 

@@ -1,5 +1,4 @@
 ---
-seo-title: Quality parameters
 title: Quality parameters
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 

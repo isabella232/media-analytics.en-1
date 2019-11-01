@@ -1,5 +1,4 @@
 ---
-seo-title: Implementing an events request
 title: Implementing an events request
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 
