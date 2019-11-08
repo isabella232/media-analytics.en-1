@@ -1,7 +1,5 @@
 ---
-seo-title: Migrating from the standalone Media SDK to Adobe Launch - iOS
 title: Migrating from the standalone Media SDK to Adobe Launch - iOS
-seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch for iOS.
 description: Instructions and code samples to assist in migrating from the Media SDK to Launch for iOS.
 
 ---

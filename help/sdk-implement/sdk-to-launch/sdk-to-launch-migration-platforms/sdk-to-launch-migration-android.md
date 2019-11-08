@@ -1,7 +1,5 @@
 ---
-seo-title: Migrating from the standalone Media SDK to Adobe Launch - Android
 title: Migrating from the standalone Media SDK to Adobe Launch - Android
-seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch for Android.
 description: Instructions and code samples to assist in migrating from the Media SDK to Launch for Android.
 
 ---
@@ -206,7 +204,7 @@ is a change in the quality metrics.
                       adMetadata);
    ```
 
-   ### Launch Extension
+### Launch Extension
 
 * Standard Media Metadata:
 
