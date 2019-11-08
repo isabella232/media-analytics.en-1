@@ -10,17 +10,6 @@ description: Instructions and code samples to assist in migrating from the Media
 
 ## Configuration
 
-### Launch Extension
-
-1. In Experience Platform Launch, click the [!UICONTROL Extensions] tab for your 
-    mobile property.
-1. On the [!UICONTROL Catalog] tab, locate the Adobe Media Analytics for Audio 
-    and Video extension, and click [!UICONTROL Install].
-1. In the extension settings page, configure the tracking parameters.
-    The Media extension will use the configured parameters for tracking. 
-
-[Using Mobile Extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
-
 ### Standalone Media SDK
 
 In the standalone Media SDK, you configure tracking in the app, and pass it to 
@@ -39,7 +28,57 @@ config.debugLogging = true;
 MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 ```
 
+### Launch Extension
+
+1. In Experience Platform Launch, click the [!UICONTROL Extensions] tab for your 
+    mobile property.
+1. On the [!UICONTROL Catalog] tab, locate the Adobe Media Analytics for Audio 
+    and Video extension, and click [!UICONTROL Install].
+1. In the extension settings page, configure the tracking parameters.
+    The Media extension will use the configured parameters for tracking. 
+
+  ![](assets/launch_config_mobile.png)
+  
+[Using Mobile Extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+
 ## Tracker Creation
+
+### Standalone Media SDK 
+
+In the standalone Media SDK you manually create the `MediaHeartbeatConfig` object 
+and configure the tracking parameters. Implement the delegate interface exposing 
+`getQoSObject()` and `getCurrentPlaybackTime()functions.`
+Create a `MediaHeartbeat` instance for tracking. 
+
+```java
+MediaHeartbeatConfig config = new MediaHeartbeatConfig();
+config.trackingServer = "namespace.hb.omtrdc.net";
+config.channel = "sample-channel";
+config.appVersion = "v2.0";
+config.ovp = "video-provider"; 
+config.playerName = "native-player";
+config.ssl = true;
+config.debugLogging = true;
+
+MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
+    @Override 
+    public MediaObject getQoSObject() {
+        // When called should return the latest qos values.
+        return MediaHeartbeat.createQoSObject(<bitrate>,  
+                                              <startupTime>,  
+                                              <fps>,  
+                                              <droppedFrames>); 
+    } 
+
+    @Override 
+    public Double getCurrentPlaybackTime() { 
+        // When called should return the current player time in seconds.
+        return <currentPlaybackTime>; 
+    }
+
+    MediaHeartbeat tracker = new MediaHeartbeat(delegate, config);
+}
+```
 
 ### Launch Extension
 
@@ -82,44 +121,14 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
-### Standalone Media SDK 
-
-In the standalone Media SDK you manually create the `MediaHeartbeatConfig` object 
-and configure the tracking parameters. Implement the delegate interface exposing 
-`getQoSObject()` and `getCurrentPlaybackTime()functions.`
-Create a `MediaHeartbeat` instance for tracking. 
-
-```java
-MediaHeartbeatConfig config = new MediaHeartbeatConfig();
-config.trackingServer = "namespace.hb.omtrdc.net";
-config.channel = "sample-channel";
-config.appVersion = "v2.0";
-config.ovp = "video-provider"; 
-config.playerName = "native-player";
-config.ssl = true;
-config.debugLogging = true;
-
-MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
-    @Override 
-    public MediaObject getQoSObject() {
-        // When called should return the latest qos values.
-        return MediaHeartbeat.createQoSObject(<bitrate>,  
-                                              <startupTime>,  
-                                              <fps>,  
-                                              <droppedFrames>); 
-    } 
-
-    @Override 
-    public Double getCurrentPlaybackTime() { 
-        // When called should return the current player time in seconds.
-        return <currentPlaybackTime>; 
-    }
-
-    MediaHeartbeat tracker = new MediaHeartbeat(delegate, config);
-}
-```
-
 ## Updating Playhead and Quality of Experience values. 
+
+### Standalone Media SDK
+
+In the standalone Media SDK, you pass a delegate object that implements the 
+`MediaHeartbeartDelegate` interface during tracker creation.  The implementation 
+should return the latest QoE and playhead whenever the tracker calls the
+`getQoSObject()` and `getCurrentPlaybackTime()` interface methods.
 
 ### Launch Extension
 
@@ -135,67 +144,7 @@ is a change in the quality metrics.
 
 [Media API reference - Update QoE Object](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-### Standalone Media SDK
-
-In the standalone Media SDK, you pass a delegate object that implements the 
-`MediaHeartbeartDelegate` interface during tracker creation.  The implementation 
-should return the latest QoE and playhead whenever the tracker calls the
-`getQoSObject()` and `getCurrentPlaybackTime()` interface methods.
-
 ## Passing standard media / ad metadata
-
-### Launch Extension
-
-* Standard Media Metadata:
-
-   ```java
-   HashMap<String, Object> mediaObject = 
-     Media.createMediaObject("media-name", 
-                             "media-id", 
-                             60D, 
-                             MediaConstants.StreamType.VOD, 
-                             Media.MediaType.Video);
-   
-   HashMap<String, String> mediaMetadata = 
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
-                     "Sample Episode");
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
-                     "Sample Show");
-   
-   // Custom metadata keys
-   mediaMetadata.put("isUserLoggedIn", "false");
-   mediaMetadata.put("tvStation", "Sample TV Station");
-   
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
-   ```
-
-* Standard Ad Metadata:
-
-   ```java
-   HashMap<String, Object> adObject = 
-     Media.createAdObject("ad-name", 
-                          "ad-id", 
-                          1L, 
-                          15D);
-   HashMap<String, String> adMetadata = 
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
-                  "Sample Advertiser");
-   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
-                  "Sample Campaign");
-   
-   // Custom metadata keys
-   adMetadata.put("affiliate", 
-                  "Sample affiliate");
-   _tracker.trackEvent(Media.Event.AdStart, 
-                       adObject, 
-                       adMetadata);
-   ```
 
 ### Standalone Media SDK
 
@@ -257,4 +206,55 @@ should return the latest QoE and playhead whenever the tracker calls the
                       adMetadata);
    ```
 
+   ### Launch Extension
 
+* Standard Media Metadata:
+
+   ```java
+   HashMap<String, Object> mediaObject = 
+     Media.createMediaObject("media-name", 
+                             "media-id", 
+                             60D, 
+                             MediaConstants.StreamType.VOD, 
+                             Media.MediaType.Video);
+   
+   HashMap<String, String> mediaMetadata = 
+     new HashMap<String, String>();
+   
+   // Standard metadata keys provided by adobe.
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
+                     "Sample Episode");
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
+                     "Sample Show");
+   
+   // Custom metadata keys
+   mediaMetadata.put("isUserLoggedIn", "false");
+   mediaMetadata.put("tvStation", "Sample TV Station");
+   
+   tracker.trackSessionStart(mediaInfo, mediaMetadata);
+   ```
+
+* Standard Ad Metadata:
+
+   ```java
+   HashMap<String, Object> adObject = 
+     Media.createAdObject("ad-name", 
+                          "ad-id", 
+                          1L, 
+                          15D);
+   HashMap<String, String> adMetadata = 
+     new HashMap<String, String>();
+   
+   // Standard metadata keys provided by adobe.
+   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
+                  "Sample Advertiser");
+   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
+                  "Sample Campaign");
+   
+   // Custom metadata keys
+   adMetadata.put("affiliate", 
+                  "Sample affiliate");
+   _tracker.trackEvent(Media.Event.AdStart, 
+                       adObject, 
+                       adMetadata);
+   ```
