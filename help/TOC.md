@@ -2,6 +2,8 @@
 product: Media Analytics
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
+product: adobe analytics
+sub-product: media analytics
 ---
 
 # Adobe Analytics for Audio and Video {#using}
