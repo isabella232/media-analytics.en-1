@@ -104,3 +104,4 @@ For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup
 >[!NOTE]
 >
 >TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network. 
+
