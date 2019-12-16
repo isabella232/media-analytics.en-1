@@ -429,7 +429,7 @@ The first chapter ends, right before the second ad break.
         playhead: 20,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
@@ -712,7 +712,7 @@ Track the end of the second and final chapter.
         playhead: 0,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
