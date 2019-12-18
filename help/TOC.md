@@ -188,4 +188,4 @@ sub-product: media analytics
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + Additional resources {#additional-resources}
-    + [Resources](additional-resources/doc-updates.md)
+    + [Release Notes](additional-resources/doc-updates.md)
