@@ -10,6 +10,7 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 The Media Collection API is Adobe's RESTful alternative to the client-side Media SDK. With the Media Collection API your player can track audio and video events using RESTful HTTP calls. The Media Collection API offers the same realtime tracking of the Media SDK, plus one additional feature:
 
 * **Downloaded Content Tracking** 
+//Remove this section
 
    This feature provides you with the ability to track media while a user is offline, through local storing of event data until the user's device returns online. (See [Track downloaded content](track-downloaded-content.md) for details.)
 
