@@ -1,8 +1,6 @@
 ---
-description: null
-seo-description: null
-seo-title: Implement standard metadata on iOS
 title: Implement standard metadata on iOS
+description: Describes setting standard video and ad metadata to be sent with tracking calls on iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 
 ---

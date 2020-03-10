@@ -1,6 +1,6 @@
 ---
-seo-title: Track errors on JavaScript
 title: Track errors on JavaScript
+description: This topic describes implementing error tracking using the Media SDK in browser apps (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 
 ---

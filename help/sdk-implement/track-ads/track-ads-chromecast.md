@@ -1,6 +1,6 @@
 ---
-seo-title: Track ads on Chromecast
 title: Track ads on Chromecast
+description: Implement ad tracking in Chromecast applications using the Media SDK.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 
 ---

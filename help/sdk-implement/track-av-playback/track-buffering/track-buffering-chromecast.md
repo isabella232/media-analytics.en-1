@@ -1,6 +1,6 @@
 ---
-seo-title: Track buffering on Chromecast
 title: Track buffering on Chromecast
+description: Describes tracking buffering events on Chromecast.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 
 ---

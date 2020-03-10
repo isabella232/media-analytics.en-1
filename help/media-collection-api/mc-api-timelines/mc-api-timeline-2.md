@@ -1,6 +1,6 @@
 ---
-seo-title: Timeline 2 - User abandons session
 title: Timeline 2 - User abandons session
+description: 
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 
 ---

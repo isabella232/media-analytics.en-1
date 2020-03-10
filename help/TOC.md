@@ -2,6 +2,8 @@
 product: Media Analytics
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
+product: adobe analytics
+sub-product: media analytics
 ---
 
 # Adobe Analytics for Audio and Video {#using}
@@ -186,4 +188,4 @@ user-guide-title: Adobe Analytics for Audio and Video
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + Additional resources {#additional-resources}
-    + [Resources](additional-resources/doc-updates.md)
+    + [Release Notes](additional-resources/doc-updates.md)

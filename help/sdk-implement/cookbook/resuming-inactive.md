@@ -1,6 +1,6 @@
 ---
-seo-title: Resuming inactive sessions
 title: Resuming inactive sessions
+description: How to handle resuming an inactive session.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 
 ---

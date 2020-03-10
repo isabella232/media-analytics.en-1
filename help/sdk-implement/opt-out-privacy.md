@@ -1,6 +1,6 @@
 ---
-seo-title: Opt-out and privacy
 title: Opt-out and privacy
+description: How to handle opt-in, opt-out, and privacy.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 
 ---

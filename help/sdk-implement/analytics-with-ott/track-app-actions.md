@@ -1,6 +1,6 @@
 ---
-seo-title: Track app actions
 title: Track app actions
+description: App actions are the events that occur in your app that you want to measure.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 
 ---

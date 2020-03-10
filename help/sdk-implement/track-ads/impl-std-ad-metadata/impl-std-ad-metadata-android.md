@@ -1,8 +1,6 @@
 ---
-description: null
-seo-description: null
-seo-title: Implement standard ad metadata on Android
 title: Implement standard ad metadata on Android
+description: How to use standard ad metadata in ad tracking on Android.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 
 ---

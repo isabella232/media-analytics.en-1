@@ -1,6 +1,6 @@
 ---
-seo-title: Federated Analytics
 title: Federated Analytics
+description: The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners. 
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 
 ---

@@ -1,6 +1,6 @@
 ---
-seo-title: Overview
 title: Overview
+description: How to implement chapter and segment tracking with the Media SDK.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 
 ---

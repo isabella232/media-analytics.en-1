@@ -1,6 +1,6 @@
 ---
-seo-title: Track core playback on iOS
 title: Track core playback on iOS
+description: This topic describes how to implement core tracking using the Media SDK on iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 
 ---

@@ -1,6 +1,6 @@
 ---
-seo-title: Validation overview
 title: Validation overview
+description: This topic is an overview of the validation process.
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
 
 ---

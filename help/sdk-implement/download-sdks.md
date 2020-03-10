@@ -1,6 +1,6 @@
 ---
-seo-title: Download SDKs
 title: Download SDKs
+description: Links to SDK downloads for available platforms, including Android, iOS, JavaScript, Chromecast, and Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 ---

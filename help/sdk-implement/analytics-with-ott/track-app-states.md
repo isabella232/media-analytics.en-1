@@ -1,6 +1,6 @@
 ---
-seo-title: Track app states
 title: Track app states
+description: App states are the different screens or views in your application, which when displayed should result in a trackState call. 
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 
 ---

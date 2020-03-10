@@ -1,6 +1,6 @@
 ---
-seo-title: Track chapters and segments on Android
 title: Track chapters and segments on Android
+description: This topic describes implementing chapter and segment tracking using the Media SDK on Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 
 ---

@@ -1,6 +1,6 @@
 ---
-seo-title: Ad parameters
 title: Ad parameters
+description: 
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 
 ---

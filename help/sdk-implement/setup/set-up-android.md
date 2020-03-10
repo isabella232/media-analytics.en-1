@@ -1,6 +1,6 @@
 ---
-seo-title: Set up Android
 title: Set up Android
+description: Media SDK application setup for implementation on Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 
 ---
