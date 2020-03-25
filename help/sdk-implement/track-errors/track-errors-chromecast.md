@@ -1,6 +1,6 @@
 ---
-seo-title: Track errors on Chromecast
 title: Track errors on Chromecast
+description: This topic describes implementing error tracking using the Media SDK on Chromecast.
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 
 ---

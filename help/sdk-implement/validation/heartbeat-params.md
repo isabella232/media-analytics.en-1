@@ -1,6 +1,6 @@
 ---
-seo-title: Heartbeat parameter descriptions
 title: Heartbeat parameter descriptions
+description: A list of the heartbeat parameters that Adobe collects and processes on the Media Analytics (heartbeats) server.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 
 ---

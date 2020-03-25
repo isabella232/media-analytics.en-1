@@ -1,6 +1,6 @@
 ---
-seo-title: Track quality of experience on JavaScript
 title: Track quality of experience on JavaScript
+description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps (JS).
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 
 ---

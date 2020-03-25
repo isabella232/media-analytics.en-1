@@ -1,6 +1,6 @@
 ---
-seo-title: Track core playback on Roku
 title: Track core playback on Roku
+description: This topic describes how to implement core tracking using the Media SDK on Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 
 ---

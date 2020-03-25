@@ -1,6 +1,6 @@
 ---
-seo-title: Handling application interrupts during playback
 title: Handling application interrupts during playback
+description: How to handle interruptions to tracking during playback of media.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 
 ---

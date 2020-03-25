@@ -1,6 +1,6 @@
 ---
-seo-title: VOD playback with a skipped chapter
 title: VOD playback with a skipped chapter
+description: An example of how to track VOD content in which the user skipped a chapter using the Media SDK.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 
 ---

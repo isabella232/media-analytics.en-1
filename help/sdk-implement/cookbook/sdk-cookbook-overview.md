@@ -1,8 +1,7 @@
 ---
 title: SDK Cookbook Overview
-seo-title: SDK Cookbook Overview
+description: Cookbook overview.
 description: SDK-specific cookbook topics 
-seo-description: SDK-specific cookbook topics 
 
 ---
 

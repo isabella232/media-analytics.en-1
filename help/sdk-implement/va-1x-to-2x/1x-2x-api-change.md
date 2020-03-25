@@ -1,6 +1,6 @@
 ---
-seo-title: 1.x to 2.x API conversion
 title: 1.x to 2.x API conversion
+description: This topic includes links to API references and lists required and optional tracking APIs for 1.x and 2.x version of the Media SDK.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 
 ---

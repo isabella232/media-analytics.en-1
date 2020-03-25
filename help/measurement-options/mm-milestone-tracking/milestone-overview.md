@@ -1,6 +1,6 @@
 ---
-seo-title: Milestone overview
 title: Milestone overview
+description: 
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 
 ---

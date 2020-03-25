@@ -1,6 +1,6 @@
 ---
-seo-title: Test 2  Media interruption
 title: Test 2  Media interruption
+description: This topic describes the media interruption test used in validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 
 ---

@@ -1,6 +1,6 @@
 ---
-seo-title: Event types and descriptions
 title: Event types and descriptions
+description: 
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 
 ---

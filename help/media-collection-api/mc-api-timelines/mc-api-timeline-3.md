@@ -1,6 +1,6 @@
 ---
-seo-title: Timeline 3 - Chapters
 title: Timeline 3 - Chapters
+description: 
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 
 ---
@@ -284,7 +284,7 @@ The ad break is over. Throughout the ad break, the play state has remained "play
 
 **Implementation details**
 
-After the `adBreakComplete` event, put the player is in the "playing" state using the `play` event.
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **Sample request body**
 
@@ -429,7 +429,7 @@ The first chapter ends, right before the second ad break.
         playhead: 20,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
@@ -712,7 +712,7 @@ Track the end of the second and final chapter.
         playhead: 0,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 

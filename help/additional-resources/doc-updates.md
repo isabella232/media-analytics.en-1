@@ -1,6 +1,6 @@
 ---
-seo-title: Documentation updates
 title: Documentation updates
+description: 
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -13,6 +13,7 @@ snippet: y
 
 * [Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
 
+<!--
 ## Documentation Updates{#documentation-updates}
 
 ### Last updated: October, 2019 {#October-2019-update}
@@ -55,3 +56,4 @@ outside Media Tracking."
 * Updates to general Validation and Certification topics.
 * New introductory material including a presentation of measurement options, along with updates to prerequisites, implementation paths, and Audience Manager enablement.
 * Updates to Metrics and Metadata and Reporting and Analysis sections, reflecting the addition of Audio Analytics capabilities.
+-->

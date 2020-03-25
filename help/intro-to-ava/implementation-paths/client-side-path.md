@@ -1,6 +1,6 @@
 ---
-seo-title: Client-side
 title: Client-side
+description: 
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 
 ---

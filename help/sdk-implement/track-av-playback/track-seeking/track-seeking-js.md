@@ -1,6 +1,6 @@
 ---
-seo-title: Track seeking on JavaScript
 title: Track seeking on JavaScript
+description: This topic describes implementing seek tracking using the Media SDK in browser apps (JS).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 
 ---

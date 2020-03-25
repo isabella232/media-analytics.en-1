@@ -1,6 +1,6 @@
 ---
-seo-title: Track chapters and segments on iOS
 title: Track chapters and segments on iOS
+description: This topic describes implementing chapter and segment tracking using the Media SDK on iOS.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 
 ---

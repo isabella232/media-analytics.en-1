@@ -1,6 +1,6 @@
 ---
-seo-title: Test 1  Standard playback
 title: Test 1  Standard playback
+description: This topic describes the standard playback test used in validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 
 ---

@@ -1,6 +1,6 @@
 ---
-seo-title: Track seeking on iOS
 title: Track seeking on iOS
+description: This topic describes implementing seek tracking using the Media SDK on iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 
 ---

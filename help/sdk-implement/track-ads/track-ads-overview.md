@@ -1,6 +1,6 @@
 ---
-seo-title: Overview
 title: Overview
+description: Overview of implementing ad tracking with the Media SDK.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 
 ---
