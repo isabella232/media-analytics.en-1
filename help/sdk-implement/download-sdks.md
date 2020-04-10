@@ -14,6 +14,7 @@ After you migrate to the AEP Mobile SDK, you must implement the Analytics Launch
 
 
 
+
 ## Download the 2.x Media SDKs {#download-2x-sdks}
 
 | 2.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |
