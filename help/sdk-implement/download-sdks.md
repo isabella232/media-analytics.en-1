@@ -10,8 +10,8 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 >[!IMPORTANT]
 >
 >Beginning in October 2020, Adobe will end support for the version 4 Mobile SDKs and the standalone Media Analytics SDKs for iOS and Android. You can continue to download and use the version 4 SDKs, but Customer Care support and access to forums will end. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS or Android. The AEP Mobile SDK (previously referred to as v5) will exclusively support Adobe Experience Cloud features and functionality. For additional information about this change, see [version 4 Mobile SDKs End of Support FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). We recommend that you migrate to the new AEP Mobile SDK.
-
->After you migrate to the AEP Mobile SDK, you must implement the Analytics Launch extension and the Media Analytics Launch extension to enable Adobe Analytics for Audio and Video. For more information about migrating to the new AEP Mobile SDK, see [Migrating from Stand-Alone Media SDK to Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+<br>
+After you migrate to the AEP Mobile SDK, you must implement the Analytics Launch extension and the Media Analytics Launch extension to enable Adobe Analytics for Audio and Video. For more information about migrating to the new AEP Mobile SDK, see [Migrating from Stand-Alone Media SDK to Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 
 
