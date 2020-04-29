@@ -27,7 +27,10 @@ You can also track any number of additional metrics for video. For example, if y
 
 To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Admin > Report Suite Manager].** Select the report suite, then choose **[!UICONTROL Video Management > Video Reporting]:**
 
-<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+<!--
+![](assets/0clip_image002_1537416456.png){width="248"}
+-->
+
 ![](assets/rs1.png)
 
 On the first screen, only Video Core will work with Milestone data. Select **[!UICONTROL Video Core]** and click **[!UICONTROL Save].**
@@ -36,12 +39,18 @@ On the first screen, only Video Core will work with Milestone data. Select **[!U
 
 On the next screen, select **[!UICONTROL Use Custom Variables].**
 
-<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+<!--
+![](assets/0clip_image006_-1561510960.png){width="470"}
+-->
+
 ![](assets/rs2.png)
 
 On the final screen, select the two eVars and three events to be used with your video measurement:
 
-<!--![](assets/0clip_image008_-92166399.png)-->
+<!--
+![](assets/0clip_image008_-92166399.png)
+-->
+
 ![](assets/rs3.png)
 
 ## Video variable reference {#video-variable-reference}
