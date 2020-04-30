@@ -61,10 +61,14 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Using Adobe Bloodhound to Test Chromecast Applications 
 
-During application development, Bloodhound allows you to view server calls locally, and optionally forward the data to Adobe collection servers. For more information about Bloodhound, see the following guides:
+During application development, Bloodhound allows you to view server calls locally, and optionally forward the data to Adobe collection servers. 
 
-* [Bloodhound 3.x for Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/) 
+<!--
+For more information about Bloodhound, see the following guides:
+
+* [Bloodhound 3.x for Mac](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwiimfSUypDpAhVZHzQIHS6WDQIQFjABegQIChAD&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound%2F&usg=AOvVaw3t4s0gcvuWEpLIqBkhKdGH) 
 * [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+-->
 
 >[!IMPORTANT]
 >
