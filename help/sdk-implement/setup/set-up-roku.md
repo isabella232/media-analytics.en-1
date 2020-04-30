@@ -17,7 +17,7 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 
 Adobe Mobile services provides a new UI that brings together mobile marketing capabilities for mobile applications from across the Adobe Marketing Cloud. Initially, the Mobile service provides seamless integration of app analytics and targeting capabilities for the Adobe Analytics and Adobe Target solutions.
 
-Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+Learn more at [Adobe Mobile Services documentation.](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
 
 Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications written in BrightScript, leverage and collect audience data through audience management, and measure video engagement through Video heartbeats. 
 
@@ -134,4 +134,4 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
  
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
