@@ -15,12 +15,11 @@ You can enable audio and video tracking using Adobe Launch with the Adobe Media 
 
  The Adobe Media Analytics (MA) extension adds the core JavaScript Media SDK (Media 2.x SDK) for audio and video. This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project.
 
- Adobe Launch with the Media Analytics extension requires the following:<br>
- * You must be an Adobe Experience Cloud customer.
- * You must deploy the Launch or DTM embed code on your web pages.
- * The MA extension requires two additional extensions;
-   * [Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-   * [Experience Cloud ID Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+Adobe Launch with the Media Analytics extension requires the following:
+* You must be an Adobe Experience Cloud customer.
+* You must deploy the Launch or DTM embed code on your web pages.
+* [Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+* [Experience Cloud ID Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
 ## Media SDK
 
