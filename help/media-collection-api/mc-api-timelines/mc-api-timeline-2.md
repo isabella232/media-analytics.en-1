@@ -1,6 +1,6 @@
 ---
 title: Timeline 2 - User abandons session
-description: 
+description:
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 
 ---
@@ -63,7 +63,7 @@ This call signals _the user's intention to play_ a video. It returns a Session I
 
 **Implementation Details**
 
-Start your app's ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise. 
+Start your app's ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
 
 ### Action 3 - Ad break start {#Action-3}
 
@@ -404,5 +404,3 @@ Send `sessionEnd` to the VA backend to indicate that the session should be close
     eventType:sessionEnd
 }
 ```
-
-

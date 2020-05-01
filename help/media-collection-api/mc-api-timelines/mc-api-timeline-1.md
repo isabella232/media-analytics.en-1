@@ -1,6 +1,6 @@
 ---
 title: Timeline 1 - View to end of content
-description: 
+description:
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 
 ---
@@ -189,7 +189,7 @@ Ping the backend every 1 second while inside an ad.
 
 >[!NOTE]
 >
->Subsequent ads in the timeline will skip showing the series of one-second pings 
+>Subsequent ads in the timeline will skip showing the series of one-second pings
 >in the interest of brevity...
 
 **Sample request body**
@@ -673,7 +673,7 @@ Ping the backend every 10 seconds.
 
 | Action | Action Timeline (Seconds) | Playhead position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events` | 
+| The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
 **Implementation Detail**
 
@@ -693,4 +693,3 @@ Send `sessionComplete` to the backend to indicate that the user finished watchin
 >[!NOTE]
 >
 >**No Seek Events? -** There is no explicit support in the Media Collection API for `seekStart` or `seekComplete` events. This is because certain players generate a very large number of such events when the end-user is scrubbing, and several hundred users could easily bottleneck the network bandwidth of a backend service. Adobe works around explicit support for seek events by computing heartbeat duration based on device timestamp, rather than playhead position.
-

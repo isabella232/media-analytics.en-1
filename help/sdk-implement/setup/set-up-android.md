@@ -15,10 +15,12 @@ After you migrate to the AEP Mobile SDK, you must implement the Analytics Launch
 
 ## Prerequisites
 
-* **Obtain valid configuration parameters for the Media SDK**
-   These parameters can be obtained from an Adobe representative after you set up your analytics account.
-* **Implement ADBMobile for Android in your application**
-   For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+
+* **Obtain valid configuration parameters for the Media SDK** 
+   These parameters can be obtained from an Adobe representative after you set up your analytics account. 
+* **Implement ADBMobile for Android in your application** 
+   For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html) 
+
 * **Provide the following capabilities in your media player:**
    * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player.
    * *An API that provides player information* - This information includes details such as the media name and the play head position.
