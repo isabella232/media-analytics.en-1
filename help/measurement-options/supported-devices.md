@@ -43,4 +43,4 @@ The table below lists currently supported devices. To download the most recent v
 |                           | New Connected Devices                         |                              |                     |           X          |
 
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+For Media SDK, also see [Minimum Platform Version Support](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
