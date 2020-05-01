@@ -5,7 +5,7 @@ uuid:
 
 ---
 
-# Measurement options
+# Measurement options{#measurement-options}
 
 You can enable audio and video tracking using Adobe Launch with the Adobe Media Analytics extension, the Media SDK, or the Media Collection API.
 
