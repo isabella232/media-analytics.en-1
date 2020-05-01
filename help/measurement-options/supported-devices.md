@@ -39,4 +39,5 @@ The table below lists currently supported devices. To download the most recent v
 | Other                     |                                               |                              |                     |                      |
 |                           | New Connected Devices                         |                              |                     |           X          |
 
+
 For additional information about the minimum platform versions supported for each SDK, see [Minimum Platform Version Support](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
