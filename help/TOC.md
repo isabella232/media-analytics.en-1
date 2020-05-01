@@ -8,24 +8,35 @@ sub-product: media analytics
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [Measuring Audio and Video in Adobe Analytics](media-overview.md) 
-+ Measurement Options {#measurement-options}
++ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
++ [Measurement Options](measurement-options/measurement-options.md)
     + Media Module Milestone Tracking {#mm-milestone-tracking}
         + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
         + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
         + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
     + Custom Link in Analytics {#cl-in-aa}
-        + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
+        + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md) -->
++ [Supported devices](measurement-options/supported-devices.md)
 + Introduction to Audio and Video Analytics {#intro-to-ava}  
-    + [Prerequisites](intro-to-ava/prereqs.md) 
-    + Implementation Paths {#implementation-paths} 
+    + [Prerequisites](intro-to-ava/prereqs.md)
+    + Implementation Paths {#implementation-paths}
         + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
+        + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)        
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
-        + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
-        + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+        + [Other implementation paths](PATH)
+        + Media Module Milestone Tracking {#mm-milestone-tracking}
+            + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Tracking media](measurement-options/tracking-media-overview.md)
+            + [Supported devices](measurement-options/supported-devices.md)
+            + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+            + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+        + Custom Link in Analytics {#cl-in-aa}
+            + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
+        + Primetime {#primetime}
+            + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
     + [Audience Manager Enablement](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
-    + [Download SDKs](sdk-implement/download-sdks.md) 
+    + [Download SDKs](sdk-implement/download-sdks.md)
     + Set up and Configure {#setup}
         + [Overview](sdk-implement/setup/setup-overview.md)
         + [Set up Android](sdk-implement/setup/set-up-android.md)
@@ -59,9 +70,9 @@ sub-product: media analytics
             + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
             + [Implement standard metadata on JavaScript](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
             + [Implement standard metadata on Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-            + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md) 
+            + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
             + [Implement standard metadata on Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-            + [Standard Metadata Parameters - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md) 
+            + [Standard Metadata Parameters - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
     + Track Ads {#track-ads}
         + [Overview](sdk-implement/track-ads/track-ads-overview.md)
         + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
@@ -96,29 +107,29 @@ sub-product: media analytics
         + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
         + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
     + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
-    + Tracking Scenarios {#tracking-scenarios} 
-        + [VOD playback with no ads](sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 
-        + [VOD playback with pre-roll ads](sdk-implement/tracking-scenarios/vod-preroll-ads.md) 
-        + [VOD playback with skipped ads](sdk-implement/tracking-scenarios/vod-skipped-ads.md) 
-        + [VOD playback with one chapter](sdk-implement/tracking-scenarios/vod-one-chapter.md) 
-        + [VOD playback with a skipped chapter](sdk-implement/tracking-scenarios/vod-skipped-chapter.md) 
-        + [VOD playback with seeking in the main content](sdk-implement/tracking-scenarios/vod-seeking.md) 
-        + [VOD playback with buffering](sdk-implement/tracking-scenarios/vod-buffering.md) 
-        + [VOD multiple trackers in parallel](sdk-implement/tracking-scenarios/vod-multi-trackers.md) 
-        + [VOD one tracker for multiple sessions](sdk-implement/tracking-scenarios/vod-multi-track-one-session.md) 
-        + [Live main content](sdk-implement/tracking-scenarios/live-main-content.md) 
-        + [Live main content with sequential tracking](sdk-implement/tracking-scenarios/live-sequential.md) 
+    + Tracking Scenarios {#tracking-scenarios}
+        + [VOD playback with no ads](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+        + [VOD playback with pre-roll ads](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
+        + [VOD playback with skipped ads](sdk-implement/tracking-scenarios/vod-skipped-ads.md)
+        + [VOD playback with one chapter](sdk-implement/tracking-scenarios/vod-one-chapter.md)
+        + [VOD playback with a skipped chapter](sdk-implement/tracking-scenarios/vod-skipped-chapter.md)
+        + [VOD playback with seeking in the main content](sdk-implement/tracking-scenarios/vod-seeking.md)
+        + [VOD playback with buffering](sdk-implement/tracking-scenarios/vod-buffering.md)
+        + [VOD multiple trackers in parallel](sdk-implement/tracking-scenarios/vod-multi-trackers.md)
+        + [VOD one tracker for multiple sessions](sdk-implement/tracking-scenarios/vod-multi-track-one-session.md)
+        + [Live main content](sdk-implement/tracking-scenarios/live-main-content.md)
+        + [Live main content with sequential tracking](sdk-implement/tracking-scenarios/live-sequential.md)
     + Validation {#validation}
         + [Validation Overview](sdk-implement/validation/validation-overview.md)
-        + [Test 1: Standard Playback](sdk-implement/validation/test1-standard-playback.md) 
-        + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md) 
+        + [Test 1: Standard Playback](sdk-implement/validation/test1-standard-playback.md)
+        + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md)
         + [Test Call Details](sdk-implement/validation/test-call-details.md)
         + [Heartbeat Parameter Descriptions](sdk-implement/validation/heartbeat-params.md)
-        + Debugging {#debugging} 
+        + Debugging {#debugging}
             + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
-            + [Configure Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md) 
-            + [Create a New Debug Report](sdk-implement/validation/debugging/create-new-debug-report.md) 
-            + [Debug Dashboards and Reports](sdk-implement/validation/debugging/debug-dash-repts.md) 
+            + [Configure Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
+            + [Create a New Debug Report](sdk-implement/validation/debugging/create-new-debug-report.md)
+            + [Debug Dashboards and Reports](sdk-implement/validation/debugging/debug-dash-repts.md)
     + Analytics in OTT Apps {#analytics-with-ott}
         + [Track App States](sdk-implement/analytics-with-ott/track-app-states.md)
         + [Track App Actions](sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -169,15 +180,15 @@ sub-product: media analytics
 + Cookbook {#media-analytics-cookbook}
     + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](media-analytics-cookbook/media-dimensions.md)
-+ Metrics and Metadata {#metrics-and-metadata} 
-    + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md) 
-    + [Ad parameters](metrics-and-metadata/ad-parameters.md) 
-    + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md) 
-    + [Quality Parameters](metrics-and-metadata/quality-parameters.md) 
++ Metrics and Metadata {#metrics-and-metadata}
+    + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
+    + [Ad parameters](metrics-and-metadata/ad-parameters.md)
+    + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md)
+    + [Quality Parameters](metrics-and-metadata/quality-parameters.md)
     + [Segments](metrics-and-metadata/segments.md)
     + [Calculated Metrics](metrics-and-metadata/calculated-metrics.md)
 + Reporting and Analysis {#media-reports}  
-    + [Media Reports Enablement](media-reports/media-reports-enable.md) 
+    + [Media Reports Enablement](media-reports/media-reports-enable.md)
     + Media Default Reports {#media-default-reports}  
         + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
         + [Media Overview](media-reports/media-default-reports/media-reports-overview.md)  
