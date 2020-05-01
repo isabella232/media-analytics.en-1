@@ -17,7 +17,7 @@ sub-product: media analytics
         + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
         + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)        
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
-        + Other implementation paths [#other-paths]
+        + Other implementation paths {#other-paths}
         + Media Module Milestone Tracking {#mm-milestone-tracking}
             + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
