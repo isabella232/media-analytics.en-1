@@ -10,13 +10,14 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 ![Banner](./assets/media_analytics_banner.png)
 
 ## About Adobe Analytics for Audio and Video
+
 Adobe Analytics for Audio and Video is an add-on to Adobe Analytics that provides powerful measurement tools for audio, video, and advertisements. Adobe Analytics is part of the Adobe Experience Platform.
 
 Adobe Analytics for Audio and Video enables you to track the full customer journey across your site. The metrics easily integrate into Adobe Analytics Reports and other Adobe Experience Cloud products. Media measurement allows you to categorize your data into multiple dimensions and segments, capturing all of the metadata you need to do a complete and detailed analysis. You can then analyze data and attribute success criteria to fully consumed media, average time spent, and completed ads.
 
 You can measure vital delivery metrics related to QoS, such as dropped frames, time spent buffering, and average bitrate. And the metrics can be combined with your website or app data to visualize the customer path and interests—to provide enhanced recommendations and personalize customer experiences using Adobe Experience Cloud.
 
-# Features {#features}
+## Features {#features}
 
 Adobe Analytics for Audio and Video benefits include real-time monitoring, detailed analysis, actionable insights and monetization opportunities.
 * **Real-time analysis**—Make real-time, actionable decisions utilizing key performance metrics such as duration, ex2, and ex3, across multiple channels. Main content events are measured in 10-second intervals to capture all activity as it occurs. Ad tracking events occur at 1-second intervals.
@@ -27,6 +28,7 @@ Adobe Analytics for Audio and Video benefits include real-time monitoring, detai
 * **Segmentation**—Apply classifications to your players, devices, genres, chapters, and shows to see how each has an impact on your overall views/listens and customer engagement with content, audio, ads, and combined.
 
 ## Heartbeat measurement {#heartbeat}
+
 Adobe Analytics uses “heartbeats” to collect video metrics. During video playback, heartbeats are sent to the heartbeat tracking server to measure time played. The heartbeat calls are sent every ten seconds. Heartbeats result in granular video engagement metrics and more accurate video fallout reports. Adobe Analytics for Audio and Video measures heartbeats using Adobe Launch with the Media Analytics extention, the Media SDK and the Media Collection API. The `AppMeasurement` and `VisitorID` components are used to receive video data.
 
 Using heartbeats Adobe Analytics for Audio and Video provide the following benefits:
@@ -44,6 +46,7 @@ Using heartbeats Adobe Analytics for Audio and Video provide the following benef
 
 
 ## Security {#security}
+
 At Adobe, we take the security of your digital assets seriously. From our rigorous integration of security into our internal software development process and tools to our cross-functional incident response teams, we strive to be proactive and nimble. What’s more, our collaborative work with partners, researchers, and other industry organizations helps us understand the latest threats and security best practices, as well as continually build security into the products and services we offer.
 
 
