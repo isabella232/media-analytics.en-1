@@ -18,15 +18,15 @@ sub-product: media analytics
         + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)        
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
         + Other implementation paths {#other-paths}
-        + Media Module Milestone Tracking {#mm-milestone-tracking}
-            + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
-            + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-            + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
-        + Custom Link in Analytics {#cl-in-aa}
-            + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
-        + Primetime {#primetime}
-            + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
-    + [Audience Manager Enablement](intro-to-ava/am-enablement.md)
+            + Media Module Milestone Tracking {#mm-milestone-tracking}
+                + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
+                + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+                + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+            + Custom Link in Analytics {#cl-in-aa}
+                + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + Primetime {#primetime}
+                + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+            + [Audience Manager Enablement](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
     + [Download SDKs](sdk-implement/download-sdks.md)
     + Set up and Configure {#setup}
