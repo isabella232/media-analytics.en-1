@@ -1,8 +1,6 @@
 ---
 title: Supported devices
-description:
-uuid:
-
+description: Adobe Analytics for Audio and Video ensures that each media stream is collected and reported across all devices.
 ---
 
 # Supported devices {#devices-supported}
@@ -20,7 +18,6 @@ The Media SDK is routinely updated when new versions of devices are released and
 For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful API calls directly from a device or platform to the Media Analytics backend.
 
 The table below lists currently supported devices. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
-
 
 | Streaming Platform/Device |                                               | Media Launch Extension w/ AEP SDK |      Media SDK      | Media Collection API |
 |---------------------------|-----------------------------------------------|:----------------------------:|:-------------------:|:--------------------:|
@@ -41,6 +38,5 @@ The table below lists currently supported devices. To download the most recent v
 |                           | Smart TVs (e.g. Samsung, LG, Sony, Vizio)     |                              |   X<br>(web-based)  |           X          |
 | Other                     |                                               |                              |                     |                      |
 |                           | New Connected Devices                         |                              |                     |           X          |
-
 
 For additional information about the minimum platform versions supported for each SDK, see [Minimum Platform Version Support](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
