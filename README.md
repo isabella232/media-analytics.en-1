@@ -2,7 +2,7 @@
 
 | Production | Stage |
 |---|---|
-| [![Build Status](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Build Status](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/collaborative-doc-instructions.en_stage/lastBuild) |
+| [![Build Status](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Build Status](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
 |[Output Prod](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)|[Output Stg](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html)|
 
 We welcome contributions from our community as well as from Adobe employees from outside the documentation teams. 
