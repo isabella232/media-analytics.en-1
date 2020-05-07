@@ -26,7 +26,6 @@ sub-product: media analytics
         + [Other implementation paths](PATH)
         + Media Module Milestone Tracking {#mm-milestone-tracking}
             + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
-            + [Tracking media](measurement-options/tracking-media-overview.md)
             + [Supported devices](measurement-options/supported-devices.md)
             + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
