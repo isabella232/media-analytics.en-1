@@ -21,9 +21,8 @@ sub-product: media analytics
     + [Prerequisites](intro-to-ava/prereqs.md)
     + Implementation Paths {#implementation-paths}
         + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
-        + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)        
+        + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
-        + [Other implementation paths](PATH)
         + Media Module Milestone Tracking {#mm-milestone-tracking}
             + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Supported devices](measurement-options/supported-devices.md)
