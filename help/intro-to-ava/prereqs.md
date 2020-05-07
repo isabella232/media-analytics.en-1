@@ -35,7 +35,7 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
     >
     >To participate in the Adobe Experience Cloud Device Co-op, the Experience Cloud ID service is required.
 
-    If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+    If you have not implemented the ID service, now is the time to start considering a migration strategy. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
     >[!IMPORTANT]
     >
