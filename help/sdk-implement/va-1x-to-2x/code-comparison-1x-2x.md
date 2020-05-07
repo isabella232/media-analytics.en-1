@@ -23,8 +23,8 @@ All of the configuration parameters and tracking APIs are now consolidated into 
 
 **Links to 1.x and 2.x sample players:**
 
-* [1.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58) 
-* [2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47) 
+* [1.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 The following sections provide code comparisons between 1.x and 2.x, covering Initialization, Core Playback, Ad Playback, Chapter Playback, and some additional events. 
 
