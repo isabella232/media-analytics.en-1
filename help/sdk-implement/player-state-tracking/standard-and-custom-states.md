@@ -10,11 +10,11 @@ Five standard player states are available and you can add your own custom states
 
 |  Standard State Name  |  Media SDK constant                      |  Media Collection API name  |
 |-----------------------|------------------------------------------|-----------------------------|
-|  Full Screen          |  ADB.Media.PlayerState.Fullscreen        |  fullScreen                 |
-|  Closed Captioning    |  ADB.Media.PlayerState.ClosedCaptioning  |  closedCaptioning           |
-|  Mute                 |  ADB.Media.PlayerState.Mute              |  mute                       |
-|  Picture in Picture   |  ADB.Media.PlayerState.PictureInPicture  |  pictureInPicture           |
-|  In Focus             |  ADB.Media.PlayerState.InFocus           |  inFocus                    |
+|  Full Screen          |  `ADB.Media.PlayerState.Fullscreen`        |  `fullScreen`                 |
+|  Closed Captioning    |  `ADB.Media.PlayerState.ClosedCaptioning`  |  `closedCaptioning`           |
+|  Mute                 |  `ADB.Media.PlayerState.Mute`              |  `mute`                       |
+|  Picture in Picture   |  `ADB.Media.PlayerState.PictureInPicture`  |  `pictureInPicture`           |
+|  In Focus             |  `ADB.Media.PlayerState.InFocus`           |  `inFocus`                    |
 
 The data is computed in the same way for standard and custom states but the data is stored differently for Analytics reporting.
 

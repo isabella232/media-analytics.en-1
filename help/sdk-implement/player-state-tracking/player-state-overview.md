@@ -1,6 +1,6 @@
 ---
 title: About Player State Tracking
-description: This topic describes the player state tracking feature including requirements and guidelines for implementing and reporting standard and custom player states.
+description: This topic describes the player state tracking feature including requirements and guidelines for implementing and reporting player states.
 
 ---
 
@@ -27,8 +27,9 @@ Player State Tracking requires the following for Media Analytics Extension for u
 * Web: Adobe Media Analytics (3.x SDK) for Audio and Video v1.0+
 * Mobile: Adobe Media Analytics for Audio and Video v2.0+
 
+If you decide not to use the AEP SDK, you can use the following with Player State Tracking:
 * Media JS SDK 3.0+
-* Media Collection API v___
+* Media Collection API version?
 
 ## Guidelines
 
@@ -39,8 +40,3 @@ Before implementing Player state tracking consider the following guidelines.
 * The maximum number of player states that can be tracked during a playback is 10 
 * Player state metrics are sent to Analytics for reporting on the Media Close call ONLY
 * Player states are captured for each individual playback session—the player state is not computed across playbacks 
-
-
-### Long Pause scenario
-
-When a video session has a pause duration that is longer than 30 minutes, the API requires a new session. When this occurs,  the client should generate a new session ID. To both the video session to be stitched, the client should retain all the states that a player is in and send all the information as a "stateStart" event right after the "sessionStart" call. For example, consider the following video session:
