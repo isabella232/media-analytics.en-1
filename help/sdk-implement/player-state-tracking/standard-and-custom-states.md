@@ -34,4 +34,4 @@ The data is computed in the same way for standard and custom states but the data
 
 With the ability to create custom states, you can capture custom actions  and update custom metadata during a playback session.
 
-- need more information about custom states
+NEED more information about custom states
