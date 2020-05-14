@@ -29,13 +29,15 @@ The Media Collection API includes two new events that have "media.stateName" as 
 
 The metrics provided for each individual state are computed and pushed to Adobe Analytics as Context Data parameters and stored for reporting purposes. Three metrics are available for each state:
 
-	•	`a.media.states.<media.state.name>.set = true` — Set to true if the state was set at least once per each specific playback of a stream.
-	•	`a.media.states.<media.state.name>.count = 4` — Identifies the number of occurrences of a state during per each individual playback of a stream
-	•	`a.media.states.<media.state.name>.time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
+* `a.media.states.<media.state.name>.set = true` — Set to true if the state was set at least once per each specific playback of a stream.
+* `a.media.states.<media.state.name>.count = 4` — Identifies the number of occurrences of a state during per each individual playback of a stream
+* `a.media.states.<media.state.name>.time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
 
 ## Reporting
+
 All state metrics can be used for any reporting visualization or component (segment, calculated metrics).
 TBD - check source/wiki for updated information - for screen shot from AW
 
 ## Importing player stated metrics to Adobe Experience Platform
+
 Data stored in Analytics could be used for any purpose and the player state metrics can be imported into Adobe Experience Platform using XDM and used within (other AEP ____) for example, with Customer Journey Analytics. The standard state properties have specific properties while the custom states are properties are available via the custom events. For information about ____ , check the properties list for XDM identities at [LINK TO METRIC LIST].

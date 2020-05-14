@@ -42,4 +42,5 @@ Before implementing Player state tracking consider the following guidelines.
 
 
 ### Long Pause scenario
+
 When a video session has a pause duration that is longer than 30 minutes, the API requires a new session. When this occurs,  the client should generate a new session ID. To both the video session to be stitched, the client should retain all the states that a player is in and send all the information as a "stateStart" event right after the "sessionStart" call. For example, consider the following video session:
