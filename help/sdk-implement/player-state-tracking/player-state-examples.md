@@ -16,7 +16,7 @@ When a video session has a pause duration that is longer than 30 minutes, the AP
 `sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
 `
 
-After the sessionEnd is sent, a new video session must be started and the first API events would be:
+After the `sessionEnd` is sent, a new video session must be started and the first API events would be:
 
 `sessionStart → stateStart (fullscreen) → stateStart (mute) → ... other API events`
 
