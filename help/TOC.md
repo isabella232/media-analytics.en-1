@@ -15,7 +15,6 @@ sub-product: media analytics
     + [Prerequisites](intro-to-ava/prereqs.md)
     + Implementation Paths {#implementation-paths}
         + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
-        + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)        
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
         + Other implementation paths {#other-paths}
             + Media Module Milestone Tracking {#mm-milestone-tracking}
@@ -44,6 +43,13 @@ sub-product: media analytics
             + [Track Core Playback on JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
             + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
             + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
+<!-- Add new Player State tracking topics here -->
+        + Player state tracking {#player-state}
+            + [Player state tracking](sdk-implement/player-state-tracking/player-state-overview.md)
+            + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+            + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+            + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
+<!-- end player state tracking topics -->
         + Track Buffering {#track-buffering}
             + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
             + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)

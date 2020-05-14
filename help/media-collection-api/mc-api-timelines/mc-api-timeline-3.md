@@ -1,6 +1,6 @@
 ---
 title: Timeline 3 - Chapters
-description: 
+description:
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 
 ---
@@ -720,7 +720,7 @@ Track the end of the second and final chapter.
 
 | Action | Action Timeline (Seconds) | Playhead Position (Seconds) | Client Request |
 | --- | :---: | :---: | --- |
-| The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events`  | 
+| The user finishes watching the content to the end.  | 88 | 45 | `/api/v1/sessions/{sid}/events`  |
 
 **Implementation details**
 
@@ -742,4 +742,3 @@ Send `sessionComplete` to the backend to indicate that the user finished watchin
 >[!NOTE]
 >
 >**No Seek Events? -** There is no explicit support in the Media Collection API for `seekStart` or `seekComplete` events. This is because certain players generate a very large number of such events when the end-user is scrubbing, and several hundred users could easily bottleneck the network bandwidth of a backend service. Adobe works around explicit support for seek events by computing heartbeat duration based on device timestamp, rather than playhead position.
-
