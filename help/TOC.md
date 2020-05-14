@@ -44,7 +44,7 @@ sub-product: media analytics
             + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
             + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
 <!-- Add new Player State tracking topics here -->
-        + Player state tracking {#player-state-tracking}
+        + Player State Tracking {#player-state-tracking}
             + [Player state tracking](sdk-implement/player-state-tracking/player-state-overview.md)
             + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
             + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
