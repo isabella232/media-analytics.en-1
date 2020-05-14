@@ -35,6 +35,11 @@ sub-product: media analytics
         + [Set up JavaScript](sdk-implement/setup/set-up-js.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
+    + Player State Tracking {#player-state-tracking}
+        + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+        + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+        + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+        + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
     + Track audio and video playback {#track-av-playback}
         + [Overview](sdk-implement/track-av-playback/track-core-overview.md)
         + Track Core Audio and Video Playback {#track-core}
@@ -43,13 +48,6 @@ sub-product: media analytics
             + [Track Core Playback on JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
             + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
             + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
-<!-- Add new Player State tracking topics here -->
-        + Player State Tracking {#player-state-tracking}
-            + [Player state tracking](sdk-implement/player-state-tracking/player-state-overview.md)
-            + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-            + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-            + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
-<!-- end player state tracking topics -->
         + Track Buffering {#track-buffering}
             + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
             + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
