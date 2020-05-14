@@ -74,6 +74,7 @@ mediaDelegate.getQoSObject = function() {
 // Create your tracker
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
+
 <!--  Dead Link - from 2019 - can't locate where this should go
 [Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
