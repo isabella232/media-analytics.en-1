@@ -180,6 +180,7 @@ sub-product: media analytics
     + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
     + [Ad parameters](metrics-and-metadata/ad-parameters.md)
     + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md)
+    + [Player State Parameters](metrics-and-metadata/player-state-parameters.md)
     + [Quality Parameters](metrics-and-metadata/quality-parameters.md)
     + [Segments](metrics-and-metadata/segments.md)
     + [Calculated Metrics](metrics-and-metadata/calculated-metrics.md)
