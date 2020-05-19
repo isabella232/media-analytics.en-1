@@ -6,7 +6,7 @@ description: This topic includes FAQs about the end of support for Media Analyti
 
 # Media Analytics SDK End of Support FAQs
 
-With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After the end of support date, no new fixes, OS-related updates, or support for the Media Analytics SDK will be provided.  As you are in the process of migrating to these new Experience Platform SDKs, please keep in mind that the Media Analytics extensions must also be implemented to enable Adobe Analytics for Audio and Video.
+With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After September 1, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the Media Analytics extensions must be implemented to enable Adobe Analytics for Audio and Video.
 
 ## Top 5 Things to Know
 
