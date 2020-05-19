@@ -9,15 +9,15 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 >[!IMPORTANT]
 >
->With the end of support for Version 4 Mobile SDKs starting in September 1, 2021, Adobe will also  end support for the Media Analytics SDK for iOS.  For additional information, see [Media Analytics SDK End-of-Support FAQs](sdk-implement/end-of-support-faqs.md).
+>With the end of support for Version 4 Mobile SDKs starting in September 1, 2021, Adobe will also  end support for the Media Analytics SDK for iOS.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## Prerequisites
 
-* **Obtain valid configuration parameters for the Media SDK** 
-   These parameters can be obtained from an Adobe representative after you set up your analytics account. 
-* **Implement ADBMobile for iOS in your application** 
-   For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html) 
+* **Obtain valid configuration parameters for the Media SDK**
+   These parameters can be obtained from an Adobe representative after you set up your analytics account.
+* **Implement ADBMobile for iOS in your application**
+   For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
 
    >[!IMPORTANT]
    >
