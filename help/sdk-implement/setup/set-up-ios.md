@@ -14,12 +14,14 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 ## Prerequisites
 
-* **Obtain valid configuration parameters for the Media SDK**
-   These parameters can be obtained from an Adobe representative after you set up your analytics account.
-* **Implement ADBMobile for iOS in your application**
-   For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Obtain valid configuration parameters for the Media SDK** 
+   These parameters can be obtained from an Adobe representative after you set up your analytics account. 
+* **Implement ADBMobile for iOS in your application** 
+   For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html) 
 
-   Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). This feature aims to improve network security by ensuring that your apps use only industry-standard protocols and ciphers. This feature is enabled by default, but you have configuration options that provide you with choices for working with ATS. For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >[!IMPORTANT]
+   >
+   >Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). This feature aims to improve network security by ensuring that your apps use only industry-standard protocols and ciphers. This feature is enabled by default, but you have configuration options that provide you with choices for working with ATS. For details on ATS, see [App Transport Security.](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)
 
 * **Provide the following capabilities in your media player:**
 
