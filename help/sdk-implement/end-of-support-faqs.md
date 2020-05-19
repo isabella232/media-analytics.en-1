@@ -54,4 +54,4 @@ Please reach out to your Adobe Customer Success Manager if you have any further 
 
 1. Do I need to have Launch as a tag management system? What if I don't want to use Launch?
 
-  For mobile, Launch is required to configure the Media Extensions such as the Mobile Services UI. In the mobile app use case, it is not used as a tag management system.
+   For mobile, Launch is required to configure the Media Extensions such as the Mobile Services UI. In the mobile app use case, it is not used as a tag management system.
