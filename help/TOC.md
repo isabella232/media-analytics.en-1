@@ -27,6 +27,7 @@ sub-product: media analytics
                 + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
             + [Audience Manager Enablement](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
+    + [Media Analytics SDK End-of-Support FAQs](sdk-implement/end-of-support-faqs.md)
     + [Download SDKs](sdk-implement/download-sdks.md)
     + Set up and Configure {#setup}
         + [Overview](sdk-implement/setup/setup-overview.md)
