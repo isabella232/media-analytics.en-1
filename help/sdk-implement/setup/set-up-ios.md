@@ -9,16 +9,15 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 >[!IMPORTANT]
 >
->Beginning in October 2020, Adobe will end support for the version 4 Mobile SDKs and the standalone Media Analytics SDKs for iOS. You can continue to download and use the version 4 SDKs, but Customer Care support and access to forums will end. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS. The AEP Mobile SDK (previously referred to as v5) will exclusively support Adobe Experience Cloud features and functionality. For additional information about this change, see [version 4 Mobile SDKs End of Support FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). We recommend that you migrate to the new AEP Mobile SDK.
-After you migrate to the AEP Mobile SDK, you must implement the Analytics Launch extension and the Media Analytics Launch extension to enable Adobe Analytics for Audio and Video. For more information about migrating to the new AEP Mobile SDK, see [Migrating from Stand-Alone Media SDK to Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also  end support for the Media Analytics SDK for iOS.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## Prerequisites
 
-* **Obtain valid configuration parameters for the Media SDK** 
-   These parameters can be obtained from an Adobe representative after you set up your analytics account. 
-* **Implement ADBMobile for iOS in your application** 
-   For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html) 
+* **Obtain valid configuration parameters for the Media SDK**
+   These parameters can be obtained from an Adobe representative after you set up your analytics account.
+* **Implement ADBMobile for iOS in your application**
+   For more information about the Adobe Mobile SDK documentation, see [iOS SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
 
    >[!IMPORTANT]
    >
