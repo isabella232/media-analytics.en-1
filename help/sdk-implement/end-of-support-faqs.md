@@ -10,15 +10,15 @@ With the end of support for Version 4 Mobile SDKs starting in September 1, 2021,
 
 ## Top 5 Things to Know
 
-1.	While the planned end-of-support date is currently September 1, 2021, we will update this page with important end-of-support information.
+1. While the planned end-of-support date is currently September 1, 2021, we will update this page with important end-of-support information.
 
-1.	Mobile v4 SDKs will no longer be supported and customers should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android.
+1. Mobile v4 SDKs will no longer be supported and customers should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android.
 
-1.	Analytics for Audio and Video implementation requires the AEP SDK and use of the Analytics and Media Analytics extensions. Media Analytics extensions can only be configured using Adobe Launch.  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. Analytics for Audio and Video implementation requires the AEP SDK and use of the Analytics and Media Analytics extensions. Media Analytics extensions can only be configured using Adobe Launch.  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
-1.	Feature development has ended for iOS and Android stand-alone SDKs.  As of Fall 2019, new features are enabled only for the Media Analytics extensions and the Media Collection API.
+1. Feature development has ended for iOS and Android stand-alone SDKs.  As of Fall 2019, new features are enabled only for the Media Analytics extensions and the Media Collection API.
 
-1.	Analytics for Audio and Video customers can continue to use the Roku and Chromecast SDKs, which will continue to be enhanced and supported as stand-alone SDKs.  Customers who use the JS SDK for Media Analytics can continue to use the stand-alone SDK or enable it using Adobe Launch.
+1. Analytics for Audio and Video customers can continue to use the Roku and Chromecast SDKs, which will continue to be enhanced and supported as stand-alone SDKs.  Customers who use the JS SDK for Media Analytics can continue to use the stand-alone SDK or enable it using Adobe Launch.
 
 Prior to the end-of-support date, Adobe may, at its sole discretion, develop new fixes for problems of high technical impact or business exposure for customers. Based on the customer input, Adobe will determine the degree of impact and exposure and the consequent activities.
 
