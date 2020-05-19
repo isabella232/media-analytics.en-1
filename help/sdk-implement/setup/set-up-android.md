@@ -9,7 +9,7 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 
 >[!IMPORTANT]
 >
->With the end of support for Version 4 Mobile SDKs starting in September 1, 2021, Adobe will also  end support for the Media Analytics SDK for Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
+>With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also  end support for the Media Analytics SDK for Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## Prerequisites
