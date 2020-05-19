@@ -12,7 +12,7 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 * **Obtain valid configuration parameters** 
    These parameters can be obtained from an Adobe representative after you set up your analytics account. 
 * **Implement `AppMeasurement` for JavaScript in your media application** 
-   For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html) 
+   For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript.](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html) 
 
 * **Provide the following capabilities in your media player:**
 
