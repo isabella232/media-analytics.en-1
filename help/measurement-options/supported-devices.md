@@ -1,13 +1,15 @@
 ---
-title: Supported devices
+title: Supported devices and platforms
 description:
 uuid:
 
 ---
 
-# Supported devices {#devices-supported}
+# Supported devices and platforms {#devices-supported}
 
-Adobe Analytics for Audio and Video ensures that each media stream is collected and reported across all devices.
+>[!IMPORTANT]
+>
+>With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also  end support for the Media Analytics SDKs for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
 Adobe Analytics for Audio and Video supports all major devices including:
 
@@ -15,11 +17,11 @@ Adobe Analytics for Audio and Video supports all major devices including:
 * OTT devices for ROKU, AppleTV, FireTV, and Android TV
 * JavaScript Browser for Desktop and Laptop
 
-The Media SDK is routinely updated when new versions of devices are released and you can use the SDK to integrate with the largest media players today including Brightcove and Ooyala.
+The Media SDKs are routinely updated when new versions of devices are released and you can use the SDK to integrate with the largest media players today including Brightcove and Ooyala.
 
 For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful API calls directly from a device or platform to the Media Analytics backend.
 
-The table below lists currently supported devices. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
+The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
 
 | Streaming Platform/Device |                                               | Media Launch Extension w/ AEP SDK |      Media SDK      | Media Collection API |
