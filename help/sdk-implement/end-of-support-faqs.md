@@ -6,11 +6,11 @@ description: This topic includes FAQs about the end of support for Media Analyti
 
 # Media Analytics SDK End of Support FAQs
 
-With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After September 1, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the Media Analytics extensions must be implemented to enable Adobe Analytics for Audio and Video.
+With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After September 1, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) must be implemented to enable Adobe Analytics for Audio and Video.
 
 ## Top 5 Things to Know
 
-1. Mobile v4 SDKs will no longer be supported. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android.
+1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android.
 
 1. Analytics for Audio and Video implementation requires the AEP SDK and use of the Analytics and Media Analytics extensions. Starting September 1, 2021, you should use the new AEP SDKs and extensions.  Media Analytics extensions are configured using Adobe Launch.  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
@@ -22,7 +22,7 @@ With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Ad
 
 After the end of support date, customers should use the new AEP SDKs with the Media Analytics extensions to use the latest features.
 
-Please reach out to your Adobe Customer Success Manager if you have any further questions.
+Please reach out to your Adobe Customer Success Manager if you have any questions.
 
 ## FAQs
 
@@ -44,6 +44,10 @@ Please reach out to your Adobe Customer Success Manager if you have any further 
 
    [Media Analytics Extensions: new implementations](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
+1. Do I need to have Launch as a tag management system? What if I don't want to use Launch?
+
+   For mobile, Launch is required to configure the Media Extensions such as the Mobile Services UI. In the mobile app use case, it is not used as a tag management system.
+
 1. Does this end of support impact the SDK for tvOS?
 
    Yes, for tvOS (version 10+) the recommended implementation is to migrate to the Media Analytics Extensions.  AEP SDK support and Media Analytics Extension support is planned for June 2020.  For additional information, see [Migrating from the standalone Media SDK to Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
@@ -51,7 +55,3 @@ Please reach out to your Adobe Customer Success Manager if you have any further 
 1. Does this end of support impact the SDK for FireTV and AndroidTV?​
 
    Yes, for FireTV and AndroidTV,  the recommended implementation is to migrate to the Media Analytics Extensions.  AEP SDK support and Media Analytics Extension support is planned for June 2020.  For additional information, see [Migrating from the standalone Media SDK to Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
-
-1. Do I need to have Launch as a tag management system? What if I don't want to use Launch?
-
-   For mobile, Launch is required to configure the Media Extensions such as the Mobile Services UI. In the mobile app use case, it is not used as a tag management system.
