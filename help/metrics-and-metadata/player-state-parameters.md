@@ -35,6 +35,7 @@ Table data description:
 
 
 ## Player State Properties {#player-state-properties}
+
 The Player State Tracking properties tables are organized in the following five sections:
 
 * Full Screen
