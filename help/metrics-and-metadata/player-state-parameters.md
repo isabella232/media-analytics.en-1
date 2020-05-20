@@ -69,13 +69,17 @@ The Player State Tracking properties tables are organized in the following five 
 
 #### Full Screen Counts
 
-Add table here
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times a Full Screen was displayed. This metric is set to 1 only if at least one Full Screen State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatefullscreencount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Full Screen Count </li> <li> **Context Data**<br/> (videostatefullscreencount)<br/> </li> <li> **Data Feed**<br/> videostatefullscreencount </li> <li> **Audience Manager**<br/> (c_contextdata.videostatefullscreencount) </li> </ul> |
 
 
 
 #### Full Screen Total Duration
 
-Add table here
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time a Full Screen was displayed. This metric is set to 1 only if at least one Full Screen State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatefullscreentime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Full Screen Duration </li> <li> **Context Data**<br/> (videostatefullscreentime)<br/> </li> <li> **Data Feed**<br/> videostatefullscreentime </li> <li> **Audience Manager**<br/> (c_contextdata.videostatefullscreentime) </li> </ul> |
 
 
 ## Close Caption Properties
