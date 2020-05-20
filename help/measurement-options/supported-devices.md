@@ -17,29 +17,29 @@ Adobe Analytics for Audio and Video supports all major devices including:
 
 The Media SDKs are routinely updated when new versions of devices are released and you can use the SDK to integrate with the largest media players today including Brightcove and Ooyala.
 
-For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful API calls directly from a device or platform to the Media Analytics backend.
+For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful APIÂ calls directly from a device or platform to the Media Analytics backend.
 
 The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
 | Streaming Platforms and Devices |                                               | Media Launch Extension w/ AEP SDK |      Media SDK      | Media Collection API |
 |---------------------------|-----------------------------------------------|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web            |                                               |                              |                     |                      |
-|                           | JavaScript Browsers                           |               X              |          X          |           X          |
+|                           | JavaScript Browsers                           |               ![](/help/assets/icon-blue-check.png)              |          ![](/help/assets/icon-blue-check.png)          |           ![](/help/assets/icon-blue-check.png)          |
 | Mobile App                |                                               |                              |                     |                      |
-|                           | iOS Devices                                   |               X              |          X          |           X          |
-|                           | Android Devices                               |               X              |          X          |           X          |
-|                           | Windows Devices                               |                              |                     |           X          |
+|                           | iOS Devices                                   |               ![](/help/assets/icon-blue-check.png)              |          (ending support)          |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Android Devices                               |               ![](/help/assets/icon-blue-check.png)              |          (ending support)          |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Windows Devices                               |                              |                     |           ![](/help/assets/icon-blue-check.png)          |
 | OTT                       |                                               |                              |                     |                      |
-|                           | Apple TV  (Legacy, TVOS)                      |                              |          X          |           X          |
-|                           | ROKU                                          |                              | X<br>(BrightScript) |     X<br>(native)    |
-|                           | Fire TV (Fire OS)                             |                              |          X          |           X          |
-|                           | Android TV                                    |                              |          X          |           X          |
-|                           | Chromecast                                    |                              |          X          |           X          |
-|                           | Gaming Consoles (e.g. Xbox ONE, Sony PS3/PS4) |                              |                     |           X          |
-|                           | Set Top Boxes (e.g. xfinity X1)               |                              |                     |           X          |
-|                           | Smart TVs (e.g. Samsung, LG, Sony, Vizio)     |                              |   X<br>(web-based)  |           X          |
+|                           | Apple TV  (Legacy, tvOS)                      |              Planned 2020                |          (ending support)          |           ![](/help/assets/icon-blue-check.png)          |
+|                           | ROKU                                          |                              | ![](/help/assets/icon-blue-check.png)<br>(BrightScript) |     ![](/help/assets/icon-blue-check.png)<br>(native)    |
+|                           | Fire TV (Fire OS)                             |            Planned 2020                  |          (ending support)          |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Android TV                                    |               Planned 2020               |          (ending support)          |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Chromecast                                    |                              |          ![](/help/assets/icon-blue-check.png)          |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Gaming Consoles (e.g. Xbox ONE, Sony PS3/PS4) |                              |                     |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Set Top Boxes (e.g. xfinity X1)               |                              |                     |           ![](/help/assets/icon-blue-check.png)          |
+|                           | Smart TVs (e.g. Samsung, LG, Sony, Vizio)     |                              |   ![](/help/assets/icon-blue-check.png)<br>(web-based)  |           ![](/help/assets/icon-blue-check.png)          |
 | Other                     |                                               |                              |                     |                      |
-|                           | New Connected Devices                         |                              |                     |           X          |
+|                           | New Connected Devices                         |                              |                     |           ![](/help/assets/icon-blue-check.png)          |
 
 
 For additional information about the minimum platform versions supported for each SDK, see [Minimum Platform Version Support](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
