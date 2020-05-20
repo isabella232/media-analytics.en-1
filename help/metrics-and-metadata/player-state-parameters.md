@@ -95,15 +95,82 @@ The Player State Tracking properties tables are organized in the following five 
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times Closed Captioning was displayed. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateclosedcaptioningcount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Closed Captioning Count </li> <li> **Context Data**<br/> (videostateclosedcaptioningcount)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager**<br/> (c_contextdata.videostateclosedcaptioningcount) </li> </ul> |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times Closed Captioning was selected. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateclosedcaptioningcount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Closed Captioning Count </li> <li> **Context Data**<br/> (videostateclosedcaptioningcount)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager**<br/> (c_contextdata.videostateclosedcaptioningcount) </li> </ul> |
 
 
 #### Closed Captioning Total Duration
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time Closed Captioning was displayed. This metric is set to 1 only if at least one Full Screen State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateclosedcaptioningtime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Closed Captioning Duration </li> <li> **Context Data**<br/> (videostateclosedcaptioningtime)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioningtime </li> <li> **Audience Manager**<br/> (c_contextdata.videostateclosedcaptioningtime) </li> </ul> |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time Closed Captioning was selected. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateclosedcaptioningtime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Closed Captioning Duration </li> <li> **Context Data**<br/> (videostateclosedcaptioningtime)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioningtime </li> <li> **Audience Manager**<br/> (c_contextdata.videostateclosedcaptioningtime) </li> </ul> |
 
+
+### Mute Properties
+
+#### Streams Impacted by Mute
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of streams impacted by Mute. This metric is set to 1 only if at least one Mute State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (a.media.states.mute.set)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Streams Impacted by Mute </li> <li> **Context Data**<br/> (a.media.states.mute.set)<br/> </li> <li> **Data Feed**<br/> videostatemute </li> <li> **Audience Manager**<br/> (c_contextdata.a.media.states.mute.set) </li> </ul> |
+
+#### Mute Counts
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times Mute was selected. This metric is set to 1 only if at least one Mute State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatemutecount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Mute Count </li> <li> **Context Data**<br/> (videostatemutecount)<br/> </li> <li> **Data Feed**<br/> videostatemutecount </li> <li> **Audience Manager**<br/> (c_contextdata.videostatemutecount) </li> </ul> |
+
+#### Mute Total Duration
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time Mute was selected. This metric is set to 1 only if at least one Mute State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatemutetime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Mute Duration </li> <li> **Context Data**<br/> (videostatemutetime)<br/> </li> <li> **Data Feed**<br/> videostatemutetime </li> <li> **Audience Manager**<br/> (c_contextdata.videostatemutetime) </li> </ul> |
+
+
+### Picture in Picture Properties
+
+
+#### Streams Impacted by Picture in Picture
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of streams impacted by Picture in Picture. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (a.media.states.pictureinpicture.set)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Streams Impacted by Picture in Picture </li> <li> **Context Data**<br/> (a.media.states.pictureinpicture.set)<br/> </li> <li> **Data Feed**<br/> videostatepictureinpicture </li> <li> **Audience Manager**<br/> (c_contextdata.a.media.states.pictureinpicture.set) </li> </ul> |
+
+
+#### Picture in Picture Counts
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times Picture in Picture was displayed. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatepictureinpicturecount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Picture in Picture Count </li> <li> **Context Data**<br/> (videostatepictureinpicturecount)<br/> </li> <li> **Data Feed**<br/> videostatepictureinpicturecount </li> <li> **Audience Manager**<br/> (c_contextdata.videostatepictureinpicturecount) </li> </ul> |
+
+
+#### Picture in Picture Total Duration
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time Picture in Picture was displayed. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatepictureinpicturetime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Picture in Picture Duration </li> <li> **Context Data**<br/> (videostatepictureinpicturetime)<br/> </li> <li> **Data Feed**<br/> videostatepictureinpicturetime </li> <li> **Audience Manager**<br/> (c_contextdata.videostatepictureinpicturetime) </li> </ul> |
+
+
+### In Focus Properties
+
+#### Streams Impacted by In Focus
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of streams impacted by In Focus. This metric is set to 1 only if at least one In Focus State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (a.media.states.infocus.set)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Streams Impacted by In Focus </li> <li> **Context Data**<br/> (a.media.states.infocus.set)<br/> </li> <li> **Data Feed**<br/> videostateinfocus </li> <li> **Audience Manager**<br/> (c_contextdata.a.media.states.infocus.set) </li> </ul> |
+
+
+#### In Focus Counts
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times In Focus was displayed. This metric is set to 1 only if at least one In Focus State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateinfocuscount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> In Focus Count </li> <li> **Context Data**<br/> (videostateinfocuscount)<br/> </li> <li> **Data Feed**<br/> videostateinfocuscount </li> <li> **Audience Manager**<br/> (c_contextdata.videostateinfocuscount) </li> </ul> |
+
+
+#### In Focus Total Duration
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time In Focus was displayed. This metric is set to 1 only if at least one In Focus State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateinfocustime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> In Focus Duration </li> <li> **Context Data**<br/> (videostateinfocustime)<br/> </li> <li> **Data Feed**<br/> videostateinfocustime </li> <li> **Audience Manager**<br/> (c_contextdata.videostateinfocustime) </li> </ul> |
 
 
 
