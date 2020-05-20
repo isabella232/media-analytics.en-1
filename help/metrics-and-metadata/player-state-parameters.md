@@ -82,9 +82,27 @@ The Player State Tracking properties tables are organized in the following five 
 | <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time a Full Screen was displayed. This metric is set to 1 only if at least one Full Screen State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostatefullscreentime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Full Screen Duration </li> <li> **Context Data**<br/> (videostatefullscreentime)<br/> </li> <li> **Data Feed**<br/> videostatefullscreentime </li> <li> **Audience Manager**<br/> (c_contextdata.videostatefullscreentime) </li> </ul> |
 
 
-## Close Caption Properties
+### Close Caption Properties
 
-Add table here
+#### Streams Impacted by Closed Captioning
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of streams impacted by Closed Captioning. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (a.media.states.closedcaptioning.set)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Streams Impacted by Closed Captioning </li> <li> **Context Data**<br/> (a.media.states.closedcaptioning.set)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioning </li> <li> **Audience Manager**<br/> (c_contextdata.a.media.states.closedcaptioning.set) </li> </ul> |
+
+
+#### Closed Captioning Counts
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of times Closed Captioning was displayed. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateclosedcaptioningcount)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Closed Captioning Count </li> <li> **Context Data**<br/> (videostateclosedcaptioningcount)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager**<br/> (c_contextdata.videostateclosedcaptioningcount) </li> </ul> |
+
+
+#### Closed Captioning Total Duration
+
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
+| --- | --- | --- |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time Closed Captioning was displayed. This metric is set to 1 only if at least one Full Screen State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (videostateclosedcaptioningtime)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Closed Captioning Duration </li> <li> **Context Data**<br/> (videostateclosedcaptioningtime)<br/> </li> <li> **Data Feed**<br/> videostateclosedcaptioningtime </li> <li> **Audience Manager**<br/> (c_contextdata.videostateclosedcaptioningtime) </li> </ul> |
 
 
 
