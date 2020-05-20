@@ -5,6 +5,10 @@ description: Adobe Analytics for Audio and Video ensures that each media stream 
 
 # Supported devices and platforms {#devices-supported}
 
+>[!IMPORTANT]
+>
+>With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDK for Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
+
 Adobe Analytics for Audio and Video supports all major devices including:
 
 * iOS and Android smartphones and tablets
