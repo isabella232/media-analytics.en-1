@@ -1,14 +1,9 @@
 ---
 title: Supported devices and platforms
-description:
-uuid:
+description: Adobe Analytics for Audio and Video ensures that each media stream is collected and reported across all devices.
 ---
 
 # Supported devices and platforms {#devices-supported}
-
->[!IMPORTANT]
->
->With the end of support for Version 4 Mobile SDKs starting September 1, 2021, Adobe will also  end support for the Media Analytics SDKs for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
 Adobe Analytics for Audio and Video supports all major devices including:
 
@@ -22,7 +17,7 @@ For devices or platforms that don’t currently have SDK support or in situation
 
 The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
-| Streaming Platform/Device |                                               | Media Launch Extension w/ AEP SDK |      Media SDK      | Media Collection API |
+| Streaming Platforms and Devices |                                               | Media Launch Extension w/ AEP SDK |      Media SDK      | Media Collection API |
 |---------------------------|-----------------------------------------------|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web            |                                               |                              |                     |                      |
 |                           | JavaScript Browsers                           |               X              |          X          |           X          |

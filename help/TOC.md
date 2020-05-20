@@ -9,7 +9,6 @@ sub-product: media analytics
 # Adobe Analytics for Audio and Video {#using}
 
 + [Measuring Audio and Video in Adobe Analytics](media-overview.md)
-+ [Measurement Options](measurement-options/measurement-options-list.md)
 + [Supported Devices and Platforms](measurement-options/supported-devices.md)
 + Introduction to Audio and Video Analytics {#intro-to-ava}  
     + [Prerequisites](intro-to-ava/prereqs.md)
@@ -36,11 +35,11 @@ sub-product: media analytics
         + [Set up JavaScript](sdk-implement/setup/set-up-js.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
-    + Player State Tracking {#player-state-tracking}
+    <!-- + Player State Tracking {#player-state-tracking}
         + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
         + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
         + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-        + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
+        + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
     + Track audio and video playback {#track-av-playback}
         + [Overview](sdk-implement/track-av-playback/track-core-overview.md)
         + Track Core Audio and Video Playback {#track-core}
@@ -181,7 +180,7 @@ sub-product: media analytics
     + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
     + [Ad parameters](metrics-and-metadata/ad-parameters.md)
     + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md)
-    + [Player State Parameters](metrics-and-metadata/player-state-parameters.md)
+    <!-- + [Player State Parameters](metrics-and-metadata/player-state-parameters.md) -->
     + [Quality Parameters](metrics-and-metadata/quality-parameters.md)
     + [Segments](metrics-and-metadata/segments.md)
     + [Calculated Metrics](metrics-and-metadata/calculated-metrics.md)
