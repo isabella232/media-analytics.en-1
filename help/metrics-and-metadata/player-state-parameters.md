@@ -9,8 +9,6 @@ uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 
 This topic presents a list of player state data that Adobe collects via solution variables.
 
-THIS PAGE IS A WORK-IN-PROGRESS -- BASED ON THE CHAPTERS PARAMETER PAGE/FORMAT
-
 Table data description:
 
 * **Implementation:** Information on implementation values and requirements
@@ -36,54 +34,52 @@ Table data description:
 
 
 
-## Player State Metrics {#player-state-metrics}
+## Player State Properties {#player-state-properties}
+The Player State Tracking properties tables are organized in the following five sections:
 
-|  Player State      | Property Name                          | ContextData Property                  | ContentAware Property           | Variable Type |
-|--------------------|----------------------------------------|---------------------------------------|---------------------------------|---------------|
-| Full Screen        | Streams Impacted by Full Screen        | a.media.states.fullscreen.set         | videostatefullscreen            | revent        |
-|                    | Full Screen Counts                     | a.media.states.fullscreen.count       | videostatefullscreencount       | revent        |
-|                    | Full Screen Total Duration             | a.media.states.fullscreen.time        | videostatefullscreentime        | revent        |
-| Close Caption      | Streams Impacted by Closed Captioning  | a.media.states.closedcaptioning.set   | videostateclosedcaptioning      | revent        |
-|                    | Closed Captioning Counts               | a.media.states.closedcaptioning.count | videostateclosedcaptioningcount | revent        |
-|                    | Closed Captioning Total Duration       | a.media.states.closedcaptioning.time  | videostateclosedcaptioningtime  | revent        |
-| Mute               | Streams Impacted by Mute               | a.media.states.mute.set               | videostatemute                  | revent        |
-|                    | Mute Counts                            | a.media.states.mute.count             | videostatemutecount             | revent        |
-|                    | Mute Total Duration                    | a.media.states.mute.time              | videostatemutetime              | revent        |
-| Picture in Picture | Streams Impacted by Picture In Picture | a.media.states.pictureinpicture.set   | videostatepictureinpicture      | revent        |
-|                    | Picture In Picture Counts              | a.media.states.pictureinpicture.count | videostatepictureinpicturecount | revent        |
-|                    | Picture In Picture Total Duration      | a.media.states.pictureinpicture.time  | videostatepictureinpicturetime  | revent        |
-| In Focus           | Streams Impacted by In Focus           | a.media.states.infocus.set            | videostateinfocus               | revent        |
-|                    | In Focus Counts                        | a.media.states.infocus.count          | videostateinfocuscount          | revent        |
-|                    | In Focus Total Duration                | a.media.states.infocus.time           | videostateinfocustime           | revent        |
-
-
+* Full Screen
+   * Streams Impacted by Full Screen
+   * Full Screen Counts
+   * Full Screen Total Duration
+* Close Caption
+   * Streams Impacted by Closed Captioning
+   * Closed Captioning Counts
+   * Closed Captioning Total Duration
+* Mute
+   * Streams Impacted by Mute
+   * Mute Counts
+   * Mute Total Duration
+* Picture in Picture
+   * Stream Impacted by Picture in Picture
+   * Picture in Picture Counts
+   * Picture in Picture Total Duration
+* In Focus
+   * Streams Impacted by In Focus
+   * In Focus Counts
+   * In Focus Total Duration
 
 ### Full Screen Properties
-
 
 #### Streams Impacted by Full Screen
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> **SDK Key:**<br/> Automatically set  </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Chapter Start </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample Value:**<br/> TRUE </li><li> **Description:**<br/>The number of chapter starts.  **Important:**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>view) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=chapter_start) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Chapter Starts g </li> <li> **Context Data:**<br/> (a.media.chapter.<br/>view) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>view) </li> </ul> |
+| <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The number of streams impacted by Full Screen. This metric is set to 1 only if at least one Full Screen State occurred during a playback session. <br/> **Important**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (a.media.states.fullscreen.set)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> Streams Impacted by Full Screen </li> <li> **Context Data**<br/> (a.media.states.fullscreen.set)<br/> </li> <li> **Data Feed**<br/> videostatefullscreen </li> <li> **Audience Manager**<br/> (c_contextdata.a.media.states.fullscreen.set) </li> </ul> |
 
 #### Full Screen Counts
 
-| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
-| --- | --- | --- |
-| <ul> <li> **SDK Key:**<br/> Automatically set  </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Chapter Close </li> <li> **Min. SDK Version:** 1.3</li> <li> **Sample Value:**<br/> TRUE </li><li> **Description:**<br/>The number of chapter completes.  **Important:**  If this event is set, the only possible value is TRUE. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>complete) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=chapter_complete) </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Chapter Completes g </li> <li> **Context Data:**<br/> (a.media.chapter.<br/>complete) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>complete) </li> </ul> |
+Add table here
 
-### Full Screen Total Duration
 
-| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
-| --- | --- | --- |
-| <ul> <li> **SDK Key:**<br/> Automatically set  </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> Yes </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Chapter Close </li> <li> **Min. SDK Version:** 1.3 </li> <li> **Sample Value:**<br/> </li><li> **Description:**<br/>The time spent on the chapter.  The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports &amp; Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds. <br/>**Release Date: 09/13/18**   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>timePlayed) </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Available:**<br/> Yes </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> Chapter Time Spent g </li> <li> **Context Data:**<br/> (a.media.chapter.<br/>timePlayed) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>timePlayed) </li> </ul> |
+
+#### Full Screen Total Duration
+
+Add table here
+
 
 ## Close Caption Properties
 
-ADD CLOSE CAPTION PROPERTIES
-
-
+Add table here
 
 
 
