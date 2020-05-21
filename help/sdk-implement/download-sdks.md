@@ -11,7 +11,6 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 >
 >With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
-
 ## Download the 2.x Media SDKs {#download-2x-sdks}
 
 | 2.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |

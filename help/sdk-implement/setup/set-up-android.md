@@ -14,7 +14,6 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 
 ## Prerequisites
 
-
 * **Obtain valid configuration parameters for the Media SDK**
    These parameters can be obtained from an Adobe representative after you set up your analytics account.
 * **Implement ADBMobile for Android in your application**
