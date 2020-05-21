@@ -41,6 +41,6 @@ The table below lists currently supported devices and platforms. To download the
 | Other                     |                                               |                              |                     |                      |
 |                           | New Connected Devices                         |                              |                     |           ![](/help/assets/icon-blue-check.png)          |
 
-1. Support for these devices ends on August 31, 2021. For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
+1. Support for these SDKs ends on August 31, 2021. For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
 For additional information about the minimum platform versions supported for each SDK, see [Minimum Platform Version Support](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
