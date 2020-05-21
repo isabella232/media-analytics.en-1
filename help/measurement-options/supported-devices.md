@@ -17,7 +17,7 @@ Adobe Analytics for Audio and Video supports all major devices including:
 
 The Media SDKs are routinely updated when new versions of devices are released and you can use the SDK to integrate with the largest media players today including Brightcove and Ooyala.
 
-For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful APIÂ calls directly from a device or platform to the Media Analytics backend.
+For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful API calls directly from a device or platform to the Media Analytics backend.
 
 The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
