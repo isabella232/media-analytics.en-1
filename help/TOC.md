@@ -15,9 +15,9 @@ sub-product: media analytics
     + Implementation Paths {#implementation-paths}
         + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
         + [Client-side](intro-to-ava/implementation-paths/client-side-path.md)
-        + Other implementation paths {#other-paths}
+        + Other Implementation Paths {#other-paths}
             + Media Module Milestone Tracking {#mm-milestone-tracking}
-                + [Milestone overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
+                + [Milestone Overview](measurement-options/mm-milestone-tracking/milestone-overview.md)
                 + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
                 + [Migrating from Milestone to Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
             + Custom Link in Analytics {#cl-in-aa}
@@ -35,7 +35,7 @@ sub-product: media analytics
         + [Set up JavaScript](sdk-implement/setup/set-up-js.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
-    + Track audio and video playback {#track-av-playback}
+    + Track Audio and Video Playback {#track-av-playback}
         + [Overview](sdk-implement/track-av-playback/track-core-overview.md)
         + Track Core Audio and Video Playback {#track-core}
             + [Track Core Playback on Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -55,7 +55,7 @@ sub-product: media analytics
             + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
             + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
             + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-        + Implement standard metadata {#impl-std-metadata}
+        + Implement Standard Metadata {#impl-std-metadata}
             + [Implement standard metadata on Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
             + [Implement standard metadata on iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
             + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -71,7 +71,7 @@ sub-product: media analytics
         + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
         + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
         + [Track Ads on Roku](sdk-implement/track-ads/track-ads-roku.md)
-        + Implement standard ad metadata {#impl-std-ad-metadata}
+        + Implement Standard ad Metadata {#impl-std-ad-metadata}
             + [Implement standard ad metadata on Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [Implement standard ad metadata on iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + [Implement standard ad metadata on JavaScript](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
