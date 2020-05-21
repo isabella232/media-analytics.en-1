@@ -112,7 +112,7 @@ Launch offers two approaches to creating the tracking infrastructure. Both appro
 
 ### Media SDK
 
-* [Set up JS](/help/sdk-implement/setup/set-up-js.md)
+* [Set up JS](/help/sdk-implement/setup/set-up-js-2.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
