@@ -32,32 +32,9 @@ Table data description:
 >Do not change the classification names for any variables listed below that are described under Reporting/Reserved Variable as "classification".  
 >The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and, when this occurs, customers must re-enable their report suites to get access to the new media properties. During the update process Adobe determines whether the classifications are enabled by checking the names of the variables. If any of them is missing, Adobe adds the missing ones again.
 
-
-
 ## Player State Properties {#player-state-properties}
 
-The Player State Tracking properties tables are organized in the following five sections:
-
-* Full Screen
-   * Streams Impacted by Full Screen
-   * Full Screen Counts
-   * Full Screen Total Duration
-* Close Caption
-   * Streams Impacted by Closed Captioning
-   * Closed Captioning Counts
-   * Closed Captioning Total Duration
-* Mute
-   * Streams Impacted by Mute
-   * Mute Counts
-   * Mute Total Duration
-* Picture in Picture
-   * Stream Impacted by Picture in Picture
-   * Picture in Picture Counts
-   * Picture in Picture Total Duration
-* In Focus
-   * Streams Impacted by In Focus
-   * In Focus Counts
-   * In Focus Total Duration
+The player state tracking capabilities can be attached to an audio or video stream. Standardized player state tracking metrics are stored as solution variables. The standard states are: fullScreen, mute, closeCaption, pictureInPicture, and inFocus.
 
 ### Full Screen Properties
 
@@ -177,6 +154,6 @@ The Player State Tracking properties tables are organized in the following five 
 ## Related APIs {#related_apis_section}
 
 NEED: Add API links to docs:
-* Android - [createStateObject](https://need)
-* iOS - [createStateObjectWithName](https://need)
-* Javascript - [createStateObject](https://need)
+* Android - [createStateObject](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* iOS - [createStateObjectWithName](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* Javascript - [createStateObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)
