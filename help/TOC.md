@@ -32,7 +32,8 @@ sub-product: media analytics
         + [Overview](sdk-implement/setup/setup-overview.md)
         + [Set up Android](sdk-implement/setup/set-up-android.md)
         + [Set up iOS](sdk-implement/setup/set-up-ios.md)
-        + [Set up JavaScript](sdk-implement/setup/set-up-js.md)
+        + [Set up JavaScript 2.x](sdk-implement/setup/set-up-js-2.md)
+        + [Set up JavaScript 3.x](sdk-implement/setup/set-up-js-3.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
     + Track Audio and Video Playback {#track-av-playback}

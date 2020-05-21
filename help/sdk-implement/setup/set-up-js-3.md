@@ -51,6 +51,7 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
    Here is a sample `MediaConfig` initialization:
 
    ```js
+
     // Create MediaConfig object (same as above)
     var mediaConfig = new ADB.MediaConfig();
     mediaConfig.trackingServer = Configuration.MEDIA_COLLECTION_ENDPOINT;
@@ -67,7 +68,9 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
    After configuring Media SDK, tracker instances for tracking media content can be created using `getInstance` API.
 
    ```js
+
    var tracker = ADB.Media.getInstance();
+
    ```
 
    >[!IMPORTANT]
