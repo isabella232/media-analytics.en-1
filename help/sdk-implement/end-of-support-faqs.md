@@ -20,8 +20,6 @@ With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will
 
 1. Prior to September 1, 2021, Adobe may, at its sole discretion, develop new fixes for problems of high technical impact or business exposure. Based on the customer input, Adobe will determine the degree of impact and exposure and the consequent activities.
 
-After the end of support date, customers should use the new AEP SDKs with the Media Analytics extensions to use the latest features.
-
 Please reach out to your Adobe Customer Success Manager if you have any questions.
 
 ## FAQs
