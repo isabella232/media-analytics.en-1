@@ -77,6 +77,6 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
    >
    >Make sure that your `tracker` instance is accessible and does not get deallocated until the end of the media session. This instance will be used for tracking all the following events for that session.
 
-## Migrate from version 2.x to 3.x in JavaScript
+## Migrate from JavaScript 2.x to 3.x
 
 For detailed information about migrating from 2.x to 3.x, see [2.x to 3.x Migration.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
