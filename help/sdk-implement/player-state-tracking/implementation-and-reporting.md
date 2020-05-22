@@ -84,8 +84,13 @@ The metrics provided for each individual state are computed and pushed to Adobe 
 
 ## Reporting
 
-All state metrics can be used for any reporting visualization or component (segment, calculated metrics).
-TBD - check source/wiki for updated information - for screen shot from AW
+All player state metrics can be used for any reporting visualization available in Analysis Workspace or a component (segment, calculated metrics) once a report suite is enabled for player state tracking. The new metrics could be enabled from the Admin Console for each individual report using Media Reporting Setup (Edit Settings > Media Management > Media Reporting).
+
+![](assets/report-setup.png)
+
+In Analytics Workspace, all new properties are located in the metrics panel. For example, you can search by `full screen` to view the full screen data in the metrics panel.
+
+![](assets/analysis-workspace.png)
 
 ## Importing player stated metrics to Adobe Experience Platform
 
