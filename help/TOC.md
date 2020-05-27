@@ -49,7 +49,8 @@ sub-product: media analytics
         + Track Core Audio and Video Playback {#track-core}
             + [Track Core Playback on Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
             + [Track Core Playback on iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-            + [Track Core Playback on JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
+            + [Track Core Playback on JavaScript 2.x](sdk-implement/track-av-playback/track-core/track-core-js.md)
+            + [Track Core Playback on JavaScript 3.x](sdk-implement/track-av-playback/track-core/track-core-js3.md)
             + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
             + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
         + Track Buffering {#track-buffering}
@@ -69,7 +70,8 @@ sub-product: media analytics
             + [Implement standard metadata on Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
             + [Implement standard metadata on iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
             + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-            + [Implement standard metadata on JavaScript](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+            + [Implement standard metadata on JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+            + [Implement standard metadata on JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js3.md)
             + [Implement standard metadata on Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
             + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
             + [Implement standard metadata on Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)

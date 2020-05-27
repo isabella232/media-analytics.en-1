@@ -1,14 +1,12 @@
 ---
-title: Track core playback using JavaScript 2.x
-description: This topic describes how to implement core tracking using the Media SDK in a browser using JavaScript 2.x apps.
-uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-
+title: Track core playback on JavaScript v3.x
+description: This topic describes how to implement core tracking using the Media SDK in a browser using JavaScript 3.x apps.
 ---
 
-# Track core playback using JavaScript 2.x{#track-core-playback-on-javascript}
+# Track core playback using JavaScript 3.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 3.x of the SDK. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup**
 
@@ -16,13 +14,13 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
     [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
-    |  Variable Name  | Description  | Required  |
-    | --- | --- | :---: |
-    |  `name`  | Media name  | Yes  |
-    |  `mediaid`  | Media unique identifier  | Yes  |
-    |  `length`  | Media length  | Yes  |
-    |  `streamType`  | Stream type (see _StreamType constants_ below)  | Yes  |
-    |  `mediaType`  | Media type (see _MediaType constants_ below)  | Yes  |
+    |  Variable Name  | Type |  Description  |
+    | --- | --- | --- |
+    |  `name`  | string | Non empty string denoting media name. |
+    |  `id`  | string | Non empty string denoting unique media identifier.  |
+    |  `length`  | number | Positive number denoting length of media in seconds. Use 0 if length is unknown.  |
+    |  `streamType`  | string | [Stream type](link to streamType constants) or non empty string to denote media stream type.  |
+    |  `mediaType`  | [MediaType](link to MediaType constants)| Type of media (Audio or Video). |
 
     **`StreamType` constants:**
 
@@ -43,25 +41,22 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     |  `Video`  | Media type for Video streams.  |
 
     ```
-    var mediaObject =  
-      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
-                                      <MEDIA_ID,  
+    var mediaObject = ADB.Media.createMediaObject(<MEDIA_NAME>,
+                                      <MEDIA_ID,
                                       <MEDIA_LENGTH>,
-                                      MediaHeartbeat.StreamType.VOD,
+                                      <STREAM_TYPE>,
                                       <MEDIA_TYPE>);
     ```
 
 1. **Attach metadata**
 
-    Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+    Optionally attach standard and/or custom metadata to the tracking session through context data variables.
 
     * **Standard metadata**
 
-       [Implement standard metadata on JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
-
        >[!NOTE]
        >
-       >Attaching the standard metadata object to the media object is optional.
+       >Attaching the standard metadata is optional.
 
        * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
@@ -69,15 +64,19 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
     * **Custom metadata**
 
-       Create a variable object for the custom variables and populate with the data for this media. For example:     
+       Create a variable object for the custom variables and populate with the data for this media. For example:
 
-       ```js    
-       /* Set custom context data */
-       var customVideoMetadata = {
-           isUserLoggedIn: "false",
-           tvStation: "Sample TV station",
-           programmer: "Sample programmer"
-       };
+       ```js
+       /* Set context data */
+        var contextData = {};
+
+        //Standard metadata
+        contextData[ADB.Media.VideoMetadataKeys.EPISODE] = "Sample Episode";
+        contextData[ADB.Media.VideoMetadataKeys.SHOW] = "Sample Show";
+
+        //Custom metadata
+        contextData["isUserLoggedIn"] = "false";
+        contextData["tvStation"] = "Sample TV Station";
        ```
 
 1. **Track the intention to start playback**
@@ -85,12 +84,24 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
 
     ```js
-    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-    ```
+    var mediaObject = ADB.Media.createMediaObject("video-name",
+                                                  "video-id",
+                                                  60.0,
+                                                  ADB.Media.StreamType.VOD,
+                                                  ADB.Media.MediaType.Video);
 
-    >[!TIP]
-    >
-    >The second value is the custom media metadata object name that you created in step 2.
+    var contextData = {};
+
+    //Standard metadata
+    contextData[ADB.Media.VideoMetadataKeys.EPISODE] = "Sample Episode";
+    contextData[ADB.Media.VideoMetadataKeys.SHOW] = "Sample Show";
+
+    //Custom metadata
+    contextData["isUserLoggedIn"] = "false";
+    contextData["tvStation"] = "Sample TV Station";
+
+    tracker.trackSessionStart(mediaObject, contextData);
+    ```
 
     >[!IMPORTANT]
     >
@@ -98,14 +109,14 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
     >[!NOTE]
     >
-    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+    >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
 
 1. **Track the actual start of playback**
 
     Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
     ```js
-    mediaHeartbeat.trackPlay();
+    tracker.trackPlay();
     ```
 
 1. **Track the completion of playback**
@@ -113,7 +124,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
     ```js
-    mediaHeartbeat.trackComplete();
+    tracker.trackComplete();
     ```
 
 1. **Track the end of the session**
@@ -121,7 +132,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
 
     ```js
-    mediaHeartbeat.trackSessionEnd();
+    tracker.trackSessionEnd();
     ```
 
     >[!IMPORTANT]
@@ -133,7 +144,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
     Identify the event from the media player for pause and call `trackPause`:
 
     ```js
-    mediaHeartbeat.trackPause();
+    tracker.trackPause();
     ```
 
     **Pause Scenarios**
@@ -148,7 +159,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 1. Identify the event from the player for play and/or resume from pause and call `trackPlay`:
 
     ```js
-    mediaHeartbeat.trackPlay();
+    tracker.trackPlay();
     ```
 
     >[!TIP]
