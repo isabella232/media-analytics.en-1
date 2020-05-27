@@ -15,7 +15,7 @@ The Media SDK includes two new methods for custom state tracking:
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have "media.stateName" as the required parameter:
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` and `stateEnd`
 
