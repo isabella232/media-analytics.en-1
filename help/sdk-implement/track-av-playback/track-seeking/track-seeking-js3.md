@@ -1,15 +1,13 @@
 ---
-title: Track seeking using JavaScript 2.x
+title: Track seeking using JavaScript 3.x
 description: This topic describes implementing seek tracking using the Media SDK in browser apps (JS).
-uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-
 ---
 
-# Track seeking using JavaScript 2.x{#track-seeking-on-javascript}
+# Track seeking using JavaScript 3.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation across all 3.x SDKs. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Seek tracking constants
 
@@ -24,7 +22,7 @@ uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 
     ```js
     _onSeekStart = function() {
-        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
+        tracker.trackEvent(ADB.Media.Event.SeekStart);
     };
     ```
 
@@ -32,7 +30,7 @@ uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 
     ```js
     _onSeekComplete = function() {
-        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
+        tracker.trackEvent(ADB.Media.Event.SeekComplete);
     };
     ```
 
