@@ -61,7 +61,8 @@ sub-product: media analytics
         + Track Seeking {#track-seeking}
             + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
             + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-            + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+            + [Track Seeking on JavaScript 2.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+            + [Track Seeking on JavaScript 3.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js3.md)
             + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
             + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
         + Implement Standard Metadata {#impl-std-metadata}
@@ -105,7 +106,8 @@ sub-product: media analytics
         + [Overview](sdk-implement/track-errors/track-errors-overview.md)
         + [Track Errors on Android](sdk-implement/track-errors/track-errors-android.md)
         + [Track Errors on iOS](sdk-implement/track-errors/track-errors-ios.md)
-        + [Track Errors on JavaScript](sdk-implement/track-errors/track-errors-js.md)
+        + [Track Errors on JavaScript 2.x](sdk-implement/track-errors/track-errors-js.md)
+        + [Track Errors on JavaScript 3.x](sdk-implement/track-errors/track-errors-js3.md)
         + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
         + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
     + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)

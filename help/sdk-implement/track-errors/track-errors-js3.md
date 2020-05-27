@@ -1,15 +1,13 @@
 ---
-title: Track errors using JavaScript 2.x
+title: Track errors using JavaScript 3.x
 description: This topic describes implementing error tracking using the Media SDK in browser apps (JS).
-uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-
 ---
 
-# Track errors using JavaScript 2.x{#track-errors-on-javascript}
+# Track errors using JavaScript 3.x{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation across all 3.x SDKs. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implement error tracking
 
@@ -17,7 +15,7 @@ uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 
     ```js
     onPlayerError = function() {
-        this._mediaHeartbeat.trackError("mediaErrorId");
+        tracker.trackError("errorId");
     };
     ```
 
