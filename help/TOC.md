@@ -77,7 +77,8 @@ sub-product: media analytics
         + [Overview](sdk-implement/track-ads/track-ads-overview.md)
         + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
         + [Track Ads on iOS](sdk-implement/track-ads/track-ads-ios.md)
-        + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
+        + [Track Ads on JavaScript 2.x](sdk-implement/track-ads/track-ads-js.md)
+        + [Track Ads on JavaScript 3.x](sdk-implement/track-ads/track-ads-js3.md)
         + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
         + [Track Ads on Roku](sdk-implement/track-ads/track-ads-roku.md)
         + Implement Standard ad Metadata {#impl-std-ad-metadata}
