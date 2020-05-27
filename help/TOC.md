@@ -34,9 +34,9 @@ sub-product: media analytics
         + [Set up iOS](sdk-implement/setup/set-up-ios.md)
         * [Set up JavaScript] {#setup-javascript}
             + Set up JavaScript 2.x {#setup-js2}
-                + [Set up JavaScript 2.x](sdk-implement/setup/js2/set-up-js-2.md)    
+                + [Set up JavaScript 2.x](sdk-implement/setup/setup-js2/set-up-js-2.md)    
             + Set up JavaScript 3.x {#setup-js3}
-                + [Set up JavaScript 3.x](sdk-implement/setup/js3/set-up-js-3.md)
+                + [Set up JavaScript 3.x](sdk-implement/setup/setup-js3/set-up-js-3.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
     + Player State Tracking {#player-state-tracking}
@@ -96,7 +96,8 @@ sub-product: media analytics
         + [Overview](sdk-implement/track-qos/track-qos-overview.md)
         + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
         + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-        + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
+        + [Track Quality of Experience on JavaScript 2.x](sdk-implement/track-qos/track-qos-js.md)
+        + [Track Quality of Experience on JavaScript 3.x](sdk-implement/track-qos/track-qos-js3.md)
         + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
         + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
     + Track Errors {#track-errors}
