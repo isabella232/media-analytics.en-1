@@ -78,9 +78,9 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 The metrics provided for each individual state are computed and pushed to Adobe Analytics as Context Data parameters and stored for reporting purposes. Three metrics are available for each state:
 
-* `a.media.states.(media.state.name).set = true` — Set to true if the state was set at least once per each specific playback of a stream.
-* `a.media.states.(media.state.name).count = 4` — Identifies the number of occurrences of a state during per each individual playback of a stream
-* `a.media.states.(media.state.name).time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
+* `a.media.states.[state.name].set = true` — Set to true if the state was set at least once per each specific playback of a stream.
+* `a.media.states.[state.name].count = 4` — Identifies the number of occurrences of a state during per each individual playback of a stream
+* `a.media.states.[state.name].time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
 
 ## Reporting
 
