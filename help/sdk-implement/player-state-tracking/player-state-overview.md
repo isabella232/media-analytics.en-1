@@ -6,7 +6,7 @@ description: This topic describes the player state tracking feature including re
 
 # About Player State Tracking
 
-To optimize your product experience and drive value for your business, it's important to understand customer behavior when viewing videos. This includes  the time spent within different player states.  And to optimize your understanding, you need the flexibility to create and measure new player states and events as needed.
+To optimize your product experience and drive value for your business, it's important to understand customer behavior when viewing videos. This includes  the time spent within different player states.  It's also important to have the flexibility to create and measure new player states and events as needed.
 
 Player State Tracking provides the capability to capture viewer interaction during playback using a standard set of solution variables for full screen, closed captioning, mute, picture in picture, and in focus.  Player State Tracking also provides the flexibility to create custom player states. You can use Player State Tracking variables for reporting in Analysis Workspace.  
 
