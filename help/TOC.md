@@ -32,7 +32,7 @@ sub-product: media analytics
         + [Overview](sdk-implement/setup/setup-overview.md)
         + [Set up Android](sdk-implement/setup/set-up-android.md)
         + [Set up iOS](sdk-implement/setup/set-up-ios.md)
-        * Set up JavaScript {#setup-javascript}
+        + Set up JavaScript {#setup-javascript}
             + [Set up JavaScript 2.x](sdk-implement/setup/setup-js2/set-up-js-2.md)
             + [Set up JavaScript 3.x](sdk-implement/setup/setup-js3/set-up-js-3.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
