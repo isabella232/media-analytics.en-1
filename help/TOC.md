@@ -37,11 +37,6 @@ sub-product: media analytics
             + [Set up JavaScript 3.x](sdk-implement/setup/setup-js3/set-up-js-3.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
-    + Player State Tracking {#player-state-tracking}
-        + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
-        + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-        + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-        + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
     + Track Audio and Video Playback {#track-av-playback}
         + [Overview](sdk-implement/track-av-playback/track-core-overview.md)
         + Track Core Audio and Video Playback {#track-core}
@@ -54,7 +49,8 @@ sub-product: media analytics
         + Track Buffering {#track-buffering}
             + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
             + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-            + [Track Buffering on JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+            + [Track Buffering on JavaScript 2.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+            + [Track Buffering on JavaScript 3.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js3.md)
             + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
             + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
         + Track Seeking {#track-seeking}
@@ -69,6 +65,7 @@ sub-product: media analytics
             + [Implement standard metadata on iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
             + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
             + [Implement standard metadata on JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+            + [Implement standard metadata on JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js3.md)
             + [Implement standard metadata on Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
             + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
             + [Implement standard metadata on Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -204,5 +201,10 @@ sub-product: media analytics
         + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
++ Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 + Additional resources {#additional-resources}
     + [Release Notes](additional-resources/doc-updates.md)
