@@ -71,7 +71,6 @@ sub-product: media analytics
             + [Implement standard metadata on iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
             + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
             + [Implement standard metadata on JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
-            + [Implement standard metadata on JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js3.md)
             + [Implement standard metadata on Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
             + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
             + [Implement standard metadata on Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -87,13 +86,15 @@ sub-product: media analytics
         + Implement Standard ad Metadata {#impl-std-ad-metadata}
             + [Implement standard ad metadata on Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [Implement standard ad metadata on iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-            + [Implement standard ad metadata on JavaScript](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+            + [Implement standard ad metadata on JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+            + [Implement standard ad metadata on JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js3.md)
             + [Implement standard ad metadata on Roku](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
     + Track Chapters and Segments {#track-chapters}
         + [Overview](sdk-implement/track-chapters/track-chapters-overview.md)
         + [Track Chapters and Segments on Android](sdk-implement/track-chapters/track-chapters-android.md)
         + [Track Chapters and Segments on iOS](sdk-implement/track-chapters/track-chapters-ios.md)
-        + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
+        + [Track Chapters and Segments on JavaScript 2.x](sdk-implement/track-chapters/track-chapters-js.md)
+        + [Track Chapters and Segments on JavaScript 3.x](sdk-implement/track-chapters/track-chapters-js3.md)
         + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
         + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
     + Track Quality of Experience {#track-qos}
