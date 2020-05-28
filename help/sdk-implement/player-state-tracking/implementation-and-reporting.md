@@ -90,7 +90,7 @@ All player state metrics can be used for any reporting visualization available i
 
 In Analytics Workspace, all new properties are located in the metrics panel. For example, you can search by `full screen` to view the full screen data in the metrics panel.
 
-![](assets/analysis-workspace.png)
+![](assets/full-screen-report.png)
 
 ## Importing player stated metrics to Adobe Experience Platform
 
