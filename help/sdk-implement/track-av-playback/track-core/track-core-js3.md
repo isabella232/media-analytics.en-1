@@ -1,5 +1,5 @@
 ---
-title: Track core playback on JavaScript v3.x
+title: Track core playback using JavaScript v3.x
 description: This topic describes how to implement core tracking using the Media SDK in a browser using JavaScript 3.x apps.
 ---
 
