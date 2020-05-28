@@ -1,15 +1,13 @@
 ---
-title: Track buffering using JavaScript 2.x
+title: Track buffering using JavaScript 3.x
 description: Describes tracking buffering events in browser apps (JS).
-uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-
 ---
 
-# Track buffering using JavaScript 2.x{#track-buffering-on-javascript}
+# Track buffering using JavaScript 3.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation across all 3.x SDKs. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Buffer tracking constants
 
@@ -24,7 +22,7 @@ uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 
    ```js
    _onBufferStart = function() {
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
+       tracker.trackEvent(ADB.Media.Event.BufferStart);
    };
    ```
 
@@ -32,7 +30,7 @@ uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 
    ```js
    _onBufferComplete = function() {
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
+       tracker.trackEvent(ADB.Media.Event.BufferComplete);
    };
    ```
 
