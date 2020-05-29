@@ -57,7 +57,7 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 
     * **Standard metadata**
 
-       [Implement standard metadata on JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)     
+       [Implement standard metadata on JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)     
 
        >[!NOTE]
        >
