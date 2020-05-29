@@ -48,6 +48,16 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
    >
    > Media SDK (3.x) uses Media Collection API for tracking media which is different from the HB endpoint used in 2.x SDKs. Contact your Adobe representative to get more information.
 
+   Media configuration requires an instance of `AppMeasurement` with `visitor` configured.
+
+   ``` js
+
+   var appMeasurement = new AppMeasurement(“<rsid>”);
+   appMeasurement.visitor = visitor;
+   appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+
+   ```
+
    Here is a sample `MediaConfig` initialization:
 
    ```js
