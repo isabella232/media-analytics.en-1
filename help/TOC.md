@@ -94,16 +94,16 @@ sub-product: media analytics
         + [Overview](sdk-implement/track-chapters/track-chapters-overview.md)
         + [Track Chapters and Segments on Android](sdk-implement/track-chapters/track-chapters-android.md)
         + [Track Chapters and Segments on iOS](sdk-implement/track-chapters/track-chapters-ios.md)
-        + Track Chapters and Segments {#track-chapters-js}
+        + Track Chapters and Segments on JavaScript {#track-chapters-js}
             + [Track Chapters and Segments on JavaScript 2.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
             + [Track Chapters and Segments on JavaScript 3.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
         + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
         + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
-    + Track Quality of Experience {#track-qos}
+    + Track Quality of Experience on JavaScript {#track-qos}
         + [Overview](sdk-implement/track-qos/track-qos-overview.md)
         + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
         + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-        + Track Quality of Experience {#track-qos-js}
+        + Track Quality of Experience on JavaScript {#track-qos-js}
             + [Track Quality of Experience on JavaScript 2.x](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
             + [Track Quality of Experience on JavaScript 3.x](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
         + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
@@ -112,7 +112,7 @@ sub-product: media analytics
         + [Overview](sdk-implement/track-errors/track-errors-overview.md)
         + [Track Errors on Android](sdk-implement/track-errors/track-errors-android.md)
         + [Track Errors on iOS](sdk-implement/track-errors/track-errors-ios.md)
-        + Track Errors {#track-errors-js}
+        + Track Errors on JavaScript {#track-errors-js}
             + [Track Errors on JavaScript 2.x](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
             + [Track Errors on JavaScript 3.x](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
         + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
