@@ -49,7 +49,7 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
     appMeasurement.visitor = visitor;
     appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    ```
-   
+
 1. Configure Media SDK
 
    Media SDK should be configured once per webpage and the configuration applies to all the tracker instances created.
@@ -72,6 +72,8 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
     mediaConfig.ssl = true;
 
     ADB.Media.configure(mediaConfig, appMeasurement);
+
+  ```
 
 1. Create the `MediaTracker` instance.
 
