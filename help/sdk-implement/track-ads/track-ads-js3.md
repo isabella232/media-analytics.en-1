@@ -75,8 +75,8 @@ description: Implement ad tracking in browser (JS) applications using the Media 
       ```js
       /* Set context data */
       // Standard metadata keys provided by adobe.
-      adMetadata[ADB.Media.AdMetadataKeys.ADVERTISER]  ="Sample Advertiser";
-      adMetadata[ADB.Media.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
+      adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
+      adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
 
       // Custom metadata keys
       adMetadata["affiliate"] = "Sample affiliate";

@@ -19,19 +19,15 @@ description: This topic describes how to implement core tracking using the Media
     |  `name`  | string | Non empty string denoting media name. |
     |  `id`  | string | Non empty string denoting unique media identifier.  |
     |  `length`  | number | Positive number denoting length of media in seconds. Use 0 if length is unknown.  |
-    |  `streamType`  | string | [Stream type](link to streamType constants) or non empty string to denote media stream type.  |
-    |  `mediaType`  | [MediaType](link to MediaType constants)| Type of media (Audio or Video). |
+    |  `streamType`  | string |   |
+    |  `mediaType`  | | Type of media (Audio or Video). |
 
     **`StreamType` constants:**
 
     |  Constant Name  | Description&nbsp;&nbsp;  |
     |---|---|
     |  `VOD`  | Stream type for Video on Demand.  |
-    |  `LIVE`  | Stream type for LIVE content.  |
-    |  `LINEAR`  | Stream type for LINEAR content.  |
     |  `AOD`  | Stream type for Audio on Demand.  |
-    |  `AUDIOBOOK`  | Stream type for Audio Book.  |
-    |  `PODCAST`  | Stream type for Podcast.  |
 
     **`MediaType` constants:**
 
@@ -71,8 +67,8 @@ description: This topic describes how to implement core tracking using the Media
         var contextData = {};
 
         //Standard metadata
-        contextData[ADB.Media.VideoMetadataKeys.EPISODE] = "Sample Episode";
-        contextData[ADB.Media.VideoMetadataKeys.SHOW] = "Sample Show";
+        contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+        contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
 
         //Custom metadata
         contextData["isUserLoggedIn"] = "false";
@@ -93,8 +89,8 @@ description: This topic describes how to implement core tracking using the Media
     var contextData = {};
 
     //Standard metadata
-    contextData[ADB.Media.VideoMetadataKeys.EPISODE] = "Sample Episode";
-    contextData[ADB.Media.VideoMetadataKeys.SHOW] = "Sample Show";
+    contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+    contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
 
     //Custom metadata
     contextData["isUserLoggedIn"] = "false";

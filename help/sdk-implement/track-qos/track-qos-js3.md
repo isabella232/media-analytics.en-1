@@ -35,6 +35,7 @@ description: This topic describes implementing quality of experience (QoE, QoS) 
                                                    <startuptime>,
                                                    <fps>,
                                                    <droppedFrames>);
+    tracker.updateQoEObject(qoeObject);
 
     ```
 

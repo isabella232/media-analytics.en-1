@@ -21,16 +21,16 @@ _onVideoLoad = function () {
 
     //Set standard Video Metadata
     var contextData = {};
-    contextData[MediaHeartbeat.VideoMetadataKeys.SHOW] = "Sample Show";
-    contextData[MediaHeartbeat.VideoMetadataKeys.SEASON] = "Sample Season";
-    contextData[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode";
+    contextData = "Sample Show";
+    contextData = "Sample Season";
+    contextData = "Sample Episode";
 
     //Set standard Audio Metadata
     var contextData = {};
-    contextData[MediaHeartbeat.AudioMetadataKeys.ARTIST] = "Sample Artist";
-    contextData[MediaHeartbeat.AudioMetadataKeys.ALBUM] = "Sample Album";
-    contextData[MediaHeartbeat.AudioMetadataKeys.LABEL] = "Sample Label";
+    contextData = "Sample Artist";
+    contextData = "Sample Album";
+    contextData = "Sample Label";
 
-    this._mediaHeartbeat.trackSessionStart(mediaObject, contextData);
+    this.tracker.trackSessionStart(mediaObject, contextData);
 };
 ```
