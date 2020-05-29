@@ -34,8 +34,9 @@ Player State Tracking requires one of the following for data collection:
 
 Before implementing Player state tracking consider the following guidelines.
 
-* The player state is computed across all playback states – (no splitting)
-* You can measure multiple player states at the same time
-* The maximum number of player states that can be tracked during a playback is 10 
-* Player state metrics are sent to Analytics for reporting on the Media Close call ONLY
-* Player states are captured for each individual playback session—the player state is not computed across playbacks 
+* The player state is computed across all playback states (no splitting).
+* You can measure multiple player states at the same time.
+* The maximum number of player states that can be tracked during a playback is 10.
+* Player state metrics are sent to Analytics for reporting on the Media Close call only.
+* Knowledge of the application status isn’t maintained after a state stops. After a state ends, the state must be started again to continue tracking. For every new playback state, the state of the player must be started again. 
+* Player states are captured for each individual playback session—the player state is not computed across playbacks.

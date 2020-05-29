@@ -149,7 +149,27 @@ The player state tracking capabilities can be attached to an audio or video stre
 | --- | --- | --- |
 | <ul> <li> **SDK Key**<br/> Automatically set  </li> <li> **API Key**<br/> N/A </li> <li> **Required**<br/> No </li> <li> **Type**<br/> number </li> <li> **Sent with**<br/> Media Close </li> <li> **Min. SDK Version**<br/> 3.0</li> <li> **Sample Value**<br/> TRUE </li><li> **Description**<br/>The length of time In Focus was displayed. This metric is set to 1 only if at least one In Focus State occurred during a playback session. <br/> **Important** <br/> If this event is set, the time is equal to how long the video was in In Focus state. If this event is not set, no value is sent.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> (media.states.infocus.time)<br/></li> <li> **Heartbeat**<br/> N/A </li> </ul> | <ul> <li> **Available**<br/> Yes </li> <li> **Reserved Variable**<br/> event </li> <li> **Report Name**<br/> In Focus Total Duration </li> <li> **Context Data**<br/> (media.states.infocus.time)<br/> </li> <li> **Data Feed**<br/> media.states.infocus.time </li> <li> **Audience Manager**<br/> (c_contextdata.media.states.infocus.time) </li> </ul> |
 
+## Properties List for XDM Identities
 
+Data stored in Analytics could be used for any purpose and the Player State metrics can be imported into Adobe Experience Platform using XDM and used with Customer Journey Analytics.
+
+| Player State Property                 | Mapping                                                                    |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set         | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet         |
+| a.media.states.fullScreen.count       | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount       |
+| a.media.states.fullScreen.time        | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime        |
+| a.media.states.mute.set               | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet               |
+| a.media.states.mute.count             | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount             |
+| a.media.states.mute.time              | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime              |
+| a.media.states.closeCaption.set       | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet       |
+| a.media.states.closeCaption.count     | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount     |
+| a.media.states.closeCaption.time      | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime      |
+| a.media.states.pictureInPicture.set   | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet   |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time  | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime  |
+| a.media.states.inFocus.set            | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet            |
+| a.media.states.inFocus.count          | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount          |
+| a.media.states.inFocus.time           | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime           |
 
 ## Related APIs {#related_apis_section}
 
