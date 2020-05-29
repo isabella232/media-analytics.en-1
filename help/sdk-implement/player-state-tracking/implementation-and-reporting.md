@@ -94,4 +94,4 @@ In Analytics Workspace, all new properties are located in the metrics panel. For
 
 ## Importing player stated metrics to Adobe Experience Platform
 
-Data stored in Analytics could be used for any purpose and the player state metrics can be imported into Adobe Experience Platform using XDM and used with Customer Journey Analytics. The standard state properties have specific properties while the custom states are properties are available via the custom events. For additional information, see the properties list for XDM identities at ?LINK TO METRIC LIST?.
+Data stored in Analytics could be used for any purpose and the player state metrics can be imported into Adobe Experience Platform using XDM and used with Customer Journey Analytics. The standard state properties have specific properties while the custom states are properties are available via the custom events.
