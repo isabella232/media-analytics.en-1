@@ -18,8 +18,8 @@ ADB.Media.createAdObject(<AD_NAME>,
 
 // Set standard Ad Metadata
 var adMetadata = {};
-adMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser";
-adMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
+adMetadata[MediaHeartbeat.AdMetadataKeys.Advertiser] = "Sample Advertiser";
+adMetadata[MediaHeartbeat.AdMetadataKeys.CampaignId] = "Sample Campaign";
 
 tracker.trackEvent(ADB.Media.Event.AdStart, adObject, adMetadata);
 ```
