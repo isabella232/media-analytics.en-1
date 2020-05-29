@@ -58,7 +58,7 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
    >
    > Media SDK (3.x) uses Media Collection API for tracking media which is different from the HB endpoint used in 2.x SDKs. Contact your Adobe representative to get more information.
 
-  Here is a sample `MediaConfig` initialization:
+   Here is a sample `MediaConfig` initialization:
 
    ```js
 
@@ -73,7 +73,7 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
 
     ADB.Media.configure(mediaConfig, appMeasurement);
 
-  ```
+   ```
 
 1. Create the `MediaTracker` instance.
 
