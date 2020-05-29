@@ -40,6 +40,17 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
       >
       >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
 
+1. Create an instance of `AppMeasurement` and configure `visitor`.
+
+   The Media SDK configuration requires an instance of `AppMeasurement` with `visitor` configured.
+
+ ``` js
+ var appMeasurement = new AppMeasurement(“<rsid>”);
+ appMeasurement.visitor = visitor;
+ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+
+ ```
+
 1. Configure Media SDK
 
    Media SDK should be configured once per webpage and the configuration applies to all the tracker instances created.
@@ -47,6 +58,7 @@ description: Media SDK application setup for implementation on JavaScript 3.x.
    >[!IMPORTANT]
    >
    > Media SDK (3.x) uses Media Collection API for tracking media which is different from the HB endpoint used in 2.x SDKs. Contact your Adobe representative to get more information.
+
 
    Here is a sample `MediaConfig` initialization:
 
