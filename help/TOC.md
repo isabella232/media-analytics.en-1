@@ -99,7 +99,7 @@ sub-product: media analytics
             + [Track Chapters and Segments on JavaScript 3.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
         + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
         + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
-    + Track Quality of Experience on JavaScript {#track-qos}
+    + Track Quality of Experience {#track-qos}
         + [Overview](sdk-implement/track-qos/track-qos-overview.md)
         + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
         + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
