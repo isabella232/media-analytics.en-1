@@ -103,16 +103,18 @@ sub-product: media analytics
         + [Overview](sdk-implement/track-qos/track-qos-overview.md)
         + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
         + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-        + [Track Quality of Experience on JavaScript 2.x](sdk-implement/track-qos/track-qos-js.md)
-        + [Track Quality of Experience on JavaScript 3.x](sdk-implement/track-qos/track-qos-js3.md)
+        + Track Quality of Experience {#track-qos-js}
+            + [Track Quality of Experience on JavaScript 2.x](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
+            + [Track Quality of Experience on JavaScript 3.x](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
         + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
         + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
     + Track Errors {#track-errors}
         + [Overview](sdk-implement/track-errors/track-errors-overview.md)
         + [Track Errors on Android](sdk-implement/track-errors/track-errors-android.md)
         + [Track Errors on iOS](sdk-implement/track-errors/track-errors-ios.md)
-        + [Track Errors on JavaScript 2.x](sdk-implement/track-errors/track-errors-js.md)
-        + [Track Errors on JavaScript 3.x](sdk-implement/track-errors/track-errors-js3.md)
+        + Track Errors {#track-errors-js}
+            + [Track Errors on JavaScript 2.x](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
+            + [Track Errors on JavaScript 3.x](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
         + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
         + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
     + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
