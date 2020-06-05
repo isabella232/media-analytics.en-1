@@ -187,7 +187,6 @@ sub-product: media analytics
         + [Timeline 1 - View to end of content](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
         + [Timeline 2 - User abandons session](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
         + [Timeline 3 - Chapters](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-+ [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + Cookbook {#media-analytics-cookbook}
     + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](media-analytics-cookbook/media-dimensions.md)
@@ -209,6 +208,7 @@ sub-product: media analytics
         + [Media Concurrent Viewers](media-reports/media-default-reports/media-concurrent-viewers.md)
         + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
++ [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
