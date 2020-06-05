@@ -10,7 +10,7 @@ With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will
 
 ## Top 5 Things to Know
 
-1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android.
+1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android. For additional information, see [Version 4 Mobile SDKs end-of-support FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 1. Analytics for Audio and Video implementation requires the AEP SDK and use of the Analytics and Media Analytics extensions. Starting September 1, 2021, you should use the new AEP SDKs and extensions.  Media Analytics extensions are configured using Adobe Launch.  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
@@ -44,7 +44,7 @@ Please reach out to your Adobe Customer Success Manager if you have any question
 
 1. **Do I need to have Launch as a tag management system? What if I don't want to use Launch?**
 
-   For mobile, Launch is required to configure the Media Extensions such as the Mobile Services UI. In the mobile app use case, it is not used as a tag management system.
+   For the mobile app use case, Launch is not used as a tag management system as it is for web.  Using the Launch UI is required for configuring the SDK extensions. This is similar to how you use the Adobe Mobile Services UI to configure the mobile v4 SDK. For installation, the benefit of using Launch is that it gives you customized installation instructions based on the extension you choose.
 
 1. **Does this end of support impact the SDK for tvOS?**
 
