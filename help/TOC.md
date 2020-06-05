@@ -187,7 +187,7 @@ sub-product: media analytics
         + [Timeline 1 - View to end of content](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
         + [Timeline 2 - User abandons session](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
         + [Timeline 3 - Chapters](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-    + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
++ [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + Cookbook {#media-analytics-cookbook}
     + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](media-analytics-cookbook/media-dimensions.md)
