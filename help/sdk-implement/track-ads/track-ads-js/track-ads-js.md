@@ -1,11 +1,11 @@
 ---
-title: Track ads on JavaScript
+title: Track ads using JavaScript 2.x
 description: Implement ad tracking in browser (JS) applications using the Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 
 ---
 
-# Track ads on JavaScript{#track-ads-on-javascript}
+# Track ads using JavaScript 2.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -25,15 +25,15 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   `AdBreakObject` reference: 
+   `AdBreakObject` reference:
 
    | Variable Name | Description | Required |
    | --- | --- | :---: |
    | `name` | Ad break name such as pre-roll, mid-roll, and post-roll.  | Yes |
    | `position` | The number position of the ad break starting with 1.  | Yes |
-   | `startTime` | Playhead value at the start of the ad break.  | Yes | 
+   | `startTime` | Playhead value at the start of the ad break.  | Yes |
 
-   Ad break object creation: 
+   Ad break object creation:
 
    ```js
    var adBreakObject =  
@@ -42,7 +42,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
                                         <START_TIME>);
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break: 
+1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
 
    ```js
    mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);
@@ -50,7 +50,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 
 1. Identify when the ad starts and create an `AdObject` instance using the ad information.
 
-   `AdObject` reference: 
+   `AdObject` reference:
 
    |  Variable Name  | Description  | Required  |
    | --- | --- | :---: |
@@ -59,7 +59,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
    |  `position`  | The number position of the ad within the ad break, starting with 1. | Yes  |
    |  `length`  | Ad length  | Yes  |
 
-   Ad object creation: 
+   Ad object creation:
 
    ```js
    var adObject =  
@@ -71,52 +71,52 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 
 1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
-    * [Implement standard ad metadata on JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+    * [Implement standard ad metadata on JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:     
-    
+
       ```js    
-      /* Set custom context data */ 
-      var adCustomMetadata = { 
-          affiliate: "Sample affiliate", 
-          campaign: "Sample ad campaign", 
-          creative: "Sample creative" 
+      /* Set custom context data */
+      var adCustomMetadata = {
+          affiliate: "Sample affiliate",
+          campaign: "Sample ad campaign",
+          creative: "Sample creative"
       };
       ```
 
 1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
 
-   Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call: 
+   Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call:
 
    ```js
-   _onAdStart = function() { 
+   _onAdStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart,  
                                        adObject,  
-                                       adCustomMetadata); 
+                                       adCustomMetadata);
    };
    ```
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event: 
+1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event:
 
    ```js
-   _onAdComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
+   _onAdComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
    };
    ```
 
-1. If ad playback did not complete because the user chose to skip the ad, track the `AdSkip` event: 
+1. If ad playback did not complete because the user chose to skip the ad, track the `AdSkip` event:
 
    ```js
-   _onAdSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
+   _onAdSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
    };
    ```
 
-1. If there are any additional ads within the same `AdBreak`, repeat steps 3 through 7 again. 
-1. When the ad break is complete, use the `AdBreakComplete` event to track: 
+1. If there are any additional ads within the same `AdBreak`, repeat steps 3 through 7 again.
+1. When the ad break is complete, use the `AdBreakComplete` event to track:
 
    ```js
-   _onAdBreakComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+   _onAdBreakComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
    };
    ```
 

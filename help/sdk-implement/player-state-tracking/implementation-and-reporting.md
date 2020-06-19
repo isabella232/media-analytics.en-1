@@ -15,7 +15,7 @@ The Media SDK includes two new methods for custom state tracking:
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have "media.stateName" as the required parameter:
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` and `stateEnd`
 
@@ -78,15 +78,20 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 The metrics provided for each individual state are computed and pushed to Adobe Analytics as Context Data parameters and stored for reporting purposes. Three metrics are available for each state:
 
-* `a.media.states.(media.state.name).set = true` — Set to true if the state was set at least once per each specific playback of a stream.
-* `a.media.states.(media.state.name).count = 4` — Identifies the number of occurrences of a state during per each individual playback of a stream
-* `a.media.states.(media.state.name).time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
+* `a.media.states.[state.name].set = true` — Set to true if the state was set at least once per each specific playback of a stream.
+* `a.media.states.[state.name].count = 4` — Identifies the number of occurrences of a state during per each individual playback of a stream
+* `a.media.states.[state.name].time = 240` — Identifies the total state duration in seconds per each individual playback of a stream
 
 ## Reporting
 
-All state metrics can be used for any reporting visualization or component (segment, calculated metrics).
-TBD - check source/wiki for updated information - for screen shot from AW
+All player state metrics can be used for any reporting visualization available in Analysis Workspace or a component (segment, calculated metrics) once a report suite is enabled for player state tracking. The new metrics could be enabled from the Admin Console for each individual report using Media Reporting Setup (Edit Settings > Media Management > Media Reporting).
+
+![](assets/report-setup.png)
+
+In Analytics Workspace, all new properties are located in the metrics panel. For example, you can search by `full screen` to view the full screen data in the metrics panel.
+
+![](assets/full-screen-report.png)
 
 ## Importing player stated metrics to Adobe Experience Platform
 
-Data stored in Analytics could be used for any purpose and the player state metrics can be imported into Adobe Experience Platform using XDM and used with Customer Journey Analytics. The standard state properties have specific properties while the custom states are properties are available via the custom events. For additional information, see the properties list for XDM identities at ?LINK TO METRIC LIST?.
+Data stored in Analytics could be used for any purpose and the player state metrics can be imported into Adobe Experience Platform using XDM and used with Customer Journey Analytics. The standard state properties have specific properties while the custom states are properties are available using the custom events. For additional information about the standard state properties, see the *Properties List for XDM Identities* section on the [Player State Parameters](/help/metrics-and-metadata/player-state-parameters.md) page.

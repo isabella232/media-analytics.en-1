@@ -1,11 +1,11 @@
 ---
-title: Track errors on JavaScript
+title: Track errors using JavaScript 2.x
 description: This topic describes implementing error tracking using the Media SDK in browser apps (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 
 ---
 
-# Track errors on JavaScript{#track-errors-on-javascript}
+# Track errors using JavaScript 2.x{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -13,15 +13,14 @@ uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 
 ## Implement error tracking
 
-1. Track media player errors: 
+1. Track media player errors:
 
     ```js
-    onPlayerError = function() { 
-        this._mediaHeartbeat.trackError("mediaErrorId"); 
+    onPlayerError = function() {
+        this._mediaHeartbeat.trackError("mediaErrorId");
     };
     ```
 
 >[!NOTE]
 >
 >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
-

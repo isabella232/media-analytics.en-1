@@ -1,11 +1,11 @@
 ---
-title: Track chapters and segments on JavaScript
+title: Track chapters and segments using JavaScript 2.x
 description: This topic describes implementing chapter and segment tracking using the Media SDK in browser apps (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 
 ---
 
-# Track chapters and segments on JavaScript{#track-chapters-and-segments-on-javascript}
+# Track chapters and segments using JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -14,20 +14,20 @@ uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 1. Identify when the chapter start event occurs and create the `ChapterObject` instance by using the chapter information.
 
     `ChapterObject` chapter tracking reference:  
- 
+
     >[!NOTE]
     >
     >These variables are only required if you are planning to track chapters.
- 
+
     | Variable Name | Description | Required |
     | --- | --- | :---: |
     | `name` | Chapter name | Yes |
     | `position` | Chapter position | Yes |
     | `length` | Chapter length | Yes |
     | `startTime` | Chapter start time | Yes |
- 
-    Chapter object: 
- 
+
+    Chapter object:
+
     ```js
     var chapterInfo =  
       MediaHeartbeat.createChapterObject(<CHAPTER_NAME>,  
@@ -36,41 +36,40 @@ uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
                                          <START_TIME>);
     ```
 
-1. If you include custom metadata for the chapter, create the context data variables for the metadata: 
+1. If you include custom metadata for the chapter, create the context data variables for the metadata:
 
     ```js
-    var chapterCustomMetadata = { 
+    var chapterCustomMetadata = {
         segmentType: "Sample segment type",  
         segmentName: "Sample segment name",  
-        segmentInfo: "Sample segment info" 
+        segmentInfo: "Sample segment info"
     };
     ```
 
-1. To begin tracking the chapter playback, call the `ChapterStart` event in the `MediaHeartbeat` instance: 
+1. To begin tracking the chapter playback, call the `ChapterStart` event in the `MediaHeartbeat` instance:
 
     ```js
-    _onChapterStart = function() { 
+    _onChapterStart = function() {
         this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                         chapterObject,  
-                                        chapterCustomMetadata); 
+                                        chapterCustomMetadata);
     };
     ```
 
-1. When playback reaches the chapter end boundary, as defined by your custom code, call the `ChapterComplete` event in the `MediaHeartbeat` instance: 
+1. When playback reaches the chapter end boundary, as defined by your custom code, call the `ChapterComplete` event in the `MediaHeartbeat` instance:
 
     ```js
-    _onChapterComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+    _onChapterComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
     };
     ```
 
-1. If chapter playback did not complete because the user chose to skip the chapter (for example, if the user seeks out of the chapter boundary), call the `ChapterSkip` event in the MediaHeartbeat instance: 
+1. If chapter playback did not complete because the user chose to skip the chapter (for example, if the user seeks out of the chapter boundary), call the `ChapterSkip` event in the MediaHeartbeat instance:
 
     ```js
-    _onChapterSkip = function() { 
-        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+    _onChapterSkip = function() {
+        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
     };
     ```
 
 1. If there are any additional chapters, repeat steps 1 through 5.
-

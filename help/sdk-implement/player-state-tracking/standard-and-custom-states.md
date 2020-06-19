@@ -24,14 +24,15 @@ The data is computed in the same way for standard and custom states but the data
 
 ## Guidelines
 
-* One video session is limited to 10 unique custom player states.
-* If multiple player states pass, only the first 10 are retained and forwarded downstream to VA(?video analytics) processing component.
+* One video session is limited to 10 player states.
+* Any combination of states is allowed.
+* If multiple player states pass, only the first 10 are retained and forwarded downstream to the VA processing component.
 * The maximum of 10 states is applied for all the states, no matter if they are closed or not.
-* The same state can be started and ended any number of times and is counted as a single state.
-* Every state that is exceeding the maximum allowed custom? states (10) are discarded.
+* A state can start and end multiple times and it is counted as a single state. For example, `closedCapationing` can be started and stopped five times but it will count as a single state.
+* Every state that exceeds the maximum of 10 allowed states are discarded.
 
 ## Custom states
 
-With the ability to create custom states, you can capture custom actions  and update custom metadata during a playback session.
+With the ability to create custom states, you can capture custom actions and update custom metadata during a playback session.
 
-NEED more information about custom states
+For information about creating custom states, see the [Media API Reference guide: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)

@@ -6,8 +6,6 @@ description: This topic includes examples of the Player State Tracking feature.
 
 # Player State Tracking Examples
 
-Add examples
-
 
 ## Long Pause example
 

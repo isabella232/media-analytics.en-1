@@ -1,11 +1,11 @@
 ---
-title: Track buffering on JavaScript
+title: Track buffering using JavaScript 2.x
 description: Describes tracking buffering events in browser apps (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 
 ---
 
-# Track buffering on JavaScript{#track-buffering-on-javascript}
+# Track buffering using JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -20,19 +20,19 @@ uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 
 ## Implement buffering
 
-1. Listen for the playback buffering events from media player, and on buffer start event notification, track buffering using the `BufferStart` event. 
+1. Listen for the playback buffering events from media player, and on buffer start event notification, track buffering using the `BufferStart` event.
 
    ```js
-   _onBufferStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+   _onBufferStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
    };
    ```
 
-1. On buffer complete notification from the media player, track the end of buffering using the `BufferComplete` event. 
+1. On buffer complete notification from the media player, track the end of buffering using the `BufferComplete` event.
 
    ```js
-   _onBufferComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+   _onBufferComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
    };
    ```
 
