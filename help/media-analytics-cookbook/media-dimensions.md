@@ -17,9 +17,9 @@ of context data parameters used for media are available here: [Audio and video p
 
 You will also need to re-enable media tracking configuration from the Admin console for each report that you want to enable this feature for.
 
->[!NOTE] 
->The media metrics are _not_ available to be used outside of media tracking because most of these are computed by Media Analytics
->based on heartbeat events. Also, it is important that the media metrics not be inflated by different implementations.
+>[!NOTE]
+>
+>The media metrics are _not_ available to be used outside of media tracking because most of these are computed by Media Analytics based on heartbeat events. Also, it is important that the media metrics not be inflated by different implementations.
 
 ## How To
 

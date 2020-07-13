@@ -182,7 +182,8 @@ Table data description:
 
 
 
->[!IMPORTANT] 
+>[!IMPORTANT]
+>
 >If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. 
 
 ### Buffer Impacted Streams 
@@ -193,7 +194,8 @@ Table data description:
 
 
 
->[!IMPORTANT] 
+>[!IMPORTANT]
+>
 >If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. 
 
 ### Bitrate Change Impacted Streams 
@@ -204,7 +206,8 @@ Table data description:
 
 
 
->[!IMPORTANT] 
+>[!IMPORTANT]
+>
 >If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. 
 
 ### Average Bitrate 
@@ -223,7 +226,8 @@ Table data description:
 
 
 
->[!IMPORTANT] 
+>[!IMPORTANT]
+>
 >If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. 
 
 ### Dropped Frame Impacted Streams 
@@ -234,7 +238,8 @@ Table data description:
 
 
 
->[!IMPORTANT] 
+>[!IMPORTANT]
+>
 >If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. 
 
 ### Stalling Impacted Streams 
@@ -243,9 +248,8 @@ Table data description:
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> Automatically set </li> <li> **API Key:**<br/> N/A </li> <li> **Required:**<br/> No </li> <li> **Type:**<br/> string </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** 1.5+ </li> <li> **Sample Value:**<br/> TRUE </li><li> **Description:**<br/>The number of streams in which a stalled event occurred. This metric is set to 1 only if at least one stall occurred during playback. Customers will have to create their own processing rules to have the value available for reporting.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stall) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> event </li> <li> **Report Name:**<br/> </li> <li> **Data Feed:**<br/> N/A </li> <li> **Context Data:**<br/> (a.media.qoe.<br/>stall) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>stall) </li> </ul> |
 
-
-
->[!IMPORTANT] 
+>[!IMPORTANT]
+>
 >If this event is set, the only possible value is TRUE. If this event is not set, no value is sent. 
 
 ### Stalling Events 
