@@ -28,6 +28,7 @@ Each approach has its advantages and disadvantages:
 ## Implementation {#implementation}
 
 ### Supported platforms
+
 Content tracking is supported on iOS and Android mobile devices.
 
 ### Event schemas
