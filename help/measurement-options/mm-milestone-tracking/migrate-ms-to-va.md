@@ -30,28 +30,8 @@ The following tables provide translations between the Milestone solution and the
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextDatar <br> = true;` | N/A | All Media Analytics data is only sent using Context Data. |
-| Media.contextDataMapping | ``` s.Media.contextDataMapping = { <br>"a.media.name":"eVar2,prop2",<br>"a.media.segment":"eVar3",
-  "a.contentType":"eVar1",
-  "a.media.timePlayed":"event3",
-  "a.media.view":"event1",
-  "a.media.segmentView":"event2",
-  "a.media.complete":"event7",
-  "a.media.milestones": {
-    25:"event4",
-    50:"event5",
-    75:"event6"
-  }
-}; ```
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Media Analytics context data is automatically populated into
-reserved variables. Mapping to eVars, props, and events I no longer
-needed within the implementation code. Customers can map context
-data to variables using processing rules.
-</td>
-</tr>
+| Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `"a.media.segment":"eVar3",` <br> `"a.contentType":"eVar1",` <br> `"a.media.timePlayed":"event3",` <br> `"a.media.view":"event1",` <br> `"a.media.segmentView":"event2",` <br> `"a.media.complete":"event7",` <br> `"a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | N/A | Media Analytics context data is automatically populated into reserved variables. Mapping to eVars, props, and events I no longer needed within the implementation code. Customers can map context data to variables using processing rules. |
+
 <tr>
 <td>
 Media.trackVars
