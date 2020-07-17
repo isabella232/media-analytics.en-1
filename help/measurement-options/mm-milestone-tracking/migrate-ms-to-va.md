@@ -29,233 +29,25 @@ The following tables provide translations between the Milestone solution and the
 
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
-| Media.trackUsingContextData | s.Media.trackUsingContextDatar <br>   = true; | N/A | All Media Analytics data is only sent using Context Data. |
-| Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `"a.media.segment":"eVar3",` <br> `"a.contentType":"eVar1",` <br> `"a.media.timePlayed":"event3",` <br> `"a.media.view":"event1",` <br> `"a.media.segmentView":"event2",` <br> `"a.media.complete":"event7",` <br> `"a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | N/A | Media Analytics context data is automatically populated into reserved variables. Mapping to eVars, props, and events I no longer needed within the implementation code. Customers can map context data to variables using processing rules. |
-
-Media.trackVars `s.Media.trackVars = 
-  "events,
-  prop2,
-  eVar1,
-  eVar2,
-  eVar3";
-</pre>
-</td>
-<td>N/A
-</td>
-<td>No longer needed since mapping happens via reserved variables and
-processing rules.
-</td>
-</tr>
-<tr>
-<td>
-Media.trackEvents
-</td>
-<td>
-<pre>
-s.Media.trackEvents = 
-  "event1,
-  event2,
-  event3,
-  event4,
-  event5,
-  event6,
-  event7"
-</pre>
-</td>
-<td>N/A
-</td>
-<td>No longer needed since mapping happens via reserved variables and
-processing rules.
-</td>
-</tr>
-</tbody>
-</table>
+| Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | N/A | All Media Analytics data is only sent using Context Data. |
+| Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | N/A | Media Analytics context data is automatically populated into reserved variables. Mapping to eVars, props, and events I no longer needed within the implementation code. Customers can map context data to variables using processing rules. |
+| Media.trackVars | `s.Media.trackVars =` <br> `  "events,` <br> `  prop2,` <br> `  eVar1,` <br> `  eVar2,` <br> `  eVar3";` | N/A | No longer needed since mapping happens via reserved variables and processing rules. |
+| Media.trackEvents | `s.Media.trackEvents =` <br> `  "event1,` <br> `  event2,` <br> `  event3,` <br> `  event4,` <br> `  event5,` <br> `  event6,` <br> `  event7"` | N/A | No longer needed since mapping happens via reserved variables and processing rules. |
 
 ### Optional variables
 
-<table>
-<thead>
-<tr>
-<th>Milestone
-</th>
-<th>Milestone Syntax
-</th>
-<th>Media Analytics
-</th>
-<th>Media Analytics Syntax
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Media.autoTrack
-</td>
-<td>
-<pre>
-s.Media.autoTrack
-  = true;
-</pre>
-</td>
-<td>N/A
-</td>
-<td>We no longer provide pre-built player mappings.
-</td>
-</tr>
-<tr>
-<td>
-Media.autoTrackNetStreams
-</td>
-<td>
-<pre>
-s.Media.
-  autoTrackNetStreams
-  = true
-</pre>
-</td>
-<td>N/A
-</td>
-<td>We no longer provide pre-built player mappings.
-</td>
-</tr>
-<tr>
-<td>
-Media.completeByCloseOffset
-</td>
-<td>
-<pre>
-s.Media.
-  completeByCloseOffset
-  = true
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Content Complete only supports a 100% progress marker.
-</td>
-</tr>
-<tr>
-<td>
-Media.completeCloseOffsetThreshold
-</td>
-<td>
-<pre>
-s.Media.
-  completeCloseOffsetThreshold
-  = 1
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Content Complete only supports a 100% progress marker.
-</td>
-</tr>
-<tr>
-<td>
-Media.playerName
-</td>
-<td>
-<pre>
-s.Media.playerName
-  = "Custom Player Name"
-</pre>
-</td>
-<td>
-SDK Key: playerName; 
-API Key: media.playerName
-</td>
-<td>
-<pre>
-MediaHeartbeatConfig.
-  playerName
-</pre>
-</p>
-</td>
-</tr>
-<tr>
-<td>
-Media.trackSeconds
-</td>
-<td>
-<pre>
-s.Media.
-  trackSeconds
-  = 15
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Media Analytics is set to 10 seconds for content and 1 second for
-ads. No other options are available.
-</td>
-</tr>
-<tr>
-<td>
-Media.trackMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  trackMilestones
-  = "25,50,75";
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Media Analytics always tracks progress markers at 10%, 25%, 50%,
-75%, 95%
-</td>
-</tr>
-<tr>
-<td>
-Media.trackOffsetMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  trackOffsetMilestones
-  = "20,40,60";
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Media Analytics always tracks progress markers at 10%, 25%, 50%,
-75%, 95%
-</td>
-</tr>
-<tr>
-<td>
-Media.segmentByMilestones
-</td>
-<td>
-<pre>
-s.Media.segmentByMilestones
-  = true;
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Auto track is no longer available
-</td>
-</tr>
-<tr>
-<td>
-Media.segmentByOffsetMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  segmentByOffsetMilestones
-  = true;
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Auto track is no longer available
-</td>
-</tr>
-</tbody>
-</table>
+| Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
+| --- | --- | --- | --- |
+| Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/A | We no longer provide pre-built player mappings. |
+| Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/A | We no longer provide pre-built player mappings. |
+| Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | N/A | Content Complete only supports a 100% progress marker. |
+| Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | N/A | Content Complete only supports a 100% progress marker. |
+| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK Key: playerName;<br> API Key: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | N/A | Media Analytics is set to 10 seconds for content and 1 second for ads. No other options are available. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | N/A | Media Analytics always tracks progress markers at 10%, 25%, 50%, 75%, 95% |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | N/A | Media Analytics always tracks progress markers at 10%, 25%, 50%, 75%, 95% |
+| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | N/A | Auto track is no longer available |
+| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | N/A | Auto track is no longer available |
 
 ### Ad tracking variables
 
