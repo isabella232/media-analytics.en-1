@@ -19,52 +19,19 @@ The following tables provide translations between the Milestone solution and the
 
 | Milestone Metric | Variable Type | Media Analytics Metric |
 | --- | --- | --- |
-| Content | eVar<br/><br/>Default expiration: Visit | Content |
-| Content Type | eVar<br/><br/> Default expiration: Page view | Content Type |
-| Content Time Spent | Event<br/><br/> Type: Counter | Content Time Spent |
-| Video Initiates | Event<br/><br/> Type: Counter | Video Initiates |
-| Video Completes | Event<br/><br/> Type: Counter | Content Complete |
+| Content | eVar<br>Default expiration: Visit | Content |
+| Content Type | eVar<br> Default expiration: Page view | Content Type |
+| Content Time Spent | Event<br> Type: Counter | Content Time Spent |
+| Video Initiates | Event<br> Type: Counter | Video Initiates |
+| Video Completes | Event<br> Type: Counter | Content Complete |
 
 ### Media Module variables
 
-<table>
-<thead>
-<tr>
-<th>Milestone
-</th>
-<th>Milestone Syntax
-</th>
-<th>Media Analytics
-</th>
-<th>Media Analytics Syntax
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Media.trackUsingContextData
-</td>
-<td>
-<pre>
-s.Media.trackUsingContextData
-  = true;
 </pre>
-</td>
-<td>N/A
-</td>
-<td>All Media Analytics data is only sent using Context Data.
-</td>
-</tr>
-<tr>
-<td>
-Media.contextDataMapping
-</td>
-<td>
-<pre>
-s.Media.contextDataMapping = {
-  "a.media.name":"eVar2,prop2",
-  "a.media.segment":"eVar3",
+| Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
+| --- | --- | --- | --- |
+| Media.trackUsingContextData | 's.Media.trackUsingContextDatar <br> = true;' | N/A | All Media Analytics data is only sent using Context Data. |
+| Media.contextDataMapping | 's.Media.contextDataMapping = { <br>"a.media.name":"eVar2,prop2",<br>"a.media.segment":"eVar3",
   "a.contentType":"eVar1",
   "a.media.timePlayed":"event3",
   "a.media.view":"event1",
