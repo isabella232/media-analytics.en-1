@@ -27,10 +27,10 @@ The following tables provide translations between the Milestone solution and the
 
 ### Media Module variables
 
-</pre>
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | 's.Media.trackUsingContextDatar <br> = true;' | N/A | All Media Analytics data is only sent using Context Data. |
+
 | Media.contextDataMapping | 's.Media.contextDataMapping = { <br>"a.media.name":"eVar2,prop2",<br>"a.media.segment":"eVar3",
   "a.contentType":"eVar1",
   "a.media.timePlayed":"event3",
