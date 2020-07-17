@@ -51,108 +51,19 @@ The following tables provide translations between the Milestone solution and the
 
 ### Ad tracking variables
 
-<table>
-<thead>
-<tr>
-<th>Milestone
-</th>
-<th>Milestone Syntax
-</th>
-<th>Media Analytics
-</th>
-<th>Media Analytics Syntax
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Media.adTrackSeconds
-</td>
-<td>
-<pre>
-s.Media.
-  adTrackSeconds
-  = 15
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Media Analytics is set to 10 seconds for content and 1 second for
-ads. No other options are available.
-</td>
-</tr>
-<tr>
-<td>
-Media.adTrackMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  adTrackMilestones
-  = "25,50,75";
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Progress markers are not provided by default for ads. Use
-calculated metrics to build ad progress markers.
-</td>
-</tr>
-<tr>
-<td>
-Media.adTrackOffsetMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  adTrackOffsetMilestones
-  = "20,40,60";
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Media Analytics is set to 1 second for ads. No other options are
-available.
-</td>
-</tr>
-<tr>
-<td>
-Media.adSegmentByMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  adSegmentByMilestones
-  = true;
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Auto track is no longer available
-</td>
-</tr>
-<tr>
-<td>
-Media.adSegmentByOffsetMilestones
-</td>
-<td>
-<pre>
-s.Media.
-  adSegmentByOffsetMilestones
-  = true;
-</pre>
-</td>
-<td>N/A
-</td>
-<td>Auto track is no longer available
-</td>
-</tr>
-</tbody>
-</table>
+| Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
+| --- | --- | --- | --- |
+| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/A | Media Analytics is set to 10 seconds for content and 1 second for ads. No other options are available. |
+| Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/A | Progress markers are not provided by default for ads. Use calculated metrics to build ad progress markers. |
+| Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | N/A | Media Analytics is set to 1 second for ads. No other options are available. |
+| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | N/A | Auto track is no longer available |
+| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | N/A | Auto track is no longer available |
 
 ### Media Module methods
 
+| Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
+| --- | --- | --- | --- |
+| 
 <table>
 <thead>
 <tr>
