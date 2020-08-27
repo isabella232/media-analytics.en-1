@@ -48,8 +48,8 @@ Please reach out to your Adobe Customer Success Manager if you have any question
 
 1. **Does this end of support impact the SDK for tvOS?**
 
-   Yes, for tvOS (version 10+) the recommended implementation is to migrate to the Media Analytics Extensions.  AEP SDK support and Media Analytics Extension support is planned for June 2020.  For additional information, see [Migrating from the standalone Media SDK to Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Yes, for tvOS (version 10+) the recommended implementation is to migrate to the Media Analytics Extensions.  For additional information, see [Migrating from the standalone Media SDK to Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **Does this end of support impact the SDK for FireTV and AndroidTV?​**
 
-   Yes, for FireTV and AndroidTV,  the recommended implementation is to migrate to the Media Analytics Extensions.  AEP SDK support and Media Analytics Extension support is planned for June 2020.  For additional information, see [Migrating from the standalone Media SDK to Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Yes, for FireTV and AndroidTV,  the recommended implementation is to migrate to the Media Analytics Extensions.  For additional information, see [Migrating from the standalone Media SDK to Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
