@@ -11,6 +11,7 @@ sub-product: media analytics
 
 + [Measuring Audio and Video in Adobe Analytics](media-overview.md)
 + [Supported Devices and Platforms](measurement-options/supported-devices.md)
++ [What's New in Media Analytics](whats-new.md)
 + Introduction to Audio and Video Analytics {#intro-to-ava}  
     + [Prerequisites](intro-to-ava/prereqs.md)
     + Implementation Paths {#implementation-paths}
