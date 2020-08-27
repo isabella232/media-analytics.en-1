@@ -25,6 +25,7 @@ The following tables provide translations between the Milestone solution and the
 | Video Initiates | Event <br> Type: Counter | Video Initiates |
 | Video Completes | Event <br> Type: Counter | Content Complete |
 
+
 ### Media Module variables
 
 | Milestone | Milestone Syntax | Media Analytics | Media Analytics Syntax |
@@ -82,3 +83,4 @@ The following tables provide translations between the Milestone solution and the
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause <br> or <br> trackEvent | `trackPause()` <br> or `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> or <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Use custom or standard metadata to set additional variables. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/A | Tracking call frequency is automatically set. |
+
