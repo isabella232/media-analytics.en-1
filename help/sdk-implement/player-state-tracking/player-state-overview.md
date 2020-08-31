@@ -25,6 +25,7 @@ Player State Tracking delivers the following benefits:
 
 Player State Tracking requires one of the following for data collection:
 * Media JS SDK 3.0+
+* Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions
 * Media Analytics Extension (for use with the Adobe Experience Platform (AEP) SDK)
    * Web: Adobe Media Analytics (3.x SDK) for Audio and Video v1.0+
    * Mobile: Adobe Media Analytics for Audio and Video v2.0+
