@@ -210,7 +210,7 @@ sub-product: media analytics
         + [Media Concurrent Viewers](media-reports/media-default-reports/media-concurrent-viewers.md)
         + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
     + Media Workspace Panels {#media-workspace-panels}  
-        + [Media Concurrent Viewers panel](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+        + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
