@@ -8,7 +8,9 @@ description: What's New includes information about new features and notification
 
 ![Banner](assets/media_analytics_banner.png)
 
+
 This page describes new features, fixes, and important notices in Media Analytics. It also highlights new documentation, training courses, and video tutorials to help you get the most out of Media Analytics.
+
 
 ## Release Notes
 
@@ -35,6 +37,7 @@ The Adobe Experience Cloud Release Notes describes new features, fixes, and impo
 | [Supported devices and platforms](https://docs.adobe.com/content/help/en/media-analytics/using/supported-devices.html) | February 19, 2019 | The minimum platform versions supported for each SDK are listed below. <br>- iOS: iOS 6+ <br>- Android: Android 5.0+ - Lollipop <br>-  Chrome: v22+<br>- Mozilla: v27+<br>- Safari: v7+<br>- IE: v1+ |
 | [Audio and video parameters](metrics-and-metadata/audio-video-parameters.md) | February 7, 2019 | Adobe Analytics for Video and Audio released a metric name change. <i>Media Initiates</i> will now be called <i>Media Starts</i>. This change was made to reflect industry standards in metrics and reporting, and to make the metric easily identifiable in reporting. |
 | [Audio and video parameters](metrics-and-metadata/audio-video-parameters.md) | September 13, 2018 | A change was made to the labels for some dimensions, metrics, and reports, to allow for cross-content tracking of video and audio analytics. The labels that have been changed include: *video initiates* to *media initiates*, *video length* to *content length*, and *video name* to *content name*. The video reports in Reports and Analytics have all been updated to use the name "Media" rather than "Video". The label changes did not change data collection or historic data. Please take note of these changes in the case that you're using them within Report Builder or in any other external automated data pulls that might be impacted by this change. |
+
 
 
 
