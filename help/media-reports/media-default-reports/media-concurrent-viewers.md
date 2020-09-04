@@ -10,8 +10,9 @@ uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 The Media Concurrent Viewers dashboard displays concurrent viewers during one day. The data can be filtered by content, device type, or country.
 
 >[!TIP]
+> 
+> Tip: This report is based on concurrent active media sessions.  To see concurrent viewers by unique visitor, with the additional capabilities to apply a segment, break down and compare, use the [Media Concurrent Viewers panel in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 >
->No data will be displayed if the selected interval is not an entire day.
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -31,6 +32,7 @@ Here are some features of this report:
 
 Here are some limitations for this report:
 
+* No data will be displayed if the selected interval is not an entire day.
 * You cannot export the data, such as ReportBuilder. 
 * You cannot present the data in a table format. 
 * You cannot send a report via email. 
