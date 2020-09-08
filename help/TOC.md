@@ -207,7 +207,7 @@ sub-product: media analytics
         + [Media Detail](media-reports/media-default-reports/media-reports-detail.md)  
         + [Media Daypart](media-reports/media-default-reports/media-reports-daypart.md)  
         + [Media Concurrent Viewers](media-reports/media-default-reports/media-concurrent-viewers.md)
-        + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json.md)
+        + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json20.md)
     + Media Workspace Panels {#media-workspace-panels}  
         + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
