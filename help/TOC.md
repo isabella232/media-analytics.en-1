@@ -208,11 +208,10 @@ sub-product: media analytics
         + [Media Detail](media-reports/media-default-reports/media-reports-detail.md)  
         + [Media Daypart report](media-reports/media-default-reports/media-reports-daypart.md)  
         + [Media Concurrent Viewers report](media-reports/media-default-reports/media-concurrent-viewers.md)
-        + [Get Concurrent Viewers JSON report data](media-reports/media-default-reports/get-concurrent-json20.md)
     + Media Workspace Panels {#media-workspace-panels}  
         + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
-    + [Get Concurrent Viewers Data via API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
+    + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Player State Tracking {#player-state-tracking}

@@ -1,11 +1,11 @@
 ---
-title: Get concurrent viewers JSON report data with Analytics 2.0 APIs
+title: Get Concurrent Viewers JSON report data with Analytics 2.0 APIs
 description:
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 
 ---
 
-# Get concurrent viewers JSON report data with Analytics 2.0 APIs{#get-concurrent-viewers-json-report-data}
+# Get Concurrent Viewers JSON report data with Analytics 2.0 APIs{#get-concurrent-viewers-json-report-data}
 
 You can obtain concurrent viewers report data using the [_*Analytics 2.0 APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
