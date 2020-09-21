@@ -5,10 +5,6 @@ description: For Media Analytics customers, the Media Concurrent Viewers panel i
 
 # Media Concurrent Viewers Reporting{#media-concurrent-viewers}
 
->[!IMPORTANT]
->
->This feature is in Limited Testing for Media Analytics customers. [Learn more...](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
-
 Analyzing concurrent viewers enables you to understand where peak concurrency occurred or where drop-offs happened to provide valuable insight into the quality of content and viewer engagement, and to help with troubleshooting or planning for volume and scale.
 
 ## Media Concurrent Viewers Panel in Analysis Workspace
