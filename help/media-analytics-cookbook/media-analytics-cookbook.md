@@ -1,6 +1,5 @@
 ---
 title: Media Analytics Cookbook
-description: 
 description: Top-level Cookbook page, with general MA cookbook links and SDK-specific links.
 
 ---
