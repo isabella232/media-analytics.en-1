@@ -6,17 +6,17 @@ description: This topic includes FAQs about the end of support for Media Analyti
 
 # Media Analytics SDK End of Support FAQs
 
-With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After August 31, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) must be implemented to enable Adobe Analytics for Audio and Video.
+With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After August 31, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) must be implemented to enable Adobe Analytics for Streaming Media.
 
 ## Top 5 Things to Know
 
 1. Mobile v4 SDKs will no longer be supported after August 31, 2021. You should migrate to the Adobe Experience Platform (AEP) SDKs for iOS and Android. For additional information, see [Version 4 Mobile SDKs end-of-support FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
-1. Analytics for Audio and Video implementation requires the AEP SDK and use of the Analytics and Media Analytics extensions. Starting September 1, 2021, you should use the new AEP SDKs and extensions.  Media Analytics extensions are configured using Adobe Launch.  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. Analytics for Steaming Media implementation requires the AEP SDK and use of the Analytics and Media Analytics extensions. Starting September 1, 2021, you should use the new AEP SDKs and extensions.  Media Analytics extensions are configured using Adobe Launch.  For additional information, see [Migrating from Stand-Alone Media SDK to Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 1. Feature development has ended for the Media Analytics SDKs for iOS and Android.  New features that were introduced beginning Fall 2019 are enabled using the Media Analytics extensions and the Media Collection API.
 
-1. The Roku and Chromecast SDKs remain available for Analytics for Audio and Video customers. The Roku and Chromecast SDKs will continue to be enhanced and supported as stand-alone SDKs.  If you use the JS SDK for Media Analytics, you can continue to use the stand-alone SDK or enable the Media Analytics extension using Adobe Launch.
+1. The Roku and Chromecast SDKs remain available for Analytics for Steaming Media customers. The Roku and Chromecast SDKs will continue to be enhanced and supported as stand-alone SDKs.  If you use the JS SDK for Media Analytics, you can continue to use the stand-alone SDK or enable the Media Analytics extension using Adobe Launch.
 
 1. Prior to September 1, 2021, Adobe may, at its sole discretion, develop new fixes for problems of high technical impact or business exposure. Based on the customer input, Adobe will determine the degree of impact and exposure and the consequent activities.
 
