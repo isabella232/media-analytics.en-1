@@ -1,13 +1,13 @@
 ---
 title: Custom Link implementation guide
-description: 
+description:
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 
 ---
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) within Analytics `appMeasurement`. 
+Custom Video Tracking uses manual link tracking using custom link code within Analytics `appMeasurement`. 
 Most often, custom video link video tracking is used on platforms and devices where minimal video measurement is needed.
 
 * In JavaScript: the `s.tl()` function
@@ -26,18 +26,18 @@ Most often, custom video link video tracking is used on platforms and devices wh
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
 
 ```javascript
-/* Call on video complete */ 
- 
+/* Call on video complete */
+
 if (e.type == "ended") {  
-    s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15'; 
-    s.linkTrackEvents = 'event3'; 
-    s.prop10 = mediaName; 
-    s.eVar10 = mediaName; 
-    s.eVar12 = "video"; 
-    s.eVar13 = document.title; 
-    s.eVar15 = mediaPlayerName; 
-    s.events = 'event3'; 
-    s.tl(this,'o','Video Complete'); 
+    s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15';
+    s.linkTrackEvents = 'event3';
+    s.prop10 = mediaName;
+    s.eVar10 = mediaName;
+    s.eVar12 = "video";
+    s.eVar13 = document.title;
+    s.eVar15 = mediaPlayerName;
+    s.events = 'event3';
+    s.tl(this,'o','Video Complete');
 };
 ```
 
@@ -45,81 +45,81 @@ if (e.type == "ended") {
 
 * Minimal prerequisites are needed
 * Works on any platform, including no-script
-* Any calculations, such as time spent or quartiles, must be calculated in a custom script 
+* Any calculations, such as time spent or quartiles, must be calculated in a custom script
 * Very straightforward with no hidden libraries or scripts
 * Total control over every aspect of the video data
 
 ## Sample JavaScript for HTML5 Player
 
 ```javascript
-<script type="text/javascript"> 
-  myvideo = document.getElementById('movie'); 
-  myvideo.addEventListener('play',myHandler,false); 
-  myvideo.addEventListener('seeked',myHandler,false); 
-  myvideo.addEventListener('seeking',myHandler,false); 
-  myvideo.addEventListener('pause',myHandler,false); 
-  myvideo.addEventListener('ended',myHandler,false); 
-   
-  function myHandler(e) { 
-      var video = document.getElementsByTagName('video')[0]; 
-      var mediaName="13502979:Sailing"; 
-      var mediaLength = video.duration; 
-      var mediaPlayerName = "HTML5 Player"; 
-      /*Define video offset*/ 
-      if (video.currentTime > 0) { 
-          mediaOffset = Math.floor(video.currentTime); 
-      } else { 
-          mediaOffset = 0; 
-      }; 
-      /*Call on video start*/ 
-      if (e.type == "play") { 
-          if (mediaOffset == 0) { 
-              console.log(mediaPlayerName + 
+<script type="text/javascript">
+  myvideo = document.getElementById('movie');
+  myvideo.addEventListener('play',myHandler,false);
+  myvideo.addEventListener('seeked',myHandler,false);
+  myvideo.addEventListener('seeking',myHandler,false);
+  myvideo.addEventListener('pause',myHandler,false);
+  myvideo.addEventListener('ended',myHandler,false);
+
+  function myHandler(e) {
+      var video = document.getElementsByTagName('video')[0];
+      var mediaName="13502979:Sailing";
+      var mediaLength = video.duration;
+      var mediaPlayerName = "HTML5 Player";
+      /*Define video offset*/
+      if (video.currentTime > 0) {
+          mediaOffset = Math.floor(video.currentTime);
+      } else {
+          mediaOffset = 0;
+      };
+      /*Call on video start*/
+      if (e.type == "play") {
+          if (mediaOffset == 0) {
+              console.log(mediaPlayerName +
                 ' -> start -> playhead: ' +  
-                Math.floor(video.currentTime)); 
-              s.linkTrackVars='events,prop10,eVar10,eVar12,eVar13,eVar15'; 
-              s.linkTrackEvents='event2'; 
-              s.prop10=mediaName; 
-              s.eVar10=mediaName; 
-              s.eVar12="video"; 
-              s.eVar13=document.title; 
-              s.eVar15=mediaPlayerName; 
-              s.events='event2'; 
-              s.tl(this,'o','Video Start'); 
-          } 
-      }; 
-   
-      /*Call on video pause*/ 
-      if (e.type == "pause") { 
-          console.log(mediaPlayerName +' -> pause -> playhead: ' + Math.floor(video.currentTime)); 
-          if (video.currentTime != video.duration) { 
-              s.linkTrackVars='events,prop10,eVar10,eVar12,eVar13,eVar15'; 
-              s.linkTrackEvents='event7'; 
-              s.prop10=mediaName; 
-              s.eVar10=mediaName; 
-              s.eVar12="video"; 
-              s.eVar13=document.title; 
-              s.eVar15=mediaPlayerName; 
-              s.events='event7'; 
-              s.tl(this,'o','Video Pause'); 
-          } 
-      }; 
-   
-      /*Call on video complete*/ 
-      if (e.type == "ended") { 
-          console.log(mediaPlayerName + 
-            ' -> ended -> playhead: ' + 
-            Math.floor(video.currentTime)); 
-          s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15'; 
-          s.linkTrackEvents = 'event3'; 
-          s.prop10= m ediaName; 
-          s.eVar10=mediaName; 
-          s.eVar12="video"; 
-          s.eVar13=document.title; 
-          s.eVar15=mediaPlayerName; 
-          s.events='event3'; 
-          s.tl(this,'o','Video Complete'); 
-      }; 
-  }; 
+                Math.floor(video.currentTime));
+              s.linkTrackVars='events,prop10,eVar10,eVar12,eVar13,eVar15';
+              s.linkTrackEvents='event2';
+              s.prop10=mediaName;
+              s.eVar10=mediaName;
+              s.eVar12="video";
+              s.eVar13=document.title;
+              s.eVar15=mediaPlayerName;
+              s.events='event2';
+              s.tl(this,'o','Video Start');
+          }
+      };
+
+      /*Call on video pause*/
+      if (e.type == "pause") {
+          console.log(mediaPlayerName +' -> pause -> playhead: ' + Math.floor(video.currentTime));
+          if (video.currentTime != video.duration) {
+              s.linkTrackVars='events,prop10,eVar10,eVar12,eVar13,eVar15';
+              s.linkTrackEvents='event7';
+              s.prop10=mediaName;
+              s.eVar10=mediaName;
+              s.eVar12="video";
+              s.eVar13=document.title;
+              s.eVar15=mediaPlayerName;
+              s.events='event7';
+              s.tl(this,'o','Video Pause');
+          }
+      };
+
+      /*Call on video complete*/
+      if (e.type == "ended") {
+          console.log(mediaPlayerName +
+            ' -> ended -> playhead: ' +
+            Math.floor(video.currentTime));
+          s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15';
+          s.linkTrackEvents = 'event3';
+          s.prop10= m ediaName;
+          s.eVar10=mediaName;
+          s.eVar12="video";
+          s.eVar13=document.title;
+          s.eVar15=mediaPlayerName;
+          s.events='event3';
+          s.tl(this,'o','Video Complete');
+      };
+  };
 </script>
 ```
