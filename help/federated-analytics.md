@@ -39,14 +39,8 @@ Federated Analytics makes audio and video measurement more efficient, streamline
 
 ## Download the Federated Analytics Form
 
-Download the current version of this form here: [Federation Rules Agreement](/help/federated-analytics-form.pdf)
+Download the current version of this form here: [Federation Rules Agreement](federated-analytics-form.pdf)
 
-<a id="raw-url" href="./help/federated-analytics-form.pdf">Federation Rules Agreement</a>
-
-<!-- <a href="/help/federated-analytics-form.pdf" target="_top">Federation Rules Agreement</a> -->
-
-
-<!-- <a href="./product/download.html" target="_top">Download Page</a> -->
 
 ## Process {#process}
 
