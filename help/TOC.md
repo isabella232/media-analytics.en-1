@@ -1,18 +1,18 @@
 ---
 product: Media Analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics Guide
 user-guide-description: Implement Analytics on audio or video sources. Includes the Media SDK and the Media Collection API.
 product: adobe analytics
 sub-product: media analytics
 ---
 
-# Adobe Analytics for Audio and Video {#using}
+# Adobe Analytics for Streaming Media {#using}
 
-+ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
++ [Measuring Streaming Media in Adobe Analytics](media-overview.md)
 + [Supported Devices and Platforms](measurement-options/supported-devices.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}  
++ Introduction to Streaming Media Analytics {#intro-to-ava}  
     + [Prerequisites](intro-to-ava/prereqs.md)
     + Implementation Paths {#implementation-paths}
         + [Overview](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -39,9 +39,9 @@ sub-product: media analytics
             + [Set up JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
-    + Track Audio and Video Playback {#track-av-playback}
+    + Track Steaming Media Playback {#track-av-playback}
         + [Overview](sdk-implement/track-av-playback/track-core-overview.md)
-        + Track Core Audio and Video Playback {#track-core}
+        + Track Core Steaming Media Playback {#track-core}
             + [Track Core Playback on Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
             + [Track Core Playback on iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
             + Track Core Playback on JavaScript {#track-core-javascript}
@@ -193,7 +193,7 @@ sub-product: media analytics
     + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](media-analytics-cookbook/media-dimensions.md)
 + Metrics and Metadata {#metrics-and-metadata}
-    + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
+    + [Steaming Media Parameters](metrics-and-metadata/audio-video-parameters.md)
     + [Ad parameters](metrics-and-metadata/ad-parameters.md)
     + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md)
     + [Player State Parameters](metrics-and-metadata/player-state-parameters.md)
@@ -214,6 +214,7 @@ sub-product: media analytics
     + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
+<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)

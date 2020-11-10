@@ -1,6 +1,6 @@
 ---
 title: Federated Analytics
-description: The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners.
+description: The Federated Analytics service provides a system for sharing Adobe Analytics for Streaming Media data between two partners.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 
 ---
@@ -33,7 +33,8 @@ Federated Analytics makes audio and video measurement more efficient, streamline
 
 * **Media Streams Contract:** Receiver and Sender must have contracted Adobe Analytics for Media Streams before gaining access to audio and video data within Adobe Analytics. Contact your account team for more details.
 * **Federated Addendum:** Each Sender and Receiver must have a signed addendum in place with Adobe before sending or receiving data. One addendum per customer is required, not one addendum per partnership. Contact your account team for more details.
-* **Media Analytics Implementation:** The Sender must have Media Analytics implemented on all players that will be part of the federated data set. Only Media Analytics data is available for federation. See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
+
+* **Media Analytics Implementation:** The Sender must have Media Analytics implemented on all players that will be part of the federated data set. Only Media Analytics data is available for federation. See documentation: [Measuring Steaming Media in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe Consulting Contract:** For initial set-up of federated rules between receiver and sender it is valuable to work with consulting services to review data and create the data sharing agreement.
 

@@ -38,7 +38,7 @@ outside Media Tracking."
   now available in both the Media SDK and the Media Collection API, a relatively wholesale 
   naming update is called for:
 
-    * The overall solution is titled Adobe Analytics for Audio and Video
+    * The overall solution is titled Adobe Analytics for Streaming Media
     * The shorthand formerly used throughout the docs, "Video Analytics", is now "Media Analytics"
     * In the SDK, references to "Video Heartbeat Library (VHL)" are now "Media SDK"
     * Filenames and URLs (e.g., links to API references) that formerly referenced "video" or "vhl" now use "media" in their place
