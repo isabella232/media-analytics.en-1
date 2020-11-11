@@ -39,9 +39,9 @@ sub-product: media analytics
             + [Set up JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
         + [Set up Chromecast](sdk-implement/setup/set-up-chromecast.md)
         + [Set Up Roku](sdk-implement/setup/set-up-roku.md)
-    + Track Steaming Media Playback {#track-av-playback}
+    + Track Streaming Media Playback {#track-av-playback}
         + [Overview](sdk-implement/track-av-playback/track-core-overview.md)
-        + Track Core Steaming Media Playback {#track-core}
+        + Track Core Streaming Media Playback {#track-core}
             + [Track Core Playback on Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
             + [Track Core Playback on iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
             + Track Core Playback on JavaScript {#track-core-javascript}
@@ -193,7 +193,7 @@ sub-product: media analytics
     + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
     + [Media Stream Attribution](media-analytics-cookbook/media-dimensions.md)
 + Metrics and Metadata {#metrics-and-metadata}
-    + [Steaming Media Parameters](metrics-and-metadata/audio-video-parameters.md)
+    + [Streaming Media Parameters](metrics-and-metadata/audio-video-parameters.md)
     + [Ad parameters](metrics-and-metadata/ad-parameters.md)
     + [Chapter Parameters](metrics-and-metadata/chapter-parameters.md)
     + [Player State Parameters](metrics-and-metadata/player-state-parameters.md)
