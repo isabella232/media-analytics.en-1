@@ -1,11 +1,11 @@
 ---
-title: Measuring Steaming Media in Adobe Analytics
+title: Measuring Streaming Media in Adobe Analytics
 description: Adobe Analytics for Media (also referred to as Media Analytics) provides clients with robust media measurement for content, audio and advertisements.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 
 ---
 
-# Measuring Steaming Media in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Measuring Streaming Media in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
