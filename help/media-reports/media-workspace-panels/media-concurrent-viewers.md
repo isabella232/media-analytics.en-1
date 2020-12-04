@@ -13,4 +13,4 @@ In Analysis Workspace, Concurrent Viewers is the number of unique visitors viewi
 
 ## Get Concurrent Viewers via Analytics Reporting API
 
-You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](media-default-reports/get-concurrent-json20.md).
+You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](media-reports/media-default-reports/get-concurrent-json20.md).
