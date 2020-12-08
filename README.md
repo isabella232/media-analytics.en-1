@@ -1,14 +1,5 @@
 # Contribute article
 
-| EXL-PR | EXL | Preview | Activate | Published | Help |
-|--- |--- |--- |--- |--- |--- |
-| [![Build Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![Build Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [Preview URL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/)| [Live URL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [Authoring Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
-
-| Production | Stage |
-|---|---|
-| [![Build Status](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Build Status](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
-|[Output Prod](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)|[Output Stg](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html)|
-
 We welcome contributions from our community as well as from Adobe employees from outside the documentation teams. 
 
 ## Adobe Open Source Code of Conduct
