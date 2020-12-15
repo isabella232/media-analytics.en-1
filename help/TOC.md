@@ -213,11 +213,16 @@ sub-product: media analytics
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
     + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
-+ [Federated Analytics](federated-analytics.md)
 + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
     + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
++ [Federated Analytics](federated-analytics.md)
+<!-- + Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
 + Additional resources {#additional-resources}
     + [Release Notes](additional-resources/doc-updates.md)
