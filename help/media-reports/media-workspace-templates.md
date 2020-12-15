@@ -1,13 +1,13 @@
 ---
 title: Media workspace templates
-description: 
+description:
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 
 ---
 
 # Media workspace templates{#media-workspace-templates}
 
-Adobe Analytics Workspace gives you the ability to quickly set up dashboards for analyzing your tracking data. When you create a new project, or when you go in to Workspace to manage an existing project, you can choose from standard templates that cover common general tracking scenarios, such as Acquisition, Audio and Video consumption, and more. You can also create, modify, and save your own custom templates.
+Adobe Analytics Workspace gives you the ability to quickly set up dashboards for analyzing your tracking data. When you create a new project, or when you go in to Workspace to manage an existing project, you can choose from standard templates that cover common general tracking scenarios, such as Acquisition, Streaming Media consumption, and more. You can also create, modify, and save your own custom templates.
 
 You work with templates from the Workspace tab in Adobe Analytics, when you create or manage a project. When you initially go into Workspace, you are presented with the options of creating a new project or opening an existing project:
 
@@ -20,4 +20,3 @@ You work with templates from the Workspace tab in Adobe Analytics, when you crea
   ![](assets/aa-workspace.png)
 
 * **Manage projects -** In an existing project, you can modify the data presentation and Save As to create your own collection of custom templates.
-

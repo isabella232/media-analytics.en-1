@@ -1,6 +1,6 @@
 ---
 title: Supported devices and platforms
-description: Adobe Analytics for Audio and Video ensures that each media stream is collected and reported across all devices.
+description: Adobe Analytics for Streaming Media ensures that each media stream is collected and reported across all devices.
 ---
 
 # Supported devices and platforms {#devices-supported}
@@ -9,7 +9,7 @@ description: Adobe Analytics for Audio and Video ensures that each media stream 
 >
 >With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDK for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
-Adobe Analytics for Audio and Video supports all major devices including:
+Adobe Analytics for Streaming Media supports all major devices including:
 
 * iOS and Android smartphones and tablets
 * OTT devices for ROKU, AppleTV, FireTV, and Android TV
@@ -21,7 +21,7 @@ For devices or platforms that don’t currently have SDK support or in situation
 
 The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
-| Streaming Platforms and Devices |                                               | Media Launch Extension w/ AEP SDK |      Media SDK      | Media Collection API |
+| Streaming Platforms and Devices |                                               | Media Launch Extension w/ AEP Mobile SDK |      Media SDK      | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web            |                                               |                              |                     |                      |
 |                           | JavaScript Browsers                           |               ![](/help/assets/icon-blue-check.png)              |          ![](/help/assets/icon-blue-check.png)&nbsp;&nbsp;&nbsp;          |           ![](/help/assets/icon-blue-check.png)          |
