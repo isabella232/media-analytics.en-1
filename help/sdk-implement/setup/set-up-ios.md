@@ -29,6 +29,17 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 ## SDK Implementation
 
+>[!IMPORTANT]
+>
+>Starting with version 2.3.0, the SDK is distributed via XCFrameworks. If using 2.3.0 or newer, follow the steps below.
+>
+>Version 2.3.0 of the SDK requires Xcode 12.0 or newer and, if applicable, Cocoapods 1.10.0 or newer.
+
+* Any time a binary library file is mentioned, its XCFramework replacement should be used instead:
+  * MediaSDK.a > MediaSDK.xcframework
+  * MediaSDK_TV.a > MediaSDKTV.xcframework
+* If manually adding the Adobe XCFrameworks to your project, ensure that they are not embedded.
+
 1. Add your [downloaded](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK to your project.
 
     1. Verify that the following software components exist in the `libs` directory:
