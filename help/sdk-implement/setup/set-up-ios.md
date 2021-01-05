@@ -31,7 +31,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 
 >[!IMPORTANT]
 >
->Starting with version 2.3.0, the SDK is distributed via XCFrameworks. If using 2.3.0 or newer, follow the steps below.
+>Starting with version 2.3.0, the SDK is distributed via XCFrameworks.
 >
 >Version 2.3.0 of the SDK requires Xcode 12.0 or newer and, if applicable, Cocoapods 1.10.0 or newer.
 
