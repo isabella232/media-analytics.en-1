@@ -1,7 +1,6 @@
 ---
-title: Audience Manager enablement
-description: 
-uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
+title: What is Adobe Audience Manager enablement?
+description: Learn how to link application actions to media tracking data without the need for additional processing rules and custom variables.
 
 ---
 
@@ -106,4 +105,3 @@ You can use these methods to send signals and retrieve visitor segments from Aud
    ```js    
    ADBMobile().audienceSubmitSignal()
    ```
-
