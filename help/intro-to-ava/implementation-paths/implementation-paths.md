@@ -1,13 +1,11 @@
 ---
-title: Implementation Paths
-description:
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-
+title: What Streaming Media Implementation Paths are Available?
+description: Learn about Adobe Streaming Media implementation paths including Adobe Launch.
 ---
 
 # Implementation Paths {#implementation-paths}
 
-For each implementation path, customers need to contact their Sales Representative/Account Manager to sign a new Sales Order as Media Analytics has a unique SKU and changes from a pricing model based on server calls to a model based on video streams.
+For each implementation path, customers need to contact their Sales Representative/Account Manager to sign a new Sales Order as Streaming Media Analytics has a unique SKU and changes from a pricing model based on server calls to a model based on video streams.
 
 * **Adobe Launch with the Adobe Media Analytics extension**
 
