@@ -1,6 +1,6 @@
 ---
 title: Request parameters
-description: 
+description:
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 ---
@@ -42,6 +42,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 
 | Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | Stream format, e.g. “HD” |
 | `media.show` | N | `sessionStart` | The program or series name |
 | `media.season` | N | `sessionStart` | The season number the show or series belongs to |
 | `media.episode` | N | `sessionStart` | The number of the episode |
@@ -128,9 +129,9 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 >
 >The `appInstallationId` uniquely identifies the app *and the device*. It needs to be unique for each app on each device, i.e., two users using the same version of the same app on different devices must each send a different (unique) `appInstallationId`.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -139,17 +140,17 @@ In addition to being necessary for MCID generation when that is not provided, th
 
 ### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
 
-* **analytics.aid:** 
+* **analytics.aid:**
 
    The value of this key must be a string that represents the Analytics Legacy User ID
-* **visitor.customerIDs:** 
+* **visitor.customerIDs:**
 
    The value of this key must be an object of the following format:     
 
    ```js    
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```    
 
