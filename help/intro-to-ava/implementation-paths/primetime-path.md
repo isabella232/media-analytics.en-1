@@ -1,22 +1,20 @@
 ---
-title: Primetime
-description: 
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-
+title: What is Adobe Primetime?
+description: Learn about the Adobe Primetime solution and how it helps to monetize streaming media.
 ---
 
 # Primetime{#primetime}
 
-Media Analytics (Heartbeats) is Adobe’s standardized media tracking solution. It has replaced Adobe's older Milestone model.
+Media Analytics (Heartbeats) is Adobe’s standardized media tracking solution that replaced Adobe's Milestone model.
 
 Adobe Primetime is an Adobe Experience Cloud solution that helps content programmers and distributors monetize media on every connected screen.
 
 Primetime eliminates the complexity of reaching, monetizing, and activating global audiences across devices by providing a modular platform for media publishing, advertising, personalization, and analytics. Additionally, Primetime offers solutions and value around the following:
 
-* Support for accurately measuring Linear and VOD content types. 
-* Support for measuring ad breaks with (or without) dynamic ad insertion. 
-* TVSDK's seamless ad insertion model allows for analytics that directly measures the ad playback, which increases accuracy. 
-* Robust set of events and metadata to ensure accuracy across QoS buffering or mobile connectivity interruptions issues and end-user interactions such as seeking, pausing, and backgrounding on mobile. 
+* Support for accurately measuring Linear and VOD content types.
+* Support for measuring ad breaks with (or without) dynamic ad insertion.
+* TVSDK's seamless ad insertion model allows for analytics that directly measures the ad playback, which increases accuracy.
+* Robust set of events and metadata to ensure accuracy across QoS buffering or mobile connectivity interruptions issues and end-user interactions such as seeking, pausing, and backgrounding on mobile.
 <!--
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
