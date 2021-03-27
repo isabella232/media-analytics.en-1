@@ -16,8 +16,8 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 
 | 3.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |
 | --- | --- | --- | --- |
-| JavaScript | [Media SDK for JS v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.1) | [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Set up JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Media SDK for Chromecast v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.1) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
+| JavaScript | [Media SDK for JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Set up JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+| Chromecast | [Media SDK for Chromecast v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## Download the 2.x Media SDKs {#download-2x-sdks}
