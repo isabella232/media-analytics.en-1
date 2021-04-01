@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/support/analytics.html
 solution-image: assets/analytics-icon-24.png
