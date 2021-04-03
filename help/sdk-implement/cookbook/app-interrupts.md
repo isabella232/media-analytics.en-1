@@ -2,9 +2,8 @@
 title: Handling application interrupts during playback
 description: How to handle interruptions to tracking during playback of media.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-
+exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 ---
-
 # Handling application interrupts during playback{#handling-application-interrupts-during-playback}
 
 Playback in a media application can be interrupted in a variety of ways: a user explicitly presses pause, or when a user puts the application into the background. Regardless of what causes an interruption in media playback, the tracking instructions are the same:
@@ -29,4 +28,3 @@ Playback in a media application can be interrupted in a variety of ways: a user 
 * _What about restarting the same session?_
 
    For detailed instructions on restarting a tracking session, see this page: [Manually resume a previously closed session](/help/sdk-implement/cookbook/resuming-inactive.md). The SDK sends a resume ping to notify the back-end that the user is manually resuming the session.
-

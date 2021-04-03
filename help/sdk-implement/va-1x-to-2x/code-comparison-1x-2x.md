@@ -2,9 +2,8 @@
 title: Code comparison 1.x to 2.x
 description: This topic compares code in the 1.x and 2.x versions of the Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-
+exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 ---
-
 # Code comparison: 1.x to 2.x {#code-comparison-x-to-x}
 
 All of the configuration parameters and tracking APIs are now consolidated into the `MediaHeartbeats` and `MediaHeartbeatConfig` classes.

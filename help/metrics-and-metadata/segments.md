@@ -2,9 +2,8 @@
 title: Segments
 description: 
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-
+exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 ---
-
 # Segments{#segments}
 
 >[!NOTE]
@@ -22,4 +21,3 @@ uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 |  Media Content Type: Podcast | Segment all Podcast contents |"Content Type = `podcast`" |
 |  Media Content Type: Audiobook | Segment all Audiobook contents |"Content Type = `audiobook`" |
 |  Media Content Type: AoD | Segment all AoD contents |"Content Type = `aod`" |
-

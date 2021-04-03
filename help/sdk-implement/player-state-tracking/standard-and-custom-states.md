@@ -1,9 +1,8 @@
 ---
 title: About Standard and Custom States
 description: This topic describes the player state tracking feature including requirements and guidelines for implementing and reporting standard and custom player states.
-
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 ---
-
 # About standard and custom states
 
 Five standard player states are available and you can add your own custom states.

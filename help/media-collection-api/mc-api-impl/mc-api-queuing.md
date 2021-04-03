@@ -2,9 +2,8 @@
 title: Queueing events when sessions response is slow
 description: 
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
-
+exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 ---
-
 # Queueing events when sessions response is slow{#queueing-events-when-sessions-response-is-slow}
 
 The Media Collection API is RESTful: i.e, you make an HTTP request and wait for the response. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. This is important because the Session ID is required for all subsequent tracking calls. 

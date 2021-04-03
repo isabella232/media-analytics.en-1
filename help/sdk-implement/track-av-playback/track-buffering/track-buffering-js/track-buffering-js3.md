@@ -1,8 +1,8 @@
 ---
 title: Track buffering using JavaScript 3.x
 description: Describes tracking buffering events in browser apps (JS).
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 ---
-
 # Track buffering using JavaScript 3.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]

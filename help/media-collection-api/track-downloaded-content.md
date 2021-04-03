@@ -2,9 +2,8 @@
 title: Track downloaded content
 description:
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 ---
-
 # Track downloaded content{#track-downloaded-content}
 
 ## Overview {#overview}

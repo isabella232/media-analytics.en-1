@@ -2,9 +2,8 @@
 title: Roku metadata keys
 description: This topic describes the available Roku metadata keys.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
-
+exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 ---
-
 # Roku metadata keys{#roku-metadata-keys}
 
 Standard video, audio, and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
@@ -96,4 +95,3 @@ You can use the following constants to track media events:
 |  `MEDIA_AD_START`  | Event Type for Ad Start  |
 |  `MEDIA_AD_COMPLETE`  | Event Type for Ad Complete  |
 |  `MEDIA_AD_SKIP`  | Event Type for Ad Skip  |
-

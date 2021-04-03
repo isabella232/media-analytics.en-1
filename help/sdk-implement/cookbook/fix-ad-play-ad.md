@@ -2,9 +2,8 @@
 title: Resolving main play appearing between ads
 description: How to handle unexpected main:play calls between ads.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 ---
-
 # Resolving main:play appearing between ads{#resolving-main-play-appearing-between-ads}
 
 ## PROBLEM
@@ -74,4 +73,3 @@ Handle the gap from within the player by calling `trackEvent:AdComplete` late fo
    >If this step is already performed above as part of the last `trackEvent:AdComplete` call then this can be skipped.
 
 * Call `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-

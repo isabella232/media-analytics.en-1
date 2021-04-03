@@ -2,9 +2,8 @@
 title: Migrating from Milestone to Custom Link
 description: 
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-
+exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 ---
-
 # Migrating from Milestone to Custom Link{#migrating-from-milestone-to-custom-link}
 
 ## Overview {#overview}

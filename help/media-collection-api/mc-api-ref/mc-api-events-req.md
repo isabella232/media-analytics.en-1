@@ -2,9 +2,8 @@
 title: Events request
 description: 
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 ---
-
 # Events request{#events-request}
 
 ```
@@ -71,4 +70,3 @@ Access-Control-Expose-Headers Location
 |  **404** | **Not Found.** <br/><br/>The session ID for the media session was not found in the back-end service.  | The client application should use the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API to create another media session and report tracking on it.  |
 |  **410** | **Gone.** <br/><br/>The media session was found in the back-end service but the client can no longer report activity on it.  | The client application should use the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API to create another media session and report tracking on it.  |
 |  **500** | **Server error** | N/A  |
-

@@ -2,9 +2,8 @@
 title: Quality parameters
 description:
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-
+exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 ---
-
 # Quality parameters{#quality-parameters}
 
 This topic presents a list of quality of experience (QoE/QoS) data, including context data values, that Adobe collects via solution variables.

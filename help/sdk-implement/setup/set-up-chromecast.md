@@ -2,9 +2,8 @@
 title: Set up Chromecast
 description: Media SDK application setup for implementation on Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-
+exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 ---
-
 # Set up Chromecast{#set-up-chromecast}
 
 ## FAQ
@@ -135,4 +134,3 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
-

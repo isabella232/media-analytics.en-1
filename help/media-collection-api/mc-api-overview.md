@@ -3,9 +3,8 @@ seo-title: Overview
 title: Overview
 description:
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-
+exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 ---
-
 # Overview{#overview}
 
 The Media Collection API is Adobe's RESTful alternative to the client-side Media SDK. With the Media Collection API your player can track audio and video events using RESTful HTTP calls.

@@ -2,9 +2,8 @@
 title: Track app actions
 description: App actions are the events that occur in your app that you want to measure.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
 ---
-
 # Track app actions{#track-app-actions}
 
 Actions are the events that occur in your app that you want to measure.
@@ -46,4 +45,3 @@ Actions are not tracked automatically, so call `trackAction` when an event that 
      ```
 
 You can also send additional context data with each track action call.
-

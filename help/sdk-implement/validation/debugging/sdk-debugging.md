@@ -2,9 +2,8 @@
 title: SDK debugging
 description: This topic describes the tracking/logging available in the Media SDK.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-
+exl-id: c2de6454-8538-4d07-a099-e278b153d894
 ---
-
 # SDK debugging{#sdk-debugging}
 
 You can enable and disable logging. The Media SDK provides an extensive tracing/logging mechanism throughout the media-tracking stack. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
@@ -108,4 +107,3 @@ For instance, this is what the logs filtered for `#track` could look like:
 [16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```
-

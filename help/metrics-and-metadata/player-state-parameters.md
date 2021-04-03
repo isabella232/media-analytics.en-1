@@ -2,9 +2,8 @@
 title: Player state parameters
 description: This topic describes player state tracking parameters.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 ---
-
 # Player state parameters{#player-state-parameters}
 
 This topic presents a list of player state data that Adobe collects via solution variables.

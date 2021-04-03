@@ -1,9 +1,8 @@
 ---
 title: What is Media Stream Attribution?
 description: Learn how to link application actions to media tracking data without the need for additional processing rules and custom variables.
-
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 ---
-
 # Media Stream Attribution
 
 This feature lets you link application actions to media tracking data without the need for additional processing rules and custom variables.

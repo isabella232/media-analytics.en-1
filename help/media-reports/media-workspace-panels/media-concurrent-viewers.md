@@ -1,8 +1,8 @@
 ---
 title: Media Concurrent Viewers Reporting
 description: For Media Analytics customers, the Media Concurrent Viewers panel in Analysis Workspace enables you to analyze concurrent viewers to understand where peak concurrency occurred or where drop-offs happened.
+exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 ---
-
 # Media Concurrent Viewers Reporting{#media-concurrent-viewers}
 
 Analyzing concurrent viewers enables you to understand where peak concurrency occurred or where drop-offs happened to provide valuable insight into the quality of content and viewer engagement, and to help with troubleshooting or planning for volume and scale.

@@ -2,9 +2,8 @@
 title: Overview
 description: An overview of tracking quality of experience (QoE, QoS) using the Media SDK.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-
+exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 ---
-
 # Overview{#overview}
 
 >[!IMPORTANT]
@@ -67,4 +66,3 @@ if (e.type == "bitrate_change") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
 };
 ```
-

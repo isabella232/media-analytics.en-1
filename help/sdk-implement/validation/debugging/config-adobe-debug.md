@@ -2,9 +2,8 @@
 title: Configure Adobe Debug
 description: This topic describes how to configure Adobe Debug, which you can use to troubleshoot Media SDK implementations.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-
+exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 ---
-
 # Configure Adobe Debug{#configure-adobe-debug}
 
 ## Accessing Adobe Debug {#accessing-adobe-debug}
@@ -113,4 +112,3 @@ To install the SSL certificate on an Android device:
 
 1. On your laptop, start your Adobe Debug session. 
 1. Start testing on your Android device.
-

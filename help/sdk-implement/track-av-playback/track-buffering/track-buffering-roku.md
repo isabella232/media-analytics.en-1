@@ -2,9 +2,8 @@
 title: Track buffering on Roku
 description: Describes tracking buffering events on Roku.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
-
+exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
 ---
-
 # Track buffering on Roku{#track-buffering-on-roku}
 
 >[!IMPORTANT]

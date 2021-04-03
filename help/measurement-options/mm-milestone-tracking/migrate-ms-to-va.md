@@ -2,9 +2,8 @@
 title: Migrating from Milestone to Media Analytics
 description: 
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 ---
-
 # Migrating from Milestone to Media Analytics {#migrating-from-milestone-to-media-analytics}
 
 ## Overview {#overview}
@@ -83,4 +82,3 @@ The following tables provide translations between the Milestone solution and the
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause <br> or <br> trackEvent | `trackPause()` <br> or `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> or <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Use custom or standard metadata to set additional variables. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/A | Tracking call frequency is automatically set. |
-

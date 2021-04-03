@@ -2,9 +2,8 @@
 title: Implement standard metadata on Android
 description: Describes setting standard video and ad metadata to be sent with tracking calls on Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
 ---
-
 # Implement standard metadata on Android{#implement-standard-metadata-on-android}
 
 ## Standard Metadata Constants

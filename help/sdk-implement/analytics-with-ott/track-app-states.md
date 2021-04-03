@@ -2,9 +2,8 @@
 title: Track app states
 description: App states are the different screens or views in your application, which when displayed should result in a trackState call. 
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 ---
-
 # Track app states{#track-app-states}
 
 States are the different screens or views in your application. Each time a new state is displayed in your application, you should send a `trackState` call. For example, when a user navigates from the home page to the video details screen, send a `trackState` call. States are typically viewed by using a pathing report, so you can see how users navigate your app and which states are most commonly viewed. 
@@ -50,4 +49,3 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 >[!NOTE]
 >
 >Context data values must be mapped to custom variables in Adobe Mobile services.
-

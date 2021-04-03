@@ -2,9 +2,8 @@
 title: Event types and descriptions
 description: 
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-
+exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 ---
-
 # Event types and descriptions{#event-types-and-descriptions}
 
 ## sessionStart
@@ -83,4 +82,3 @@ Sent when the end of the main content is reached
 >[!IMPORTANT]
 >
 >You should refer to the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
-

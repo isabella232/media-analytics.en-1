@@ -2,9 +2,8 @@
 title: 1.x to 2.x API conversion
 description: This topic includes links to API references and lists required and optional tracking APIs for 1.x and 2.x version of the Media SDK.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 ---
-
 # API 1.x to 2.x conversion {#one-x-to-two-x-conv}
 
 ## Media SDK 2.x API References
@@ -47,4 +46,3 @@ All of the optional tracking APIs such as (Ads, Chapters, Bitrate change, Seekin
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-

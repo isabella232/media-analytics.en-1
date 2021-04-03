@@ -1,9 +1,8 @@
 ---
 title: About Player State Tracking
 description: This topic describes the player state tracking feature including requirements and guidelines for implementing and reporting player states.
-
+exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 ---
-
 # About Player State Tracking
 
 To optimize your product experience and drive value for your business, it's important to understand customer behavior when viewing videos. This includes  the time spent within different player states.  It's also important to have the flexibility to create and measure new player states and events as needed.

@@ -2,9 +2,8 @@
 title: Timeout conditions
 description: 
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
-
+exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 ---
-
 # Timeout conditions{#timeout-conditions}
 
 **Media Collection API Timeout Conditions** 
@@ -21,4 +20,3 @@ The Media Collection API, being stateless, does not have the same mechanism as t
 >[!NOTE]
 >
 >You can also force a session end by sending an `events` request with the `sessionEnd` event type.
-

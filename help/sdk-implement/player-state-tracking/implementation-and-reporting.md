@@ -1,9 +1,8 @@
 ---
 title: Implementation and Reporting
 description: This topic describes how to implement the player state tracking feature including .
-
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 ---
-
 # Implementation and reporting
 
 During a playback session, each state occurrence (start-to-end) must be tracked individually. The Media SDK and the Media Collection API provide new tracking methods for this capability.

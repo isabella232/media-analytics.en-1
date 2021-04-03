@@ -1,9 +1,8 @@
 ---
 title: Migrating from the standalone Media SDK to Adobe Launch - Web (JS)
 description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
-
+exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 ---
-
 # Migrating from the standalone Media SDK to Adobe Launch - Web (JS)
 
 ## Feature differences

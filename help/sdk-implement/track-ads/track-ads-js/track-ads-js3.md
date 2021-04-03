@@ -1,8 +1,8 @@
 ---
 title: Track ads using JavaScript 3.x
 description: Implement ad tracking in browser (JS) applications using the Media SDK.
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 ---
-
 # Track ads using JavaScript 3.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]

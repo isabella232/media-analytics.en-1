@@ -1,9 +1,8 @@
 ---
 title: Media Analytics Cookbook
 description: Top-level Cookbook page, with general MA cookbook links and SDK-specific links.
-
+exl-id: 5f26fbce-d861-4b38-8497-ce010082f3a7
 ---
-
 # Media Analytics Cookbook 
 
 ## General Media Analytics cookbook topics

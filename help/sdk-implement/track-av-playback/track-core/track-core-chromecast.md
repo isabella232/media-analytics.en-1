@@ -2,9 +2,8 @@
 title: Track core playback on Chromecast
 description: This topic describes how to implement core tracking using the Media SDK on Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
-
+exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 ---
-
 # Track core playback on Chromecast{#track-core-playback-on-chromecast}
 
 >[!IMPORTANT]
@@ -129,4 +128,3 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 
 * Tracking scenarios: [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the Chromecast SDK for a complete tracking example.
-

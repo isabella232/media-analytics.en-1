@@ -2,9 +2,8 @@
 title: Track seeking on Chromecast
 description: This topic describes implementing seek tracking using the Media SDK on Chromecast.
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-
+exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
 ---
-
 # Track seeking on Chromecast{#track-seeking-on-chromecast}
 
 >[!IMPORTANT]

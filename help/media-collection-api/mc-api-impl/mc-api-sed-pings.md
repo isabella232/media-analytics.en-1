@@ -2,9 +2,8 @@
 title: Sending ping events
 description: 
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
-
+exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 ---
-
 # Sending ping events{#sending-ping-events}
 
 **For main content, you must fire ping events every 10 seconds, beginning after 10 seconds of playback, regardless of other API events that you have sent. For Ad tracking, you must fire ping events every 1 second.** 
@@ -31,4 +30,3 @@ var Pinger = {
     } 
 }
 ```
-

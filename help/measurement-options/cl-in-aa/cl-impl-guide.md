@@ -2,9 +2,8 @@
 title: Custom Link implementation guide
 description:
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-
+exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 ---
-
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
 Custom Video Tracking uses manual link tracking using custom link code within Analytics `appMeasurement`. 

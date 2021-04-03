@@ -2,9 +2,8 @@
 title: Chapter parameters
 description:
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-
+exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 ---
-
 # Chapter parameters{#chapter-parameters}
 
 This topic presents a list of chapter and/or segment data, including context data values, that Adobe collects via solution variables.

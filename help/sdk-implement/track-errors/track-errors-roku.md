@@ -2,9 +2,8 @@
 title: Track errors on Roku
 description: This topic describes implementing error tracking using the Media SDK on Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
-
+exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 ---
-
 # Track errors on Roku{#track-errors-on-roku}
 
 >[!IMPORTANT]
@@ -23,4 +22,3 @@ uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 >[!NOTE]
 >
 >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
-

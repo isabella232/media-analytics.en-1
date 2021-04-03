@@ -1,8 +1,8 @@
 ---
 title: Supported devices and platforms
 description: Adobe Analytics for Streaming Media ensures that each media stream is collected and reported across all devices.
+exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 ---
-
 # Supported devices and platforms {#devices-supported}
 
 >[!IMPORTANT]

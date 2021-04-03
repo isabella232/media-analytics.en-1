@@ -1,8 +1,8 @@
 ---
 title: SDK Cookbook Overview
-description: SDK-specific cookbook topics 
+description: SDK-specific cookbook topics
+exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 ---
-
 # SDK Cookbook Overview
 
 You can find general Media Analytics cookbook topics that apply to both the Media SDK and the Media Collection API here: [Media Analytics Cookbook.](/help/media-analytics-cookbook/media-analytics-cookbook.md)

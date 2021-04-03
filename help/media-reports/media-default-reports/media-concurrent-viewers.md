@@ -2,9 +2,8 @@
 title: Media concurrent viewers
 description:
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-
+exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 ---
-
 # Media concurrent viewers{#media-concurrent-viewers}
 
 The Media Concurrent Viewers dashboard displays concurrent viewers during one day. The data can be filtered by content, device type, or country.

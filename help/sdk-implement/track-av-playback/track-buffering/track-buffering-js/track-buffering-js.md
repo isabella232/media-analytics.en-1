@@ -2,9 +2,8 @@
 title: Track buffering using JavaScript 2.x
 description: Describes tracking buffering events in browser apps (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-
+exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
 ---
-
 # Track buffering using JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]

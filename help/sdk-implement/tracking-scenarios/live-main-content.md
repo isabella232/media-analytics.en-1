@@ -2,9 +2,8 @@
 title: Live main content
 description: An example of how to track live content using the Media SDK.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-
+exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 ---
-
 # Live main content{#live-main-content}
 
 ## Scenario {#scenario}
@@ -182,4 +181,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-

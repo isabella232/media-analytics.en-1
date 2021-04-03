@@ -2,9 +2,8 @@
 title: Track seeking using JavaScript 2.x
 description: This topic describes implementing seek tracking using the Media SDK in browser apps (JS).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-
+exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
 ---
-
 # Track seeking using JavaScript 2.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]

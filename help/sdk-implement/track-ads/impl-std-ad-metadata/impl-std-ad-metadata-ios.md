@@ -2,9 +2,8 @@
 title: Implement standard ad metadata on iOS
 description: How to use standard ad metadata in ad tracking on iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-
+exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 ---
-
 # Implement standard ad metadata on iOS{#implement-standard-ad-metadata-on-ios}
 
 ## Ad constants

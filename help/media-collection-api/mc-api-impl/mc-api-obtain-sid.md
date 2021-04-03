@@ -2,9 +2,8 @@
 title: Obtaining a session ID
 description: 
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
-
+exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
 ---
-
 # Obtaining a session ID{#obtaining-a-session-id}
 
 This code snippet from the Reference Player shows one way of coding a [Sessions request,](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response: 
@@ -34,4 +33,3 @@ const SESSION_ID_EXTRACTOR = /^\/api\/(.*)\/sessions\/(.*)/;
         this._sessionStarted = true;    // Session started. 
     ...
 ```
-

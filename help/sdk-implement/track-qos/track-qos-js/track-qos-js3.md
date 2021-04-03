@@ -1,8 +1,8 @@
 ---
 title: Track quality of experience using JavaScript 3.x
 description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps using JavaScript 3x.
+exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 ---
-
 # Track quality of experience using JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]

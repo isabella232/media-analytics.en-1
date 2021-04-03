@@ -2,9 +2,8 @@
 title: Track buffering on Android
 description: Describes tracking buffering events on Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-
+exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
 ---
-
 # Track buffering on Android{#track-buffering-on-android}
 
 >[!IMPORTANT]

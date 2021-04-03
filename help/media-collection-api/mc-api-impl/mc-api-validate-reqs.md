@@ -2,9 +2,8 @@
 title: Validating event requests
 description: 
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-
+exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 ---
-
 # Validating event requests{#validating-event-requests}
 
 The JSON request body for each event type is validated on the backend with JSON schemas. The HTTP response body is populated with an error message when validation fails for an API call.
@@ -123,4 +122,3 @@ Connection: keep-alive
 >[!NOTE]
 >
 >Session level validation is not possible, as the session context is not available in the collection layer.
-

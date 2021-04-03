@@ -2,9 +2,8 @@
 title: Timeline 2 - User abandons session
 description:
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 ---
-
 # Timeline 2 - User abandons session {#timeline--2-user-abandons-session}
 
 ## VOD, Pre-roll ad, mid-roll ads, user abandons content early

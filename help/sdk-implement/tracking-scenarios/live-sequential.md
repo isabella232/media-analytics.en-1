@@ -2,9 +2,8 @@
 title: Live main content with sequential tracking
 description: An example of how to track live content with sequential tracking using the Media SDK.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 ---
-
 # Live main content with sequential tracking{#live-main-content-with-sequential-tracking}
 
 ## Scenario {#scenario}
@@ -328,4 +327,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-

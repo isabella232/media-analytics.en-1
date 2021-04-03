@@ -2,9 +2,8 @@
 title: Tracking Overview
 description: This topic describes tracking core playback, including tracking media load, media start, media pause, and media complete. 
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 ---
-
 # Tracking Overview{#tracking-overview}
 
 >[!IMPORTANT]
@@ -232,4 +231,3 @@ if (e.type == “buffered”) {
 ## Validate {#validate}
 
 For information on validating your implementation, see [Validation.](/help/sdk-implement/validation/validation-overview.md)
-

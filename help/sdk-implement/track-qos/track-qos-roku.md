@@ -2,9 +2,8 @@
 title: Track quality of experience on Roku
 description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK on Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-
+exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 ---
-
 # Track quality of experience on Roku{#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
@@ -78,4 +77,3 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
     >[!TIP]
     >
     >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
-

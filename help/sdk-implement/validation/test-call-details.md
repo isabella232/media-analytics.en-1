@@ -2,9 +2,8 @@
 title: Test call details
 description: This topic details the calls you must make to validate your implementation.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-
+exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 ---
-
 # Test call details{#test-call-details}
 
 ## Start the media player {#start-the-media-player}
@@ -296,5 +295,3 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-
-

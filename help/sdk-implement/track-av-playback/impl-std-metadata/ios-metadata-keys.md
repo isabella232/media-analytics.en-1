@@ -2,9 +2,8 @@
 title: iOS metadata keys
 description: This topic describes the available iOS metadata keys.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 ---
-
 # iOS metadata keys{#ios-metadata-keys}
 
 [iOS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
@@ -54,4 +53,3 @@ From `ADBStandardMetadataKeys.h`:
 | `ADBAdMetadataKeyPLACEMENT_ID`  | Placement Id  | Ad  |
 | `ADBAdMetadataKeySITE_ID`  | Site Id  | Ad  |
 | `ADBAdMetadataKeyCREATIVE_URL`  | Creative Url  | Ad  |
-

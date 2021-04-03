@@ -2,9 +2,8 @@
 title: Track quality of experience on Chromecast
 description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK on Chromecast.
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-
+exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 ---
-
 # Track quality of experience on Chromecast{#track-quality-of-experience-on-chromecast}
 
 >[!IMPORTANT]
@@ -65,4 +64,3 @@ Call `trackError(“media error id”);`
    >[!TIP]
    >
    >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
-

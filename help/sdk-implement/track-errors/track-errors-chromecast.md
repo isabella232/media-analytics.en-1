@@ -2,9 +2,8 @@
 title: Track errors on Chromecast
 description: This topic describes implementing error tracking using the Media SDK on Chromecast.
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
-
+exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
 ---
-
 # Track errors on Chromecast{#track-errors-on-chromecast}
 
 >[!IMPORTANT]
@@ -22,4 +21,3 @@ uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 >[!NOTE]
 >
 >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
-

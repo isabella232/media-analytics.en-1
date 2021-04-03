@@ -1,8 +1,8 @@
 ---
 title: Track chapters and segments using JavaScript 3.x
 description: This topic describes implementing chapter and segment tracking using the Media SDK in browser apps (JS).
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 ---
-
 # Track chapters and segments using JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]

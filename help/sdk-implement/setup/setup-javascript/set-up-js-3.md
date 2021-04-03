@@ -1,8 +1,8 @@
 ---
 title: Set up JavaScript 3.x
 description: Media SDK application setup for implementation on JavaScript 3.x.
+exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 ---
-
 # Set up JavaScript 3.x{#set-up-javascript}
 
 ## Prerequisites

@@ -1,9 +1,8 @@
 ---
 title: What is Adobe Audience Manager enablement?
 description: Learn how to link application actions to media tracking data without the need for additional processing rules and custom variables.
-
+exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 ---
-
 # Audience Manager enablement{#audience-manager-enablement}
 
 Adobe Audience Manager (AAM), a Data Management Platform (DMP), helps you bring your audience data assets together, making it easy to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.

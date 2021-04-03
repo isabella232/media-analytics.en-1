@@ -2,9 +2,8 @@
 title: Implement standard ad metadata on Android
 description: How to use standard ad metadata in ad tracking on Android.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-
+exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 ---
-
 # Implement standard ad metadata on Android{#implement-standard-ad-metadata-on-android}
 
 ## Ad constants
@@ -24,4 +23,3 @@ standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, "Sample Adverti
 standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, "Sample Campaign"); 
 adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, standardAdMetadata); 
 ```
-

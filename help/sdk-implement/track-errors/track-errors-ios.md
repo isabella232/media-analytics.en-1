@@ -2,9 +2,8 @@
 title: Track errors on iOS
 description: This topic describes implementing error tracking using the Media SDK on iOS.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
-
+exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 ---
-
 # Track errors on iOS{#track-errors-on-ios}
 
 >[!IMPORTANT]
@@ -24,4 +23,3 @@ uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 >[!NOTE]
 >
 >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
-

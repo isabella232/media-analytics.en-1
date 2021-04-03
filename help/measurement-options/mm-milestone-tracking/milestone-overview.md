@@ -2,9 +2,8 @@
 title: Milestone overview
 description: 
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-
+exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 ---
-
 # Milestone overview{#milestone-overview}
 
 >[!CAUTION]
@@ -234,4 +233,3 @@ s.dc = '122';
 /* Insert the media module tracking code here. */ 
 
 ```
-

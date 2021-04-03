@@ -2,9 +2,8 @@
 title: Validation overview
 description: This topic is an overview of the validation process.
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
-
+exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 ---
-
 # Validation overview{#validation-overview}
 
 Validation includes a list of required test cases that customers must run through (using Adobe Debug), to submit logs validating a proper implementation. 

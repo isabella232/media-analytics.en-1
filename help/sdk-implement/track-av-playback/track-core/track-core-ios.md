@@ -2,9 +2,8 @@
 title: Track core playback on iOS
 description: This topic describes how to implement core tracking using the Media SDK on iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-
+exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 ---
-
 # Track core playback on iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
@@ -171,4 +170,3 @@ See the following for additional information on tracking core playback:
 
 * Tracking scenarios: [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the iOS SDK for a complete tracking example.
-

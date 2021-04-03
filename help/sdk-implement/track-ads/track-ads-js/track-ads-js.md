@@ -2,9 +2,8 @@
 title: Track ads using JavaScript 2.x
 description: Implement ad tracking in browser (JS) applications using the Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 ---
-
 # Track ads using JavaScript 2.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]

@@ -2,9 +2,8 @@
 title: JSON validation schemas
 description:
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
-
+exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 ---
-
 # JSON validation schemas{#json-validation-schemas}
 
 The Media Analytics back-end validates the request parameters for each event type using JSON validation schemas. These schemas are available to you, and serve as the current authority on parameter types used in the MA API.

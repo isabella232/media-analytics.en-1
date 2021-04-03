@@ -2,9 +2,8 @@
 title: Media overview
 description: 
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-
+exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 ---
-
 # Media overview{#media-overview}
 
 The Media Overview dashboard is designed to let you monitor media across your site. The Media Overview display shows several aggregate measurements so you can quickly monitor that media is performing as expected. A graph displays content starts next to ad starts to let you quickly view these metrics for each media item. 

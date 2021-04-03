@@ -2,9 +2,8 @@
 title: Tracking in SceneGraph (Roku)
 description: Tracking media with the Roku SceneGraph XML programming framework.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-
+exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 ---
-
 # Tracking in SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
 ## Introduction {#introduction}
@@ -353,4 +352,3 @@ function onAdbmobileApiResponse() as void
     endif 
 end function
 ```
-

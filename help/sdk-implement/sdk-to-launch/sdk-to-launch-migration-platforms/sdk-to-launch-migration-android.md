@@ -1,9 +1,8 @@
 ---
 title: Migrating from the standalone Media SDK to Adobe Launch - Android
 description: Instructions and code samples to assist in migrating from the Media SDK to Launch for Android.
-
+exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 ---
-
 # Migrating from the standalone Media SDK to Adobe Launch - Android 
 
 ## Configuration

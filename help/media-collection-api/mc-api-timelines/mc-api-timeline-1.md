@@ -2,9 +2,8 @@
 title: Timeline 1 - View to end of content
 description:
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 ---
-
 # Timeline 1 - View to end of content{#timeline-view-to-end-of-content}
 
 ## VOD, pre-roll ads, pausing, buffering, viewing content to the end

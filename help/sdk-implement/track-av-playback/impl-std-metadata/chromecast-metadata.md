@@ -2,9 +2,8 @@
 title: Chromecast metadata keys
 description: Describes setting standard video and ad metadata to be sent with tracking calls on Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-
+exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 ---
-
 # Chromecast metadata keys{#chromecast-metadata-keys}
 
 Standard video and ad metadata can be set on media and ad info objects respectively. Using the constants keys for video/ad metadata set the dictionary containing standard metadata on info object before calling the track APIs. Refer the tables below for the entire list of standard metadata constants, followed by sample.
@@ -108,4 +107,3 @@ adObject[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardVideoMetad
  
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, this._player.getAdInfo(), adContextData);
 ```
-

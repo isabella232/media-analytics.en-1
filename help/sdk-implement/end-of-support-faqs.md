@@ -1,9 +1,8 @@
 ---
 title: Media Analytics SDK End of Support FAQs
 description: This topic includes FAQs about the end of support for Media Analytics SDKs.
-
+exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 ---
-
 # Media Analytics SDK End of Support FAQs
 
 With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android. After August 31, 2021, Adobe will not provide fixes, OS-related updates, or support for the Media Analytics SDK.  During the process of migrating to these new Experience Platform SDKs, please keep in mind that the [Media Analytics extensions](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) must be implemented to enable Adobe Analytics for Streaming Media.

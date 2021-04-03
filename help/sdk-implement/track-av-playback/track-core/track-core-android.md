@@ -2,9 +2,8 @@
 title: Track core playback on Android
 description: This topic describes how to implement core tracking using the Media SDK on Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 ---
-
 # Track core playback on Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
@@ -169,4 +168,3 @@ See the following for additional information on tracking core playback:
 
 * Tracking scenarios: [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Sample player included with the Android SDK for a complete tracking example.
-
