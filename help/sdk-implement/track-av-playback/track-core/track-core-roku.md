@@ -89,94 +89,9 @@ exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 
 1. **Attach metadata**
 
-    Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+    Optionally attach standard and/or custom metadata objects to the video tracking session through context data variables.
 
     * **Standard metadata**
-
-       [Implement standard metadata on JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)     
-
-       >[!NOTE]
-       >
-       >Attaching the standard metadata object to the media object is optional.
-
-       * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
-
-    * **Custom metadata**
-
-       Create a variable object for the custom variables and populate with the data for this media. For example:     
-
-       ```js    
-       /* Set custom context data */
-       var customVideoMetadata = {
-           isUserLoggedIn: "false",
-           tvStation: "Sample TV station",
-           programmer: "Sample programmer"
-       };
-       ```
-
-1. **Track the intention to start playback**
-
-    To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
-
-    ```js
-    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-    ```
-
-    >[!TIP]
-    >
-    >The second value is the custom media metadata object name that you created in step 2.
-
-    >[!IMPORTANT]
-    >
-    >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. This API is used to load the data/metadata and to estimate the time-to-start QoS metric (the time duration between `trackSessionStart` and `trackPlay`).
-
-    >[!NOTE]
-    >
-    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
-
-1. **Track the actual start of playback**
-
-    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
-
-    ```js
-    mediaHeartbeat.trackPlay();
-    ```
-
-1. **Track the completion of playback**
-
-    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
-
-    ```js
-    mediaHeartbeat.trackComplete();
-    ```
-
-1. **Track the end of the session**
-
-    Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
-
-    ```js
-    mediaHeartbeat.trackSessionEnd();
-    ```
-
-    >[!IMPORTANT]
-    >
-    >A `trackSessionEnd` marks the end of a tracking session. If the session was successfully watched to completion, where the user watched the content until the end, ensure that `trackComplete` is called before `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.  Media playback tracking method to track the media load and set the current session to active:
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **Attach video metadata**
-
-    Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
-
-    * **Standard video metadata**
 
        [Implement standard metadata on Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
