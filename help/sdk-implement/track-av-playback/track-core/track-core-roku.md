@@ -89,7 +89,7 @@ exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 
 1. **Attach metadata**
 
-    Optionally attach standard and/or custom metadata objects to the video tracking session through context data variables.
+    Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
     * **Standard metadata**
 
