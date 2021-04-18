@@ -1,6 +1,6 @@
 ---
 title: Event types and descriptions
-description: 
+description: Event types and descriptions
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 ---

@@ -1,6 +1,6 @@
 ---
 title: Implementing an events request
-description: 
+description: Implementing an events request
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 ---

@@ -1,6 +1,6 @@
 ---
 title: Calculated metrics
-description: 
+description: Calculated metrics
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 ---

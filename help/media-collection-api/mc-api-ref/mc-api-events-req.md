@@ -1,6 +1,6 @@
 ---
 title: Events request
-description: 
+description: Events request
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 ---

@@ -1,6 +1,6 @@
 ---
 title: Controlling the order of events
-description: 
+description: Controlling the order of events
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 ---

@@ -1,6 +1,6 @@
 ---
 title: Media overview
-description: 
+description: Media overview
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 ---

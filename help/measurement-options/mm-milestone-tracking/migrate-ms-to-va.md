@@ -1,6 +1,6 @@
 ---
 title: Migrating from Milestone to Media Analytics
-description: 
+description: Migrating from Milestone to Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 ---

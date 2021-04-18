@@ -1,6 +1,6 @@
 ---
 title: Prerequisites
-description: 
+description: Prerequisites
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 ---

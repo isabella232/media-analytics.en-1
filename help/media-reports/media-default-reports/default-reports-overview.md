@@ -1,6 +1,6 @@
 ---
 title: Default reports overview
-description: 
+description: Default reports overview
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 ---

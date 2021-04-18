@@ -1,6 +1,6 @@
 ---
 title: Obtaining a session ID
-description: 
+description: Obtaining a session ID
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
 ---
