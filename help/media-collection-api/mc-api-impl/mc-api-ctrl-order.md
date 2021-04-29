@@ -9,6 +9,7 @@ exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 Streaming video tracking is a highly time-dependent operation and occasionally the Media Collection API tracking calls arrive at the back end out-of-order. In this situation, the back end attempts to queue up and reorder events based on the provided timestamp in the `playerTime` object.  This occurs with some limits. Currently, the reorder may fail if the delays between out-of-order calls are more than one second. In future updates, the ‘acceptable delay time’ may be optimized and configurable.
 
 ## Out-of-order event example
+
 Out-of-order events occur when events pass through the network which sometimes causes a delay.
 
 For example, you could send an `adBreakStart` event followed by an `adStart` event. This is a common use case, because it's required for an ad to start inside an ad break.
