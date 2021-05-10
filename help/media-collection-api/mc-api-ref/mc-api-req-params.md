@@ -21,7 +21,7 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps.|
-| `visitor.aamLocationHint` | N | `sessionStart` | Provides Adobe Audience Manager Edge data |
+| `visitor.aamLocationHint` | N | `sessionStart` | Provides Adobe Audience Manager Edge data — If a value is not entered, the value is null.|
 | `appInstallationId` | N | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
 
 ## Content Data
