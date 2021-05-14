@@ -158,8 +158,8 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 
     | &nbsp;Method&nbsp;&nbsp; | Description |
     | --- | --- |
-    | `processMessages` | Responsible to pass the Analytics events to the SDK to be handled.  <br/><br/>`ADBMobile().processMessages(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-    | `processMediaMessages` | Responsible to pass the Media events to the SDK to be handled. <br/><br/>`ADBMobile().processMediaMessages()` |
+    | `processMessages` | Responsible to pass the Analytics events to the SDK to be handled.  <br/><br/>`ADBMobile().processMessages()`|
+    | `processMediaMessages` | Responsible to pass the Media events to the SDK to be handled. <br/><br/>`ADBMobile().processMediaMessages()`|
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
