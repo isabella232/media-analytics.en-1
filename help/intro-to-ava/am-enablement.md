@@ -52,15 +52,15 @@ You can use these methods to send signals and retrieve visitor segments from Aud
    Sets the DPID and DPUUID. If DPID and DPUUID are set, they will be sent with each signal.
 
    ```js    
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
 
    Sends audience management a signal with traits.
 
-   ```js    
-   ADBMobile.audienceManager.SubmitSignal();
+   ```js
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -102,5 +102,7 @@ You can use these methods to send signals and retrieve visitor segments from Aud
    Sends audience management a signal with traits.
 
    ```js    
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
