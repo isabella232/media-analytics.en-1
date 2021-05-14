@@ -143,10 +143,12 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
 
     **PrivacyStatus**
     | &nbsp;Constant&nbsp;&nbsp; | Description |
+    | --- | --- |
     | `PRIVACY_STATUS_OPT_IN` | Constant to be passed while calling setPrivacyStatus to opt in <br/><br/>`ADBMobile().PRIVACY_STATUS_OPT_IN`|
     | `PRIVACY_STATUS_OPT_OUT` | Constant to be passed while calling setPrivacyStatus to opt out <br/><br/>`ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
     | &nbsp;Method&nbsp;&nbsp; | Description |
+    | --- | --- |
     | `setPrivacyStatus` | Sets the privacy status on the SDK.  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
     | `getPrivacyStatus` | Gets the current privacy status set on the SDK.  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
@@ -155,6 +157,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
     >Ensure that you call `processMessages` and `processMediaMessages` function in the main event loop every 250 ms to ensure that the SDK sends out the pings properly.
 
     | &nbsp;Method&nbsp;&nbsp; | Description |
+    | --- | --- |
     | `processMessages` | Responsible to pass the Analytics events to the SDK to be handled.  <br/><br/>`ADBMobile().processMessages(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
     | `processMediaMessages` | Responsible to pass the Media events to the SDK to be handled. <br/><br/>`ADBMobile().processMediaMessages()` |
 
