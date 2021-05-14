@@ -149,7 +149,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
     | &nbsp;Constant&nbsp;&nbsp; | Description |
     | --- | --- |
     | `PRIVACY_STATUS_OPT_IN` | Constant to be passed while calling setPrivacyStatus to opt in. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
-    | `PRIVACY_STATUS_OPT_OUT` | Constant to be passed while calling setPrivacyStatus to opt out. <br/><br/>Usage: `optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+    | `PRIVACY_STATUS_OPT_OUT` | Constant to be passed while calling setPrivacyStatus to opt out. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
     <br/>
 
