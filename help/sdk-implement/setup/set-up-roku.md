@@ -47,7 +47,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
            "rsids":"",
            "server":"",
            "charset":"UTF-8",
-           "ssl":false,
+           "ssl":true,
            "offlineEnabled":false,
            "lifecycleTimeout":30,
            "batchLimit":50,
@@ -73,7 +73,7 @@ Roku SDK 2.x for Experience Cloud Solutions lets you measure Roku applications w
           "server":"example.com",
           "publisher":"sample-publisher",
           "channel":"sample-channel",
-          "ssl":false,
+          "ssl":true,
           "ovp":"sample-ovp",
           "sdkVersion":"sample-sdk",
           "playerName":"roku"

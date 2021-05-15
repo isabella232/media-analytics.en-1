@@ -58,7 +58,7 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
              "analytics": {
                "rsids": "mobile5vhl.sample.player",
                "server": "obumobile5.sc.omtrdc.net",
-               "ssl": false,
+               "ssl": true,
                "offlineEnabled": false,
                "charset": "UTF-8",
                "lifecycleTimeout": 300,
@@ -73,7 +73,7 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
                "server": "obumobile5.hb.omtrdc.net",
                "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
                "channel": "test-channel-chromecast",
-               "ssl": false,
+               "ssl": true,
                "ovp": "chromecast-player",
                "sdkVersion": "chromecast-sdk",
                "playerName": "Chromecast"
