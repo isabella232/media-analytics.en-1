@@ -11,3 +11,30 @@ You can provide custom key:value pairs on the `sessionStart`, `chapterStart`, an
 The `customMetadata` JSON key should contain an object of key:value pairs. The key should contain only alphanumerical characters, underline, and dot/period.
 
 [MA Collection API Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
+
+## Example
+
+Currently you can send a `sessionStart` event with the following key:value pair:
+
+```
+params: { "media.channel": "channel-1" },
+  customMetadata: { "a.media.channel": "channel-2" }
+```
+
+For the configuration above, the reporting data sent to analytics is the following:
+
+`c.a.media.channel=channel-2`
+
+### Recommendation
+
+We recommend that you use a separate namespace for custom metadata. For example:
+
+```
+params: { "media.channel": "channel-1" },
+  customMetadata: { "clientnamespace.media.channel": "channel-2" }
+```
+
+ In the recommended example, the reporting data for custom metadata sent to analytics is as follows:
+
+`c.a.media.channel=channel-1`
+`c.clientnamespace.media.channel=channel-2`
