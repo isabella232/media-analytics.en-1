@@ -1,6 +1,6 @@
 ---
 title: Request parameters
-description:
+description: Learn about Adobe Analytics streaming media request parameters.
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 ---
@@ -8,105 +8,105 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 
 ## Analytics Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `analytics.trackingServer` | Y | `sessionStart` | The URL of your Adobe Analytics server |
-| `analytics.reportSuite` | Y | `sessionStart` | The ID that identifies your Analytics reporting data |
-| `analytics.enableSSL` | N | `sessionStart` | True or false for enabling SSL |
-| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat `visitorId` equals the Analytics `VID.` |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.trackingServer` | Y | string | `sessionStart` | The URL of your Adobe Analytics server |
+| `analytics.reportSuite` | Y | string | `sessionStart` | The ID that identifies your Analytics reporting data |
+| `analytics.enableSSL` | N | boolean | `sessionStart` | True or false for enabling SSL |
+| `analytics.visitorId` | N | string | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat `visitorId` equals the Analytics `VID.` |
 
 ## Visitor Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps.|
-| `visitor.aamLocationHint` | N | `sessionStart` | Provides Adobe Audience Manager Edge data — If a value is not entered, the value is null.|
-| `appInstallationId` | N | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | The Experience Cloud Organization ID; identifies your organization within the Adobe Experience Cloud eco system |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps.|
+| `visitor.aamLocationHint` | N | integer | `sessionStart` | Provides Adobe Audience Manager Edge data — If a value is not entered, the value is null.|
+| `appInstallationId` | N | string | `sessionStart` | The appInstallationId uniquely identifies the app and the device |
 
 ## Content Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | Unique identifer for the content |
-| `media.name` | N | `sessionStart` | Human readible name for the content |
-| `media.length` | Y | `sessionStart` | Content length (seconds) |
-| `media.contentType` | Y | `sessionStart` | Format of the stream (can be any string, a few recommanded values are "Live", "VOD", or "Linear") |
-| `media.playerName` | Y | `sessionStart` | The name of the player responsible for rendering the content |
-| `media.channel` | Y | `sessionStart` | The channel of distribution of the content. This could be an mobile application name or a web site name, property name |
-| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
-| `media.sdkVersion` | N | `sessionStart` | The SDK verison used by the player |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `media.id` | Y | string | `sessionStart` | Unique identifer for the content |
+| `media.name` | N | string | `sessionStart` | Human readible name for the content |
+| `media.length` | Y | number | `sessionStart` | Content length (seconds) |
+| `media.contentType` | Y | string | `sessionStart` | Format of the stream (can be any string, a few recommanded values are "Live", "VOD", or "Linear") |
+| `media.playerName` | Y | string | `sessionStart` | The name of the player responsible for rendering the content |
+| `media.channel` | Y | string | `sessionStart` | The channel of distribution of the content. This could be an mobile application name or a web site name, property name |
+| `media.resume` | N | boolean | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
+| `media.sdkVersion` | N | string | `sessionStart` | The SDK verison used by the player |
 
 ## Content Standard Metadata
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | Stream format, e.g. “HD” |
-| `media.show` | N | `sessionStart` | The program or series name |
-| `media.season` | N | `sessionStart` | The season number the show or series belongs to |
-| `media.episode` | N | `sessionStart` | The number of the episode |
-| `media.assetId` | N | `sessionStart` | The unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.  |
-| `media.genre` | N | `sessionStart` | The type of content as defined by the content producer |
-| `media.firstAirDate` | N | `sessionStart` | The date when the content first aired on television |
-| `media.firstDigitalDate` | N | `sessionStart` | The date when the content first aired on any digital platform |
-| `media.rating` | N | `sessionStart` | The rating as defined by TV Parental Guidelines |
-| `media.originator` | N | `sessionStart` | The creator of the content |
-| `media.network` | N | `sessionStart` | The network / channel name |
-| `media.showType` | N | `sessionStart` | The type of content, expressed as an integer between 0 and 3: <ul> <li>0 - Full episode </li> <li>1 - Preview </li> <li>2 - Clip </li> <li>3 - Other </li> </ul> |
-| `media.adLoad` | N | `sessionStart` | The type of ad loaded |
-| `media.pass.mvpd` | N | `sessionStart` | The MVPD provided by Adobe authentication |
-| `media.pass.auth` | N | `sessionStart` | Indicates the user has been authorized by Adobe authentication (can only be true if set) |
-| `media.dayPart` | N | `sessionStart` | The time of day when the content was broadcast |
-| `media.feed` | N | `sessionStart` | The type of feed, e.g., "West-HD" |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `media.streamFormat` | N | string | `sessionStart` | Stream format, e.g. “HD” |
+| `media.show` | N | string | `sessionStart` | The program or series name |
+| `media.season` | N | string | `sessionStart` | The season number the show or series belongs to |
+| `media.episode` | N | string | `sessionStart` | The number of the episode |
+| `media.assetId` | N | string | `sessionStart` | The unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.  |
+| `media.genre` | N | string | `sessionStart` | The type of content as defined by the content producer |
+| `media.firstAirDate` | N | string | `sessionStart` | The date when the content first aired on television |
+| `media.firstDigitalDate` | N | string | `sessionStart` | The date when the content first aired on any digital platform |
+| `media.rating` | N | string | `sessionStart` | The rating as defined by TV Parental Guidelines |
+| `media.originator` | N | string | `sessionStart` | The creator of the content |
+| `media.network` | N | string | `sessionStart` | The network / channel name |
+| `media.showType` | N | string | `sessionStart` | The type of content, expressed as an integer between 0 and 3: <ul> <li>0 - Full episode </li> <li>1 - Preview </li> <li>2 - Clip </li> <li>3 - Other </li> </ul> |
+| `media.adLoad` | N | string | `sessionStart` | The type of ad loaded |
+| `media.pass.mvpd` | N | string | `sessionStart` | The MVPD provided by Adobe authentication |
+| `media.pass.auth` | N | string | `sessionStart` | Indicates the user has been authorized by Adobe authentication (can only be true if set) |
+| `media.dayPart` | N | string | `sessionStart` | The time of day when the content was broadcast |
+| `media.feed` | N | string | `sessionStart` | The type of feed, e.g., "West-HD" |
 
 ## Ad Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `media.ad.podFriendlyName` | N | `adBreakStart` | Friendly name of the ad break |
-| `media.ad.podIndex` | Y | `adBreakStart` | The index of the ad pod in the video |
-| `media.ad.podSecond` | Y | `adBreakStart` | The second at which the pod started |
-| `media.ad.podPosition` | Y | `adStart` | The index of the ad inside the ad break starting at 1 |
-| `media.ad.name` | N | `adStart` | Friendly name of the ad |
-| `media.ad.id` | Y | `adStart` | Name of the ad |
-| `media.ad.length` | Y | `adStart` | Length of the video ad in seconds |
-| `media.ad.playerName` | Y | `adStart` | The name of the player responsible for rendering the ad |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.podFriendlyName` | N | string | `adBreakStart` | Friendly name of the ad break |
+| `media.ad.podIndex` | Y | integer | `adBreakStart` | The index of the ad pod in the video |
+| `media.ad.podSecond` | Y | number | `adBreakStart` | The second at which the pod started |
+| `media.ad.podPosition` | Y | integer | `adStart` | The index of the ad inside the ad break starting at 1 |
+| `media.ad.name` | N | string | `adStart` | Friendly name of the ad |
+| `media.ad.id` | Y | string | `adStart` | Name of the ad |
+| `media.ad.length` | Y | number | `adStart` | Length of the video ad in seconds |
+| `media.ad.playerName` | Y | string | `adStart` | The name of the player responsible for rendering the ad |
 
 ## Ad Standard Metadata
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `media.ad.advertiser` | N | `adStart` | The company or brand whose product is featured in the ad |
-| `media.ad.campaignId` | N | `adStart` | The ID of the ad campaign |
-| `media.ad.creativeId` | N | `adStart` | The ID of the ad creative |
-| `media.ad.siteId` | N | `adStart` | The ID of the ad site |
-| `media.ad.creativeURL` | N | `adStart` | The URL of the ad creative |
-| `media.ad.placementId` | N | `adStart` | The placement ID of the ad |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.advertiser` | N | string | `adStart` | The company or brand whose product is featured in the ad |
+| `media.ad.campaignId` | N | string | `adStart` | The ID of the ad campaign |
+| `media.ad.creativeId` | N | string | `adStart` | The ID of the ad creative |
+| `media.ad.siteId` | N | string | `adStart` | The ID of the ad site |
+| `media.ad.creativeURL` | N | string | `adStart` | The URL of the ad creative |
+| `media.ad.placementId` | N | string | `adStart` | The placement ID of the ad |
 
 ## Chapter Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `media.chapter.index` | Y | `chapterStart` | Identifies the chapter's position in the content |
-| `media.chapter.offset` | Y | `chapterStart` | The second in the playback where the chapter starts |
-| `media.chapter.length` | Y | `chapterStart` | The length of the chapter in seconds |
-| `media.chapter.friendlyName` | N | `chapterStart` | The human-friendly name of the chapter |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `media.chapter.index` | Y | integer | `chapterStart` | Identifies the chapter's position in the content |
+| `media.chapter.offset` | Y | number | `chapterStart` | The second in the playback where the chapter starts |
+| `media.chapter.length` | Y | number | `chapterStart` | The length of the chapter in seconds |
+| `media.chapter.friendlyName` | N | string | `chapterStart` | The human-friendly name of the chapter |
 
 ## Quality Data
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | Any | The bitrate of the stream |
-| `media.qoe.droppedFrames` | N | Any | The number of dropped frames in the stream |
-| `media.qoe.framesPerSecond` | N | Any | The number of frames per second |
-| `media.qoe.timeToStart` | N | Any | The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `media.qoe.bitrate` | N | integer | Any | The bitrate of the stream |
+| `media.qoe.droppedFrames` | N | integer | Any | The number of dropped frames in the stream |
+| `media.qoe.framesPerSecond` | N | integer | Any | The number of frames per second |
+| `media.qoe.timeToStart` | N | integer | Any | The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing |
 
 ## California Consumer Privacy Act (CCPA) Parameters {#ccpa-params}
 
-| Request&nbsp;Key&nbsp; | Required | Set On... | &nbsp;Description&nbsp; |
-| --- | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | `sessionStart` | Set to true when the end user has opted out of their data being shared between Adobe Analytics and other Experience Cloud solutions (e.g., Audience Manager)|
-| `analytics.optOutShare` | N | `sessionStart` | Set to true when the end user has opted out of their data being federated (e.g., to other Adobe Analytics clients). |
+| Request&nbsp;Key&nbsp; | Required | Request Type Key |  Set On... | &nbsp;Description&nbsp; |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Set to true when the end user has opted out of their data being shared between Adobe Analytics and other Experience Cloud solutions (e.g., Audience Manager)|
+| `analytics.optOutShare` | N | boolean | `sessionStart` | Set to true when the end user has opted out of their data being federated (e.g., to other Adobe Analytics clients). |
 
 ## Additional Details {#additional-details}
 
