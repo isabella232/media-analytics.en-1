@@ -49,7 +49,7 @@ The Downloaded Content feature is the offline version of the the (standard) onli
 
 ## Integration with Adobe Analtyics {#integration-with-adobe-analtyics}
 
-When computing the Analytics start/close calls for the downloaded content scenario, the back-end sets an extra Analytics field called `ts.` These are timestamps for the first and last events received (start and complete). This mechanism allows a completed media session to be placed at the correct point in time (i.e., even if the user doesn't come back online for several days, the media session is reported to have occurred at the time the content was actually viewed). You must enable this mechanism on the Adobe Analytics side by creating a _timestamp optional report suite._ To enable a timestamp optional report suite, see [Timestamps Optional.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
+When computing the Analytics start/close calls for the downloaded content scenario, the back-end sets an extra Analytics field called `ts.` These are timestamps for the first and last events received (start and complete). This mechanism allows a completed media session to be placed at the correct point in time (i.e., even if the user doesn't come back online for several days, the media session is reported to have occurred at the time the content was actually viewed). You must enable this mechanism on the Adobe Analytics side by creating a _timestamp optional report suite._ To enable a timestamp optional report suite, see [Timestamps Optional.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Sample session comparison {#sample-session-comparison}
 

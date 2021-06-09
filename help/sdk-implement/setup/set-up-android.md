@@ -16,7 +16,7 @@ exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 * **Obtain valid configuration parameters for the Media SDK**
    These parameters can be obtained from an Adobe representative after you set up your analytics account.
 * **Implement ADBMobile for Android in your application**
-   For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
+   For more information about the Adobe Mobile SDK documentation, see [Android SDK 4.x for Experience Cloud Solutions.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
 
 * **Provide the following capabilities in your media player:**
    * *An API to subscribe to player events* - The Media SDK requires that you call a set of simple APIs when events occur in your player.

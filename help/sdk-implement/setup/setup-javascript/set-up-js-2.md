@@ -11,7 +11,7 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 * **Obtain valid configuration parameters**
    These parameters can be obtained from an Adobe representative after you set up your analytics account.
 * **Implement `AppMeasurement` for JavaScript in your media application**
-   For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript.](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html)
+   For more information about the Adobe Mobile SDK documentation, see [Implementing Analytics Using JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 * **Provide the following capabilities in your media player:**
 

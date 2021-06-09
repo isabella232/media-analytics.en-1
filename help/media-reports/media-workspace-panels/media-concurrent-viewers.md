@@ -9,7 +9,7 @@ Analyzing concurrent viewers enables you to understand where peak concurrency oc
 
 ## Media Concurrent Viewers Panel in Analysis Workspace
 
-In Analysis Workspace, Concurrent Viewers is the number of unique visitors viewing your media stream(s) at a specific point in time, regardless of the number of sessions. The Media Concurrent Viewers panel is available in order to visualize concurrent viewers, break down, and compare. [Learn more...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+In Analysis Workspace, Concurrent Viewers is the number of unique visitors viewing your media stream(s) at a specific point in time, regardless of the number of sessions. The Media Concurrent Viewers panel is available in order to visualize concurrent viewers, break down, and compare. [Learn more...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Get Concurrent Viewers via Analytics Reporting API
 

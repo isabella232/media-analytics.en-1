@@ -44,7 +44,7 @@ to work properly.
 
     ![](assets/launch_config_js.png)
 
-[Launch User Guide - Install & configure the media extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch User Guide - Install & configure the media extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 ## Tracker creation differences
 
@@ -75,7 +75,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 ```
 
 <!--  Dead Link - from 2019 - can't locate where this should go
-[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
+[Media SDK - Tracker Creation](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
@@ -117,5 +117,5 @@ Launch offers two approaches to creating the tracking infrastructure. Both appro
 
 ### Launch
 
-* [Launch overview](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [Media Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch overview](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+* [Media Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)

@@ -11,7 +11,7 @@ exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 
 ## Release Notes{#release-notes}
 
-* [Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [Release Notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
 <!--
 ## Documentation Updates{#documentation-updates}

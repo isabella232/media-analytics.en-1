@@ -19,7 +19,7 @@ The Media SDKs are routinely updated when new versions of devices are released a
 
 For devices or platforms that don’t currently have SDK support or in situations where you don’t want to use an SDK, you can implement the Media Collection API. The Media Collection API allows you to make RESTful API calls directly from a device or platform to the Media Analytics backend.
 
-The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
+The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
 | Streaming Platforms and Devices |                                               | Media Launch Extension w/ AEP Mobile SDK |      Media SDK      | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
@@ -43,4 +43,4 @@ The table below lists currently supported devices and platforms. To download the
 
 1. Support for these SDKs ends on August 31, 2021. For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
-For additional information about the minimum platform versions supported for each SDK, see [Minimum Platform Version Support](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
+For additional information about the minimum platform versions supported for each SDK, see [Minimum Platform Version Support](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/setup/setup-overview.html)

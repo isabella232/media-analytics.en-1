@@ -10,7 +10,7 @@ The Media Concurrent Viewers dashboard displays concurrent viewers during one da
 
 >[!TIP]
 >
-> This report is based on concurrent active media sessions.  To see concurrent viewers by unique visitor, with the additional capabilities to apply a segment, break down and compare, use the [Media Concurrent Viewers panel in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> This report is based on concurrent active media sessions.  To see concurrent viewers by unique visitor, with the additional capabilities to apply a segment, break down and compare, use the [Media Concurrent Viewers panel in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 >
 
 ![](assets/video-concurrent-viewers.png)
