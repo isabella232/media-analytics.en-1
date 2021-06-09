@@ -10,7 +10,7 @@ exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 * **Obtain valid configuration parameters**
    These parameters can be obtained from an Adobe representative after you set up your analytics account.
 * **Implement `AppMeasurement` and `Experience Cloud Identity Service` for JavaScript in your media application**
-   For more information, see [Implementing Analytics Using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) and [Implementing Experience Cloud Identity  Service.](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
+   For more information, see [Implementing Analytics Using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) and [Implementing Experience Cloud Identity  Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
 
 * **Provide the following capabilities in your media player:**
 
