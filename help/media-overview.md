@@ -19,7 +19,7 @@ You can measure vital delivery metrics related to QoS, such as dropped frames, t
 ## Features {#features}
 
 Adobe Analytics for Streaming Media benefits include real-time monitoring, detailed analysis, actionable insights and monetization opportunities.
-* **Real-time analysis**—Make real-time, actionable decisions utilizing key performance metrics such as duration, ex2, and ex3, across multiple channels. Main content events are measured in 10-second intervals to capture all activity as it occurs. Ad tracking events occur at 1-second intervals.
+* **Real-time analysis**—Make real-time, actionable decisions utilizing key performance metrics such as media starts, across multiple channels.
 * **Drive engagement**—Fully engage users through fewer buffering events and by understanding where and when ads should play within content to provide a smooth, less intrusive experience that delivers repeat visits.
 * **Holistic picture**—Combine multiple data points across all of your content distributors to get a full view of all your media activity. Measure engagement and views/listens across all possible channels through the Federated Analytics feature.
 * **Increased granularity**—Evaluate viewing behavior at the most granular level, including individual visitor time of day, concurrent viewers/listeners by minute, and average duration the content was consumed.
