@@ -1,5 +1,5 @@
 ---
-title: Calculated metrics
+title: Streaming Media Calculated Metrics
 description: Learn about Adobe Streaming Media calculated metrics and metric formulas.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
@@ -7,6 +7,10 @@ feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
 ---
 # Calculated metrics{#calculated-metrics}
+
+Calculated metrics for streaming media are custom metrics that allow you to obtain targeted streaming media data such as average ad time spent or average ads per media stream.
+
+For information about Adobe Analytics calculated metrics, see [Calculated and Advanced Calculated (Derived) Metrics](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in the Adobe Analytics Components Guide.
 
 >[!NOTE]
 >
