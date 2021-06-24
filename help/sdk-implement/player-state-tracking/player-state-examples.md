@@ -12,8 +12,7 @@ role: Business Practitioner, Administrator, Data Engineer
 
 When a video session has a pause duration that is longer than 30 minutes, the API requires a new session. When this occurs, the client should generate a new session ID. For both video sessions, the client should retain all the states that a player is in and send all the information as a `stateStart` event right after the `sessionStart` call.
 
-`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
-`
+`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd`
 
 After the `sessionEnd` is sent, a new video session must be started and the first API events would be:
 
