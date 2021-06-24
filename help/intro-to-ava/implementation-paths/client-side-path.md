@@ -3,6 +3,8 @@ title: What are Media Analytics and client-side integrations?
 description: Learn how Media Analytics works with client-side integrations and the Media SDK and/or the Media Collection API.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Client-side{#client-side}
 

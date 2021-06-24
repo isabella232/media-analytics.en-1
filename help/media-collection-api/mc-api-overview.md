@@ -1,9 +1,11 @@
 ---
 seo-title: Overview
-title: Overview
-description:
+title: Streaming Media Collection API Overview
+description: Learn about the Media Collection API and how your player can track audio and video events using RESTful HTTP calls.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Overview{#overview}
 

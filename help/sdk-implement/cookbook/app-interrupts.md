@@ -1,8 +1,10 @@
 ---
-title: Handling application interrupts during playback
-description: How to handle interruptions to tracking during playback of media.
+title: Handling Application Interrupts During Playback
+description: Learn how to handle interruptions to tracking during playback of media.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Handling application interrupts during playback{#handling-application-interrupts-during-playback}
 

@@ -1,8 +1,10 @@
 ---
-title: Prerequisites
-description: Prerequisites
+title: Leaern About Prerequisites for Streaming Media
+description: Get Started with Adobe Analytics Streaming Media. Learn what you need to implement Adobe Analytics for Streaming Media.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
+feature: "Media Analytics, System Requirements"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Prerequisites{#prerequisites}
 

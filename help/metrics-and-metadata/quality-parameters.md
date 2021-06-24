@@ -1,8 +1,10 @@
 ---
 title: Quality parameters
-description:
+description: Learn about the Quality of Experience (QoE) parameters used to capture quality metadata.
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
+feature: "Media Analytics, Variables"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Quality parameters{#quality-parameters}
 

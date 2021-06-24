@@ -1,8 +1,10 @@
 ---
-title: Event types and descriptions
-description: Event types and descriptions
+title: Streaming Media Event Types and Descriptions
+description: "What are the Media Collection event types and descriptions? "
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Event types and descriptions{#event-types-and-descriptions}
 

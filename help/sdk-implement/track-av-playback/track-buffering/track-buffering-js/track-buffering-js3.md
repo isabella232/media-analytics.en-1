@@ -1,7 +1,9 @@
 ---
-title: Track buffering using JavaScript 3.x
-description: Describes tracking buffering events in browser apps (JS).
+title: Learn How To Track Buffering Using JavaScript 3.x
+description: Learn how to track buffering events in browser apps (JS).
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track buffering using JavaScript 3.x{#track-buffering-on-javascript}
 

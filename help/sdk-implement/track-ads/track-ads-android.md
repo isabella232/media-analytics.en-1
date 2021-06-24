@@ -1,8 +1,10 @@
 ---
-title: Track ads on Android
+title: Learn How to Track Ads on Android
 description: Implement ad tracking in Android applications using the Media SDK.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track ads on Android{#track-ads-on-android}
 

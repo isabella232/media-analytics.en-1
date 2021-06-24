@@ -1,8 +1,10 @@
 ---
-title: Implement standard metadata on Chromecast
-description: Describes setting standard video and ad metadata on Chromecast.
+title: Learn How To Implement Standard Metadata on Chromecast
+description: Learn how to set standard video and ad metadata on Chromecast.
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Implement standard metadata on Chromecast{#implement-standard-metadata-on-chromecast}
 

@@ -1,8 +1,10 @@
 ---
-title: Heartbeat parameter descriptions
-description: A list of the heartbeat parameters that Adobe collects and processes on the Media Analytics (heartbeats) server.
+title: Heartbeat Parameter Descriptions
+description: Explore the heartbeat parameters that Adobe collects and processes on the Media Analytics (heartbeats) server.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
+feature: "Media Analytics, Variables"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Media Analytics (heartbeats) parameter descriptions{#heartbeat-parameter-descriptions}
 

@@ -1,8 +1,10 @@
 ---
-title: Track seeking using JavaScript 2.x
-description: This topic describes implementing seek tracking using the Media SDK in browser apps (JS).
+title: Learn How To Track Seeking using JavaScript 2.x
+description: Learn how to track Seek Start and Seek Complete events using the Media SDK in browser apps (JS 2.x).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track seeking using JavaScript 2.x{#track-seeking-on-javascript}
 

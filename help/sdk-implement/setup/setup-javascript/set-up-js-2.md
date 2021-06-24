@@ -1,8 +1,10 @@
 ---
-title: Set up JavaScript 2.x
-description: Media SDK application setup for implementation on JavaScript 2.x.
+title: How to Set up the Media SKD Using JavaScript 2.x
+description: Follow these steps to setup the Media SDK application on JavaScript 2.x.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Set up JavaScript 2.x{#set-up-javascript}
 

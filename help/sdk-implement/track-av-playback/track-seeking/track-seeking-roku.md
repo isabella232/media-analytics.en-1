@@ -1,8 +1,10 @@
 ---
-title: Track seeking on Roku
-description: This topic describes implementing seek tracking using the Media SDK on Roku.
+title: Learn How To Track Seeking on Roku
+description: Learn how to track Seek Start and Seek Complete events using the Media SDK on Roku.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track seeking on Roku{#track-seeking-on-roku}
 

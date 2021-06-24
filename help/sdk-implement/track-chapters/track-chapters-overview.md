@@ -1,8 +1,10 @@
 ---
-title: Overview
+title: Learn How to Track Chapters and Segments Explained
 description: How to implement chapter and segment tracking with the Media SDK.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Overview{#overview}
 

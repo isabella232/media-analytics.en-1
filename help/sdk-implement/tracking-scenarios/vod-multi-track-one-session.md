@@ -1,8 +1,10 @@
 ---
-title: VOD one tracker for multiple sessions
-description: An example of how to use one tracker to track multiple sessions using the Media SDK.
+title: VOD One Tracker for Multiple Sessions
+description: View an example of how to use one tracker to track multiple sessions using the Media SDK.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # VOD one tracker for multiple sessions{#vod-one-tracker-for-multiple-sessions}
 

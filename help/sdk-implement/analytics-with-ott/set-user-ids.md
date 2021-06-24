@@ -1,8 +1,10 @@
 ---
-title: Set user IDs
+title: Set User IDs
 description: APIs for setting user IDs, which server as a unique customer identifier.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
+feature: "Media Analytics, API"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Set user IDs{#set-user-ids}
 

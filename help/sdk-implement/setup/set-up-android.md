@@ -1,8 +1,10 @@
 ---
-title: Set up Android
-description: Media SDK application setup for implementation on Android.
+title: How to Set up the Media SKD on Android
+description: Follow these steps to setup the Media SDK application on Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Set up Android{#set-up-android}
 

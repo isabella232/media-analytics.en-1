@@ -1,7 +1,9 @@
 ---
-title: Implement standard metadata using JavaScript 3.x
-description: Describes setting standard video and ad metadata to be sent with tracking calls in browser apps (JS).
+title: Learn To Implement Standard Metadata using JavaScript 3.x
+description: Learn how to set standard video and ad metadata to be sent with tracking calls in browser apps (JS 3.x).
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Implement standard metadata using JavaScript 3.x{#implement-standard-metadata-on-javascript}
 

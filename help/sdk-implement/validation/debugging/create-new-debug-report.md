@@ -1,8 +1,10 @@
 ---
-title: Create a new Debug report
-description: This topic describes how to create a new Debug report.
+title: Create a New Debug Report
+description: Learn how to create a new Debug report.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Create a new Debug report{#create-a-new-debug-report}
 

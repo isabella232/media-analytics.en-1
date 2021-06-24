@@ -1,8 +1,10 @@
 ---
-title: iOS metadata keys
-description: This topic describes the available iOS metadata keys.
+title: iOS Metadata Keys Explained
+description: Learn about the available iOS metadata keys.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # iOS metadata keys{#ios-metadata-keys}
 

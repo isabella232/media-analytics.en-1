@@ -1,7 +1,9 @@
 ---
-title: Track core playback using JavaScript v3.x
-description: This topic describes how to implement core tracking using the Media SDK in a browser using JavaScript 3.x apps.
+title: Learn How To Track Core Playback Using JavaScript v3.x
+description: Learn how to to implement core tracking using the Media SDK in a browser using JavaScript 3.x apps.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track core playback using JavaScript 3.x{#track-core-playback-on-javascript}
 

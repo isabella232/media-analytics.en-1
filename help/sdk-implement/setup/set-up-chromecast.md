@@ -1,8 +1,10 @@
 ---
-title: Set up Chromecast
-description: Media SDK application setup for implementation on Chromecast.
+title: How to Set up the Media SKD for Chromecast
+description: Follow these steps to setup the Media SDK application on Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Set up Chromecast{#set-up-chromecast}
 

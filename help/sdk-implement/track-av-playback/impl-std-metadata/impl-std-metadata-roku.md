@@ -1,8 +1,10 @@
 ---
-title: Implement standard metadata on Roku
-description: Describes setting standard video and ad metadata to be sent with tracking calls on Roku.
+title: Learn How To Implement Standard Metadata on Roku
+description: Learn how to set standard video and ad metadata to be sent with tracking calls on Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Implement standard metadata on Roku{#implement-standard-metadata-on-roku}
 

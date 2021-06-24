@@ -2,6 +2,8 @@
 title: What Streaming Media Implementation Paths are Available?
 description: Learn about Adobe Streaming Media implementation paths including Adobe Launch.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Implementation Paths {#implementation-paths}
 

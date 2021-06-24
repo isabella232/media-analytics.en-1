@@ -1,8 +1,10 @@
 ---
-title: Roku metadata keys
-description: This topic describes the available Roku metadata keys.
+title: Roku Metadata Keys Explained
+description: Learn about the available Roku metadata keys and view the entire list of standard metadata constants.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Roku metadata keys{#roku-metadata-keys}
 

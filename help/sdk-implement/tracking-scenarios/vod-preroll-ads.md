@@ -1,8 +1,10 @@
 ---
-title: VOD playback with pre-roll ads
-description: An example of how to track VOD content that contains pre-roll ads using the Media SDK.
+title: "VOD Playback with Pre-roll Ads"
+description: "View an example of how to track VOD content that contains pre-roll ads using the Media SDK."
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # VOD playback with pre-roll ads{#vod-playback-with-pre-roll-ads}
 

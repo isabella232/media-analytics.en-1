@@ -1,8 +1,10 @@
 ---
-title: Timeline 2 - User abandons session
-description:
+title: Learn About Media Traking Timelines�User abandons session
+description: Learn about the playhead timeline and corresponding user�s action when a video session is abandoned. Learn about the details for each action and requests.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Timeline 2 - User abandons session {#timeline--2-user-abandons-session}
 

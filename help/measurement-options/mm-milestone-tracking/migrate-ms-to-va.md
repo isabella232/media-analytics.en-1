@@ -1,8 +1,10 @@
 ---
-title: Migrating from Milestone to Media Analytics
-description: Migrating from Milestone to Media Analytics
+title: Learn How To Migrate from Milestone to Media Analytics
+description: Learn how to change Milestone variables to Media Analytics Metrics and Milestone module methods to Media Analytics syntax.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Migrating from Milestone to Media Analytics {#migrating-from-milestone-to-media-analytics}
 
