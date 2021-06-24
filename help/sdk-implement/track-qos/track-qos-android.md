@@ -1,8 +1,10 @@
 ---
-title: Track quality of experience on Android
-description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK on Android.
+title: Learn How to Track Quality of Experience on Android
+description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK on Android."
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Track quality of experience on Android{#track-quality-of-experience-on-android}
 

@@ -1,8 +1,10 @@
 ---
-title: Track core playback using JavaScript 2.x
-description: This topic describes how to implement core tracking using the Media SDK in a browser using JavaScript 2.x apps.
+title: Learn How To Track Core Playback Using JavaScript 2.x
+description: Learn how to implement core tracking using the Media SDK in a browser using JavaScript 2.x apps.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Track core playback using JavaScript 2.x{#track-core-playback-on-javascript}
 

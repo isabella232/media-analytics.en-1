@@ -1,8 +1,10 @@
 ---
-title: Resolving main play appearing between ads
-description: How to handle unexpected main:play calls between ads.
+title: Resolving Main Play Appearing Between Ads
+description: "Learn how to handle unexpected main:play calls between ads."
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Resolving main:play appearing between ads{#resolving-main-play-appearing-between-ads}
 

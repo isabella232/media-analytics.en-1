@@ -1,8 +1,10 @@
 ---
-title: Track seeking on Android
-description: This topic describes implementing seek tracking using the Media SDK on Android.
+title: Learn How To Track Seeking on Android
+description: Learn how to track Seek Start and Seek Complete events using the Media SDK on Android.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Track seeking on Android{#track-seeking-on-android}
 

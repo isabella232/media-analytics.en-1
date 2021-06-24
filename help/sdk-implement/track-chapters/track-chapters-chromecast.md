@@ -1,8 +1,10 @@
 ---
-title: Track chapters and segments on Chromecast
-description: This topic describes implementing chapter and segment tracking using the Media SDK on Chromecast.
+title: Learn How to Track Chapters and Segments on Chromecast
+description: Learn about implementing chapter and segment tracking using the Media SDK on Chromecast.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Track chapters and segments on Chromecast{#track-chapters-and-segments-on-chromecast}
 

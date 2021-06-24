@@ -1,8 +1,10 @@
 ---
-title: Implement standard metadata on iOS
-description: Describes setting standard video and ad metadata to be sent with tracking calls on iOS.
+title: Learn How To Implement Standard Metadata on iOS
+description: Learn how to set standard video and ad metadata to be sent with tracking calls on iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Implement standard metadata on iOS{#implement-standard-metadata-on-ios}
 

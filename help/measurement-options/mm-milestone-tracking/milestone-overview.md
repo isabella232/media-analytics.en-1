@@ -1,8 +1,10 @@
 ---
-title: Milestone overview
-description: Milestone overview
+title: Learn About Milestone Reporting (Deprecated)
+description: Deprecated � Learn how to set up video reporting for a Milestone implementation
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Milestone overview{#milestone-overview}
 

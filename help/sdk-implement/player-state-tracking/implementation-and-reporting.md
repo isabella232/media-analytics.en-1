@@ -1,7 +1,9 @@
 ---
 title: Implementation and Reporting
-description: This topic describes how to implement the player state tracking feature including .
+description: Learn about how to implement the player state tracking feature including .
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Implementation and reporting
 

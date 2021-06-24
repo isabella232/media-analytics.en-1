@@ -1,8 +1,10 @@
 ---
-title: VOD playback with skipped ads
-description: An example of how to track VOD content in which the user skipped ads using the Media SDK.
+title: VOD Playback with Skipped Ads
+description: View an example of how to track VOD content in which the user skipped ads using the Media SDK.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # VOD playback with skipped ads{#vod-playback-with-skipped-ads}
 

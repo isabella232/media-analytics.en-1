@@ -2,6 +2,8 @@
 title: What is Media Stream Attribution?
 description: Learn how to link application actions to media tracking data without the need for additional processing rules and custom variables.
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Media Stream Attribution
 

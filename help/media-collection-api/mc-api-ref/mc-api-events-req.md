@@ -1,8 +1,10 @@
 ---
-title: Events request
-description: Events request
+title: Streaming Media Collection API � Events Request Endpoint
+description: "What are the Media Collection API events request endpoint parameters and responses?"
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Events request{#events-request}
 

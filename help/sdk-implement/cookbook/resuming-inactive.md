@@ -1,8 +1,10 @@
 ---
-title: Resuming inactive sessions
-description: How to handle resuming an inactive session.
+title: Resuming Inactive Sessions
+description: Learn how to handle resuming an inactive session.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Resuming inactive sessions{#resuming-inactive-sessions}
 

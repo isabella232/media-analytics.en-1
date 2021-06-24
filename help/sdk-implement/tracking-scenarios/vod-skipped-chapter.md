@@ -1,8 +1,10 @@
 ---
-title: VOD playback with a skipped chapter
-description: An example of how to track VOD content in which the user skipped a chapter using the Media SDK.
+title: VOD Playback with a Skipped Chapter
+description: View an example of how to track VOD content in which the user skipped a chapter using the Media SDK.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # VOD playback with a skipped chapter{#vod-playback-with-a-skipped-chapter}
 

@@ -1,8 +1,10 @@
 ---
 title: Tracking in SceneGraph (Roku)
-description: Tracking media with the Roku SceneGraph XML programming framework.
+description: Learn how to track media with the Roku SceneGraph XML programming framework.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Tracking in SceneGraph (Roku){#tracking-in-scenegraph-roku}
 

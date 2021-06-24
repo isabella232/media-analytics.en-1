@@ -1,8 +1,10 @@
 ---
-title: Track quality of experience on iOS
-description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK on iOS.
+title: Learn How to Track Quality of Experience on iOS
+description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK on iOS."
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Track quality of experience on iOS{#track-quality-of-experience-on-ios}
 

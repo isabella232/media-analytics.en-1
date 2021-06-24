@@ -1,8 +1,10 @@
 ---
-title: SDK debugging
-description: This topic describes the tracking/logging available in the Media SDK.
+title: SDK Debugging
+description: Learn about the tracking/logging available in the Media SDK.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # SDK debugging{#sdk-debugging}
 

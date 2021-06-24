@@ -1,8 +1,10 @@
 ---
-title: Track quality of experience using JavaScript 2.x
-description: This topic describes implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps using JavaScript 2.x.
+title: Learn to Track Quality of Experience Using JavaScript 2.x
+description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps using JavaScript 2.x."
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Track quality of experience using JavaScript 2.x{#track-quality-of-experience-on-javascript}
 

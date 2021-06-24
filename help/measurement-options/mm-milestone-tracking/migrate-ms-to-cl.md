@@ -1,8 +1,10 @@
 ---
-title: Migrating from Milestone to Custom Link
-description: Migrating from Milestone to Custom Link
+title: Learn About Migrating from Milestone to Custom Link
+description: Learn how to change Milestone variables to Custom Link  and Milestone module methods to the Custom Link syntax.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
+feature: Media Analytics
+role: "Business Practitioner, Administrator, Data Engineer"
 ---
 # Migrating from Milestone to Custom Link{#migrating-from-milestone-to-custom-link}
 
