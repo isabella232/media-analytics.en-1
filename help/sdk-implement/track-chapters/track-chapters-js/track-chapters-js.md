@@ -4,7 +4,7 @@ description: Learn about implementing chapter and segment tracking using the Med
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track chapters and segments using JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 

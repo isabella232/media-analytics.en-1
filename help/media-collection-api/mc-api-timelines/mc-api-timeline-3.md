@@ -4,7 +4,7 @@ description: Learn about the playhead timeline and when a chapter starts and end
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Timeline 3 - Chapters {#timeline-3-chapters}
 

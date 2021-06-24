@@ -4,7 +4,7 @@ description: Learn about migrating from 1.x to 2.x versions of the Media SDK.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Migration overview{#migration-overview}
 

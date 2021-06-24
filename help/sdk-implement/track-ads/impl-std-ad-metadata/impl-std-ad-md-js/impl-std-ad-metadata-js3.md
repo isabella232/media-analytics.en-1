@@ -3,7 +3,7 @@ title: Learn to Implement Standard Ad Metadata using JavaScript 3.x
 description: How to use standard ad metadata in ad tracking in a browser using JavaScript 3.x apps.
 exl-id: ba9abf1d-3778-49ef-a2fc-6c0eafa3b227
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Implement standard ad metadata using JavaScript 3.x{#implement-standard-ad-metadata-on-javascript}
 

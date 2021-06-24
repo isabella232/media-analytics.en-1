@@ -3,7 +3,7 @@ title: About Player State Tracking
 description: Learn about the player state tracking feature including requirements and guidelines for implementing and reporting player states.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # About Player State Tracking
 

@@ -3,7 +3,7 @@ title: Player State Tracking Examples
 description: This topic includes examples of the Player State Tracking feature.
 exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Player State Tracking Examples
 

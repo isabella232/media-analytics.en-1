@@ -4,7 +4,7 @@ description: "Dig deeper into the state-of-the-art streaming media measurement f
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Measuring Streaming Media in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 

@@ -4,7 +4,7 @@ description: Learn about implementing chapter and segment tracking using the Med
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track chapters and segments on iOS{#track-chapters-and-segments-on-ios}
 

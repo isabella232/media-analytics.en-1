@@ -4,7 +4,7 @@ description: Learn about Adobe Streaming Media calculated metrics and metric for
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Calculated metrics{#calculated-metrics}
 

@@ -4,7 +4,7 @@ description: What are Steaming Media JSON validation schemas and how are they us
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # JSON validation schemas{#json-validation-schemas}
 

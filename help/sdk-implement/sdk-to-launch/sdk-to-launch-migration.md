@@ -5,7 +5,7 @@ seo-description: Instructions and code samples to assist in migrating from the M
 description: Learn how to migrate from the Media SDK to Launch.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Migrating from the standalone Media SDK to Adobe Launch
 

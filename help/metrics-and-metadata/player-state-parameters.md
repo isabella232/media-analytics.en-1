@@ -4,7 +4,7 @@ description: "Learn about player state tracking parameters for full screen, clos
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 feature: "Media Analytics, Variables"
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Player state parameters{#player-state-parameters}
 

@@ -4,7 +4,7 @@ description: Learn about the Adobe debug dashboards.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: "Media Analytics, Analytics Dashboards"
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Debug dashboards and reports{#debug-dashboards-and-reports}
 

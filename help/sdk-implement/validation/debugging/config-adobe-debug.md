@@ -4,7 +4,7 @@ description: "Learn how to configure Adobe Debug, which you can use to troublesh
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Configure Adobe Debug{#configure-adobe-debug}
 

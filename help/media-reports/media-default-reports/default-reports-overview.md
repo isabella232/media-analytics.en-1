@@ -4,7 +4,7 @@ description: "Learn about report types and metrics used to track media on your w
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 feature: "Media Analytics, Reports & Analytics Basics"
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Default reports overview{#default-reports-overview}
 

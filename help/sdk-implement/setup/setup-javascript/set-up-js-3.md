@@ -3,7 +3,7 @@ title: How to Set up the Media SKD Using JavaScript 3.x
 description: Follow these steps to setup the Media SDK application on JavaScript 3.x.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Set up JavaScript 3.x{#set-up-javascript}
 

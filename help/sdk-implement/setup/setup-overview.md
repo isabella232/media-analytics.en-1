@@ -4,7 +4,7 @@ description: "Learn how to set up the Media SDK for media tracking in your mobil
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Setup Overview{#setup-overview}
 

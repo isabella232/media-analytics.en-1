@@ -4,7 +4,7 @@ description: Learn how to implement core tracking using the Media SDK on iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track core playback on iOS{#track-core-playback-on-ios}
 

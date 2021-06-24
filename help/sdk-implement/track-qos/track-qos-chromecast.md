@@ -4,7 +4,7 @@ description: "Learn about implementing quality of experience (QoE, QoS) tracking
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track quality of experience on Chromecast{#track-quality-of-experience-on-chromecast}
 

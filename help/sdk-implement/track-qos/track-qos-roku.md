@@ -4,7 +4,7 @@ description: "Learn about implementing quality of experience (QoE, QoS) tracking
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
-role: "Business Practitioner, Administrator, Data Engineer"
+role: Business Practitioner, Administrator, Data Engineer
 ---
 # Track quality of experience on Roku{#track-quality-of-experience-on-roku}
 
