@@ -336,7 +336,7 @@ The ad break is over. Throughout the ad break, the play state has remained "play
 
 **Implementation Detail**
 
-After the `adBreakComplete` event, put the player is in the "playing" state using the `play` event.
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **Sample request body**
 
