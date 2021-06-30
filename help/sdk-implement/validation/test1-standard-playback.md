@@ -116,7 +116,7 @@ Complete and record the following actions (in order):
 
     For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Play main content for 10 minutes uninterrupted.**&nbsp; **Content Play**
+1. **Play main content for 10 seconds uninterrupted.**&nbsp; **Content Play**
 
     During main content playback, the Media SDK sends heartbeats (Play calls) to the Media Analytics server every 10 seconds.
 
