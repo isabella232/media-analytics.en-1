@@ -53,7 +53,7 @@ Complete the following implementation steps:
     | &nbsp;Method name&nbsp; | &nbsp;Description&nbsp; | Required |
     | --- | --- | :---: |
     | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data.  | Yes |
-    | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LINEAR/LIVE tracking, the value is specified in seconds from the beginning of the program.  | Yes |
+    | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LINEAR/LIVE tracking, the value is specified as the number of seconds since midnight UTC on that day. | Yes |
 
    >[!TIP]
    >
@@ -87,7 +87,7 @@ Complete the following implementation steps:
    var MediaHeartbeat = ADB.va.MediaHeartbeat;
    var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
-
+   
    //Media Heartbeat Config
    var mediaConfig = new MediaHeartbeatConfig();
    mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net";
@@ -97,15 +97,15 @@ Complete the following implementation steps:
    mediaConfig.appVersion = "2.0";
    mediaConfig.ssl = false;
    mediaConfig.ovp = "";
-
+   
    // Media Heartbeat Delegate
    var mediaDelegate = new MediaHeartbeatDelegate();
-
+   
    // Set mediaDelegate CurrentPlaybackTime
    mediaDelegate.getCurrentPlaybackTime = function() {
        return video.currentTime;
    };
-
+   
    // Set mediaDelegate QoSObject - OPTIONAL
    mediaDelegate.getQoSObject = function() {
        return MediaHeartbeat.createQoSObject(video.bitrate,  
