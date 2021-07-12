@@ -4,7 +4,7 @@ description: How to use standard ad metadata in ad tracking in a browser using J
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Implement standard ad metadata using JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
 

@@ -4,7 +4,7 @@ description: Learn about implementing error tracking using the Media SDK on iOS.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track errors on iOS{#track-errors-on-ios}
 

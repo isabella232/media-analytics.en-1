@@ -3,7 +3,7 @@ title: Learn How To Track Seeking using JavaScript 3.x
 description: Learn how to track Seek Start and Seek Complete events using the Media SDK in browser apps (JS 3.x).
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track seeking using JavaScript 3.x{#track-seeking-on-javascript}
 

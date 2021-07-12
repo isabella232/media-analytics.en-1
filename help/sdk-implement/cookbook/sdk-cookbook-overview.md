@@ -3,7 +3,7 @@ title: SDK Cookbook Overview
 description: "Explore SDK-specific cookbook topics "
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # SDK Cookbook Overview
 

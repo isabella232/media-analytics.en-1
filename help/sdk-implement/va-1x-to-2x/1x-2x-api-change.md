@@ -4,7 +4,7 @@ description: Explore API references and lists required and optional tracking API
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # API 1.x to 2.x conversion {#one-x-to-two-x-conv}
 

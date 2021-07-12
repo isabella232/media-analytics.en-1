@@ -3,7 +3,7 @@ title: Learn How to Track Errors Using JavaScript 3.x
 description: Learn about implementing error tracking using the Media SDK in browser apps (JS).
 exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track errors using JavaScript 3.x{#track-errors-on-javascript}
 

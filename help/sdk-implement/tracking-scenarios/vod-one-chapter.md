@@ -4,7 +4,7 @@ description: View an example of tracking VOD playback that contains one chapter.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # VOD playback with one chapter{#vod-playback-with-one-chapter}
 

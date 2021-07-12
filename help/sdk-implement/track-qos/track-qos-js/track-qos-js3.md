@@ -3,7 +3,7 @@ title: Learn to Track Quality of Experience Using JavaScript 3.x
 description: "Learn about implementing quality of experience (QoE, QoS) tracking using the Media SDK in browser apps using JavaScript 3x."
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track quality of experience using JavaScript 3.x{#track-quality-of-experience-on-javascript}
 

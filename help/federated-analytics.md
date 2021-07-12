@@ -4,7 +4,7 @@ description: The Federated Analytics service provides a system for sharing Adobe
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Federated Analytics{#federated-analytics}
 

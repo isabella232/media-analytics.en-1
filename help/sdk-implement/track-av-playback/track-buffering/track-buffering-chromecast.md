@@ -4,7 +4,7 @@ description: Learn how to track buffering events on Chromecast.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track buffering on Chromecast{#track-buffering-on-chromecast}
 

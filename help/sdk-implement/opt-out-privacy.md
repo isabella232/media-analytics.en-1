@@ -4,7 +4,7 @@ description: "Learn how to handle opt-in, opt-out, and privacy."
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Opt-out and privacy{#opt-out-and-privacy}
 

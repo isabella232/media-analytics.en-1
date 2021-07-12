@@ -4,7 +4,7 @@ description: Ping events are the heartbeat of Streaming Media Analytics. Learn h
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Sending ping events{#sending-ping-events}
 

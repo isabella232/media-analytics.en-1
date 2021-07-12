@@ -4,7 +4,7 @@ description: View an example of how to use one tracker to track multiple session
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # VOD one tracker for multiple sessions{#vod-one-tracker-for-multiple-sessions}
 

@@ -4,7 +4,7 @@ description: Learn about the standard playback test used in validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Test 1: Standard playback{#test-standard-playback}
 

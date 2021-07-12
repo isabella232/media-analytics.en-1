@@ -3,7 +3,7 @@ title: "Migrating from the Standalone Media SDK to Adobe Launch - iOS"
 description: Learn how to migrate from the Media SDK to Launch for iOS.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Migrating from the standalone Media SDK to Adobe Launch - iOS 
 

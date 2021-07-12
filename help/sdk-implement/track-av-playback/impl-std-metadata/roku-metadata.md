@@ -4,7 +4,7 @@ description: Learn about the available Roku metadata keys and view the entire li
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Roku metadata keys{#roku-metadata-keys}
 

@@ -4,7 +4,7 @@ description: Learn about Core Streaming Media Data variables including audio and
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Audio and video parameters{#audio-and-video-parameters}
 

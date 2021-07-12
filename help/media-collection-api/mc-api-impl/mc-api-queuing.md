@@ -4,7 +4,7 @@ description: Learn what to do when the Session ID is returned after your player 
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Queueing events when sessions response is slow{#queueing-events-when-sessions-response-is-slow}
 

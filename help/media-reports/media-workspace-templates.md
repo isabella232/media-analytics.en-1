@@ -4,7 +4,7 @@ description: Use Media workspace templates to analyze your tracking data. Choose
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Media workspace templates{#media-workspace-templates}
 

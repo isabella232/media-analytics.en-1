@@ -4,7 +4,7 @@ description: View an example of tracking VOD playback that contains no ads.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # VOD playback with no ads{#vod-playback-with-no-ads}
 

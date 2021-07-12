@@ -3,7 +3,7 @@ title: "Migrating from the Standalone Media SDK to Adobe Launch - Android"
 description: Learn how to migrate from the Media SDK to Launch for Android.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Migrating from the standalone Media SDK to Adobe Launch - Android 
 

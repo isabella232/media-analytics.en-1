@@ -4,7 +4,7 @@ description: Learn about implementing error tracking using the Media SDK on Andr
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track errors on Android{#track-errors-on-android}
 

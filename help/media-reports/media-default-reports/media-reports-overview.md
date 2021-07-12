@@ -4,7 +4,7 @@ description: Use the Media Overview dashboard to display aggregate measurements.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 feature: "Media Analytics, Reports & Analytics Basics"
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Media overview{#media-overview}
 

@@ -4,7 +4,7 @@ description: Learn how to implement core tracking using the Media SDK on Chromec
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track core playback on Chromecast{#track-core-playback-on-chromecast}
 

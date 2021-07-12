@@ -4,7 +4,7 @@ description: Learn how to implement core tracking using the Media SDK in a brows
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track core playback using JavaScript 2.x{#track-core-playback-on-javascript}
 

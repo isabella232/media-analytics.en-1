@@ -4,7 +4,7 @@ description: How to use standard ad metadata in ad tracking on Roku.
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Implement standard ad metadata on Roku{#implement-standard-ad-metadata-on-roku}
 

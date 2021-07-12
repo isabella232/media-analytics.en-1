@@ -4,7 +4,7 @@ description: Learn how to use the Events request endpoint for all subsequent tra
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Implementing an events request{#implementing-an-events-request}
 

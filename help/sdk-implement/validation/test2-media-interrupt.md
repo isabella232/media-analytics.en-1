@@ -4,7 +4,7 @@ description: Learn about the media interruption test used in validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Test 2: Media interruption{#test-media-interruption}
 

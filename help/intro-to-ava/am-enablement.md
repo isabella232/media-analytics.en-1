@@ -3,7 +3,7 @@ title: What is Adobe Audience Manager enablement?
 description: Learn how to link application actions to media tracking data without the need for additional processing rules and custom variables.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Audience Manager enablement{#audience-manager-enablement}
 

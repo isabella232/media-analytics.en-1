@@ -4,7 +4,7 @@ description: Learn how to obtain concurrent viewers report data using the Analyt
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
 feature: "Media Analytics, Reports & Analytics Basics"
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Get Concurrent Viewers JSON report data with Analytics 2.0 APIs{#get-concurrent-viewers-json-report-data}
 

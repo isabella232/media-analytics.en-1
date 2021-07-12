@@ -4,7 +4,7 @@ description: An overview of tracking quality of experience (QoE, QoS) using the 
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Overview{#overview}
 

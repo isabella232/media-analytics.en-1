@@ -4,7 +4,7 @@ description: Learn about implementing error tracking using the Media SDK on Roku
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
+role: User, Admin, Data Engineer
 ---
 # Track errors on Roku{#track-errors-on-roku}
 
