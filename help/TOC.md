@@ -218,10 +218,12 @@ sub-product: media analytics
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
     + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
++ Additional resources {#additional-resources}
+    + [Release Notes](additional-resources/doc-updates.md)
+
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
-+ Additional resources {#additional-resources}
-    + [Release Notes](additional-resources/doc-updates.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+-->
