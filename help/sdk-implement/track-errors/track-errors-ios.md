@@ -8,17 +8,19 @@ role: User, Admin, Data Engineer
 ---
 # Track errors on iOS{#track-errors-on-ios}
 
+The following instructions provide guidance for implementation across all 2.x SDKs.
+
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implement error tracking
 
-1. Track media player errors: 
+1. Track media player errors:
 
     ```
-    - (void)onPlayerError:(NSNotification *)notification { 
-        [_mediaHeartbeat trackError:@"mediaoErrorId"]; 
+    - (void)onPlayerError:(NSNotification *)notification {
+        [_mediaHeartbeat trackError:@"mediaoErrorId"];
     }
     ```
 

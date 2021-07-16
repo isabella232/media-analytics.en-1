@@ -8,9 +8,11 @@ role: User, Admin, Data Engineer
 ---
 # Tracking Overview{#tracking-overview}
 
+This documentation covers tracking in version 2.x of the SDK. 
+
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Player Events
 
@@ -18,8 +20,8 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 ### On media load
 
-* Create the media object 
-* Populate metadata 
+* Create the media object
+* Populate metadata
 * Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
 
 ### On media start
@@ -63,7 +65,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 1. **Initial tracking setup -** Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance using the media information for content name, content ID, content length, and stream type.
 
-   **`MediaObject` reference:** 
+   **`MediaObject` reference:**
 
    |  Variable Name  | Description  | Required  |
    |---|---|---|
@@ -73,7 +75,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
    |  `streamType`  | Stream type  | Yes  |
    |  `mediaType`  | Media type (audio or video content)  | Yes  |
 
-   **`StreamType` constants:** 
+   **`StreamType` constants:**
 
    |  Constant Name  | Description  |
    |---|---|
@@ -84,7 +86,7 @@ Tracking core playback includes tracking media load, media start, media pause, a
    |  `AUDIOBOOK`  | Stream type for audio book  |
    |  `PODCAST`  | Stream type for Podcast  |
 
-   **`MediaType` constants:** 
+   **`MediaType` constants:**
 
    |  Constant Name  | Description  |
    |---|---|
@@ -95,8 +97,8 @@ Tracking core playback includes tracking media load, media start, media pause, a
 
 1. **Attach metadata -** Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
-    * **Standard metadata -** 
-    
+    * **Standard metadata -**
+
       >[!NOTE]
       >
       >Attaching the standard metadata object to the media object is optional.
@@ -104,10 +106,10 @@ Tracking core playback includes tracking media load, media start, media pause, a
       Instantiate a standard metdata object, populate the desired variables, and set the metadata object on the Media Heartbeat object.
 
       See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
-    
+
     * **Custom metadata -** Create a variable object for the custom variables and populate with the data for this content.
 
-1. **Track the intention to start playback -** To begin tracking a session, call `trackSessionStart` on the Media Heartbeat instance. 
+1. **Track the intention to start playback -** To begin tracking a session, call `trackSessionStart` on the Media Heartbeat instance.
 
    >[!IMPORTANT]
    >
@@ -117,11 +119,11 @@ Tracking core playback includes tracking media load, media start, media pause, a
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
 
-1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the playback, where the first frame of the content is rendered on the screen, and call `trackPlay`. 
+1. **Track the actual start of playback -** Identify the event from the media player for the beginning of the playback, where the first frame of the content is rendered on the screen, and call `trackPlay`.
 
-1. **Track the completion of playback -** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`. 
+1. **Track the completion of playback -** Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`.
 
-1. **Track the end of the session -** Identify the event from the media player for the unloading/closing of the playback, where the user closes the content and/or the content is completed and has been unloaded, and call `trackSessionEnd`. 
+1. **Track the end of the session -** Identify the event from the media player for the unloading/closing of the playback, where the user closes the content and/or the content is completed and has been unloaded, and call `trackSessionEnd`.
 
    >[!IMPORTANT]
    >
@@ -136,97 +138,97 @@ Tracking core playback includes tracking media load, media start, media pause, a
     * (*Mobile Apps*) - The user puts the application into the background, but you want the app to keep the session open.
     * (*Mobile Apps*) - Any type of system interrupt occurs that causes an application to be backgrounded. For example, the user receives a call, or a pop up from another application occurs, but you want the application to keep the session alive to give the user the opportunity to resume the content from the point of interruption.
 
-1. Identify the event from the player for play and/or resume from pause and call `trackPlay`. 
+1. Identify the event from the player for play and/or resume from pause and call `trackPlay`.
 
    >[!TIP]
    >
    >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. Listen for playback seeking events from the media player. On seek start event notification, track seeking using the `SeekStart` event.
-1. On seek complete notification from the media player, track the end of seeking using the `SeekComplete` event. 
-1. Listen for the playback buffering events from media player, and on buffer start event notification, track buffering using the `BufferStart` event. 
+1. On seek complete notification from the media player, track the end of seeking using the `SeekComplete` event.
+1. Listen for the playback buffering events from media player, and on buffer start event notification, track buffering using the `BufferStart` event.
 1. On buffer complete notification from the media player, track the end of buffering using the `BufferComplete` event.
 
 See examples of each step in the following platform-specific topics, and look at the sample players included with your SDKs.
 
-For a simple example of playback tracking, see this use of the JavaScript 2.x SDK in an HTML5 player: 
+For a simple example of playback tracking, see this use of the JavaScript 2.x SDK in an HTML5 player:
 
 ```js
-/* Call on media start */ 
-if (e.type == "play") { 
- 
-    // Check for start of media 
-    if (!sessionStarted) { 
+/* Call on media start */
+if (e.type == "play") {
+
+    // Check for start of media
+    if (!sessionStarted) {
         /* Set media info */     
         /* MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                             <MEDIA_ID>,  
-                                            <MEDIA_LENGTH>, 
+                                            <MEDIA_LENGTH>,
                                             <MEDIA_STREAMTYPE>,
-                                            <MEDIA_MEDIATYPE>);*/ 
-        var mediaInfo = MediaHeartbeat.createMediaObject( 
+                                            <MEDIA_MEDIATYPE>);*/
+        var mediaInfo = MediaHeartbeat.createMediaObject(
           document.getElementsByTagName('video')[0].getAttribute("name"),  
           document.getElementsByTagName('video')[0].getAttribute("id"),  
-          video.duration, 
-          MediaHeartbeat.StreamType.VOD); 
- 
-        /* Set custom context data */ 
-        var customVideoMetadata = { 
-            isUserLoggedIn: "false", 
-            tvStation: "Sample TV station", 
-            programmer: "Sample programmer" 
-        }; 
- 
+          video.duration,
+          MediaHeartbeat.StreamType.VOD);
+
+        /* Set custom context data */
+        var customVideoMetadata = {
+            isUserLoggedIn: "false",
+            tvStation: "Sample TV station",
+            programmer: "Sample programmer"
+        };
+
         /* Set standard video metadata */     
-        var standardVideoMetadata = {}; 
-        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode"; 
-        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.SHOW] = "Sample Show"; 
+        var standardVideoMetadata = {};
+        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode";
+        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.SHOW] = "Sample Show";
         mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata,  
                            standardVideoMetadata);     
- 
-        // Start Session 
+
+        // Start Session
         this.mediaHeartbeat.trackSessionStart(mediaInfo, customVideoMetadata);    
- 
-        // Track play 
+
+        // Track play
         this.mediaHeartbeat.trackPlay();  
         sessionStarted = true;     
- 
-    } else { 
+
+    } else {
         // Track play for resuming playack    
         this.mediaHeartbeat.trackPlay();  
-    } 
-}; 
- 
-/* Call on video complete */ 
-if (e.type == "ended") { 
-    console.log("video ended"); 
-    this.mediaHeartbeat.trackComplete(); 
-    this.mediaHeartbeat.trackSessionEnd(); 
+    }
+};
+
+/* Call on video complete */
+if (e.type == "ended") {
+    console.log("video ended");
+    this.mediaHeartbeat.trackComplete();
+    this.mediaHeartbeat.trackSessionEnd();
     sessionStarted = false;     
-}; 
- 
-/* Call on pause */ 
-if (e.type == "pause") { 
-    this.mediaHeartbeat.trackPause(); 
-}; 
- 
-/* Call on scrub start */ 
-if (e.type == "seeking") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
-}; 
-     
-/* Call on scrub stop */ 
-if (e.type == "seeked") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
-}; 
- 
-/* Call on buffer start */ 
-if (e.type == “buffering”) { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
-}; 
- 
-/* Call on buffer complete */ 
-if (e.type == “buffered”) { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+};
+
+/* Call on pause */
+if (e.type == "pause") {
+    this.mediaHeartbeat.trackPause();
+};
+
+/* Call on scrub start */
+if (e.type == "seeking") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
+};
+
+/* Call on scrub stop */
+if (e.type == "seeked") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
+};
+
+/* Call on buffer start */
+if (e.type == “buffering”) {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
+};
+
+/* Call on buffer complete */
+if (e.type == “buffered”) {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
 };
 ```
 

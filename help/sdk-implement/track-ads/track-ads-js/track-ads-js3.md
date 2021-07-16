@@ -7,9 +7,11 @@ role: User, Admin, Data Engineer
 ---
 # Track ads using JavaScript 3.x{#track-ads-on-javascript}
 
+The following instructions provide guidance for implementation using the 3.x SDKs. 
+
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 3.x SDKs. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Ad tracking constants
 

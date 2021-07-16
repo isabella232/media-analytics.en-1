@@ -7,8 +7,10 @@ role: User, Admin, Data Engineer
 ---
 # Track core playback using JavaScript 3.x{#track-core-playback-on-javascript}
 
+This documentation covers tracking in version 3.x of the SDK.
+
 >[!IMPORTANT]
->This documentation covers tracking in version 3.x of the SDK. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+> If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
 
 1. **Initial tracking setup**
 

@@ -8,11 +8,12 @@ role: User, Admin, Data Engineer
 ---
 # Setup Overview{#setup-overview}
 
+The following instructions apply to the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation.](/help/sdk-implement/download-sdks.md) For Primetime integrators, see _Primetime Media SDK Documentation_ below.
+
 >[!IMPORTANT]
 >
 >With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
 
-The following instructions apply to the 2.x Media SDKs. If you are implementing a 1.x version of the Media SDK, see the [1.x Media SDK Documentation.](/help/sdk-implement/download-sdks.md) For Primetime integrators, see _Primetime Media SDK Documentation_ below.
 
 ## Minimum Platform Version Support {#minimum-platform-version}
 
@@ -87,7 +88,7 @@ Complete the following implementation steps:
    var MediaHeartbeat = ADB.va.MediaHeartbeat;
    var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
-   
+
    //Media Heartbeat Config
    var mediaConfig = new MediaHeartbeatConfig();
    mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net";
@@ -97,15 +98,15 @@ Complete the following implementation steps:
    mediaConfig.appVersion = "2.0";
    mediaConfig.ssl = false;
    mediaConfig.ovp = "";
-   
+
    // Media Heartbeat Delegate
    var mediaDelegate = new MediaHeartbeatDelegate();
-   
+
    // Set mediaDelegate CurrentPlaybackTime
    mediaDelegate.getCurrentPlaybackTime = function() {
        return video.currentTime;
    };
-   
+
    // Set mediaDelegate QoSObject - OPTIONAL
    mediaDelegate.getQoSObject = function() {
        return MediaHeartbeat.createQoSObject(video.bitrate,  
