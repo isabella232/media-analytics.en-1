@@ -8,29 +8,31 @@ role: User, Admin, Data Engineer
 ---
 # Track chapters and segments on Android{#track-chapters-and-segments-on-android}
 
+The following instructions provide guidance for implementation using 2.x SDKs.
+
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Implement chapter tracking
 
 1. Identify when the chapter start event occurs and create the `ChapterObject` instance by using the chapter information.
 
     `ChapterObject` chapter tracking reference:  
- 
+
     >[!NOTE]
     >
     >These variables are only required if you are planning to track chapters.
- 
+
     | Variable Name | Description | Required |
     | --- | --- | :---: |
     | `name` | Chapter name | Yes |
     | `position` | Chapter position | Yes |
     | `length` | Chapter length | Yes |
     | `startTime` | Chapter start time | Yes |
- 
-    Chapter object: 
- 
+
+    Chapter object:
+
     ```java
     MediaObject chapterDataInfo =  
       MediaHeartbeat.createChapterObject(<CHAPTER_NAME>,  
@@ -39,39 +41,39 @@ role: User, Admin, Data Engineer
                                          <START_TIME>);
     ```
 
-1. If you include custom metadata for the chapter, create the context data variables for the metadata: 
+1. If you include custom metadata for the chapter, create the context data variables for the metadata:
 
     ```java
     HashMap<String, String> chapterMetadata =  
-      new HashMap<String,String>(); 
-    chapterMetadata.put("segmentType", "Sample Segment Type"); 
-    chapterMetadata.put("segmentName", "Sample Segment Name"); 
+      new HashMap<String,String>();
+    chapterMetadata.put("segmentType", "Sample Segment Type");
+    chapterMetadata.put("segmentName", "Sample Segment Name");
     chapterMetadata.put("segmentInfo", "Sample Segment Info");
     ```
 
-1. To begin tracking the chapter playback, call the `ChapterStart` event in the `MediaHeartbeat` instance: 
+1. To begin tracking the chapter playback, call the `ChapterStart` event in the `MediaHeartbeat` instance:
 
     ```java
     public void onChapterStart(Observable observable, Object data) {  
         _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                               chapterDataInfo,  
-                              chapterMetadata); 
+                              chapterMetadata);
     }
     ```
 
-1. When playback reaches the chapter end boundary, as defined by your custom code, call the `ChapterComplete` event in the `MediaHeartbeat` instance: 
+1. When playback reaches the chapter end boundary, as defined by your custom code, call the `ChapterComplete` event in the `MediaHeartbeat` instance:
 
     ```java
     public void onChapterComplete(Observable observable, Object data) {  
-        _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null); 
+        _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null);
     }
     ```
 
-1. If chapter playback did not complete because the user chose to skip the chapter (for example, if the user seeks out of the chapter boundary), call the `ChapterSkip` event in the MediaHeartbeat instance: 
+1. If chapter playback did not complete because the user chose to skip the chapter (for example, if the user seeks out of the chapter boundary), call the `ChapterSkip` event in the MediaHeartbeat instance:
 
     ```java
     public void onChapterSkip(Observable observable, Object data) {  
-        _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip, null, null); 
+        _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip, null, null);
     }
     ```
 

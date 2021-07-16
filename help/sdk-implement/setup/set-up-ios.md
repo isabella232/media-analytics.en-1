@@ -8,6 +8,8 @@ role: User, Admin, Data Engineer
 ---
 # Set up iOS{#set-up-ios}
 
+Learn to set up Streaming Media Analytics for iOS devices.
+
 >[!IMPORTANT]
 >
 >With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDK for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).

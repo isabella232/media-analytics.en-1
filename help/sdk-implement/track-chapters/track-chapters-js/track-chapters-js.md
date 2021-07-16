@@ -8,9 +8,11 @@ role: User, Admin, Data Engineer
 ---
 # Track chapters and segments using JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
+The following instructions provide guidance for implementation using 2.x SDKs.
+
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+> If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. Identify when the chapter start event occurs and create the `ChapterObject` instance by using the chapter information.
 

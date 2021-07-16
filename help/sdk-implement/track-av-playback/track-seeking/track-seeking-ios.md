@@ -8,9 +8,11 @@ role: User, Admin, Data Engineer
 ---
 # Track seeking on iOS{#track-seeking-on-ios}
 
+The following instructions provide guidance for implementation across all 2.x SDKs.
+
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation across all 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Seek tracking constants
 
@@ -21,23 +23,23 @@ role: User, Admin, Data Engineer
 
 ## Implement seeking
 
-1. Listen for the playback seeking events from the media player, and on seek start event notification, track seeking using the `SeekStart` event: 
+1. Listen for the playback seeking events from the media player, and on seek start event notification, track seeking using the `SeekStart` event:
 
     ```
-    - (void)onSeekStart:(NSNotification *)notification { 
+    - (void)onSeekStart:(NSNotification *)notification {
         [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventSeekStart  
                          mediaObject:nil  
-                         data:nil]; 
+                         data:nil];
     }
     ```
 
-1. On seek complete notification from the media player, track the end of seeking using the `SeekComplete` event: 
+1. On seek complete notification from the media player, track the end of seeking using the `SeekComplete` event:
 
     ```
-    - (void)onSeekComplete:(NSNotification *)notification { 
+    - (void)onSeekComplete:(NSNotification *)notification {
         [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventSeekComplete  
                          mediaObject:nil  
-                         data:nil]; 
+                         data:nil];
     }
     ```
 

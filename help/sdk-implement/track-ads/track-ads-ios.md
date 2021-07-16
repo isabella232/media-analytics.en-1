@@ -8,9 +8,11 @@ role: User, Admin, Data Engineer
 ---
 # Track ads on iOS{#track-ads-on-ios}
 
+The following instructions provide guidance for implementation using the 2.x SDKs.
+
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## Ad tracking constants
 
@@ -26,7 +28,7 @@ role: User, Admin, Data Engineer
 
 1. Identify when the ad break boundary begins, including pre-roll, and create an `AdBreakObject` by using the ad break information.
 
-   `AdBreakObject` reference: 
+   `AdBreakObject` reference:
 
    |  Variable Name  | Description  | Required  |
    | --- | --- | :---: |
@@ -34,27 +36,27 @@ role: User, Admin, Data Engineer
    |  `position`  | The number position of the ad break within the content, starting with 1. | Yes  |
    |  `startTime`  | Playhead value at the start of the ad break.  | Yes  |
 
-   Ad break object creation: 
+   Ad break object creation:
 
    ```
-   id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME] 
+   id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME]
                                position:[POSITION]  
                                startTime:[START_TIME]];
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break: 
+1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
 
    ```
-   - (void)onAdBreakStart:(NSNotification *)notification { 
+   - (void)onAdBreakStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakStart  
                         mediaObject:adBreakObject  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. Identify when the ad starts and create an `AdObject` instance using the ad information.
 
-   `AdObject` reference: 
+   `AdObject` reference:
 
    |  Variable Name  | Description  | Required  |
    | --- | --- | :---: |
@@ -63,12 +65,12 @@ role: User, Admin, Data Engineer
    |  `position`  | The number position of the ad within the ad break, starting with 1. | Yes  |
    |  `length`  | Ad length  | Yes  |
 
-   Ad object creation: 
+   Ad object creation:
 
    ```
-   id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME] 
-                                    adId:[AD_ID] 
-                                    position:[POSITION] 
+   id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME]
+                                    adId:[AD_ID]
+                                    position:[POSITION]
                                     length:[LENGTH]];
    ```
 
@@ -76,54 +78,54 @@ role: User, Admin, Data Engineer
 
     * [Implement standard ad metadata on iOS](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
     * **Custom ad metadata -** For custom metadata, create a variable object for the custom data variables and populate with the data for the current ad:     
-    
+
       ```    
-      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init]; 
-      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"]; 
-      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"]; 
+      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
       [adDictionary setObject:@"Sample creative" forKey:@"creative"];
       ```
 
 1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
 
-   Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call: 
+   Include a reference to your custom metadata variable (or an empty object) as the third parameter in the event call:
 
    ```
-   - (void)onAdStart:(NSNotification *)notification { 
+   - (void)onAdStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdStart  
                         mediaObject:adObject  
-                        data:adDictionary]; 
+                        data:adDictionary];
    }
    ```
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event. 
+1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
 
    ```
-   - (void)onAdComplete:(NSNotification *)notification { 
+   - (void)onAdComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
-1. If ad playback did not complete because the user chose to skip the ad, track the `AdSkip` event. 
+1. If ad playback did not complete because the user chose to skip the ad, track the `AdSkip` event.
 
    ```
-   - (void)onAdSkip:(NSNotification *)notification { 
+   - (void)onAdSkip:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdSkip  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
-1. If there are any additional ads within the same `AdBreak`, repeat steps 3 through 7 again. 
-1. When the ad break is complete, use the `AdBreakComplete` event to track: 
+1. If there are any additional ads within the same `AdBreak`, repeat steps 3 through 7 again.
+1. When the ad break is complete, use the `AdBreakComplete` event to track:
 
    ```
-   - (void)onAdBreakComplete:(NSNotification *)notification { 
+   - (void)onAdBreakComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
