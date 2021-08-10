@@ -55,34 +55,67 @@ When computing the Analytics start/close calls for the downloaded content scenar
 
 ## Sample session comparison {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### Online Content
 
-  ```
-  {
-    eventType: "sessionStart",
-    playerTime: {
-      playhead: 0,  
-      ts: 1529997923478},  
-    params: { /* Standard metadata parameters as documented */ },  
-    customMetadata: { /* Custom metadata parameters as documented */ },  
-    qoeData: { /* QoE parameters as documented */ }
-  }
-  ```
+```
+POST /api/v1/sessions HTTP/1.1
+
+{
+  eventType: "sessionStart",
+  playerTime: {
+    playhead: 0,  
+    ts: 1529997923478},  
+  params: { /* Standard metadata parameters as documented */ },  
+  customMetadata: { /* Custom metadata parameters as documented */ },  
+  qoeData: { /* QoE parameters as documented */ }
+}
+```
 
 ### Downloaded Content
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### DEPRECATION NOTICE
+Downloaded content could previously also be sent to `/api/v1/sessions` API. This way of tracking downloaded content is **deprecated** and will be **removed** in the future.
+The `/api/v1/sessions` API will only accept session initialization events.
+When using the new API, the previously mandatory `media.downloaded` flag is no longer necessary.
+We strongly suggest using the `/api/v1/downloaded` API for new downloaded content implementations, as well as updating existing implementations that rely on the old API.  
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
@@ -100,7 +133,6 @@ When computing the Analytics start/close calls for the downloaded content scenar
         {playhead: 35, ts: 1529997960559}
 }]
 ```
-
 ## Media tracker API reference
 
 For information about how to configure downloaded content, see the [Media tracker API reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference).
