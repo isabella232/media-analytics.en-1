@@ -99,9 +99,13 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### Deprecation Notice
+### Deprecation Notice
 
-Downloaded content could previously also be sent to `/api/v1/sessions` API. This way of tracking downloaded content is **deprecated** and will be **removed** in the future.
+>[!IMPORTANT]
+>
+>Downloaded content could previously also be sent to `/api/v1/sessions` API. This way of tracking downloaded content is **deprecated** and will be **removed** in the future.
+
+
 The `/api/v1/sessions` API will only accept session initialization events.
 When using the new API, the previously mandatory `media.downloaded` flag is no longer necessary.
 We strongly suggest using the `/api/v1/downloaded` API for new downloaded content implementations, as well as updating existing implementations that rely on the old API.  
