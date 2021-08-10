@@ -12,21 +12,21 @@ role: User, Admin, Data Engineer
 
 To access Adobe Debug:
 
-1. Go to [Experience Cloud](https://www.marketing.adobe.com) and create a new Adobe Experience Cloud user.
+1. Go to [Experience Cloud](https://www.marketing.adobe.com/) and create a new Adobe Experience Cloud user.
 
     >[!TIP]
     >
     >This login is not the same username/password you use to log into Adobe Analytics.
 
-1. After you have an Experience Cloud account, contact your Adobe representative to request access to Adobe Debug. 
+1. After you have an Experience Cloud account, contact your Adobe representative to request access to Adobe Debug.
 1. After access has been granted, go to [https://debug.adobe.com](https://debug.adobe.com) and use your Experience Cloud credentials to log in.
 
     ![](assets/adobe-debug-login.png)
 
     The supported browsers for this tool are:
-    * Google Chrome 
-    * Mozilla Firefox 
-    * Apple Safari 
+    * Google Chrome
+    * Mozilla Firefox
+    * Apple Safari
     * Microsoft Internet Explorer versions 9-11
 
 The recommended browsers are the latest versions of Chrome and Firefox.
@@ -38,7 +38,7 @@ Download and configure the Debug Proxy:
 1. Download the Debug Proxy app at [App Downloads.](https://debug.adobe.com/#/downloads)
 
     The supported operating systems are:
-    * OS X 10.7 64-bit or higher 
+    * OS X 10.7 64-bit or higher
     * Windows 7.1 64-bit or higher
 
    ![](assets/debug-proxy-app.png)
@@ -53,14 +53,14 @@ The first time you run Adobe Debug, a unique SSL certificate will be generated. 
 
 Download and install the SSL certificate:
 
-1. After Adobe Debug has been installed and started, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) and download the certification. 
+1. After Adobe Debug has been installed and started, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) and download the certification.
 1. Import the certificate
 
     **Mac OS**
-    1. Double-click the root CA certificate to open it in Keychain Access. 
-    1. The root CA certificate appears in login. 
-    1. Move (drag) the root CA certificate to System. 
-    1. You must copy the certificate to System to ensure that it is trusted by all users and local system processes. 
+    1. Double-click the root CA certificate to open it in Keychain Access.
+    1. The root CA certificate appears in login.
+    1. Move (drag) the root CA certificate to System.
+    1. You must copy the certificate to System to ensure that it is trusted by all users and local system processes.
     1. Open the root CA certificate, expand Trust, select Always Trust, and save your changes.
 
     **Windows**
@@ -73,8 +73,8 @@ Download and install the SSL certificate:
        You might need to quit and reopen Firefox to see the change.
 
     **iOS devices**
-    1. Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **>** **[!UICONTROL Wifi settings]**. 
-    
+    1. Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **>** **[!UICONTROL Wifi settings]**.
+
     1. In Safari, go to [Debug.](https://proxy.debug.adobe.com/ssl)
 
        Safari will prompt you to install the SSL certificate.
@@ -89,14 +89,14 @@ To install the SSL certificate on an iOS device:
 
 1. On your laptop, turn on the Debug Proxy, and go to [Adobe Debug.](https://debug.adobe.com)
 1. Complete the following steps on your iOS device:
-    1. Turn your device to airplane mode. 
-    1. Select the same Wi-Fi signal that is used by your laptop. 
-    1. On your laptop, manually set the IP and port shown on the Debug Proxy app. 
-    1. Open an Apple Safari browser window. 
+    1. Turn your device to airplane mode.
+    1. Select the same Wi-Fi signal that is used by your laptop.
+    1. On your laptop, manually set the IP and port shown on the Debug Proxy app.
+    1. Open an Apple Safari browser window.
     1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
     1. Download and install the SSL certificate.
 
-1. On your laptop, start your Adobe Debug session. 
+1. On your laptop, start your Adobe Debug session.
 1. Start testing on your iOS device.
 
 ### Android
@@ -105,12 +105,12 @@ To install the SSL certificate on an Android device:
 
 1. On your laptop turn on the Debug Proxy and go to [Adobe Debug.](https://debug.adobe.com)
 1. Complete the following steps on your Android device:
-    1. Set your device to Airplane Mode. 
-    1. Select the same Wi-Fi signal that is used by your laptop. 
-    1. On your laptop, manually set the IP and port shown on the Debug Proxy app. 
-    1. Open a browser window. 
+    1. Set your device to Airplane Mode.
+    1. Select the same Wi-Fi signal that is used by your laptop.
+    1. On your laptop, manually set the IP and port shown on the Debug Proxy app.
+    1. Open a browser window.
     1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
     1. Download and install the SSL certificate.
 
-1. On your laptop, start your Adobe Debug session. 
+1. On your laptop, start your Adobe Debug session.
 1. Start testing on your Android device.
