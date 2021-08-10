@@ -99,7 +99,8 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### DEPRECATION NOTICE
+#### Deprecation Notice
+
 Downloaded content could previously also be sent to `/api/v1/sessions` API. This way of tracking downloaded content is **deprecated** and will be **removed** in the future.
 The `/api/v1/sessions` API will only accept session initialization events.
 When using the new API, the previously mandatory `media.downloaded` flag is no longer necessary.
@@ -132,7 +133,9 @@ POST /api/v1/sessions HTTP/1.1
     {eventType: "sessionComplete", playerTime:
         {playhead: 35, ts: 1529997960559}
 }]
+
 ```
+
 ## Media tracker API reference
 
 For information about how to configure downloaded content, see the [Media tracker API reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference).
