@@ -46,7 +46,7 @@ to work properly.
 
     ![](assets/launch_config_js.png)
 
-[Launch User Guide - Install & configure the media extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch User Guide - Install & configure the media extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## Tracker creation differences
 
@@ -119,5 +119,5 @@ Launch offers two approaches to creating the tracking infrastructure. Both appro
 
 ### Launch
 
-* [Launch overview](https://experienceleague.adobe.com/docs/launch/using/overview.html)
-* [Media Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch overview](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Media Analytics Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
