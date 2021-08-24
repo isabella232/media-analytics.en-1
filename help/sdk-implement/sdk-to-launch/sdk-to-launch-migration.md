@@ -21,7 +21,7 @@ can quickly install, configure, and deploy their solutions.
 
 Adobe Media Analytics for Audio and Video is available as a Launch extension for both web and mobile:
 
-* [Web Launch Documentation](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Web Launch Documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [Mobile Launch Documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## Platforms

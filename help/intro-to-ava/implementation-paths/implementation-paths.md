@@ -11,15 +11,15 @@ For each implementation path, customers need to contact their Sales Representati
 
 * **Adobe Launch with the Adobe Media Analytics extension**
 
-   Adobe Launch is the next-generation of tag management solution from Adobe. Launch provides a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences. To build and maintain your own integrations with Launch, you use extensions. An extension is a JavaScript, HTML, and CSS package that extends the Launch UI and client functionality. For more information, see the [Experience Platform Launch User Guide](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+   Adobe Launch is the next-generation of tag management solution from Adobe. Launch provides a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences. To build and maintain your own integrations with Launch, you use extensions. An extension is a JavaScript, HTML, and CSS package that extends the Launch UI and client functionality. For more information, see the [Experience Platform Launch User Guide](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 
    The Adobe Media Analytics (MA) extension adds the core JavaScript Media SDK (Media 2.x SDK) for audio and video. This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project.
 
    Adobe Launch with the Media Analytics extension requires the following:
    * You must be an Adobe Experience Cloud customer.
    * You must deploy the Launch or DTM embed code on your web pages.
-   * [Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-   * [Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+   * [Analytics Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
+   * [Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 * **Client Side -** These are Media Analytics-only integrations. You can choose Video Heartbeat SDK and/or the Media Collection API integrations. This path can be used across any video player, including customer and/or OVP players such as Brightcove, Ooyala, thePlatform, and so on.
