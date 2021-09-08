@@ -209,6 +209,7 @@ sub-product: media analytics
         + [Media Concurrent Viewers report](media-reports/media-default-reports/media-concurrent-viewers.md)
     + Media Workspace Panels {#media-workspace-panels}  
         + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+        + [Media Playback Time Spent panel](media-reports/media-workspace-panels/media-playback-time-spent.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
     + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
@@ -225,5 +226,5 @@ sub-product: media analytics
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 -->
