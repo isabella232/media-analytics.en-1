@@ -56,8 +56,8 @@ The request body must be JSON, and must have the same structure as this sample r
 ```
 
 * `playerTime` (Mandatory)
-    * `playhead` - Must be in seconds, but it can be a float.
-    * `ts` - Timestamp; must be in milliseconds.
+    * `playhead` - If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length. The value can be a floating point number.
+    * `ts` - Timestamp; must be in milliseconds; Coordinated Universal Time (UTC).
 * `eventType` (Mandatory)
 
    **Valid value:**&nbsp;`sessionStart`
