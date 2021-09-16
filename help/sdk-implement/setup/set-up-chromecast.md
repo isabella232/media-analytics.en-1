@@ -136,7 +136,7 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
 1. For tracking media, implement MediaDelegate protocol
    
    ```js
-   var delegate = {
+    var delegate = {
       // Replace <currentPlaybackTime> with the video player current playback time
       getCurrentPlaybackTime = function() {
         return <currentPlaybackTime>;
@@ -148,6 +148,7 @@ Chromecast SDK 2.x for Experience Cloud Solutions lets you measure Chromecast ap
     }
 
     ADBMobile.media.setDelegate(delegate);
-    ```
+   }
+   ```
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
