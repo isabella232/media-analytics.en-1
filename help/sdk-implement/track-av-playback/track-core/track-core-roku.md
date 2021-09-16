@@ -139,7 +139,7 @@ This documentation covers tracking in version 2.x of the SDK.
 
 1. **Update playhead value**
 
-    Update `mediaUpdatePlayhead`' position value mulitiple times when the playhead changes. For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. For live streaming, the value is specified as the number of seconds since midnight UTC on that day.
+    When media playhead changes notify the SDK by calling `mediaUpdatePlayhead` API. For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. For live streaming, the value is specified as the number of seconds since midnight UTC on that day.
 
     ```
     ADBMobile().mediaUpdatePlayhead(position)
