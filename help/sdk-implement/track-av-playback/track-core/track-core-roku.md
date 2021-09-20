@@ -137,6 +137,14 @@ This documentation covers tracking in version 2.x of the SDK.
     ADBMobile().mediaTrackPlay()
     ```
 
+1. **Update playhead value**
+
+    When media playhead changes notify the SDK by calling `mediaUpdatePlayhead` API. For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. For live streaming, the value is specified as the number of seconds since midnight UTC on that day.
+
+    ```
+    ADBMobile().mediaUpdatePlayhead(position)
+    ```
+
 1. **Track the completion of playback**
 
     Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call `trackComplete`:
