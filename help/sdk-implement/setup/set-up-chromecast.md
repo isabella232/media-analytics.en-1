@@ -1,5 +1,5 @@
 ---
-title: How to Set up the Media SKD for Chromecast
+title: How to Set up the Media SDK for Chromecast
 description: Follow these steps to setup the Media SDK application on Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
