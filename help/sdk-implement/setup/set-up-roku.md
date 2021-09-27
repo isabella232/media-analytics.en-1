@@ -1,5 +1,5 @@
 ---
-title: How to Set up the Media SKD for Roku
+title: How to Set up the Media SDK for Roku
 description: Follow these steps to setup the Media SDK application on Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
