@@ -212,6 +212,7 @@ sub-product: media analytics
         + [Media Playback Time Spent panel](media-reports/media-workspace-panels/media-playback-time-spent.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
     + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
+    + [Get Media Playback Time Spent Data via API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)  
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
