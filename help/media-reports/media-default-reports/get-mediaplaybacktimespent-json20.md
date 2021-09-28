@@ -12,7 +12,7 @@ role: User, Admin, Data Engineer
 You can obtain media playback time spent report data using the [_*Analytics 2.0 APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter the data using any segment that is built on the UI. To filter by a specific Content ID, create a new segment.  
-1. Set the `elements` -> `id` in the request body to `metrics/__________`.
+1. Set the `elements` -> `id` in the request body to `metrics/playback_time_spent_seconds` or `metrics/playback_time_spent_minutes` depending on whether you want the output in seconds or minutes.
 1. Request a sufficient amount of data.  
 
     * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._
@@ -23,8 +23,6 @@ You can obtain media playback time spent report data using the [_*Analytics 2.0 
 A sample request payload for one day of data would look like the following sample. The request is done for 2 consecutive days but in reporting you use only the first day.
 
 ## Sample Request
-
-CODE TO BE REPLACED
 
 ```json
 {
@@ -41,7 +39,7 @@ CODE TO BE REPLACED
         "metrics": [
             {
                 "columnId": "column1",
-                "id": "metrics/concurrent_viewers_visitors"
+                "id": "metrics/playback_time_spent_minutes"
             }
         ]
     },
@@ -55,9 +53,6 @@ CODE TO BE REPLACED
 ```
 
 ## Sample Response
-
-CODE TO BE REPLACED
-
 
 ```JSON
 {
