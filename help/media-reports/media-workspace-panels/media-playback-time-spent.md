@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 ---
 # Media Playback Time Spent {#media-playback-time-spent}
 
-Analyzing playback time spent enables you to understand where peak concurrency occurred or where drop-oﬀs occurred. Media playback time spent provides valuable insight into the quality of content, viewer engagement, and how content is impacting viewership overtime. The media playback time spent feature helps with troubleshooting or planning for volume or scale.
+Analyzing playback time spent enables you to understand where peak concurrency occurred or where drop-oﬀs occurred. Media playback time spent provides valuable insight into the quality of content, viewer engagement, and how content is impacting viewership over time. The media playback time spent feature helps with troubleshooting or planning for volume or scale.
 
 ## Media Playback Time Spent Panel in Analysis Workspace
 
