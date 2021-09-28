@@ -6,6 +6,7 @@ exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
 feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 ---
+
 # Get Concurrent Viewers JSON report data with Analytics 2.0 APIs{#get-concurrent-viewers-json-report-data}
 
 You can obtain concurrent viewers report data using the [_*Analytics 2.0 APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).

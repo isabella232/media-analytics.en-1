@@ -1,4 +1,4 @@
-Media Playback Time Spent---
+---
 title: Get Media Playback Time Spent JSON report data with Analytics 2.0 APIs
 description: Learn how to obtain media playback time spent report data using the Analytics 2.0 APIs. View a sample request and response.
 uuid:
@@ -6,6 +6,7 @@ exl-id:
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 ---
+
 # Get Media Playback Time Spent JSON report data with Analytics 2.0 APIs{#get-media-playback-time-spent-json-report-data}
 
 You can obtain media playback time spent report data using the [_*Analytics 2.0 APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
@@ -23,7 +24,7 @@ A sample request payload for one day of data would look like the following sampl
 
 ## Sample Request
 
-<< CODE TO BE REPLACED >>
+CODE TO BE REPLACED
 
 ```json
 {
@@ -55,7 +56,7 @@ A sample request payload for one day of data would look like the following sampl
 
 ## Sample Response
 
-<< CODE TO BE REPLACED >>
+CODE TO BE REPLACED
 
 
 ```JSON
