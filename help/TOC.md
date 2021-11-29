@@ -139,9 +139,6 @@ sub-product: media analytics
         + [Heartbeat Parameter Descriptions](sdk-implement/validation/heartbeat-params.md)
         + Debugging {#debugging}
             + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
-            + [Configure Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
-            + [Create a New Debug Report](sdk-implement/validation/debugging/create-new-debug-report.md)
-            + [Debug Dashboards and Reports](sdk-implement/validation/debugging/debug-dash-repts.md)
     + Analytics in OTT Apps {#analytics-with-ott}
         + [Track App States](sdk-implement/analytics-with-ott/track-app-states.md)
         + [Track App Actions](sdk-implement/analytics-with-ott/track-app-actions.md)
