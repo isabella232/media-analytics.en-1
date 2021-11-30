@@ -14,7 +14,7 @@ Analyzing playback time spent enables you to understand where peak concurrency o
 In Analysis Workspace, Playback Time Spent is the amount of time spent viewing your media stream(s) at a specific point in time, and includes pause, buffer, and time to start. With Media Playback Time Spent, you have the ability to split the playback duration by different time intervals such as 5 minutes, 15 minutes, 30 minutes, or 1 hour.
 
 
-Media playback time spent helps with analysis of playback over time, with details on peak concurrency and the ability to break down and compare. To access the Media Playback Time Spent panel, navigate to a report suite with Media Analytics components enabled. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project. [Learn more...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html)
+Media playback time spent helps with analysis of playback over time, with details on peak concurrency and the ability to break down and compare. To access the Media Playback Time Spent panel, navigate to a report suite with Media Analytics components enabled. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project. [Learn more...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
