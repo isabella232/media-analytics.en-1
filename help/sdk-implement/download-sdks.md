@@ -8,9 +8,15 @@ role: User, Admin, Data Engineer
 ---
 # Download SDKs{#download-sdks}
 
+The information on this page includes links to download the current 3.x and 2.x Media SDKS. Links are also included for the 1.x legacy Media SDKs and the Media Analytics Launch Extension.
+
 >[!IMPORTANT]
 >
 >With the end of support for Version 4 Mobile SDKs on August 31, 2021, Adobe will also end support for the Media Analytics SDKs for iOS and Android.  For additional information, see [Media Analytics SDK End-of-Support FAQs](/help/sdk-implement/end-of-support-faqs.md).
+
+>[!NOTE]
+>Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+
 
 
 ## Download the 3.x Media SDKs {#download-3x-sdks}

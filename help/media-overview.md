@@ -1,5 +1,5 @@
 ---
-title: Adobe Streaming Media in Adobe Analytics 
+title: Adobe Streaming Media in Adobe Analytics
 description: "Dig deeper into the state-of-the-art streaming media measurement for content, audio, and advertisements. Learn about Adobe Analytics for Streaming Media."
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
@@ -31,6 +31,10 @@ Adobe Analytics for Streaming Media benefits include real-time monitoring, detai
 ## Heartbeat measurement {#heartbeat}
 
 Adobe Analytics uses “heartbeats” to collect video metrics. During video playback, heartbeats are sent to the heartbeat tracking server to measure time played. The heartbeat calls are sent every ten seconds. Heartbeats result in granular video engagement metrics and more accurate video fallout reports. Adobe Analytics for Streaming Media measures heartbeats using Adobe Launch with the Media Analytics extention, the Media SDK and the Media Collection API. The `AppMeasurement` and `VisitorID` components are used to receive video data.
+
+>[!NOTE]
+>Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+
 
 Using heartbeats Adobe Analytics for Streaming Media provide the following benefits:
 

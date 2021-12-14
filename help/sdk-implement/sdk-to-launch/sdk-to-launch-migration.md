@@ -9,6 +9,9 @@ role: User, Admin, Data Engineer
 ---
 # Migrating from the standalone Media SDK to Adobe Launch
 
+>[!NOTE]
+>Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+
 This documentation focuses mainly on Media Analytics implementation differences
 between the standalone Media SDK and the Media Analytics Launch extension.
 
