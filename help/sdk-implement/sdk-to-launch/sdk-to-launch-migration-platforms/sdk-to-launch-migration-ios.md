@@ -7,11 +7,14 @@ role: User, Admin, Data Engineer
 ---
 # Migrating from the standalone Media SDK to Adobe Launch - iOS
 
+>[!NOTE]
+>Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+
 ## Configuration
 
 ### Standalone Media SDK
 
-In the standalone Media SDK, you configure the tracking configuration in the app, 
+In the standalone Media SDK, you configure the tracking configuration in the app,
 and pass it to the SDK when you create the tracker.
 
 ```objective-c
