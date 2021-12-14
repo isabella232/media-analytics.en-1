@@ -11,9 +11,8 @@ For each implementation path, customers need to contact their Sales Representati
 
 ## Adobe Experience Platform Data Collection with the Adobe Media Analytics extension
 
->[!Note]
->
->Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Adobe Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) for a consolidated reference of the terminology changes.
 
 
 Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences. Tags are offered to Adobe Experience Cloud customers as an included value-add feature.
@@ -38,7 +37,6 @@ These are Media Analytics-only integrations. You can choose Video Heartbeat SDK 
 If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
->
 >To use Media Analytics, customers must also use Adobe Analytics.
 
 ## Adobe Primetime
