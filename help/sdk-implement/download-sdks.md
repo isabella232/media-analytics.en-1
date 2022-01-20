@@ -24,7 +24,7 @@ The information on this page includes links to download the current 3.x and 2.x 
 | 3.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |
 | --- | --- | --- | --- |
 | JavaScript | [Media SDK for JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Set up JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Media SDK for Chromecast v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Media SDK for Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API Reference](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## Download the 2.x Media SDKs {#download-2x-sdks}
@@ -34,7 +34,7 @@ The information on this page includes links to download the current 3.x and 2.x 
 | Android/FireTV | [Media SDK for Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Set up Android](/help/sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [Media SDK for for iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Contact [Customer Care ](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 2.0 SDK) | [iOS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Set up iOS](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [Media SDK for JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Set up JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Media SDK for Roku v2.2.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) | | [Set up Roku](/help/sdk-implement/setup/set-up-roku.md) |
+| Roku | [Media SDK for Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [Set up Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK for Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch Extension {#media-analytics-launch-extension}
