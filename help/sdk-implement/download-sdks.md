@@ -24,7 +24,7 @@ The information on this page includes links to download the current 3.x and 2.x 
 | 3.x&nbsp;Media&nbsp;SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads | &nbsp;APIs&nbsp;&nbsp; | &nbsp;Documentation&nbsp; |
 | --- | --- | --- | --- |
 | JavaScript | [Media SDK for JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Set up JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Media SDK for Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API Reference](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Media SDK for Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API Reference](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Set up Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## Download the 2.x Media SDKs {#download-2x-sdks}
