@@ -3,6 +3,7 @@ title: Media Average Minute Audience
 description: Learn how to use the Media Average Minute Audience panel to ______.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
+exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 ---
 # Media Average Minute Audience {#media-average-minute-audience}
 
