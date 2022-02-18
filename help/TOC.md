@@ -205,8 +205,9 @@ sub-product: media analytics
         + [Media Daypart report](media-reports/media-default-reports/media-reports-daypart.md)  
         + [Media Concurrent Viewers report](media-reports/media-default-reports/media-concurrent-viewers.md)
     + Media Workspace Panels {#media-workspace-panels}  
-        + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-        + [Media Playback Time Spent panel](media-reports/media-workspace-panels/media-playback-time-spent.md)
+    + [Media Average Minute Audience panel](media-reports/media-workspace-panels/average-minute-audience.md)
+    + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+    + [Media Playback Time Spent panel](media-reports/media-workspace-panels/media-playback-time-spent.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
     + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
     + [Get Media Playback Time Spent Data via API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)  
