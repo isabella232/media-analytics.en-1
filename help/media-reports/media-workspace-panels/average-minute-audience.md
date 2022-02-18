@@ -6,10 +6,7 @@ role: User, Admin, Data Engineer
 ---
 # Media Average Minute Audience {#media-average-minute-audience}
 
-Media Analytics customers can use average minute audience to better understand average consumption of their content. Using average minute audience, customers can compare similar programming, for example, sports to sports or comedy to comedy. Customers can also compare completely different programming. For example, customers can compare live events to drama or reality programs to sport programs. In addition, customers can compare linear TV average minute metrics.
-
-
-
+Media Analytics customers can use the average minute audience panel to better understand average consumption of their content. Average minute audience enables comparisons of programming of any length or genre. In addition, customers can compare or append this digital average minute audience to linear TV average minute metrics. This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated after the fact. The current average minute audience metric only works if the duration is available at processing time.
 
 ## Media Average Minute Audience Panel in Analysis Workspace
 
