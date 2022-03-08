@@ -57,7 +57,7 @@ For LIVE streams, you need to set the playhead value as the number of seconds si
 
 ### At Start
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the number of seconds since midnight UTC on that day. This is as opposed to VOD, where you would set the playhead to "0". 
+For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the number of seconds since midnight UTC on that day. This is as opposed to VOD, where you would set the playhead to "0". Note: When using progress markers, the content duration is required and the playhead needs to be updated as number of seconds from the beginning of the media item, starting with 0.
 
 For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). Then, say a user starts playing that LIVE stream at 12:00pm. In this scenario, you should set `l:event:playhead` to 43200 (12 hours since midnight UTC on that day in seconds).
 
