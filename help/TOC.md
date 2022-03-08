@@ -139,9 +139,6 @@ sub-product: media analytics
         + [Heartbeat Parameter Descriptions](sdk-implement/validation/heartbeat-params.md)
         + Debugging {#debugging}
             + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
-            + [Configure Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
-            + [Create a New Debug Report](sdk-implement/validation/debugging/create-new-debug-report.md)
-            + [Debug Dashboards and Reports](sdk-implement/validation/debugging/debug-dash-repts.md)
     + Analytics in OTT Apps {#analytics-with-ott}
         + [Track App States](sdk-implement/analytics-with-ott/track-app-states.md)
         + [Track App Actions](sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -208,9 +205,12 @@ sub-product: media analytics
         + [Media Daypart report](media-reports/media-default-reports/media-reports-daypart.md)  
         + [Media Concurrent Viewers report](media-reports/media-default-reports/media-concurrent-viewers.md)
     + Media Workspace Panels {#media-workspace-panels}  
-        + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+    + [Media Average Minute Audience panel](media-reports/media-workspace-panels/average-minute-audience.md)
+    + [Media Concurrent Viewers panel](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+    + [Media Playback Time Spent panel](media-reports/media-workspace-panels/media-playback-time-spent.md)
     + [Media Workspace Templates](media-reports/media-workspace-templates.md)
     + [Get Concurrent Viewers Data via API](media-reports/media-default-reports/get-concurrent-json20.md)
+    + [Get Media Playback Time Spent Data via API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)  
 + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
@@ -225,5 +225,5 @@ sub-product: media analytics
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 -->

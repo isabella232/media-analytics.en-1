@@ -98,7 +98,7 @@ role: User, Admin, Data Engineer
 
 | Request&nbsp;Key&nbsp; | Required | Request Type Key | Set On... | &nbsp;Description&nbsp; |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | integer | Any | The bitrate of the stream |
+| `media.qoe.bitrate` | N | integer | Any | The average bitrate (in bps). The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session. |
 | `media.qoe.droppedFrames` | N | integer | Any | The number of dropped frames in the stream |
 | `media.qoe.framesPerSecond` | N | integer | Any | The number of frames per second |
 | `media.qoe.timeToStart` | N | integer | Any | The amount of time (in milliseconds) passed between when the user hits play and the content loads and starts playing |

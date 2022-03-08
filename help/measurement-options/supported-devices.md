@@ -23,7 +23,7 @@ For devices or platforms that don’t currently have SDK support or in situation
 
 The table below lists currently supported devices and platforms. To download the most recent version of the SDK, see [Download SDKs](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html). If a device is not listed, contact your customer care or solution consultant for the status of that device.
 
-| Streaming Platforms and Devices |                                               | Media Launch Extension w/ AEP Mobile SDK |      Media SDK      | Media Collection API |
+| Streaming Platforms and Devices |                                               | Data Collection w/ AEP Mobile SDK |      Media SDK      | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web            |                                               |                              |                     |                      |
 |                           | JavaScript Browsers                           |               ![](/help/assets/icon-blue-check.png)              |          ![](/help/assets/icon-blue-check.png)&nbsp;&nbsp;&nbsp;          |           ![](/help/assets/icon-blue-check.png)          |

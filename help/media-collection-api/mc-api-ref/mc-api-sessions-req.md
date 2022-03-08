@@ -1,5 +1,5 @@
 ---
-title: Streaming Media Collection API � Sessions Request Endpoint
+title: Streaming Media Collection API — Sessions Request Endpoint
 description: "What are the Media Collection API sessions request endpoint parameters and responses?"
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
@@ -56,8 +56,8 @@ The request body must be JSON, and must have the same structure as this sample r
 ```
 
 * `playerTime` (Mandatory)
-    * `playhead` - Must be in seconds, but it can be a float.
-    * `ts` - Timestamp; must be in milliseconds.
+    * `playhead` - If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length. The value can be a floating point number.
+    * `ts` - Timestamp; must be in milliseconds; Coordinated Universal Time (UTC).
 * `eventType` (Mandatory)
 
    **Valid value:**&nbsp;`sessionStart`
