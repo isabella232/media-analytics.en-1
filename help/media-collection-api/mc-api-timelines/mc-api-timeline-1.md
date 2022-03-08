@@ -130,6 +130,7 @@ Start tracking the first pre-roll ad, which is 15 seconds long. Including custom
     }
 }
 ```
+
 **NOTE: Between AdBreakStart and AdStart events there shouldn't be any additional playback events.**
 
 ### Action 5 - Ad pings {#Action-5}
