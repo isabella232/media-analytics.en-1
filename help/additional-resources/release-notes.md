@@ -12,7 +12,7 @@ feature: Release Notes
 
 ## New features in Adobe Analytics for Streaming Media  {#sm-features}
 
-| Feature | Description | [Targeted Date](releases.md)  |
+| Feature | Description | Targeted Date  |
 | ----------- | ---------- | ------- |
 | Average Minute Audience | Media Analytics customers can use the Average Minute Audience panel to better understand average content consumption. <br>Average minute audience enables comparisons of programming of any length or genre. In addition, you can compare or append the digital average minute audience to linear TV average minute metrics. This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated.  [Learn more](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **Limited Release** <br>February 16, 2022 |
 
@@ -37,9 +37,9 @@ This section _____
 
 New Analytics tutorials and courses
 
-| Published | Name  | type | Description  |
+| Published | Name  | Type | Description  |
 | ----------- | ---------- | ---------- | --------- |
-| January | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">Media Playback Time Spent Panel</a> | Video |Learn how the Media Playback Time Spent Panel enables media users to understand their viewership by the amount of time viewed during the day over a chosen granularity. |
+| January | [Media Playback Time Spent Panel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en) | Video |Learn how the Media Playback Time Spent Panel enables media users to understand their viewership by the amount of time viewed during the day over a chosen granularity. |
 
 
 
@@ -62,7 +62,7 @@ New Analytics tutorials and courses
 
 New Analytics tutorials and courses
 
-| Published | Name  | type | Description  |
+| Published | Name  | Type | Description  |
 | ----------- | ---------- | ---------- | --------- |
 | January 6, 2021 | [Media Concurrent Viewers Panel in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=en#analysis-workspace) | Video |Understand where peak concurrency occurred or where drop-offs happened. Get valuable insight into the quality of content and viewer engagement, and help with troubleshooting or planning for volume and scale. |
 
