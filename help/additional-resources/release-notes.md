@@ -38,11 +38,11 @@ New Analytics tutorials and courses
 | ----------- | ---------- | ---------- | --------- |
 | January 2022 | [Media Playback Time Spent Panel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en) | Video |Learn how the Media Playback Time Spent Panel enables media users to understand their viewership by the amount of time viewed during the day over a chosen granularity. |
 
-## October 2021
+## September 2021
 
-| Feature | Description  |
-| ----------- | ---------- |
-| **Media Playback Time Spent** | Adobe Streaming Media Playback Time Spent provides valuable insight into viewer engagement and enables media organizations to derive deeper, more granular insights with minute-by-minute user engagement through advanced time spent analysis with day-parting capabilities. You can observe the amount of time spent viewing your media streams at a specific point in time. You can split the playback duration by different granularities, including new 5 minute, 15 minute, and 30-minute granularities. [Learn more...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| Feature | General Availability | Description  |
+| ----------- | ---------- | -------------- |
+| **Media Playback Time Spent** | September 28, 2021 | Adobe Streaming Media Playback Time Spent provides valuable insight into viewer engagement and enables media organizations to derive deeper, more granular insights with minute-by-minute user engagement through advanced time spent analysis with day-parting capabilities. You can observe the amount of time spent viewing your media streams at a specific point in time. You can split the playback duration by different granularities, including new 5 minute, 15 minute, and 30-minute granularities. [Learn more...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
 
 ## January 2021
 
@@ -57,9 +57,9 @@ New Analytics tutorials and courses
 
 New features in Media Analytics
 
-| Feature  |  General Availabiity | Description |
+| Feature  |  General Availability | Description |
 | -------- | -------------------- | ----------- |
-| **Media Concurrent Viewer panel in Workspace** | Sept. 17, 2020 | The Media Concurrent Viewers panel enables you to understand where peak concurrency occurred or where drop-offs happened. It provides valuable insight into the quality of content and viewer engagement, and helps with troubleshooting or planning for volume/scale. [Learn more…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| **Media Concurrent Viewer panel in Workspace** | September 17, 2020 | The Media Concurrent Viewers panel enables you to understand where peak concurrency occurred or where drop-offs happened. It provides valuable insight into the quality of content and viewer engagement, and helps with troubleshooting or planning for volume/scale. [Learn more…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
 
 
 ## July 2020
