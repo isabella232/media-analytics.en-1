@@ -6,7 +6,7 @@ exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 ---
 # Adobe Analytics for Streaming Media Release Notes (March 2022)
 
-**Last update**: March 3, 2022
+**Last update**: March 23, 2022
 
 ## *Current Release Notes*
 
@@ -14,7 +14,7 @@ exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 
 | Feature | Description | Targeted Date  |
 | ----------- | ---------- | ------- |
-| **Average Minute Audience** | Media Analytics customers can use the Average Minute Audience panel to better understand average content consumption. <br>Average minute audience enables comparisons of programming of any length or genre. In addition, you can compare or append the digital average minute audience to linear TV average minute metrics. This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated.  [Learn more](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **Limited Release** <br>February 16, 2022 |
+| **Average Minute Audience** | Media Analytics customers can use the Average Minute Audience panel to better understand average content consumption. <br>Average minute audience enables comparisons of programming of any length or genre. In addition, you can compare or append the digital average minute audience to linear TV average minute metrics. This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated.  [Learn more](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) |  February 16, 2022 |
 
 ## Analytics for Streaming Media Help Resources
 
