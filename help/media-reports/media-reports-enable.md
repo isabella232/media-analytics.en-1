@@ -10,6 +10,8 @@ role: User, Admin, Data Engineer
 
 Each report suite that collects media metrics must be configured before media data is sent.
 
+Advanced customers are able to use the media panels in Analysis Workspace only after Media Core is enabled and tracking is enabled for [Quality of Experience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+
 >[!TIP]
 >
 >To take advantage of new capabilities, existing Media Analytics customers should re-enable media tracking for their RSIDs.
@@ -23,39 +25,39 @@ Each report suite that collects media metrics must be configured before media da
 
     Media measurement includes the following modules:
 
-    * **Media Core** 
-    
-       Core media measurement is used for media content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. Solution (or Custom) events will be used for Media Starts, Content Starts, Content Completes, and Content Time Spent. 
+    * **Media Core**
 
-    * **Media Ads** 
-    
-       Media ad measurement is used for the measurement of ads within the media content. This will use Solution eVvars to measure Ad, Ad Player Name, Ad Pod, and Ad in Pod Position. Solution events will be used for Ad Starts, Ad Completes, Ad Time Spent, and Video Time Spent. 
+       Core media measurement is used for media content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. Solution (or Custom) events will be used for Media Starts, Content Starts, Content Completes, and Content Time Spent.
 
-    * **Media Chapters** 
-    
-       Video chapters measurement is used for the measurement of chapters. A chapter is a sub-division of content within a single media. This will use a Solution eVar to store the Chapter ID. Solution events will be used for Chapter Starts, Chapter Completes, and Chapter Time Spent. Additional chapter metadata of Chapter Name and Chapter Position will be provided as classifications of Chapter ID. 
+    * **Media Ads**
 
-    * **Media Quality** 
-    
-       Video quality measurement is used for measuring the quality of the content playback. This will use Solution eVars to store Time to Start, Buffer Events, Total Buffer Duration, Bitrate Switches, Average Bitrate, Errors, and Dropped Frames. Solution events will be used for Time to Start, Drops before Start, Buffer Impacted Streams, Buffer Events, Total Buffer Duration, Bitrate Change Impacted Streams, Bitrate Changes, Avg Bitrate, Error Impacted Streams, Error Events, Dropped Frame Impacted Streams, and Dropped Frames. 
+       Media ad measurement is used for the measurement of ads within the media content. This will use Solution eVvars to measure Ad, Ad Player Name, Ad Pod, and Ad in Pod Position. Solution events will be used for Ad Starts, Ad Completes, Ad Time Spent, and Video Time Spent.
 
-    * **Video & Video Ad Metadata** 
-    
-       Metadata can be attached to a media and/or an ad to further describe and categorize that media/ad. Standardized media and ad metadata will be collected via solution variables and classifications. Values to include: Show, Season, Episode, Asset ID, Genre, First Air Date, First Digital Date, Content Rating, Originator, Network, Show Type, Ad Loads, MVPD, Authorized, Day Part, Media Session ID, Advertiser, Campaign ID, and Creative ID. 
+    * **Media Chapters**
 
-    * **Audio & Audio Ad Metadata** 
-    
+       Video chapters measurement is used for the measurement of chapters. A chapter is a sub-division of content within a single media. This will use a Solution eVar to store the Chapter ID. Solution events will be used for Chapter Starts, Chapter Completes, and Chapter Time Spent. Additional chapter metadata of Chapter Name and Chapter Position will be provided as classifications of Chapter ID.
+
+    * **Media Quality**
+
+       Video quality measurement is used for measuring the quality of the content playback. This will use Solution eVars to store Time to Start, Buffer Events, Total Buffer Duration, Bitrate Switches, Average Bitrate, Errors, and Dropped Frames. Solution events will be used for Time to Start, Drops before Start, Buffer Impacted Streams, Buffer Events, Total Buffer Duration, Bitrate Change Impacted Streams, Bitrate Changes, Avg Bitrate, Error Impacted Streams, Error Events, Dropped Frame Impacted Streams, and Dropped Frames.
+
+    * **Video & Video Ad Metadata**
+
+       Metadata can be attached to a media and/or an ad to further describe and categorize that media/ad. Standardized media and ad metadata will be collected via solution variables and classifications. Values to include: Show, Season, Episode, Asset ID, Genre, First Air Date, First Digital Date, Content Rating, Originator, Network, Show Type, Ad Loads, MVPD, Authorized, Day Part, Media Session ID, Advertiser, Campaign ID, and Creative ID.
+
+    * **Audio & Audio Ad Metadata**
+
        Metadata can be attached to audio and/or an ad to further describe and categorize that audio/ad. Standardized audio and ad metadata will be collected via solution variables and classifications. Values to include: Artist, Album, Label, Author, Publisher, Station, Show, Season, Episode, Asset ID, Genre, First Air Date, First Digital Date, Content Rating, Originator, Show Type, Ad Loads, Day Part, Media Session ID, Advertiser, Campaign ID, and Creative ID.
 
    Enabling each module reserves a set of variables and creates a new set of reports. With the exception of Quality, there will be no data in reports unless the corresponding implementation has been completed. Implementing the Core module also implements the Quality module if you enable it.
 
-   If you are not yet tracking ads, chapters, or playback quality, you can enable additional options at any time. 
+   If you are not yet tracking ads, chapters, or playback quality, you can enable additional options at any time.
 
 1. Click **[!UICONTROL Save].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. If you see the **[!UICONTROL Media Core measurement]** page, continue to the next step. 
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. If you see the **[!UICONTROL Media Core measurement]** page, continue to the next step.
 
-1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables. 
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | Option | Notes |
    | --- | --- |
