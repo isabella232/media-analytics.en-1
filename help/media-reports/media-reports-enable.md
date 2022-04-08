@@ -10,7 +10,7 @@ role: User, Admin, Data Engineer
 
 Each report suite that collects media metrics must be configured before media data is sent.
 
-Advanced customers are able to use the media panels in Analysis Workspace only after Media Core is enabled and tracking is enabled for [Quality of Experience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+Advanced customers can use the media panels in Analysis Workspace only after Media Core is enabled and tracking is enabled for [Quality of Experience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
 
 >[!TIP]
 >
